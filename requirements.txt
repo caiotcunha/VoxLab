@@ -1,0 +1,2 @@
+# The reproducible corpus audit uses only the Python 3.10+ standard library.
+# Legacy notebook dependencies are documented separately in README.md.

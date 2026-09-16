@@ -1,0 +1,333 @@
+{
+  "labels": {
+    "corpus_counts": "OBSERVED/DERIVED",
+    "pairs": "HEURISTIC",
+    "stance": "LLM/SILVER",
+    "human_gold": "NONE"
+  },
+  "source": {
+    "dataset": "PublicHearingBR_LDS.jsonl",
+    "date_semantics": "date in materia is article publication; hearing date unavailable",
+    "actor_id_semantics": "accent/case/punctuation normalized name; identity unverified",
+    "text_semantics": "LDS opinion summaries, not verbatim speech"
+  },
+  "config": {
+    "topic_method": "local word TF-IDF cosine of LDS assunto",
+    "threshold": 0.1,
+    "top_k_later_hearings_per_actor_earlier_hearing": 5
+  },
+  "counts": {
+    "total_hearings": 206,
+    "unique_actors_normalized_names": 878,
+    "opinion_summaries": 2203,
+    "actors_2plus_hearings": 102,
+    "actors_3plus_hearings": 47,
+    "actors_5plus_hearings": 8,
+    "hearings_with_publication_date": 206,
+    "hearings_with_verified_hearing_date": 0,
+    "possible_actor_hearing_pairs_with_distinct_publication_dates": 396,
+    "candidate_pairs_proxy_order": 58,
+    "candidate_pairs_verified_hearing_order": 0,
+    "candidate_actors_proxy_order": 37
+  },
+  "hearing_count_distribution": {
+    "1": 776,
+    "2": 55,
+    "3": 30,
+    "4": 9,
+    "5": 5,
+    "6": 2,
+    "16": 1
+  },
+  "publication_gap_days_distribution_all_pairs": {
+    "0-30": 74,
+    "181-365": 82,
+    "31-180": 164,
+    "366+": 76
+  },
+  "publication_gap_days_distribution_consecutive_appearances": {
+    "0-30": 62,
+    "181-365": 21,
+    "31-180": 93,
+    "366+": 11
+  },
+  "top_actors": [
+    {
+      "actor_id": "erika kokay",
+      "actor_name": "Erika Kokay",
+      "hearings": 16,
+      "first_publication": "2022-05-26",
+      "last_publication": "2024-04-09"
+    },
+    {
+      "actor_id": "jorge solla",
+      "actor_name": "Jorge Solla",
+      "hearings": 6,
+      "first_publication": "2023-08-09",
+      "last_publication": "2023-12-05"
+    },
+    {
+      "actor_id": "professora luciene cavalcante",
+      "actor_name": "Professora Luciene Cavalcante",
+      "hearings": 6,
+      "first_publication": "2023-04-24",
+      "last_publication": "2024-04-12"
+    },
+    {
+      "actor_id": "alexandre da silva",
+      "actor_name": "Alexandre da Silva",
+      "hearings": 5,
+      "first_publication": "2023-05-18",
+      "last_publication": "2024-04-09"
+    },
+    {
+      "actor_id": "bia kicis",
+      "actor_name": "Bia Kicis",
+      "hearings": 5,
+      "first_publication": "2022-07-07",
+      "last_publication": "2023-11-28"
+    },
+    {
+      "actor_id": "dr zacharias calil",
+      "actor_name": "Dr. Zacharias Calil",
+      "hearings": 5,
+      "first_publication": "2022-08-17",
+      "last_publication": "2024-04-11"
+    },
+    {
+      "actor_id": "evair vieira de melo",
+      "actor_name": "Evair Vieira de Melo",
+      "hearings": 5,
+      "first_publication": "2023-08-09",
+      "last_publication": "2024-04-18"
+    },
+    {
+      "actor_id": "padre joao",
+      "actor_name": "Padre João",
+      "hearings": 5,
+      "first_publication": "2023-04-18",
+      "last_publication": "2024-04-25"
+    },
+    {
+      "actor_id": "aureo ribeiro",
+      "actor_name": "Aureo Ribeiro",
+      "hearings": 4,
+      "first_publication": "2023-06-27",
+      "last_publication": "2023-11-22"
+    },
+    {
+      "actor_id": "celia xakriaba",
+      "actor_name": "Célia Xakriabá",
+      "hearings": 4,
+      "first_publication": "2023-04-27",
+      "last_publication": "2023-11-09"
+    },
+    {
+      "actor_id": "dandara",
+      "actor_name": "Dandara",
+      "hearings": 4,
+      "first_publication": "2023-05-25",
+      "last_publication": "2023-12-11"
+    },
+    {
+      "actor_id": "danilo forte",
+      "actor_name": "Danilo Forte",
+      "hearings": 4,
+      "first_publication": "2022-05-12",
+      "last_publication": "2024-04-17"
+    },
+    {
+      "actor_id": "gilson daniel",
+      "actor_name": "Gilson Daniel",
+      "hearings": 4,
+      "first_publication": "2023-12-12",
+      "last_publication": "2024-04-10"
+    },
+    {
+      "actor_id": "lafayette de andrada",
+      "actor_name": "Lafayette de Andrada",
+      "hearings": 4,
+      "first_publication": "2022-06-28",
+      "last_publication": "2024-04-16"
+    },
+    {
+      "actor_id": "marcel van hattem",
+      "actor_name": "Marcel van Hattem",
+      "hearings": 4,
+      "first_publication": "2022-08-26",
+      "last_publication": "2024-04-16"
+    },
+    {
+      "actor_id": "rogerio correia",
+      "actor_name": "Rogério Correia",
+      "hearings": 4,
+      "first_publication": "2022-07-14",
+      "last_publication": "2023-12-20"
+    },
+    {
+      "actor_id": "taliria petrone",
+      "actor_name": "Talíria Petrone",
+      "hearings": 4,
+      "first_publication": "2022-08-03",
+      "last_publication": "2023-10-31"
+    },
+    {
+      "actor_id": "adriana ventura",
+      "actor_name": "Adriana Ventura",
+      "hearings": 3,
+      "first_publication": "2022-06-28",
+      "last_publication": "2023-12-05"
+    },
+    {
+      "actor_id": "alexandre lindenmeyer",
+      "actor_name": "Alexandre Lindenmeyer",
+      "hearings": 3,
+      "first_publication": "2023-10-19",
+      "last_publication": "2024-04-09"
+    },
+    {
+      "actor_id": "ana paula lima",
+      "actor_name": "Ana Paula Lima",
+      "hearings": 3,
+      "first_publication": "2023-04-20",
+      "last_publication": "2023-11-21"
+    }
+  ],
+  "top_exact_topics": [
+    {
+      "topic": "Regulamentação do trabalho de motoristas de aplicativo",
+      "hearings": 2,
+      "actors": 12
+    },
+    {
+      "topic": "Acusações de censura contra Alexandre de Moraes por exigir bloqueio de contas na rede social X",
+      "hearings": 1,
+      "actors": 8
+    },
+    {
+      "topic": "Envio de projetos de lei para diminuir custos da energia para o consumidor e tratar da transição energética no setor de transportes",
+      "hearings": 1,
+      "actors": 3
+    },
+    {
+      "topic": "Discussão sobre a substituição do saque-aniversário do FGTS por uma nova modalidade de crédito consignado",
+      "hearings": 1,
+      "actors": 2
+    },
+    {
+      "topic": "Trabalho da Anatel com operadoras de telefonia para evitar pane em São Paulo após temporal e discussão sobre a modernização das leis de telecomunicações",
+      "hearings": 1,
+      "actors": 2
+    },
+    {
+      "topic": "Cumprimento dos direitos das pessoas com autismo",
+      "hearings": 1,
+      "actors": 9
+    },
+    {
+      "topic": "Suspensão de passagens promocionais pela 123milhas devido a previsões de preços não cumpridas e recuperação judicial da empresa",
+      "hearings": 1,
+      "actors": 7
+    },
+    {
+      "topic": "Regulamentação da reforma tributária",
+      "hearings": 1,
+      "actors": 7
+    },
+    {
+      "topic": "Regulação do mercado de criptomoedas no Brasil",
+      "hearings": 1,
+      "actors": 4
+    },
+    {
+      "topic": "Debate sobre a exigência de certidão negativa de antecedentes criminais para cuidadores de pessoas idosas",
+      "hearings": 1,
+      "actors": 3
+    },
+    {
+      "topic": "Substituição do saque-aniversário do FGTS por empréstimo consignado com juros mais baixos",
+      "hearings": 1,
+      "actors": 5
+    },
+    {
+      "topic": "Alertas de seca severa e riscos de desertificação no Nordeste brasileiro",
+      "hearings": 1,
+      "actors": 5
+    },
+    {
+      "topic": "Violações de direitos de mulheres com deficiência",
+      "hearings": 1,
+      "actors": 3
+    },
+    {
+      "topic": "Cobrança à Justiça para destravar a renegociação com mineradoras sobre reparação em Mariana",
+      "hearings": 1,
+      "actors": 11
+    },
+    {
+      "topic": "Reparações do crime socioambiental da Braskem em Maceió",
+      "hearings": 1,
+      "actors": 9
+    },
+    {
+      "topic": "Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024",
+      "hearings": 1,
+      "actors": 4
+    },
+    {
+      "topic": "Debate sobre denúncias envolvendo o custeio de viagem de Luciane Barbosa Farias e questões relacionadas aos direitos humanos",
+      "hearings": 1,
+      "actors": 8
+    },
+    {
+      "topic": "Debate sobre ativismo judicial na Câmara dos Deputados",
+      "hearings": 1,
+      "actors": 4
+    },
+    {
+      "topic": "Pedido de aporte adicional de R$ 150 milhões para financiar a formação de professores através do Pibid",
+      "hearings": 1,
+      "actors": 4
+    },
+    {
+      "topic": "Criação de grupo de trabalho para estudar proposta de redução da velocidade média nas vias urbanas",
+      "hearings": 1,
+      "actors": 5
+    }
+  ],
+  "topic_recurrent_actors_exact_title": {
+    "Regulamentação do trabalho de motoristas de aplicativo": 1
+  },
+  "threshold_sensitivity_unlimited": {
+    "0": 396,
+    "0.05": 78,
+    "0.1": 58,
+    "0.15": 28,
+    "0.2": 20,
+    "0.3": 9,
+    "0.4": 5,
+    "0.5": 5,
+    "0.6": 2,
+    "0.7": 1,
+    "0.8": 1
+  },
+  "diagnostics": {
+    "invalid_publication_date_ids": []
+  },
+  "evidence": {
+    "lds_summary_exact_transcript_matches": 0,
+    "lds_summaries_checked": 2203,
+    "nli_nonempty_chunks": 16940,
+    "nli_chunk_exact_matches": 1804,
+    "nli_chunk_whitespace_normalized_matches": 14231
+  },
+  "pilot": {
+    "size": 25,
+    "actors": 25,
+    "similarity_bands": {
+      "low": 9,
+      "medium": 8,
+      "high": 8
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "stages": {
+    "candidate_pairs": 25,
+    "distinct_events_verified": 25,
+    "same_actor_verified": 24,
+    "both_hearing_dates_verified": 24,
+    "temporal_order_verified": 24,
+    "both_speeches_verified": 24,
+    "both_evidence_spans_verified": 19,
+    "fully_validated": 19
+  },
+  "status": {
+    "VALIDATED": 19,
+    "PARTIALLY_VALIDATED": 4,
+    "INVALID": 2
+  },
+  "reasons_nonexclusive": {
+    "ACTOR_AMBIGUOUS_OR_DIFFERENT": 1,
+    "SUMMARY_EVIDENCE_LINK_UNCERTAIN": 4,
+    "SUMMARY_TRANSCRIPT_MISMATCH": 2
+  },
+  "nli_pilot_chunks": {
+    "total": 3312,
+    "match_methods": {
+      "NORMALIZED_EXACT_MATCH": 2443,
+      "NO_MATCH": 552,
+      "EXACT_MATCH": 317
+    },
+    "unique_named_actor_turn": 2396
+  }
+}
