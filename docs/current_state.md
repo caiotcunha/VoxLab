@@ -62,3 +62,15 @@ A decisão acima registra o estado **anterior** à investigação de proveniênc
 ## Atualização: piloto semântico humano preparado
 
 Uma segunda passagem documental do Codex conferiu os 38 lados dos 19 pares, preservando a primeira revisão. Houve 37 concordâncias válidas e uma discordância sobre o resumo de Mercedes Bustamante. Restam **18 pares preliminarmente elegíveis**; 13 têm duas audiências públicas. Dois CSVs cegos, com respostas vazias, foram preparados em ordens e apresentações A/B diferentes para duas pessoas anotarem independentemente. A segunda passagem documental **não foi uma segunda pessoa humana**. Não há métricas de concordância, gold humano ou GO para comparability gate. Arquivos, método e instruções: `docs/semantic_pilot.md` e `docs/annotation_guideline.md`.
+
+## Atualização: duas anotações humanas recebidas
+
+Em 2026-09-21, as duas planilhas dos 18 pares foram entregues completas. Após restaurar os lados cronológicos, houve concordância bruta de 34/36 em determinabilidade, 13/16 em mesma proposição, 32/34 em stance e 13/18 na relação derivada. O Kappa de determinabilidade é 0 porque o segundo anotador marcou `YES` nos 36 lados; a concordância bruta de 94,44% deve ser lida com essa prevalência. Cinco pares diferem na relação final derivada. Nenhum anotador produziu `STANCE_REVERSED`. Foi criada uma fila de adjudicação para os 18 pares, sem preencher rótulos gold. Resultados, casos e próximos passos: `docs/semantic_agreement.md`. **Ainda não há GO para comparability gate.**
+
+## Atualização: arquivo de consenso recebido
+
+Em 2026-09-23 foi adicionado e corrigido `semantic_pilot_consensus.csv`. A validação final encontrou 18 pares únicos, respostas completas e correspondência integral com os pacotes de origem. Após restaurar A/B para a ordem cronológica, o consenso resulta em 5 `STANCE_MAINTAINED`, 11 `INCOMPARABLE`, 2 `RELATION_UNCERTAIN` e 0 `STANCE_REVERSED`. Foi gerado `semantic_pilot_gold.csv`, com fonte `HUMAN_CONSENSUS` e hash do consenso. A decisão é GO limitado para estudar o comparability gate, WARNING para avaliação quantitativa com apenas 18 pares e NO-GO para alegar detecção de reversão sem exemplos dessa classe. Veja `docs/semantic_consensus_analysis.md`.
+
+## Atualização: expansão do corpus iniciada
+
+Em 2026-09-23 foi gerada a primeira versão da expansão de candidatos (`src/voxlab/expansion.py`). O universo recalculado confirma 58 candidatos TF-IDF ≥ 0,10; excluídos os 18 pares gold, restam **40 candidatos elegíveis**. Após aplicar cap de 2 pares por ator (Erika Kokay ×6 e outros com recorrência alta foram limitados), a amostra de expansão contém **34 pares de 27 atores**. Todos os 18 pares gold são recuperados pelo retriever TF-IDF ao threshold 0,10 (sanity check retrospectivo). Nenhum label silver ou gold foi usado na seleção. O template de revisão de proveniência foi gerado em `data/annotations/expansion_provenance_review.csv` com campos em branco para preenchimento humano. A próxima etapa é a revisão documental dos 34 pares; somente pares com `validation_status=VALIDATED` avançam para pacotes de anotação semântica. Veja `docs/dataset_expansion.md`.

@@ -1,0 +1,28 @@
+{
+  "stage_1_total_candidates": 58,
+  "stage_2_gold_excluded": 18,
+  "stage_3_eligible_pool": 40,
+  "stage_4_actor_cap_removed": 6,
+  "stage_5_selected_for_expansion": 34,
+  "actor_cap": 2,
+  "similarity_strata_in_eligible_pool": {
+    "HIGH": 4,
+    "LOW": 24,
+    "MEDIUM": 12
+  },
+  "temporal_strata_in_eligible_pool": {
+    "LONG": 10,
+    "MEDIUM": 21,
+    "SHORT": 9
+  },
+  "actors_in_eligible_pool": 27,
+  "actors_in_selected": 27,
+  "actors_in_gold_pilot_and_selected": 8,
+  "note_no_gold_silver_labels_used": "Selection depends only on topic_similarity, delta_publication_days, and actor_id. No stance_silver, relation_gold, or LLM predictions were used.",
+  "pilot_sanity_check": {
+    "gold_pairs_checked": 18,
+    "retrieved_at_threshold_0_10": 18,
+    "retrieved_at_threshold_0_05": 18,
+    "note": "retrospective_only_labels_not_used_for_threshold_choice"
+  }
+}

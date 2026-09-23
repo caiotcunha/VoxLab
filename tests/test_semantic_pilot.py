@@ -33,8 +33,11 @@ class SemanticPilotTests(unittest.TestCase):
         self.assertEqual(row["context_before"] + row["evidence"] + row["context_after"], row["text"])
 
     def test_generated_blind_packets_same_ids_reproducible_no_answers_or_identifiers(self):
-        a = read_csv(ROOT / "data/annotations/semantic_pilot_annotator_1.csv")
-        b = read_csv(ROOT / "data/annotations/semantic_pilot_annotator_2.csv")
+        pairs = read_csv(ROOT / "data/annotations/semantic_pilot_reference.csv")
+        from voxlab.audit import read_jsonl
+        lds = {str(row["id"]): row for row in read_jsonl(ROOT / "PublicHearingBR_LDS.jsonl")}
+        a, _ = annotation_rows(pairs, lds, 1)
+        b, _ = annotation_rows(pairs, lds, 2)
         self.assertEqual(len(a), len(b))
         self.assertEqual({r["pair_id"] for r in a}, {r["pair_id"] for r in b})
         self.assertNotEqual([r["pair_id"] for r in a], [r["pair_id"] for r in b])

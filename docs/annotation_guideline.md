@@ -1,5 +1,7 @@
 # Piloto de anotação humana semântica
 
+**Estado atual (2026-09-21):** os dois anotadores entregaram suas planilhas. Preserve-as sem edição. A próxima etapa é a adjudicação descrita em `docs/semantic_agreement.md`; esta guideline documenta a tarefa que eles executaram.
+
 ## Unidade, arquivos e independência
 
 Cada linha contém duas manifestações literais do mesmo ator em eventos parlamentares diferentes. O piloto contém **18 pares preliminarmente elegíveis** após duas passagens documentais; a segunda passagem foi feita pelo Codex, **não por uma segunda pessoa humana**. Antes de chamar o resultado de gold, dois humanos devem anotar as manifestações de forma independente e as divergências devem ser adjudicadas. Nenhum resumo LDS, rótulo silver ou julgamento automático é resposta correta por definição.

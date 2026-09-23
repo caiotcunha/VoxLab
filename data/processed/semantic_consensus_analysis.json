@@ -1,0 +1,53 @@
+{
+  "input_sha256": "f22b73de7fe725a548ebcf3039855d9a8511ef31d331d7321373010d6be5270f",
+  "expected_pairs": 18,
+  "physical_consensus_rows": 18,
+  "unique_known_pair_ids": 18,
+  "missing_pair_ids": [],
+  "duplicate_pair_ids": {},
+  "unknown_pair_ids": [],
+  "source_content_mismatches": [],
+  "blocking_issues": [],
+  "valid_for_gold_generation": true,
+  "all_responses_complete_and_schema_valid": true,
+  "all_display_text_matches_claimed_pair": true,
+  "source_valid_consensus_rows": 18,
+  "rows_with_recoverable_cp1252_control_characters": 16,
+  "valid_source_row_relation_distribution": {
+    "INCOMPARABLE": 11,
+    "RELATION_UNCERTAIN": 2,
+    "STANCE_MAINTAINED": 5
+  },
+  "relation_distribution": {
+    "INCOMPARABLE": 11,
+    "RELATION_UNCERTAIN": 2,
+    "STANCE_MAINTAINED": 5
+  },
+  "determinability_side_distribution": {
+    "YES": 36
+  },
+  "same_proposition_distribution": {
+    "NO": 11,
+    "UNCERTAIN": 2,
+    "YES": 5
+  },
+  "stance_side_distribution": {
+    "AGAINST": 8,
+    "FAVOR": 28
+  },
+  "valid_consensus_pair_count": 18,
+  "duplicate_relation_class_consistent": {},
+  "consensus_relation_alignment": {
+    "consensus_equals_both_annotators": 13,
+    "consensus_equals_annotator_1_only": 0,
+    "consensus_equals_annotator_2_only": 4,
+    "consensus_equals_neither": 1
+  },
+  "interpretation": "Validated human consensus covers every expected pair and is ready for adjudicated pilot gold.",
+  "gold_dataset": {
+    "path": "data/annotations/semantic_pilot_gold.csv",
+    "pair_count": 18,
+    "label_source": "HUMAN_CONSENSUS",
+    "sha256": "29657ea3953ad620f38f7336ac6aa9b38fcb8d898b833fbffa19b2e7f0eda9a9"
+  }
+}

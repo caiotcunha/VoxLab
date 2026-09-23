@@ -4,7 +4,7 @@ Pergunta desta etapa: o PublicHearingBR contém recorrência do mesmo ator em au
 
 ## Estado dos dados e ressalvas
 
-O repositório contém 206 registros LDS com `id`, `materia`, `metadados` (`assunto`, `envolvidos`) e `transcricao`; o NLI contém os mesmos IDs e metadados extraídos alternativos. `base_posturas_classificadas.csv` foi produzido por `nunes.ipynb`: um LLM extraiu proposições por registro e classificou pares opinião–proposição. São **rótulos silver**, sem validação humana. A avaliação final exigirá rótulos gold humanos independentes.
+O repositório contém 206 registros LDS com `id`, `materia`, `metadados` (`assunto`, `envolvidos`) e `transcricao`; o NLI contém os mesmos IDs e metadados extraídos alternativos. `base_posturas_classificadas.csv` foi produzido por `nunes.ipynb`: um LLM extraiu proposições por registro e classificou pares opinião–proposição. São **rótulos silver**, sem validação humana. O piloto agora possui gold humano independente e adjudicado; uma avaliação final ainda exige ampliar esse gold e reservar exemplos que não participem do desenvolvimento.
 
 O campo `materia` contém **data de publicação da notícia**, que não comprova a data da audiência. A coluna `hearing_date` permanece vazia. `hearing_id` nos arquivos processados é o ID do registro original, sem verificação de que cada registro representa uma única audiência. `speech_text` guarda resumos de opinião do LDS, não fala literal; `evidence` fica vazia e `evidence_status` explicita a falta de verificação. Cada resumo pode ser rastreado pelos índices de ator e opinião no JSONL. Os pares são somente **candidatos exploratórios**, ordenados pela data de publicação, com `temporal_order_verified=false`.
 
@@ -15,7 +15,8 @@ Requer Python 3.10+; a auditoria usa apenas a biblioteca padrão, sem chamadas d
 ```bash
 PYTHONPATH=src python3 -m voxlab.audit
 PYTHONPATH=src python3 -m voxlab.provenance
-PYTHONPATH=src python3 -m voxlab.semantic_pilot
+PYTHONPATH=src python3 -m voxlab.agreement
+PYTHONPATH=src python3 -m voxlab.consensus
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
@@ -36,14 +37,26 @@ Os parâmetros `--threshold` (padrão 0.10), `--top-k` (5 pares de audiência po
 - `data/processed/provenance_schema.csv`, `pilot_nli_spans.csv`, `pilot_speech_candidates.csv` e `provenance_funnel.json`: diagnóstico e funil.
 - `data/raw/official_events/SOURCES.md`: origem e hashes dos metadados da Câmara.
 - `docs/provenance_validation.md`: método e resultados da validação documental.
-- `src/voxlab/semantic_pilot.py` e `agreement.py`: preparação cega do piloto e análise futura de concordância.
+- `src/voxlab/semantic_pilot.py` e `agreement.py`: preparação cega do piloto e análise de concordância.
 - `data/annotations/provenance_review_2.csv`, `provenance_agreement.csv` e `semantic_pilot_eligible_pairs.csv`: segunda passagem documental, comparação e elegibilidade.
-- `data/annotations/semantic_pilot_annotator_1.csv`, `semantic_pilot_annotator_2.csv` e `semantic_pilot_reference.csv`: dois formulários independentes vazios e referência identificada.
+- `data/annotations/semantic_pilot_annotator_1.csv`, `semantic_pilot_annotator_2.csv` e `semantic_pilot_reference.csv`: duas anotações independentes preenchidas e referência identificada.
 - `docs/semantic_pilot.md`: desenho, recorte, randomização e estado do piloto humano.
+- `data/processed/semantic_agreement.json`, `data/annotations/semantic_annotation_comparison.csv` e `semantic_adjudication_queue.csv`: concordância das duas anotações e fila produzida antes do consenso.
+- `docs/semantic_agreement.md`: resultados observados, limites e instruções de adjudicação.
+- `data/annotations/semantic_pilot_consensus.csv`, `semantic_consensus_comparison.csv` e `data/processed/semantic_consensus_analysis.json`: consenso humano, validação e distribuições finais.
+- `data/annotations/semantic_pilot_gold.csv`: 18 pares adjudicados, cronológicos e rastreáveis ao hash do consenso humano.
+- `src/voxlab/consensus.py` e `docs/semantic_consensus_analysis.md`: validação, geração do gold e decisão científica.
+- `src/voxlab/expansion.py` e `docs/dataset_expansion.md`: expansão do corpus, funil de candidatos e template de revisão de proveniência para a segunda rodada.
+- `data/processed/expansion_candidate_pairs.csv` e `expansion_funnel.json`: 34 pares elegíveis (de 40 disponíveis após excluir o gold) com estratificação por similaridade e gap temporal.
+- `data/annotations/expansion_provenance_review.csv`: template com campos em branco para revisão humana de proveniência dos 34 candidatos.
 - `datasetCaio.ipynb`, `nunes.ipynb` e `dashboard_polarizacao_completa.html`: exploração anterior preservada; o dashboard não representa o resultado longitudinal.
 
 O notebook antigo `nunes.ipynb` ainda requer `langchain-core`, `langchain-nvidia-ai-endpoints`, `pandas`, `tqdm`, `networkx` e `pyvis` para suas próprias células. Essas dependências **não** fazem parte da nova auditoria nem são executadas por ela. `NVIDIA_API_KEY` deve ser fornecida pelo ambiente para executar as células antigas. Não é necessária para reproduzir esta etapa.
 
 ## Resultado da auditoria inicial e do piloto documental
 
-No LDS, 102 de 878 nomes normalizados aparecem em dois ou mais registros. Existem 58 pares candidatos com similaridade de assunto ≥0,10 e datas de publicação distintas; 25 foram selecionados para o piloto. A primeira validação documental confirmou 19 pares, deixou 4 parciais e invalidou 2. Uma segunda passagem encontrou uma divergência documental e deixou **18 pares preliminarmente elegíveis para anotação humana**. Se ambos os eventos precisarem ser audiências públicas, restam 13. As duas planilhas de anotação estão vazias; não há gold humano, concordância ou julgamento de comparabilidade e reversão. Veja `docs/semantic_pilot.md` para o estado atual.
+No LDS, 102 de 878 nomes normalizados aparecem em dois ou mais registros. Existem 58 pares candidatos com similaridade de assunto ≥0,10 e datas de publicação distintas; 25 foram selecionados para o piloto. A primeira validação documental confirmou 19 pares, e uma segunda passagem deixou **18 pares** para duas anotações humanas. Ambas foram entregues e o consenso final passou por validação integral. O gold humano contém 5 `STANCE_MAINTAINED`, 11 `INCOMPARABLE`, 2 `RELATION_UNCERTAIN` e 0 `STANCE_REVERSED`. Há **GO limitado para estudar o comparability gate**, mas a amostra é pequena demais para uma avaliação final e não permite alegar detecção de reversão. Veja `docs/semantic_consensus_analysis.md`.
+
+## Expansão do corpus
+
+Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. O template de revisão humana de proveniência está pronto; a preparação dos pacotes de anotação semântica aguarda essa revisão. Veja `docs/dataset_expansion.md`.

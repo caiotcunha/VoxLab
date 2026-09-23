@@ -1,0 +1,67 @@
+{
+  "pair_count": 18,
+  "determinability": {
+    "n": 36,
+    "raw_agreement": 0.9444,
+    "cohens_kappa": 0.0,
+    "annotator_1_counts": {
+      "NO": 2,
+      "YES": 34
+    },
+    "annotator_2_counts": {
+      "YES": 36
+    },
+    "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+  },
+  "same_proposition": {
+    "n": 16,
+    "raw_agreement": 0.8125,
+    "cohens_kappa": 0.6279,
+    "annotator_1_counts": {
+      "NO": 9,
+      "YES": 7
+    },
+    "annotator_2_counts": {
+      "NO": 11,
+      "UNCERTAIN": 1,
+      "YES": 4
+    },
+    "prevalence_warning": "SINGLETON_CLASS"
+  },
+  "stance": {
+    "n": 34,
+    "raw_agreement": 0.9412,
+    "cohens_kappa": 0.8201,
+    "annotator_1_counts": {
+      "AGAINST": 7,
+      "FAVOR": 27
+    },
+    "annotator_2_counts": {
+      "AGAINST": 7,
+      "FAVOR": 27
+    },
+    "prevalence_warning": ""
+  },
+  "derived_relation": {
+    "n": 18,
+    "raw_agreement": 0.7222,
+    "cohens_kappa": 0.5028,
+    "annotator_1_counts": {
+      "INCOMPARABLE": 9,
+      "INSUFFICIENT_EVIDENCE": 2,
+      "STANCE_MAINTAINED": 7
+    },
+    "annotator_2_counts": {
+      "INCOMPARABLE": 12,
+      "RELATION_UNCERTAIN": 1,
+      "STANCE_MAINTAINED": 5
+    },
+    "prevalence_warning": "SINGLETON_CLASS"
+  },
+  "proposition_text": "Preserved in both CSVs for manual adjudication; no string kappa or automatic equivalence.",
+  "input_sha256": {
+    "semantic_pilot_annotator_1.csv": "4d6fc454634a96df9745e0e8cdfd53880e61b603add4133b329c79313a675cd8",
+    "semantic_pilot_annotator_2.csv": "52577186d0a6b50c9d512aee292f691e0a6a5ab72aa034d8f9791c5957b5938f",
+    "semantic_pilot_reference.csv": "2b3f1612d2a642b0a54dd1b2e952221b0e662cae3d065fa3d1b7781d6527697d"
+  }
+}

@@ -61,7 +61,7 @@ As sementes fixas são **4311** para anotador 1 e **9877** para anotador 2. A or
 
 Não há coluna de relação final para o anotador. O script de concordância reconstrói os lados cronológicos antes de comparar os CSVs e calcula, **somente após ambos completos**, concordância bruta, Kappa de Cohen, distribuição de classes e alertas de prevalência para: determinabilidade, comparabilidade, stance e relação derivada. Comparabilidade é medida onde ambos os anotadores consideraram os dois lados determináveis; stance, onde ambos consideraram o lado determinável. Isso evita tratar resposta não aplicável como classe. `target_proposition` permanece texto livre para comparação manual posterior; não há Kappa de strings nem equivalência por embedding.
 
-Neste momento, `PYTHONPATH=src python3 -m voxlab.agreement` retorna apenas `PENDING`: **nenhuma métrica humana foi produzida**. A interpretação futura deve considerar a pequena amostra, classes raras e os casos de discordância, em vez de usar Kappa isoladamente. Não há decisão de construir comparability gate nesta etapa.
+**Atualização de 2026-09-23:** as duas pessoas preencheram as planilhas, o consenso foi validado e o gold do piloto foi gerado. Os resultados finais e a decisão científica estão em `docs/semantic_consensus_analysis.md`. Esta seção preserva o desenho anterior ao recebimento das respostas.
 
 ## Reprodução e proteção das respostas
 
@@ -72,4 +72,4 @@ PYTHONPATH=src python3 -m voxlab.semantic_pilot
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
-O gerador lê o segundo julgamento já registrado, compara as revisões e monta as planilhas. Se um arquivo de anotação existente diferir do pacote vazio esperado, ele interrompe a execução para preservar respostas humanas. A [guideline](annotation_guideline.md) traz as instruções operacionais e os casos especiais para os dois anotadores.
+O gerador lê o segundo julgamento já registrado, compara as revisões e monta as planilhas. **Não execute o gerador após o preenchimento humano:** ele interrompe a execução ao encontrar respostas para preservá-las. Para analisar as planilhas preenchidas, use `PYTHONPATH=src python3 -m voxlab.agreement`. A [guideline](annotation_guideline.md) registra as instruções e os casos especiais usados pelos anotadores.

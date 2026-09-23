@@ -1,8 +1,16 @@
 import unittest
+from pathlib import Path
+from tempfile import TemporaryDirectory
 
 from voxlab.agreement import (analyze, canonical_answers, categorical_agreement,
-                              derive_relation, validate_response)
-from voxlab.semantic_pilot import RESPONSE_FIELDS
+                              check_packet_integrity, compare_pair_rows,
+                              derive_relation, read_annotation_csv,
+                              validate_response, write_adjudication_queue)
+from voxlab.audit import write_csv
+from voxlab.semantic_pilot import DISPLAY_FIELDS, RESPONSE_FIELDS, read_csv
+
+
+ROOT = Path(__file__).resolve().parents[1]
 
 
 def complete_row(pair_id: str, side_a: str = "FAVOR", side_b: str = "FAVOR") -> dict:
@@ -59,6 +67,50 @@ class RelationTests(unittest.TestCase):
         result = categorical_agreement(["YES", "YES"], ["YES", "YES"])
         self.assertIsNone(result["cohens_kappa"])
         self.assertIn("KAPPA_UNDEFINED", result["prevalence_warning"])
+
+    def test_windows_1252_semicolon_csv_is_read_without_rewriting(self):
+        with TemporaryDirectory() as folder:
+            file = Path(folder) / "annotator.csv"
+            header = ";".join(DISPLAY_FIELDS + RESPONSE_FIELDS)
+            values = ["p"] + [""] * (len(DISPLAY_FIELDS + RESPONSE_FIELDS) - 1)
+            values[(DISPLAY_FIELDS + RESPONSE_FIELDS).index("annotation_notes_a")] = "ação"
+            file.write_bytes((header + "\n" + ";".join(values) + "\n").encode("cp1252"))
+            self.assertEqual(read_annotation_csv(file)[0]["annotation_notes_a"], "ação")
+
+    def test_filled_packets_match_original_text_after_presentation_normalization(self):
+        folder = ROOT / "data/annotations"
+        packets = {number: read_annotation_csv(folder / f"semantic_pilot_annotator_{number}.csv") for number in (1, 2)}
+        reference = read_csv(folder / "semantic_pilot_reference.csv")
+        check_packet_integrity(ROOT, packets, reference)
+        changed = {number: [dict(row) for row in rows] for number, rows in packets.items()}
+        changed[1][0]["text_a"] = "Alterado"
+        with self.assertRaises(ValueError):
+            check_packet_integrity(ROOT, changed, reference)
+
+    def test_pair_comparison_keeps_target_propositions_for_adjudication(self):
+        a = complete_row("p", "FAVOR", "AGAINST")
+        b = complete_row("p", "AGAINST", "FAVOR")
+        ref = [{"pair_id": "p", "actor_name": "Pessoa", "event_date_a": "2024-01-01",
+                "event_date_b": "2024-02-01", "event_type_code_a": "PUBLIC_HEARING",
+                "event_type_code_b": "PUBLIC_HEARING", "evidence_a": "A", "evidence_b": "B",
+                "annotator_1_display_a_source_side": "a", "annotator_2_display_a_source_side": "b"}]
+        row = compare_pair_rows([a], [b], ref)[0]
+        self.assertEqual(row["target_proposition_1_a"], a["target_proposition_a"])
+        self.assertEqual(row["target_proposition_2_a"], b["target_proposition_b"])
+        self.assertEqual(row["derived_relation_disagreement"], "false")
+
+    def test_adjudication_queue_does_not_overwrite_human_decision(self):
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "queue.csv"
+            comparison = [{"pair_id": "p", "adjudication_reasons": "FREE_TEXT_PROPOSITION_REVIEW"}]
+            write_adjudication_queue(path, comparison)
+            rows = read_csv(path)
+            rows[0]["adjudication_status"] = "RESOLVED"
+            write_csv(path, rows, list(rows[0]))
+            write_adjudication_queue(path, comparison)
+            self.assertEqual(read_csv(path)[0]["adjudication_status"], "RESOLVED")
+            with self.assertRaises(FileExistsError):
+                write_adjudication_queue(path, [{"pair_id": "p", "adjudication_reasons": "CHANGED"}])
 
 
 if __name__ == "__main__":
