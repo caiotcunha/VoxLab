@@ -1,6 +1,6 @@
 # VoxLab: viabilidade de análise longitudinal de postura
 
-Pergunta desta etapa: o PublicHearingBR contém recorrência do mesmo ator em audiências relacionadas suficiente para justificar uma investigação sobre manutenção e reversão de postura? A hipótese futura é que verificar a comparabilidade de duas proposições antes de comparar polaridades reduz falsas reversões. **O gate e sua avaliação ainda não foram implementados.**
+Pergunta desta etapa: o PublicHearingBR contém recorrência do mesmo ator em audiências relacionadas suficiente para justificar uma investigação sobre manutenção e reversão de postura? A hipótese é que verificar a comparabilidade de duas proposições antes de comparar polaridades reduz falsas reversões. O gate automático ainda não foi implementado; o protocolo, os baselines determinísticos e a ablação sem gate já estão reproduzíveis.
 
 ## Estado dos dados e ressalvas
 
@@ -17,6 +17,8 @@ PYTHONPATH=src python3 -m voxlab.audit
 PYTHONPATH=src python3 -m voxlab.provenance
 PYTHONPATH=src python3 -m voxlab.agreement
 PYTHONPATH=src python3 -m voxlab.consensus
+PYTHONPATH=src python3 -m voxlab.expansion
+PYTHONPATH=src python3 -m voxlab.comparability_baselines
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
 
@@ -48,7 +50,11 @@ Os parâmetros `--threshold` (padrão 0.10), `--top-k` (5 pares de audiência po
 - `src/voxlab/consensus.py` e `docs/semantic_consensus_analysis.md`: validação, geração do gold e decisão científica.
 - `src/voxlab/expansion.py` e `docs/dataset_expansion.md`: expansão do corpus, funil de candidatos e template de revisão de proveniência para a segunda rodada.
 - `data/processed/expansion_candidate_pairs.csv` e `expansion_funnel.json`: 34 pares elegíveis (de 40 disponíveis após excluir o gold) com estratificação por similaridade e gap temporal.
-- `data/annotations/expansion_provenance_review.csv`: template com campos em branco para revisão humana de proveniência dos 34 candidatos.
+- `data/annotations/expansion_provenance_review.csv`: template rastreável para revisão humana de proveniência dos 34 candidatos; inclui fonte, texto, offsets e metadados oficiais.
+- `data/processed/expansion_provenance_readiness.csv` e `.json`: validação de offsets, atribuição, eventos, cronologia e prontidão para a segunda anotação.
+- `data/processed/expansion_reusable_provenance.csv` e `expansion_speech_candidates.csv`: oito lados previamente validados e 300 candidatos literais para acelerar a revisão humana.
+- `src/voxlab/comparability_baselines.py` e `docs/comparability_experiment.md`: protocolo, métricas, baselines sem API e análise da ablação sem gate.
+- `data/processed/comparability_pilot_baselines.json`, `comparability_pilot_diagnostics.csv` e `semantic_pilot_gold_manifest.json`: resultados exploratórios, diagnóstico por par e congelamento do gold.
 - `datasetCaio.ipynb`, `nunes.ipynb` e `dashboard_polarizacao_completa.html`: exploração anterior preservada; o dashboard não representa o resultado longitudinal.
 
 O notebook antigo `nunes.ipynb` ainda requer `langchain-core`, `langchain-nvidia-ai-endpoints`, `pandas`, `tqdm`, `networkx` e `pyvis` para suas próprias células. Essas dependências **não** fazem parte da nova auditoria nem são executadas por ela. `NVIDIA_API_KEY` deve ser fornecida pelo ambiente para executar as células antigas. Não é necessária para reproduzir esta etapa.
@@ -59,4 +65,8 @@ No LDS, 102 de 878 nomes normalizados aparecem em dois ou mais registros. Existe
 
 ## Expansão do corpus
 
-Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. O template de revisão humana de proveniência está pronto; a preparação dos pacotes de anotação semântica aguarda essa revisão. Veja `docs/dataset_expansion.md`.
+Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. O template rastreável e seu validador estão prontos; os 34 pares permanecem `UNRESOLVED` até a revisão documental humana. Veja `docs/dataset_expansion.md`.
+
+## Baselines exploratórios
+
+Nos 16 pares com decisão binária, o corte de recuperação TF-IDF ≥0,10 classifica todos como comparáveis: recupera os 5 positivos, mas produz 11 falsos positivos. Sem o gate, a comparação direta das stances humanas emitiria relação para os 18 pares, incluindo 13 relações indevidas e 2 falsas reversões. Esses resultados são de desenvolvimento, não de teste final. Veja `docs/comparability_experiment.md`.

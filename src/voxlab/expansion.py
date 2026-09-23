@@ -18,10 +18,13 @@ import json
 import math
 from pathlib import Path
 
-from .audit import write_csv
+from .audit import read_jsonl, write_csv
+from .provenance import (containing_turn, parse_turns, read_official_events,
+                         speaker_matches_actor, speech_candidates)
 from .semantic_pilot import read_csv
 
 DEFAULT_ACTOR_CAP = 2
+MIN_VALIDATED_EXPANSION_PAIRS = 20
 
 EXPANSION_CANDIDATE_FIELDS = [
     "pair_id", "actor_id", "actor_name",
@@ -36,14 +39,37 @@ EXPANSION_CANDIDATE_FIELDS = [
     "eligible_for_expansion", "exclusion_reason",
 ]
 
-PROVENANCE_REVIEW_FIELDS = EXPANSION_CANDIDATE_FIELDS + [
-    "same_actor_verified", "actor_identity_basis",
-    "event_id_earlier", "event_id_later",
-    "event_date_earlier", "event_date_later",
-    "event_verified_earlier", "event_verified_later",
-    "speech_verified_earlier", "speech_verified_later",
-    "evidence_verified_earlier", "evidence_verified_later",
-    "validation_status", "review_notes",
+SOURCE_TRACE_FIELDS = [
+    f"{field}_{side}"
+    for side in ("earlier", "later")
+    for field in ("source_record_id", "source_actor_index", "source_opinion_index", "source_summary")
+]
+SIDE_REVIEW_FIELDS = [
+    f"{field}_{side}"
+    for side in ("earlier", "later")
+    for field in (
+        "event_id", "event_source", "event_type", "event_description", "event_start", "event_date",
+        "event_verified", "date_verified", "actor_marker_name", "actor_marker_verified",
+        "speech_text", "speech_start", "speech_end", "turn_attribution_verified",
+        "evidence_text", "evidence_start", "evidence_end", "summary_support_reviewed",
+        "speech_verified", "evidence_verified", "side_review_notes",
+    )
+]
+PAIR_REVIEW_FIELDS = [
+    "same_actor_verified", "actor_identity_basis", "validation_status", "reviewer", "review_notes",
+]
+HUMAN_REVIEW_FIELDS = SIDE_REVIEW_FIELDS + PAIR_REVIEW_FIELDS
+PROVENANCE_REVIEW_FIELDS = EXPANSION_CANDIDATE_FIELDS + SOURCE_TRACE_FIELDS + HUMAN_REVIEW_FIELDS
+READINESS_FIELDS = [
+    "pair_id", "derived_validation_status", "integrity_status", "issues",
+    "distinct_events_verified", "temporal_order_verified", "input_sides_swapped",
+]
+REUSABLE_PROVENANCE_FIELDS = [
+    "pair_id", "side", "source_record_id", "source_actor_index", "source_opinion_index",
+    "prior_pair_id", "prior_side", "reuse_status", "event_id", "event_source", "event_type",
+    "event_description", "event_start", "event_date", "actor_marker_name",
+    "speech_text", "speech_start", "speech_end", "evidence_text", "evidence_start", "evidence_end",
+    "summary_support_reviewed", "review_note",
 ]
 
 
@@ -276,22 +302,254 @@ def pilot_sanity_check(gold_ids: frozenset[str], candidates: list[dict]) -> list
     return results
 
 
-def build_provenance_template(expansion_rows: list[dict]) -> list[dict]:
-    """Return blank provenance review rows for eligible pairs only."""
-    blank = {f: "" for f in [
-        "same_actor_verified", "actor_identity_basis",
-        "event_id_earlier", "event_id_later",
-        "event_date_earlier", "event_date_later",
-        "event_verified_earlier", "event_verified_later",
-        "speech_verified_earlier", "speech_verified_later",
-        "evidence_verified_earlier", "evidence_verified_later",
-        "validation_status", "review_notes",
-    ]}
-    return [
-        {**{field: row.get(field, "") for field in EXPANSION_CANDIDATE_FIELDS}, **blank}
-        for row in expansion_rows
-        if row["eligible_for_expansion"] == "true"
-    ]
+def build_provenance_template(
+    expansion_rows: list[dict], source_candidates: list[dict] | None = None
+) -> list[dict]:
+    """Return source-traceable review rows, leaving every human decision blank."""
+    source_by_id = {row["pair_id"]: row for row in (source_candidates or [])}
+    output = []
+    for row in expansion_rows:
+        if row["eligible_for_expansion"] != "true":
+            continue
+        source = source_by_id.get(row["pair_id"], {})
+        trace = {}
+        for review_side, candidate_side in (("earlier", "a"), ("later", "b")):
+            trace.update({
+                f"source_record_id_{review_side}": source.get(f"hearing_id_{candidate_side}", ""),
+                f"source_actor_index_{review_side}": source.get(f"source_actor_index_{candidate_side}", ""),
+                f"source_opinion_index_{review_side}": source.get(f"source_opinion_index_{candidate_side}", ""),
+                f"source_summary_{review_side}": source.get(f"text_{candidate_side}", ""),
+            })
+        output.append({
+            **{field: row.get(field, "") for field in EXPANSION_CANDIDATE_FIELDS},
+            **trace,
+            **{field: "" for field in HUMAN_REVIEW_FIELDS},
+        })
+    return output
+
+
+def write_review_template_if_safe(path: Path, rows: list[dict]) -> None:
+    """Upgrade a blank template, but never overwrite any human review value."""
+    if path.exists():
+        prior = read_csv(path)
+        if any(row.get(field, "").strip() for row in prior for field in HUMAN_REVIEW_FIELDS):
+            raise FileExistsError(f"Human provenance review already started; refusing to overwrite {path}")
+    write_csv(path, rows, PROVENANCE_REVIEW_FIELDS)
+
+
+def _derive_review_status(row: dict, integrity_ok: bool) -> str:
+    required = [row.get("same_actor_verified", "")]
+    for side in ("earlier", "later"):
+        required.extend(row.get(f"{field}_{side}", "") for field in (
+            "event_verified", "date_verified", "actor_marker_verified",
+            "turn_attribution_verified", "summary_support_reviewed",
+            "speech_verified", "evidence_verified",
+        ))
+    if any(value == "false" for value in required):
+        return "INVALID"
+    if integrity_ok and required and all(value == "true" for value in required):
+        return "VALIDATED"
+    if any(value == "true" for value in required):
+        return "PARTIALLY_VALIDATED"
+    return "UNRESOLVED"
+
+
+def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list[dict]]:
+    """Validate documentary claims, literal offsets and readiness for semantic annotation."""
+    candidates = {row["pair_id"]: row for row in read_csv(root / "data" / "processed" / "candidate_pairs.csv")}
+    expected = {row["pair_id"] for row in read_csv(root / "data" / "processed" / "expansion_candidate_pairs.csv")
+                if row["eligible_for_expansion"] == "true"}
+    ids = [row["pair_id"] for row in rows]
+    if len(ids) != len(set(ids)) or set(ids) != expected:
+        raise ValueError("Expansion review must contain each eligible pair exactly once")
+    raw = {str(row["id"]): row for row in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
+    official = read_official_events(root)
+    allowed_tri = {"", "true", "false", "unknown"}
+    readiness = []
+    for row in rows:
+        pair_id = row["pair_id"]
+        source = candidates[pair_id]
+        issues = []
+        for field in HUMAN_REVIEW_FIELDS:
+            if (field.startswith(("event_verified_", "date_verified_", "actor_marker_verified_",
+                                  "turn_attribution_verified_", "summary_support_reviewed_",
+                                  "speech_verified_", "evidence_verified_")) or field == "same_actor_verified"):
+                if row.get(field, "") not in allowed_tri:
+                    issues.append(f"INVALID_TRI_VALUE:{field}")
+        for review_side, candidate_side in (("earlier", "a"), ("later", "b")):
+            expected_trace = {
+                f"source_record_id_{review_side}": source[f"hearing_id_{candidate_side}"],
+                f"source_actor_index_{review_side}": source[f"source_actor_index_{candidate_side}"],
+                f"source_opinion_index_{review_side}": source[f"source_opinion_index_{candidate_side}"],
+                f"source_summary_{review_side}": source[f"text_{candidate_side}"],
+            }
+            for field, expected_value in expected_trace.items():
+                if row.get(field, "") != expected_value:
+                    issues.append(f"SOURCE_TRACE_MISMATCH:{field}")
+
+            record_id = expected_trace[f"source_record_id_{review_side}"]
+            transcript = raw[record_id]["transcricao"]
+            event_id = row.get(f"event_id_{review_side}", "")
+            if row.get(f"event_verified_{review_side}") == "true":
+                event = official.get(event_id)
+                if not event:
+                    issues.append(f"OFFICIAL_EVENT_NOT_FOUND:{review_side}")
+                else:
+                    official_values = {
+                        f"event_source_{review_side}": event.get("uri", ""),
+                        f"event_type_{review_side}": event.get("descricaoTipo", ""),
+                        f"event_description_{review_side}": event.get("descricao", ""),
+                        f"event_start_{review_side}": event.get("dataHoraInicio", ""),
+                        f"event_date_{review_side}": event.get("dataHoraInicio", "")[:10],
+                    }
+                    for field, expected_value in official_values.items():
+                        if not row.get(field, "") or row[field] != expected_value:
+                            issues.append(f"OFFICIAL_EVENT_METADATA_MISMATCH:{field}")
+
+            speech = row.get(f"speech_text_{review_side}", "")
+            evidence = row.get(f"evidence_text_{review_side}", "")
+            speech_start, speech_end = row.get(f"speech_start_{review_side}", ""), row.get(f"speech_end_{review_side}", "")
+            evidence_start, evidence_end = row.get(f"evidence_start_{review_side}", ""), row.get(f"evidence_end_{review_side}", "")
+            if row.get(f"speech_verified_{review_side}") == "true" or row.get(f"evidence_verified_{review_side}") == "true":
+                try:
+                    ss, se, es, ee = map(int, (speech_start, speech_end, evidence_start, evidence_end))
+                except (TypeError, ValueError):
+                    issues.append(f"INVALID_OR_MISSING_OFFSETS:{review_side}")
+                else:
+                    if not (0 <= ss <= es < ee <= se <= len(transcript)):
+                        issues.append(f"INVALID_NESTED_SPANS:{review_side}")
+                    else:
+                        if transcript[ss:se] != speech:
+                            issues.append(f"SPEECH_TEXT_OFFSET_MISMATCH:{review_side}")
+                        if transcript[es:ee] != evidence:
+                            issues.append(f"EVIDENCE_TEXT_OFFSET_MISMATCH:{review_side}")
+                        turn = containing_turn(parse_turns(transcript), es, ee)
+                        if (not turn or turn.text_start != ss or turn.text_end != se or
+                                not speaker_matches_actor(turn.speaker_name, row["actor_name"])):
+                            issues.append(f"SPEAKER_TURN_MISMATCH:{review_side}")
+                        elif (row.get(f"actor_marker_verified_{review_side}") == "true" and
+                              row.get(f"actor_marker_name_{review_side}", "") != turn.speaker_name):
+                            issues.append(f"ACTOR_MARKER_NAME_MISMATCH:{review_side}")
+
+        event_ids = [row.get(f"event_id_{side}", "") for side in ("earlier", "later")]
+        event_starts = [row.get(f"event_start_{side}", "") for side in ("earlier", "later")]
+        distinct = "true" if all(event_ids) and event_ids[0] != event_ids[1] else "false" if all(event_ids) else "unknown"
+        if all(event_starts):
+            temporal = "true" if event_starts[0] != event_starts[1] else "false"
+            input_sides_swapped = "true" if event_starts[0] > event_starts[1] else "false"
+        else:
+            temporal, input_sides_swapped = "unknown", "unknown"
+        if distinct == "false":
+            issues.append("SAME_OFFICIAL_EVENT")
+        if temporal == "false":
+            issues.append("NON_CHRONOLOGICAL_EVENT_DATES")
+        core_review = [row.get("same_actor_verified", "")]
+        for side in ("earlier", "later"):
+            core_review.extend(row.get(f"{field}_{side}", "") for field in (
+                "event_verified", "date_verified", "actor_marker_verified", "turn_attribution_verified",
+                "summary_support_reviewed", "speech_verified", "evidence_verified",
+            ))
+        if row.get("same_actor_verified") == "true" and not row.get("actor_identity_basis", "").strip():
+            issues.append("MISSING_ACTOR_IDENTITY_BASIS")
+        if core_review and all(value == "true" for value in core_review) and not row.get("reviewer", "").strip():
+            issues.append("MISSING_REVIEWER")
+        integrity_ok = not issues and distinct == temporal == "true"
+        derived = _derive_review_status(row, integrity_ok)
+        if row.get("validation_status", "") and row["validation_status"] != derived:
+            issues.append("DECLARED_STATUS_DIFFERS_FROM_DERIVED_STATUS")
+            integrity_ok = False
+        readiness.append({
+            "pair_id": pair_id,
+            "derived_validation_status": derived,
+            "integrity_status": "PASS" if integrity_ok else "PENDING" if not issues else "FAIL",
+            "issues": "|".join(issues),
+            "distinct_events_verified": distinct,
+            "temporal_order_verified": temporal,
+            "input_sides_swapped": input_sides_swapped,
+        })
+
+    counts = collections.Counter(row["derived_validation_status"] for row in readiness)
+    validated = counts["VALIDATED"]
+    final_decisions_complete = validated + counts["INVALID"] == len(rows)
+    decision = (
+        "READY_FOR_EXPANSION_ANNOTATION"
+        if final_decisions_complete and validated >= MIN_VALIDATED_EXPANSION_PAIRS
+        else "INSUFFICIENT_EXPANSION_CANDIDATES"
+        if final_decisions_complete
+        else "PROVENANCE_REVIEW_REQUIRED"
+    )
+    report = {
+        "expected_pairs": len(expected),
+        "review_rows": len(rows),
+        "derived_status_distribution": dict(sorted(counts.items())),
+        "integrity_failures": sum(row["integrity_status"] == "FAIL" for row in readiness),
+        "minimum_validated_pairs_for_annotation_round": MIN_VALIDATED_EXPANSION_PAIRS,
+        "decision": decision,
+        "semantic_packets_generated": False,
+    }
+    return report, readiness
+
+
+def find_reusable_provenance(root: Path, review_rows: list[dict]) -> list[dict]:
+    """Expose exact manifestations already validated in the first pilot for reviewer reuse."""
+    prior = read_csv(root / "data" / "annotations" / "pilot_pairs_validated.csv")
+    lookup = {}
+    for row in prior:
+        if row["validation_status"] != "VALIDATED":
+            continue
+        for side in "ab":
+            if row[f"speech_verified_{side}"] != "true" or row[f"evidence_verified_{side}"] != "true":
+                continue
+            key = (row[f"source_record_id_{side}"], row[f"source_actor_index_{side}"],
+                   row[f"source_opinion_index_{side}"])
+            lookup[key] = (row, side)
+    output = []
+    for review in review_rows:
+        for side in ("earlier", "later"):
+            key = (review[f"source_record_id_{side}"], review[f"source_actor_index_{side}"],
+                   review[f"source_opinion_index_{side}"])
+            if key not in lookup:
+                continue
+            source, prior_side = lookup[key]
+            output.append({
+                "pair_id": review["pair_id"], "side": side,
+                "source_record_id": key[0], "source_actor_index": key[1], "source_opinion_index": key[2],
+                "prior_pair_id": source["pair_id"], "prior_side": prior_side,
+                "reuse_status": "EXACT_MANIFESTATION_PREVIOUSLY_VALIDATED",
+                "event_id": source[f"event_id_{prior_side}"],
+                "event_source": source[f"event_source_{prior_side}"],
+                "event_type": source[f"event_type_{prior_side}"],
+                "event_description": source[f"event_description_{prior_side}"],
+                "event_start": source[f"event_start_{prior_side}"],
+                "event_date": source[f"event_date_{prior_side}"],
+                "actor_marker_name": source[f"actor_marker_name_{prior_side}"],
+                "speech_text": source[f"speech_text_{prior_side}"],
+                "speech_start": source[f"speech_start_{prior_side}"],
+                "speech_end": source[f"speech_end_{prior_side}"],
+                "evidence_text": source[f"evidence_{prior_side}"],
+                "evidence_start": source[f"evidence_start_{prior_side}"],
+                "evidence_end": source[f"evidence_end_{prior_side}"],
+                "summary_support_reviewed": source[f"summary_support_reviewed_{prior_side}"],
+                "review_note": source[f"review_note_{prior_side}"],
+            })
+    return output
+
+
+def expansion_speech_candidates(root: Path, review_rows: list[dict]) -> list[dict]:
+    """Rank literal sentences in named turns as review aids, never as verified evidence."""
+    raw = {str(row["id"]): row for row in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
+    output = []
+    for row in review_rows:
+        for side in ("earlier", "later"):
+            record_id = row[f"source_record_id_{side}"]
+            pseudo = {
+                "pair_id": row["pair_id"],
+                f"actor_name_{side}": row["actor_name"],
+                f"summary_{side}": row[f"source_summary_{side}"],
+                f"source_record_id_{side}": record_id,
+            }
+            output.extend(speech_candidates(pseudo, side, raw[record_id]["transcricao"]))
+    return output
 
 
 def main() -> None:
@@ -332,10 +590,31 @@ def main() -> None:
         json.dumps(funnel, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
     )
 
-    template = build_provenance_template(expansion_rows)
-    write_csv(out_annotations / "expansion_provenance_review.csv", template, PROVENANCE_REVIEW_FIELDS)
+    template = build_provenance_template(expansion_rows, candidates)
+    review_path = out_annotations / "expansion_provenance_review.csv"
+    try:
+        write_review_template_if_safe(review_path, template)
+    except FileExistsError:
+        # Preserve submitted human values and continue into validation.
+        pass
+    review_rows = read_csv(review_path)
+    review_report, readiness = validate_provenance_review(root, review_rows)
+    reusable = find_reusable_provenance(root, review_rows)
+    speech_review_aids = expansion_speech_candidates(root, review_rows)
+    review_report["previously_validated_manifestation_sides_available_for_reuse"] = len(reusable)
+    review_report["pairs_with_reusable_provenance"] = len({row["pair_id"] for row in reusable})
+    review_report["ranked_speech_candidates_for_manual_review"] = len(speech_review_aids)
+    write_csv(out_processed / "expansion_provenance_readiness.csv", readiness, READINESS_FIELDS)
+    write_csv(out_processed / "expansion_reusable_provenance.csv", reusable, REUSABLE_PROVENANCE_FIELDS)
+    if speech_review_aids:
+        write_csv(out_processed / "expansion_speech_candidates.csv", speech_review_aids, list(speech_review_aids[0]))
+    (out_processed / "expansion_provenance_readiness.json").write_text(
+        json.dumps(review_report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8"
+    )
 
     print(json.dumps(funnel, ensure_ascii=False, indent=2))
+    print("\nProvenance review readiness:")
+    print(json.dumps(review_report, ensure_ascii=False, indent=2))
     print(f"\nPilot sanity check ({len(sanity)} gold pairs):")
     for r in sanity:
         print(f"  {r['pair_id']} tfidf={r['tfidf_similarity']} retrieved@0.10={r['retrieved_at_threshold_0_10']}")

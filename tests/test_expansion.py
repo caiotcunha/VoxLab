@@ -1,7 +1,4 @@
 import collections
-import csv
-import io
-import json
 import unittest
 from pathlib import Path
 from tempfile import TemporaryDirectory
@@ -9,16 +6,23 @@ from tempfile import TemporaryDirectory
 from voxlab.expansion import (
     DEFAULT_ACTOR_CAP,
     EXPANSION_CANDIDATE_FIELDS,
+    HUMAN_REVIEW_FIELDS,
     PROVENANCE_REVIEW_FIELDS,
     apply_actor_cap,
     assign_similarity_strata,
     assign_temporal_stratum,
     build_expansion_rows,
     build_provenance_template,
+    expansion_speech_candidates,
+    find_reusable_provenance,
     is_pilot_excluded,
     load_gold_exclusions,
     pilot_sanity_check,
+    validate_provenance_review,
+    write_review_template_if_safe,
 )
+from voxlab.audit import write_csv
+from voxlab.semantic_pilot import read_csv
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -57,9 +61,7 @@ class GoldExclusionTests(unittest.TestCase):
 
     def test_no_gold_pair_id_in_expansion(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         eligible = [r for r in rows if r["eligible_for_expansion"] == "true"]
         eligible_ids = {r["pair_id"] for r in eligible}
@@ -88,9 +90,7 @@ class GoldExclusionTests(unittest.TestCase):
 
     def test_pilot_excluded_flag_is_true_for_gold_ids(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         by_id = {r["pair_id"]: r for r in rows}
         for gid in GOLD_IDS:
@@ -137,9 +137,7 @@ class StratificationTests(unittest.TestCase):
 
     def test_similarity_strata_cover_all_eligible(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, funnel = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         eligible = [r for r in rows if r["pilot_excluded"] == "false"]
         missing_stratum = [r["pair_id"] for r in eligible if not r.get("similarity_stratum")]
@@ -158,9 +156,7 @@ class ActorCapTests(unittest.TestCase):
 
     def test_actor_cap_respected_or_documented(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, funnel = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         eligible = [r for r in rows if r["eligible_for_expansion"] == "true"]
         actor_counts = collections.Counter(r["actor_id"] for r in eligible)
@@ -182,9 +178,7 @@ class ActorCapTests(unittest.TestCase):
 
     def test_capped_pairs_not_in_eligible(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         capped = [r for r in rows if r["exclusion_reason"] == "actor_cap_exceeded"]
         for r in capped:
@@ -232,9 +226,7 @@ class ProvenanceTemplateTests(unittest.TestCase):
             "validation_status", "review_notes",
         ]
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         template = build_provenance_template(rows)
         self.assertTrue(len(template) > 0, "Template should have at least one row")
@@ -245,9 +237,7 @@ class ProvenanceTemplateTests(unittest.TestCase):
 
     def test_template_contains_only_eligible_pairs(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         template = build_provenance_template(rows)
         template_ids = {r["pair_id"] for r in template}
@@ -258,14 +248,64 @@ class ProvenanceTemplateTests(unittest.TestCase):
             if row["exclusion_reason"] == "actor_cap_exceeded":
                 self.assertNotIn(row["pair_id"], template_ids)
 
+    def test_template_source_trace_reconstructs_candidate_summary(self):
+        gold_ids, gold_canonical = load_gold_exclusions(ROOT)
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
+        rows, _ = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
+        template = build_provenance_template(rows, candidates)
+        source = {row["pair_id"]: row for row in candidates}
+        for row in template:
+            candidate = source[row["pair_id"]]
+            self.assertEqual(row["source_record_id_earlier"], candidate["hearing_id_a"])
+            self.assertEqual(row["source_actor_index_earlier"], candidate["source_actor_index_a"])
+            self.assertEqual(row["source_opinion_index_earlier"], candidate["source_opinion_index_a"])
+            self.assertEqual(row["source_summary_earlier"], candidate["text_a"])
+            self.assertTrue(all(row[field] == "" for field in HUMAN_REVIEW_FIELDS))
+
+    def test_blank_review_is_reported_as_unresolved(self):
+        report, rows = validate_provenance_review(
+            ROOT, read_csv(ROOT / "data/annotations/expansion_provenance_review.csv")
+        )
+        self.assertEqual(report["decision"], "PROVENANCE_REVIEW_REQUIRED")
+        self.assertEqual(report["derived_status_distribution"], {"UNRESOLVED": 34})
+        self.assertEqual(report["integrity_failures"], 0)
+        self.assertTrue(all(row["integrity_status"] == "PENDING" for row in rows))
+
+    def test_template_writer_refuses_to_overwrite_human_review(self):
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "review.csv"
+            row = {field: "" for field in PROVENANCE_REVIEW_FIELDS}
+            row["pair_id"] = "p"
+            write_review_template_if_safe(path, [row])
+            saved = read_csv(path)
+            saved[0]["same_actor_verified"] = "true"
+            write_csv(path, saved, PROVENANCE_REVIEW_FIELDS)
+            with self.assertRaises(FileExistsError):
+                write_review_template_if_safe(path, [row])
+
+    def test_prior_validated_manifestations_are_reused_only_by_exact_source_key(self):
+        review = read_csv(ROOT / "data/annotations/expansion_provenance_review.csv")
+        reusable = find_reusable_provenance(ROOT, review)
+        self.assertEqual(len(reusable), 8)
+        self.assertEqual(len({row["pair_id"] for row in reusable}), 7)
+        self.assertTrue(all(row["reuse_status"] == "EXACT_MANIFESTATION_PREVIOUSLY_VALIDATED"
+                            for row in reusable))
+        self.assertTrue(all(row["speech_text"] and row["evidence_text"] for row in reusable))
+
+    def test_speech_candidates_are_review_aids_with_literal_offsets(self):
+        review = read_csv(ROOT / "data/annotations/expansion_provenance_review.csv")
+        candidates = expansion_speech_candidates(ROOT, review)
+        self.assertTrue(candidates)
+        self.assertTrue(all(row["evidence_text"] and int(row["evidence_start"]) < int(row["evidence_end"])
+                            for row in candidates))
+        self.assertTrue(all("verified" not in key for row in candidates for key in row))
+
 
 class FunnelConsistencyTests(unittest.TestCase):
 
     def test_funnel_counts_are_consistent(self):
         gold_ids, gold_canonical = load_gold_exclusions(ROOT)
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         rows, funnel = build_expansion_rows(candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP)
         total = funnel["stage_1_total_candidates"]
         excluded = funnel["stage_2_gold_excluded"]
@@ -280,9 +320,7 @@ class PilotSanityCheckTests(unittest.TestCase):
 
     def test_all_gold_pairs_retrieved_at_threshold_0_10(self):
         """The TF-IDF retriever must recover all 18 gold pairs at threshold 0.10."""
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         result = pilot_sanity_check(frozenset(GOLD_IDS), candidates)
         not_retrieved = [r for r in result if r["retrieved_at_threshold_0_10"] != "true"]
         self.assertEqual(not_retrieved, [],
@@ -290,9 +328,7 @@ class PilotSanityCheckTests(unittest.TestCase):
 
     def test_sanity_check_does_not_use_derived_relation(self):
         """pilot_sanity_check output must not contain stance or relation fields."""
-        candidates = list(csv.DictReader(
-            (ROOT / "data" / "processed" / "candidate_pairs.csv").open(newline="", encoding="utf-8")
-        ))
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
         result = pilot_sanity_check(frozenset(GOLD_IDS), candidates)
         for row in result:
             self.assertNotIn("derived_relation", row)

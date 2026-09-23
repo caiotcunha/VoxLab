@@ -1,0 +1,168 @@
+{
+  "status": "EXPLORATORY_DEVELOPMENT_PILOT_NOT_HELD_OUT",
+  "input_sha256": {
+    "semantic_pilot_gold.csv": "29657ea3953ad620f38f7336ac6aa9b38fcb8d898b833fbffa19b2e7f0eda9a9",
+    "semantic_pilot_consensus.csv": "f22b73de7fe725a548ebcf3039855d9a8511ef31d331d7321373010d6be5270f",
+    "candidate_pairs.csv": "7bf23cb4f13927d0dd4beaca495b57419f61dcea462c014ebff0d60b9329a551"
+  },
+  "label_policy": {
+    "positive": "same_proposition=YES -> COMPARABLE",
+    "negative": "same_proposition=NO -> INCOMPARABLE",
+    "excluded_primary_binary_metrics": "same_proposition=UNCERTAIN",
+    "automatic_feature_fields": [
+      "topic_a",
+      "topic_b",
+      "evidence_a",
+      "evidence_b",
+      "text_a",
+      "text_b"
+    ],
+    "diagnostic_only_human_fields": [
+      "target_proposition_a",
+      "target_proposition_b",
+      "comparability_notes"
+    ]
+  },
+  "counts": {
+    "pilot_pairs": 18,
+    "binary_evaluated": 16,
+    "comparable": 5,
+    "incomparable": 11,
+    "uncertain_excluded": 2
+  },
+  "fixed_prediction_baselines": {
+    "always_incomparable": {
+      "n": 16,
+      "confusion": {
+        "tp": 0,
+        "tn": 11,
+        "fp": 0,
+        "fn": 5
+      },
+      "accuracy": 0.6875,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.4074,
+      "comparable_precision": 0.0,
+      "comparable_recall": 0.0,
+      "comparable_f1": 0.0,
+      "zero_division_policy": 0
+    },
+    "always_comparable_no_gate": {
+      "n": 16,
+      "confusion": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 11,
+        "fn": 0
+      },
+      "accuracy": 0.3125,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.2381,
+      "comparable_precision": 0.3125,
+      "comparable_recall": 1.0,
+      "comparable_f1": 0.4762,
+      "zero_division_policy": 0
+    },
+    "candidate_topic_tfidf_threshold_0_10": {
+      "n": 16,
+      "confusion": {
+        "tp": 5,
+        "tn": 0,
+        "fp": 11,
+        "fn": 0
+      },
+      "accuracy": 0.3125,
+      "balanced_accuracy": 0.5,
+      "macro_f1": 0.2381,
+      "comparable_precision": 0.3125,
+      "comparable_recall": 1.0,
+      "comparable_f1": 0.4762,
+      "zero_division_policy": 0,
+      "warning": "Candidate-retrieval cutoff, not a tuned comparability threshold."
+    }
+  },
+  "ranking_baselines_without_threshold_tuning": {
+    "candidate_topic_tfidf": {
+      "roc_auc": 0.9091,
+      "scores": {
+        "COMPARABLE": {
+          "n": 5,
+          "min": 0.210802,
+          "mean": 0.467168,
+          "max": 0.651838
+        },
+        "INCOMPARABLE": {
+          "n": 11,
+          "min": 0.104432,
+          "mean": 0.201,
+          "max": 0.389679
+        }
+      }
+    },
+    "evidence_tfidf": {
+      "roc_auc": 0.6364,
+      "scores": {
+        "COMPARABLE": {
+          "n": 5,
+          "min": 0.0,
+          "mean": 0.130104,
+          "max": 0.306974
+        },
+        "INCOMPARABLE": {
+          "n": 11,
+          "min": 0.0,
+          "mean": 0.076493,
+          "max": 0.328709
+        }
+      }
+    },
+    "speech_tfidf": {
+      "roc_auc": 0.8364,
+      "scores": {
+        "COMPARABLE": {
+          "n": 5,
+          "min": 0.17276,
+          "mean": 0.237454,
+          "max": 0.352728
+        },
+        "INCOMPARABLE": {
+          "n": 11,
+          "min": 0.073235,
+          "mean": 0.169685,
+          "max": 0.399113
+        }
+      }
+    },
+    "evidence_token_jaccard": {
+      "roc_auc": 0.6364,
+      "scores": {
+        "COMPARABLE": {
+          "n": 5,
+          "min": 0.0,
+          "mean": 0.0723,
+          "max": 0.192308
+        },
+        "INCOMPARABLE": {
+          "n": 11,
+          "min": 0.0,
+          "mean": 0.045203,
+          "max": 0.129032
+        }
+      }
+    }
+  },
+  "oracle_stance_without_comparability_gate_ablation": {
+    "description": "Uses adjudicated human stances, then compares polarity for every pair while ignoring same_proposition.",
+    "relations_issued": 18,
+    "invalid_relations_on_noncomparable_or_uncertain_pairs": 13,
+    "predicted_reversals": 2,
+    "false_reversals_on_noncomparable_or_uncertain_pairs": 2,
+    "true_reversals_in_gold": 0
+  },
+  "limitations": [
+    "The pilot was used to design the protocol and is not a held-out test set.",
+    "No threshold was optimized because in-sample tuning would be optimistic.",
+    "Two uncertain pairs are excluded from primary binary metrics and retained in diagnostics.",
+    "The pilot contains no true stance reversal, so reversal recall cannot be estimated."
+  ]
+}

@@ -127,20 +127,30 @@ PYTHONPATH=src python3 -m voxlab.expansion
 |---|---|
 | `data/processed/expansion_candidate_pairs.csv` | 58 linhas: 34 elegíveis, 6 excluídos pelo cap, 18 gold-excludidos |
 | `data/processed/expansion_funnel.json` | Funil completo com contagens e sanity check |
-| `data/annotations/expansion_provenance_review.csv` | Template para revisão humana dos 34 pares elegíveis; campos de revisão em branco |
+| `data/annotations/expansion_provenance_review.csv` | Template para revisão humana dos 34 pares, com IDs e índices da fonte, resumos LDS e campos documentais completos |
+| `data/processed/expansion_provenance_readiness.csv` | Diagnóstico por par, status derivado e problemas de integridade |
+| `data/processed/expansion_provenance_readiness.json` | Contagens e decisão de prontidão da segunda rodada |
+| `data/processed/expansion_reusable_provenance.csv` | Oito manifestações idênticas já validadas no primeiro piloto, presentes em sete pares novos |
+| `data/processed/expansion_speech_candidates.csv` | 300 sentenças literais ranqueadas em turnos nominais; auxilia revisão, sem status de evidência validada |
 
 ## 9. Próxima etapa (Fase B — aguarda humano)
 
-A revisão de proveniência em `expansion_provenance_review.csv` é uma etapa humana. Para cada um dos 34 pares elegíveis, um revisor deve:
+A revisão de proveniência em `expansion_provenance_review.csv` é uma etapa humana. As colunas `source_record_id_*`, `source_actor_index_*`, `source_opinion_index_*` e `source_summary_*` são preenchidas pelo pipeline e não devem ser alteradas. Para cada um dos 34 pares elegíveis, um revisor deve:
 
 1. Localizar os dois eventos nas fontes oficiais (CSVs da Câmara em `data/raw/official_events/`).
-2. Preencher `event_id_earlier`, `event_id_later`, `event_date_earlier`, `event_date_later`.
-3. Verificar se o ator aparece na transcrição de cada evento (`event_verified_*`).
-4. Localizar e extrair a fala literal atribuída ao ator (`speech_verified_*`, `evidence_verified_*`).
+2. Preencher os metadados oficiais `event_id/source/type/description/start/date_*` e confirmar `event_verified_*` e `date_verified_*`.
+3. Registrar o marcador nominal do ator e confirmar `actor_marker_verified_*` e `turn_attribution_verified_*`.
+4. Copiar a fala e a evidência literais para `speech_text_*` e `evidence_text_*`, com offsets absolutos de início e fim na transcrição. A evidência deve estar contida na fala.
 5. Confirmar identidade do ator entre as duas aparições (`same_actor_verified`, `actor_identity_basis`).
-6. Preencher `validation_status` como `VALIDATED`, `PARTIALLY_VALIDATED` ou `INVALID`.
+6. Julgar se a evidência sustenta o resumo LDS em `summary_support_reviewed_*`, registrar revisor e notas, e preencher `validation_status`.
+
+Ao executar `python3 -m voxlab.expansion`, o validador reconstrói fala e evidência pelos offsets, confere se o trecho pertence a um turno nominal do ator, valida IDs e datas nos CSVs oficiais e deriva um status independente. Se alguma resposta humana já tiver sido preenchida, o gerador preserva o arquivo existente e segue somente com a validação. No estado atual, os 34 pares estão `UNRESOLVED`, sem falha de integridade, e a decisão é `PROVENANCE_REVIEW_REQUIRED`.
+
+Antes de pesquisar um lado do zero, o revisor deve consultar `expansion_reusable_provenance.csv`. Seus oito registros correspondem exatamente ao mesmo triplo de registro, ator e opinião já validado no primeiro piloto. Para os outros lados, `expansion_speech_candidates.csv` fornece até cinco sentenças por manifestação, ranqueadas por sobreposição lexical com o resumo LDS. Esses candidatos continuam sendo heurísticos e precisam de julgamento humano sobre atribuição e suporte.
 
 Somente pares com `validation_status=VALIDATED` avançam para a preparação de pacotes de anotação semântica (Fase B).
+
+O mínimo operacional desta rodada foi fixado em **20 pares validados**, coerente com o tamanho de piloto definido no planejamento original. `READY_FOR_EXPANSION_ANNOTATION` exige que todos os 34 pares tenham uma decisão final (`VALIDATED` ou `INVALID`), que não existam falhas de integridade e que pelo menos 20 sobrevivam. O limiar é operacional para decidir se vale montar uma nova rodada; ele não é uma estimativa de poder estatístico.
 
 A decisão após a revisão será uma de:
 - `READY_FOR_EXPANSION_ANNOTATION` — pares suficientes validados

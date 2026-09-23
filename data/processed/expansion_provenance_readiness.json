@@ -1,0 +1,14 @@
+{
+  "expected_pairs": 34,
+  "review_rows": 34,
+  "derived_status_distribution": {
+    "UNRESOLVED": 34
+  },
+  "integrity_failures": 0,
+  "minimum_validated_pairs_for_annotation_round": 20,
+  "decision": "PROVENANCE_REVIEW_REQUIRED",
+  "semantic_packets_generated": false,
+  "previously_validated_manifestation_sides_available_for_reuse": 8,
+  "pairs_with_reusable_provenance": 7,
+  "ranked_speech_candidates_for_manual_review": 300
+}
