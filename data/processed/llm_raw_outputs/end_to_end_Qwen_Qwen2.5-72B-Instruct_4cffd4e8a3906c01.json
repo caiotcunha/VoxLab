@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rb5ywGGQchn2P2NBMooBp5pe",
+  "object": "chat.completion",
+  "created": 1790281349,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira aborda o ativismo judicial e a invasão de competências do Poder Judiciário, enquanto a segunda trata da fiscalização e renovação das concessões de distribuidoras de energia elétrica.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2717,
+    "total_tokens": 2796,
+    "completion_tokens": 79,
+    "estimated_cost": 0.00100972,
+    "prompt_tokens_details": null
+  }
+}

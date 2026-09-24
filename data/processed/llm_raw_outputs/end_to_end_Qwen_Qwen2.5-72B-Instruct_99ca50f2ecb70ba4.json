@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rt0OakMRflhKQ5YsTTGr8P2M",
+  "object": "chat.completion",
+  "created": 1790282108,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de questões ambientais e licenciamentos da PETROBRAS, mas abordam diferentes aspectos e regiões específicas. A primeira fala se concentra na BR-319 e na Bacia Potiguar, enquanto a segunda fala se concentra na Margem Equatorial e na Foz do Amazonas. Embora ambas mencionem a PETROBRAS e o IBAMA, as proposições específicas e os contextos são distintos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5098,
+    "total_tokens": 5227,
+    "completion_tokens": 129,
+    "estimated_cost": 0.0018868799999999999,
+    "prompt_tokens_details": null
+  }
+}

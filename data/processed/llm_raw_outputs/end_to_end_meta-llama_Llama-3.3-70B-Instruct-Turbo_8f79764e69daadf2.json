@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFBnqlgQmx31BFy6sWul5Yrf",
+  "object": "chat.completion",
+  "created": 1790282191,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações têm posição determinável, mas não respondem à mesma proposição específica, pois a primeira manifestação discute a necessidade de reestruturação do Estado para atender ao envelhecimento da população brasileira, enquanto a segunda manifestação aborda a prioridade para a agenda do envelhecimento saudável no G20.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2978,
+    "total_tokens": 3073,
+    "completion_tokens": 95,
+    "estimated_cost": 0.0003282,
+    "prompt_tokens_details": null
+  }
+}

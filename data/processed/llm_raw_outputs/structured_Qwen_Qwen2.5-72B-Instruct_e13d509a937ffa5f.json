@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlMfI4TsfrxBqbMS1CNLjNVf",
+  "object": "chat.completion",
+  "created": 1790281961,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Empresas devem ser notificadas para fornecer informações sobre a vida útil estimada de produtos e prazos de peças de reposição.\",\n  \"target_proposition_b\": \"Projetos de lei devem garantir maior proteção aos consumidores idosos, especialmente em relação a seguros de vida.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4108,
+    "total_tokens": 4239,
+    "completion_tokens": 131,
+    "estimated_cost": 0.0015312799999999999,
+    "prompt_tokens_details": null
+  }
+}

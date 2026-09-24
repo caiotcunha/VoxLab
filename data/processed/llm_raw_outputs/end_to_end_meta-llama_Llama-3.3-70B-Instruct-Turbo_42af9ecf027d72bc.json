@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCgNHRqfW2YS1PCnx690rcqS",
+  "object": "chat.completion",
+  "created": 1790282440,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre apoio ao Projeto de Lei de saúde funcional e outro sobre política nacional de cuidados para idosos, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2013,
+    "total_tokens": 2077,
+    "completion_tokens": 64,
+    "estimated_cost": 0.00022178000000000003,
+    "prompt_tokens_details": null
+  }
+}

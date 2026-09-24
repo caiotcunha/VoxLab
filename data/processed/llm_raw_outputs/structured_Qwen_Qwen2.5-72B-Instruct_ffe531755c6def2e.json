@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rg2kf3fBfOQnaZLvAnmjEXUE",
+  "object": "chat.completion",
+  "created": 1790282028,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O projeto de lei deve ser rejeitado integralmente.\",\n  \"target_proposition_b\": \"O projeto de lei deve ser rejeitado e substituído por um novo projeto que atenda às necessidades dos motoristas.\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3153,
+    "total_tokens": 3265,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00117988,
+    "prompt_tokens_details": null
+  }
+}

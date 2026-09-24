@@ -1,0 +1,32 @@
+Você está analisando duas manifestações literais do mesmo ator em dois eventos parlamentares diferentes. As manifestações abaixo já foram cegadas: você não recebe nome, partido, UF ou cargo do ator.
+
+Classifique diretamente a relação entre as duas manifestações em exatamente uma destas categorias:
+
+- STANCE_MAINTAINED: as duas manifestações respondem à mesma proposição específica com a mesma direção de stance (ambas FAVOR ou ambas AGAINST).
+- STANCE_REVERSED: as duas manifestações respondem à mesma proposição específica com direções opostas de stance (uma FAVOR, outra AGAINST).
+- INCOMPARABLE: as duas manifestações têm posição determinável, mas não respondem à mesma proposição específica.
+- RELATION_UNCERTAIN: alguma das etapas (determinabilidade, comparabilidade ou stance) não é suficientemente clara para decidir com confiança.
+- INSUFFICIENT_EVIDENCE: pelo menos uma das manifestações não apresenta posição determinável sobre nenhuma proposição específica.
+
+Não julgue se o ator "mudou de opinião", foi "coerente" ou "consistente" — julgue apenas a relação entre as duas manifestações conforme as categorias acima. Não use conhecimento externo sobre o ator, seu histórico político ou seu partido. Julgue apenas pelo texto fornecido.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "relation": "STANCE_MAINTAINED|STANCE_REVERSED|INCOMPARABLE|RELATION_UNCERTAIN|INSUFFICIENT_EVIDENCE",
+  "reasoning": "explicação breve, uma ou duas frases"
+}}
+
+Não inclua texto fora do JSON. Não inclua comentários.
+
+--- Manifestação A ---
+Evento: {event_a}
+Data: {date_a}
+Tema: {topic_a}
+Fala literal: {text_a}
+
+--- Manifestação B ---
+Evento: {event_b}
+Data: {date_b}
+Tema: {topic_b}
+Fala literal: {text_b}

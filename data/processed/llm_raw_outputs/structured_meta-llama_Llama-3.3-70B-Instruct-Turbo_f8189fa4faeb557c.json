@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REyItGuXvcHkOr5ain4Z34bg",
+  "object": "chat.completion",
+  "created": 1790282693,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A Lei do Bem deve ser aplicada e utilizada para promover a inovação\",\n  \"target_proposition_b\": \"O Marco Legal da Inovação deve ser operacionalizado para facilitar a inovação\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5777,
+    "total_tokens": 5891,
+    "completion_tokens": 114,
+    "estimated_cost": 0.00061418,
+    "prompt_tokens_details": null
+  }
+}

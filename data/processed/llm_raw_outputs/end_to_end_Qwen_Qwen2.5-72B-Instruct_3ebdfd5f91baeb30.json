@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpqA7VtPqc3t89x5ho3UrPqB",
+  "object": "chat.completion",
+  "created": 1790281401,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira foca nos direitos das pessoas com autismo, enquanto a segunda aborda a inclusão de pessoas com deficiência nos projetos culturais. Ambas têm posições determináveis, mas não respondem à mesma proposição específica.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3234,
+    "total_tokens": 3318,
+    "completion_tokens": 84,
+    "estimated_cost": 0.00119784,
+    "prompt_tokens_details": null
+  }
+}

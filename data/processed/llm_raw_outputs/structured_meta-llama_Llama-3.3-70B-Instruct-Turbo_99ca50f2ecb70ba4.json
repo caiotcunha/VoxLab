@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RO1pqrOVb8Q3iBeHIGKp8LGz",
+  "object": "chat.completion",
+  "created": 1790282891,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O IBAMA deve conceder licenças para a exploração de petróleo na região da Foz do Amazonas\",\n  \"target_proposition_b\": \"O IBAMA deve conceder licenças para a exploração de petróleo na região da Margem Equatorial\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5380,
+    "total_tokens": 5508,
+    "completion_tokens": 128,
+    "estimated_cost": 0.0005789600000000001,
+    "prompt_tokens_details": null
+  }
+}

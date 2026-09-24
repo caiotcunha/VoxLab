@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFTdYkU9rjJxHegnNnYCatBO",
+  "object": "chat.completion",
+  "created": 1790281311,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas e planos multifacetados são necessários para proteger mulheres e crianças indígenas, incluindo a demarcação e proteção de territórios indígenas.\",\n  \"target_proposition_b\": \"Planos e Conselhos são importantes para assegurar a intersetorialidade e participação da sociedade civil na implementação de políticas públicas para a população LGBTQIA+.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3934,
+    "total_tokens": 4090,
+    "completion_tokens": 156,
+    "estimated_cost": 0.00147864,
+    "prompt_tokens_details": null
+  }
+}

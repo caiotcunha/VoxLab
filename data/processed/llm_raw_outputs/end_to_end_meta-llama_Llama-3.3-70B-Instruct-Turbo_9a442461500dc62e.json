@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfwklUG0tpGMULtcCkaLUAb3",
+  "object": "chat.completion",
+  "created": 1790282898,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As manifestações têm posição determinável, mas não respondem à mesma proposição específica, pois a Manifestação A se concentra na abertura da audiência pública e na importância do debate sobre a regulamentação dos mercados digitais, enquanto a Manifestação B se concentra no encerramento da sequência de audiências públicas e na necessidade de continuar o debate sobre a regulamentação do mercado digital.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2865,
+    "total_tokens": 2976,
+    "completion_tokens": 111,
+    "estimated_cost": 0.00032202,
+    "prompt_tokens_details": null
+  }
+}

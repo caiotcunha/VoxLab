@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkaLNp28CXWGcOa6apoGXxpM",
+  "object": "chat.completion",
+  "created": 1790281246,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um compromisso com a discussão e a implementação de políticas para a pessoa idosa, destacando a importância do tema e a necessidade de ações concretas do Estado.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2967,
+    "total_tokens": 3036,
+    "completion_tokens": 69,
+    "estimated_cost": 0.0010957200000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7me9DNq0qFw3mpfoiAA1ope",
+  "object": "chat.completion",
+  "created": 1790281981,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram uma posição favorável à discussão e à proteção dos direitos das pessoas idosas, incluindo a ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6783,
+    "total_tokens": 6858,
+    "completion_tokens": 75,
+    "estimated_cost": 0.00247188,
+    "prompt_tokens_details": null
+  }
+}

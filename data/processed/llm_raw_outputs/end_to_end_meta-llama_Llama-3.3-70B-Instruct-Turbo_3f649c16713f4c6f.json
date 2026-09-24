@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAzegG8L4woG4bk18N5BW4iV",
+  "object": "chat.completion",
+  "created": 1790282757,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre políticas públicas para mulheres no climatério e menopausa e o outro sobre a Lei de Diretrizes Orçamentárias e déficit fiscal, não permitindo uma comparação direta entre as posições assumidas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2435,
+    "total_tokens": 2518,
+    "completion_tokens": 83,
+    "estimated_cost": 0.00027006,
+    "prompt_tokens_details": null
+  }
+}

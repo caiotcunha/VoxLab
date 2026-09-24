@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUTxPfxAzQTBuhZdfBY2PROd",
+  "object": "chat.completion",
+  "created": 1790281373,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre a Política Nacional de Saúde Funcional e a inclusão de pessoas com dor crônica, enquanto a segunda aborda a Política Nacional de Cuidados para Idosos e a aposentadoria de mães cuidadoras.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1993,
+    "total_tokens": 2076,
+    "completion_tokens": 83,
+    "estimated_cost": 0.0007506800000000001,
+    "prompt_tokens_details": null
+  }
+}

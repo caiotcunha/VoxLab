@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvvBH2bsLf4R7zl5Mri1T2Wp",
+  "object": "chat.completion",
+  "created": 1790281325,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Criar uma legislação específica do sistema prisional carcerário para as questões indígenas\",\n  \"target_proposition_b\": \"Aprovar o Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2649,
+    "total_tokens": 2786,
+    "completion_tokens": 137,
+    "estimated_cost": 0.00100844,
+    "prompt_tokens_details": null
+  }
+}

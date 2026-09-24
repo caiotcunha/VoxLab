@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R69Aa8EruzT2r0oFTH6PPfto",
+  "object": "chat.completion",
+  "created": 1790282037,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Recursos financeiros devem ser organizados e alocados para a prevenção de desastres naturais.\",\n  \"target_proposition_b\": \"Recursos financeiros devem ser organizados e alocados para a prevenção de desastres naturais, incluindo 5% dos acordos judiciais e extrajudiciais.\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3896,
+    "total_tokens": 4039,
+    "completion_tokens": 143,
+    "estimated_cost": 0.00145976,
+    "prompt_tokens_details": null
+  }
+}

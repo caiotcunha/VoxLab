@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWtkCMlPtB68zV5X5JBSC4vm",
+  "object": "chat.completion",
+  "created": 1790282385,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre ativismo judicial e o outro sobre renovação de concessões de energia elétrica, não permitindo uma comparação direta entre as posições do ator.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2719,
+    "total_tokens": 2786,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00029334,
+    "prompt_tokens_details": null
+  }
+}

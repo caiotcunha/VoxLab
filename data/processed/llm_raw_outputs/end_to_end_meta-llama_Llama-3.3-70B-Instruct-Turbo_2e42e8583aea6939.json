@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVjtUK43DnMhy6Wrm4UgkfBz",
+  "object": "chat.completion",
+  "created": 1790282251,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a ampliação do orçamento para combater a tuberculose no Brasil e apresentam propostas concretas para erradicar a doença até 2030.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6644,
+    "total_tokens": 6711,
+    "completion_tokens": 67,
+    "estimated_cost": 0.0006858400000000001,
+    "prompt_tokens_details": null
+  }
+}

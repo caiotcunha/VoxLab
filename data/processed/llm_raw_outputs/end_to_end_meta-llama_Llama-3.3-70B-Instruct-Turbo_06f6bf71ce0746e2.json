@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFJZnOuFICm566mEO3wb4rk4",
+  "object": "chat.completion",
+  "created": 1790282744,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância da prevenção de desastres e a necessidade de recursos financeiros para essa finalidade, mostrando uma direção de stance favorável à prevenção de desastres.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3676,
+    "total_tokens": 3748,
+    "completion_tokens": 72,
+    "estimated_cost": 0.00039064000000000004,
+    "prompt_tokens_details": null
+  }
+}

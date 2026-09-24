@@ -1,0 +1,53 @@
+{
+  "label": "INTER_MODEL_AGREEMENT",
+  "note": "Agreement between two LLMs on the unlabeled expansion set. Never human agreement, never gold agreement, never a validation signal. Must not be used to promote any pair to gold.",
+  "n_pairs": 29,
+  "same_proposition_agreement": {
+    "n": 29,
+    "raw_agreement": 0.7931,
+    "cohens_kappa": 0.514,
+    "annotator_1_counts": {
+      "NO": 19,
+      "UNCERTAIN": 1,
+      "YES": 9
+    },
+    "annotator_2_counts": {
+      "NO": 23,
+      "UNCERTAIN": 1,
+      "YES": 5
+    },
+    "prevalence_warning": "SINGLETON_CLASS"
+  },
+  "stance_a_agreement": {
+    "n": 29,
+    "raw_agreement": 0.931,
+    "cohens_kappa": 0.7489,
+    "annotator_1_counts": {
+      "AGAINST": 2,
+      "FAVOR": 24,
+      "UNCERTAIN": 3
+    },
+    "annotator_2_counts": {
+      "AGAINST": 2,
+      "FAVOR": 25,
+      "UNCERTAIN": 2
+    },
+    "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+  },
+  "relation_with_gate_agreement": {
+    "n": 29,
+    "raw_agreement": 0.7241,
+    "cohens_kappa": 0.4679,
+    "annotator_1_counts": {
+      "INCOMPARABLE": 16,
+      "INSUFFICIENT_EVIDENCE": 4,
+      "STANCE_MAINTAINED": 9
+    },
+    "annotator_2_counts": {
+      "INCOMPARABLE": 22,
+      "INSUFFICIENT_EVIDENCE": 2,
+      "STANCE_MAINTAINED": 5
+    },
+    "prevalence_warning": ""
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAaEO9flYzRiF3MJZ4MuGvn3",
+  "object": "chat.completion",
+  "created": 1790282204,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à violência contra crianças e adolescentes, mas abordam aspectos diferentes, como segurança nas escolas e orçamento para proteção da infância e adolescência, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3356,
+    "total_tokens": 3434,
+    "completion_tokens": 78,
+    "estimated_cost": 0.00036056,
+    "prompt_tokens_details": null
+  }
+}

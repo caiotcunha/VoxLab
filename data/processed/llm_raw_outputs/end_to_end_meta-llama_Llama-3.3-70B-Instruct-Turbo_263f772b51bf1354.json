@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RumtiZv1dhkgT7HvSWygobAL",
+  "object": "chat.completion",
+  "created": 1790282143,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância de políticas e ações para o envelhecimento saudável e a proteção dos direitos das pessoas idosas, com foco em desafios como a violência, a exclusão social e a necessidade de cuidado compartilhado.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8840,
+    "total_tokens": 8928,
+    "completion_tokens": 88,
+    "estimated_cost": 0.0009121600000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB7JzBP5Sdmiqsy2TUxsyzdQ",
+  "object": "chat.completion",
+  "created": 1790281930,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a inclusão e os direitos das pessoas autistas, combatendo o capacitismo e destacando a importância da neurodiversidade.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2602,
+    "total_tokens": 2659,
+    "completion_tokens": 57,
+    "estimated_cost": 0.0009595200000000001,
+    "prompt_tokens_details": null
+  }
+}

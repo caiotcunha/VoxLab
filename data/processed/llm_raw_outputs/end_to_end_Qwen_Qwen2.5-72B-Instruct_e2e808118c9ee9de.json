@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rwj97Mypyhu66QB8DGba1lGA",
+  "object": "chat.completion",
+  "created": 1790282059,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes dentro do SUS: uma sobre cardiopatias isquêmicas e outra sobre retinopatia diabética. Ambas apresentam posições favoráveis a melhorias nos tratamentos, mas referem-se a proposições específicas distintas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1156,
+    "total_tokens": 1241,
+    "completion_tokens": 85,
+    "estimated_cost": 0.00045016,
+    "prompt_tokens_details": null
+  }
+}

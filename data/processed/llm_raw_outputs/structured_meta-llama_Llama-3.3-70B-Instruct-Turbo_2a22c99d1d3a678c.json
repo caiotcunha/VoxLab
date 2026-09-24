@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcV4FiePSjUElPUkmjLFeeAS",
+  "object": "chat.completion",
+  "created": 1790282295,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O atendimento primário deve resolver o problema da retinopatia diabética\",\n  \"target_proposition_b\": \"O SUS deve revisar e atualizar seus protocolos clínicos para incluir diretrizes claras e abrangentes para o diagnóstico, tratamento e acompanhamento do edema macular\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2543,
+    "total_tokens": 2675,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00029654,
+    "prompt_tokens_details": null
+  }
+}

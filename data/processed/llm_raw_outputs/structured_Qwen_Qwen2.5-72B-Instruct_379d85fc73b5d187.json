@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2rXPq5Xhz9eivBPcoFOjauG",
+  "object": "chat.completion",
+  "created": 1790282101,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Estatuto dos Povos Ciganos deve ser aprovado e implementado\",\n  \"target_proposition_b\": \"Economia do cuidado deve ser reconhecida e implementada como política pública\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5509,
+    "total_tokens": 5619,
+    "completion_tokens": 110,
+    "estimated_cost": 0.00202724,
+    "prompt_tokens_details": null
+  }
+}

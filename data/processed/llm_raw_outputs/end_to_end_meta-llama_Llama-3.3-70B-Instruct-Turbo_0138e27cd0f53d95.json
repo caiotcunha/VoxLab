@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0hD4pRkuSHmD4TGqMJdiOYi",
+  "object": "chat.completion",
+  "created": 1790282234,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações têm posição determinável, mas não respondem à mesma proposição específica, pois a Manifestação A trata da ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos e a Manifestação B trata da consolidação de políticas públicas para idosos no contexto dos 20 anos do Estatuto do Idoso.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4393,
+    "total_tokens": 4498,
+    "completion_tokens": 105,
+    "estimated_cost": 0.00047290000000000006,
+    "prompt_tokens_details": null
+  }
+}

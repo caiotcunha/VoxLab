@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzbCelBqKiqf6NorOGoRMbI2",
+  "object": "chat.completion",
+  "created": 1790282050,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam preocupação com a qualidade e o custo da energia elétrica no Brasil, defendendo a necessidade de mudanças no modelo atual das concessionárias e a importância da transição energética para fontes renováveis.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2436,
+    "total_tokens": 2512,
+    "completion_tokens": 76,
+    "estimated_cost": 0.00090736,
+    "prompt_tokens_details": null
+  }
+}

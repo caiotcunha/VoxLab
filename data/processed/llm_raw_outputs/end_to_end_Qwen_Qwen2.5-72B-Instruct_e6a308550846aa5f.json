@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfjHRNQhsuyAoqksW7285sa6",
+  "object": "chat.completion",
+  "created": 1790281366,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à transição energética e combustíveis alternativos, mas respondem a proposições específicas diferentes: a primeira fala sobre a transição energética e o hidrogênio verde, enquanto a segunda se concentra no biometano e sua implementação na matriz energética brasileira.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2860,
+    "total_tokens": 2953,
+    "completion_tokens": 93,
+    "estimated_cost": 0.0010668,
+    "prompt_tokens_details": null
+  }
+}

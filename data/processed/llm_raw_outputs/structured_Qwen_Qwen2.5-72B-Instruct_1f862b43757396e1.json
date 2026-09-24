@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpU4roXEeHGoi9m5QoFxw9Ca",
+  "object": "chat.completion",
+  "created": 1790281398,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Legislar sobre o trabalho de motoristas de aplicativo\",\n  \"target_proposition_b\": \"Regulamentar o lobby junto ao poder público\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1768,
+    "total_tokens": 1865,
+    "completion_tokens": 97,
+    "estimated_cost": 0.0006752799999999999,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "Qwen/Qwen2.5-72B-Instruct": {
+    "end_to_end": {
+      "n": 18,
+      "accuracy": 0.7778,
+      "macro_f1": 0.8072,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": 1.0,
+          "recall": 0.8182,
+          "f1": 0.9,
+          "support_gold": 11,
+          "support_predicted": 9
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 0.5556,
+          "recall": 1.0,
+          "f1": 0.7143,
+          "support_gold": 5,
+          "support_predicted": 9
+        },
+        "STANCE_REVERSED": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "STANCE_MAINTAINED": 2,
+          "INCOMPARABLE": 9
+        },
+        "STANCE_MAINTAINED": {
+          "STANCE_MAINTAINED": 5
+        },
+        "RELATION_UNCERTAIN": {
+          "STANCE_MAINTAINED": 2
+        }
+      },
+      "false_reversal_count": 0,
+      "false_reversal_rate": 0.0,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "structured_without_gate": {
+      "n": 18,
+      "accuracy": 0.2222,
+      "macro_f1": 0.4,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 11,
+          "support_predicted": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.0,
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 3
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 0.2667,
+          "recall": 0.8,
+          "f1": 0.4,
+          "support_gold": 5,
+          "support_predicted": 15
+        },
+        "STANCE_REVERSED": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "STANCE_MAINTAINED": 10,
+          "INSUFFICIENT_EVIDENCE": 1
+        },
+        "STANCE_MAINTAINED": {
+          "INSUFFICIENT_EVIDENCE": 1,
+          "STANCE_MAINTAINED": 4
+        },
+        "RELATION_UNCERTAIN": {
+          "STANCE_MAINTAINED": 1,
+          "INSUFFICIENT_EVIDENCE": 1
+        }
+      },
+      "false_reversal_count": 0,
+      "false_reversal_rate": 0.0,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "structured_with_gate": {
+      "n": 18,
+      "accuracy": 0.7778,
+      "macro_f1": 0.8762,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": 1.0,
+          "recall": 0.9091,
+          "f1": 0.9524,
+          "support_gold": 11,
+          "support_predicted": 10
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.0,
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 3
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 0.8,
+          "recall": 0.8,
+          "f1": 0.8,
+          "support_gold": 5,
+          "support_predicted": 5
+        },
+        "STANCE_REVERSED": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "INCOMPARABLE": 10,
+          "INSUFFICIENT_EVIDENCE": 1
+        },
+        "STANCE_MAINTAINED": {
+          "INSUFFICIENT_EVIDENCE": 1,
+          "STANCE_MAINTAINED": 4
+        },
+        "RELATION_UNCERTAIN": {
+          "STANCE_MAINTAINED": 1,
+          "INSUFFICIENT_EVIDENCE": 1
+        }
+      },
+      "false_reversal_count": 0,
+      "false_reversal_rate": 0.0,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "comparability_gate": {
+      "n_binary": 16,
+      "accuracy": 0.9375,
+      "f1_positive_class_YES": 0.8889,
+      "precision_YES": 1.0,
+      "recall_YES": 0.8,
+      "n_gold_uncertain_excluded": 2
+    },
+    "output_quality": {
+      "end_to_end": {
+        "total_calls": 18,
+        "malformed_output_count": 0,
+        "valid_output_rate": 1.0,
+        "schema_failure_rate": 0.0
+      },
+      "structured": {
+        "total_calls": 18,
+        "malformed_output_count": 0,
+        "valid_output_rate": 1.0,
+        "schema_failure_rate": 0.0
+      }
+    },
+    "gate_effect_summary": {
+      "ERROR_TO_CORRECT": 10,
+      "CORRECT_TO_ERROR": 0,
+      "CORRECT_TO_CORRECT": 4,
+      "ERROR_TO_ERROR": 4
+    }
+  },
+  "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+    "end_to_end": {
+      "n": 18,
+      "accuracy": 0.8333,
+      "macro_f1": 0.8712,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": 0.9091,
+          "recall": 0.9091,
+          "f1": 0.9091,
+          "support_gold": 11,
+          "support_predicted": 11
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 0.7143,
+          "recall": 1.0,
+          "f1": 0.8333,
+          "support_gold": 5,
+          "support_predicted": 7
+        },
+        "STANCE_REVERSED": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "INCOMPARABLE": 10,
+          "STANCE_MAINTAINED": 1
+        },
+        "STANCE_MAINTAINED": {
+          "STANCE_MAINTAINED": 5
+        },
+        "RELATION_UNCERTAIN": {
+          "STANCE_MAINTAINED": 1,
+          "INCOMPARABLE": 1
+        }
+      },
+      "false_reversal_count": 0,
+      "false_reversal_rate": 0.0,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "structured_without_gate": {
+      "n": 18,
+      "accuracy": 0.2778,
+      "macro_f1": 0.5,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 11,
+          "support_predicted": 0
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.0,
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 2
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 0.3333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support_gold": 5,
+          "support_predicted": 15
+        },
+        "STANCE_REVERSED": {
+          "precision": 0.0,
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 1
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "STANCE_MAINTAINED": 9,
+          "STANCE_REVERSED": 1,
+          "INSUFFICIENT_EVIDENCE": 1
+        },
+        "STANCE_MAINTAINED": {
+          "STANCE_MAINTAINED": 5
+        },
+        "RELATION_UNCERTAIN": {
+          "STANCE_MAINTAINED": 1,
+          "INSUFFICIENT_EVIDENCE": 1
+        }
+      },
+      "false_reversal_count": 1,
+      "false_reversal_rate": 0.0556,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "structured_with_gate": {
+      "n": 18,
+      "accuracy": 0.7222,
+      "macro_f1": 0.7916,
+      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "per_class": {
+        "INCOMPARABLE": {
+          "precision": 0.7692,
+          "recall": 0.9091,
+          "f1": 0.8333,
+          "support_gold": 11,
+          "support_predicted": 13
+        },
+        "INSUFFICIENT_EVIDENCE": {
+          "precision": 0.0,
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 2
+        },
+        "RELATION_UNCERTAIN": {
+          "precision": "undefined",
+          "recall": 0.0,
+          "f1": "undefined",
+          "support_gold": 2,
+          "support_predicted": 0
+        },
+        "STANCE_MAINTAINED": {
+          "precision": 1.0,
+          "recall": 0.6,
+          "f1": 0.75,
+          "support_gold": 5,
+          "support_predicted": 3
+        },
+        "STANCE_REVERSED": {
+          "precision": "undefined",
+          "recall": "undefined",
+          "f1": "undefined",
+          "support_gold": 0,
+          "support_predicted": 0
+        }
+      },
+      "confusion_matrix": {
+        "INCOMPARABLE": {
+          "INCOMPARABLE": 10,
+          "INSUFFICIENT_EVIDENCE": 1
+        },
+        "STANCE_MAINTAINED": {
+          "STANCE_MAINTAINED": 3,
+          "INCOMPARABLE": 2
+        },
+        "RELATION_UNCERTAIN": {
+          "INCOMPARABLE": 1,
+          "INSUFFICIENT_EVIDENCE": 1
+        }
+      },
+      "false_reversal_count": 0,
+      "false_reversal_rate": 0.0,
+      "false_reversal_rate_denominator": 18,
+      "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+    },
+    "comparability_gate": {
+      "n_binary": 16,
+      "accuracy": 0.875,
+      "f1_positive_class_YES": 0.75,
+      "precision_YES": 1.0,
+      "recall_YES": 0.6,
+      "n_gold_uncertain_excluded": 2
+    },
+    "output_quality": {
+      "end_to_end": {
+        "total_calls": 18,
+        "malformed_output_count": 0,
+        "valid_output_rate": 1.0,
+        "schema_failure_rate": 0.0
+      },
+      "structured": {
+        "total_calls": 18,
+        "malformed_output_count": 0,
+        "valid_output_rate": 1.0,
+        "schema_failure_rate": 0.0
+      }
+    },
+    "gate_effect_summary": {
+      "ERROR_TO_CORRECT": 10,
+      "CORRECT_TO_ERROR": 2,
+      "CORRECT_TO_CORRECT": 3,
+      "ERROR_TO_ERROR": 3
+    }
+  }
+}

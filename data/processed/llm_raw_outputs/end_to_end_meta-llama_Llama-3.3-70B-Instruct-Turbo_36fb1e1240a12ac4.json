@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0J0dUj83ol8Dt99jdcm2nMF",
+  "object": "chat.completion",
+  "created": 1790282330,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados aos povos indígenas, mas abordam proposições específicas diferentes, como a criação de uma lei prisional específica para indígenas na primeira manifestação e a aprovação do Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas na segunda manifestação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2398,
+    "total_tokens": 2512,
+    "completion_tokens": 114,
+    "estimated_cost": 0.00027628,
+    "prompt_tokens_details": null
+  }
+}

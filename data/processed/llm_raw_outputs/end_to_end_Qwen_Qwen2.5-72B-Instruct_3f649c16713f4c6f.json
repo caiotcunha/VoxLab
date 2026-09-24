@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rmn6SSElXctiLYJvDUXuNNyS",
+  "object": "chat.completion",
+  "created": 1790282041,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre políticas públicas para mulheres no climatério e menopausa, enquanto a segunda discute a Lei de Diretrizes Orçamentárias e políticas voltadas para mulheres em geral.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2417,
+    "total_tokens": 2496,
+    "completion_tokens": 79,
+    "estimated_cost": 0.0009017200000000001,
+    "prompt_tokens_details": null
+  }
+}

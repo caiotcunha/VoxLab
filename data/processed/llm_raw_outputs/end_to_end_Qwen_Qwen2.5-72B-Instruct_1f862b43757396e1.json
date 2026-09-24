@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBHJb3G5or78eBAkwYenTT4B",
+  "object": "chat.completion",
+  "created": 1790281395,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre a regulamentação do trabalho de motoristas de aplicativo, enquanto a segunda aborda a regulamentação do lobby junto ao poder público.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1502,
+    "total_tokens": 1564,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00056552,
+    "prompt_tokens_details": null
+  }
+}

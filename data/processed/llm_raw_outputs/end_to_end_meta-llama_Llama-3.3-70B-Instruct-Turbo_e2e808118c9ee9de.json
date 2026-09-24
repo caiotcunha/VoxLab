@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXA6O4KouGQasnUqa7Yl6pl2",
+  "object": "chat.completion",
+  "created": 1790282789,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre o Programa QualiSUS Cardio e o outro sobre falhas no protocolo do SUS para o tratamento da retinopatia diabética, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1169,
+    "total_tokens": 1243,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00014058,
+    "prompt_tokens_details": null
+  }
+}

@@ -2,24 +2,28 @@
   "expected_pairs": 34,
   "review_rows": 34,
   "declared_status_distribution": {
-    "INVALID": 2,
-    "PARTIALLY_VALIDATED": 3,
+    "INVALID": 5,
     "VALIDATED": 29
   },
   "derived_status_distribution": {
-    "INVALID": 2,
-    "PARTIALLY_VALIDATED": 9,
-    "VALIDATED": 23
+    "INVALID": 5,
+    "VALIDATED": 29
   },
-  "integrity_failures": 6,
+  "integrity_failures": 0,
   "documentary_integrity_failures": 0,
-  "declared_status_mismatches": 6,
+  "declared_status_mismatches": 0,
   "incomplete_review_rows": 0,
   "minimum_validated_pairs_for_annotation_round": 20,
-  "decision": "PROVENANCE_REVIEW_REQUIRED",
-  "semantic_packets_generated": false,
-  "identity_fields_auto_filled_this_run": 4,
+  "decision": "READY_FOR_EXPANSION_ANNOTATION",
+  "semantic_packets_generated": true,
+  "identity_fields_auto_filled_this_run": 0,
   "previously_validated_manifestation_sides_available_for_reuse": 8,
   "pairs_with_reusable_provenance": 7,
-  "ranked_speech_candidates_for_manual_review": 340
+  "ranked_speech_candidates_for_manual_review": 340,
+  "semantic_packet_pairs": 29,
+  "semantic_packet_files": [
+    "data/annotations/expansion_annotator_1.csv",
+    "data/annotations/expansion_annotator_2.csv",
+    "data/annotations/expansion_semantic_pilot_reference.csv"
+  ]
 }

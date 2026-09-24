@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROosTgqoYokw5j6ZdeioaAri",
+  "object": "chat.completion",
+  "created": 1790282704,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância de investir em prevenção de desastres e calamidades naturais, além de criticarem a falta de recursos orçamentários para essa finalidade.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3355,
+    "total_tokens": 3422,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00035694000000000004,
+    "prompt_tokens_details": null
+  }
+}

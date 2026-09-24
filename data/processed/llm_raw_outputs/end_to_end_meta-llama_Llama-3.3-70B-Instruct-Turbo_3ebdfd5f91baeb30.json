@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPb84PwXHKkjdPolYLe8GH7k",
+  "object": "chat.completion",
+  "created": 1790282510,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à inclusão e direitos de pessoas com deficiência, mas abordam proposições específicas diferentes, como políticas para pessoas com autismo e participação de pessoas com deficiência em projetos culturais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3252,
+    "total_tokens": 3329,
+    "completion_tokens": 77,
+    "estimated_cost": 0.00034984,
+    "prompt_tokens_details": null
+  }
+}

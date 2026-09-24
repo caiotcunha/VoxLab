@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNgSbv29Us8bbxYQ1T47muqs",
+  "object": "chat.completion",
+  "created": 1790282772,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Criação do Programa de Atenção a Mulheres na Menopausa e Climatério\",\n  \"target_proposition_b\": \"Recurso direto para o Ministério das Mulheres\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2703,
+    "total_tokens": 2815,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00030614000000000005,
+    "prompt_tokens_details": null
+  }
+}

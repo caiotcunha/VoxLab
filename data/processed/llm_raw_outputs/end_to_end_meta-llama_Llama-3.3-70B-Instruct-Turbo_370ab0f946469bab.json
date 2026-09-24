@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJQcNhS7jzcHfuBdktWeXvvw",
+  "object": "chat.completion",
+  "created": 1790282808,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância de políticas públicas para idosos e destacam a necessidade de combater o idadismo e promover o envelhecimento saudável.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9346,
+    "total_tokens": 9412,
+    "completion_tokens": 66,
+    "estimated_cost": 0.0009557200000000001,
+    "prompt_tokens_details": null
+  }
+}

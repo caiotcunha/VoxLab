@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0x2GmoDZOV4hUly1mjiyUn7",
+  "object": "chat.completion",
+  "created": 1790282928,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Bem-estar animal é essencial para a sustentabilidade\",\n  \"target_proposition_b\": \"Bem-estar animal é uma pauta econômica importante para os países\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3369,
+    "total_tokens": 3475,
+    "completion_tokens": 106,
+    "estimated_cost": 0.00037082000000000006,
+    "prompt_tokens_details": null
+  }
+}

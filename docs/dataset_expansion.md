@@ -187,3 +187,19 @@ Estado após reprocessamento: **23 VALIDATED**, 9 `PARTIALLY_VALIDATED`, 2 `INVA
 - **3 com identidade confirmada mas evidência pendente** (o revisor já marcou `evidence_verified=unknown`): `e8fa709c49d4cf21`, `7d09d414bbbcee5f`, `d336204af6200b5c`.
 
 Esses 9 não foram resolvidos automaticamente por decisão deliberada: julgar se cargos com fraseados diferentes referem-se à mesma posição, ou se um trecho de transcrição sustenta um resumo, é exatamente o tipo de julgamento semântico que este projeto reserva para revisão humana — não para heurística determinística nem para leitura de LLM.
+
+### Atualização: revisão de proveniência concluída (2026-09-24)
+
+Gabriel resolveu os 6 pares de identidade ambígua manualmente, com justificativa documentada por par (incluindo um caso de troca de entidade — Paulo Xavier, FEMBRAPP→FANMA — confirmado por continuidade de discurso e coerência com a lista oficial do evento posterior). Os 3 pares de evidência pendente (Padre João, Priscila Costa, Vanessa Pirolo) revelaram divergências factuais reais entre o resumo LDS e a transcrição literal (valores numéricos trocados, detalhes de registros diferentes atribuídos ao par errado) — foram marcados `INVALID` em 2026-09-24, com `summary_support_reviewed`/`evidence_verified=false` no(s) lado(s) afetado(s).
+
+Estado final: **29 VALIDATED, 5 INVALID**, 0 pares pendentes, 0 divergências entre declarado e derivado. `decision: READY_FOR_EXPANSION_ANNOTATION`. A Fase B (preparação dos pacotes cegos para os dois anotadores) pode começar.
+
+### Fase B: pacotes de anotação semântica gerados (2026-09-24)
+
+`src/voxlab/expansion_semantic_pilot.py` reaproveita, sem duplicar, a lógica exata do piloto original: filtra os pares com `derived_validation_status=VALIDATED` em `expansion_provenance_review.csv`, renomeia os campos `earlier`/`later` para o formato `a`/`b` do piloto (`reshape_to_pilot_pair`) e então chama `semantic_pilot.annotation_rows` sem alterações — mesmo esquema de cegamento, mesmas seeds por anotador (`SEEDS = {1: 4311, 2: 9877}`), mesma taxonomia de resposta.
+
+Artefatos gerados:
+- `data/annotations/expansion_annotator_1.csv` e `expansion_annotator_2.csv`: 29 pares cada, mesma composição, ordem e apresentação A/B embaralhadas independentemente, todas as respostas em branco.
+- `data/annotations/expansion_semantic_pilot_reference.csv`: mapeamento de apresentação por anotador e lado cronológico de origem — não deve ser aberto pelos anotadores.
+
+84/84 testes passam, incluindo verificação de que os 5 pares `INVALID` nunca chegam aos pacotes, de que nenhum campo silver/gold aparece nos arquivos de anotação e de que o relatório de prontidão registra a geração dos pacotes. A tarefa dos anotadores segue `docs/annotation_guideline.md`.

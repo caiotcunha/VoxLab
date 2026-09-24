@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRwbsF46Nv8F6A7P8XRTBgaU",
+  "object": "chat.completion",
+  "created": 1790282088,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados a políticas públicas para mulheres, mas não respondem à mesma proposição específica. A primeira fala se concentra na execução de políticas e na gestão de recursos, enquanto a segunda aborda a violência contra as mulheres e a necessidade de políticas de proteção.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2673,
+    "total_tokens": 2764,
+    "completion_tokens": 91,
+    "estimated_cost": 0.00099868,
+    "prompt_tokens_details": null
+  }
+}

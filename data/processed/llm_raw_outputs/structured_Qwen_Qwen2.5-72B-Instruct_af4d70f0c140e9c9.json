@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMPwXg652ztIbXQP40IEURiC",
+  "object": "chat.completion",
+  "created": 1790281258,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"É necessário mudar o Código Penal e fazer um trabalho conjunto para combater a violência nas escolas.\",\n  \"target_proposition_b\": \"É necessário direcionar recursos orçamentários para prevenção e combate à violência contra crianças e adolescentes.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3592,
+    "total_tokens": 3713,
+    "completion_tokens": 121,
+    "estimated_cost": 0.0013415200000000001,
+    "prompt_tokens_details": null
+  }
+}

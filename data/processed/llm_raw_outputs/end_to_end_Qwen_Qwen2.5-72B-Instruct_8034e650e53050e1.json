@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNYtxTMfohs4v7eXLVnozzjY",
+  "object": "chat.completion",
+  "created": 1790281937,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram preocupação com os desastres socioambientais e a necessidade de ações preventivas e estruturantes, como a criação de políticas públicas e a estruturação das defesas civis.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3114,
+    "total_tokens": 3189,
+    "completion_tokens": 75,
+    "estimated_cost": 0.00115104,
+    "prompt_tokens_details": null
+  }
+}

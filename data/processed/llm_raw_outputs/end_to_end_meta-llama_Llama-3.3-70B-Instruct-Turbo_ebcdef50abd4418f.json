@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjkHFQpqO7aeiXlV66VgSPWy",
+  "object": "chat.completion",
+  "created": 1790282302,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações têm posição determinável, mas não respondem à mesma proposição específica, uma trata de políticas públicas de proteção às mulheres e crianças indígenas e a outra sobre dificuldades na implantação de políticas públicas para a população LGBTQIA+.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3721,
+    "total_tokens": 3803,
+    "completion_tokens": 82,
+    "estimated_cost": 0.00039834,
+    "prompt_tokens_details": null
+  }
+}

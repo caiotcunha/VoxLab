@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWhKSDg8jFeoYmTr7LuzgWyx",
+  "object": "chat.completion",
+  "created": 1790281986,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"target_proposition_b\": \"Ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7049,
+    "total_tokens": 7170,
+    "completion_tokens": 121,
+    "estimated_cost": 0.00258604,
+    "prompt_tokens_details": null
+  }
+}

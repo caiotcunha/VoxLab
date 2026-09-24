@@ -1,0 +1,42 @@
+Você está analisando duas manifestações literais do mesmo ator em dois eventos parlamentares diferentes. As manifestações abaixo já foram cegadas: você não recebe nome, partido, UF ou cargo do ator.
+
+Cinco conceitos, na ordem em que você deve julgá-los:
+
+1. Tema: assunto geral (não decide nada por si só).
+2. Proposição-alvo: afirmação específica que a manifestação aceita ou rejeita. "Regulação de plataformas" é tema; "Plataformas devem remover conteúdo ilegal após notificação" é proposição.
+3. Stance: o ator favorece (FAVOR) ou rejeita (AGAINST) sua própria proposição-alvo. Se a direção não for clara, use UNCERTAIN. Nunca use NEUTRAL.
+4. Determinabilidade de stance: a manifestação apresenta posição suficientemente clara sobre alguma proposição específica? YES, NO ou UNCERTAIN. NO significa ausência de stance determinável, não neutralidade.
+5. Comparabilidade: as duas manifestações tratam da mesma proposição ou de proposições semanticamente equivalentes? YES, NO ou UNCERTAIN. Mesmo tema, medidas diferentes ou proposições apenas sobrepostas recebem NO. Só julgue isto depois de ambos os lados terem proposição-alvo.
+
+Regras adicionais:
+- Não julgue se o ator "mudou de opinião", foi "coerente" ou "consistente" — isso não é pedido aqui.
+- Não use conhecimento externo sobre o ator, seu histórico político ou seu partido. Julgue apenas pelo texto fornecido.
+- Discurso reportado ("o grupo defende X") não é a posição do próprio falante — procure a avaliação do falante.
+- Citação de terceiro sem endosso explícito não é posição do ator.
+- Pergunta genuína (pedido de informação sem endosso) geralmente é stance_determinable=NO.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "stance_determinable_a": "YES|NO|UNCERTAIN",
+  "stance_determinable_b": "YES|NO|UNCERTAIN",
+  "target_proposition_a": "frase curta e neutra, ou string vazia se stance_determinable_a != YES",
+  "target_proposition_b": "frase curta e neutra, ou string vazia se stance_determinable_b != YES",
+  "same_proposition": "YES|NO|UNCERTAIN",
+  "stance_a": "FAVOR|AGAINST|UNCERTAIN, ou string vazia se stance_determinable_a != YES",
+  "stance_b": "FAVOR|AGAINST|UNCERTAIN, ou string vazia se stance_determinable_b != YES"
+}}
+
+Não inclua texto fora do JSON. Não inclua comentários.
+
+--- Manifestação A ---
+Evento: {event_a}
+Data: {date_a}
+Tema: {topic_a}
+Fala literal: {text_a}
+
+--- Manifestação B ---
+Evento: {event_b}
+Data: {date_b}
+Tema: {topic_b}
+Fala literal: {text_b}

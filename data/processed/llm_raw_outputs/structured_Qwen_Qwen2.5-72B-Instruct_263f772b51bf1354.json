@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjimoCI1E4DAt18H0DyM7T6T",
+  "object": "chat.completion",
+  "created": 1790281227,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O envelhecimento da população brasileira é um ganho das políticas públicas e requer um planejamento interdisciplinar e inclusivo.\",\n  \"target_proposition_b\": \"O envelhecimento da população brasileira é um ganho das políticas públicas e requer um planejamento interdisciplinar e inclusivo.\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9047,
+    "total_tokens": 9184,
+    "completion_tokens": 137,
+    "estimated_cost": 0.0033117199999999998,
+    "prompt_tokens_details": null
+  }
+}

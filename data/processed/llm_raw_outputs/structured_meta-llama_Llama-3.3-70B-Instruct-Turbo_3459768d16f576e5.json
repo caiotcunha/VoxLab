@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RA3bgUxUQ3G01qk4fJJ7ycsU",
+  "object": "chat.completion",
+  "created": 1790282281,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O saque-aniversário do FGTS não deve ser substituído\",\n  \"target_proposition_b\": \"O saque-aniversário do FGTS não deve ser substituído por um empréstimo consignado sem opções para o trabalhador\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3037,
+    "total_tokens": 3159,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00034274,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPTolA5z7o0jo5RBLAW0gOaM",
+  "object": "chat.completion",
+  "created": 1790282862,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre o Estatuto do Povo Cigano e o outro sobre a inclusão da economia do cuidado no cálculo do PIB, não permitindo uma comparação direta entre as posições do ator.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5321,
+    "total_tokens": 5404,
+    "completion_tokens": 83,
+    "estimated_cost": 0.0005586600000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSM4HVv1hUuGyQwvw4SufPBM",
+  "object": "chat.completion",
+  "created": 1790282470,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância da inovação e da ciência, tecnologia e inovação para o desenvolvimento do País, e apoiam a Lei do Bem como instrumento fiscal para incentivar a inovação.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5164,
+    "total_tokens": 5240,
+    "completion_tokens": 76,
+    "estimated_cost": 0.0005407200000000001,
+    "prompt_tokens_details": null
+  }
+}

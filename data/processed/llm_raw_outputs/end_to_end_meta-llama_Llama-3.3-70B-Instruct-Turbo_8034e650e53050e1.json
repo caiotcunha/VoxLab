@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RutEWoPv2zwg1BSibe8WITxc",
+  "object": "chat.completion",
+  "created": 1790282596,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância de medidas para prevenir e responder a desastres climáticos, destacando a necessidade de investir em prevenção e preparar as cidades para os efeitos das mudanças climáticas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3117,
+    "total_tokens": 3195,
+    "completion_tokens": 78,
+    "estimated_cost": 0.00033666,
+    "prompt_tokens_details": null
+  }
+}

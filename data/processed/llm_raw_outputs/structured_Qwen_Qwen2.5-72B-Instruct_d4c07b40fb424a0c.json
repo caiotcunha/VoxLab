@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQOu11Ah4KzQrT7Z0q1aN0K0",
+  "object": "chat.completion",
+  "created": 1790281267,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vacinação obrigatória contra a COVID-19 em crianças de 6 meses a 5 anos\",\n  \"target_proposition_b\": \"Vacinação obrigatória contra a COVID-19 em crianças de 6 meses a 5 anos\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3696,
+    "total_tokens": 3813,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00137736,
+    "prompt_tokens_details": null
+  }
+}

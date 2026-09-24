@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcnFcwC5evPlS1MHu5M7ZTD8",
+  "object": "chat.completion",
+  "created": 1790282213,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deve haver proteção das redes sociais e controle da disseminação de ódio\",\n  \"target_proposition_b\": \"Deve haver alocação de recursos para proteger a infância e adolescência\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3624,
+    "total_tokens": 3737,
+    "completion_tokens": 113,
+    "estimated_cost": 0.00039856,
+    "prompt_tokens_details": null
+  }
+}

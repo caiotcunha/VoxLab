@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rr0Zdutk3soU1IU2yVrmr21y",
+  "object": "chat.completion",
+  "created": 1790282428,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à energia e ao meio ambiente, mas não respondem à mesma proposição específica, pois a primeira manifestação discute a transição energética e o uso de combustíveis alternativos, enquanto a segunda manifestação se concentra no uso do biometano na matriz energética brasileira.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2884,
+    "total_tokens": 2973,
+    "completion_tokens": 89,
+    "estimated_cost": 0.00031688,
+    "prompt_tokens_details": null
+  }
+}

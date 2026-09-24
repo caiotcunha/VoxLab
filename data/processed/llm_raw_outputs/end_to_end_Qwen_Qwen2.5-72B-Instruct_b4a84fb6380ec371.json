@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5Xplq0Jms2h0RSGuatDYQOc",
+  "object": "chat.completion",
+  "created": 1790281965,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um compromisso claro com o enfrentamento do racismo e a promoção da igualdade racial, especialmente no contexto da educação e das políticas públicas para a primeira infância.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4111,
+    "total_tokens": 4179,
+    "completion_tokens": 68,
+    "estimated_cost": 0.0015071600000000002,
+    "prompt_tokens_details": null
+  }
+}

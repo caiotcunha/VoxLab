@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rv6Kz9xNF9D2EAW4pbanhECt",
+  "object": "chat.completion",
+  "created": 1790281944,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"É necessário adotar medidas urgentes para enfrentar as mudanças climáticas e prevenir desastres socioambientais.\",\n  \"target_proposition_b\": \"É necessário reservar recursos orçamentários e estruturar as defesas civis para prevenir e responder a desastres socioambientais.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3380,
+    "total_tokens": 3512,
+    "completion_tokens": 132,
+    "estimated_cost": 0.0012695999999999999,
+    "prompt_tokens_details": null
+  }
+}

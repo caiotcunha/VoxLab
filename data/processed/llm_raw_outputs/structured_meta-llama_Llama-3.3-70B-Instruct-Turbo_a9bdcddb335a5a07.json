@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSSVZcliGjDxEWRpLnizZwcQ",
+  "object": "chat.completion",
+  "created": 1790282854,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Recursos para o Ministério das Mulheres devem ser gerenciados diretamente por ele\",\n  \"target_proposition_b\": \"Deve haver uma rede de proteção para vítimas de violência, incluindo DEAMs e Núcleos Especializados de Atendimento em todas as cidades brasileiras\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2959,
+    "total_tokens": 3095,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00033942,
+    "prompt_tokens_details": null
+  }
+}

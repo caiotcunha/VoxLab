@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCPU1sqGiVGH4eHRzC71kIQR",
+  "object": "chat.completion",
+  "created": 1790282643,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos e destacam a importância de combater o idadismo e garantir os direitos das pessoas idosas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6857,
+    "total_tokens": 6934,
+    "completion_tokens": 77,
+    "estimated_cost": 0.00071034,
+    "prompt_tokens_details": null
+  }
+}

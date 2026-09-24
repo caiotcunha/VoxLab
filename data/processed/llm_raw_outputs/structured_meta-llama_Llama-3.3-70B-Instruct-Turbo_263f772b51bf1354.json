@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4Phxi0st25eLs5Fgnnsm125",
+  "object": "chat.completion",
+  "created": 1790282153,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Estado deve priorizar políticas para o envelhecimento saudável da população\",\n  \"target_proposition_b\": \"O G20 deve incluir a agenda do envelhecimento saudável em suas discussões\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9108,
+    "total_tokens": 9223,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0009476000000000002,
+    "prompt_tokens_details": null
+  }
+}

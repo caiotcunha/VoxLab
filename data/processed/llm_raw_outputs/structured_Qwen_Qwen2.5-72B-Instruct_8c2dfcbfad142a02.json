@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAHblD2ZR2jEpNB1ueDYGthA",
+  "object": "chat.completion",
+  "created": 1790282127,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O bem-estar animal é essencial para a sustentabilidade e saúde ambiental.\",\n  \"target_proposition_b\": \"O bem-estar animal é uma pauta econômica e ambiental importante, com impactos nas relações comerciais e na sustentabilidade.\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3343,
+    "total_tokens": 3466,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00125268,
+    "prompt_tokens_details": null
+  }
+}

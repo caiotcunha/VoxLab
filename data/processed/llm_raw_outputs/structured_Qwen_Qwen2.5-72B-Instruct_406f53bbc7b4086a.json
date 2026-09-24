@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RscXuJRstG0B5nzQ3BGksH2H",
+  "object": "chat.completion",
+  "created": 1790281934,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Pessoas autistas devem ser vistas como detentoras de direitos e plenas de cidadania\",\n  \"target_proposition_b\": \"Pessoas autistas devem ser vistas como detentoras de direitos e plenas de cidadania\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2868,
+    "total_tokens": 2989,
+    "completion_tokens": 121,
+    "estimated_cost": 0.00108088,
+    "prompt_tokens_details": null
+  }
+}

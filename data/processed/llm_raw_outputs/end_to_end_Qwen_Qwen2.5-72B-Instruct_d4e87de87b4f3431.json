@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rd6rnteNjrJWTEgu5bbQko09",
+  "object": "chat.completion",
+  "created": 1790281231,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes e respondem a proposições específicas distintas, uma sobre a compra de insulina pelo SUS e a outra sobre denúncias envolvendo o custeio de viagem de uma pessoa condenada por crimes.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2609,
+    "total_tokens": 2688,
+    "completion_tokens": 79,
+    "estimated_cost": 0.00097084,
+    "prompt_tokens_details": null
+  }
+}

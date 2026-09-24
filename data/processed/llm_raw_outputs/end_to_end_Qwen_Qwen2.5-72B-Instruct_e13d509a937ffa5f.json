@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rd1V5AREiCtCyhECKzavzSr3",
+  "object": "chat.completion",
+  "created": 1790281954,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre obsolescência programada e proteção ao consumidor em relação a produtos eletrônicos, enquanto a segunda aborda a proteção aos consumidores idosos em contratos de seguro de vida. Ambas têm posições determináveis, mas não respondem à mesma proposição específica.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3842,
+    "total_tokens": 3939,
+    "completion_tokens": 97,
+    "estimated_cost": 0.00142192,
+    "prompt_tokens_details": null
+  }
+}

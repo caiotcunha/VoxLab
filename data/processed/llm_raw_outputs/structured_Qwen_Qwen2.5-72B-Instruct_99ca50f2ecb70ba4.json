@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzYdHo7vNS36YeGL3al1In7j",
+  "object": "chat.completion",
+  "created": 1790282113,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O IBAMA está aguardando o DNIT apresentar os estudos para a emissão da licença de instalação da BR-319.\",\n  \"target_proposition_b\": \"O IBAMA não concederá a licença para a exploração de petróleo no Bloco 59 da Margem Equatorial devido a problemas técnicos e ambientais.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5364,
+    "total_tokens": 5509,
+    "completion_tokens": 145,
+    "estimated_cost": 0.00198904,
+    "prompt_tokens_details": null
+  }
+}

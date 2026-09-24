@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rz4KdeB0SuDRLle16jao2Y81",
+  "object": "chat.completion",
+  "created": 1790281253,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações abordam temas relacionados à violência, mas respondem a proposições específicas diferentes: a primeira trata da segurança escolar e medidas contra a violência em escolas, enquanto a segunda trata da inclusão de emendas na LDO para combater a violência contra crianças e adolescentes.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3326,
+    "total_tokens": 3415,
+    "completion_tokens": 89,
+    "estimated_cost": 0.00123296,
+    "prompt_tokens_details": null
+  }
+}

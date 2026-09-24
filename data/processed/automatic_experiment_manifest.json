@@ -1,0 +1,20 @@
+{
+  "experiment_version": "automatic_baselines_v1",
+  "timestamp": "2026-09-24T20:51:21.246257+00:00",
+  "prompt_end_to_end_version": "v1",
+  "prompt_end_to_end_sha256": "d768b61c8178aa95ce75a1c4a8095e240fac212ca6b94e6e7adf8bcdafd179e2",
+  "prompt_structured_version": "v1",
+  "prompt_structured_sha256": "584a80d9c92cc34037fc9cce392181fa060a34c550f54bbfc0e1fcebb3e20765",
+  "models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  ],
+  "temperature": 0.0,
+  "seed": 20260924,
+  "provider": "deepinfra",
+  "gold_pair_count": 18,
+  "expansion_pair_count": 29,
+  "relation_derivation_version": "voxlab.agreement.derive_relation",
+  "false_reversal_definition": "count of predictions == STANCE_REVERSED where gold_relation != STANCE_REVERSED; denominator is fixed at the full gold pair count, defined before any run",
+  "git_commit": "c8e2204e07338901cc7f5bd0b2a40055631557b3"
+}

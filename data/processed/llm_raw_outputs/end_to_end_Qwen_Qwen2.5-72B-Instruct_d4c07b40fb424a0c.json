@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHF48JTxX0QlxggvDuToL5HV",
+  "object": "chat.completion",
+  "created": 1790281263,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam oposição à obrigatoriedade da vacinação contra a COVID-19 em crianças, embora a segunda manifestação seja mais focada em questionar a vacina em geral e a obrigatoriedade, enquanto a primeira é mais direta na oposição à obrigatoriedade.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3430,
+    "total_tokens": 3517,
+    "completion_tokens": 87,
+    "estimated_cost": 0.0012696,
+    "prompt_tokens_details": null
+  }
+}

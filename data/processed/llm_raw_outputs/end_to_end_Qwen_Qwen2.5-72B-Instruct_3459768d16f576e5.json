@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjlDl3EI7VeUAX5fM8KSmSV2",
+  "object": "chat.completion",
+  "created": 1790281289,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a manutenção do saque-aniversário do FGTS, argumentando sua importância para os trabalhadores e a economia.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2765,
+    "total_tokens": 2822,
+    "completion_tokens": 57,
+    "estimated_cost": 0.0010182000000000001,
+    "prompt_tokens_details": null
+  }
+}

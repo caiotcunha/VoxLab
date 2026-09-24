@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1ISBUijH8oERlAuleCeHOHI",
+  "object": "chat.completion",
+  "created": 1790281345,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas de proteção e independência econômica para mulheres vítimas de violência\",\n  \"target_proposition_b\": \"Criação de políticas públicas para a saúde da mulher no climatério e menopausa\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4264,
+    "total_tokens": 4382,
+    "completion_tokens": 118,
+    "estimated_cost": 0.00158224,
+    "prompt_tokens_details": null
+  }
+}

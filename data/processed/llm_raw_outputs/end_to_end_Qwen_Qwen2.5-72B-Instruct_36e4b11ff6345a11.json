@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsIPtDD0ynStpnw0h0hyorcd",
+  "object": "chat.completion",
+  "created": 1790281328,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre a reconstrução do SUS e ações específicas do Ministério da Saúde, enquanto a segunda aborda a reconstrução dos direitos humanos e a participação social, incluindo a Conferência Nacional de Assistência Social e o programa Viver sem Limite.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1852,
+    "total_tokens": 1945,
+    "completion_tokens": 93,
+    "estimated_cost": 0.0007039199999999999,
+    "prompt_tokens_details": null
+  }
+}

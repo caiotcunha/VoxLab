@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RScKnipXFiUrEKxdxyIcxnH2",
+  "object": "chat.completion",
+  "created": 1790281354,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Poder Judiciário, especialmente o Supremo, deve evitar legislar e se limitar a julgar casos concretos.\",\n  \"target_proposition_b\": \"As concessionárias de energia elétrica devem cumprir a lei e ser fiscalizadas de forma mais rigorosa.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2983,
+    "total_tokens": 3112,
+    "completion_tokens": 129,
+    "estimated_cost": 0.0011254799999999999,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RY7XaRfC7N8oLXwXx1ELkP6A",
+  "object": "chat.completion",
+  "created": 1790282094,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Recursos para políticas de proteção à mulher devem ser geridos diretamente pelo Ministério das Mulheres\",\n  \"target_proposition_b\": \"Políticas públicas de proteção à mulher devem ser ampliadas e incluir medidas como aluguel social e independência econômica\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2939,
+    "total_tokens": 3068,
+    "completion_tokens": 129,
+    "estimated_cost": 0.00110964,
+    "prompt_tokens_details": null
+  }
+}

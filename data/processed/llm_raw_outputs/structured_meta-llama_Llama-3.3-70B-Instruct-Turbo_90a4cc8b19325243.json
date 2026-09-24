@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIyv5vnWh5iI6QJxTJQiysLW",
+  "object": "chat.completion",
+  "created": 1790282553,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A vacinação deve ser promovida e a desinformação sobre vacinas deve ser combatida\",\n  \"target_proposition_b\": \"A vacinação deve ser promovida e a desinformação sobre vacinas deve ser combatida\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5412,
+    "total_tokens": 5530,
+    "completion_tokens": 118,
+    "estimated_cost": 0.00057896,
+    "prompt_tokens_details": null
+  }
+}

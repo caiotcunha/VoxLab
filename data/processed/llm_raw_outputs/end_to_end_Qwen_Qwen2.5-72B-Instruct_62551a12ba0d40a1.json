@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkYHf5kykkUdo5PffHjhmYCZ",
+  "object": "chat.completion",
+  "created": 1790282131,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: uma sobre a precarização do trabalho na mineração e a outra sobre a mudança demográfica e o envelhecimento da população. Não há uma proposição específica comum que possa ser comparada.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2209,
+    "total_tokens": 2285,
+    "completion_tokens": 76,
+    "estimated_cost": 0.00082564,
+    "prompt_tokens_details": null
+  }
+}

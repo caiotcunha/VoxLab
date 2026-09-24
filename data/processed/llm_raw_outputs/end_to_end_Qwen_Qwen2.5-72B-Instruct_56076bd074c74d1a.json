@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ogSkdHT9NYLcewuuslWqgX",
+  "object": "chat.completion",
+  "created": 1790282081,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira aborda a proteção de dados pessoais e o fortalecimento da ANPD, enquanto a segunda discute o uso da tecnologia blockchain no serviço público.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2144,
+    "total_tokens": 2212,
+    "completion_tokens": 68,
+    "estimated_cost": 0.00079904,
+    "prompt_tokens_details": null
+  }
+}

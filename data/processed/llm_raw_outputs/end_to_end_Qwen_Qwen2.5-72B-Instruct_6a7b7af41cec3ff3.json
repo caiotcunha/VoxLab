@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuL1KAB63XaFoturNNSuuJTB",
+  "object": "chat.completion",
+  "created": 1790281379,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre os riscos do empréstimo consignado para servidores públicos, enquanto a segunda discute a possibilidade de professores da rede pública terem dois cargos públicos em áreas diferentes.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2128,
+    "total_tokens": 2208,
+    "completion_tokens": 80,
+    "estimated_cost": 0.00079808,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyitHWwPKss0rREJgObLfCHt",
+  "object": "chat.completion",
+  "created": 1790282611,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre obsolescência programada e o outro sobre critérios mais acessíveis nos contratos de seguro de vida para idosos, não permitindo uma comparação direta entre as posições do ator.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3907,
+    "total_tokens": 3982,
+    "completion_tokens": 75,
+    "estimated_cost": 0.0004147,
+    "prompt_tokens_details": null
+  }
+}

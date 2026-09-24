@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzSmoJUft0iVy9GSXrJlZWeI",
+  "object": "chat.completion",
+  "created": 1790281357,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um compromisso com a criação de um arcabouço legal e de medidas de proteção e auxílio às vítimas de desastres naturais, enfatizando a importância da proteção aos mais vulneráveis.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2768,
+    "total_tokens": 2845,
+    "completion_tokens": 77,
+    "estimated_cost": 0.00102728,
+    "prompt_tokens_details": null
+  }
+}

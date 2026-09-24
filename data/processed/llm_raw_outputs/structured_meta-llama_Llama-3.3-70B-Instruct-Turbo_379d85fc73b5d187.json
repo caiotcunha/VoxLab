@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4r01aQJv0aXvJa5HoJkWH47",
+  "object": "chat.completion",
+  "created": 1790282874,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Estatuto dos Povos Ciganos deve ser instituído\",\n  \"target_proposition_b\": \"A economia do cuidado deve ser incluída no cálculo do PIB\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5589,
+    "total_tokens": 5699,
+    "completion_tokens": 110,
+    "estimated_cost": 0.0005941000000000001,
+    "prompt_tokens_details": null
+  }
+}

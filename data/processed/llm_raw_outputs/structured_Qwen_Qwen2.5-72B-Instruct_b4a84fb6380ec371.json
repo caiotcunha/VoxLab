@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4HGhHXaouorRHzBWYna9hBx",
+  "object": "chat.completion",
+  "created": 1790281976,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas devem incluir a questão racial para garantir o pleno desenvolvimento de crianças negras, indígenas, quilombolas e de terreiros.\",\n  \"target_proposition_b\": \"Políticas educacionais devem ser intersetoriais e incluir ações contra o racismo para garantir a segurança e o desenvolvimento de meninas e mulheres negras.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4377,
+    "total_tokens": 4527,
+    "completion_tokens": 150,
+    "estimated_cost": 0.0016357200000000002,
+    "prompt_tokens_details": null
+  }
+}

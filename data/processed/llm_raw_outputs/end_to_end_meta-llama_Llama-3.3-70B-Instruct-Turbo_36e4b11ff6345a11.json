@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9cv7C1sk5inocbrjH6QcQSi",
+  "object": "chat.completion",
+  "created": 1790282351,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As manifestações tratam de temas diferentes, um sobre a autossuficiência na produção de insumos para a saúde e o outro sobre denúncias envolvendo o custeio de viagem e questões relacionadas aos direitos humanos, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1895,
+    "total_tokens": 1979,
+    "completion_tokens": 84,
+    "estimated_cost": 0.00021638,
+    "prompt_tokens_details": null
+  }
+}

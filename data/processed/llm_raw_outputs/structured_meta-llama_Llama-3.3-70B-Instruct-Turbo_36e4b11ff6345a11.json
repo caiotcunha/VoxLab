@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnPGxr1ecSVskFmNyjWsbWr5",
+  "object": "chat.completion",
+  "created": 1790282359,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Reconstrução do Sistema Único de Saúde\",\n  \"target_proposition_b\": \"Reconstrução dos direitos humanos e sociais\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2163,
+    "total_tokens": 2259,
+    "completion_tokens": 96,
+    "estimated_cost": 0.00024702000000000003,
+    "prompt_tokens_details": null
+  }
+}

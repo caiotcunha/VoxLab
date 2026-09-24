@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RO4dlVQPWseBZoYdR6OingsI",
+  "object": "chat.completion",
+  "created": 1790282078,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas para idosos devem ser fortalecidas e melhoradas\",\n  \"target_proposition_b\": \"Políticas públicas para idosos devem ser fortalecidas e melhoradas\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9503,
+    "total_tokens": 9614,
+    "completion_tokens": 111,
+    "estimated_cost": 0.0034654800000000004,
+    "prompt_tokens_details": null
+  }
+}

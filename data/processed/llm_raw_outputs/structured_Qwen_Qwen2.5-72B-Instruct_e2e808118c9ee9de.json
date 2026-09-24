@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2T7HqS4HLVgs9frEZ3yvqEn",
+  "object": "chat.completion",
+  "created": 1790282066,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Aprovação do Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica\",\n  \"target_proposition_b\": \"O Ministério da Saúde deve discutir e financiar o tratamento da retinopatia diabética\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1422,
+    "total_tokens": 1566,
+    "completion_tokens": 144,
+    "estimated_cost": 0.00056952,
+    "prompt_tokens_details": null
+  }
+}

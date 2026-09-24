@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCheXuim3YPLhRNPnV0eE7vD",
+  "object": "chat.completion",
+  "created": 1790282159,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre a compra de insulina e vacinas e outro sobre denúncias envolvendo o custeio de viagem e questões relacionadas aos direitos humanos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2665,
+    "total_tokens": 2735,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00028890000000000003,
+    "prompt_tokens_details": null
+  }
+}

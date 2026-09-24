@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkyWiaA2Yic0oqimfbLO8WPo",
+  "object": "chat.completion",
+  "created": 1790282122,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância do bem-estar animal e sua relação com a sustentabilidade e saúde pública, mantendo uma posição favorável à proteção dos animais e à adoção de práticas sustentáveis.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3077,
+    "total_tokens": 3148,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00113612,
+    "prompt_tokens_details": null
+  }
+}

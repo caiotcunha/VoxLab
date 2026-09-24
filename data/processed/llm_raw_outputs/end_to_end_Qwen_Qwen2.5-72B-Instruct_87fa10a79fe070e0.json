@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcfIlPfrJiQ6hUVTH4JZ7DmY",
+  "object": "chat.completion",
+  "created": 1790281991,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram uma posição crítica em relação à Fundação Renova e à falta de reparação adequada aos pescadores afetados pelo rompimento da barragem de Mariana. A primeira manifestação lamenta a ausência da Renova em uma audiência, enquanto a segunda denuncia a inação da Renova e a necessidade de ação do governo para garantir a reparação.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2382,
+    "total_tokens": 2491,
+    "completion_tokens": 109,
+    "estimated_cost": 0.0009011200000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwaBGG9nIH3J6UYn6M0nmznY",
+  "object": "chat.completion",
+  "created": 1790282671,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A Fundação Renova deve ser obrigada a comparecer e a reparar os danos causados\",\n  \"target_proposition_b\": \"O Governo Federal deve cassar o direito minerário das empresas responsáveis por danos ambientais\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2674,
+    "total_tokens": 2789,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0003042,
+    "prompt_tokens_details": null
+  }
+}

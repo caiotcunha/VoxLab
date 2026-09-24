@@ -18,6 +18,7 @@ PYTHONPATH=src python3 -m voxlab.provenance
 PYTHONPATH=src python3 -m voxlab.agreement
 PYTHONPATH=src python3 -m voxlab.consensus
 PYTHONPATH=src python3 -m voxlab.expansion
+PYTHONPATH=src python3 -m voxlab.expansion_semantic_pilot
 PYTHONPATH=src python3 -m voxlab.comparability_baselines
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
@@ -65,8 +66,12 @@ No LDS, 102 de 878 nomes normalizados aparecem em dois ou mais registros. Existe
 
 ## Expansão do corpus
 
-Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. A primeira revisão documental confirmou eventos, cronologia, turnos e offsets nos 34 pares, mas deixou vazios `same_actor_verified` e `actor_identity_basis`. O status derivado permanece **32 `PARTIALLY_VALIDATED` e 2 `INVALID`**, sem gerar pacotes semânticos. Veja `docs/dataset_expansion.md`.
+Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. Após revisão documental completa (identidade, evento, evidência), o status final é **29 `VALIDATED` e 5 `INVALID`**, com `decision: READY_FOR_EXPANSION_ANNOTATION`. Os pacotes cegos dos dois anotadores já foram gerados (`data/annotations/expansion_annotator_1.csv` e `expansion_annotator_2.csv`, 29 pares cada). Veja `docs/dataset_expansion.md`.
 
 ## Baselines exploratórios
 
 Nos 16 pares com decisão binária, o corte de recuperação TF-IDF ≥0,10 classifica todos como comparáveis: recupera os 5 positivos, mas produz 11 falsos positivos. Sem o gate, a comparação direta das stances humanas emitiria relação para os 18 pares, incluindo 13 relações indevidas e 2 falsas reversões. Esses resultados são de desenvolvimento, não de teste final. Veja `docs/comparability_experiment.md`.
+
+## Baselines automáticos via LLM
+
+Trilha experimental separada (chamadas de API reais, DeepInfra) — nenhum LLM é classificador no restante do pipeline. Dois modelos avaliados nos 18 pares gold: o comparability gate corrige 10/18 pares em cada modelo isolando exatamente essa variável (structured sem gate vs. com gate), sem nunca piorar um caso no Qwen e piorando 2 no Llama. O baseline end-to-end direto empatou ou superou o pipeline estruturado com gate nesta amostra. Previsões nos 29 pares da expansão são sempre `label_source=MODEL_PREDICTION`, nunca gold. Conclusão: anotação humana dos 29 continua necessária. Veja `docs/automatic_experiments.md`.

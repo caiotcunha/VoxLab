@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLaGY2ChKyJUnPrONgsdUbYv",
+  "object": "chat.completion",
+  "created": 1790282660,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a reparação aos atingidos pelo rompimento da barragem de Mariana e criticam a atuação da Renova e das mineradoras, demonstrando uma posição favorável à causa dos pescadores e contra as empresas responsáveis.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2406,
+    "total_tokens": 2482,
+    "completion_tokens": 76,
+    "estimated_cost": 0.00026492000000000003,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RenBYLFUB52FYrADTe1qNJWd",
+  "object": "chat.completion",
+  "created": 1790282395,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Supremo Tribunal Federal não deve legislar ou modificar leis existentes\",\n  \"target_proposition_b\": \"As concessionárias de energia elétrica devem cumprir a lei e ser fiscalizadas de forma mais firme\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2987,
+    "total_tokens": 3104,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00033613999999999996,
+    "prompt_tokens_details": null
+  }
+}

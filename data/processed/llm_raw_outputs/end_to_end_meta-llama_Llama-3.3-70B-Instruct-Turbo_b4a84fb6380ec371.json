@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfdElnCOoFz6mcu00R265thJ",
+  "object": "chat.completion",
+  "created": 1790282628,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados ao racismo e à educação, mas abordam questões específicas diferentes, como a denúncia do racismo na primeira infância e a discussão sobre a educação de meninas e mulheres negras, não permitindo uma comparação direta.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4168,
+    "total_tokens": 4257,
+    "completion_tokens": 89,
+    "estimated_cost": 0.00044528,
+    "prompt_tokens_details": null
+  }
+}

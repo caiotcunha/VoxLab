@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5xif6m7A8jfh01Kq4ALFnHm",
+  "object": "chat.completion",
+  "created": 1790282582,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a inclusão e os direitos das pessoas autistas, destacando a importância da neurodiversidade e da garantia de dignidade e cidadania para esses indivíduos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2631,
+    "total_tokens": 2702,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00028582000000000005,
+    "prompt_tokens_details": null
+  }
+}

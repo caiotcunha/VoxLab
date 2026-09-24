@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3Tv4woM1G7z9cqJ8tlEn6uV",
+  "object": "chat.completion",
+  "created": 1790281220,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações abordam a importância do envelhecimento saudável e ativo, destacando a necessidade de políticas públicas que garantam direitos e melhor qualidade de vida para as pessoas idosas. A posição favorável à discussão e implementação de ações para o envelhecimento é mantida em ambos os eventos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8781,
+    "total_tokens": 8878,
+    "completion_tokens": 97,
+    "estimated_cost": 0.00319996,
+    "prompt_tokens_details": null
+  }
+}

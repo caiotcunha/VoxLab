@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ri8b7mnrIjzJaR1h7emugH9Q",
+  "object": "chat.completion",
+  "created": 1790281306,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira fala sobre políticas públicas de proteção às mulheres e crianças indígenas, enquanto a segunda aborda dificuldades na implantação de políticas públicas para a população LGBTQIA+. Ambas apresentam posições determináveis, mas não respondem à mesma proposição específica.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3668,
+    "total_tokens": 3763,
+    "completion_tokens": 95,
+    "estimated_cost": 0.00135848,
+    "prompt_tokens_details": null
+  }
+}

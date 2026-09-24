@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RG1Q4f8VvFVE3mSLE0jR1rCM",
+  "object": "chat.completion",
+  "created": 1790281422,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Movimento antivacina é criminosa e irresponsável\",\n  \"target_proposition_b\": \"Campanha antivacina é preocupante e precisa ser enfrentada\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5317,
+    "total_tokens": 5419,
+    "completion_tokens": 102,
+    "estimated_cost": 0.00195492,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rqe0aJjmD57J5m1YPZiK0K08",
+  "object": "chat.completion",
+  "created": 1790281297,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à saúde ocular e ao SUS, mas abordam proposições específicas diferentes: a primeira fala sobre a retinopatia diabética e as filas de espera, enquanto a segunda fala sobre o edema macular diabético e a necessidade de atualização dos protocolos de tratamento.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2256,
+    "total_tokens": 2356,
+    "completion_tokens": 100,
+    "estimated_cost": 0.00085216,
+    "prompt_tokens_details": null
+  }
+}

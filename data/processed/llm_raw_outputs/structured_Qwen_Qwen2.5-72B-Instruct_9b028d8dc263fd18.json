@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwQToUTvA7lQW83wRQqCX9aV",
+  "object": "chat.completion",
+  "created": 1790281393,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Avanços no marco legal da inovação, incluindo maior facilidade de remanejamento de recursos, dedicação de professores a projetos cooperativos, isenção de impostos, participação minoritária do Estado em empresas, contratação direta de ICTs, e outras medidas para melhorar a inovação no Brasil.\",\n  \"target_proposition_b\": \"Aprovação e votação rápida do PL da Lei do Bem para incentivar a inovação e a colaboração entre universidades, empresas e governo.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5390,
+    "total_tokens": 5571,
+    "completion_tokens": 181,
+    "estimated_cost": 0.0020128000000000004,
+    "prompt_tokens_details": null
+  }
+}

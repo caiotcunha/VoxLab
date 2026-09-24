@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtkHFjJaTTNoyfb9nDhLwf0J",
+  "object": "chat.completion",
+  "created": 1790282576,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Ministério da Saúde deve expandir a Atenção Primária em Saúde\",\n  \"target_proposition_b\": \"O Brasil deve ser autossuficiente na produção de insumos para a saúde\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6892,
+    "total_tokens": 7005,
+    "completion_tokens": 113,
+    "estimated_cost": 0.00072536,
+    "prompt_tokens_details": null
+  }
+}

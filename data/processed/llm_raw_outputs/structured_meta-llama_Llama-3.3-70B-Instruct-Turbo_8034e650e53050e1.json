@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFbBoxzkyQMPwKoaLQpLDy5V",
+  "object": "chat.completion",
+  "created": 1790282606,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Estado deve preparar infraestrutura para evitar desastres socioambientais\",\n  \"target_proposition_b\": \"O Estado deve reservar recursos para prevenção e resposta a desastres socioambientais\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3385,
+    "total_tokens": 3496,
+    "completion_tokens": 111,
+    "estimated_cost": 0.00037402000000000003,
+    "prompt_tokens_details": null
+  }
+}

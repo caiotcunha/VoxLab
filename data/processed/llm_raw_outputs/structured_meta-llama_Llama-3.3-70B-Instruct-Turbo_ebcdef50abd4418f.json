@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6T2NKd9cXlGnrsyZ6AVDgPq",
+  "object": "chat.completion",
+  "created": 1790282309,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Proteção aos povos indígenas e suas terras\",\n  \"target_proposition_b\": \"Implementação de políticas públicas para a população LGBTQIA+\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3989,
+    "total_tokens": 4093,
+    "completion_tokens": 104,
+    "estimated_cost": 0.00043218,
+    "prompt_tokens_details": null
+  }
+}

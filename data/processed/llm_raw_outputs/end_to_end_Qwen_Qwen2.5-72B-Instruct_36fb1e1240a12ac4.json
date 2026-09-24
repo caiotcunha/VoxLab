@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbSNL1rwEYiybU0h6rWxpK5C",
+  "object": "chat.completion",
+  "created": 1790281321,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes e não respondem à mesma proposição específica. A primeira fala sobre a criminalização de lideranças indígenas e a proposta de uma lei prisional específica para indígenas, enquanto a segunda fala sobre a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI) e a necessidade de alocar recursos orçamentários para sua implementação.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2383,
+    "total_tokens": 2505,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00090668,
+    "prompt_tokens_details": null
+  }
+}
