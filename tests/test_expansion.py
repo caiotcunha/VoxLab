@@ -9,6 +9,7 @@ from voxlab.expansion import (
     HUMAN_REVIEW_FIELDS,
     PROVENANCE_REVIEW_FIELDS,
     apply_actor_cap,
+    apply_conservative_identity_check,
     assign_similarity_strata,
     assign_temporal_stratum,
     build_expansion_rows,
@@ -263,12 +264,22 @@ class ProvenanceTemplateTests(unittest.TestCase):
             self.assertTrue(all(row[field] == "" for field in HUMAN_REVIEW_FIELDS))
 
     def test_blank_review_is_reported_as_unresolved(self):
+        gold_ids, gold_canonical = load_gold_exclusions(ROOT)
+        candidates = read_csv(ROOT / "data/processed/candidate_pairs.csv")
+        expansion, _ = build_expansion_rows(
+            candidates, gold_ids, gold_canonical, frozenset(), DEFAULT_ACTOR_CAP
+        )
+        blank_review = build_provenance_template(expansion, candidates)
         report, rows = validate_provenance_review(
-            ROOT, read_csv(ROOT / "data/annotations/expansion_provenance_review.csv")
+            ROOT, blank_review
         )
         self.assertEqual(report["decision"], "PROVENANCE_REVIEW_REQUIRED")
+        self.assertEqual(report["declared_status_distribution"], {"BLANK": 34})
         self.assertEqual(report["derived_status_distribution"], {"UNRESOLVED": 34})
         self.assertEqual(report["integrity_failures"], 0)
+        self.assertEqual(report["documentary_integrity_failures"], 0)
+        self.assertEqual(report["declared_status_mismatches"], 0)
+        self.assertEqual(report["incomplete_review_rows"], 34)
         self.assertTrue(all(row["integrity_status"] == "PENDING" for row in rows))
 
     def test_template_writer_refuses_to_overwrite_human_review(self):
@@ -333,6 +344,105 @@ class PilotSanityCheckTests(unittest.TestCase):
         for row in result:
             self.assertNotIn("derived_relation", row)
             self.assertNotIn("stance_silver", row)
+
+
+def _lds_hearing(hid, actors):
+    """actors: list of (nome, cargo) tuples."""
+    return {"id": hid, "materia": "", "transcricao": "",
+            "metadados": {"assunto": "", "envolvidos": [
+                {"nome": nome, "cargo": cargo, "opinioes": []} for nome, cargo in actors]}}
+
+
+class IdentityCheckTests(unittest.TestCase):
+    """apply_conservative_identity_check reuses provenance.identity_status,
+    the same function the original pilot used for this exact field."""
+
+    def _root_with_lds(self, tmp, hearings):
+        import json
+        (tmp / "PublicHearingBR_LDS.jsonl").write_text(
+            "\n".join(json.dumps(h) for h in hearings) + "\n", encoding="utf-8"
+        )
+        return tmp
+
+    def test_never_overwrites_existing_human_value(self):
+        with TemporaryDirectory() as tmp:
+            root = self._root_with_lds(Path(tmp), [
+                _lds_hearing("1", [("Fulano de Tal", "Deputado Federal (PT-SP)")]),
+                _lds_hearing("2", [("Fulano de Tal", "Deputado Federal (PT-SP)")]),
+            ])
+            row = {"source_record_id_earlier": "1", "source_actor_index_earlier": "0",
+                   "source_record_id_later": "2", "source_actor_index_later": "0",
+                   "same_actor_verified": "false", "actor_identity_basis": "human_override"}
+            updated, filled = apply_conservative_identity_check(root, [row])
+            self.assertEqual(filled, 0)
+            self.assertEqual(updated[0]["same_actor_verified"], "false")
+            self.assertEqual(updated[0]["actor_identity_basis"], "human_override")
+
+    def test_fills_true_when_name_and_state_match(self):
+        with TemporaryDirectory() as tmp:
+            root = self._root_with_lds(Path(tmp), [
+                _lds_hearing("1", [("Fulano de Tal", "Deputado Federal (PT-SP)")]),
+                _lds_hearing("2", [("Fulano de Tal", "Deputado Federal (PT-SP)")]),
+            ])
+            row = {"source_record_id_earlier": "1", "source_actor_index_earlier": "0",
+                   "source_record_id_later": "2", "source_actor_index_later": "0",
+                   "same_actor_verified": "", "actor_identity_basis": ""}
+            updated, filled = apply_conservative_identity_check(root, [row])
+            self.assertEqual(filled, 1)
+            self.assertEqual(updated[0]["same_actor_verified"], "true")
+            self.assertEqual(updated[0]["actor_identity_basis"], "same_full_name_and_deputy_state")
+
+    def test_leaves_blank_when_actor_lookup_fails(self):
+        with TemporaryDirectory() as tmp:
+            root = self._root_with_lds(Path(tmp), [_lds_hearing("1", [("Fulano de Tal", "")])])
+            row = {"source_record_id_earlier": "1", "source_actor_index_earlier": "0",
+                   "source_record_id_later": "999", "source_actor_index_later": "0",
+                   "same_actor_verified": "", "actor_identity_basis": ""}
+            updated, filled = apply_conservative_identity_check(root, [row])
+            self.assertEqual(filled, 0)
+            self.assertEqual(updated[0]["same_actor_verified"], "")
+
+    def test_reevaluates_its_own_prior_unknown_output(self):
+        """A prior machine-generated 'unknown' can be re-resolved after the
+        heuristic improves, e.g. identity_status learning a new rule."""
+        with TemporaryDirectory() as tmp:
+            root = self._root_with_lds(Path(tmp), [
+                _lds_hearing("1", [("Fulano de Tal", "Ministro da Saude")]),
+                _lds_hearing("2", [("Fulano de Tal", "Ministro da Saude")]),
+            ])
+            row = {"source_record_id_earlier": "1", "source_actor_index_earlier": "0",
+                   "source_record_id_later": "2", "source_actor_index_later": "0",
+                   "same_actor_verified": "unknown",
+                   "actor_identity_basis": "name_match_only_or_roles_not_equivalent"}
+            updated, filled = apply_conservative_identity_check(root, [row])
+            self.assertEqual(filled, 1)
+            self.assertEqual(updated[0]["same_actor_verified"], "true")
+            self.assertEqual(updated[0]["actor_identity_basis"], "same_full_name_and_identical_role_description")
+
+    def test_does_not_touch_a_human_written_unknown(self):
+        """An 'unknown' with a free-text human basis is a final judgment, not
+        a placeholder — it must never be silently overwritten."""
+        with TemporaryDirectory() as tmp:
+            root = self._root_with_lds(Path(tmp), [
+                _lds_hearing("1", [("Fulano de Tal", "Ministro da Saude")]),
+                _lds_hearing("2", [("Fulano de Tal", "Ministro da Saude")]),
+            ])
+            row = {"source_record_id_earlier": "1", "source_actor_index_earlier": "0",
+                   "source_record_id_later": "2", "source_actor_index_later": "0",
+                   "same_actor_verified": "unknown",
+                   "actor_identity_basis": "revisei manualmente e ainda tenho duvida"}
+            updated, filled = apply_conservative_identity_check(root, [row])
+            self.assertEqual(filled, 0)
+            self.assertEqual(updated[0]["same_actor_verified"], "unknown")
+            self.assertEqual(updated[0]["actor_identity_basis"], "revisei manualmente e ainda tenho duvida")
+
+    def test_does_not_use_stance_or_relation_labels(self):
+        """The identity check depends only on name and role; no stance field is read or written."""
+        import inspect
+        from voxlab import expansion
+        source = inspect.getsource(expansion.apply_conservative_identity_check)
+        for forbidden in ("stance", "relation_gold", "derived_relation"):
+            self.assertNotIn(forbidden, source)
 
 
 if __name__ == "__main__":

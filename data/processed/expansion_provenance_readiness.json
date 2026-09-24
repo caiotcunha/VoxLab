@@ -1,14 +1,25 @@
 {
   "expected_pairs": 34,
   "review_rows": 34,
-  "derived_status_distribution": {
-    "UNRESOLVED": 34
+  "declared_status_distribution": {
+    "INVALID": 2,
+    "PARTIALLY_VALIDATED": 3,
+    "VALIDATED": 29
   },
-  "integrity_failures": 0,
+  "derived_status_distribution": {
+    "INVALID": 2,
+    "PARTIALLY_VALIDATED": 9,
+    "VALIDATED": 23
+  },
+  "integrity_failures": 6,
+  "documentary_integrity_failures": 0,
+  "declared_status_mismatches": 6,
+  "incomplete_review_rows": 0,
   "minimum_validated_pairs_for_annotation_round": 20,
   "decision": "PROVENANCE_REVIEW_REQUIRED",
   "semantic_packets_generated": false,
+  "identity_fields_auto_filled_this_run": 4,
   "previously_validated_manifestation_sides_available_for_reuse": 8,
   "pairs_with_reusable_provenance": 7,
-  "ranked_speech_candidates_for_manual_review": 300
+  "ranked_speech_candidates_for_manual_review": 340
 }

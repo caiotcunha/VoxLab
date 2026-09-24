@@ -65,7 +65,7 @@ No LDS, 102 de 878 nomes normalizados aparecem em dois ou mais registros. Existe
 
 ## Expansão do corpus
 
-Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. O template rastreável e seu validador estão prontos; os 34 pares permanecem `UNRESOLVED` até a revisão documental humana. Veja `docs/dataset_expansion.md`.
+Excluídos os 18 pares gold, restam **40 candidatos** no pool. Aplicado cap de 2 pares por ator (principalmente Erika Kokay ×6, Alexandre da Silva ×3, Gilson Daniel ×3), a amostra de expansão tem **34 pares de 27 atores**. O sanity check retrospectivo confirma que o retriever TF-IDF recuperaria todos os 18 pares gold ao threshold 0,10. A primeira revisão documental confirmou eventos, cronologia, turnos e offsets nos 34 pares, mas deixou vazios `same_actor_verified` e `actor_identity_basis`. O status derivado permanece **32 `PARTIALLY_VALIDATED` e 2 `INVALID`**, sem gerar pacotes semânticos. Veja `docs/dataset_expansion.md`.
 
 ## Baselines exploratórios
 

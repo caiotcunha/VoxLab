@@ -198,12 +198,22 @@ def opinion_overlap(a: str, b: str) -> float:
 
 
 def speaker_matches_actor(speaker: str, actor: str) -> bool:
-    """Require a full-name marker; allow one documented longer display name."""
+    """Require an exact name or one of the documented transcript aliases."""
     expected = normalize_actor(actor)
     actual = normalize_actor(speaker)
     if actual == expected and bool(expected):
         return True
-    return expected == "gianna sagazio" and actual == "gianna cardoso sagazio"
+    documented_aliases = {
+        "gianna sagazio": {"gianna cardoso sagazio"},
+        "nisia trindade": {
+            "ministra nisia trindade",
+            "ministra nisia trindade lima",
+        },
+        "ricardo galvao": {"ricardo magnus osorio galvao"},
+        "rodrigo agostinho": {"rodrigo antonio de agostinho mendonca"},
+        "roselene alves": {"roselene candida alves"},
+    }
+    return actual in documented_aliases.get(expected, set())
 
 
 def speech_candidates(pair: dict, side: str, transcript: str) -> list[dict]:
@@ -247,6 +257,9 @@ def identity_status(name_a: str, role_a: str, name_b: str, role_b: str) -> tuple
         if ufa.group(1).upper() != ufb.group(1).upper():
             return "unknown", "same_name_conflicting_state_metadata"
         return "true", "same_full_name_and_deputy_state"
+    normalized_role_a, normalized_role_b = normalize_actor(role_a), normalize_actor(role_b)
+    if normalized_role_a and normalized_role_a == normalized_role_b:
+        return "true", "same_full_name_and_identical_role_description"
     organizations = {
         "alexandre da silva": "secretario nacional dos direitos da pessoa idosa",
         "mercedes bustamante": "coordenacao de aperfeicoamento de pessoal",

@@ -105,6 +105,20 @@ class ProvenanceTests(unittest.TestCase):
         self.assertEqual(transcript[turns[0].text_start:turns[0].text_end].strip(), "Texto um.")
         self.assertFalse(speaker_matches_actor(turns[1].speaker_name, "Dr. Zacharias Calil"))
 
+    def test_documented_long_name_markers_match_actor(self):
+        aliases = [
+            ("MINISTRA NÍSIA TRINDADE LIMA", "Nísia Trindade"),
+            ("RICARDO MAGNUS OSÓRIO GALVÃO", "Ricardo Galvão"),
+            ("RODRIGO ANTONIO DE AGOSTINHO MENDONÇA", "Rodrigo Agostinho"),
+            ("ROSELENE CANDIDA ALVES", "Roselene Alves"),
+        ]
+        for speaker, actor in aliases:
+            with self.subTest(speaker=speaker, actor=actor):
+                self.assertTrue(speaker_matches_actor(speaker, actor))
+
+    def test_undocumented_partial_name_does_not_match_actor(self):
+        self.assertFalse(speaker_matches_actor("PAULO XAVIER DA SILVA", "Paulo Xavier"))
+
     def test_nli_exact_and_whitespace_normalized_matches(self):
         transcript = "Primeira\n\nfala aqui."
         compact, char_map = compact_with_map(transcript)
@@ -116,6 +130,27 @@ class ProvenanceTests(unittest.TestCase):
 
     def test_role_identity_does_not_use_name_alone(self):
         self.assertEqual(identity_status("Paulo Xavier", "Presidente da FEMBRAPP", "Paulo Xavier", "Presidente da FANMA")[0], "unknown")
+
+    def test_identical_role_description_confirms_identity(self):
+        status, basis = identity_status(
+            "Nísia Trindade", "Ministra da Saúde", "Nísia Trindade", "Ministra da Saúde"
+        )
+        self.assertEqual(status, "true")
+        self.assertEqual(basis, "same_full_name_and_identical_role_description")
+
+    def test_identical_role_check_still_rejects_differing_wording(self):
+        """Slightly different phrasing of the same office is NOT auto-confirmed."""
+        status, _ = identity_status(
+            "Alexandre da Silva",
+            "Secretário Nacional de Promoção e Defesa dos Direitos da Pessoa Idosa",
+            "Alexandre da Silva",
+            "Atual titular da Secretaria Nacional da Pessoa Idosa",
+        )
+        self.assertEqual(status, "unknown")
+
+    def test_empty_role_on_either_side_does_not_confirm_via_identical_check(self):
+        status, _ = identity_status("Pessoa", "", "Pessoa", "")
+        self.assertEqual(status, "unknown")
 
 
 if __name__ == "__main__":

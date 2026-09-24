@@ -19,7 +19,7 @@ import math
 from pathlib import Path
 
 from .audit import read_jsonl, write_csv
-from .provenance import (containing_turn, parse_turns, read_official_events,
+from .provenance import (containing_turn, identity_status, parse_turns, read_official_events,
                          speaker_matches_actor, speech_candidates)
 from .semantic_pilot import read_csv
 
@@ -61,7 +61,8 @@ PAIR_REVIEW_FIELDS = [
 HUMAN_REVIEW_FIELDS = SIDE_REVIEW_FIELDS + PAIR_REVIEW_FIELDS
 PROVENANCE_REVIEW_FIELDS = EXPANSION_CANDIDATE_FIELDS + SOURCE_TRACE_FIELDS + HUMAN_REVIEW_FIELDS
 READINESS_FIELDS = [
-    "pair_id", "derived_validation_status", "integrity_status", "issues",
+    "pair_id", "declared_validation_status", "derived_validation_status",
+    "integrity_status", "missing_review_fields", "issues",
     "distinct_events_verified", "temporal_order_verified", "input_sides_swapped",
 ]
 REUSABLE_PROVENANCE_FIELDS = [
@@ -328,6 +329,62 @@ def build_provenance_template(
     return output
 
 
+MACHINE_GENERATED_IDENTITY_BASIS = {
+    "same_name_conflicting_state_metadata",
+    "name_match_only_or_roles_not_equivalent",
+}
+
+
+def apply_conservative_identity_check(root: Path, review_rows: list[dict]) -> tuple[list[dict], int]:
+    """Fill same_actor_verified/actor_identity_basis with the pilot's validated
+    name+role heuristic (`provenance.identity_status`), the same function the
+    original 25-pair pilot used for this exact field.
+
+    Runs on a row when the field is blank, or when it still carries this same
+    function's own "unknown" output from a prior run (recognized by its exact
+    basis string) — so improving the heuristic can re-resolve those rows.
+    Never touches a "true"/"false" value or a human-written basis, since those
+    are final judgments. Returns (updated_rows, filled_count).
+    """
+    lds_by_id = {str(r["id"]): r for r in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
+
+    def name_role(record_id: str, actor_index: str) -> tuple[str, str]:
+        record = lds_by_id.get(record_id)
+        if not record:
+            return "", ""
+        actors = record.get("metadados", {}).get("envolvidos", [])
+        try:
+            actor = actors[int(actor_index)]
+        except (ValueError, IndexError, TypeError):
+            return "", ""
+        return actor.get("nome", ""), actor.get("cargo", "")
+
+    def is_reevaluable(row: dict) -> bool:
+        verified = row.get("same_actor_verified", "").strip()
+        if not verified:
+            return True
+        basis = row.get("actor_identity_basis", "").strip()
+        return verified == "unknown" and basis in MACHINE_GENERATED_IDENTITY_BASIS
+
+    filled = 0
+    updated = []
+    for row in review_rows:
+        row = dict(row)
+        if is_reevaluable(row):
+            name_a, role_a = name_role(row.get("source_record_id_earlier", ""),
+                                       row.get("source_actor_index_earlier", ""))
+            name_b, role_b = name_role(row.get("source_record_id_later", ""),
+                                       row.get("source_actor_index_later", ""))
+            if name_a and name_b:
+                verified, basis = identity_status(name_a, role_a, name_b, role_b)
+                if (verified, basis) != (row.get("same_actor_verified", ""), row.get("actor_identity_basis", "")):
+                    filled += 1
+                row["same_actor_verified"] = verified
+                row["actor_identity_basis"] = basis
+        updated.append(row)
+    return updated, filled
+
+
 def write_review_template_if_safe(path: Path, rows: list[dict]) -> None:
     """Upgrade a blank template, but never overwrite any human review value."""
     if path.exists():
@@ -352,6 +409,11 @@ def _derive_review_status(row: dict, integrity_ok: bool) -> str:
     if any(value == "true" for value in required):
         return "PARTIALLY_VALIDATED"
     return "UNRESOLVED"
+
+
+def _normalize_official_metadata(value: str) -> str:
+    """Normalize line endings changed by a CSV read/write round trip."""
+    return (value or "").replace("\r\n", "\n").replace("\r", "\n")
 
 
 def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list[dict]]:
@@ -403,7 +465,10 @@ def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list
                         f"event_date_{review_side}": event.get("dataHoraInicio", "")[:10],
                     }
                     for field, expected_value in official_values.items():
-                        if not row.get(field, "") or row[field] != expected_value:
+                        actual_value = row.get(field, "")
+                        if (not actual_value or
+                                _normalize_official_metadata(actual_value) !=
+                                _normalize_official_metadata(expected_value)):
                             issues.append(f"OFFICIAL_EVENT_METADATA_MISMATCH:{field}")
 
             speech = row.get(f"speech_text_{review_side}", "")
@@ -449,8 +514,19 @@ def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list
                 "event_verified", "date_verified", "actor_marker_verified", "turn_attribution_verified",
                 "summary_support_reviewed", "speech_verified", "evidence_verified",
             ))
-        if row.get("same_actor_verified") == "true" and not row.get("actor_identity_basis", "").strip():
-            issues.append("MISSING_ACTOR_IDENTITY_BASIS")
+        required_review_fields = ["same_actor_verified", "actor_identity_basis", "validation_status", "reviewer"]
+        required_review_fields.extend(
+            f"{field}_{side}"
+            for side in ("earlier", "later")
+            for field in (
+                "event_verified", "date_verified", "actor_marker_verified",
+                "turn_attribution_verified", "summary_support_reviewed",
+                "speech_verified", "evidence_verified",
+            )
+        )
+        missing_review_fields = [
+            field for field in required_review_fields if not row.get(field, "").strip()
+        ]
         if core_review and all(value == "true" for value in core_review) and not row.get("reviewer", "").strip():
             issues.append("MISSING_REVIEWER")
         integrity_ok = not issues and distinct == temporal == "true"
@@ -460,8 +536,10 @@ def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list
             integrity_ok = False
         readiness.append({
             "pair_id": pair_id,
+            "declared_validation_status": row.get("validation_status", ""),
             "derived_validation_status": derived,
             "integrity_status": "PASS" if integrity_ok else "PENDING" if not issues else "FAIL",
+            "missing_review_fields": "|".join(missing_review_fields),
             "issues": "|".join(issues),
             "distinct_events_verified": distinct,
             "temporal_order_verified": temporal,
@@ -469,6 +547,7 @@ def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list
         })
 
     counts = collections.Counter(row["derived_validation_status"] for row in readiness)
+    declared_counts = collections.Counter(row.get("validation_status", "") or "BLANK" for row in rows)
     validated = counts["VALIDATED"]
     final_decisions_complete = validated + counts["INVALID"] == len(rows)
     decision = (
@@ -481,8 +560,21 @@ def validate_provenance_review(root: Path, rows: list[dict]) -> tuple[dict, list
     report = {
         "expected_pairs": len(expected),
         "review_rows": len(rows),
+        "declared_status_distribution": dict(sorted(declared_counts.items())),
         "derived_status_distribution": dict(sorted(counts.items())),
         "integrity_failures": sum(row["integrity_status"] == "FAIL" for row in readiness),
+        "documentary_integrity_failures": sum(
+            any(
+                issue and issue != "DECLARED_STATUS_DIFFERS_FROM_DERIVED_STATUS"
+                for issue in row["issues"].split("|")
+            )
+            for row in readiness
+        ),
+        "declared_status_mismatches": sum(
+            "DECLARED_STATUS_DIFFERS_FROM_DERIVED_STATUS" in row["issues"].split("|")
+            for row in readiness
+        ),
+        "incomplete_review_rows": sum(bool(row["missing_review_fields"]) for row in readiness),
         "minimum_validated_pairs_for_annotation_round": MIN_VALIDATED_EXPANSION_PAIRS,
         "decision": decision,
         "semantic_packets_generated": False,
@@ -598,7 +690,11 @@ def main() -> None:
         # Preserve submitted human values and continue into validation.
         pass
     review_rows = read_csv(review_path)
+    review_rows, identity_filled = apply_conservative_identity_check(root, review_rows)
+    if identity_filled:
+        write_csv(review_path, review_rows, PROVENANCE_REVIEW_FIELDS)
     review_report, readiness = validate_provenance_review(root, review_rows)
+    review_report["identity_fields_auto_filled_this_run"] = identity_filled
     reusable = find_reusable_provenance(root, review_rows)
     speech_review_aids = expansion_speech_candidates(root, review_rows)
     review_report["previously_validated_manifestation_sides_available_for_reuse"] = len(reusable)

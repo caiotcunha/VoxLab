@@ -127,11 +127,11 @@ PYTHONPATH=src python3 -m voxlab.expansion
 |---|---|
 | `data/processed/expansion_candidate_pairs.csv` | 58 linhas: 34 elegíveis, 6 excluídos pelo cap, 18 gold-excludidos |
 | `data/processed/expansion_funnel.json` | Funil completo com contagens e sanity check |
-| `data/annotations/expansion_provenance_review.csv` | Template para revisão humana dos 34 pares, com IDs e índices da fonte, resumos LDS e campos documentais completos |
+| `data/annotations/expansion_provenance_review.csv` | Revisão humana dos 34 pares, com IDs e índices da fonte, resumos LDS e campos documentais completos |
 | `data/processed/expansion_provenance_readiness.csv` | Diagnóstico por par, status derivado e problemas de integridade |
 | `data/processed/expansion_provenance_readiness.json` | Contagens e decisão de prontidão da segunda rodada |
 | `data/processed/expansion_reusable_provenance.csv` | Oito manifestações idênticas já validadas no primeiro piloto, presentes em sete pares novos |
-| `data/processed/expansion_speech_candidates.csv` | 300 sentenças literais ranqueadas em turnos nominais; auxilia revisão, sem status de evidência validada |
+| `data/processed/expansion_speech_candidates.csv` | 340 sentenças literais ranqueadas em turnos nominais; auxilia revisão, sem status de evidência validada |
 
 ## 9. Próxima etapa (Fase B — aguarda humano)
 
@@ -144,7 +144,25 @@ A revisão de proveniência em `expansion_provenance_review.csv` é uma etapa hu
 5. Confirmar identidade do ator entre as duas aparições (`same_actor_verified`, `actor_identity_basis`).
 6. Julgar se a evidência sustenta o resumo LDS em `summary_support_reviewed_*`, registrar revisor e notas, e preencher `validation_status`.
 
-Ao executar `python3 -m voxlab.expansion`, o validador reconstrói fala e evidência pelos offsets, confere se o trecho pertence a um turno nominal do ator, valida IDs e datas nos CSVs oficiais e deriva um status independente. Se alguma resposta humana já tiver sido preenchida, o gerador preserva o arquivo existente e segue somente com a validação. No estado atual, os 34 pares estão `UNRESOLVED`, sem falha de integridade, e a decisão é `PROVENANCE_REVIEW_REQUIRED`.
+Ao executar `python3 -m voxlab.expansion`, o validador reconstrói fala e evidência pelos offsets, confere se o trecho pertence a um turno nominal do ator, valida IDs e datas nos CSVs oficiais e deriva um status independente. Se alguma resposta humana já tiver sido preenchida, o gerador preserva o arquivo existente e segue somente com a validação.
+
+### Estado da revisão recebida em 2026-09-24
+
+O arquivo recebido contém os 34 pares esperados e nenhum duplicado. A validação confirmou:
+
+- 68 lados com IDs e metadados de eventos oficiais consistentes;
+- 68 falas e evidências reconstruídas literalmente pelos offsets;
+- 68 trechos dentro de turnos nominais compatíveis com o ator;
+- 34 pares com eventos oficiais distintos e ordem temporal correta;
+- nenhuma inversão entre os lados `earlier` e `later`.
+
+As descrições oficiais armazenadas no CSV usam `LF`, enquanto os snapshots da Câmara preservam `CRLF`. O validador passou a normalizar apenas essa diferença de fim de linha. Também foram documentadas quatro variantes nominais encontradas nos marcadores das transcrições: Nísia Trindade, Ricardo Galvão, Rodrigo Agostinho e Roselene Alves.
+
+A revisão ainda não está completa: `same_actor_verified` e `actor_identity_basis` estão vazios nos 34 pares. Por isso, as 29 linhas declaradas `VALIDATED` são derivadas como `PARTIALLY_VALIDATED`. As duas linhas `INVALID` e as três `PARTIALLY_VALIDATED` permanecem coerentes com as decisões humanas sobre suporte do resumo, mas também precisam dos dois campos de identidade. O diagnóstico por par está em `data/processed/expansion_provenance_readiness.csv`.
+
+Uma leitura conservadora das notas recomenda ainda revisar três lados marcados como suportados. Em `597ab529d9e58c55` (Nísia Trindade, `later`), o próprio revisor informa que o valor de R$ 86 milhões do resumo não foi localizado, e a evidência selecionada mostra apenas a reabertura de 321 leitos. Em `99ca50f2ecb70ba4` (Rodrigo Agostinho, `later`), a negação de perseguição está em outro turno, fora da fala e evidência registradas. Em `8034e650e53050e1` (Tarcísio Motta, `later`), a menção explícita à PEC 44/2023 também foi localizada fora do span selecionado. Esses apontamentos não substituem o julgamento humano: o revisor deve decidir se o trecho atual sustenta a manifestação central ou se fala, evidência e status precisam ser corrigidos.
+
+Depois do preenchimento de identidade, as três linhas ainda parciais devem receber uma decisão final documentada: corrigir evidência e suporte quando houver base ou classificá-las como `INVALID`. Os pacotes semânticos permanecem bloqueados até que cada linha seja `VALIDATED` ou `INVALID` e pelo menos 20 pares sejam válidos.
 
 Antes de pesquisar um lado do zero, o revisor deve consultar `expansion_reusable_provenance.csv`. Seus oito registros correspondem exatamente ao mesmo triplo de registro, ator e opinião já validado no primeiro piloto. Para os outros lados, `expansion_speech_candidates.csv` fornece até cinco sentenças por manifestação, ranqueadas por sobreposição lexical com o resumo LDS. Esses candidatos continuam sendo heurísticos e precisam de julgamento humano sobre atribuição e suporte.
 
@@ -156,3 +174,16 @@ A decisão após a revisão será uma de:
 - `READY_FOR_EXPANSION_ANNOTATION` — pares suficientes validados
 - `PROVENANCE_REVIEW_REQUIRED` — revisão incompleta ou inconclusiva
 - `INSUFFICIENT_EXPANSION_CANDIDATES` — pool validado menor que o mínimo aceitável
+
+### Atualização: checagem de identidade conectada ao pipeline
+
+O passo de identidade (`same_actor_verified`/`actor_identity_basis`) nunca chegou a ser um campo de preenchimento humano do zero: desde o piloto original, ele é derivado por `provenance.identity_status()` — uma heurística conservadora de nome + cargo/UF. Essa chamada não estava conectada em `expansion.py`; `apply_conservative_identity_check()` corrige a lacuna, preenchendo os dois campos somente quando estão vazios ou ainda carregam a própria saída "unknown" da função (nunca um valor `true`/`false` ou uma justificativa em texto livre escrita por humano).
+
+`identity_status()` também recebeu uma regra nova: cargo idêntico (normalizado) nos dois lados confirma identidade (`same_full_name_and_identical_role_description`), o mesmo padrão já usado para UF e para o dicionário de instituições. Isso resolveu 4 dos 10 pares antes marcados `unknown` (Nísia Trindade, Ricardo Galvão, Rodrigo Agostinho e uma aparição de Alexandre da Silva).
+
+Estado após reprocessamento: **23 VALIDATED**, 9 `PARTIALLY_VALIDATED`, 2 `INVALID`. Ainda `PROVENANCE_REVIEW_REQUIRED` — a decisão exige que todos os 34 pares cheguem a um estado final, não apenas que 20 sejam validados. Os 9 pares restantes precisam de julgamento humano genuíno:
+
+- **6 com identidade ambígua** (cargo similar mas não idêntico — requer julgar se são o mesmo cargo/instituição): `370ab0f946469bab`, `e13d509a937ffa5f`, `ffe531755c6def2e`, `406f53bbc7b4086a`, `b4a84fb6380ec371`, `8c2dfcbfad142a02`.
+- **3 com identidade confirmada mas evidência pendente** (o revisor já marcou `evidence_verified=unknown`): `e8fa709c49d4cf21`, `7d09d414bbbcee5f`, `d336204af6200b5c`.
+
+Esses 9 não foram resolvidos automaticamente por decisão deliberada: julgar se cargos com fraseados diferentes referem-se à mesma posição, ou se um trecho de transcrição sustenta um resumo, é exatamente o tipo de julgamento semântico que este projeto reserva para revisão humana — não para heurística determinística nem para leitura de LLM.
