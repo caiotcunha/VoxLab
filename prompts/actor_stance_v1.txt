@@ -1,0 +1,48 @@
+Você está analisando a manifestação de UM participante de uma audiência pública da Câmara dos Deputados do Brasil. A manifestação foi cegada: você não recebe nome, partido, UF ou cargo do participante. Não tente adivinhá-los e não use conhecimento externo sobre quem poderia ser. Julgue apenas pelo texto fornecido.
+
+Data de publicação da notícia sobre a audiência: {publication_date}
+Governo federal vigente nessa data: governo do Presidente {president}.
+Assunto da audiência: {topic}
+
+PARTE 1 — Posição sobre as proposições da audiência.
+
+Para cada proposição abaixo, responda:
+- stance_determinable: YES, NO ou UNCERTAIN à pergunta "A manifestação apresenta uma posição suficientemente clara sobre ESTA proposição?". NO significa que o participante não se posiciona sobre ela (não fala dela, só descreve fatos, só faz perguntas genuínas), não neutralidade.
+- stance: somente se stance_determinable = YES; FAVOR se o participante apoia a proposição, AGAINST se a rejeita, UNCERTAIN se a direção não for clara. Nunca use NEUTRAL. Deixe vazio se stance_determinable != YES.
+
+Proposições:
+{propositions}
+
+PARTE 2 — Posição sobre o governo federal.
+
+government_stance: a posição do participante em relação ao governo federal VIGENTE indicado acima (Presidência da República, ministérios, e ações, programas ou políticas desse governo):
+- SUPPORT: elogia, defende ou apoia o governo vigente ou suas ações.
+- CRITICIZE: critica, cobra ou se opõe ao governo vigente ou a suas ações.
+- MIXED: há apoio e crítica explícitos ao governo vigente, sem direção predominante.
+- NEUTRAL: menciona o governo vigente só de modo descritivo ou informativo, sem avaliá-lo.
+- NOT_ADDRESSED: não se refere ao governo federal vigente.
+
+previous_government_stance: a mesma escala, mas em relação a governos federais ANTERIORES ao vigente (por exemplo, "o governo passado"). Use NOT_ADDRESSED se não houver referência.
+
+Regras adicionais:
+- Discurso reportado ("o grupo defende X") e citação de terceiro sem endosso não são posição do próprio participante.
+- Pedido de recursos, de providências ou de audiência com o governo, sem avaliação, não é crítica nem apoio: use NEUTRAL.
+- Críticas ao Congresso, ao Judiciário, a estados ou municípios não são posição sobre o governo federal.
+- Ironia e perguntas retóricas só contam se a direção for inequívoca; na dúvida, use UNCERTAIN (Parte 1) ou MIXED/NEUTRAL (Parte 2) conforme o caso.
+
+{speech_label}:
+<<<
+{speech}
+>>>
+
+Responda em JSON estrito, com exatamente esta estrutura e nenhuma outra chave:
+
+{{
+  "propositions": {{
+    "P1": {{"stance_determinable": "YES|NO|UNCERTAIN", "stance": "FAVOR|AGAINST|UNCERTAIN ou string vazia"}}
+  }},
+  "government_stance": "SUPPORT|CRITICIZE|MIXED|NEUTRAL|NOT_ADDRESSED",
+  "previous_government_stance": "SUPPORT|CRITICIZE|MIXED|NEUTRAL|NOT_ADDRESSED"
+}}
+
+Inclua em "propositions" exatamente os ids listados acima. Não inclua texto fora do JSON. Não inclua comentários.

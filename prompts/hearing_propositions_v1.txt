@@ -1,0 +1,29 @@
+Você está lendo o assunto e a notícia oficial de uma audiência pública da Câmara dos Deputados do Brasil.
+
+Sua tarefa é identificar de 1 a 3 PROPOSIÇÕES CENTRAIS debatidas nesta audiência: afirmações específicas e contestáveis que um participante poderia aceitar ou rejeitar.
+
+Definições:
+- Tema é o assunto geral ("regulação de plataformas"). Proposição é uma afirmação específica ("Plataformas devem remover conteúdo ilegal após notificação"). Liste apenas proposições, nunca temas.
+- Escreva cada proposição na forma afirmativa, curta, neutra e autocontida (compreensível sem ler a notícia). Não use negação para expressar oposição: quem se opõe à proposição a rejeita.
+- A proposição deve ser específica o bastante para que duas pessoas possam discordar sobre ela. Evite afirmações consensuais ("a saúde é importante") e descrições de fatos ("a audiência discutiu X").
+- Não mencione nomes de pessoas, partidos ou cargos na proposição.
+- Não acrescente informação ausente do texto. Se a notícia só sustentar uma proposição, liste só uma.
+- Prefira as proposições em que os participantes mais tomaram posição, a favor ou contra.
+
+Data de publicação da notícia: {publication_date}
+
+Assunto da audiência:
+{topic}
+
+Notícia:
+{article}
+
+Responda em JSON estrito, com exatamente esta estrutura e nenhuma outra chave:
+
+{{
+  "propositions": [
+    {{"id": "P1", "text": "proposição afirmativa, curta e neutra"}}
+  ]
+}}
+
+Use ids P1, P2, P3 em ordem. Não inclua texto fora do JSON. Não inclua comentários.
