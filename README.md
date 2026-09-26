@@ -10,7 +10,7 @@ O campo `materia` contém **data de publicação da notícia**, que não comprov
 
 ## Reprodução
 
-Requer Python 3.10+; a auditoria usa apenas a biblioteca padrão, sem chamadas de API ou instalação de dependências. A partir da raiz `VoxLab/`:
+Requer Python 3.10+. Para a trilha de alinhamento partidário (`docs/literature_review.md`), crie o ambiente com `conda env create -f environment.yml` e rode `conda activate voxlab`; ele também executa todo o restante. A auditoria usa apenas a biblioteca padrão, sem chamadas de API ou instalação de dependências. A partir da raiz `VoxLab/`:
 
 ```bash
 PYTHONPATH=src python3 -m voxlab.audit
@@ -75,3 +75,14 @@ Nos 16 pares com decisão binária, o corte de recuperação TF-IDF ≥0,10 clas
 ## Baselines automáticos via LLM
 
 Trilha experimental separada (chamadas de API reais, DeepInfra) — nenhum LLM é classificador no restante do pipeline. Dois modelos avaliados nos 18 pares gold: o comparability gate corrige 10/18 pares em cada modelo isolando exatamente essa variável (structured sem gate vs. com gate), sem nunca piorar um caso no Qwen e piorando 2 no Llama. O baseline end-to-end direto empatou ou superou o pipeline estruturado com gate nesta amostra. Previsões nos 29 pares da expansão são sempre `label_source=MODEL_PREDICTION`, nunca gold. Conclusão: anotação humana dos 29 continua necessária. Veja `docs/automatic_experiments.md`.
+
+## Trilha paralela: alinhamento partidário e governo × oposição
+
+Na branch `party-alignment`, sem nova anotação humana. Mede a postura de atores sobre as proposições de cada audiência e sobre o governo federal vigente, compara partidos e blocos, e contrasta os períodos Bolsonaro e Lula. A validação vem das votações nominais da Câmara. Módulos: `actors.py`, `hearing_stance.py` (LLM, dry-run por padrão), `camara_api.py` (download sob `--download`), `party_alignment.py` e `party_figures.py`.
+
+Resultados, com 4.364 chamadas e US$ 2,88:
+- A postura dos deputados sobre o governo nas audiências correlaciona com seu governismo em votações (ρ = 0,64–0,70, fala literal).
+- O bloco que virou governo em 2023 passa de apoio líquido negativo para positivo.
+- Nas proposições em pauta, as audiências são majoritariamente consensuais e o partido pesa pouco.
+
+Veja `docs/literature_review.md`, `docs/party_alignment.md` e `docs/figures/`.

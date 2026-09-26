@@ -1,0 +1,13 @@
+name: voxlab
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - numpy
+  - pandas
+  - scipy
+  - statsmodels
+  - scikit-learn
+  - networkx
+  - matplotlib
+  - pytest
