@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R72O3WVbLUqFipyMJQ8xS9zW",
+  "object": "chat.completion",
+  "created": 1790436251,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A criação de uma subsidiária para as loterias facilitaria a privatização dessas operações.\"},\n    {\"id\": \"P2\", \"text\": \"A privatização das loterias da Caixa beneficiaria a modernização e a competitividade do setor.\"},\n    {\"id\": \"P3\", \"text\": \"A destinação de recursos das loterias para programas sociais e investimentos públicos deve ser mantida, independentemente da forma de gestão.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1646,
+    "total_tokens": 1770,
+    "completion_tokens": 124,
+    "estimated_cost": 0.0006421600000000001,
+    "prompt_tokens_details": null
+  }
+}

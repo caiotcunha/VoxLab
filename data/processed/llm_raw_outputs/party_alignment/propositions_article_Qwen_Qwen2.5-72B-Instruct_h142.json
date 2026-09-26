@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7hk17Uq7viwwIUcH0NG7gXc",
+  "object": "chat.completion",
+  "created": 1790436642,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O limite de empréstimo consignado para servidores públicos deve ser mantido em 45%.\"},\n    {\"id\": \"P2\", \"text\": \"O governo deve criar um programa específico para negociação de dívidas de servidores públicos.\"},\n    {\"id\": \"P3\", \"text\": \"Os juros do empréstimo consignado para servidores públicos devem ser limitados como os do INSS.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1405,
+    "total_tokens": 1526,
+    "completion_tokens": 121,
+    "estimated_cost": 0.0005541999999999999,
+    "prompt_tokens_details": null
+  }
+}

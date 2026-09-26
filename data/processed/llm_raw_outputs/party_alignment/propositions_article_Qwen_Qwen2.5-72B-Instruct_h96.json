@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnK5ZUNAp3mspKIbVXFVQVq2",
+  "object": "chat.completion",
+  "created": 1790436573,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"TDAH deve ser enquadrado como deficiência.\"},\n    {\"id\": \"P2\", \"text\": \"TDAH deve ser equiparado ao transtorno do espectro autista.\"},\n    {\"id\": \"P3\", \"text\": \"A instituição de uma Política Nacional para TDAH facilitará diagnósticos e tratamentos adequados.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1745,
+    "total_tokens": 1845,
+    "completion_tokens": 100,
+    "estimated_cost": 0.0006682000000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6K1WdHwjukSlF7iKl8ZaFra",
+  "object": "chat.completion",
+  "created": 1790436636,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A Enel deve ser investigada por meio de uma CPI para apurar sua atuação.\"},\n    {\"id\": \"P2\", \"text\": \"O Congresso deve debater uma lei para regular a renovação das concessões de distribuição de energia.\"},\n    {\"id\": \"P3\", \"text\": \"A ausência do presidente da Enel na audiência pública é uma demonstração de desrespeito à Câmara dos Deputados.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1484,
+    "total_tokens": 1601,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00058104,
+    "prompt_tokens_details": null
+  }
+}

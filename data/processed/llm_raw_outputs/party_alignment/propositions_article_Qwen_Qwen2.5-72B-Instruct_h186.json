@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUoPT7kuxBW28oydup4flNPD",
+  "object": "chat.completion",
+  "created": 1790436713,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Auxílio emergencial deve ser combinado com medidas de mitigação de mudanças climáticas\"},\n    {\"id\": \"P2\", \"text\": \"Deve ser criado um fórum ou comitê para controle social da execução do auxílio emergencial\"},\n    {\"id\": \"P3\", \"text\": \"Auxílio emergencial deve considerar os impactos psicossociais de longo prazo dos desastres climáticos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1643,
+    "total_tokens": 1765,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00064028,
+    "prompt_tokens_details": null
+  }
+}

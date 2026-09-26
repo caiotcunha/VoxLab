@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9yFKyoIhPdoklfr46rvRSXw",
+  "object": "chat.completion",
+  "created": 1790436574,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A produção intensiva de animais aumenta os riscos de surtos e epidemias de doenças infecciosas.\"},\n    {\"id\": \"P2\", \"text\": \"O uso excessivo de antibióticos na produção animal contribui para a proliferação de bactérias super-resistentes.\"},\n    {\"id\": \"P3\", \"text\": \"A melhoria do bem-estar animal na pecuária pode ser alcançada através da eliminação de gaiolas e da oferta de mais conforto aos animais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1682,
+    "total_tokens": 1823,
+    "completion_tokens": 141,
+    "estimated_cost": 0.00066192,
+    "prompt_tokens_details": null
+  }
+}

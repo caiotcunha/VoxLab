@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUjFAxVs0qjJHFsGHQEJxVVd",
+  "object": "chat.completion",
+  "created": 1790436665,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Linha de crédito do BNDES para grandes empresas afetadas por enchentes no Rio Grande do Sul será ampliada\"},\n    {\"id\": \"P2\", \"text\": \"Empresas com faturamento de até R$ 300 milhões serão incluídas na nova linha de crédito do BNDES\"},\n    {\"id\": \"P3\", \"text\": \"Operadoras de crédito regionais devem ser autorizadas a operar os recursos de recuperação econômica\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1513,
+    "total_tokens": 1638,
+    "completion_tokens": 125,
+    "estimated_cost": 0.00059468,
+    "prompt_tokens_details": null
+  }
+}

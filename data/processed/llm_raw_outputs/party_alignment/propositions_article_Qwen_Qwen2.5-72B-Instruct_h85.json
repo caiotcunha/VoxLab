@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuiK2x7DbuT70XN4Ribgbhdt",
+  "object": "chat.completion",
+  "created": 1790436562,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Estados devem ter planos ou programas estruturados para políticas públicas LGBTQIA+\"},\n    {\"id\": \"P2\", \"text\": \"Conselhos de políticas públicas LGBTQIA+ devem ter orçamento, transparência e participação da sociedade civil\"},\n    {\"id\": \"P3\", \"text\": \"É necessário estabelecer uma coordenação nacional para definir padrões mínimos de políticas públicas LGBTQIA+\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1279,
+    "total_tokens": 1402,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00050964,
+    "prompt_tokens_details": null
+  }
+}

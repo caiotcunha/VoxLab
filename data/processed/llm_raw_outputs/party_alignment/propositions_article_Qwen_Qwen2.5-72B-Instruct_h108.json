@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1h5Segklf99qeT6aFlgegbM",
+  "object": "chat.completion",
+  "created": 1790436589,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Perse deve ser mantido para garantir a recuperação do setor de eventos e turismo.\"},\n    {\"id\": \"P2\", \"text\": \"A retomada gradual da cobrança de tributos prejudica a recuperação econômica do setor de eventos e turismo.\"},\n    {\"id\": \"P3\", \"text\": \"O fim do Perse compromete a previsibilidade e o planejamento das empresas do setor de eventos e turismo.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2018,
+    "total_tokens": 2145,
+    "completion_tokens": 127,
+    "estimated_cost": 0.0007772800000000001,
+    "prompt_tokens_details": null
+  }
+}

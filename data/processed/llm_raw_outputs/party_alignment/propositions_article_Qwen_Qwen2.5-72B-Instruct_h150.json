@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdSimkh8qpQBI0XvDBggV2V0",
+  "object": "chat.completion",
+  "created": 1790436653,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Santos Dumont foi o inventor do primeiro avião a realizar um voo público controlado.\"},\n    {\"id\": \"P2\", \"text\": \"Santos Dumont contribuiu significativamente para o desenvolvimento da tecnologia aeroespacial no Brasil.\"},\n    {\"id\": \"P3\", \"text\": \"Santos Dumont foi fundamental para a preservação das Cataratas do Iguaçu como patrimônio público.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1977,
+    "total_tokens": 2097,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00075972,
+    "prompt_tokens_details": null
+  }
+}

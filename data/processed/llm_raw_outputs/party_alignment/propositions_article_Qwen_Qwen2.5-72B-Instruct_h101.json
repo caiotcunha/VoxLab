@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhatAkJh0xgGeXxsxIxCdTW4",
+  "object": "chat.completion",
+  "created": 1790436579,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Dirigentes de torcidas organizadas devem ser responsabilizados civilmente pelos danos causados por associados.\"},\n    {\"id\": \"P2\", \"text\": \"Violência em jogos de futebol deve ser combatida com medidas de individualização de condutas.\"},\n    {\"id\": \"P3\", \"text\": \"Biometria e monitoramento de imagem devem ser implementados nos estádios para prevenir a violência.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1687,
+    "total_tokens": 1806,
+    "completion_tokens": 119,
+    "estimated_cost": 0.0006549199999999999,
+    "prompt_tokens_details": null
+  }
+}

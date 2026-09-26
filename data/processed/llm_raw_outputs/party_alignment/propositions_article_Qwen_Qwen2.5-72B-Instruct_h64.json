@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGr5Mp9ZRYoZkBmERn3AiRzB",
+  "object": "chat.completion",
+  "created": 1790436530,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O turismo religioso deve receber mais investimentos e fomento do governo.\"},\n    {\"id\": \"P2\", \"text\": \"A qualificação profissional é essencial para o desenvolvimento do turismo religioso.\"},\n    {\"id\": \"P3\", \"text\": \"A infraestrutura turística, como sinal de celular e rotas, deve ser melhorada para suportar o turismo religioso.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1184,
+    "total_tokens": 1296,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00047104,
+    "prompt_tokens_details": null
+  }
+}

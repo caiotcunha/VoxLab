@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsD3ciwpZXlolfvrN0G13mtr",
+  "object": "chat.completion",
+  "created": 1790436535,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A Justiça do Trabalho deve estar presente principalmente onde os trabalhadores são mais vulneráveis.\"},\n    {\"id\": \"P2\", \"text\": \"A reestruturação das varas da Justiça do Trabalho deve considerar aspectos sociais, econômicos e regionais, além da movimentação processual.\"},\n    {\"id\": \"P3\", \"text\": \"A extinção de varas da Justiça do Trabalho não é o objetivo da Resolução 296/21 do CSJT.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1754,
+    "total_tokens": 1890,
+    "completion_tokens": 136,
+    "estimated_cost": 0.0006858400000000001,
+    "prompt_tokens_details": null
+  }
+}

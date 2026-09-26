@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2PhbgNZ7rb1Vw6WFntzAvv5",
+  "object": "chat.completion",
+  "created": 1790436549,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A venda da Unidade de Industrialização do Xisto no Paraná foi realizada por um valor inferior ao de mercado.\"},\n    {\"id\": \"P2\", \"text\": \"A venda da Unidade de Industrialização do Xisto no Paraná resultará em redução dos royalties pagos ao estado, município e União.\"},\n    {\"id\": \"P3\", \"text\": \"A tecnologia Petrosix, desenvolvida pela Petrobras, não foi devidamente valorizada no contrato de venda da unidade.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1401,
+    "total_tokens": 1533,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00055716,
+    "prompt_tokens_details": null
+  }
+}

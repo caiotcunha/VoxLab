@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvwwuSFEHRzlTp3ePifJQJtZ",
+  "object": "chat.completion",
+  "created": 1790436357,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O diploma de jornalismo deve ser obrigatório para combater a desinformação e as notícias falsas\"},\n    {\"id\": \"P2\", \"text\": \"A obrigatoriedade do diploma de jornalismo não compromete a liberdade de expressão\"},\n    {\"id\": \"P3\", \"text\": \"A exigência do diploma de jornalismo é necessária para garantir a qualidade do trabalho jornalístico\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1950,
+    "total_tokens": 2065,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0007480000000000001,
+    "prompt_tokens_details": null
+  }
+}

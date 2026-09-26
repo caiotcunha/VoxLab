@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6JngFC2JqGO7moKGyo43HWe",
+  "object": "chat.completion",
+  "created": 1790436614,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O governo deve aportar mais R$ 500 milhões para o seguro rural em 2023.\"},\n    {\"id\": \"P2\", \"text\": \"O contingenciamento dos recursos para o seguro rural deve ser proibido.\"},\n    {\"id\": \"P3\", \"text\": \"O decreto para ajudar a cadeia de leite deve entrar em vigor imediatamente, sem o prazo de 90 dias.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1367,
+    "total_tokens": 1486,
+    "completion_tokens": 119,
+    "estimated_cost": 0.00053972,
+    "prompt_tokens_details": null
+  }
+}

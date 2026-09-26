@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6GCzRmJ35tjct2f0oXiWrxt",
+  "object": "chat.completion",
+  "created": 1790436564,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Motoristas de aplicativo devem ser remunerados por quilômetro rodado.\"},\n    {\"id\": \"P2\", \"text\": \"Motoristas de aplicativo não devem ser enquadrados no regime do microempreendedor individual (MEI).\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação do trabalho de motoristas de aplicativo deve garantir equilíbrio entre ganhos dos motoristas, custos das empresas e preços para os usuários.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1657,
+    "total_tokens": 1785,
+    "completion_tokens": 128,
+    "estimated_cost": 0.0006477200000000001,
+    "prompt_tokens_details": null
+  }
+}

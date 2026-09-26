@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RR2Z32h5XiHBtBuU8sFdBcmo",
+  "object": "chat.completion",
+  "created": 1790436554,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O acesso à moradia é condição central para a superação das violações de direitos da população de rua\"},\n    {\"id\": \"P2\", \"text\": \"A estratégia de albergues, repúblicas e hotéis sociais não funciona efetivamente para a população de rua\"},\n    {\"id\": \"P3\", \"text\": \"A Política Nacional para a População em Situação de Rua deve ser criada para garantir direitos básicos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1934,
+    "total_tokens": 2054,
+    "completion_tokens": 120,
+    "estimated_cost": 0.0007442400000000001,
+    "prompt_tokens_details": null
+  }
+}

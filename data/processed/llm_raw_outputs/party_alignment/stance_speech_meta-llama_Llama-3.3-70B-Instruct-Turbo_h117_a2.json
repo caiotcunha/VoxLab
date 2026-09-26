@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0ptaCjek1owrtp6ROIpnpZf",
+  "object": "chat.completion",
+  "created": 1790439467,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"propositions\": {\n    \"P1\": {\"stance_determinable\": \"NO\", \"stance\": \"\"},\n    \"P2\": {\"stance_determinable\": \"YES\", \"stance\": \"AGAINST\"},\n    \"P3\": {\"stance_determinable\": \"YES\", \"stance\": \"AGAINST\"}\n  },\n  \"government_stance\": \"NEUTRAL\",\n  \"previous_government_stance\": \"NOT_ADDRESSED\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6571,
+    "total_tokens": 6669,
+    "completion_tokens": 98,
+    "estimated_cost": 0.00068846,
+    "prompt_tokens_details": null
+  }
+}

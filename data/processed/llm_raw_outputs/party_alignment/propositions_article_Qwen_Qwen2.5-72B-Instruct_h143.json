@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmQ5sxxuOnzAXhHSoC4iZlf2",
+  "object": "chat.completion",
+  "created": 1790436644,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Bancos devem implementar algoritmos para detectar e questionar movimentações atípicas nas contas dos clientes.\"},\n    {\"id\": \"P2\", \"text\": \"Empréstimos digitais para pessoas idosas devem ser proibidos, exigindo presença física para contratação.\"},\n    {\"id\": \"P3\", \"text\": \"Bancos devem bloquear automaticamente o acesso remoto de terceiros às contas bancárias dos clientes.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1579,
+    "total_tokens": 1707,
+    "completion_tokens": 128,
+    "estimated_cost": 0.00061964,
+    "prompt_tokens_details": null
+  }
+}

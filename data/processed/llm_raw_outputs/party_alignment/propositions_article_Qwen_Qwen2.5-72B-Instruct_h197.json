@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPiEFDAn1KoYtX9D7p3Wflv9",
+  "object": "chat.completion",
+  "created": 1790436736,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Marco Legal da Inovação deve ser revisado para reduzir a burocracia na aquisição de equipamentos científicos e insumos.\"},\n    {\"id\": \"P2\", \"text\": \"Os pesquisadores devem ter mais liberdade para atuar em startups e empresas sem conflito de interesses.\"},\n    {\"id\": \"P3\", \"text\": \"A legislação deve ser simplificada para reduzir a carga burocrática e operacional dos pesquisadores e instituições de pesquisa.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2040,
+    "total_tokens": 2179,
+    "completion_tokens": 139,
+    "estimated_cost": 0.00079,
+    "prompt_tokens_details": null
+  }
+}

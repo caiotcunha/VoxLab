@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlG6wYLfF1V067seA5EYSkuy",
+  "object": "chat.completion",
+  "created": 1790436669,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Mulheres no climatério e menopausa devem ter acesso a informações e tratamento adequado na atenção primária à saúde\"},\n    {\"id\": \"P2\", \"text\": \"O Ministério da Saúde deve desenvolver novos medicamentos e fitoterápicos para mulheres no climatério e menopausa\"},\n    {\"id\": \"P3\", \"text\": \"A reposição hormonal deve ser oferecida para reduzir riscos de doenças cardiovasculares e metabólicas em mulheres no climatério e menopausa\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1410,
+    "total_tokens": 1554,
+    "completion_tokens": 144,
+    "estimated_cost": 0.0005652,
+    "prompt_tokens_details": null
+  }
+}

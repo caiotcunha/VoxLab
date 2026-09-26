@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R53kdKUNWaKQmsV1ZaZFraoI",
+  "object": "chat.completion",
+  "created": 1790436661,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Universidades comunitárias devem receber recursos públicos para manter a qualidade do ensino\"},\n    {\"id\": \"P2\", \"text\": \"A legislação atual que regula as universidades comunitárias deve ser ajustada para facilitar seu financiamento\"},\n    {\"id\": \"P3\", \"text\": \"O papel das universidades comunitárias deve ser valorizado no ecossistema educacional brasileiro\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1532,
+    "total_tokens": 1648,
+    "completion_tokens": 116,
+    "estimated_cost": 0.0005979199999999999,
+    "prompt_tokens_details": null
+  }
+}

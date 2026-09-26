@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUYqoSXEsAQ4dcYKQJdvF9OT",
+  "object": "chat.completion",
+  "created": 1790436628,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A vacinação contra a Covid-19 para crianças de 6 meses a 5 anos deve ser incluída no Programa Nacional de Imunização.\"},\n    {\"id\": \"P2\", \"text\": \"A vacina contra a Covid-19 para crianças é segura e eficaz.\"},\n    {\"id\": \"P3\", \"text\": \"A vacina contra a Covid-19 para crianças deve ser chamada de terapia gênica e não de vacina.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1715,
+    "total_tokens": 1842,
+    "completion_tokens": 127,
+    "estimated_cost": 0.0006682000000000001,
+    "prompt_tokens_details": null
+  }
+}

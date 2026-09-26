@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGgZJ1mBOp5PhYcOuMWoqMYE",
+  "object": "chat.completion",
+  "created": 1790436625,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O trabalho aos domingos e feriados deve ser autorizado mediante negociação coletiva entre trabalhadores e empregadores\"},\n    {\"id\": \"P2\", \"text\": \"A revogação da portaria que autorizava o trabalho aos domingos e feriados causa insegurança jurídica\"},\n    {\"id\": \"P3\", \"text\": \"A autorização para trabalho aos domingos e feriados deve ser regulada por lei específica\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1488,
+    "total_tokens": 1614,
+    "completion_tokens": 126,
+    "estimated_cost": 0.0005860800000000001,
+    "prompt_tokens_details": null
+  }
+}

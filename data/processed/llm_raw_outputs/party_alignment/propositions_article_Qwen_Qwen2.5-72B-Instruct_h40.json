@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R62TWbmolwMRw8TBwT6FEqKc",
+  "object": "chat.completion",
+  "created": 1790436434,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Artes marciais devem ser incluídas como parte das políticas públicas nas escolas brasileiras\"},\n    {\"id\": \"P2\", \"text\": \"Instrutores de artes marciais precisam de apoio financeiro e estrutural do governo\"},\n    {\"id\": \"P3\", \"text\": \"Artes marciais contribuem para a inclusão social e formação de valores nas crianças\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1269,
+    "total_tokens": 1382,
+    "completion_tokens": 113,
+    "estimated_cost": 0.00050204,
+    "prompt_tokens_details": null
+  }
+}

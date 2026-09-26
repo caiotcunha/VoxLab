@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RA32xOJyWM7WBl2O1EiQT0Ih",
+  "object": "chat.completion",
+  "created": 1790436328,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O orçamento deve incluir a marcação de todas as despesas relacionadas com crianças e adolescentes para ampliar a transparência.\"},\n    {\"id\": \"P2\", \"text\": \"Investimentos em prevenção de violência contra crianças e adolescentes devem ser baseados em evidências eficazes.\"},\n    {\"id\": \"P3\", \"text\": \"A proporção do PIB destinada à proteção de crianças e adolescentes deve ser aumentada para dar prioridade a essas ações.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1389,
+    "total_tokens": 1523,
+    "completion_tokens": 134,
+    "estimated_cost": 0.00055364,
+    "prompt_tokens_details": null
+  }
+}

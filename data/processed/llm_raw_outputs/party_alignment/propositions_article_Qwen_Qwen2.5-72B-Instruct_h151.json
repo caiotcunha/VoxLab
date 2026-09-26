@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROpYMtKd97VG44FYP3aJHTAC",
+  "object": "chat.completion",
+  "created": 1790436656,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A educação profissionalizante nos presídios reduz a reincidência criminal.\"},\n    {\"id\": \"P2\", \"text\": \"Institutos federais devem ser instalados dentro dos presídios para ampliar o acesso à educação profissionalizante.\"},\n    {\"id\": \"P3\", \"text\": \"A flexibilização do currículo escolar nos presídios deve incluir formação profissional para preparar os detentos para o mercado de trabalho.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1128,
+    "total_tokens": 1253,
+    "completion_tokens": 125,
+    "estimated_cost": 0.00045608,
+    "prompt_tokens_details": null
+  }
+}

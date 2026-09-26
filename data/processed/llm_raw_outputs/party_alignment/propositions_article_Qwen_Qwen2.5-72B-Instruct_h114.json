@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSS6SjrStgcQLLve7kKyik3x",
+  "object": "chat.completion",
+  "created": 1790436605,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Um programa-piloto no Amazonas pode acelerar a erradicação da tuberculose no Brasil até 2030\"},\n    {\"id\": \"P2\", \"text\": \"É necessário financiamento permanente para desenvolver programas de combate à tuberculose\"},\n    {\"id\": \"P3\", \"text\": \"Novas vacinas e diagnósticos mais rápidos são essenciais para a erradicação da tuberculose\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1798,
+    "total_tokens": 1918,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00069528,
+    "prompt_tokens_details": null
+  }
+}

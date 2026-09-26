@@ -1,0 +1,24 @@
+{
+  "experiment_version": "party_alignment_v1",
+  "stage": "propositions",
+  "timestamp": "2026-09-26T15:28:13.319139+00:00",
+  "provider": "deepinfra",
+  "models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  ],
+  "proposition_model": "Qwen/Qwen2.5-72B-Instruct",
+  "temperature": 0.0,
+  "seed": 20260926,
+  "prompt_propositions_sha256": "3ef8bbf2d598a5730809847467662942bfa9a687be5b2c903588b96d27de7739",
+  "prompt_stance_sha256": "342d3d57b2c0af45105e055be744a565c9456d3abbfc6b56b4eac4da014aa4fd",
+  "max_speech_chars": 60000,
+  "max_article_chars": 9000,
+  "conditions": [
+    "speech",
+    "lds_summary"
+  ],
+  "n_requests": 206,
+  "request_prompts_sha256": "1c03b13c0e0b9f58995a939718e41b7f480964f00aed7cfc7574a501f2dffd76",
+  "git_commit": "361f316306822bde245c7ac7f476b10c0100cb1d"
+}

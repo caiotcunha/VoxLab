@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjrCIR9CbNzt96V71p45OgXo",
+  "object": "chat.completion",
+  "created": 1790436538,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Trabalhadores com lesão permanente adquirida no trabalho devem ter estabilidade no emprego até a aposentadoria.\"},\n    {\"id\": \"P2\", \"text\": \"As regras sobre indenização por lesão no trabalho devem ser fixadas em lei, e não em acordos coletivos.\"},\n    {\"id\": \"P3\", \"text\": \"A medida provisória que altera o modelo de análise de pedidos de benefícios do INSS aumenta a vulnerabilidade dos trabalhadores com lesão ou doença profissional.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1642,
+    "total_tokens": 1789,
+    "completion_tokens": 147,
+    "estimated_cost": 0.0006499200000000001,
+    "prompt_tokens_details": null
+  }
+}

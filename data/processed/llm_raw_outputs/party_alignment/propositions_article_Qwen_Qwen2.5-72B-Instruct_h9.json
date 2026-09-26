@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYXIy5oRrQdEIb1YJbAurn4E",
+  "object": "chat.completion",
+  "created": 1790436144,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A certidão negativa de antecedentes criminais deve ser exigida para a contratação de cuidadores de pessoas idosas\"},\n    {\"id\": \"P2\", \"text\": \"A exigência de certidão negativa de antecedentes criminais pode ser considerada discriminatória e prejudicar trabalhadores informais\"},\n    {\"id\": \"P3\", \"text\": \"A contratação de cuidadores de pessoas idosas deve ser baseada em uma análise criteriosa do candidato, não apenas na certidão de antecedentes criminais\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1473,
+    "total_tokens": 1620,
+    "completion_tokens": 147,
+    "estimated_cost": 0.0005890800000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RU2qZnSrwsypyb15YnhxoIrS",
+  "object": "chat.completion",
+  "created": 1790436680,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O uso de blockchain no serviço público deve ser incentivado para aumentar segurança e transparência.\"},\n    {\"id\": \"P2\", \"text\": \"A tecnologia blockchain só traz vantagens quando usada em redes com múltiplas organizações.\"},\n    {\"id\": \"P3\", \"text\": \"A aplicação de blockchain no serviço público pode conflitar com a Lei Geral de Proteção de Dados (LGPD).\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1271,
+    "total_tokens": 1387,
+    "completion_tokens": 116,
+    "estimated_cost": 0.0005039599999999999,
+    "prompt_tokens_details": null
+  }
+}

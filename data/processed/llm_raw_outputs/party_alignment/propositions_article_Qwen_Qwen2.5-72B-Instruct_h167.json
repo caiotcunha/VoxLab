@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtbPYHHN5sL9CkOLCo6zWey9",
+  "object": "chat.completion",
+  "created": 1790436684,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O próximo Plano Plurianual deve garantir recursos para a implementação da política de controle populacional de cães e gatos.\"},\n    {\"id\": \"P2\", \"text\": \"Um programa piloto de castração pode alcançar 1 milhão de castrações em todo o Brasil.\"},\n    {\"id\": \"P3\", \"text\": \"É necessário garantir recursos orçamentários já neste ano para viabilizar ações de controle populacional de cães e gatos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1474,
+    "total_tokens": 1606,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00058344,
+    "prompt_tokens_details": null
+  }
+}

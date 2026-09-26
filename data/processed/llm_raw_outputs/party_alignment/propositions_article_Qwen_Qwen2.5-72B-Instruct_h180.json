@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXsRYUT65j9FnOkA4mxcPTXi",
+  "object": "chat.completion",
+  "created": 1790436707,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Partidos políticos devem ser anistiados pelo não cumprimento das cotas para mulheres e negros até as eleições de 2022\"},\n    {\"id\": \"P2\", \"text\": \"A anistia aos partidos políticos representa um retrocesso na representatividade de mulheres e negros na política\"},\n    {\"id\": \"P3\", \"text\": \"A Emenda Constitucional 117 não foi clara sobre o financiamento para mulheres e negros, dificultando o cumprimento das cotas pelos partidos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2025,
+    "total_tokens": 2170,
+    "completion_tokens": 145,
+    "estimated_cost": 0.000787,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJ4J2PRF4XBPfIDGTDhucU6n",
+  "object": "chat.completion",
+  "created": 1790436616,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Judiciário deve ampliar o número de varas especializadas em atendimento a mulheres vítimas de violência doméstica.\"},\n    {\"id\": \"P2\", \"text\": \"Juízes de varas comuns devem ser capacitados para o atendimento adequado de mulheres vítimas de violência doméstica.\"},\n    {\"id\": \"P3\", \"text\": \"A equipe multidisciplinar deve analisar a possibilidade de conciliação e medicação antes de qualquer tentativa em casos de violência doméstica.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1389,
+    "total_tokens": 1529,
+    "completion_tokens": 140,
+    "estimated_cost": 0.00055604,
+    "prompt_tokens_details": null
+  }
+}

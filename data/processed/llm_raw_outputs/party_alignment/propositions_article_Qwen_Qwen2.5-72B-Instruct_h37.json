@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYMI66nUPwezgmSaumMSDJYL",
+  "object": "chat.completion",
+  "created": 1790436399,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O orçamento para o Paradesporto deve ser aumentado para melhorar as políticas públicas e o apoio aos atletas com deficiência.\"},\n    {\"id\": \"P2\", \"text\": \"Estados e municípios devem criar unidades específicas para cuidar do Paradesporto em suas secretarias de Esporte ou Educação.\"},\n    {\"id\": \"P3\", \"text\": \"A prática esportiva para pessoas com deficiência deve ser incentivada em ambientes educacionais para promover inclusão e respeito à diversidade.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1267,
+    "total_tokens": 1411,
+    "completion_tokens": 144,
+    "estimated_cost": 0.0005137200000000001,
+    "prompt_tokens_details": null
+  }
+}

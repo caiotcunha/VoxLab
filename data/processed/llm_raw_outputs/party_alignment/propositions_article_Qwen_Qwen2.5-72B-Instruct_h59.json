@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7dhuUzwl1Z6MWueUTaJ1e2i",
+  "object": "chat.completion",
+  "created": 1790436527,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Pescadores devem receber indenização sem comprovação de atividade nos anos de 2014 e 2015\"},\n    {\"id\": \"P2\", \"text\": \"Espécies de peixes liberadas para pesca no Rio Doce em 2016 estão contaminadas pelos rejeitos da barragem\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1269,
+    "total_tokens": 1368,
+    "completion_tokens": 99,
+    "estimated_cost": 0.00049644,
+    "prompt_tokens_details": null
+  }
+}

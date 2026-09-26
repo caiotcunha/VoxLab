@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQk6LCrVZ0yFNuIUFwhqPPTK",
+  "object": "chat.completion",
+  "created": 1790436643,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Prefeituras devem enviar propostas para o novo PAC até 10 de novembro\"},\n    {\"id\": \"P2\", \"text\": \"Universalização dos serviços públicos de saneamento deve ser alcançada com a iniciativa privada\"},\n    {\"id\": \"P3\", \"text\": \"O programa Minha Casa, Minha Vida deve reduzir o déficit habitacional em 10% neste ano\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1417,
+    "total_tokens": 1532,
+    "completion_tokens": 115,
+    "estimated_cost": 0.00055612,
+    "prompt_tokens_details": null
+  }
+}

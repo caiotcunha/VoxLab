@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWSNiD5q9FJ2nfWQpX1tICoG",
+  "object": "chat.completion",
+  "created": 1790436644,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Fortalecer os sistemas de vigilância em saúde é essencial para enfrentar futuras emergências sanitárias\"},\n    {\"id\": \"P2\", \"text\": \"A desinformação contribui significativamente para a baixa taxa de vacinação nas Américas\"},\n    {\"id\": \"P3\", \"text\": \"Lideranças comunitárias e religiosas devem ser envolvidas na comunicação sobre a segurança e eficácia das vacinas\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1326,
+    "total_tokens": 1453,
+    "completion_tokens": 127,
+    "estimated_cost": 0.0005281600000000001,
+    "prompt_tokens_details": null
+  }
+}

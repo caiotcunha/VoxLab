@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RasKQIGzeAvcnsioXu6tYQjG",
+  "object": "chat.completion",
+  "created": 1790436674,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Empresas devem compensar suas emissões de gases de efeito estufa comprando créditos de carbono gerados por projetos de redução de emissões ou de captura de carbono.\"},\n    {\"id\": \"P2\", \"text\": \"Comunidades tradicionais devem ter direito de aprovar projetos de crédito de carbono e participar da repartição de benefícios.\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação do mercado de carbono deve garantir a autodeterminação e a autonomia dos povos indígenas e tradicionais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1472,
+    "total_tokens": 1628,
+    "completion_tokens": 156,
+    "estimated_cost": 0.00059232,
+    "prompt_tokens_details": null
+  }
+}

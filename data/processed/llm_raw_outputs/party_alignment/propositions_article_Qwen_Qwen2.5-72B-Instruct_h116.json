@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNbxUngMyVSMhJL9CtDf2nko",
+  "object": "chat.completion",
+  "created": 1790436601,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A reunião entre Venezuela e Guiana é um passo importante para o entendimento, mesmo que não resolva tudo imediatamente.\"},\n    {\"id\": \"P2\", \"text\": \"A relação entre Brasil e Argentina não será deixada de lado na gestão de Javier Milei.\"},\n    {\"id\": \"P3\", \"text\": \"O Brasil segue a ONU para determinar se um grupo é terrorista, e não reconhece o Hamas como terrorista por isso.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1559,
+    "total_tokens": 1685,
+    "completion_tokens": 126,
+    "estimated_cost": 0.00061164,
+    "prompt_tokens_details": null
+  }
+}

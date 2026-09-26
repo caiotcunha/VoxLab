@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZzPjfKK94tHf0xmylvzvBXl",
+  "object": "chat.completion",
+  "created": 1790436591,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Plano Nacional de Proteção e Defesa Civil (PNPDC) será entregue no início do segundo semestre de 2024.\"},\n    {\"id\": \"P2\", \"text\": \"O Plano Nacional de Proteção e Defesa Civil (PNPDC) vai criar uma sinergia maior entre a defesa civil nacional, estadual e municipais.\"},\n    {\"id\": \"P3\", \"text\": \"É necessário adaptar a lei do Fundo Nacional para Calamidades Públicas, Proteção e Defesa Civil (Funcap) a todas as situações emergenciais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1293,
+    "total_tokens": 1445,
+    "completion_tokens": 152,
+    "estimated_cost": 0.0005262800000000001,
+    "prompt_tokens_details": null
+  }
+}

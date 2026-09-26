@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUxFwwP26tCbEbEGrC3Mh6UA",
+  "object": "chat.completion",
+  "created": 1790436120,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A regulamentação da reforma tributária deve manter os acordos feitos na aprovação da emenda constitucional.\"},\n    {\"id\": \"P2\", \"text\": \"A regulamentação deve incluir a redução de alíquotas de impostos para produtos da cesta básica de alimentos.\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação deve garantir a não cumulatividade de impostos para evitar aumento da carga tributária.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2048,
+    "total_tokens": 2177,
+    "completion_tokens": 129,
+    "estimated_cost": 0.00078888,
+    "prompt_tokens_details": null
+  }
+}

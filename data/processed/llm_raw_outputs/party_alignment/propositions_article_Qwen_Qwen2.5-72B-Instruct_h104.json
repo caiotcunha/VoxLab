@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCoV3tB47ISurq5fx2apYOPB",
+  "object": "chat.completion",
+  "created": 1790436587,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Congresso Nacional deve participar da definição das regras de renovação das concessões das distribuidoras de energia elétrica\"},\n    {\"id\": \"P2\", \"text\": \"A renovação das concessões das distribuidoras de energia elétrica deve ser condicionada a estudos técnicos prévios e consultas públicas\"},\n    {\"id\": \"P3\", \"text\": \"As distribuidoras de energia elétrica devem ser obrigadas a facilitar a conexão de unidades de geração distribuída à rede elétrica\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1459,
+    "total_tokens": 1606,
+    "completion_tokens": 147,
+    "estimated_cost": 0.0005840400000000001,
+    "prompt_tokens_details": null
+  }
+}

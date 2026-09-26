@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCF7hoKs1k3zqcRm0CW2R9C3",
+  "object": "chat.completion",
+  "created": 1790436716,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Empresas devem poder usar excedente de recursos destinados para pesquisa tecnológica em anos posteriores.\"},\n    {\"id\": \"P2\", \"text\": \"A colaboração entre universidades, empresas e governo melhora a eficiência na alocação de recursos e promove inovação.\"},\n    {\"id\": \"P3\", \"text\": \"O ambiente regulatório precisa ser melhorado para facilitar a integração entre universidades, empresas e governo.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1250,
+    "total_tokens": 1370,
+    "completion_tokens": 120,
+    "estimated_cost": 0.000498,
+    "prompt_tokens_details": null
+  }
+}

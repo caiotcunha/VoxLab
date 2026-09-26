@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RF1gNw1V5UxYe0vbWU0ODEVX",
+  "object": "chat.completion",
+  "created": 1790436059,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Ministro do STF deve exigir bloqueio de contas em redes sociais sem devido processo legal\"},\n    {\"id\": \"P2\", \"text\": \"Regulamentação das redes sociais é necessária para proteger usuários contra excessos\"},\n    {\"id\": \"P3\", \"text\": \"Liberdade de expressão deve ser absoluta, incluindo discursos controversos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2193,
+    "total_tokens": 2302,
+    "completion_tokens": 109,
+    "estimated_cost": 0.00083308,
+    "prompt_tokens_details": null
+  }
+}

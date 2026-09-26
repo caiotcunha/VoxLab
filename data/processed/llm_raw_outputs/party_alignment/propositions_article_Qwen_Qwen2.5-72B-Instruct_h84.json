@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrQqSNTamnsYjm6kT7dg696K",
+  "object": "chat.completion",
+  "created": 1790436557,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Famílias acolhedoras devem ser amplamente divulgadas para aumentar a adesão de interessados\"},\n    {\"id\": \"P2\", \"text\": \"Recursos financeiros devem ser garantidos para o funcionamento das famílias acolhedoras\"},\n    {\"id\": \"P3\", \"text\": \"O processo de desacolhimento deve ser realizado de forma delicada para evitar novas rupturas na vida das crianças e adolescentes\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1400,
+    "total_tokens": 1526,
+    "completion_tokens": 126,
+    "estimated_cost": 0.0005544,
+    "prompt_tokens_details": null
+  }
+}

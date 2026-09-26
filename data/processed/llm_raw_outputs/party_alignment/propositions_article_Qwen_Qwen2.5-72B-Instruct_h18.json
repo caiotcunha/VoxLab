@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1G5tY5CwuNir0fNPkD4K67c",
+  "object": "chat.completion",
+  "created": 1790436222,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Pibid deve ser transformado em política nacional para garantir a continuidade das bolsas de formação de professores.\"},\n    {\"id\": \"P2\", \"text\": \"A ampliação do Pibid para 90 mil bolsas de licenciatura em pedagogia é necessária para atender à demanda de formação de professores no Brasil.\"},\n    {\"id\": \"P3\", \"text\": \"A institucionalização do Pibid pode contribuir para a redução das desigualdades sociais ao garantir a continuidade da formação de professores.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1365,
+    "total_tokens": 1518,
+    "completion_tokens": 153,
+    "estimated_cost": 0.0005526,
+    "prompt_tokens_details": null
+  }
+}

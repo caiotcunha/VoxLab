@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcZC5kxiU07V0y5oMLPdQBcm",
+  "object": "chat.completion",
+  "created": 1790436518,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Legislação, atividades educativas e convivência entre gerações podem reduzir o preconceito contra idosos\"},\n    {\"id\": \"P2\", \"text\": \"A discriminação contra idosos compromete a qualidade de vida e pode levar à violência\"},\n    {\"id\": \"P3\", \"text\": \"O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1778,
+    "total_tokens": 1901,
+    "completion_tokens": 123,
+    "estimated_cost": 0.0006892799999999999,
+    "prompt_tokens_details": null
+  }
+}

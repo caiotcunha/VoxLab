@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmJsMpNsuZ7am09lcsBhY0bz",
+  "object": "chat.completion",
+  "created": 1790436697,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil deve retomar a construção de usinas hidrelétricas com grandes reservatórios para garantir energia firme e limpa.\"},\n    {\"id\": \"P2\", \"text\": \"Os reservatórios de usinas hidrelétricas podem ser usados para controle de cheias e contribuem para as metas de descarbonização.\"},\n    {\"id\": \"P3\", \"text\": \"É necessário descontruir a ideia de que as hidrelétricas prejudicam o meio ambiente e melhorar a comunicação sobre seus benefícios.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1393,
+    "total_tokens": 1535,
+    "completion_tokens": 142,
+    "estimated_cost": 0.00055828,
+    "prompt_tokens_details": null
+  }
+}

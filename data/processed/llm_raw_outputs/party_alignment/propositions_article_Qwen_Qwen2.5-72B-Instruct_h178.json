@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rc4Z9K1ODOpqgEwH1aCxLS8f",
+  "object": "chat.completion",
+  "created": 1790436700,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Parques eólicos offshore devem ser planejados para minimizar impactos socioambientais\"},\n    {\"id\": \"P2\", \"text\": \"A energia eólica offshore deve ser regulamentada para proteger comunidades tradicionais\"},\n    {\"id\": \"P3\", \"text\": \"O planejamento espacial marinho deve ser incluído na Lei do Mar para gerenciar conflitos de uso\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1673,
+    "total_tokens": 1785,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00064708,
+    "prompt_tokens_details": null
+  }
+}

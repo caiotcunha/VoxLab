@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWT3vTLgVFz8EO3IBWjta01r",
+  "object": "chat.completion",
+  "created": 1790436459,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A tarifa zero no transporte público deve ser financiada com um percentual da arrecadação de impostos e contribuições financeiras de proprietários de veículos e empresários.\"},\n    {\"id\": \"P2\", \"text\": \"A tarifa zero no transporte público deve ser implementada por empresas públicas para evitar desvios de dinheiro e garantir transparência.\"},\n    {\"id\": \"P3\", \"text\": \"A tarifa zero no transporte público deve ser acompanhada de uma gestão controlada pelos usuários e trabalhadores através de conselhos populares.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1684,
+    "total_tokens": 1831,
+    "completion_tokens": 147,
+    "estimated_cost": 0.0006650400000000001,
+    "prompt_tokens_details": null
+  }
+}

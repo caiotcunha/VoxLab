@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNjde5QTz8zOCeb2TxazXIqK",
+  "object": "chat.completion",
+  "created": 1790436535,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O SUS deve melhorar a organização das filas de espera para consultas oftalmológicas.\"},\n    {\"id\": \"P2\", \"text\": \"O financiamento federal para o tratamento da retinopatia diabética no SUS é inadequado.\"},\n    {\"id\": \"P3\", \"text\": \"Pacientes com diabetes devem fazer exames oftalmológicos anualmente para prevenir a cegueira.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1730,
+    "total_tokens": 1849,
+    "completion_tokens": 119,
+    "estimated_cost": 0.0006704,
+    "prompt_tokens_details": null
+  }
+}

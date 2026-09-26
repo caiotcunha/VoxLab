@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVMqljjbOpWiWMk1q5bmXsw0",
+  "object": "chat.completion",
+  "created": 1790436316,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Plano Juventude Negra Viva deve ser vinculado aos planos plurianuais do governo federal.\"},\n    {\"id\": \"P2\", \"text\": \"A formação dos policiais deve ser melhorada para reduzir a violência contra jovens negros.\"},\n    {\"id\": \"P3\", \"text\": \"O Pronasci Juventude deve incluir acompanhamento multidisciplinar e capacitação profissional para jovens em situação de vulnerabilidade.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1148,
+    "total_tokens": 1273,
+    "completion_tokens": 125,
+    "estimated_cost": 0.00046328,
+    "prompt_tokens_details": null
+  }
+}

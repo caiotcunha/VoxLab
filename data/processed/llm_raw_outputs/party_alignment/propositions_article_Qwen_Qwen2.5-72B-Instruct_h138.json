@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdoweHA8mmFuTRM2fCO9n4gr",
+  "object": "chat.completion",
+  "created": 1790436636,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A ANPD deve realizar concurso público para fortalecer seu quadro de pessoal.\"},\n    {\"id\": \"P2\", \"text\": \"A ANPD precisa de maior autonomia administrativa e financeira para efetivar suas funções.\"},\n    {\"id\": \"P3\", \"text\": \"A ANPD deve priorizar a fiscalização de casos envolvendo dados sensíveis e recorrentes violações de dados.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1711,
+    "total_tokens": 1824,
+    "completion_tokens": 113,
+    "estimated_cost": 0.00066116,
+    "prompt_tokens_details": null
+  }
+}

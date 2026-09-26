@@ -1,0 +1,57 @@
+{
+  "labels": {
+    "party": "SOURCE_CLAIM_FROM_LDS_CARGO",
+    "speech": "LITERAL_TRANSCRIPT_TURNS",
+    "date": "ARTICLE_PUBLICATION_DATE",
+    "stance": "NONE"
+  },
+  "actor_hearing_rows": 1065,
+  "hearings": 206,
+  "hearings_by_period": {
+    "LULA": 171,
+    "BOLSONARO": 35
+  },
+  "actor_type": {
+    "CIVIL_SOCIETY_OR_OTHER": 614,
+    "DEPUTY": 357,
+    "FEDERAL_EXECUTIVE": 79,
+    "SUBNATIONAL_OR_OTHER_STATE": 11,
+    "SUBNATIONAL_POLITICIAN": 4
+  },
+  "speech_match_method": {
+    "EXACT": 759,
+    "FIRST_LAST": 179,
+    "TOKEN_SUBSET": 76,
+    "NONE": 49,
+    "AMBIGUOUS": 2
+  },
+  "rows_with_speech": 1014,
+  "deputy_rows_with_party": 349,
+  "deputy_rows_with_party_and_speech": 344,
+  "party_distribution_deputy_rows": {
+    "PT": 85,
+    "PL": 55,
+    "PSOL": 34,
+    "REPUBLICANOS": 26,
+    "UNIAO": 25,
+    "PSD": 22,
+    "PP": 19,
+    "PDT": 13,
+    "PSB": 10,
+    "NOVO": 9,
+    "CIDADANIA": 8,
+    "PSDB": 8,
+    "": 8,
+    "PCDOB": 8,
+    "MDB": 6,
+    "SOLIDARIEDADE": 6,
+    "PODEMOS": 6,
+    "PV": 4,
+    "PATRIOTA": 3,
+    "DEM": 1,
+    "PRD": 1
+  },
+  "hearings_with_2plus_deputy_parties": 64,
+  "actors_2plus_hearings": 102,
+  "actors_in_both_periods": 22
+}

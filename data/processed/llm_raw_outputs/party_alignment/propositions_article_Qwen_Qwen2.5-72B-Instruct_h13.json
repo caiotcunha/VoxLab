@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSVjaIGA9pNuwzBzhJELsv6P",
+  "object": "chat.completion",
+  "created": 1790436183,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Mineradoras devem pagar R$ 126 bilhões para reparar os danos causados pelo rompimento da Barragem do Fundão.\"},\n    {\"id\": \"P2\", \"text\": \"O Judiciário deve fixar prazo final para o fim da repactuação dos acordos de reparação em Mariana.\"},\n    {\"id\": \"P3\", \"text\": \"A efetiva participação dos representantes das vítimas deve ser garantida na repactuação dos acordos de reparação em Mariana.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2102,
+    "total_tokens": 2240,
+    "completion_tokens": 138,
+    "estimated_cost": 0.00081192,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rj71DQQzoWs4hzRKfhZf1wHF",
+  "object": "chat.completion",
+  "created": 1790436536,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Financiamento de segundo imóvel com recursos do FGTS impõe risco à sustentabilidade do fundo\"},\n    {\"id\": \"P2\", \"text\": \"Ampliação das possibilidades de saque do FGTS prejudica o trabalhador\"},\n    {\"id\": \"P3\", \"text\": \"Permitir o saque do FGTS para financiar segundo imóvel aquece o setor imobiliário\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1415,
+    "total_tokens": 1533,
+    "completion_tokens": 118,
+    "estimated_cost": 0.0005566,
+    "prompt_tokens_details": null
+  }
+}

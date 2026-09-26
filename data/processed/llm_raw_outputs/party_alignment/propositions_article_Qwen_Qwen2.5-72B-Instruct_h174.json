@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVYxJ2Y86Q0OyvOUuq2bq5Cf",
+  "object": "chat.completion",
+  "created": 1790436696,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Revalida deve ser facilitado, especialmente na segunda etapa.\"},\n    {\"id\": \"P2\", \"text\": \"A pontuação mínima de 65% para aprovação no Revalida é adequada.\"},\n    {\"id\": \"P3\", \"text\": \"O baixo investimento no ensino médico no Brasil leva muitos estudantes a buscarem formação no exterior.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1273,
+    "total_tokens": 1383,
+    "completion_tokens": 110,
+    "estimated_cost": 0.00050228,
+    "prompt_tokens_details": null
+  }
+}

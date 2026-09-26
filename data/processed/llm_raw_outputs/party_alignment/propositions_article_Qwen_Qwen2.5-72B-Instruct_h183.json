@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAVS9HJGTqM9VY4fhJGfQtBT",
+  "object": "chat.completion",
+  "created": 1790436707,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Ibama deve indeferir licenças ambientais baseado em critérios técnicos\"},\n    {\"id\": \"P2\", \"text\": \"A exploração de petróleo na Foz do Amazonas não representa risco significativo ao meio ambiente\"},\n    {\"id\": \"P3\", \"text\": \"O asfaltamento da BR-319 pode causar impactos ambientais significativos na floresta amazônica\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1879,
+    "total_tokens": 1998,
+    "completion_tokens": 119,
+    "estimated_cost": 0.00072404,
+    "prompt_tokens_details": null
+  }
+}

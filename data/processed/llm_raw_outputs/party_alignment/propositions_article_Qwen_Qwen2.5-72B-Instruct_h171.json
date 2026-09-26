@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RC0o6HNAhhkelAh8QmInoEKH",
+  "object": "chat.completion",
+  "created": 1790436692,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Ministério da Saúde deve criar um grupo de trabalho para analisar desinformações publicadas por profissionais de saúde\"},\n    {\"id\": \"P2\", \"text\": \"A Conferência Nacional de Saúde deve revisar a cartilha de pessoas trans e reduzir a idade de início de hormonização para 14 anos\"},\n    {\"id\": \"P3\", \"text\": \"O Ministério da Saúde deve agir de acordo com a legislação e o programa de governo ao tratar sugestões da sociedade civil\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1742,
+    "total_tokens": 1878,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00068152,
+    "prompt_tokens_details": null
+  }
+}

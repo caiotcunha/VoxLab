@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtIxkDhErrS4KBONaH0b9uhr",
+  "object": "chat.completion",
+  "created": 1790436679,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A meta fiscal de zerar o déficit em 2024 é ambiciosa devido à queda na arrecadação.\"},\n    {\"id\": \"P2\", \"text\": \"O estímulo ao empreendedorismo feminino é uma prioridade na LDO de 2024.\"},\n    {\"id\": \"P3\", \"text\": \"O cronograma de desembolsos para emendas parlamentares é importante para a política social voltada para as mulheres.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1253,
+    "total_tokens": 1381,
+    "completion_tokens": 128,
+    "estimated_cost": 0.00050228,
+    "prompt_tokens_details": null
+  }
+}

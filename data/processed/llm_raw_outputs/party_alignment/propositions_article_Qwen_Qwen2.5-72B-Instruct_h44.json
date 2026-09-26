@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3e3Ds5TTzK2K8GEXzl16HLD",
+  "object": "chat.completion",
+  "created": 1790436505,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A exploração de petróleo na Margem Equatorial é essencial para manter a produção brasileira de petróleo.\"},\n    {\"id\": \"P2\", \"text\": \"A exploração de petróleo na Foz do Rio Amazonas deve ser precedida por uma Avaliação Ambiental de Área Sedimentar (AAAS).\"},\n    {\"id\": \"P3\", \"text\": \"A exploração de petróleo na Foz do Rio Amazonas pode gerar recursos para proteção ambiental e desenvolvimento de comunidades tradicionais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2198,
+    "total_tokens": 2342,
+    "completion_tokens": 144,
+    "estimated_cost": 0.0008488800000000001,
+    "prompt_tokens_details": null
+  }
+}

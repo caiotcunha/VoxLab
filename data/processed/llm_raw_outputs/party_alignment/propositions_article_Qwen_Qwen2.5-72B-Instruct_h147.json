@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSSgBf1X2POqQ5IoHISraM0g",
+  "object": "chat.completion",
+  "created": 1790436653,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Creches públicas são essenciais para reduzir as desigualdades sociais no Brasil\"},\n    {\"id\": \"P2\", \"text\": \"A falta de acesso a creches afeta negativamente o acesso de mulheres ao mercado de trabalho\"},\n    {\"id\": \"P3\", \"text\": \"Investir em infraestrutura e qualidade das creches é fundamental para garantir educação infantil de qualidade\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 962,
+    "total_tokens": 1074,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00039112,
+    "prompt_tokens_details": null
+  }
+}

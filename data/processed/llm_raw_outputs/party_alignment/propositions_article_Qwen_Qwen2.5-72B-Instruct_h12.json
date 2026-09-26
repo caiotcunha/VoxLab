@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhO59dfcGgw0uGmbsZNP7cXu",
+  "object": "chat.completion",
+  "created": 1790436173,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Mulheres com deficiência são as maiores vítimas de violações de direitos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1479,
+    "total_tokens": 1522,
+    "completion_tokens": 43,
+    "estimated_cost": 0.00054964,
+    "prompt_tokens_details": null
+  }
+}

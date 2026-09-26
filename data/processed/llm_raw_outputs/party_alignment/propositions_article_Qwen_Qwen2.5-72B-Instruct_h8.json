@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfvitkXbge6kRtvMnfrAOupa",
+  "object": "chat.completion",
+  "created": 1790436128,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Empresas de criptomoedas devem separar ativos próprios dos clientes\"},\n    {\"id\": \"P2\", \"text\": \"Regulação de criptomoedas deve incluir obrigações de registro e conhecimento do cliente\"},\n    {\"id\": \"P3\", \"text\": \"Criptomoedas devem ser reguladas para prevenir esquemas de pirâmide financeira e lavagem de dinheiro\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1745,
+    "total_tokens": 1860,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0006742000000000001,
+    "prompt_tokens_details": null
+  }
+}

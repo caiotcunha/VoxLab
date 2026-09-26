@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rhh5fz95G1N4LjmsUpocK9dB",
+  "object": "chat.completion",
+  "created": 1790436308,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O consumidor deve ter o direito de escolher qualquer oficina para reparar seu veículo.\"},\n    {\"id\": \"P2\", \"text\": \"As montadoras devem fornecer equipamentos e softwares de diagnóstico e reparo a oficinas independentes.\"},\n    {\"id\": \"P3\", \"text\": \"A liberação do acesso a equipamentos e softwares de diagnóstico pode comprometer a segurança e a segurança ambiental dos veículos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1424,
+    "total_tokens": 1546,
+    "completion_tokens": 122,
+    "estimated_cost": 0.0005614400000000001,
+    "prompt_tokens_details": null
+  }
+}

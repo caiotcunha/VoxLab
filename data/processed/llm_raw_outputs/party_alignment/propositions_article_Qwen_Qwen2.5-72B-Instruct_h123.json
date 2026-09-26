@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ZFFOIMxFe7qLre7YBWwKnw",
+  "object": "chat.completion",
+  "created": 1790436615,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O orçamento para combater a tuberculose deve ser aumentado.\"},\n    {\"id\": \"P2\", \"text\": \"O abandono do tratamento da tuberculose é influenciado pela pobreza e pela fome.\"},\n    {\"id\": \"P3\", \"text\": \"O Ministério da Saúde precisa de pelo menos R$ 650 milhões para atingir as metas de redução da tuberculose até 2030.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1577,
+    "total_tokens": 1700,
+    "completion_tokens": 123,
+    "estimated_cost": 0.0006169200000000001,
+    "prompt_tokens_details": null
+  }
+}

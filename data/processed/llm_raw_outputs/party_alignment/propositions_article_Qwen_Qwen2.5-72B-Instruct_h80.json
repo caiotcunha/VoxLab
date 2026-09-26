@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RK9yAgUnq0kLQE0OfDxJJJQP",
+  "object": "chat.completion",
+  "created": 1790436557,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O lobby deve ser regulamentado para assegurar transparência e isonomia no relacionamento com o poder público.\"},\n    {\"id\": \"P2\", \"text\": \"O texto do Executivo para regulamentação do lobby é insuficiente e deve ser aprimorado com emendas.\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação do lobby deve abranger todos os entes federativos, incluindo consórcios, autarquias, fundações e empresas estatais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1803,
+    "total_tokens": 1939,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00070348,
+    "prompt_tokens_details": null
+  }
+}

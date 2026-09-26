@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmG6cEPqYs9WcR9V73Dnspd3",
+  "object": "chat.completion",
+  "created": 1790436626,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Filmes brasileiros devem ter cota mínima de exibição nas salas de cinema\"},\n    {\"id\": \"P2\", \"text\": \"Produções nacionais devem ter cota mínima de exibição na TV paga\"},\n    {\"id\": \"P3\", \"text\": \"Vídeo sob demanda (VoD) deve ser regulamentado para proteger o setor audiovisual nacional\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1485,
+    "total_tokens": 1598,
+    "completion_tokens": 113,
+    "estimated_cost": 0.0005798,
+    "prompt_tokens_details": null
+  }
+}

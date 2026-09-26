@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReNScvw0d9PZxOQi5gmgWzBN",
+  "object": "chat.completion",
+  "created": 1790436518,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Acessibilidade efetiva depende da consultoria das próprias pessoas com deficiência\"},\n    {\"id\": \"P2\", \"text\": \"Cursos de formação em artes devem incluir disciplinas sobre inclusão e acessibilidade\"},\n    {\"id\": \"P3\", \"text\": \"Deve haver reserva de vagas para pessoas com deficiência em editais de fomento à cultura\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1521,
+    "total_tokens": 1632,
+    "completion_tokens": 111,
+    "estimated_cost": 0.00059196,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWYd3oZ69V8QPujpaOU1WxMT",
+  "object": "chat.completion",
+  "created": 1790436601,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A Braskem deve ser considerada criminosa por sua atuação em Maceió.\"},\n    {\"id\": \"P2\", \"text\": \"A ANM foi omissa na fiscalização das operações da Braskem em Maceió.\"},\n    {\"id\": \"P3\", \"text\": \"A Braskem não apresentou estudos de impacto ambiental necessários para suas operações em Maceió.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1656,
+    "total_tokens": 1770,
+    "completion_tokens": 114,
+    "estimated_cost": 0.00064176,
+    "prompt_tokens_details": null
+  }
+}

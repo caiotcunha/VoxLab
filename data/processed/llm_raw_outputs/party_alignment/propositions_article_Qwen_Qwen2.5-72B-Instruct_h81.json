@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoXQuGjxzEk632ICtGdkjNPj",
+  "object": "chat.completion",
+  "created": 1790436552,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A diplomacia brasileira garantiu a normalidade no abastecimento de fertilizantes apesar do conflito entre Rússia e Ucrânia\"},\n    {\"id\": \"P2\", \"text\": \"A alta nos preços dos fertilizantes aumentou significativamente o custo de produção agrícola\"},\n    {\"id\": \"P3\", \"text\": \"O Brasil depende e dependerá por muito tempo da importação de fertilizantes devido a limitações geológicas\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1723,
+    "total_tokens": 1855,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00067308,
+    "prompt_tokens_details": null
+  }
+}

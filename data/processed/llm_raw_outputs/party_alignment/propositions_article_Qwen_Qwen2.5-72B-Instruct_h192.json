@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rx2ujYjMcpfkQImfvkVOIaOH",
+  "object": "chat.completion",
+  "created": 1790436718,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A obsolescência programada de celulares é uma prática adotada pelas fabricantes.\"},\n    {\"id\": \"P2\", \"text\": \"O Código de Defesa do Consumidor deve ser atualizado para enfrentar a questão da descartabilidade de produtos eletrônicos.\"},\n    {\"id\": \"P3\", \"text\": \"Os fabricantes devem manter peças de reposição e suporte para softwares de produtos não mais vendidos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1868,
+    "total_tokens": 1989,
+    "completion_tokens": 121,
+    "estimated_cost": 0.00072088,
+    "prompt_tokens_details": null
+  }
+}

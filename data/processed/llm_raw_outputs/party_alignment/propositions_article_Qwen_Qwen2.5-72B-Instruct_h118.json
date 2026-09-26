@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RD0yCqRKR0verIIG2nbqp9te",
+  "object": "chat.completion",
+  "created": 1790436611,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Fundo Nacional para Calamidades Públicas, Proteção e Defesa Civil deve ser financiado com 5% das multas por crimes ambientais e acordos judiciais de reparação de danos socioambientais.\"},\n    {\"id\": \"P2\", \"text\": \"A prevenção de desastres climáticos é mais econômica e eficaz do que a resposta pós-desastre.\"},\n    {\"id\": \"P3\", \"text\": \"A defesa civil deve ser estruturada como carreira de Estado para melhorar a articulação entre União, estados e municípios.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1791,
+    "total_tokens": 1948,
+    "completion_tokens": 157,
+    "estimated_cost": 0.0007075600000000001,
+    "prompt_tokens_details": null
+  }
+}

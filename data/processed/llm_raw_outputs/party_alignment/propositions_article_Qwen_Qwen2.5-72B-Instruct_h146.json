@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RogSWkgMDxpEV1YZxrgEL2gQ",
+  "object": "chat.completion",
+  "created": 1790436649,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A produção de Cannabis para fins medicinais deve ser liberada no Brasil.\"},\n    {\"id\": \"P2\", \"text\": \"A liberação do plantio de Cannabis medicinal reduzirá os custos dos medicamentos para pacientes vulneráveis.\"},\n    {\"id\": \"P3\", \"text\": \"A judicialização do acesso a medicamentos à base de Cannabis aumenta os gastos do Ministério da Saúde sem garantir acesso adequado aos pacientes mais necessitados.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1213,
+    "total_tokens": 1333,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00048468,
+    "prompt_tokens_details": null
+  }
+}

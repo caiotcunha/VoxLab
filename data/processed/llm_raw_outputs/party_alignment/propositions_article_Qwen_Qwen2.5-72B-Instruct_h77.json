@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REtTpGOd6QtUhvamv56V4xv6",
+  "object": "chat.completion",
+  "created": 1790436547,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O governo federal deve participar do financiamento do transporte coletivo urbano.\"},\n    {\"id\": \"P2\", \"text\": \"Os custos dos sistemas de transporte coletivo não devem ser financiados apenas pela tarifa cobrada do usuário.\"},\n    {\"id\": \"P3\", \"text\": \"A gratuidade de tarifas para idosos encarece o preço pago pelos demais usuários.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1812,
+    "total_tokens": 1927,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0006983200000000001,
+    "prompt_tokens_details": null
+  }
+}

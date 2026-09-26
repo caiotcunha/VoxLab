@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUOYSwetGy75MIEo1Ep38FjX",
+  "object": "chat.completion",
+  "created": 1790436675,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Deve-se criar um grupo de trabalho na Câmara para elaborar leis com diretrizes educacionais sobre a questão racial.\"},\n    {\"id\": \"P2\", \"text\": \"A lei municipal da Escola Sem Racismo deve ser transformada em norma federal.\"},\n    {\"id\": \"P3\", \"text\": \"O combate ao racismo deve começar já na creche.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1631,
+    "total_tokens": 1736,
+    "completion_tokens": 105,
+    "estimated_cost": 0.00062916,
+    "prompt_tokens_details": null
+  }
+}

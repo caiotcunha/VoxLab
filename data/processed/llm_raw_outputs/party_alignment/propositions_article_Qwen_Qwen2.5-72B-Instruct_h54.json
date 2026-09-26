@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLmWvKtmLjWf75gmXPSabBOS",
+  "object": "chat.completion",
+  "created": 1790436519,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Deve-se criar centros de atenção aos usuários compulsivos de serviços de internet e redes sociais.\"},\n    {\"id\": \"P2\", \"text\": \"É necessário formar um grupo de trabalho na Câmara dos Deputados para estudar a dependência tecnológica.\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas devem incluir campanhas de alerta sobre os efeitos nocivos da dependência tecnológica.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1607,
+    "total_tokens": 1727,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00062652,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9TRmMwMjMwsObFy3GADg56A",
+  "object": "chat.completion",
+  "created": 1790436524,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Mulheres negras, indígenas e de baixa renda são as maiores vítimas de violência obstétrica e morte materna.\"},\n    {\"id\": \"P2\", \"text\": \"A falta de investimento na qualificação do pré-natal impacta diretamente no número de mortes maternas.\"},\n    {\"id\": \"P3\", \"text\": \"Profissionais de saúde dedicam menos tempo no atendimento de pré-natal a mulheres negras comparado a mulheres brancas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1177,
+    "total_tokens": 1311,
+    "completion_tokens": 134,
+    "estimated_cost": 0.00047732,
+    "prompt_tokens_details": null
+  }
+}

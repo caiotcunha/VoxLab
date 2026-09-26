@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Re2eFV0QjutmlUWtayCuy3hc",
+  "object": "chat.completion",
+  "created": 1790436707,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Cigarros eletrônicos devem ser combatidos para manter a queda no número de fumantes\"},\n    {\"id\": \"P2\", \"text\": \"A venda de cigarros eletrônicos deve ser mais rigorosamente controlada\"},\n    {\"id\": \"P3\", \"text\": \"Aumentar impostos sobre cigarros e derivados do tabaco reduz o consumo de nicotina\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1528,
+    "total_tokens": 1639,
+    "completion_tokens": 111,
+    "estimated_cost": 0.00059448,
+    "prompt_tokens_details": null
+  }
+}

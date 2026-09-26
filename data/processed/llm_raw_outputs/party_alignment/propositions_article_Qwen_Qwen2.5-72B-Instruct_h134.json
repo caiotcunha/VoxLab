@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyJQ2BepvrB4tO0zMwor8pms",
+  "object": "chat.completion",
+  "created": 1790436641,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil deve investir na substituição de veículos movidos a diesel por biometano para reduzir emissões de carbono.\"},\n    {\"id\": \"P2\", \"text\": \"A implementação de um marco regulatório claro e consistente é essencial para direcionar investimentos em eficiência energética e redução de emissões.\"},\n    {\"id\": \"P3\", \"text\": \"A produção de etanol a partir do sisal no Semiárido nordestino pode contribuir significativamente para a transição energética sustentável.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1629,
+    "total_tokens": 1773,
+    "completion_tokens": 144,
+    "estimated_cost": 0.00064404,
+    "prompt_tokens_details": null
+  }
+}

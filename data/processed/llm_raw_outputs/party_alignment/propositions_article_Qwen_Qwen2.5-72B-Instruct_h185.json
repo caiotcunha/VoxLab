@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RD16DQeNzKetjx4h6eyg4LiO",
+  "object": "chat.completion",
+  "created": 1790436710,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O teste do pezinho deve ser realizado em todos os estados com cobertura próxima a 90%\"},\n    {\"id\": \"P2\", \"text\": \"A formação de profissionais qualificados é essencial para a ampliação do programa de triagem neonatal\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas devem ser adaptadas às particularidades de cada estado para garantir a ampliação do teste do pezinho\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1100,
+    "total_tokens": 1222,
+    "completion_tokens": 122,
+    "estimated_cost": 0.0004448000000000001,
+    "prompt_tokens_details": null
+  }
+}

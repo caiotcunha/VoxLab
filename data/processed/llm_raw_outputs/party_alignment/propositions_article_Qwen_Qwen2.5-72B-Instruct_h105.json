@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7BuiimWW9tLtp6x6jTGB6ir",
+  "object": "chat.completion",
+  "created": 1790436589,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O SUS deve atualizar o protocolo clínico para incluir tratamentos mais abrangentes para o edema macular diabético.\"},\n    {\"id\": \"P2\", \"text\": \"O SUS deve garantir um sistema de financiamento adequado para cobrir os custos de tratamento do edema macular diabético.\"},\n    {\"id\": \"P3\", \"text\": \"O Estado deve investir mais em campanhas de prevenção do diabetes para reduzir o número de casos e complicações oculares.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "total_tokens": 1789,
+    "completion_tokens": 140,
+    "estimated_cost": 0.0006496399999999999,
+    "prompt_tokens_details": null
+  }
+}

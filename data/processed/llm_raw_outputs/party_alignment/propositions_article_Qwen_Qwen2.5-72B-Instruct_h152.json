@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R41pgt1BrQx0MprddAH5Wi7V",
+  "object": "chat.completion",
+  "created": 1790436660,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O DPVAT deve ser mantido como seguro obrigatório para vítimas de trânsito.\"},\n    {\"id\": \"P2\", \"text\": \"O valor das indenizações do DPVAT deve ser atualizado para refletir a inflação.\"},\n    {\"id\": \"P3\", \"text\": \"O Ministério da Fazenda deve apresentar um novo modelo de funcionamento do DPVAT com transparência e participação das entidades representativas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1429,
+    "total_tokens": 1551,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00056324,
+    "prompt_tokens_details": null
+  }
+}

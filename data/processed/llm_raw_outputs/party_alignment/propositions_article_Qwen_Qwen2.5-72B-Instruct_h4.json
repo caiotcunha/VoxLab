@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RckMgKlCi9ULK4yPWIJCc23y",
+  "object": "chat.completion",
+  "created": 1790436086,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Operadoras de telefonia devem usar baterias e geradores para evitar interrupção de serviços em casos de falta de energia\"},\n    {\"id\": \"P2\", \"text\": \"Leis de telecomunicações devem ser reformadas para equilibrar obrigações entre meios de comunicação tradicionais e novas mídias\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1144,
+    "total_tokens": 1243,
+    "completion_tokens": 99,
+    "estimated_cost": 0.00045143999999999995,
+    "prompt_tokens_details": null
+  }
+}

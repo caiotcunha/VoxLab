@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rz4E9nB4NffslAdFCN0fAP52",
+  "object": "chat.completion",
+  "created": 1790436566,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Recursos destinados ao Renovar devem ser descontados dos investimentos em pesquisa e inovação\"},\n    {\"id\": \"P2\", \"text\": \"Empresas de petróleo e gás natural devem continuar a destinar recursos para pesquisa e inovação\"},\n    {\"id\": \"P3\", \"text\": \"Montadoras beneficiadas pelo Renovar devem contribuir com investimentos em pesquisa e desenvolvimento\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1707,
+    "total_tokens": 1822,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0006605199999999999,
+    "prompt_tokens_details": null
+  }
+}

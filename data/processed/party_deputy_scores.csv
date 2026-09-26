@@ -1,0 +1,588 @@
+model,condition,deputado_id,name,party,period,n_hearings,hearing_score,rollcall_governism,rollcall_n
+Qwen/Qwen2.5-72B-Instruct,speech,104552,Socorro Neri,PP,LULA,1,0.0,0.8237,363
+Qwen/Qwen2.5-72B-Instruct,speech,109429,Benes Leocádio,UNIAO,BOLSONARO,1,0.0,0.8816,304
+Qwen/Qwen2.5-72B-Instruct,speech,132504,Enio Verri,PT,BOLSONARO,1,-1.0,0.2795,347
+Qwen/Qwen2.5-72B-Instruct,speech,133968,Paulo Ramos,PDT,BOLSONARO,1,0.0,0.3967,305
+Qwen/Qwen2.5-72B-Instruct,speech,136811,Afonso Hamm,PP,LULA,1,0.0,0.5233,344
+Qwen/Qwen2.5-72B-Instruct,speech,139285,Lídice da Mata,PSB,BOLSONARO,1,-1.0,0.2982,285
+Qwen/Qwen2.5-72B-Instruct,speech,139285,Lídice da Mata,PSB,LULA,2,1.0,0.9554,404
+Qwen/Qwen2.5-72B-Instruct,speech,141391,Arnaldo Jardim,CIDADANIA,LULA,2,1.0,0.8426,324
+Qwen/Qwen2.5-72B-Instruct,speech,141398,Carlos Zarattini,PT,LULA,1,1.0,0.9796,392
+Qwen/Qwen2.5-72B-Instruct,speech,141421,Eduardo da Fonte,PP,BOLSONARO,1,0.0,0.8794,315
+Qwen/Qwen2.5-72B-Instruct,speech,141450,Hugo Leal,PSD,LULA,1,-1.0,0.784,250
+Qwen/Qwen2.5-72B-Instruct,speech,141456,Jilmar Tatto,PT,LULA,1,0.0,0.9702,369
+Qwen/Qwen2.5-72B-Instruct,speech,141488,Paulo Teixeira,PT,BOLSONARO,1,-1.0,0.2557,309
+Qwen/Qwen2.5-72B-Instruct,speech,141531,Rodrigo de Castro,UNIAO,LULA,2,-1.0,0.8869,389
+Qwen/Qwen2.5-72B-Instruct,speech,143632,Domingos Neto,PSD,BOLSONARO,1,0.0,0.9072,237
+Qwen/Qwen2.5-72B-Instruct,speech,143942,Caio Vianna,PSD,LULA,2,0.5,0.9327,208
+Qwen/Qwen2.5-72B-Instruct,speech,150418,Márcio Marinho,REPUBLICANOS,LULA,2,0.5,0.8247,405
+Qwen/Qwen2.5-72B-Instruct,speech,152605,Glauber Braga,PSOL,LULA,3,0.0,0.7316,354
+Qwen/Qwen2.5-72B-Instruct,speech,156190,Marcel van Hattem,NOVO,LULA,3,-0.3333,0.2434,415
+Qwen/Qwen2.5-72B-Instruct,speech,160512,Aureo Ribeiro,SOLIDARIEDADE,LULA,2,0.0,0.8291,357
+Qwen/Qwen2.5-72B-Instruct,speech,160518,Weliton Prado,SOLIDARIEDADE,LULA,1,0.0,0.7545,391
+Qwen/Qwen2.5-72B-Instruct,speech,160527,Aguinaldo Ribeiro,PP,LULA,1,0.0,0.9019,265
+Qwen/Qwen2.5-72B-Instruct,speech,160538,Bohn Gass,PT,LULA,1,1.0,0.972,429
+Qwen/Qwen2.5-72B-Instruct,speech,160548,Jonas Donizette,PSB,LULA,1,0.0,0.9353,433
+Qwen/Qwen2.5-72B-Instruct,speech,160553,Antonio Brito,PSD,LULA,2,1.0,0.9563,229
+Qwen/Qwen2.5-72B-Instruct,speech,160556,Padre João,PT,LULA,4,0.25,0.9841,439
+Qwen/Qwen2.5-72B-Instruct,speech,160575,Erika Kokay,PT,BOLSONARO,5,-1.0,0.2493,369
+Qwen/Qwen2.5-72B-Instruct,speech,160575,Erika Kokay,PT,LULA,9,0.4444,0.9467,507
+Qwen/Qwen2.5-72B-Instruct,speech,160604,Pedro Uczai,PT,LULA,1,1.0,0.9808,364
+Qwen/Qwen2.5-72B-Instruct,speech,160632,Zé Silva,SOLIDARIEDADE,BOLSONARO,1,1.0,0.917,289
+Qwen/Qwen2.5-72B-Instruct,speech,160632,Zé Silva,SOLIDARIEDADE,LULA,2,1.0,0.8601,343
+Qwen/Qwen2.5-72B-Instruct,speech,160665,Augusto Coutinho,REPUBLICANOS,BOLSONARO,1,1.0,0.8454,304
+Qwen/Qwen2.5-72B-Instruct,speech,160665,Augusto Coutinho,REPUBLICANOS,LULA,2,1.0,0.8998,409
+Qwen/Qwen2.5-72B-Instruct,speech,160758,Domingos Sávio,PL,LULA,1,1.0,0.3404,329
+Qwen/Qwen2.5-72B-Instruct,speech,161440,Pezenti,MDB,LULA,1,-1.0,0.3062,405
+Qwen/Qwen2.5-72B-Instruct,speech,166402,Magda Mofatto,PL,LULA,1,-1.0,0.2846,369
+Qwen/Qwen2.5-72B-Instruct,speech,171617,Paulão,PT,LULA,2,0.5,0.9831,415
+Qwen/Qwen2.5-72B-Instruct,speech,178843,Marx Beltrão,PP,LULA,1,-1.0,0.8263,357
+Qwen/Qwen2.5-72B-Instruct,speech,178857,Jorge Solla,PT,LULA,6,0.8333,0.9784,371
+Qwen/Qwen2.5-72B-Instruct,speech,178866,Luizianne Lins,PT,LULA,3,1.0,0.9735,377
+Qwen/Qwen2.5-72B-Instruct,speech,178871,Evair Vieira de Melo,PP,LULA,5,-0.6,0.2076,395
+Qwen/Qwen2.5-72B-Instruct,speech,178887,Rubens Pereira Júnior,PT,LULA,2,0.5,0.9764,508
+Qwen/Qwen2.5-72B-Instruct,speech,178910,Joaquim Passarinho,PL,LULA,1,-1.0,0.356,368
+Qwen/Qwen2.5-72B-Instruct,speech,178925,Rejane Dias,PT,BOLSONARO,2,-0.5,0.2939,330
+Qwen/Qwen2.5-72B-Instruct,speech,178927,Aliel Machado,PV,LULA,2,1.0,0.924,263
+Qwen/Qwen2.5-72B-Instruct,speech,178946,Soraya Santos,PL,LULA,1,1.0,0.3324,340
+Qwen/Qwen2.5-72B-Instruct,speech,178962,Carlos Gomes,REPUBLICANOS,LULA,1,0.0,0.806,134
+Qwen/Qwen2.5-72B-Instruct,speech,178972,Alex Manente,CIDADANIA,LULA,1,0.0,0.8178,214
+Qwen/Qwen2.5-72B-Instruct,speech,178986,Nilto Tatto,PT,LULA,1,1.0,0.977,434
+Qwen/Qwen2.5-72B-Instruct,speech,178987,Orlando Silva,PCDOB,BOLSONARO,2,-0.5,0.2796,304
+Qwen/Qwen2.5-72B-Instruct,speech,178992,Vitor Lippi,PSDB,BOLSONARO,1,-1.0,0.764,339
+Qwen/Qwen2.5-72B-Instruct,speech,178992,Vitor Lippi,PSDB,LULA,2,0.0,0.8045,353
+Qwen/Qwen2.5-72B-Instruct,speech,204356,Amaro Neto,REPUBLICANOS,LULA,1,0.0,0.8372,436
+Qwen/Qwen2.5-72B-Instruct,speech,204365,Gilson Marques,NOVO,LULA,1,-1.0,0.2239,451
+Qwen/Qwen2.5-72B-Instruct,speech,204366,Rodrigo Coelho,PODEMOS,BOLSONARO,1,1.0,0.9033,362
+Qwen/Qwen2.5-72B-Instruct,speech,204370,Célio Moura,PT,BOLSONARO,1,-1.0,0.2975,353
+Qwen/Qwen2.5-72B-Instruct,speech,204374,Bia Kicis,PL,BOLSONARO,1,1.0,0.9315,394
+Qwen/Qwen2.5-72B-Instruct,speech,204374,Bia Kicis,PL,LULA,4,-0.75,0.2618,382
+Qwen/Qwen2.5-72B-Instruct,speech,204381,Luis Miranda,REPUBLICANOS,BOLSONARO,1,-1.0,0.9012,344
+Qwen/Qwen2.5-72B-Instruct,speech,204388,Bibo Nunes,PL,LULA,1,-1.0,0.3209,374
+Qwen/Qwen2.5-72B-Instruct,speech,204389,Elias Vaz,PSB,BOLSONARO,1,-1.0,0.278,313
+Qwen/Qwen2.5-72B-Instruct,speech,204395,Pedro Lupion,PP,LULA,1,-1.0,0.4266,293
+Qwen/Qwen2.5-72B-Instruct,speech,204407,Fernanda Melchionna,PSOL,LULA,1,-1.0,0.8111,323
+Qwen/Qwen2.5-72B-Instruct,speech,204410,Luisa Canziani,PSD,LULA,1,1.0,0.7224,263
+Qwen/Qwen2.5-72B-Instruct,speech,204411,Filipe Barros,PL,LULA,2,-1.0,0.3029,208
+Qwen/Qwen2.5-72B-Instruct,speech,204412,Dr. Zacharias Calil,UNIAO,BOLSONARO,2,-1.0,0.8911,358
+Qwen/Qwen2.5-72B-Instruct,speech,204412,Dr. Zacharias Calil,UNIAO,LULA,3,0.6667,0.5381,407
+Qwen/Qwen2.5-72B-Instruct,speech,204416,Sanderson,PL,LULA,3,-0.6667,0.2507,347
+Qwen/Qwen2.5-72B-Instruct,speech,204426,Carlos Veras,PT,LULA,1,1.0,0.977,478
+Qwen/Qwen2.5-72B-Instruct,speech,204445,Fernando Mineiro,PT,LULA,1,1.0,0.9816,381
+Qwen/Qwen2.5-72B-Instruct,speech,204455,Luiz Lima,PL,LULA,2,0.5,0.3148,378
+Qwen/Qwen2.5-72B-Instruct,speech,204460,Carlos Jordy,PL,LULA,1,-1.0,0.2394,330
+Qwen/Qwen2.5-72B-Instruct,speech,204464,Talíria Petrone,PSOL,BOLSONARO,1,-1.0,0.2318,220
+Qwen/Qwen2.5-72B-Instruct,speech,204464,Talíria Petrone,PSOL,LULA,3,0.3333,0.8012,347
+Qwen/Qwen2.5-72B-Instruct,speech,204472,José Medeiros,PL,LULA,1,-1.0,0.2772,368
+Qwen/Qwen2.5-72B-Instruct,speech,204473,General Girão,PL,LULA,2,-1.0,0.3149,362
+Qwen/Qwen2.5-72B-Instruct,speech,204480,Rogério Correia,PT,BOLSONARO,2,-1.0,0.2849,337
+Qwen/Qwen2.5-72B-Instruct,speech,204480,Rogério Correia,PT,LULA,2,1.0,0.9792,432
+Qwen/Qwen2.5-72B-Instruct,speech,204483,Vilson da Fetaemg,PSB,BOLSONARO,1,0.0,0.2874,334
+Qwen/Qwen2.5-72B-Instruct,speech,204495,Airton Faleiro,PT,LULA,1,0.0,0.9819,387
+Qwen/Qwen2.5-72B-Instruct,speech,204501,Alencar Santana,PT,LULA,1,0.0,0.9737,494
+Qwen/Qwen2.5-72B-Instruct,speech,204516,Alexis Fonteyne,NOVO,BOLSONARO,1,-1.0,0.6721,366
+Qwen/Qwen2.5-72B-Instruct,speech,204520,Junio Amaral,PL,LULA,1,-1.0,0.2418,244
+Qwen/Qwen2.5-72B-Instruct,speech,204524,Pinheirinho,PP,LULA,1,0.0,0.8159,239
+Qwen/Qwen2.5-72B-Instruct,speech,204528,Adriana Ventura,NOVO,BOLSONARO,1,0.0,0.6897,390
+Qwen/Qwen2.5-72B-Instruct,speech,204528,Adriana Ventura,NOVO,LULA,2,-1.0,0.2581,372
+Qwen/Qwen2.5-72B-Instruct,speech,204530,Rodrigo Agostinho,PSB,BOLSONARO,1,-1.0,0.359,376
+Qwen/Qwen2.5-72B-Instruct,speech,204533,Idilvan Alencar,PDT,LULA,1,1.0,0.9292,438
+Qwen/Qwen2.5-72B-Instruct,speech,204535,Sâmia Bomfim,PSOL,LULA,1,1.0,0.7923,414
+Qwen/Qwen2.5-72B-Instruct,speech,204536,Kim Kataguiri,UNIAO,LULA,1,-1.0,0.2667,420
+Qwen/Qwen2.5-72B-Instruct,speech,204542,Denis Bezerra,PSB,BOLSONARO,1,-1.0,0.3393,333
+Qwen/Qwen2.5-72B-Instruct,speech,204557,Sidney Leite,PSD,BOLSONARO,1,0.0,0.8044,225
+Qwen/Qwen2.5-72B-Instruct,speech,204557,Sidney Leite,PSD,LULA,1,1.0,0.8333,360
+Qwen/Qwen2.5-72B-Instruct,speech,204559,Zé Neto,PT,BOLSONARO,1,-1.0,0.3186,295
+Qwen/Qwen2.5-72B-Instruct,speech,204559,Zé Neto,PT,LULA,2,0.0,0.9799,298
+Qwen/Qwen2.5-72B-Instruct,speech,204572,Capitão Alberto Neto,PL,LULA,2,0.0,0.2854,396
+Qwen/Qwen2.5-72B-Instruct,speech,205550,Jorge Braz,REPUBLICANOS,LULA,1,0.0,0.8162,419
+Qwen/Qwen2.5-72B-Instruct,speech,206018,Célia Xakriabá,PSOL,LULA,4,0.75,0.8269,364
+Qwen/Qwen2.5-72B-Instruct,speech,209189,Joseildo Ramos,PT,LULA,1,1.0,0.9695,394
+Qwen/Qwen2.5-72B-Instruct,speech,209787,Nikolas Ferreira,PL,LULA,2,-1.0,0.2439,369
+Qwen/Qwen2.5-72B-Instruct,speech,214694,Jorge Goetten,PL,LULA,3,-0.3333,0.5443,463
+Qwen/Qwen2.5-72B-Instruct,speech,220529,Gilson Daniel,PODEMOS,LULA,4,0.5,0.8826,494
+Qwen/Qwen2.5-72B-Instruct,speech,220534,Fred Linhares,REPUBLICANOS,LULA,1,-1.0,0.7924,395
+Qwen/Qwen2.5-72B-Instruct,speech,220538,Albuquerque,REPUBLICANOS,LULA,1,1.0,0.8406,389
+Qwen/Qwen2.5-72B-Instruct,speech,220539,Defensor Stélio Dener,REPUBLICANOS,LULA,1,1.0,0.8652,445
+Qwen/Qwen2.5-72B-Instruct,speech,220545,Filipe Martins,PL,LULA,1,-1.0,0.3094,362
+Qwen/Qwen2.5-72B-Instruct,speech,220547,Marcos Pollon,PL,LULA,3,-1.0,0.2073,468
+Qwen/Qwen2.5-72B-Instruct,speech,220549,Any Ortiz,CIDADANIA,LULA,2,0.0,0.4185,368
+Qwen/Qwen2.5-72B-Instruct,speech,220551,Franciane Bayer,REPUBLICANOS,LULA,1,-1.0,0.5746,402
+Qwen/Qwen2.5-72B-Instruct,speech,220552,Zucco,REPUBLICANOS,LULA,1,-1.0,0.2415,501
+Qwen/Qwen2.5-72B-Instruct,speech,220554,Alexandre Lindenmeyer,PT,LULA,3,0.0,0.9669,393
+Qwen/Qwen2.5-72B-Instruct,speech,220555,Daiana Santos,PCDOB,LULA,2,0.0,0.9478,383
+Qwen/Qwen2.5-72B-Instruct,speech,220556,Ana Paula Lima,PT,LULA,3,1.0,0.9822,394
+Qwen/Qwen2.5-72B-Instruct,speech,220557,Daniela Reinehr,PL,LULA,2,0.0,0.2834,374
+Qwen/Qwen2.5-72B-Instruct,speech,220566,Lêda Borges,PSDB,LULA,3,0.6667,0.7882,340
+Qwen/Qwen2.5-72B-Instruct,speech,220569,Silvye Alves,UNIAO,LULA,1,1.0,0.6458,384
+Qwen/Qwen2.5-72B-Instruct,speech,220574,Cabo Gilberto Silva,PL,LULA,1,-1.0,0.2542,417
+Qwen/Qwen2.5-72B-Instruct,speech,220576,Alfredo Gaspar,UNIAO,LULA,1,-1.0,0.2973,518
+Qwen/Qwen2.5-72B-Instruct,speech,220578,Josenildo,PDT,LULA,1,1.0,0.9051,453
+Qwen/Qwen2.5-72B-Instruct,speech,220590,Coronel Ulysses,UNIAO,LULA,1,-1.0,0.4742,407
+Qwen/Qwen2.5-72B-Instruct,speech,220593,Abilio Brunini,PL,LULA,1,-1.0,0.3,280
+Qwen/Qwen2.5-72B-Instruct,speech,220595,Coronel Fernanda,PL,LULA,1,-1.0,0.2735,446
+Qwen/Qwen2.5-72B-Instruct,speech,220596,Amália Barros,PL,LULA,1,-1.0,0.2851,228
+Qwen/Qwen2.5-72B-Instruct,speech,220598,Tarcísio Motta,PSOL,LULA,2,0.5,0.8337,517
+Qwen/Qwen2.5-72B-Instruct,speech,220605,Bandeira de Mello,PSB,LULA,1,1.0,0.9309,434
+Qwen/Qwen2.5-72B-Instruct,speech,220606,Reimont,PT,LULA,1,1.0,0.9835,423
+Qwen/Qwen2.5-72B-Instruct,speech,220607,Max Lemos,PDT,LULA,1,1.0,0.9112,439
+Qwen/Qwen2.5-72B-Instruct,speech,220611,General Pazuello,PL,LULA,1,-1.0,0.3167,360
+Qwen/Qwen2.5-72B-Instruct,speech,220612,Bebeto,PP,LULA,1,1.0,0.864,456
+Qwen/Qwen2.5-72B-Instruct,speech,220615,Pastor Henrique Vieira,PSOL,LULA,2,1.0,0.8288,444
+Qwen/Qwen2.5-72B-Instruct,speech,220621,Sargento Gonçalves,PL,LULA,1,-1.0,0.2399,371
+Qwen/Qwen2.5-72B-Instruct,speech,220628,Mauricio do Vôlei,PL,LULA,1,0.0,0.2911,316
+Qwen/Qwen2.5-72B-Instruct,speech,220629,Dandara,PT,LULA,4,1.0,0.9769,390
+Qwen/Qwen2.5-72B-Instruct,speech,220630,Pedro Aihara,PATRIOTA,LULA,3,-0.3333,0.7694,438
+Qwen/Qwen2.5-72B-Instruct,speech,220632,Ana Pimentel,PT,LULA,2,1.0,0.971,448
+Qwen/Qwen2.5-72B-Instruct,speech,220633,Ricardo Salles,PL,LULA,2,-0.5,0.2085,307
+Qwen/Qwen2.5-72B-Instruct,speech,220635,Bruno Ganem,PODEMOS,LULA,1,1.0,0.8092,435
+Qwen/Qwen2.5-72B-Instruct,speech,220639,Guilherme Boulos,PSOL,LULA,1,1.0,0.8182,385
+Qwen/Qwen2.5-72B-Instruct,speech,220644,Rosangela Moro,UNIAO,LULA,2,0.0,0.3235,473
+Qwen/Qwen2.5-72B-Instruct,speech,220645,Erika Hilton,PSOL,LULA,1,1.0,0.8245,319
+Qwen/Qwen2.5-72B-Instruct,speech,220654,Delegado Paulo Bilynskyj,PL,LULA,1,-1.0,0.2292,432
+Qwen/Qwen2.5-72B-Instruct,speech,220658,Luiz Gastão,PSD,LULA,1,0.0,0.8427,375
+Qwen/Qwen2.5-72B-Instruct,speech,220662,Lucas Ramos,PSB,LULA,1,1.0,0.9535,409
+Qwen/Qwen2.5-72B-Instruct,speech,220666,Coronel Meira,PL,LULA,2,0.0,0.3034,412
+Qwen/Qwen2.5-72B-Instruct,speech,220667,Pedro Campos,PSB,LULA,1,1.0,0.9664,447
+Qwen/Qwen2.5-72B-Instruct,speech,220669,Lula da Fonte,PP,LULA,1,1.0,0.859,390
+Qwen/Qwen2.5-72B-Instruct,speech,220670,Iza Arruda,MDB,LULA,2,0.5,0.9156,379
+Qwen/Qwen2.5-72B-Instruct,speech,220676,Andreia Siqueira,MDB,LULA,1,1.0,0.9006,322
+Qwen/Qwen2.5-72B-Instruct,speech,220682,Tadeu Veneri,PT,LULA,1,0.0,0.9624,425
+Qwen/Qwen2.5-72B-Instruct,speech,220697,Jadyel Alencar,PV,LULA,1,0.0,0.9132,311
+Qwen/Qwen2.5-72B-Instruct,speech,220699,Castro Neto,PSD,LULA,1,0.0,0.9248,399
+Qwen/Qwen2.5-72B-Instruct,speech,220700,Florentino Neto,PT,LULA,1,0.0,0.9923,388
+Qwen/Qwen2.5-72B-Instruct,speech,220701,Delegado Matheus Laiola,UNIAO,LULA,1,-1.0,0.8687,434
+Qwen/Qwen2.5-72B-Instruct,speech,220702,Geraldo Mendes,UNIAO,LULA,1,0.0,0.7773,211
+Qwen/Qwen2.5-72B-Instruct,speech,220703,Neto Carletto,PP,LULA,1,0.0,0.9036,415
+Qwen/Qwen2.5-72B-Instruct,speech,220706,Padovani,UNIAO,LULA,1,1.0,0.5926,243
+Qwen/Qwen2.5-72B-Instruct,speech,220715,Amom Mandel,CIDADANIA,LULA,1,-1.0,0.6979,374
+Qwen/Qwen2.5-72B-Instruct,speech,221148,Alfredinho,PT,LULA,1,1.0,0.9844,449
+Qwen/Qwen2.5-72B-Instruct,speech,221338,Professora Luciene Cavalcante,PSOL,LULA,6,0.6667,0.8161,435
+Qwen/Qwen2.5-72B-Instruct,speech,221378,Reginete Bispo,PT,LULA,2,1.0,0.9716,387
+Qwen/Qwen2.5-72B-Instruct,speech,226075,Priscila Costa,PL,LULA,2,-1.0,0.2128,94
+Qwen/Qwen2.5-72B-Instruct,speech,226837,Saulo Pedroso,PSD,LULA,1,-1.0,0.855,269
+Qwen/Qwen2.5-72B-Instruct,speech,62881,Danilo Forte,UNIAO,BOLSONARO,1,-1.0,0.8507,268
+Qwen/Qwen2.5-72B-Instruct,speech,62881,Danilo Forte,UNIAO,LULA,2,-1.0,0.7885,331
+Qwen/Qwen2.5-72B-Instruct,speech,73433,Arlindo Chinaglia,PT,LULA,1,1.0,0.9856,417
+Qwen/Qwen2.5-72B-Instruct,speech,73441,Celso Russomanno,REPUBLICANOS,LULA,1,-1.0,0.8133,332
+Qwen/Qwen2.5-72B-Instruct,speech,73531,Ivan Valente,PSOL,LULA,2,0.0,0.8021,379
+Qwen/Qwen2.5-72B-Instruct,speech,73604,Rui Falcão,PT,LULA,1,0.0,0.9548,420
+Qwen/Qwen2.5-72B-Instruct,speech,73692,Osmar Terra,MDB,LULA,1,-1.0,0.2827,336
+Qwen/Qwen2.5-72B-Instruct,speech,73696,Angela Amin,PP,BOLSONARO,1,0.0,0.8908,348
+Qwen/Qwen2.5-72B-Instruct,speech,73701,Benedita da Silva,PT,LULA,1,1.0,0.9806,361
+Qwen/Qwen2.5-72B-Instruct,speech,74041,Luiz Couto,PT,LULA,3,0.3333,0.9775,577
+Qwen/Qwen2.5-72B-Instruct,speech,74052,Bosco Costa,PL,BOLSONARO,1,1.0,0.9437,320
+Qwen/Qwen2.5-72B-Instruct,speech,74057,Alice Portugal,PCDOB,LULA,2,0.5,0.9739,459
+Qwen/Qwen2.5-72B-Instruct,speech,74171,Chico Alencar,PSOL,LULA,2,0.5,0.8359,518
+Qwen/Qwen2.5-72B-Instruct,speech,74253,Julio Lopes,PP,LULA,2,0.5,0.887,301
+Qwen/Qwen2.5-72B-Instruct,speech,74283,Vicentinho,PT,BOLSONARO,1,-1.0,0.2901,324
+Qwen/Qwen2.5-72B-Instruct,speech,74299,Leônidas Cristino,PDT,LULA,2,-0.5,0.9404,235
+Qwen/Qwen2.5-72B-Instruct,speech,74398,Maria do Rosário,PT,BOLSONARO,1,-1.0,0.3344,305
+Qwen/Qwen2.5-72B-Instruct,speech,74655,Eduardo Barbosa,PSDB,BOLSONARO,1,0.0,0.7801,382
+Qwen/Qwen2.5-72B-Instruct,speech,74696,Alberto Mourão,MDB,LULA,1,0.0,0.8387,248
+Qwen/Qwen2.5-72B-Instruct,speech,74848,Jandira Feghali,PCDOB,LULA,1,1.0,0.9679,436
+Qwen/Qwen2.5-72B-Instruct,speech,74858,Lindbergh Farias,PT,LULA,1,0.0,0.9612,438
+Qwen/Qwen2.5-72B-Instruct,speech,80815,Leo Prates,PDT,LULA,3,0.6667,0.9333,435
+Qwen/Qwen2.5-72B-Instruct,speech,81055,Márcio Jerry,PCDOB,LULA,1,0.0,0.981,420
+Qwen/Qwen2.5-72B-Instruct,speech,89536,Prof. Paulo Fernando,REPUBLICANOS,LULA,2,0.0,0.5231,195
+Qwen/Qwen2.5-72B-Instruct,speech,92346,Eduardo Bolsonaro,PL,LULA,2,-1.0,0.2395,309
+Qwen/Qwen2.5-72B-Instruct,speech,98057,Lafayette de Andrada,REPUBLICANOS,BOLSONARO,1,0.0,0.9046,283
+Qwen/Qwen2.5-72B-Instruct,speech,98057,Lafayette de Andrada,REPUBLICANOS,LULA,1,0.0,0.6776,335
+Qwen/Qwen2.5-72B-Instruct,lds_summary,104552,Socorro Neri,PP,LULA,1,0.0,0.8237,363
+Qwen/Qwen2.5-72B-Instruct,lds_summary,132504,Enio Verri,PT,BOLSONARO,1,-1.0,0.2795,347
+Qwen/Qwen2.5-72B-Instruct,lds_summary,139285,Lídice da Mata,PSB,LULA,1,1.0,0.9554,404
+Qwen/Qwen2.5-72B-Instruct,lds_summary,141391,Arnaldo Jardim,CIDADANIA,LULA,1,0.0,0.8426,324
+Qwen/Qwen2.5-72B-Instruct,lds_summary,143942,Caio Vianna,PSD,LULA,1,0.0,0.9327,208
+Qwen/Qwen2.5-72B-Instruct,lds_summary,150418,Márcio Marinho,REPUBLICANOS,LULA,1,-1.0,0.8247,405
+Qwen/Qwen2.5-72B-Instruct,lds_summary,152605,Glauber Braga,PSOL,LULA,2,0.0,0.7316,354
+Qwen/Qwen2.5-72B-Instruct,lds_summary,156190,Marcel van Hattem,NOVO,LULA,2,-0.5,0.2434,415
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160527,Aguinaldo Ribeiro,PP,LULA,1,1.0,0.9019,265
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160553,Antonio Brito,PSD,LULA,1,1.0,0.9563,229
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160575,Erika Kokay,PT,BOLSONARO,2,-0.5,0.2493,369
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160575,Erika Kokay,PT,LULA,3,-0.3333,0.9467,507
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160604,Pedro Uczai,PT,LULA,1,0.0,0.9808,364
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160632,Zé Silva,SOLIDARIEDADE,LULA,1,0.0,0.8601,343
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160665,Augusto Coutinho,REPUBLICANOS,BOLSONARO,1,0.0,0.8454,304
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160665,Augusto Coutinho,REPUBLICANOS,LULA,1,1.0,0.8998,409
+Qwen/Qwen2.5-72B-Instruct,lds_summary,160758,Domingos Sávio,PL,LULA,1,-1.0,0.3404,329
+Qwen/Qwen2.5-72B-Instruct,lds_summary,161440,Pezenti,MDB,LULA,1,0.0,0.3062,405
+Qwen/Qwen2.5-72B-Instruct,lds_summary,165470,Rodrigo Valadares,UNIAO,LULA,1,-1.0,0.3148,378
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178857,Jorge Solla,PT,LULA,3,0.6667,0.9784,371
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178866,Luizianne Lins,PT,LULA,1,0.0,0.9735,377
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178871,Evair Vieira de Melo,PP,LULA,4,-0.75,0.2076,395
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178910,Joaquim Passarinho,PL,LULA,1,0.0,0.356,368
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178925,Rejane Dias,PT,BOLSONARO,1,-1.0,0.2939,330
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178927,Aliel Machado,PV,LULA,1,0.0,0.924,263
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178987,Orlando Silva,PCDOB,BOLSONARO,1,-1.0,0.2796,304
+Qwen/Qwen2.5-72B-Instruct,lds_summary,178992,Vitor Lippi,PSDB,BOLSONARO,1,-1.0,0.764,339
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204360,Silvia Cristina,PL,LULA,1,-1.0,0.4819,359
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204366,Rodrigo Coelho,PODEMOS,BOLSONARO,1,0.0,0.9033,362
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204374,Bia Kicis,PL,LULA,1,0.0,0.2618,382
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204388,Bibo Nunes,PL,LULA,1,0.0,0.3209,374
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204395,Pedro Lupion,PP,LULA,1,1.0,0.4266,293
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204407,Fernanda Melchionna,PSOL,LULA,1,0.0,0.8111,323
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204412,Dr. Zacharias Calil,UNIAO,BOLSONARO,1,-1.0,0.8911,358
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204416,Sanderson,PL,LULA,2,0.0,0.2507,347
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204426,Carlos Veras,PT,LULA,1,1.0,0.977,478
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204460,Carlos Jordy,PL,LULA,1,-1.0,0.2394,330
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204464,Talíria Petrone,PSOL,BOLSONARO,1,-1.0,0.2318,220
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204472,José Medeiros,PL,LULA,1,-1.0,0.2772,368
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204473,General Girão,PL,LULA,1,-1.0,0.3149,362
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204480,Rogério Correia,PT,BOLSONARO,1,-1.0,0.2849,337
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204516,Alexis Fonteyne,NOVO,BOLSONARO,1,-1.0,0.6721,366
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204520,Junio Amaral,PL,LULA,1,-1.0,0.2418,244
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204528,Adriana Ventura,NOVO,LULA,2,-1.0,0.2581,372
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204530,Rodrigo Agostinho,PSB,BOLSONARO,1,-1.0,0.359,376
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204535,Sâmia Bomfim,PSOL,LULA,1,1.0,0.7923,414
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204542,Denis Bezerra,PSB,BOLSONARO,1,0.0,0.3393,333
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204557,Sidney Leite,PSD,LULA,1,-1.0,0.8333,360
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204559,Zé Neto,PT,LULA,1,-1.0,0.9799,298
+Qwen/Qwen2.5-72B-Instruct,lds_summary,204572,Capitão Alberto Neto,PL,LULA,1,0.0,0.2854,396
+Qwen/Qwen2.5-72B-Instruct,lds_summary,206018,Célia Xakriabá,PSOL,LULA,1,-1.0,0.8269,364
+Qwen/Qwen2.5-72B-Instruct,lds_summary,214694,Jorge Goetten,PL,LULA,3,-0.6667,0.5443,463
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220529,Gilson Daniel,PODEMOS,LULA,4,-0.75,0.8826,494
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220534,Fred Linhares,REPUBLICANOS,LULA,1,-1.0,0.7924,395
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220547,Marcos Pollon,PL,LULA,1,0.0,0.2073,468
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220552,Zucco,REPUBLICANOS,LULA,1,-1.0,0.2415,501
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220556,Ana Paula Lima,PT,LULA,2,0.0,0.9822,394
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220557,Daniela Reinehr,PL,LULA,1,-1.0,0.2834,374
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220566,Lêda Borges,PSDB,LULA,2,-0.5,0.7882,340
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220578,Josenildo,PDT,LULA,1,0.0,0.9051,453
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220590,Coronel Ulysses,UNIAO,LULA,1,0.0,0.4742,407
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220595,Coronel Fernanda,PL,LULA,1,0.0,0.2735,446
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220606,Reimont,PT,LULA,1,-1.0,0.9835,423
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220607,Max Lemos,PDT,LULA,1,0.0,0.9112,439
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220615,Pastor Henrique Vieira,PSOL,LULA,1,1.0,0.8288,444
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220621,Sargento Gonçalves,PL,LULA,1,-1.0,0.2399,371
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220628,Mauricio do Vôlei,PL,LULA,1,0.0,0.2911,316
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220629,Dandara,PT,LULA,2,0.0,0.9769,390
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220630,Pedro Aihara,PATRIOTA,LULA,1,1.0,0.7694,438
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220633,Ricardo Salles,PL,LULA,1,-1.0,0.2085,307
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220635,Bruno Ganem,PODEMOS,LULA,1,1.0,0.8092,435
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220645,Erika Hilton,PSOL,LULA,1,0.0,0.8245,319
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220654,Delegado Paulo Bilynskyj,PL,LULA,1,-1.0,0.2292,432
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220669,Lula da Fonte,PP,LULA,1,1.0,0.859,390
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220676,Andreia Siqueira,MDB,LULA,1,0.0,0.9006,322
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220701,Delegado Matheus Laiola,UNIAO,LULA,1,-1.0,0.8687,434
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220703,Neto Carletto,PP,LULA,1,-1.0,0.9036,415
+Qwen/Qwen2.5-72B-Instruct,lds_summary,220715,Amom Mandel,CIDADANIA,LULA,1,-1.0,0.6979,374
+Qwen/Qwen2.5-72B-Instruct,lds_summary,221338,Professora Luciene Cavalcante,PSOL,LULA,2,0.0,0.8161,435
+Qwen/Qwen2.5-72B-Instruct,lds_summary,221378,Reginete Bispo,PT,LULA,1,0.0,0.9716,387
+Qwen/Qwen2.5-72B-Instruct,lds_summary,226837,Saulo Pedroso,PSD,LULA,1,-1.0,0.855,269
+Qwen/Qwen2.5-72B-Instruct,lds_summary,62881,Danilo Forte,UNIAO,LULA,1,-1.0,0.7885,331
+Qwen/Qwen2.5-72B-Instruct,lds_summary,73531,Ivan Valente,PSOL,LULA,1,-1.0,0.8021,379
+Qwen/Qwen2.5-72B-Instruct,lds_summary,73692,Osmar Terra,MDB,LULA,1,-1.0,0.2827,336
+Qwen/Qwen2.5-72B-Instruct,lds_summary,73696,Angela Amin,PP,BOLSONARO,1,0.0,0.8908,348
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74041,Luiz Couto,PT,LULA,1,-1.0,0.9775,577
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74057,Alice Portugal,PCDOB,LULA,1,0.0,0.9739,459
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74171,Chico Alencar,PSOL,LULA,2,0.0,0.8359,518
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74283,Vicentinho,PT,BOLSONARO,1,0.0,0.2901,324
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74299,Leônidas Cristino,PDT,LULA,1,0.0,0.9404,235
+Qwen/Qwen2.5-72B-Instruct,lds_summary,74398,Maria do Rosário,PT,BOLSONARO,1,-1.0,0.3344,305
+Qwen/Qwen2.5-72B-Instruct,lds_summary,81055,Márcio Jerry,PCDOB,LULA,1,0.0,0.981,420
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,104552,Socorro Neri,PP,LULA,1,0.0,0.8237,363
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,109429,Benes Leocádio,UNIAO,BOLSONARO,1,-1.0,0.8816,304
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,122158,Pedro Paulo,PSD,BOLSONARO,1,0.0,0.8249,217
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,132504,Enio Verri,PT,BOLSONARO,1,-1.0,0.2795,347
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,133968,Paulo Ramos,PDT,BOLSONARO,1,-1.0,0.3967,305
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,136811,Afonso Hamm,PP,LULA,1,0.0,0.5233,344
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,139285,Lídice da Mata,PSB,BOLSONARO,1,-1.0,0.2982,285
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,139285,Lídice da Mata,PSB,LULA,2,1.0,0.9554,404
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141391,Arnaldo Jardim,CIDADANIA,LULA,2,0.5,0.8426,324
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141398,Carlos Zarattini,PT,LULA,1,1.0,0.9796,392
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141421,Eduardo da Fonte,PP,BOLSONARO,1,1.0,0.8794,315
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141450,Hugo Leal,PSD,LULA,2,-0.5,0.784,250
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141456,Jilmar Tatto,PT,LULA,1,0.0,0.9702,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141488,Paulo Teixeira,PT,BOLSONARO,1,-1.0,0.2557,309
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,141531,Rodrigo de Castro,UNIAO,LULA,2,0.0,0.8869,389
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,143632,Domingos Neto,PSD,BOLSONARO,1,0.0,0.9072,237
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,143942,Caio Vianna,PSD,LULA,2,0.5,0.9327,208
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,150418,Márcio Marinho,REPUBLICANOS,LULA,3,0.0,0.8247,405
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,152605,Glauber Braga,PSOL,LULA,3,0.0,0.7316,354
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,152610,Roberto Alves,REPUBLICANOS,BOLSONARO,1,0.0,0.9114,316
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,156190,Marcel van Hattem,NOVO,LULA,3,-0.3333,0.2434,415
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160512,Aureo Ribeiro,SOLIDARIEDADE,LULA,4,0.0,0.8291,357
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160518,Weliton Prado,SOLIDARIEDADE,LULA,1,-1.0,0.7545,391
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160527,Aguinaldo Ribeiro,PP,LULA,1,0.0,0.9019,265
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160538,Bohn Gass,PT,LULA,1,1.0,0.972,429
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160548,Jonas Donizette,PSB,LULA,1,0.0,0.9353,433
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160553,Antonio Brito,PSD,LULA,2,1.0,0.9563,229
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160556,Padre João,PT,LULA,5,0.0,0.9841,439
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160575,Erika Kokay,PT,BOLSONARO,5,-1.0,0.2493,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160575,Erika Kokay,PT,LULA,11,0.4545,0.9467,507
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160598,Flávia Morais,PDT,BOLSONARO,1,0.0,0.4441,313
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160604,Pedro Uczai,PT,LULA,1,1.0,0.9808,364
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160632,Zé Silva,SOLIDARIEDADE,BOLSONARO,1,-1.0,0.917,289
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160632,Zé Silva,SOLIDARIEDADE,LULA,2,0.5,0.8601,343
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160642,Pastor Eurico,PL,LULA,1,0.0,0.3058,363
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160665,Augusto Coutinho,REPUBLICANOS,BOLSONARO,1,1.0,0.8454,304
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160665,Augusto Coutinho,REPUBLICANOS,LULA,2,1.0,0.8998,409
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,160758,Domingos Sávio,PL,LULA,1,0.0,0.3404,329
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,161440,Pezenti,MDB,LULA,1,-1.0,0.3062,405
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,165470,Rodrigo Valadares,UNIAO,LULA,1,-1.0,0.3148,378
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,166402,Magda Mofatto,PL,LULA,1,-1.0,0.2846,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,171617,Paulão,PT,LULA,2,0.5,0.9831,415
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178843,Marx Beltrão,PP,LULA,1,0.0,0.8263,357
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178857,Jorge Solla,PT,LULA,6,1.0,0.9784,371
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178866,Luizianne Lins,PT,LULA,3,1.0,0.9735,377
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178871,Evair Vieira de Melo,PP,LULA,5,-0.6,0.2076,395
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178873,Helder Salomão,PT,LULA,1,0.0,0.9774,530
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178887,Rubens Pereira Júnior,PT,LULA,2,0.5,0.9764,508
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178910,Joaquim Passarinho,PL,LULA,1,-1.0,0.356,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178925,Rejane Dias,PT,BOLSONARO,2,-1.0,0.2939,330
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178927,Aliel Machado,PV,LULA,2,0.5,0.924,263
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178929,Diego Garcia,REPUBLICANOS,LULA,1,0.0,0.6031,383
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178946,Soraya Santos,PL,LULA,1,1.0,0.3324,340
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178962,Carlos Gomes,REPUBLICANOS,LULA,1,0.0,0.806,134
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178986,Nilto Tatto,PT,LULA,1,1.0,0.977,434
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178987,Orlando Silva,PCDOB,BOLSONARO,2,-1.0,0.2796,304
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178992,Vitor Lippi,PSDB,BOLSONARO,1,0.0,0.764,339
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,178992,Vitor Lippi,PSDB,LULA,2,0.5,0.8045,353
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,191923,Flávio Nogueira,PT,LULA,1,0.0,0.9678,528
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204356,Amaro Neto,REPUBLICANOS,LULA,2,0.0,0.8372,436
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204365,Gilson Marques,NOVO,LULA,1,-1.0,0.2239,451
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204366,Rodrigo Coelho,PODEMOS,BOLSONARO,1,1.0,0.9033,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204370,Célio Moura,PT,BOLSONARO,1,-1.0,0.2975,353
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204374,Bia Kicis,PL,BOLSONARO,1,1.0,0.9315,394
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204374,Bia Kicis,PL,LULA,4,-0.75,0.2618,382
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204381,Luis Miranda,REPUBLICANOS,BOLSONARO,1,-1.0,0.9012,344
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204388,Bibo Nunes,PL,LULA,1,-1.0,0.3209,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204389,Elias Vaz,PSB,BOLSONARO,1,-1.0,0.278,313
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204395,Pedro Lupion,PP,LULA,1,0.0,0.4266,293
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204407,Fernanda Melchionna,PSOL,LULA,1,0.0,0.8111,323
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204409,Daniel Trzeciak,PSDB,LULA,1,0.0,0.483,383
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204410,Luisa Canziani,PSD,LULA,1,0.0,0.7224,263
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204411,Filipe Barros,PL,LULA,2,-1.0,0.3029,208
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204412,Dr. Zacharias Calil,UNIAO,BOLSONARO,2,-1.0,0.8911,358
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204412,Dr. Zacharias Calil,UNIAO,LULA,3,0.0,0.5381,407
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204416,Sanderson,PL,LULA,3,-1.0,0.2507,347
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204426,Carlos Veras,PT,LULA,1,0.0,0.977,478
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204445,Fernando Mineiro,PT,LULA,1,0.0,0.9816,381
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204455,Luiz Lima,PL,LULA,2,0.0,0.3148,378
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204457,Juninho do Pneu,UNIAO,LULA,1,0.0,0.871,403
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204460,Carlos Jordy,PL,LULA,1,-1.0,0.2394,330
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204464,Talíria Petrone,PSOL,BOLSONARO,1,-1.0,0.2318,220
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204464,Talíria Petrone,PSOL,LULA,3,-0.3333,0.8012,347
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204472,José Medeiros,PL,LULA,1,-1.0,0.2772,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204473,General Girão,PL,LULA,2,-1.0,0.3149,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204480,Rogério Correia,PT,BOLSONARO,2,-1.0,0.2849,337
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204480,Rogério Correia,PT,LULA,2,1.0,0.9792,432
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204495,Airton Faleiro,PT,LULA,1,1.0,0.9819,387
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204497,Júnior Ferrari,PSD,LULA,1,0.0,0.845,387
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204501,Alencar Santana,PT,LULA,1,0.0,0.9737,494
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204516,Alexis Fonteyne,NOVO,BOLSONARO,1,-1.0,0.6721,366
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204520,Junio Amaral,PL,LULA,1,-1.0,0.2418,244
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204524,Pinheirinho,PP,LULA,1,0.0,0.8159,239
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204528,Adriana Ventura,NOVO,BOLSONARO,1,0.0,0.6897,390
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204528,Adriana Ventura,NOVO,LULA,2,-1.0,0.2581,372
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204530,Rodrigo Agostinho,PSB,BOLSONARO,1,-1.0,0.359,376
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204533,Idilvan Alencar,PDT,LULA,1,0.0,0.9292,438
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204535,Sâmia Bomfim,PSOL,LULA,1,1.0,0.7923,414
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204536,Kim Kataguiri,UNIAO,LULA,1,-1.0,0.2667,420
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204542,Denis Bezerra,PSB,BOLSONARO,1,-1.0,0.3393,333
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204557,Sidney Leite,PSD,BOLSONARO,1,-1.0,0.8044,225
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204557,Sidney Leite,PSD,LULA,1,1.0,0.8333,360
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204559,Zé Neto,PT,BOLSONARO,1,-1.0,0.3186,295
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204559,Zé Neto,PT,LULA,2,0.0,0.9799,298
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,204572,Capitão Alberto Neto,PL,LULA,2,-0.5,0.2854,396
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,205550,Jorge Braz,REPUBLICANOS,LULA,1,0.0,0.8162,419
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,206018,Célia Xakriabá,PSOL,LULA,4,0.5,0.8269,364
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,209189,Joseildo Ramos,PT,LULA,1,1.0,0.9695,394
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,209787,Nikolas Ferreira,PL,LULA,2,-1.0,0.2439,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,213274,Ricardo Silva,PSD,LULA,1,0.0,0.8074,244
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,214694,Jorge Goetten,PL,LULA,3,-0.3333,0.5443,463
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220529,Gilson Daniel,PODEMOS,LULA,4,0.5,0.8826,494
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220534,Fred Linhares,REPUBLICANOS,LULA,1,-1.0,0.7924,395
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220538,Albuquerque,REPUBLICANOS,LULA,1,1.0,0.8406,389
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220539,Defensor Stélio Dener,REPUBLICANOS,LULA,1,1.0,0.8652,445
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220545,Filipe Martins,PL,LULA,1,-1.0,0.3094,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220547,Marcos Pollon,PL,LULA,3,-1.0,0.2073,468
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220549,Any Ortiz,CIDADANIA,LULA,3,0.0,0.4185,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220551,Franciane Bayer,REPUBLICANOS,LULA,1,-1.0,0.5746,402
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220552,Zucco,REPUBLICANOS,LULA,1,0.0,0.2415,501
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220554,Alexandre Lindenmeyer,PT,LULA,3,0.3333,0.9669,393
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220555,Daiana Santos,PCDOB,LULA,2,0.0,0.9478,383
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220556,Ana Paula Lima,PT,LULA,3,1.0,0.9822,394
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220557,Daniela Reinehr,PL,LULA,2,-0.5,0.2834,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220566,Lêda Borges,PSDB,LULA,3,1.0,0.7882,340
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220569,Silvye Alves,UNIAO,LULA,1,1.0,0.6458,384
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220574,Cabo Gilberto Silva,PL,LULA,1,-1.0,0.2542,417
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220578,Josenildo,PDT,LULA,1,1.0,0.9051,453
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220590,Coronel Ulysses,UNIAO,LULA,1,-1.0,0.4742,407
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220593,Abilio Brunini,PL,LULA,1,-1.0,0.3,280
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220595,Coronel Fernanda,PL,LULA,1,-1.0,0.2735,446
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220596,Amália Barros,PL,LULA,1,-1.0,0.2851,228
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220598,Tarcísio Motta,PSOL,LULA,3,0.3333,0.8337,517
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220605,Bandeira de Mello,PSB,LULA,1,0.0,0.9309,434
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220606,Reimont,PT,LULA,1,1.0,0.9835,423
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220607,Max Lemos,PDT,LULA,1,0.0,0.9112,439
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220611,General Pazuello,PL,LULA,1,-1.0,0.3167,360
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220612,Bebeto,PP,LULA,1,1.0,0.864,456
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220615,Pastor Henrique Vieira,PSOL,LULA,3,0.3333,0.8288,444
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220621,Sargento Gonçalves,PL,LULA,1,-1.0,0.2399,371
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220628,Mauricio do Vôlei,PL,LULA,1,0.0,0.2911,316
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220629,Dandara,PT,LULA,4,0.5,0.9769,390
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220630,Pedro Aihara,PATRIOTA,LULA,3,-0.6667,0.7694,438
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220632,Ana Pimentel,PT,LULA,2,0.5,0.971,448
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220633,Ricardo Salles,PL,LULA,2,-0.5,0.2085,307
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220635,Bruno Ganem,PODEMOS,LULA,1,0.0,0.8092,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220639,Guilherme Boulos,PSOL,LULA,1,0.0,0.8182,385
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220644,Rosangela Moro,UNIAO,LULA,2,0.0,0.3235,473
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220645,Erika Hilton,PSOL,LULA,1,1.0,0.8245,319
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220654,Delegado Paulo Bilynskyj,PL,LULA,1,-1.0,0.2292,432
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220658,Luiz Gastão,PSD,LULA,1,0.0,0.8427,375
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220662,Lucas Ramos,PSB,LULA,1,1.0,0.9535,409
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220666,Coronel Meira,PL,LULA,2,-0.5,0.3034,412
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220667,Pedro Campos,PSB,LULA,1,1.0,0.9664,447
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220669,Lula da Fonte,PP,LULA,1,1.0,0.859,390
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220670,Iza Arruda,MDB,LULA,1,0.0,0.9156,379
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220676,Andreia Siqueira,MDB,LULA,1,0.0,0.9006,322
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220682,Tadeu Veneri,PT,LULA,1,1.0,0.9624,425
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220697,Jadyel Alencar,PV,LULA,1,0.0,0.9132,311
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220699,Castro Neto,PSD,LULA,1,0.0,0.9248,399
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220700,Florentino Neto,PT,LULA,1,0.0,0.9923,388
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220701,Delegado Matheus Laiola,UNIAO,LULA,1,0.0,0.8687,434
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220703,Neto Carletto,PP,LULA,1,0.0,0.9036,415
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220706,Padovani,UNIAO,LULA,1,1.0,0.5926,243
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,220715,Amom Mandel,CIDADANIA,LULA,1,-1.0,0.6979,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,221148,Alfredinho,PT,LULA,1,1.0,0.9844,449
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,221338,Professora Luciene Cavalcante,PSOL,LULA,6,-0.1667,0.8161,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,221378,Reginete Bispo,PT,LULA,2,0.5,0.9716,387
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,226075,Priscila Costa,PL,LULA,2,-1.0,0.2128,94
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,226179,Gisela Simona,UNIAO,LULA,1,0.0,0.636,467
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,226837,Saulo Pedroso,PSD,LULA,1,-1.0,0.855,269
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,62881,Danilo Forte,UNIAO,BOLSONARO,1,-1.0,0.8507,268
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,62881,Danilo Forte,UNIAO,LULA,2,-0.5,0.7885,331
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73433,Arlindo Chinaglia,PT,LULA,1,1.0,0.9856,417
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73441,Celso Russomanno,REPUBLICANOS,LULA,1,0.0,0.8133,332
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73531,Ivan Valente,PSOL,LULA,2,0.0,0.8021,379
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73692,Osmar Terra,MDB,LULA,1,-1.0,0.2827,336
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73696,Angela Amin,PP,BOLSONARO,1,0.0,0.8908,348
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,73701,Benedita da Silva,PT,LULA,1,1.0,0.9806,361
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74041,Luiz Couto,PT,LULA,3,0.0,0.9775,577
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74052,Bosco Costa,PL,BOLSONARO,1,1.0,0.9437,320
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74057,Alice Portugal,PCDOB,LULA,2,0.5,0.9739,459
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74171,Chico Alencar,PSOL,LULA,2,0.0,0.8359,518
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74253,Julio Lopes,PP,LULA,2,0.5,0.887,301
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74283,Vicentinho,PT,BOLSONARO,1,-1.0,0.2901,324
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74299,Leônidas Cristino,PDT,LULA,2,-0.5,0.9404,235
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74398,Maria do Rosário,PT,BOLSONARO,1,-1.0,0.3344,305
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74655,Eduardo Barbosa,PSDB,BOLSONARO,1,0.0,0.7801,382
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74696,Alberto Mourão,MDB,LULA,1,0.0,0.8387,248
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74848,Jandira Feghali,PCDOB,LULA,1,0.0,0.9679,436
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,74858,Lindbergh Farias,PT,LULA,1,0.0,0.9612,438
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,80815,Leo Prates,PDT,LULA,3,0.3333,0.9333,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,81055,Márcio Jerry,PCDOB,LULA,1,0.0,0.981,420
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,89536,Prof. Paulo Fernando,REPUBLICANOS,LULA,2,0.0,0.5231,195
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,92346,Eduardo Bolsonaro,PL,LULA,2,-1.0,0.2395,309
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,98057,Lafayette de Andrada,REPUBLICANOS,BOLSONARO,1,0.0,0.9046,283
+meta-llama/Llama-3.3-70B-Instruct-Turbo,speech,98057,Lafayette de Andrada,REPUBLICANOS,LULA,2,0.0,0.6776,335
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,104552,Socorro Neri,PP,LULA,1,0.0,0.8237,363
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,132504,Enio Verri,PT,BOLSONARO,1,-1.0,0.2795,347
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,136811,Afonso Hamm,PP,LULA,1,-1.0,0.5233,344
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,139285,Lídice da Mata,PSB,LULA,1,0.0,0.9554,404
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,141391,Arnaldo Jardim,CIDADANIA,LULA,1,0.0,0.8426,324
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,141450,Hugo Leal,PSD,LULA,1,-1.0,0.784,250
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,143632,Domingos Neto,PSD,BOLSONARO,1,-1.0,0.9072,237
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,143942,Caio Vianna,PSD,LULA,1,0.0,0.9327,208
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,150418,Márcio Marinho,REPUBLICANOS,LULA,1,-1.0,0.8247,405
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,152605,Glauber Braga,PSOL,LULA,2,-0.5,0.7316,354
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,156190,Marcel van Hattem,NOVO,LULA,1,0.0,0.2434,415
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160518,Weliton Prado,SOLIDARIEDADE,LULA,1,0.0,0.7545,391
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160527,Aguinaldo Ribeiro,PP,LULA,1,0.0,0.9019,265
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160538,Bohn Gass,PT,LULA,1,1.0,0.972,429
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160553,Antonio Brito,PSD,LULA,1,0.0,0.9563,229
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160575,Erika Kokay,PT,BOLSONARO,2,-1.0,0.2493,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160575,Erika Kokay,PT,LULA,2,-1.0,0.9467,507
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160604,Pedro Uczai,PT,LULA,1,0.0,0.9808,364
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160632,Zé Silva,SOLIDARIEDADE,BOLSONARO,1,-1.0,0.917,289
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160632,Zé Silva,SOLIDARIEDADE,LULA,1,0.0,0.8601,343
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160665,Augusto Coutinho,REPUBLICANOS,BOLSONARO,1,0.0,0.8454,304
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160665,Augusto Coutinho,REPUBLICANOS,LULA,1,1.0,0.8998,409
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,160758,Domingos Sávio,PL,LULA,1,-1.0,0.3404,329
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,161440,Pezenti,MDB,LULA,1,-1.0,0.3062,405
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,166402,Magda Mofatto,PL,LULA,1,0.0,0.2846,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178843,Marx Beltrão,PP,LULA,1,0.0,0.8263,357
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178857,Jorge Solla,PT,LULA,4,0.25,0.9784,371
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178871,Evair Vieira de Melo,PP,LULA,3,-0.6667,0.2076,395
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178887,Rubens Pereira Júnior,PT,LULA,1,1.0,0.9764,508
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178910,Joaquim Passarinho,PL,LULA,1,-1.0,0.356,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178925,Rejane Dias,PT,BOLSONARO,1,-1.0,0.2939,330
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178927,Aliel Machado,PV,LULA,1,0.0,0.924,263
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178987,Orlando Silva,PCDOB,BOLSONARO,1,-1.0,0.2796,304
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,178992,Vitor Lippi,PSDB,BOLSONARO,1,-1.0,0.764,339
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204360,Silvia Cristina,PL,LULA,1,-1.0,0.4819,359
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204366,Rodrigo Coelho,PODEMOS,BOLSONARO,1,0.0,0.9033,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204374,Bia Kicis,PL,BOLSONARO,1,-1.0,0.9315,394
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204374,Bia Kicis,PL,LULA,2,-0.5,0.2618,382
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204388,Bibo Nunes,PL,LULA,1,-1.0,0.3209,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204389,Elias Vaz,PSB,BOLSONARO,1,-1.0,0.278,313
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204395,Pedro Lupion,PP,LULA,1,-1.0,0.4266,293
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204411,Filipe Barros,PL,LULA,1,0.0,0.3029,208
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204412,Dr. Zacharias Calil,UNIAO,BOLSONARO,1,-1.0,0.8911,358
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204416,Sanderson,PL,LULA,3,-0.3333,0.2507,347
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204426,Carlos Veras,PT,LULA,1,0.0,0.977,478
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204460,Carlos Jordy,PL,LULA,1,-1.0,0.2394,330
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204464,Talíria Petrone,PSOL,BOLSONARO,1,-1.0,0.2318,220
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204472,José Medeiros,PL,LULA,1,-1.0,0.2772,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204473,General Girão,PL,LULA,1,-1.0,0.3149,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204480,Rogério Correia,PT,BOLSONARO,2,-1.0,0.2849,337
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204480,Rogério Correia,PT,LULA,1,0.0,0.9792,432
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204516,Alexis Fonteyne,NOVO,BOLSONARO,1,-1.0,0.6721,366
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204528,Adriana Ventura,NOVO,LULA,2,-1.0,0.2581,372
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204530,Rodrigo Agostinho,PSB,BOLSONARO,1,-1.0,0.359,376
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204535,Sâmia Bomfim,PSOL,LULA,1,1.0,0.7923,414
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204542,Denis Bezerra,PSB,BOLSONARO,1,-1.0,0.3393,333
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204557,Sidney Leite,PSD,LULA,1,0.0,0.8333,360
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204559,Zé Neto,PT,LULA,1,-1.0,0.9799,298
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,204572,Capitão Alberto Neto,PL,LULA,1,0.0,0.2854,396
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,206018,Célia Xakriabá,PSOL,LULA,3,-0.3333,0.8269,364
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,209787,Nikolas Ferreira,PL,LULA,1,-1.0,0.2439,369
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,214694,Jorge Goetten,PL,LULA,3,-0.6667,0.5443,463
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220529,Gilson Daniel,PODEMOS,LULA,3,-1.0,0.8826,494
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220534,Fred Linhares,REPUBLICANOS,LULA,1,-1.0,0.7924,395
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220545,Filipe Martins,PL,LULA,1,-1.0,0.3094,362
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220547,Marcos Pollon,PL,LULA,2,-0.5,0.2073,468
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220549,Any Ortiz,CIDADANIA,LULA,1,0.0,0.4185,368
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220552,Zucco,REPUBLICANOS,LULA,1,-1.0,0.2415,501
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220556,Ana Paula Lima,PT,LULA,2,0.0,0.9822,394
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220557,Daniela Reinehr,PL,LULA,1,-1.0,0.2834,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220566,Lêda Borges,PSDB,LULA,2,0.5,0.7882,340
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220578,Josenildo,PDT,LULA,1,1.0,0.9051,453
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220590,Coronel Ulysses,UNIAO,LULA,1,0.0,0.4742,407
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220595,Coronel Fernanda,PL,LULA,1,0.0,0.2735,446
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220596,Amália Barros,PL,LULA,1,0.0,0.2851,228
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220598,Tarcísio Motta,PSOL,LULA,2,0.0,0.8337,517
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220605,Bandeira de Mello,PSB,LULA,1,0.0,0.9309,434
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220606,Reimont,PT,LULA,1,-1.0,0.9835,423
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220615,Pastor Henrique Vieira,PSOL,LULA,1,1.0,0.8288,444
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220621,Sargento Gonçalves,PL,LULA,1,-1.0,0.2399,371
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220628,Mauricio do Vôlei,PL,LULA,1,0.0,0.2911,316
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220629,Dandara,PT,LULA,2,0.0,0.9769,390
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220630,Pedro Aihara,PATRIOTA,LULA,2,0.0,0.7694,438
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220633,Ricardo Salles,PL,LULA,1,-1.0,0.2085,307
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220635,Bruno Ganem,PODEMOS,LULA,1,0.0,0.8092,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220639,Guilherme Boulos,PSOL,LULA,1,-1.0,0.8182,385
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220645,Erika Hilton,PSOL,LULA,1,0.0,0.8245,319
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220654,Delegado Paulo Bilynskyj,PL,LULA,1,-1.0,0.2292,432
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220658,Luiz Gastão,PSD,LULA,1,-1.0,0.8427,375
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220669,Lula da Fonte,PP,LULA,1,1.0,0.859,390
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220676,Andreia Siqueira,MDB,LULA,1,0.0,0.9006,322
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220682,Tadeu Veneri,PT,LULA,1,-1.0,0.9624,425
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220699,Castro Neto,PSD,LULA,1,0.0,0.9248,399
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220701,Delegado Matheus Laiola,UNIAO,LULA,1,0.0,0.8687,434
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220703,Neto Carletto,PP,LULA,1,0.0,0.9036,415
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,220715,Amom Mandel,CIDADANIA,LULA,1,-1.0,0.6979,374
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,221338,Professora Luciene Cavalcante,PSOL,LULA,3,0.0,0.8161,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,221378,Reginete Bispo,PT,LULA,1,1.0,0.9716,387
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,226837,Saulo Pedroso,PSD,LULA,1,-1.0,0.855,269
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,62881,Danilo Forte,UNIAO,LULA,2,0.0,0.7885,331
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,73692,Osmar Terra,MDB,LULA,1,-1.0,0.2827,336
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74041,Luiz Couto,PT,LULA,1,-1.0,0.9775,577
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74057,Alice Portugal,PCDOB,LULA,1,0.0,0.9739,459
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74171,Chico Alencar,PSOL,LULA,2,0.5,0.8359,518
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74299,Leônidas Cristino,PDT,LULA,1,0.0,0.9404,235
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74398,Maria do Rosário,PT,BOLSONARO,1,-1.0,0.3344,305
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,74858,Lindbergh Farias,PT,LULA,1,-1.0,0.9612,438
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,80815,Leo Prates,PDT,LULA,1,0.0,0.9333,435
+meta-llama/Llama-3.3-70B-Instruct-Turbo,lds_summary,81055,Márcio Jerry,PCDOB,LULA,1,0.0,0.981,420

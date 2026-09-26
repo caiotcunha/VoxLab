@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROrpnr63oOTNwU8qgLG0TJea",
+  "object": "chat.completion",
+  "created": 1790436537,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Educação política nas escolas é essencial para o engajamento dos jovens na democracia\"},\n    {\"id\": \"P2\", \"text\": \"Jovens devem fiscalizar e cobrar promessas de campanha dos políticos\"},\n    {\"id\": \"P3\", \"text\": \"Formação democrática dos jovens ajuda a combater a desinformação e as fake news\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1477,
+    "total_tokens": 1587,
+    "completion_tokens": 110,
+    "estimated_cost": 0.00057572,
+    "prompt_tokens_details": null
+  }
+}

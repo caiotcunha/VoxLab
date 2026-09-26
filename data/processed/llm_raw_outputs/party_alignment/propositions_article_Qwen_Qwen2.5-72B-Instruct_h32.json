@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnsPpLT7xH9HpMVAnPiO4UIL",
+  "object": "chat.completion",
+  "created": 1790436348,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Migrantes devem ter acesso continuado a políticas públicas, não apenas emergencial.\"},\n    {\"id\": \"P2\", \"text\": \"O Brasil deve implementar uma nova política migratória focada na inclusão e participação dos migrantes.\"},\n    {\"id\": \"P3\", \"text\": \"Imigrantes devem ter acesso a cargos públicos, mesmo que seus diplomas sejam reconhecidos por instituições brasileiras.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1655,
+    "total_tokens": 1774,
+    "completion_tokens": 119,
+    "estimated_cost": 0.0006434000000000001,
+    "prompt_tokens_details": null
+  }
+}

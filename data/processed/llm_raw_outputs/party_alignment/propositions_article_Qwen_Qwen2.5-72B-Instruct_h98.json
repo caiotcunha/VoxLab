@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXM91i5TGbQ4RfOkBvA1rTvq",
+  "object": "chat.completion",
+  "created": 1790436574,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Plataformas devem fornecer dados de IP a autoridades policiais sem necessidade de ordem judicial\"},\n    {\"id\": \"P2\", \"text\": \"A legislação deve definir critérios para a produção e preservação de provas cibernéticas\"},\n    {\"id\": \"P3\", \"text\": \"A desinformação e a disseminação de notícias falsas devem ser combatidas com leis específicas que distingam usuários de traficantes\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2128,
+    "total_tokens": 2259,
+    "completion_tokens": 131,
+    "estimated_cost": 0.0008184799999999999,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,612 @@
+hearing_id,model,proposition_id,text,malformed_output
+1,Qwen/Qwen2.5-72B-Instruct,P1,Ministro do STF deve exigir bloqueio de contas em redes sociais sem devido processo legal,False
+1,Qwen/Qwen2.5-72B-Instruct,P2,Regulamentação das redes sociais é necessária para proteger usuários contra excessos,False
+1,Qwen/Qwen2.5-72B-Instruct,P3,"Liberdade de expressão deve ser absoluta, incluindo discursos controversos",False
+2,Qwen/Qwen2.5-72B-Instruct,P1,Grandes consumidores devem pagar uma parcela maior dos custos da energia elétrica,False
+2,Qwen/Qwen2.5-72B-Instruct,P2,Investimentos em transição energética no setor de transportes devem ser priorizados,False
+2,Qwen/Qwen2.5-72B-Instruct,P3,A exploração de petróleo na Margem Equatorial deve ser realizada de forma sustentável,False
+3,Qwen/Qwen2.5-72B-Instruct,P1,O saque-aniversário do FGTS deve ser substituído por uma nova modalidade de crédito consignado,False
+3,Qwen/Qwen2.5-72B-Instruct,P2,A nova modalidade de crédito consignado não trará prejuízos aos trabalhadores,False
+3,Qwen/Qwen2.5-72B-Instruct,P3,O saque-aniversário do FGTS é essencial para os trabalhadores como um 14º salário,False
+4,Qwen/Qwen2.5-72B-Instruct,P1,Operadoras de telefonia devem usar baterias e geradores para evitar interrupção de serviços em casos de falta de energia,False
+4,Qwen/Qwen2.5-72B-Instruct,P2,Leis de telecomunicações devem ser reformadas para equilibrar obrigações entre meios de comunicação tradicionais e novas mídias,False
+5,Qwen/Qwen2.5-72B-Instruct,P1,Centros de reabilitação devem ser implementados em todos os municípios para atender pessoas com TEA.,False
+5,Qwen/Qwen2.5-72B-Instruct,P2,Plano educacional individualizado é essencial para a inclusão efetiva de alunos com TEA nas escolas.,False
+5,Qwen/Qwen2.5-72B-Instruct,P3,A sociedade deve reconhecer a neurodiversidade e as potencialidades das pessoas com TEA.,False
+6,Qwen/Qwen2.5-72B-Instruct,P1,A linha promocional da 123milhas dependia de um fluxo de novas compras para ser sustentável.,False
+6,Qwen/Qwen2.5-72B-Instruct,P2,A 123milhas suspendeu a venda de passagens promocionais devido à alta dos preços das passagens aéreas.,False
+6,Qwen/Qwen2.5-72B-Instruct,P3,A 123milhas está em recuperação judicial para garantir o ressarcimento dos consumidores afetados.,False
+7,Qwen/Qwen2.5-72B-Instruct,P1,A regulamentação da reforma tributária deve manter os acordos feitos na aprovação da emenda constitucional.,False
+7,Qwen/Qwen2.5-72B-Instruct,P2,A regulamentação deve incluir a redução de alíquotas de impostos para produtos da cesta básica de alimentos.,False
+7,Qwen/Qwen2.5-72B-Instruct,P3,A regulamentação deve garantir a não cumulatividade de impostos para evitar aumento da carga tributária.,False
+8,Qwen/Qwen2.5-72B-Instruct,P1,Empresas de criptomoedas devem separar ativos próprios dos clientes,False
+8,Qwen/Qwen2.5-72B-Instruct,P2,Regulação de criptomoedas deve incluir obrigações de registro e conhecimento do cliente,False
+8,Qwen/Qwen2.5-72B-Instruct,P3,Criptomoedas devem ser reguladas para prevenir esquemas de pirâmide financeira e lavagem de dinheiro,False
+9,Qwen/Qwen2.5-72B-Instruct,P1,A certidão negativa de antecedentes criminais deve ser exigida para a contratação de cuidadores de pessoas idosas,False
+9,Qwen/Qwen2.5-72B-Instruct,P2,A exigência de certidão negativa de antecedentes criminais pode ser considerada discriminatória e prejudicar trabalhadores informais,False
+9,Qwen/Qwen2.5-72B-Instruct,P3,"A contratação de cuidadores de pessoas idosas deve ser baseada em uma análise criteriosa do candidato, não apenas na certidão de antecedentes criminais",False
+10,Qwen/Qwen2.5-72B-Instruct,P1,O saque-aniversário do FGTS deve ser substituído por um empréstimo consignado com juros mais baixos.,False
+10,Qwen/Qwen2.5-72B-Instruct,P2,O saque-aniversário do FGTS compromete a sustentabilidade do fundo e inviabiliza o financiamento de moradias para famílias de baixa renda.,False
+10,Qwen/Qwen2.5-72B-Instruct,P3,"O trabalhador deve ter a opção de escolher entre o saque-aniversário e o empréstimo consignado, mantendo a liberdade de decisão.",False
+11,Qwen/Qwen2.5-72B-Instruct,P1,O avanço do semiárido brasileiro pode levar 30% da região a se tornar semideserto com menos de 400 mm de chuva anual.,False
+11,Qwen/Qwen2.5-72B-Instruct,P2,A solução para a desertificação no Semiárido passa por incentivos a modelos agrícolas que valorizem a Caatinga e a agroecologia.,False
+11,Qwen/Qwen2.5-72B-Instruct,P3,É necessário retomar o Plano Nacional de Combate à Desertificação e reforçar o Programa de Cisternas e a Operação Carro-Pipa.,False
+12,Qwen/Qwen2.5-72B-Instruct,P1,Mulheres com deficiência são as maiores vítimas de violações de direitos.,False
+13,Qwen/Qwen2.5-72B-Instruct,P1,Mineradoras devem pagar R$ 126 bilhões para reparar os danos causados pelo rompimento da Barragem do Fundão.,False
+13,Qwen/Qwen2.5-72B-Instruct,P2,O Judiciário deve fixar prazo final para o fim da repactuação dos acordos de reparação em Mariana.,False
+13,Qwen/Qwen2.5-72B-Instruct,P3,A efetiva participação dos representantes das vítimas deve ser garantida na repactuação dos acordos de reparação em Mariana.,False
+14,Qwen/Qwen2.5-72B-Instruct,P1,Acordos de indenização e desocupação com a Braskem são justos e satisfatórios para as vítimas.,False
+14,Qwen/Qwen2.5-72B-Instruct,P2,A Braskem deve ser responsabilizada criminalmente pelos danos socioambientais em Maceió.,False
+14,Qwen/Qwen2.5-72B-Instruct,P3,A área interditada deve ser ampliada para incluir os Flexais devido ao risco de deslizamento.,False
+15,Qwen/Qwen2.5-72B-Instruct,P1,A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos.,False
+15,Qwen/Qwen2.5-72B-Instruct,P2,"A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos deve ser opcional, decidida pelos pais.",False
+15,Qwen/Qwen2.5-72B-Instruct,P3,A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos é segura e eficaz.,False
+16,Qwen/Qwen2.5-72B-Instruct,P1,O Ministério dos Direitos Humanos deve ser responsabilizado por custear a viagem de pessoas com antecedentes criminais.,False
+16,Qwen/Qwen2.5-72B-Instruct,P2,O Ministério dos Direitos Humanos deve aprimorar as regras de emissão de passagens e diárias para evitar situações controversas.,False
+16,Qwen/Qwen2.5-72B-Instruct,P3,A morte de detentos em presídios federais deve ser investigada com rigor para identificar falhas no sistema de saúde e segurança prisional.,False
+17,Qwen/Qwen2.5-72B-Instruct,P1,O Poder Judiciário deve se limitar às prerrogativas constitucionais e legais,False
+17,Qwen/Qwen2.5-72B-Instruct,P2,O Parlamento deve ser o principal órgão para expressar os anseios da população,False
+17,Qwen/Qwen2.5-72B-Instruct,P3,O Senado Federal deve ter competência para autorizar a nomeação de ministros do STF e estabelecer casos de impeachment,False
+18,Qwen/Qwen2.5-72B-Instruct,P1,O Pibid deve ser transformado em política nacional para garantir a continuidade das bolsas de formação de professores.,False
+18,Qwen/Qwen2.5-72B-Instruct,P2,A ampliação do Pibid para 90 mil bolsas de licenciatura em pedagogia é necessária para atender à demanda de formação de professores no Brasil.,False
+18,Qwen/Qwen2.5-72B-Instruct,P3,A institucionalização do Pibid pode contribuir para a redução das desigualdades sociais ao garantir a continuidade da formação de professores.,False
+19,Qwen/Qwen2.5-72B-Instruct,P1,A redução da velocidade média nas vias urbanas para 50 km/h aumenta a segurança no trânsito,False
+19,Qwen/Qwen2.5-72B-Instruct,P2,A redução da velocidade média nas vias urbanas não aumenta o tempo de viagens,False
+19,Qwen/Qwen2.5-72B-Instruct,P3,A educação e fiscalização de motociclistas são medidas importantes para reduzir acidentes de trânsito,False
+20,Qwen/Qwen2.5-72B-Instruct,P1,Projetos que permitem o uso de terras indígenas para mineração e exploração devem ser consultados com os povos afetados.,False
+20,Qwen/Qwen2.5-72B-Instruct,P2,A legalização do desmatamento em terras indígenas e tradicionais é uma forma de retirar direitos desses povos.,False
+20,Qwen/Qwen2.5-72B-Instruct,P3,É necessário eleger mais representantes indígenas no Congresso para evitar perdas de direitos.,False
+21,Qwen/Qwen2.5-72B-Instruct,P1,A criação de uma subsidiária para as loterias facilitaria a privatização dessas operações.,False
+21,Qwen/Qwen2.5-72B-Instruct,P2,A privatização das loterias da Caixa beneficiaria a modernização e a competitividade do setor.,False
+21,Qwen/Qwen2.5-72B-Instruct,P3,"A destinação de recursos das loterias para programas sociais e investimentos públicos deve ser mantida, independentemente da forma de gestão.",False
+22,Qwen/Qwen2.5-72B-Instruct,P1,Plataformas de e-commerce devem ser fiscalizadas com maior rigor para evitar evasão fiscal,False
+22,Qwen/Qwen2.5-72B-Instruct,P2,A isenção de impostos para compras internacionais de até 50 dólares não deve ser considerada um problema,False
+22,Qwen/Qwen2.5-72B-Instruct,P3,O governo deve criar um marco regulatório para garantir competição justa no e-commerce,False
+23,Qwen/Qwen2.5-72B-Instruct,P1,O biometano deve ser incentivado para uso no setor de transportes pesados.,False
+23,Qwen/Qwen2.5-72B-Instruct,P2,A infraestrutura existente de gasodutos e postos de gás natural veicular deve ser utilizada para o biometano.,False
+23,Qwen/Qwen2.5-72B-Instruct,P3,O biometano deve ser incluído em planos de mobilidade urbana e receber linhas de financiamento específicas.,False
+24,Qwen/Qwen2.5-72B-Instruct,P1,O ensino de filosofia e sociologia deve ser mantido e ampliado na rede pública de ensino.,False
+24,Qwen/Qwen2.5-72B-Instruct,P2,A Reforma do Ensino Médio de 2017 reduziu a oferta de aulas de filosofia e sociologia nas escolas públicas.,False
+24,Qwen/Qwen2.5-72B-Instruct,P3,O ensino de filosofia e sociologia é essencial para a formação cidadã e crítica dos alunos.,False
+25,Qwen/Qwen2.5-72B-Instruct,P1,Operações com carros pipa devem ser implementadas para socorrer a região norte de Minas Gerais,False
+25,Qwen/Qwen2.5-72B-Instruct,P2,Crédito rural deve ser liberado para auxiliar os produtores afetados pela seca,False
+25,Qwen/Qwen2.5-72B-Instruct,P3,Políticas sociais devem ser ampliadas nos municípios atingidos pela seca,False
+26,Qwen/Qwen2.5-72B-Instruct,P1,O trabalho de cuidado não remunerado deve ser incluído no cálculo do PIB.,False
+26,Qwen/Qwen2.5-72B-Instruct,P2,A inclusão da economia do cuidado no PIB pode mudar a percepção social sobre a importância desse trabalho.,False
+26,Qwen/Qwen2.5-72B-Instruct,P3,Políticas públicas de cuidado podem melhorar o Índice de Desenvolvimento Humano mais do que o PIB.,False
+27,Qwen/Qwen2.5-72B-Instruct,P1,O uso abusivo de inteligência artificial no processo eleitoral deve ser punido imediatamente com cassação e inelegibilidade.,False
+27,Qwen/Qwen2.5-72B-Instruct,P2,A capacidade de inteligência artificial de entender e manipular sentimentos dos eleitores pode prever o resultado eleitoral antes da votação.,False
+28,Qwen/Qwen2.5-72B-Instruct,P1,O consumidor deve ter o direito de escolher qualquer oficina para reparar seu veículo.,False
+28,Qwen/Qwen2.5-72B-Instruct,P2,As montadoras devem fornecer equipamentos e softwares de diagnóstico e reparo a oficinas independentes.,False
+28,Qwen/Qwen2.5-72B-Instruct,P3,A liberação do acesso a equipamentos e softwares de diagnóstico pode comprometer a segurança e a segurança ambiental dos veículos.,False
+29,Qwen/Qwen2.5-72B-Instruct,P1,O Plano Juventude Negra Viva deve ser vinculado aos planos plurianuais do governo federal.,False
+29,Qwen/Qwen2.5-72B-Instruct,P2,A formação dos policiais deve ser melhorada para reduzir a violência contra jovens negros.,False
+29,Qwen/Qwen2.5-72B-Instruct,P3,O Pronasci Juventude deve incluir acompanhamento multidisciplinar e capacitação profissional para jovens em situação de vulnerabilidade.,False
+30,Qwen/Qwen2.5-72B-Instruct,P1,O orçamento deve incluir a marcação de todas as despesas relacionadas com crianças e adolescentes para ampliar a transparência.,False
+30,Qwen/Qwen2.5-72B-Instruct,P2,Investimentos em prevenção de violência contra crianças e adolescentes devem ser baseados em evidências eficazes.,False
+30,Qwen/Qwen2.5-72B-Instruct,P3,A proporção do PIB destinada à proteção de crianças e adolescentes deve ser aumentada para dar prioridade a essas ações.,False
+31,Qwen/Qwen2.5-72B-Instruct,P1,O Parfor deve ser transformado em política de Estado permanente,False
+31,Qwen/Qwen2.5-72B-Instruct,P2,A existência de muitos professores temporários dificulta a formação contínua,False
+31,Qwen/Qwen2.5-72B-Instruct,P3,O orçamento do Parfor deve ser ampliado para permitir novos editais e custeio,False
+32,Qwen/Qwen2.5-72B-Instruct,P1,"Migrantes devem ter acesso continuado a políticas públicas, não apenas emergencial.",False
+32,Qwen/Qwen2.5-72B-Instruct,P2,O Brasil deve implementar uma nova política migratória focada na inclusão e participação dos migrantes.,False
+32,Qwen/Qwen2.5-72B-Instruct,P3,"Imigrantes devem ter acesso a cargos públicos, mesmo que seus diplomas sejam reconhecidos por instituições brasileiras.",False
+33,Qwen/Qwen2.5-72B-Instruct,P1,O diploma de jornalismo deve ser obrigatório para combater a desinformação e as notícias falsas,False
+33,Qwen/Qwen2.5-72B-Instruct,P2,A obrigatoriedade do diploma de jornalismo não compromete a liberdade de expressão,False
+33,Qwen/Qwen2.5-72B-Instruct,P3,A exigência do diploma de jornalismo é necessária para garantir a qualidade do trabalho jornalístico,False
+34,Qwen/Qwen2.5-72B-Instruct,P1,A moderação de conteúdo e a educação sobre distorções do mundo virtual podem mitigar os impactos negativos das redes sociais na saúde mental de jovens.,False
+34,Qwen/Qwen2.5-72B-Instruct,P2,O uso excessivo de redes sociais deve ser limitado para incentivar atividades fora da tela e melhorar a saúde mental de jovens.,False
+34,Qwen/Qwen2.5-72B-Instruct,P3,A alfabetização emocional e a discussão sobre emoções devem ser promovidas nas escolas para melhorar a saúde mental de jovens.,False
+35,Qwen/Qwen2.5-72B-Instruct,P1,O prazo para registro de candidaturas deve ser antecipado para 1º de julho.,False
+35,Qwen/Qwen2.5-72B-Instruct,P2,As plataformas de redes sociais devem manter um cadastro público em tempo real de financiadores de campanhas eleitorais.,False
+35,Qwen/Qwen2.5-72B-Instruct,P3,A proteção contra violência política de gênero deve ser estendida a todas as mulheres envolvidas em atividades políticas e partidárias.,False
+36,Qwen/Qwen2.5-72B-Instruct,P1,A regulação econômica da praticagem deve ser implementada para controlar abusos nos preços.,False
+37,Qwen/Qwen2.5-72B-Instruct,P1,O orçamento para o Paradesporto deve ser aumentado para melhorar as políticas públicas e o apoio aos atletas com deficiência.,False
+37,Qwen/Qwen2.5-72B-Instruct,P2,Estados e municípios devem criar unidades específicas para cuidar do Paradesporto em suas secretarias de Esporte ou Educação.,False
+37,Qwen/Qwen2.5-72B-Instruct,P3,A prática esportiva para pessoas com deficiência deve ser incentivada em ambientes educacionais para promover inclusão e respeito à diversidade.,False
+38,Qwen/Qwen2.5-72B-Instruct,P1,A tributação do vinho brasileiro deve ser reduzida para aumentar sua competitividade no mercado nacional.,False
+38,Qwen/Qwen2.5-72B-Instruct,P2,O vinho brasileiro deve ser classificado como alimento para obter condições tributárias mais favoráveis.,False
+38,Qwen/Qwen2.5-72B-Instruct,P3,"A isenção de IPI, PIS e Cofins para vinho produzido em 23 municípios da Serra Gaúcha incentivará o enoturismo na região.",False
+39,Qwen/Qwen2.5-72B-Instruct,P1,As Forças Armadas não possuem poder de atuação autônoma e estão subordinadas ao presidente da República.,False
+39,Qwen/Qwen2.5-72B-Instruct,P2,A tese do poder moderador das Forças Armadas é incompatível com a Constituição de 1988.,False
+39,Qwen/Qwen2.5-72B-Instruct,P3,Militares que assumam cargos políticos devem ser automaticamente desligados das forças armadas.,False
+40,Qwen/Qwen2.5-72B-Instruct,P1,Artes marciais devem ser incluídas como parte das políticas públicas nas escolas brasileiras,False
+40,Qwen/Qwen2.5-72B-Instruct,P2,Instrutores de artes marciais precisam de apoio financeiro e estrutural do governo,False
+40,Qwen/Qwen2.5-72B-Instruct,P3,Artes marciais contribuem para a inclusão social e formação de valores nas crianças,False
+41,Qwen/Qwen2.5-72B-Instruct,P1,O Congresso deve aprovar rapidamente a ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos com quórum qualificado.,False
+41,Qwen/Qwen2.5-72B-Instruct,P2,A ratificação da convenção deve ser aprovada antes de outubro para comemorar os 20 anos do Estatuto da Pessoa Idosa.,False
+41,Qwen/Qwen2.5-72B-Instruct,P3,"A Convenção Interamericana inova na definição de conceitos como abuso, abandono, maus-tratos, negligência e discriminação contra pessoas idosas.",False
+42,Qwen/Qwen2.5-72B-Instruct,P1,A tarifa zero no transporte público deve ser financiada com um percentual da arrecadação de impostos e contribuições financeiras de proprietários de veículos e empresários.,False
+42,Qwen/Qwen2.5-72B-Instruct,P2,A tarifa zero no transporte público deve ser implementada por empresas públicas para evitar desvios de dinheiro e garantir transparência.,False
+42,Qwen/Qwen2.5-72B-Instruct,P3,A tarifa zero no transporte público deve ser acompanhada de uma gestão controlada pelos usuários e trabalhadores através de conselhos populares.,False
+43,Qwen/Qwen2.5-72B-Instruct,P1,A Lei 13.954/19 aumentou a desigualdade salarial entre praças e oficiais das Forças Armadas,False
+43,Qwen/Qwen2.5-72B-Instruct,P2,A Lei 13.954/19 causou perdas salariais significativas para praças e pensionistas das Forças Armadas,False
+43,Qwen/Qwen2.5-72B-Instruct,P3,"A contribuição mensal para as pensões aumentou de 7,5% para 10,5% após a Lei 13.954/19",False
+44,Qwen/Qwen2.5-72B-Instruct,P1,A exploração de petróleo na Margem Equatorial é essencial para manter a produção brasileira de petróleo.,False
+44,Qwen/Qwen2.5-72B-Instruct,P2,A exploração de petróleo na Foz do Rio Amazonas deve ser precedida por uma Avaliação Ambiental de Área Sedimentar (AAAS).,False
+44,Qwen/Qwen2.5-72B-Instruct,P3,A exploração de petróleo na Foz do Rio Amazonas pode gerar recursos para proteção ambiental e desenvolvimento de comunidades tradicionais.,False
+45,Qwen/Qwen2.5-72B-Instruct,P1,O governo Lula vai retomar a demarcação de terras para assentamentos da reforma agrária e áreas indígenas e quilombolas.,False
+45,Qwen/Qwen2.5-72B-Instruct,P2,O governo Lula buscará ajustes orçamentários para implementar a reforma agrária em 2023.,False
+45,Qwen/Qwen2.5-72B-Instruct,P3,A Lei 13.465/17 estabeleceu critérios de preferência para a seleção dos beneficiários da reforma agrária.,False
+46,Qwen/Qwen2.5-72B-Instruct,P1,Recursos do Fust devem ser aplicados para conectar o meio rural à internet,False
+46,Qwen/Qwen2.5-72B-Instruct,P2,O leilão do 5G pode aumentar significativamente a cobertura de internet no meio rural,False
+46,Qwen/Qwen2.5-72B-Instruct,P3,Políticas públicas são necessárias para garantir o acesso à internet de pessoas de baixa renda no meio rural,False
+47,Qwen/Qwen2.5-72B-Instruct,P1,A Lei Paulo Gustavo facilita o deslocamento de recursos para projetos culturais com menor visibilidade.,False
+47,Qwen/Qwen2.5-72B-Instruct,P2,O setor audiovisual receberá a maior fatia do financiamento da Lei Paulo Gustavo.,False
+47,Qwen/Qwen2.5-72B-Instruct,P3,A Lei Paulo Gustavo prevê a compra e reforma de equipamentos para expandir o número de salas de cinema em áreas periféricas.,False
+48,Qwen/Qwen2.5-72B-Instruct,P1,O Projeto de Lei 5167/09 proíbe a equiparação de relações entre pessoas do mesmo sexo a casamento ou entidade familiar.,False
+48,Qwen/Qwen2.5-72B-Instruct,P2,A decisão do STF sobre a união homoafetiva usurpou a competência legislativa do Congresso.,False
+48,Qwen/Qwen2.5-72B-Instruct,P3,Proibir a formação de famílias de pessoas do mesmo sexo é impor uma moral fundamentalista religiosa à sociedade.,False
+49,Qwen/Qwen2.5-72B-Instruct,P1,A concessão da BR-101 em Santa Catarina deve ser estendida em 15 anos para incluir a construção de túneis e conter deslizamentos,False
+49,Qwen/Qwen2.5-72B-Instruct,P2,"A obra de construção dos túneis no Morro dos Cavalos deve ser incluída no contrato atual, sem extensão da concessão",False
+49,Qwen/Qwen2.5-72B-Instruct,P3,A extensão da concessão deve contemplar a construção de uma rodovia paralela à BR-101 para resolver definitivamente os problemas de fluidez de trânsito,False
+50,Qwen/Qwen2.5-72B-Instruct,P1,Novos protocolos de tratamento para HIV/aids e hepatites virais devem ser publicados ainda este ano,False
+50,Qwen/Qwen2.5-72B-Instruct,P2,A incorporação de novos medicamentos ao SUS é essencial para evitar o desenvolvimento de resistência viral,False
+50,Qwen/Qwen2.5-72B-Instruct,P3,O licenciamento compulsório de medicamentos é necessário para universalizar o acesso aos tratamentos mais recentes,False
+51,Qwen/Qwen2.5-72B-Instruct,P1,A extensão universitária deve contar com orçamento permanente próprio.,False
+51,Qwen/Qwen2.5-72B-Instruct,P2,Os programas de extensão universitária devem se integrar às políticas governamentais de educação básica e distribuição de renda.,False
+51,Qwen/Qwen2.5-72B-Instruct,P3,A curricularização da extensão universitária deve complementar a educação integral e de qualidade.,False
+52,Qwen/Qwen2.5-72B-Instruct,P1,"Legislação, atividades educativas e convivência entre gerações podem reduzir o preconceito contra idosos",False
+52,Qwen/Qwen2.5-72B-Instruct,P2,A discriminação contra idosos compromete a qualidade de vida e pode levar à violência,False
+52,Qwen/Qwen2.5-72B-Instruct,P3,O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos,False
+53,Qwen/Qwen2.5-72B-Instruct,P1,Acessibilidade efetiva depende da consultoria das próprias pessoas com deficiência,False
+53,Qwen/Qwen2.5-72B-Instruct,P2,Cursos de formação em artes devem incluir disciplinas sobre inclusão e acessibilidade,False
+53,Qwen/Qwen2.5-72B-Instruct,P3,Deve haver reserva de vagas para pessoas com deficiência em editais de fomento à cultura,False
+54,Qwen/Qwen2.5-72B-Instruct,P1,Deve-se criar centros de atenção aos usuários compulsivos de serviços de internet e redes sociais.,False
+54,Qwen/Qwen2.5-72B-Instruct,P2,É necessário formar um grupo de trabalho na Câmara dos Deputados para estudar a dependência tecnológica.,False
+54,Qwen/Qwen2.5-72B-Instruct,P3,Políticas públicas devem incluir campanhas de alerta sobre os efeitos nocivos da dependência tecnológica.,False
+55,Qwen/Qwen2.5-72B-Instruct,P1,Servidores públicos aposentados e pensionistas que recebem acima do salário mínimo devem contribuir para a Previdência Social.,False
+55,Qwen/Qwen2.5-72B-Instruct,P2,A emenda constitucional permite que servidores públicos que recebem abaixo do teto do INSS sejam tributados em até 14%.,False
+55,Qwen/Qwen2.5-72B-Instruct,P3,Estados e municípios têm autonomia para decidir se adotam a contribuição previdenciária sobre valores acima do salário mínimo para aposentados e pensionistas.,False
+56,Qwen/Qwen2.5-72B-Instruct,P1,A educação física deve ser considerada política de Saúde.,False
+56,Qwen/Qwen2.5-72B-Instruct,P2,O sedentarismo aumentou no Brasil como reflexo da pandemia de Covid-19.,False
+56,Qwen/Qwen2.5-72B-Instruct,P3,A carga horária de educação física nas escolas deve ser aumentada.,False
+57,Qwen/Qwen2.5-72B-Instruct,P1,Guardas armados nas escolas não resolvem o problema da violência,False
+57,Qwen/Qwen2.5-72B-Instruct,P2,Ações de inteligência e combate à cultura de ódio são mais eficazes para prevenir ataques escolares,False
+57,Qwen/Qwen2.5-72B-Instruct,P3,A militarização das escolas não reduz a violência escolar,False
+58,Qwen/Qwen2.5-72B-Instruct,P1,"Mulheres negras, indígenas e de baixa renda são as maiores vítimas de violência obstétrica e morte materna.",False
+58,Qwen/Qwen2.5-72B-Instruct,P2,A falta de investimento na qualificação do pré-natal impacta diretamente no número de mortes maternas.,False
+58,Qwen/Qwen2.5-72B-Instruct,P3,Profissionais de saúde dedicam menos tempo no atendimento de pré-natal a mulheres negras comparado a mulheres brancas.,False
+59,Qwen/Qwen2.5-72B-Instruct,P1,Pescadores devem receber indenização sem comprovação de atividade nos anos de 2014 e 2015,False
+59,Qwen/Qwen2.5-72B-Instruct,P2,Espécies de peixes liberadas para pesca no Rio Doce em 2016 estão contaminadas pelos rejeitos da barragem,False
+60,Qwen/Qwen2.5-72B-Instruct,P1,O Programa QualiSUS Cardio deve ser implementado para melhorar a assistência cardiovascular a idosos no SUS,False
+60,Qwen/Qwen2.5-72B-Instruct,P2,A tabela de preços do SUS deve ser revisada para evitar impactos negativos no Programa QualiSUS Cardio,False
+60,Qwen/Qwen2.5-72B-Instruct,P3,O SUS deve incorporar novas tecnologias para melhorar o atendimento a idosos com doenças cardiovasculares,False
+61,Qwen/Qwen2.5-72B-Instruct,P1,A reforma tributária deve simplificar os tributos sem onerar ainda mais a indústria e o consumidor.,False
+61,Qwen/Qwen2.5-72B-Instruct,P2,O custo do crédito no Brasil deve ser reduzido para aumentar o capital disponível para investimentos em inovação e processos produtivos.,False
+61,Qwen/Qwen2.5-72B-Instruct,P3,O Brasil deve criar um plano de apoio à indústria similar aos planos de desenvolvimento industrial de outros países.,False
+62,Qwen/Qwen2.5-72B-Instruct,P1,O SUS deve oferecer gratuitamente os medicamentos Tegsedi e Onpatrro para tratar a polineuropatia amiloidótica familiar em fases avançadas,False
+62,Qwen/Qwen2.5-72B-Instruct,P2,"O Tafamidis, medicamento para as fases iniciais da polineuropatia amiloidótica familiar, deve estar disponível gratuitamente no SUS sem interrupções",False
+62,Qwen/Qwen2.5-72B-Instruct,P3,O transplante de fígado é a opção mais adequada para o tratamento da polineuropatia amiloidótica familiar em fases iniciais,False
+63,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil precisa de uma política nacional de cuidados de longa duração para idosos em instituições de longa permanência.,False
+63,Qwen/Qwen2.5-72B-Instruct,P2,É essencial criar um cadastro nacional com dados oficiais sobre a oferta de instituições de longa permanência e a população assistida.,False
+63,Qwen/Qwen2.5-72B-Instruct,P3,O orçamento público deve ser ajustado para atender às necessidades crescentes da população idosa no Brasil.,False
+64,Qwen/Qwen2.5-72B-Instruct,P1,O turismo religioso deve receber mais investimentos e fomento do governo.,False
+64,Qwen/Qwen2.5-72B-Instruct,P2,A qualificação profissional é essencial para o desenvolvimento do turismo religioso.,False
+64,Qwen/Qwen2.5-72B-Instruct,P3,"A infraestrutura turística, como sinal de celular e rotas, deve ser melhorada para suportar o turismo religioso.",False
+65,Qwen/Qwen2.5-72B-Instruct,P1,A Justiça do Trabalho deve estar presente principalmente onde os trabalhadores são mais vulneráveis.,False
+65,Qwen/Qwen2.5-72B-Instruct,P2,"A reestruturação das varas da Justiça do Trabalho deve considerar aspectos sociais, econômicos e regionais, além da movimentação processual.",False
+65,Qwen/Qwen2.5-72B-Instruct,P3,A extinção de varas da Justiça do Trabalho não é o objetivo da Resolução 296/21 do CSJT.,False
+66,Qwen/Qwen2.5-72B-Instruct,P1,Financiamento de segundo imóvel com recursos do FGTS impõe risco à sustentabilidade do fundo,False
+66,Qwen/Qwen2.5-72B-Instruct,P2,Ampliação das possibilidades de saque do FGTS prejudica o trabalhador,False
+66,Qwen/Qwen2.5-72B-Instruct,P3,Permitir o saque do FGTS para financiar segundo imóvel aquece o setor imobiliário,False
+67,Qwen/Qwen2.5-72B-Instruct,P1,Trabalhadores com lesão permanente adquirida no trabalho devem ter estabilidade no emprego até a aposentadoria.,False
+67,Qwen/Qwen2.5-72B-Instruct,P2,"As regras sobre indenização por lesão no trabalho devem ser fixadas em lei, e não em acordos coletivos.",False
+67,Qwen/Qwen2.5-72B-Instruct,P3,A medida provisória que altera o modelo de análise de pedidos de benefícios do INSS aumenta a vulnerabilidade dos trabalhadores com lesão ou doença profissional.,False
+68,Qwen/Qwen2.5-72B-Instruct,P1,O SUS deve melhorar a organização das filas de espera para consultas oftalmológicas.,False
+68,Qwen/Qwen2.5-72B-Instruct,P2,O financiamento federal para o tratamento da retinopatia diabética no SUS é inadequado.,False
+68,Qwen/Qwen2.5-72B-Instruct,P3,Pacientes com diabetes devem fazer exames oftalmológicos anualmente para prevenir a cegueira.,False
+69,Qwen/Qwen2.5-72B-Instruct,P1,Educação política nas escolas é essencial para o engajamento dos jovens na democracia,False
+69,Qwen/Qwen2.5-72B-Instruct,P2,Jovens devem fiscalizar e cobrar promessas de campanha dos políticos,False
+69,Qwen/Qwen2.5-72B-Instruct,P3,Formação democrática dos jovens ajuda a combater a desinformação e as fake news,False
+70,Qwen/Qwen2.5-72B-Instruct,P1,Termelétricas flutuantes devem ser instaladas na Baía de Sepetiba com estudos ambientais prévios,False
+70,Qwen/Qwen2.5-72B-Instruct,P2,A elevação da temperatura da água da Baía de Sepetiba por termelétricas flutuantes ameaça a fauna local,False
+70,Qwen/Qwen2.5-72B-Instruct,P3,Recursos usados para instalar termelétricas flutuantes poderiam ser utilizados para reflorestamento e recarga de águas subterrâneas,False
+71,Qwen/Qwen2.5-72B-Instruct,P1,A venda da Regap pode criar um monopólio privado regional com práticas de preços abusivos,False
+71,Qwen/Qwen2.5-72B-Instruct,P2,A privatização da Regap resultará em aumento de preços e desabastecimento de combustíveis em Minas Gerais,False
+71,Qwen/Qwen2.5-72B-Instruct,P3,A Petrobras está vendendo refinarias como parte de um acordo para encerrar investigação de conduta anticompetitiva,False
+72,Qwen/Qwen2.5-72B-Instruct,P1,Grandes empresas devem ser responsabilizadas pelo trabalho escravo nas empresas subcontratadas,False
+72,Qwen/Qwen2.5-72B-Instruct,P2,Deve-se aumentar o número de parcelas de seguro-desemprego para trabalhadores resgatados de trabalho escravo,False
+72,Qwen/Qwen2.5-72B-Instruct,P3,A Emenda Constitucional 81 deve ser regulamentada para desapropriar propriedades rurais que praticam trabalho escravo,False
+73,Qwen/Qwen2.5-72B-Instruct,P1,Seguradoras devem oferecer contratos de seguro de vida mais acessíveis para idosos,False
+73,Qwen/Qwen2.5-72B-Instruct,P2,O cálculo do prêmio do seguro de vida deve considerar a idade e as condições de saúde do contratante,False
+73,Qwen/Qwen2.5-72B-Instruct,P3,Contratos de seguro de vida para idosos devem ser claros e legíveis,False
+74,Qwen/Qwen2.5-72B-Instruct,P1,O ECA é visto como letra morta na garantia dos direitos de crianças e adolescentes.,False
+74,Qwen/Qwen2.5-72B-Instruct,P2,O trabalho infantil está em expansão devido ao aumento da fome no Brasil.,False
+74,Qwen/Qwen2.5-72B-Instruct,P3,Crianças e adolescentes devem ser incluídos no planejamento das políticas públicas que as afetam.,False
+75,Qwen/Qwen2.5-72B-Instruct,P1,O financiamento de creches via FGTS contraria a legislação trabalhista.,False
+75,Qwen/Qwen2.5-72B-Instruct,P2,A MP 1116/22 desobriga as empresas de instalar creches em suas dependências.,False
+75,Qwen/Qwen2.5-72B-Instruct,P3,A suspensão do contrato de trabalho para qualificação profissional prejudica os direitos das trabalhadoras.,False
+76,Qwen/Qwen2.5-72B-Instruct,P1,O governo deve priorizar investimentos em Centros de Atenção Psicossocial (CAPs) em vez de hospitais psiquiátricos e comunidades terapêuticas.,False
+76,Qwen/Qwen2.5-72B-Instruct,P2,O Ministério da Saúde deve fornecer dados atualizados e transparentes sobre a situação da saúde mental no Brasil.,False
+76,Qwen/Qwen2.5-72B-Instruct,P3,Comunidades terapêuticas não possuem evidências científicas suficientes para justificar investimentos públicos em comparação a outras formas de tratamento.,False
+77,Qwen/Qwen2.5-72B-Instruct,P1,O governo federal deve participar do financiamento do transporte coletivo urbano.,False
+77,Qwen/Qwen2.5-72B-Instruct,P2,Os custos dos sistemas de transporte coletivo não devem ser financiados apenas pela tarifa cobrada do usuário.,False
+77,Qwen/Qwen2.5-72B-Instruct,P3,A gratuidade de tarifas para idosos encarece o preço pago pelos demais usuários.,False
+78,Qwen/Qwen2.5-72B-Instruct,P1,A venda da Unidade de Industrialização do Xisto no Paraná foi realizada por um valor inferior ao de mercado.,False
+78,Qwen/Qwen2.5-72B-Instruct,P2,"A venda da Unidade de Industrialização do Xisto no Paraná resultará em redução dos royalties pagos ao estado, município e União.",False
+78,Qwen/Qwen2.5-72B-Instruct,P3,"A tecnologia Petrosix, desenvolvida pela Petrobras, não foi devidamente valorizada no contrato de venda da unidade.",False
+79,Qwen/Qwen2.5-72B-Instruct,P1,O projeto de código de defesa dos contribuintes deve diferenciar o tratamento entre bons e maus pagadores de impostos.,False
+79,Qwen/Qwen2.5-72B-Instruct,P2,O projeto de código de defesa dos contribuintes impõe limitações excessivas ao trabalho de fiscalização e autuação de contribuintes.,False
+79,Qwen/Qwen2.5-72B-Instruct,P3,O projeto de código de defesa dos contribuintes cria uma blindagem patrimonial para sonegadores e fraudadores.,False
+80,Qwen/Qwen2.5-72B-Instruct,P1,O lobby deve ser regulamentado para assegurar transparência e isonomia no relacionamento com o poder público.,False
+80,Qwen/Qwen2.5-72B-Instruct,P2,O texto do Executivo para regulamentação do lobby é insuficiente e deve ser aprimorado com emendas.,False
+80,Qwen/Qwen2.5-72B-Instruct,P3,"A regulamentação do lobby deve abranger todos os entes federativos, incluindo consórcios, autarquias, fundações e empresas estatais.",False
+81,Qwen/Qwen2.5-72B-Instruct,P1,A diplomacia brasileira garantiu a normalidade no abastecimento de fertilizantes apesar do conflito entre Rússia e Ucrânia,False
+81,Qwen/Qwen2.5-72B-Instruct,P2,A alta nos preços dos fertilizantes aumentou significativamente o custo de produção agrícola,False
+81,Qwen/Qwen2.5-72B-Instruct,P3,O Brasil depende e dependerá por muito tempo da importação de fertilizantes devido a limitações geológicas,False
+82,Qwen/Qwen2.5-72B-Instruct,P1,A cultura popular deve receber apoio econômico e reconhecimento oficial através de auxílio financeiro a seus mestres e mestras.,False
+82,Qwen/Qwen2.5-72B-Instruct,P2,A cultura popular e seus mestres estão marginalizados e invisibilizados pela mídia e pelos governos.,False
+82,Qwen/Qwen2.5-72B-Instruct,P3,Os ritmos e saberes da cultura popular devem ser incluídos na economia e reconhecidos como patrimônio nacional com apoio aos artistas que os mantêm vivos.,False
+83,Qwen/Qwen2.5-72B-Instruct,P1,O acesso à moradia é condição central para a superação das violações de direitos da população de rua,False
+83,Qwen/Qwen2.5-72B-Instruct,P2,"A estratégia de albergues, repúblicas e hotéis sociais não funciona efetivamente para a população de rua",False
+83,Qwen/Qwen2.5-72B-Instruct,P3,A Política Nacional para a População em Situação de Rua deve ser criada para garantir direitos básicos,False
+84,Qwen/Qwen2.5-72B-Instruct,P1,Famílias acolhedoras devem ser amplamente divulgadas para aumentar a adesão de interessados,False
+84,Qwen/Qwen2.5-72B-Instruct,P2,Recursos financeiros devem ser garantidos para o funcionamento das famílias acolhedoras,False
+84,Qwen/Qwen2.5-72B-Instruct,P3,O processo de desacolhimento deve ser realizado de forma delicada para evitar novas rupturas na vida das crianças e adolescentes,False
+85,Qwen/Qwen2.5-72B-Instruct,P1,Estados devem ter planos ou programas estruturados para políticas públicas LGBTQIA+,False
+85,Qwen/Qwen2.5-72B-Instruct,P2,"Conselhos de políticas públicas LGBTQIA+ devem ter orçamento, transparência e participação da sociedade civil",False
+85,Qwen/Qwen2.5-72B-Instruct,P3,É necessário estabelecer uma coordenação nacional para definir padrões mínimos de políticas públicas LGBTQIA+,False
+86,Qwen/Qwen2.5-72B-Instruct,P1,O Seguro Social de Catástrofe deve fornecer indenização emergencial de R$ 15 mil por moradia após desastres naturais.,False
+86,Qwen/Qwen2.5-72B-Instruct,P2,O Fundo de Seguro Rural deve ser criado com participação da União e das seguradoras para ampliar a cobertura do seguro rural.,False
+86,Qwen/Qwen2.5-72B-Instruct,P3,O seguro contra rompimento de barragens deve ser obrigatório e incluir garantias para descomissionamento e descaracterização de barragens.,False
+87,Qwen/Qwen2.5-72B-Instruct,P1,Motoristas de aplicativo devem ser remunerados por quilômetro rodado.,False
+87,Qwen/Qwen2.5-72B-Instruct,P2,Motoristas de aplicativo não devem ser enquadrados no regime do microempreendedor individual (MEI).,False
+87,Qwen/Qwen2.5-72B-Instruct,P3,"A regulamentação do trabalho de motoristas de aplicativo deve garantir equilíbrio entre ganhos dos motoristas, custos das empresas e preços para os usuários.",False
+88,Qwen/Qwen2.5-72B-Instruct,P1,Recursos destinados ao Renovar devem ser descontados dos investimentos em pesquisa e inovação,False
+88,Qwen/Qwen2.5-72B-Instruct,P2,Empresas de petróleo e gás natural devem continuar a destinar recursos para pesquisa e inovação,False
+88,Qwen/Qwen2.5-72B-Instruct,P3,Montadoras beneficiadas pelo Renovar devem contribuir com investimentos em pesquisa e desenvolvimento,False
+89,Qwen/Qwen2.5-72B-Instruct,P1,O Estado deve fortalecer as estruturas de fiscalização para impedir a invasão de terras indígenas por garimpeiros.,False
+89,Qwen/Qwen2.5-72B-Instruct,P2,As mulheres indígenas devem ser empoderadas com instrumentos de proteção e defesa para denunciar e reverter a violência.,False
+89,Qwen/Qwen2.5-72B-Instruct,P3,O governo federal deve implementar políticas públicas a longo prazo para proteger as mulheres e crianças indígenas.,False
+90,Qwen/Qwen2.5-72B-Instruct,P1,Canais de denúncia devem ser disponibilizados para combater o assédio sexual de jovens atletas,False
+90,Qwen/Qwen2.5-72B-Instruct,P2,Entidades esportivas devem ser responsabilizadas por casos de assédio sexual,False
+90,Qwen/Qwen2.5-72B-Instruct,P3,Campanhas de conscientização devem ser realizadas para que jovens atletas identifiquem situações de abuso,False
+91,Qwen/Qwen2.5-72B-Instruct,P1,Reajustes nas tarifas de energia elétrica devem ser postergados para evitar impacto imediato nos consumidores,False
+91,Qwen/Qwen2.5-72B-Instruct,P2,Subsídios e tributos nas contas de luz devem ser reduzidos para diminuir o custo total,False
+91,Qwen/Qwen2.5-72B-Instruct,P3,O mercado livre de energia elétrica deve ser ampliado para incluir consumidores residenciais,False
+92,Qwen/Qwen2.5-72B-Instruct,P1,O Estatuto do Aprendiz deve focar em adolescentes de 14 a 18 anos.,False
+92,Qwen/Qwen2.5-72B-Instruct,P2,Contratos de aprendizagem devem ter prazo de até dois anos.,False
+92,Qwen/Qwen2.5-72B-Instruct,P3,A aprendizagem deve ser tratada como política pública pelo Estado.,False
+93,Qwen/Qwen2.5-72B-Instruct,P1,O limite de 400 horas/aula para aproveitamento de créditos do ensino técnico nas universidades deve ser removido.,False
+93,Qwen/Qwen2.5-72B-Instruct,P2,"A legislação deve incentivar a verticalização do ensino, permitindo que o aluno continue na mesma instituição nas diferentes etapas da educação.",False
+93,Qwen/Qwen2.5-72B-Instruct,P3,"As instituições de ensino devem aumentar a integração com o mercado de trabalho, focando em áreas com maior demanda de emprego.",False
+94,Qwen/Qwen2.5-72B-Instruct,P1,Pessoas autistas devem ter acesso a terapias e políticas públicas específicas,False
+94,Qwen/Qwen2.5-72B-Instruct,P2,Pais e responsáveis de pessoas autistas devem ser capacitados para realizar terapias,False
+94,Qwen/Qwen2.5-72B-Instruct,P3,Políticas públicas existentes para pessoas autistas devem ser implementadas efetivamente,False
+95,Qwen/Qwen2.5-72B-Instruct,P1,A produção intensiva de animais aumenta os riscos de surtos e epidemias de doenças infecciosas.,False
+95,Qwen/Qwen2.5-72B-Instruct,P2,O uso excessivo de antibióticos na produção animal contribui para a proliferação de bactérias super-resistentes.,False
+95,Qwen/Qwen2.5-72B-Instruct,P3,A melhoria do bem-estar animal na pecuária pode ser alcançada através da eliminação de gaiolas e da oferta de mais conforto aos animais.,False
+96,Qwen/Qwen2.5-72B-Instruct,P1,TDAH deve ser enquadrado como deficiência.,False
+96,Qwen/Qwen2.5-72B-Instruct,P2,TDAH deve ser equiparado ao transtorno do espectro autista.,False
+96,Qwen/Qwen2.5-72B-Instruct,P3,A instituição de uma Política Nacional para TDAH facilitará diagnósticos e tratamentos adequados.,False
+97,Qwen/Qwen2.5-72B-Instruct,P1,O Rota 2030 precisa de maior articulação com o uso de conteúdo nacional e etapas de produção.,False
+97,Qwen/Qwen2.5-72B-Instruct,P2,A carga tributária e o custo Brasil são entraves significativos para a competitividade do setor automotivo.,False
+97,Qwen/Qwen2.5-72B-Instruct,P3,"As empresas que recebem incentivos fiscais devem ter cláusulas protetivas de responsabilidade social, como evitar demissões em massa.",False
+98,Qwen/Qwen2.5-72B-Instruct,P1,Plataformas devem fornecer dados de IP a autoridades policiais sem necessidade de ordem judicial,False
+98,Qwen/Qwen2.5-72B-Instruct,P2,A legislação deve definir critérios para a produção e preservação de provas cibernéticas,False
+98,Qwen/Qwen2.5-72B-Instruct,P3,A desinformação e a disseminação de notícias falsas devem ser combatidas com leis específicas que distingam usuários de traficantes,False
+99,Qwen/Qwen2.5-72B-Instruct,P1,Crianças e mulheres são as maiores vítimas da guerra na Faixa de Gaza.,False
+99,Qwen/Qwen2.5-72B-Instruct,P2,A fome na Faixa de Gaza atinge mais de 1 milhão de pessoas em nível crítico de insegurança alimentar.,False
+99,Qwen/Qwen2.5-72B-Instruct,P3,O conflito em Gaza é uma guerra de extermínio contra a existência da Palestina.,False
+100,Qwen/Qwen2.5-72B-Instruct,P1,Autoridades devem ter acesso direto a dados de conexão de suspeitos de crimes sexuais contra crianças e adolescentes sem necessidade de decisão judicial,False
+100,Qwen/Qwen2.5-72B-Instruct,P2,Provedores de internet devem ser obrigados a fornecer dados de conexão de suspeitos de crimes sexuais contra crianças e adolescentes,False
+100,Qwen/Qwen2.5-72B-Instruct,P3,Plataformas de redes sociais devem aumentar o controle parental sobre o conteúdo acessado por crianças e adolescentes,False
+101,Qwen/Qwen2.5-72B-Instruct,P1,Dirigentes de torcidas organizadas devem ser responsabilizados civilmente pelos danos causados por associados.,False
+101,Qwen/Qwen2.5-72B-Instruct,P2,Violência em jogos de futebol deve ser combatida com medidas de individualização de condutas.,False
+101,Qwen/Qwen2.5-72B-Instruct,P3,Biometria e monitoramento de imagem devem ser implementados nos estádios para prevenir a violência.,False
+102,Qwen/Qwen2.5-72B-Instruct,P1,A redução das emissões de carbono em terminais marítimos é benéfica para a economia brasileira,False
+102,Qwen/Qwen2.5-72B-Instruct,P2,O Brasil deve enfrentar a competição de subsídios oferecidos por outros países para combustíveis limpos,False
+102,Qwen/Qwen2.5-72B-Instruct,P3,O setor de transporte marítimo deve adotar combustíveis menos poluentes para atingir a meta de emissões zero em 2050,False
+103,Qwen/Qwen2.5-72B-Instruct,P1,A fuga de presídio em Mossoró foi a única e não se repetirá.,False
+103,Qwen/Qwen2.5-72B-Instruct,P2,O veto à proibição de saída temporária de presos para visita à família é constitucional e não atrapalha a ressocialização.,False
+103,Qwen/Qwen2.5-72B-Instruct,P3,"O decreto sobre clubes de atiradores deve ser ajustado tecnicamente, mas não pode ser simplesmente revogado.",False
+104,Qwen/Qwen2.5-72B-Instruct,P1,O Congresso Nacional deve participar da definição das regras de renovação das concessões das distribuidoras de energia elétrica,False
+104,Qwen/Qwen2.5-72B-Instruct,P2,A renovação das concessões das distribuidoras de energia elétrica deve ser condicionada a estudos técnicos prévios e consultas públicas,False
+104,Qwen/Qwen2.5-72B-Instruct,P3,As distribuidoras de energia elétrica devem ser obrigadas a facilitar a conexão de unidades de geração distribuída à rede elétrica,False
+105,Qwen/Qwen2.5-72B-Instruct,P1,O SUS deve atualizar o protocolo clínico para incluir tratamentos mais abrangentes para o edema macular diabético.,False
+105,Qwen/Qwen2.5-72B-Instruct,P2,O SUS deve garantir um sistema de financiamento adequado para cobrir os custos de tratamento do edema macular diabético.,False
+105,Qwen/Qwen2.5-72B-Instruct,P3,O Estado deve investir mais em campanhas de prevenção do diabetes para reduzir o número de casos e complicações oculares.,False
+106,Qwen/Qwen2.5-72B-Instruct,P1,O produtor rural deve poder acionar o seguro para várias culturas em uma mesma propriedade.,False
+106,Qwen/Qwen2.5-72B-Instruct,P2,O governo deve reduzir os gastos com o Proagro devido a usos inadequados do programa.,False
+106,Qwen/Qwen2.5-72B-Instruct,P3,A redução do faturamento mínimo para enquadramento no Proagro deve ser de R$ 335 mil para R$ 270 mil por ano.,False
+107,Qwen/Qwen2.5-72B-Instruct,P1,Deve ser criado um sistema de radar nacional para previsão meteorológica.,False
+107,Qwen/Qwen2.5-72B-Instruct,P2,"Deve ser implementado um sistema de alerta de risco mais eficiente, como o Céu Broadcast.",False
+107,Qwen/Qwen2.5-72B-Instruct,P3,A liberação de recursos para atendimento emergencial deve ser desburocratizada.,False
+108,Qwen/Qwen2.5-72B-Instruct,P1,O Perse deve ser mantido para garantir a recuperação do setor de eventos e turismo.,False
+108,Qwen/Qwen2.5-72B-Instruct,P2,A retomada gradual da cobrança de tributos prejudica a recuperação econômica do setor de eventos e turismo.,False
+108,Qwen/Qwen2.5-72B-Instruct,P3,O fim do Perse compromete a previsibilidade e o planejamento das empresas do setor de eventos e turismo.,False
+109,Qwen/Qwen2.5-72B-Instruct,P1,O Plano Nacional de Proteção e Defesa Civil (PNPDC) será entregue no início do segundo semestre de 2024.,False
+109,Qwen/Qwen2.5-72B-Instruct,P2,"O Plano Nacional de Proteção e Defesa Civil (PNPDC) vai criar uma sinergia maior entre a defesa civil nacional, estadual e municipais.",False
+109,Qwen/Qwen2.5-72B-Instruct,P3,"É necessário adaptar a lei do Fundo Nacional para Calamidades Públicas, Proteção e Defesa Civil (Funcap) a todas as situações emergenciais.",False
+110,Qwen/Qwen2.5-72B-Instruct,P1,O envelhecimento ativo e saudável deve ser prioridade na agenda do G20,False
+110,Qwen/Qwen2.5-72B-Instruct,P2,Investimentos em envelhecimento saudável devem começar desde a juventude,False
+110,Qwen/Qwen2.5-72B-Instruct,P3,O orçamento do Ministério dos Direitos Humanos e da Cidadania deve ser aumentado para promover o envelhecimento ativo,False
+111,Qwen/Qwen2.5-72B-Instruct,P1,A língua de sinais deve ser a língua de instrução em todas as aulas de escolas bilíngues para surdos.,False
+111,Qwen/Qwen2.5-72B-Instruct,P2,As aulas em escolas bilíngues para surdos devem ter duração maior para permitir pausas de escrita e registro.,False
+111,Qwen/Qwen2.5-72B-Instruct,P3,A seleção de professores para escolas bilíngues para surdos deve incluir avaliação de proficiência em Libras por bancas formadas por pessoas surdas.,False
+112,Qwen/Qwen2.5-72B-Instruct,P1,Motoristas de aplicativo devem ter autonomia e rejeitar a proposta do governo.,False
+112,Qwen/Qwen2.5-72B-Instruct,P2,O valor de R$ 8 por hora trabalhada é insuficiente para garantir a aposentadoria dos motoristas de aplicativo.,False
+112,Qwen/Qwen2.5-72B-Instruct,P3,O projeto do governo garante direitos trabalhistas e previdenciários mínimos aos motoristas de aplicativo.,False
+113,Qwen/Qwen2.5-72B-Instruct,P1,O governo deve criar fontes de recursos específicas para a prevenção de desastres naturais.,False
+113,Qwen/Qwen2.5-72B-Instruct,P2,A legislação deve ser ajustada para ampliar o atendimento em situações de calamidades e emergências.,False
+113,Qwen/Qwen2.5-72B-Instruct,P3,O governo deve promover caravanas de escuta ativa das comunidades para desenvolver soluções baseadas na natureza.,False
+114,Qwen/Qwen2.5-72B-Instruct,P1,Um programa-piloto no Amazonas pode acelerar a erradicação da tuberculose no Brasil até 2030,False
+114,Qwen/Qwen2.5-72B-Instruct,P2,É necessário financiamento permanente para desenvolver programas de combate à tuberculose,False
+114,Qwen/Qwen2.5-72B-Instruct,P3,Novas vacinas e diagnósticos mais rápidos são essenciais para a erradicação da tuberculose,False
+115,Qwen/Qwen2.5-72B-Instruct,P1,"O colapso climático já começou e exige medidas urgentes de descarbonização, reflorestamento e monitoramento dos biomas.",False
+115,Qwen/Qwen2.5-72B-Instruct,P2,O aumento da temperatura nos oceanos é um indicador claro do colapso climático e não pode ser atribuído apenas ao fenômeno El Niño.,False
+115,Qwen/Qwen2.5-72B-Instruct,P3,A redução do desmatamento e da produção de combustíveis fósseis é essencial para mitigar os efeitos do colapso climático.,False
+116,Qwen/Qwen2.5-72B-Instruct,P1,"A reunião entre Venezuela e Guiana é um passo importante para o entendimento, mesmo que não resolva tudo imediatamente.",False
+116,Qwen/Qwen2.5-72B-Instruct,P2,A relação entre Brasil e Argentina não será deixada de lado na gestão de Javier Milei.,False
+116,Qwen/Qwen2.5-72B-Instruct,P3,"O Brasil segue a ONU para determinar se um grupo é terrorista, e não reconhece o Hamas como terrorista por isso.",False
+117,Qwen/Qwen2.5-72B-Instruct,P1,A Braskem deve ser considerada criminosa por sua atuação em Maceió.,False
+117,Qwen/Qwen2.5-72B-Instruct,P2,A ANM foi omissa na fiscalização das operações da Braskem em Maceió.,False
+117,Qwen/Qwen2.5-72B-Instruct,P3,A Braskem não apresentou estudos de impacto ambiental necessários para suas operações em Maceió.,False
+118,Qwen/Qwen2.5-72B-Instruct,P1,"O Fundo Nacional para Calamidades Públicas, Proteção e Defesa Civil deve ser financiado com 5% das multas por crimes ambientais e acordos judiciais de reparação de danos socioambientais.",False
+118,Qwen/Qwen2.5-72B-Instruct,P2,A prevenção de desastres climáticos é mais econômica e eficaz do que a resposta pós-desastre.,False
+118,Qwen/Qwen2.5-72B-Instruct,P3,"A defesa civil deve ser estruturada como carreira de Estado para melhorar a articulação entre União, estados e municípios.",False
+119,Qwen/Qwen2.5-72B-Instruct,P1,Peritos criminais devem ser treinados em questões de gênero para investigar feminicídios,False
+119,Qwen/Qwen2.5-72B-Instruct,P2,A formação sobre violência de gênero deve ser uma política pública unificada proposta pelo governo federal,False
+119,Qwen/Qwen2.5-72B-Instruct,P3,"A investigação de feminicídios deve seguir um protocolo específico, diferente de outros homicídios",False
+120,Qwen/Qwen2.5-72B-Instruct,P1,O setor mineral mata quase três vezes mais do que os outros setores econômicos.,False
+120,Qwen/Qwen2.5-72B-Instruct,P2,A Lei da Terceirização acentua a precarização do trabalho na mineração.,False
+120,Qwen/Qwen2.5-72B-Instruct,P3,A emenda constitucional que estabelece idade mínima para aposentadoria especial dificulta a aposentadoria dos trabalhadores da mineração.,False
+121,Qwen/Qwen2.5-72B-Instruct,P1,O Judiciário deve ampliar o número de varas especializadas em atendimento a mulheres vítimas de violência doméstica.,False
+121,Qwen/Qwen2.5-72B-Instruct,P2,Juízes de varas comuns devem ser capacitados para o atendimento adequado de mulheres vítimas de violência doméstica.,False
+121,Qwen/Qwen2.5-72B-Instruct,P3,A equipe multidisciplinar deve analisar a possibilidade de conciliação e medicação antes de qualquer tentativa em casos de violência doméstica.,False
+122,Qwen/Qwen2.5-72B-Instruct,P1,O governo deve aportar mais R$ 500 milhões para o seguro rural em 2023.,False
+122,Qwen/Qwen2.5-72B-Instruct,P2,O contingenciamento dos recursos para o seguro rural deve ser proibido.,False
+122,Qwen/Qwen2.5-72B-Instruct,P3,"O decreto para ajudar a cadeia de leite deve entrar em vigor imediatamente, sem o prazo de 90 dias.",False
+123,Qwen/Qwen2.5-72B-Instruct,P1,O orçamento para combater a tuberculose deve ser aumentado.,False
+123,Qwen/Qwen2.5-72B-Instruct,P2,O abandono do tratamento da tuberculose é influenciado pela pobreza e pela fome.,False
+123,Qwen/Qwen2.5-72B-Instruct,P3,O Ministério da Saúde precisa de pelo menos R$ 650 milhões para atingir as metas de redução da tuberculose até 2030.,False
+124,Qwen/Qwen2.5-72B-Instruct,P1,O processo de regularização fundiária de terras públicas na Amazônia Legal não será paralisado.,False
+124,Qwen/Qwen2.5-72B-Instruct,P2,"A regularização fundiária deve ser realizada de acordo com a lei, sem considerar posicionamentos ideológicos.",False
+124,Qwen/Qwen2.5-72B-Instruct,P3,A regularização de terras não deve incluir áreas sobrepostas a florestas públicas.,False
+125,Qwen/Qwen2.5-72B-Instruct,P1,Diretores escolares devem ser selecionados por critérios técnicos e consulta à comunidade escolar,False
+125,Qwen/Qwen2.5-72B-Instruct,P2,Cursos de gestão escolar devem ser exigidos como pré-requisito para diretores escolares,False
+125,Qwen/Qwen2.5-72B-Instruct,P3,Formação continuada de diretores escolares deve incluir práticas pedagógicas e de gestão,False
+126,Qwen/Qwen2.5-72B-Instruct,P1,Regulamentar as associações de produtores de cannabis é essencial para democratizar o acesso ao tratamento medicinal.,False
+126,Qwen/Qwen2.5-72B-Instruct,P2,A proibição do cultivo de cannabis no Brasil eleva o custo dos medicamentos derivados da planta.,False
+126,Qwen/Qwen2.5-72B-Instruct,P3,O Ministério da Saúde deve regulamentar a produção e venda de produtos medicinais à base de cannabis no Brasil.,False
+127,Qwen/Qwen2.5-72B-Instruct,P1,"Política nacional de cuidados para idosos deve envolver ação conjunta entre Estado, famílias e iniciativa privada",False
+127,Qwen/Qwen2.5-72B-Instruct,P2,Política de cuidados para idosos deve extrapolar o âmbito familiar e envolver outros setores da sociedade,False
+127,Qwen/Qwen2.5-72B-Instruct,P3,Políticas de cuidados para idosos devem considerar a diversidade e heterogeneidade do envelhecimento,False
+128,Qwen/Qwen2.5-72B-Instruct,P1,O trabalho aos domingos e feriados deve ser autorizado mediante negociação coletiva entre trabalhadores e empregadores,False
+128,Qwen/Qwen2.5-72B-Instruct,P2,A revogação da portaria que autorizava o trabalho aos domingos e feriados causa insegurança jurídica,False
+128,Qwen/Qwen2.5-72B-Instruct,P3,A autorização para trabalho aos domingos e feriados deve ser regulada por lei específica,False
+129,Qwen/Qwen2.5-72B-Instruct,P1,A vacinação contra a Covid-19 para crianças de 6 meses a 5 anos deve ser incluída no Programa Nacional de Imunização.,False
+129,Qwen/Qwen2.5-72B-Instruct,P2,A vacina contra a Covid-19 para crianças é segura e eficaz.,False
+129,Qwen/Qwen2.5-72B-Instruct,P3,A vacina contra a Covid-19 para crianças deve ser chamada de terapia gênica e não de vacina.,False
+130,Qwen/Qwen2.5-72B-Instruct,P1,Filmes brasileiros devem ter cota mínima de exibição nas salas de cinema,False
+130,Qwen/Qwen2.5-72B-Instruct,P2,Produções nacionais devem ter cota mínima de exibição na TV paga,False
+130,Qwen/Qwen2.5-72B-Instruct,P3,Vídeo sob demanda (VoD) deve ser regulamentado para proteger o setor audiovisual nacional,False
+131,Qwen/Qwen2.5-72B-Instruct,P1,O acordo para a duplicação da BR-116 deve ser homologado pelo TCU em 2024,False
+131,Qwen/Qwen2.5-72B-Instruct,P2,A duplicação da BR-116 deve iniciar em julho de 2024,False
+131,Qwen/Qwen2.5-72B-Instruct,P3,O Estado deve ter cumprido suas responsabilidades na fiscalização da concessão da BR-116,False
+132,Qwen/Qwen2.5-72B-Instruct,P1,Rádios comunitárias devem ter pelo menos uma emissora em cada município do Brasil,False
+132,Qwen/Qwen2.5-72B-Instruct,P2,Rádios comunitárias devem ser autorizadas a usar a sigla FM,False
+132,Qwen/Qwen2.5-72B-Instruct,P3,Aumentar a potência das rádios comunitárias resultará em interferências generalizadas,False
+133,Qwen/Qwen2.5-72B-Instruct,P1,A Enel deve ser investigada por meio de uma CPI para apurar sua atuação.,False
+133,Qwen/Qwen2.5-72B-Instruct,P2,O Congresso deve debater uma lei para regular a renovação das concessões de distribuição de energia.,False
+133,Qwen/Qwen2.5-72B-Instruct,P3,A ausência do presidente da Enel na audiência pública é uma demonstração de desrespeito à Câmara dos Deputados.,False
+134,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil deve investir na substituição de veículos movidos a diesel por biometano para reduzir emissões de carbono.,False
+134,Qwen/Qwen2.5-72B-Instruct,P2,A implementação de um marco regulatório claro e consistente é essencial para direcionar investimentos em eficiência energética e redução de emissões.,False
+134,Qwen/Qwen2.5-72B-Instruct,P3,A produção de etanol a partir do sisal no Semiárido nordestino pode contribuir significativamente para a transição energética sustentável.,False
+135,Qwen/Qwen2.5-72B-Instruct,P1,Policiais penais devem ter regulamentação específica de suas atividades,False
+135,Qwen/Qwen2.5-72B-Instruct,P2,Policiais penais precisam de políticas públicas para reduzir a sobrecarga de trabalho e melhorar a saúde mental,False
+135,Qwen/Qwen2.5-72B-Instruct,P3,A ressocialização dos presos deve ser priorizada com ênfase nos direitos humanos,False
+136,Qwen/Qwen2.5-72B-Instruct,P1,A Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas deve ser transformada em lei para garantir sua efetividade.,False
+136,Qwen/Qwen2.5-72B-Instruct,P2,A política deve contar com orçamento específico e suficiente para sua implementação.,False
+136,Qwen/Qwen2.5-72B-Instruct,P3,A política deve incluir a criação de um fundo específico para garantir sua implementação.,False
+137,Qwen/Qwen2.5-72B-Instruct,P1,Professores da rede pública devem poder ter um segundo emprego público de qualquer natureza,False
+137,Qwen/Qwen2.5-72B-Instruct,P2,A permissão para professores terem um segundo emprego público de qualquer natureza pode precarizar a profissionalização docente,False
+137,Qwen/Qwen2.5-72B-Instruct,P3,"A liberdade de escolha do professor deve ser assegurada, permitindo que ele decida sobre a carga horária de trabalho",False
+138,Qwen/Qwen2.5-72B-Instruct,P1,A ANPD deve realizar concurso público para fortalecer seu quadro de pessoal.,False
+138,Qwen/Qwen2.5-72B-Instruct,P2,A ANPD precisa de maior autonomia administrativa e financeira para efetivar suas funções.,False
+138,Qwen/Qwen2.5-72B-Instruct,P3,A ANPD deve priorizar a fiscalização de casos envolvendo dados sensíveis e recorrentes violações de dados.,False
+139,Qwen/Qwen2.5-72B-Instruct,P1,Indígenas presos devem ter acesso a direitos específicos garantidos por uma legislação prisional própria,False
+139,Qwen/Qwen2.5-72B-Instruct,P2,O reconhecimento de indígenas no sistema prisional é frequentemente comprometido por falta de conhecimento das autoridades policiais,False
+139,Qwen/Qwen2.5-72B-Instruct,P3,O racismo contra indígenas no sistema prisional é uma forma de criminalização que visa impedir o acesso a direitos territoriais,False
+140,Qwen/Qwen2.5-72B-Instruct,P1,Fortalecer os sistemas de vigilância em saúde é essencial para enfrentar futuras emergências sanitárias,False
+140,Qwen/Qwen2.5-72B-Instruct,P2,A desinformação contribui significativamente para a baixa taxa de vacinação nas Américas,False
+140,Qwen/Qwen2.5-72B-Instruct,P3,Lideranças comunitárias e religiosas devem ser envolvidas na comunicação sobre a segurança e eficácia das vacinas,False
+141,Qwen/Qwen2.5-72B-Instruct,P1,Professores devem receber apoio jurídico e psicológico para lidar com perseguições políticas,False
+141,Qwen/Qwen2.5-72B-Instruct,P2,É necessário criar um protocolo para regular o papel fiscalizador de parlamentares e evitar perseguições a professores,False
+141,Qwen/Qwen2.5-72B-Instruct,P3,A liberdade de ensino dos professores deve ser protegida por políticas públicas e redes de apoio,False
+142,Qwen/Qwen2.5-72B-Instruct,P1,O limite de empréstimo consignado para servidores públicos deve ser mantido em 45%.,False
+142,Qwen/Qwen2.5-72B-Instruct,P2,O governo deve criar um programa específico para negociação de dívidas de servidores públicos.,False
+142,Qwen/Qwen2.5-72B-Instruct,P3,Os juros do empréstimo consignado para servidores públicos devem ser limitados como os do INSS.,False
+143,Qwen/Qwen2.5-72B-Instruct,P1,Bancos devem implementar algoritmos para detectar e questionar movimentações atípicas nas contas dos clientes.,False
+143,Qwen/Qwen2.5-72B-Instruct,P2,"Empréstimos digitais para pessoas idosas devem ser proibidos, exigindo presença física para contratação.",False
+143,Qwen/Qwen2.5-72B-Instruct,P3,Bancos devem bloquear automaticamente o acesso remoto de terceiros às contas bancárias dos clientes.,False
+144,Qwen/Qwen2.5-72B-Instruct,P1,Prefeituras devem enviar propostas para o novo PAC até 10 de novembro,False
+144,Qwen/Qwen2.5-72B-Instruct,P2,Universalização dos serviços públicos de saneamento deve ser alcançada com a iniciativa privada,False
+144,Qwen/Qwen2.5-72B-Instruct,P3,"O programa Minha Casa, Minha Vida deve reduzir o déficit habitacional em 10% neste ano",False
+145,Qwen/Qwen2.5-72B-Instruct,P1,O governo Lula tem melhorado os resultados na segurança pública em comparação com 2022.,False
+145,Qwen/Qwen2.5-72B-Instruct,P2,Empresas de tecnologia e plataformas de internet estão respeitando as leis brasileiras.,False
+145,Qwen/Qwen2.5-72B-Instruct,P3,"O orçamento para a segurança pública em 2024 será o mesmo de 2023, com um aumento de 17% em relação a 2022.",False
+146,Qwen/Qwen2.5-72B-Instruct,P1,A produção de Cannabis para fins medicinais deve ser liberada no Brasil.,False
+146,Qwen/Qwen2.5-72B-Instruct,P2,A liberação do plantio de Cannabis medicinal reduzirá os custos dos medicamentos para pacientes vulneráveis.,False
+146,Qwen/Qwen2.5-72B-Instruct,P3,A judicialização do acesso a medicamentos à base de Cannabis aumenta os gastos do Ministério da Saúde sem garantir acesso adequado aos pacientes mais necessitados.,False
+147,Qwen/Qwen2.5-72B-Instruct,P1,Creches públicas são essenciais para reduzir as desigualdades sociais no Brasil,False
+147,Qwen/Qwen2.5-72B-Instruct,P2,A falta de acesso a creches afeta negativamente o acesso de mulheres ao mercado de trabalho,False
+147,Qwen/Qwen2.5-72B-Instruct,P3,Investir em infraestrutura e qualidade das creches é fundamental para garantir educação infantil de qualidade,False
+148,Qwen/Qwen2.5-72B-Instruct,P1,O Ibama deve retomar urgentemente as autorizações para caça a javalis.,False
+148,Qwen/Qwen2.5-72B-Instruct,P2,A caça a javalis é essencial para o controle da população e mitigação dos prejuízos à agropecuária e ao meio ambiente.,False
+148,Qwen/Qwen2.5-72B-Instruct,P3,"O Plano Nacional de Prevenção, Controle e Monitoramento do Javali deve ser atualizado e implementado com urgência.",False
+149,Qwen/Qwen2.5-72B-Instruct,P1,"O Estado deve oferecer uma rede de atendimento para a população idosa, incluindo serviços de saúde, moradia e cuidados pessoais.",False
+149,Qwen/Qwen2.5-72B-Instruct,P2,O planejamento para o envelhecimento da população deve considerar as desigualdades regionais do Brasil.,False
+149,Qwen/Qwen2.5-72B-Instruct,P3,A formalização dos postos de trabalho é essencial para amenizar o déficit previdenciário causado pelo envelhecimento da população.,False
+150,Qwen/Qwen2.5-72B-Instruct,P1,Santos Dumont foi o inventor do primeiro avião a realizar um voo público controlado.,False
+150,Qwen/Qwen2.5-72B-Instruct,P2,Santos Dumont contribuiu significativamente para o desenvolvimento da tecnologia aeroespacial no Brasil.,False
+150,Qwen/Qwen2.5-72B-Instruct,P3,Santos Dumont foi fundamental para a preservação das Cataratas do Iguaçu como patrimônio público.,False
+151,Qwen/Qwen2.5-72B-Instruct,P1,A educação profissionalizante nos presídios reduz a reincidência criminal.,False
+151,Qwen/Qwen2.5-72B-Instruct,P2,Institutos federais devem ser instalados dentro dos presídios para ampliar o acesso à educação profissionalizante.,False
+151,Qwen/Qwen2.5-72B-Instruct,P3,A flexibilização do currículo escolar nos presídios deve incluir formação profissional para preparar os detentos para o mercado de trabalho.,False
+152,Qwen/Qwen2.5-72B-Instruct,P1,O DPVAT deve ser mantido como seguro obrigatório para vítimas de trânsito.,False
+152,Qwen/Qwen2.5-72B-Instruct,P2,O valor das indenizações do DPVAT deve ser atualizado para refletir a inflação.,False
+152,Qwen/Qwen2.5-72B-Instruct,P3,O Ministério da Fazenda deve apresentar um novo modelo de funcionamento do DPVAT com transparência e participação das entidades representativas.,False
+153,Qwen/Qwen2.5-72B-Instruct,P1,Linha de crédito do BNDES para grandes empresas afetadas por enchentes no Rio Grande do Sul será ampliada,False
+153,Qwen/Qwen2.5-72B-Instruct,P2,Empresas com faturamento de até R$ 300 milhões serão incluídas na nova linha de crédito do BNDES,False
+153,Qwen/Qwen2.5-72B-Instruct,P3,Operadoras de crédito regionais devem ser autorizadas a operar os recursos de recuperação econômica,False
+154,Qwen/Qwen2.5-72B-Instruct,P1,Mulheres no climatério e menopausa devem ter acesso a informações e tratamento adequado na atenção primária à saúde,False
+154,Qwen/Qwen2.5-72B-Instruct,P2,O Ministério da Saúde deve desenvolver novos medicamentos e fitoterápicos para mulheres no climatério e menopausa,False
+154,Qwen/Qwen2.5-72B-Instruct,P3,A reposição hormonal deve ser oferecida para reduzir riscos de doenças cardiovasculares e metabólicas em mulheres no climatério e menopausa,False
+155,Qwen/Qwen2.5-72B-Instruct,P1,Mais orçamento é necessário para as políticas públicas para a população idosa,False
+155,Qwen/Qwen2.5-72B-Instruct,P2,Instituições de Longa Permanência (ILPIs) devem ter garantia de financiamento,False
+155,Qwen/Qwen2.5-72B-Instruct,P3,A rede de centros-dias deve ser consolidada para atender a população idosa,False
+156,Qwen/Qwen2.5-72B-Instruct,P1,Universidades comunitárias devem receber recursos públicos para manter a qualidade do ensino,False
+156,Qwen/Qwen2.5-72B-Instruct,P2,A legislação atual que regula as universidades comunitárias deve ser ajustada para facilitar seu financiamento,False
+156,Qwen/Qwen2.5-72B-Instruct,P3,O papel das universidades comunitárias deve ser valorizado no ecossistema educacional brasileiro,False
+157,Qwen/Qwen2.5-72B-Instruct,P1,A desoneração tributária pode baratear os custos de remédios para doenças raras.,False
+157,Qwen/Qwen2.5-72B-Instruct,P2,Os preços dos medicamentos para terapias gênicas devem levar em conta os custos superiores de pesquisa e desenvolvimento.,False
+157,Qwen/Qwen2.5-72B-Instruct,P3,A precificação justa de medicamentos para doenças raras deve ser separada das regras para medicamentos de doenças prevalentes.,False
+158,Qwen/Qwen2.5-72B-Instruct,P1,Empresas devem compensar suas emissões de gases de efeito estufa comprando créditos de carbono gerados por projetos de redução de emissões ou de captura de carbono.,False
+158,Qwen/Qwen2.5-72B-Instruct,P2,Comunidades tradicionais devem ter direito de aprovar projetos de crédito de carbono e participar da repartição de benefícios.,False
+158,Qwen/Qwen2.5-72B-Instruct,P3,A regulamentação do mercado de carbono deve garantir a autodeterminação e a autonomia dos povos indígenas e tradicionais.,False
+159,Qwen/Qwen2.5-72B-Instruct,P1,O SUS deve garantir acesso a exames de diagnóstico de câncer de mama,False
+159,Qwen/Qwen2.5-72B-Instruct,P2,É necessário criar um Fundo Nacional de Enfrentamento ao Câncer para financiar tratamentos,False
+159,Qwen/Qwen2.5-72B-Instruct,P3,A falta de medicamentos e exames no SUS prejudica os pacientes oncológicos,False
+160,Qwen/Qwen2.5-72B-Instruct,P1,É necessário prever recursos específicos para a educação inclusiva no Orçamento de 2024.,False
+160,Qwen/Qwen2.5-72B-Instruct,P2,O atual modelo de educação pública está falido e precisa ser repensado para incluir melhor os alunos com deficiência.,False
+160,Qwen/Qwen2.5-72B-Instruct,P3,"É preciso ampliar a concepção de escola para incluir realidades diversas, como escolas nas águas, nas florestas e no campo.",False
+161,Qwen/Qwen2.5-72B-Instruct,P1,O aumento dos preços das passagens aéreas no Brasil é explicado principalmente pelo aumento do preço do combustível e da variação do dólar.,False
+161,Qwen/Qwen2.5-72B-Instruct,P2,A entrada de novas companhias aéreas no mercado pode reduzir os preços das passagens.,False
+161,Qwen/Qwen2.5-72B-Instruct,P3,A maioria das passagens aéreas no Brasil pode ser encontrada por menos de R$ 500 com planejamento e compras antecipadas.,False
+162,Qwen/Qwen2.5-72B-Instruct,P1,Empresas devem adotar medidas para prevenir transtornos mentais no ambiente de trabalho,False
+162,Qwen/Qwen2.5-72B-Instruct,P2,Superiores hierárquicos devem estimular tratamento justo e respeitoso nas relações no ambiente de trabalho,False
+162,Qwen/Qwen2.5-72B-Instruct,P3,Gestores devem atuar como promotores de saúde mental nos locais de trabalho,False
+163,Qwen/Qwen2.5-72B-Instruct,P1,Deve-se criar um grupo de trabalho na Câmara para elaborar leis com diretrizes educacionais sobre a questão racial.,False
+163,Qwen/Qwen2.5-72B-Instruct,P2,A lei municipal da Escola Sem Racismo deve ser transformada em norma federal.,False
+163,Qwen/Qwen2.5-72B-Instruct,P3,O combate ao racismo deve começar já na creche.,False
+164,Qwen/Qwen2.5-72B-Instruct,P1,"Investimentos anuais de R$ 31,5 bilhões são necessários para universalizar o saneamento básico até 2033",False
+164,Qwen/Qwen2.5-72B-Instruct,P2,A universalização do saneamento básico só será alcançada em 2040 com o ritmo atual de investimentos,False
+164,Qwen/Qwen2.5-72B-Instruct,P3,"O novo marco regulatório do saneamento básico deve ser implementado com diversidade de modelos, incluindo públicos e privados",False
+165,Qwen/Qwen2.5-72B-Instruct,P1,A meta fiscal de zerar o déficit em 2024 é ambiciosa devido à queda na arrecadação.,False
+165,Qwen/Qwen2.5-72B-Instruct,P2,O estímulo ao empreendedorismo feminino é uma prioridade na LDO de 2024.,False
+165,Qwen/Qwen2.5-72B-Instruct,P3,O cronograma de desembolsos para emendas parlamentares é importante para a política social voltada para as mulheres.,False
+166,Qwen/Qwen2.5-72B-Instruct,P1,O uso de blockchain no serviço público deve ser incentivado para aumentar segurança e transparência.,False
+166,Qwen/Qwen2.5-72B-Instruct,P2,A tecnologia blockchain só traz vantagens quando usada em redes com múltiplas organizações.,False
+166,Qwen/Qwen2.5-72B-Instruct,P3,A aplicação de blockchain no serviço público pode conflitar com a Lei Geral de Proteção de Dados (LGPD).,False
+167,Qwen/Qwen2.5-72B-Instruct,P1,O próximo Plano Plurianual deve garantir recursos para a implementação da política de controle populacional de cães e gatos.,False
+167,Qwen/Qwen2.5-72B-Instruct,P2,Um programa piloto de castração pode alcançar 1 milhão de castrações em todo o Brasil.,False
+167,Qwen/Qwen2.5-72B-Instruct,P3,É necessário garantir recursos orçamentários já neste ano para viabilizar ações de controle populacional de cães e gatos.,False
+168,Qwen/Qwen2.5-72B-Instruct,P1,Estudantes de pós-graduação devem ter direitos trabalhistas e previdenciários,False
+168,Qwen/Qwen2.5-72B-Instruct,P2,Programas de pós-graduação devem ser mais atrativos para evitar a perda de talentos,False
+168,Qwen/Qwen2.5-72B-Instruct,P3,Currículos universitários devem ser adequados para maior interação com o mercado produtivo,False
+169,Qwen/Qwen2.5-72B-Instruct,P1,O Cerrado e a Caatinga devem ser reconhecidos como patrimônios nacionais na Constituição Federal.,False
+169,Qwen/Qwen2.5-72B-Instruct,P2,O reconhecimento dos biomas Cerrado e Caatinga como patrimônios nacionais pode ampliar as políticas públicas de proteção.,False
+169,Qwen/Qwen2.5-72B-Instruct,P3,A agricultura familiar nos biomas Cerrado e Caatinga oferece uma rica variedade de alimentos além da monocultura de grãos.,False
+170,Qwen/Qwen2.5-72B-Instruct,P1,Políticas públicas devem reconhecer e enfrentar as violações sofridas por crianças negras e indígenas na primeira infância,False
+170,Qwen/Qwen2.5-72B-Instruct,P2,O ambiente escolar deve ser transformado em um espaço seguro e acolhedor para crianças negras e indígenas,False
+170,Qwen/Qwen2.5-72B-Instruct,P3,O racismo na primeira infância afeta negativamente tanto as crianças negras e indígenas quanto as crianças brancas,False
+171,Qwen/Qwen2.5-72B-Instruct,P1,O Ministério da Saúde deve criar um grupo de trabalho para analisar desinformações publicadas por profissionais de saúde,False
+171,Qwen/Qwen2.5-72B-Instruct,P2,A Conferência Nacional de Saúde deve revisar a cartilha de pessoas trans e reduzir a idade de início de hormonização para 14 anos,False
+171,Qwen/Qwen2.5-72B-Instruct,P3,O Ministério da Saúde deve agir de acordo com a legislação e o programa de governo ao tratar sugestões da sociedade civil,False
+172,Qwen/Qwen2.5-72B-Instruct,P1,O governo deve acelerar a demarcação e titulação das terras quilombolas.,False
+172,Qwen/Qwen2.5-72B-Instruct,P2,O Incra precisa ser reestruturado com mais técnicos e orçamento para regularizar territórios quilombolas.,False
+172,Qwen/Qwen2.5-72B-Instruct,P3,"Políticas públicas específicas, como formação escolar e linhas de financiamento, são necessárias para as comunidades quilombolas.",False
+173,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil deve retomar a construção de usinas hidrelétricas com grandes reservatórios para garantir energia firme e limpa.,False
+173,Qwen/Qwen2.5-72B-Instruct,P2,Os reservatórios de usinas hidrelétricas podem ser usados para controle de cheias e contribuem para as metas de descarbonização.,False
+173,Qwen/Qwen2.5-72B-Instruct,P3,É necessário descontruir a ideia de que as hidrelétricas prejudicam o meio ambiente e melhorar a comunicação sobre seus benefícios.,False
+174,Qwen/Qwen2.5-72B-Instruct,P1,"O Revalida deve ser facilitado, especialmente na segunda etapa.",False
+174,Qwen/Qwen2.5-72B-Instruct,P2,A pontuação mínima de 65% para aprovação no Revalida é adequada.,False
+174,Qwen/Qwen2.5-72B-Instruct,P3,O baixo investimento no ensino médico no Brasil leva muitos estudantes a buscarem formação no exterior.,False
+175,Qwen/Qwen2.5-72B-Instruct,P1,A taxação das operadoras de apostas esportivas deve ser revista para um percentual abaixo de 18%,False
+175,Qwen/Qwen2.5-72B-Instruct,P2,A tributação das apostas esportivas é uma questão de justiça tributária,False
+175,Qwen/Qwen2.5-72B-Instruct,P3,O governo pode judicializar as licenças estaduais de apostas esportivas para proteger a arrecadação federal,False
+176,Qwen/Qwen2.5-72B-Instruct,P1,"A deficiência não está nas pessoas, mas no ambiente que não oferece acessibilidade e inclusão.",False
+176,Qwen/Qwen2.5-72B-Instruct,P2,A educação inclusiva deve garantir que alunos com deficiência aprendam o mesmo conteúdo dos demais alunos.,False
+176,Qwen/Qwen2.5-72B-Instruct,P3,A avaliação biopsicossocial deve ser adotada para definir as necessidades e o apoio necessário aos alunos com deficiência no ambiente escolar.,False
+177,Qwen/Qwen2.5-72B-Instruct,P1,A regulamentação do setor de aplicativos de transporte e entrega pode prejudicar a concorrência e aumentar os preços para os consumidores.,False
+177,Qwen/Qwen2.5-72B-Instruct,P2,A contribuição para o INSS baseada no faturamento da empresa é mais justa e viável para aplicativos regionais.,False
+177,Qwen/Qwen2.5-72B-Instruct,P3,A regulamentação para entregadores deve ser diferente da aplicada para motoristas de passageiros devido às diferenças nas atividades e ganhos.,False
+178,Qwen/Qwen2.5-72B-Instruct,P1,Parques eólicos offshore devem ser planejados para minimizar impactos socioambientais,False
+178,Qwen/Qwen2.5-72B-Instruct,P2,A energia eólica offshore deve ser regulamentada para proteger comunidades tradicionais,False
+178,Qwen/Qwen2.5-72B-Instruct,P3,O planejamento espacial marinho deve ser incluído na Lei do Mar para gerenciar conflitos de uso,False
+179,Qwen/Qwen2.5-72B-Instruct,P1,"A regulamentação dos mercados digitais deve ser feita pelo Cade, não pela Anatel.",False
+179,Qwen/Qwen2.5-72B-Instruct,P2,"A regulamentação dos mercados digitais pode beneficiar as micro e pequenas empresas, coibindo práticas abusivas.",False
+179,Qwen/Qwen2.5-72B-Instruct,P3,A regulamentação dos mercados digitais deve ser flexível e permitir ajustes regulatórios periódicos.,False
+180,Qwen/Qwen2.5-72B-Instruct,P1,Partidos políticos devem ser anistiados pelo não cumprimento das cotas para mulheres e negros até as eleições de 2022,False
+180,Qwen/Qwen2.5-72B-Instruct,P2,A anistia aos partidos políticos representa um retrocesso na representatividade de mulheres e negros na política,False
+180,Qwen/Qwen2.5-72B-Instruct,P3,"A Emenda Constitucional 117 não foi clara sobre o financiamento para mulheres e negros, dificultando o cumprimento das cotas pelos partidos",False
+181,Qwen/Qwen2.5-72B-Instruct,P1,Cigarros eletrônicos devem ser combatidos para manter a queda no número de fumantes,False
+181,Qwen/Qwen2.5-72B-Instruct,P2,A venda de cigarros eletrônicos deve ser mais rigorosamente controlada,False
+181,Qwen/Qwen2.5-72B-Instruct,P3,Aumentar impostos sobre cigarros e derivados do tabaco reduz o consumo de nicotina,False
+182,Qwen/Qwen2.5-72B-Instruct,P1,Os reajustes dos planos de saúde coletivos devem ser regulados pela ANS.,False
+182,Qwen/Qwen2.5-72B-Instruct,P2,Os consumidores de planos de saúde coletivos não têm poder de barganha nas negociações de reajuste.,False
+182,Qwen/Qwen2.5-72B-Instruct,P3,Os contratos menores de planos de saúde coletivos são os mais afetados por reajustes elevados e cancelamentos.,False
+183,Qwen/Qwen2.5-72B-Instruct,P1,O Ibama deve indeferir licenças ambientais baseado em critérios técnicos,False
+183,Qwen/Qwen2.5-72B-Instruct,P2,A exploração de petróleo na Foz do Amazonas não representa risco significativo ao meio ambiente,False
+183,Qwen/Qwen2.5-72B-Instruct,P3,O asfaltamento da BR-319 pode causar impactos ambientais significativos na floresta amazônica,False
+184,Qwen/Qwen2.5-72B-Instruct,P1,Empresas devem poder usar excedente de recursos destinados para pesquisa tecnológica em anos posteriores.,False
+184,Qwen/Qwen2.5-72B-Instruct,P2,"A colaboração entre universidades, empresas e governo melhora a eficiência na alocação de recursos e promove inovação.",False
+184,Qwen/Qwen2.5-72B-Instruct,P3,"O ambiente regulatório precisa ser melhorado para facilitar a integração entre universidades, empresas e governo.",False
+185,Qwen/Qwen2.5-72B-Instruct,P1,O teste do pezinho deve ser realizado em todos os estados com cobertura próxima a 90%,False
+185,Qwen/Qwen2.5-72B-Instruct,P2,A formação de profissionais qualificados é essencial para a ampliação do programa de triagem neonatal,False
+185,Qwen/Qwen2.5-72B-Instruct,P3,Políticas públicas devem ser adaptadas às particularidades de cada estado para garantir a ampliação do teste do pezinho,False
+186,Qwen/Qwen2.5-72B-Instruct,P1,Auxílio emergencial deve ser combinado com medidas de mitigação de mudanças climáticas,False
+186,Qwen/Qwen2.5-72B-Instruct,P2,Deve ser criado um fórum ou comitê para controle social da execução do auxílio emergencial,False
+186,Qwen/Qwen2.5-72B-Instruct,P3,Auxílio emergencial deve considerar os impactos psicossociais de longo prazo dos desastres climáticos,False
+187,Qwen/Qwen2.5-72B-Instruct,P1,O povo cigano deve ser incluído no Censo demográfico brasileiro para garantir acesso a políticas públicas.,False
+187,Qwen/Qwen2.5-72B-Instruct,P2,O Estado deve garantir a igualdade de oportunidades e defender a dignidade e os valores culturais dos ciganos por meio de políticas públicas.,False
+187,Qwen/Qwen2.5-72B-Instruct,P3,A violência policial contra os ciganos deve ser reconhecida e combatida como uma forma de discriminação sistêmica.,False
+188,Qwen/Qwen2.5-72B-Instruct,P1,Políticas públicas específicas são necessárias para reduzir a disparidade de gênero nas ciências exatas e tecnológicas.,False
+188,Qwen/Qwen2.5-72B-Instruct,P2,A maternidade deve ser considerada como fator de compensação em critérios de avaliação para pesquisadoras.,False
+188,Qwen/Qwen2.5-72B-Instruct,P3,A menor remuneração de mulheres doutoras está associada à menor participação em cargos gerenciais e de liderança.,False
+189,Qwen/Qwen2.5-72B-Instruct,P1,Critérios como faturamento e número de inscritos podem mascarar a concorrência efetiva nos mercados digitais,False
+189,Qwen/Qwen2.5-72B-Instruct,P2,A regulamentação dos mercados digitais deve evitar dar vantagens competitivas a empresas que controlam plataformas móveis,False
+189,Qwen/Qwen2.5-72B-Instruct,P3,O acesso do Cade a dados fiscais da Receita Federal é essencial para a fiscalização efetiva dos mercados digitais,False
+190,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil deve receber mais incentivos para participar de pesquisas clínicas internacionais sobre doenças raras.,False
+190,Qwen/Qwen2.5-72B-Instruct,P2,O Fundo Nacional para Custeio e Fornecimento de Medicações e Terapias destinadas ao Tratamento de Doenças Raras ou Negligenciadas deve ser aprovado.,False
+190,Qwen/Qwen2.5-72B-Instruct,P3,Centros de referência para doenças raras devem ser instalados em todo o Brasil para melhorar o diagnóstico e tratamento.,False
+191,Qwen/Qwen2.5-72B-Instruct,P1,O bem-estar animal é fundamental para a redução das emissões de gases do efeito estufa,False
+191,Qwen/Qwen2.5-72B-Instruct,P2,A produção de alimentos a partir de proteínas alternativas pode oferecer novas oportunidades econômicas,False
+191,Qwen/Qwen2.5-72B-Instruct,P3,O fim do uso massivo de antibióticos e da crueldade na criação de animais em cativeiro é necessário para melhorar o bem-estar animal,False
+192,Qwen/Qwen2.5-72B-Instruct,P1,A obsolescência programada de celulares é uma prática adotada pelas fabricantes.,False
+192,Qwen/Qwen2.5-72B-Instruct,P2,O Código de Defesa do Consumidor deve ser atualizado para enfrentar a questão da descartabilidade de produtos eletrônicos.,False
+192,Qwen/Qwen2.5-72B-Instruct,P3,Os fabricantes devem manter peças de reposição e suporte para softwares de produtos não mais vendidos.,False
+193,Qwen/Qwen2.5-72B-Instruct,P1,Microempresários devem ter acesso a um programa Desenrola para enfrentar o endividamento agravado por altas taxas de juros,False
+193,Qwen/Qwen2.5-72B-Instruct,P2,"A política monetária do Banco Central deve priorizar o controle da inflação, mesmo com impactos negativos no setor produtivo",False
+193,Qwen/Qwen2.5-72B-Instruct,P3,O spread bancário pode ser reduzido com a diminuição dos custos de intermediação financeira,False
+194,Qwen/Qwen2.5-72B-Instruct,P1,A redução da velocidade nas vias públicas aumenta a segurança de pedestres e ciclistas.,False
+194,Qwen/Qwen2.5-72B-Instruct,P2,A educação no trânsito deve ser incluída na grade curricular das escolas brasileiras.,False
+194,Qwen/Qwen2.5-72B-Instruct,P3,A redução da velocidade nas vias pode reduzir significativamente o número de mortes no trânsito.,False
+195,Qwen/Qwen2.5-72B-Instruct,P1,"A regulamentação dos mercados digitais no Brasil deve ser mais flexível e adaptada aos interesses nacionais, evitando seguir modelos estrangeiros muito intervencionistas.",False
+195,Qwen/Qwen2.5-72B-Instruct,P2,"A regulação dos mercados digitais deve focar na suavização do controle de acesso essencial das plataformas, em vez de combater fake news.",False
+195,Qwen/Qwen2.5-72B-Instruct,P3,"A regulação dos mercados digitais no Brasil pode aumentar os custos para consumidores e empresas, que serão repassados aos usuários finais.",False
+196,Qwen/Qwen2.5-72B-Instruct,P1,Financiamento estudantil sustentável é necessário para atingir a meta de 33% de jovens matriculados no ensino superior.,False
+196,Qwen/Qwen2.5-72B-Instruct,P2,"Estudantes com renda de até 1,5 salário mínimo por mês devem ter direito à bolsa integral no Fies.",False
+196,Qwen/Qwen2.5-72B-Instruct,P3,O pagamento do financiamento estudantil não deve ultrapassar 13% da renda do beneficiário após a formatura.,False
+197,Qwen/Qwen2.5-72B-Instruct,P1,O Marco Legal da Inovação deve ser revisado para reduzir a burocracia na aquisição de equipamentos científicos e insumos.,False
+197,Qwen/Qwen2.5-72B-Instruct,P2,Os pesquisadores devem ter mais liberdade para atuar em startups e empresas sem conflito de interesses.,False
+197,Qwen/Qwen2.5-72B-Instruct,P3,A legislação deve ser simplificada para reduzir a carga burocrática e operacional dos pesquisadores e instituições de pesquisa.,False
+198,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil deve oferecer vistos humanitários para refugiados de países com restrições severas aos direitos humanos.,False
+198,Qwen/Qwen2.5-72B-Instruct,P2,O Comitê Nacional para os Refugiados deve receber mais apoio orçamentário e de pessoal para reduzir a fila de espera e o tempo de processos de regularização.,False
+198,Qwen/Qwen2.5-72B-Instruct,P3,Deve ser revogada a portaria que permite repatriação ou deportação imediata de refugiados baseada em regras da pandemia de Covid-19.,False
+199,Qwen/Qwen2.5-72B-Instruct,P1,O Brasil deve buscar autossuficiência na produção de insumos para a saúde,False
+199,Qwen/Qwen2.5-72B-Instruct,P2,A compra emergencial de medicamentos pelo SUS deve ser realizada com rigoroso controle de qualidade,False
+199,Qwen/Qwen2.5-72B-Instruct,P3,A homologação da Resolução 715/23 pela 17ª Conferência Nacional de Saúde não implica apoio a todas as suas orientações,False
+200,Qwen/Qwen2.5-72B-Instruct,P1,A Política Nacional de Saúde Funcional beneficiará pessoas do ponto de vista assistencial e direito social.,False
+200,Qwen/Qwen2.5-72B-Instruct,P2,A CIF é capaz de gerar dados mais compatíveis com a realidade dos indivíduos do que a CID.,False
+200,Qwen/Qwen2.5-72B-Instruct,P3,Equipes interdisciplinares no SUS podem reduzir gastos públicos com saúde e previdência.,False
+201,Qwen/Qwen2.5-72B-Instruct,P1,Os presos dos atos de 8 de janeiro devem ter suas condutas individualizadas.,False
+201,Qwen/Qwen2.5-72B-Instruct,P2,As detenções dos atos de 8 de janeiro desrespeitam convenções internacionais de direitos humanos.,False
+201,Qwen/Qwen2.5-72B-Instruct,P3,A maioria dos presos dos atos de 8 de janeiro não tinha intenção de participar de uma tentativa de golpe.,False
+202,Qwen/Qwen2.5-72B-Instruct,P1,A quiropraxia deve ser regulamentada como profissão distinta.,False
+202,Qwen/Qwen2.5-72B-Instruct,P2,A quiropraxia deve ser incluída como especialidade da Fisioterapia ou da Medicina.,False
+202,Qwen/Qwen2.5-72B-Instruct,P3,A regulamentação da quiropraxia aumentará a segurança e a qualidade do atendimento à população.,False
+203,Qwen/Qwen2.5-72B-Instruct,P1,O desmonte das políticas públicas de proteção a mulheres contribuiu para o aumento da violência contra elas.,False
+203,Qwen/Qwen2.5-72B-Instruct,P2,A ascensão do ultraconservadorismo é uma causa do aumento da violência contra mulheres.,False
+203,Qwen/Qwen2.5-72B-Instruct,P3,A desigualdade estrutural entre homens e mulheres é a base da violência de gênero.,False
+204,Qwen/Qwen2.5-72B-Instruct,P1,Profissionais de saúde devem ser capacitados para reconhecer a distonia.,False
+204,Qwen/Qwen2.5-72B-Instruct,P2,Deve ser criada uma cadeira obrigatória sobre doenças de origem genética nos cursos superiores de medicina.,False
+204,Qwen/Qwen2.5-72B-Instruct,P3,Pessoas com distonia devem ter acesso a uma rede de reabilitação multiprofissional no SUS.,False
+205,Qwen/Qwen2.5-72B-Instruct,P1,As Forças Armadas devem ter maior participação na segurança das fronteiras,False
+205,Qwen/Qwen2.5-72B-Instruct,P2,O Ministério da Justiça deve destinar mais recursos para o Programa Guardiões da Fronteira,False
+205,Qwen/Qwen2.5-72B-Instruct,P3,É necessário desenvolver indicadores para medir o impacto das operações de fronteira sobre a população,False
+206,Qwen/Qwen2.5-72B-Instruct,P1,A Lei de Cotas deve ser revista para melhorias e não para revogação.,False
+206,Qwen/Qwen2.5-72B-Instruct,P2,O Plano Nacional de Assistência Estudantil deve estar vinculado às cotas para garantir a permanência dos estudantes.,False
+206,Qwen/Qwen2.5-72B-Instruct,P3,Políticas afirmativas e assistência estudantil têm o poder de atrair novos talentos para a pós-graduação.,False

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZCLsItslTZepwqchdhdypTd",
+  "object": "chat.completion",
+  "created": 1790436110,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A linha promocional da 123milhas dependia de um fluxo de novas compras para ser sustentável.\"},\n    {\"id\": \"P2\", \"text\": \"A 123milhas suspendeu a venda de passagens promocionais devido à alta dos preços das passagens aéreas.\"},\n    {\"id\": \"P3\", \"text\": \"A 123milhas está em recuperação judicial para garantir o ressarcimento dos consumidores afetados.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2386,
+    "total_tokens": 2522,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00091336,
+    "prompt_tokens_details": null
+  }
+}

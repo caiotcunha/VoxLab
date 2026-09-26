@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rk2ZLNEzPKYG8jSWk5Y2PRAD",
+  "object": "chat.completion",
+  "created": 1790436698,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A taxação das operadoras de apostas esportivas deve ser revista para um percentual abaixo de 18%\"},\n    {\"id\": \"P2\", \"text\": \"A tributação das apostas esportivas é uma questão de justiça tributária\"},\n    {\"id\": \"P3\", \"text\": \"O governo pode judicializar as licenças estaduais de apostas esportivas para proteger a arrecadação federal\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1430,
+    "total_tokens": 1551,
+    "completion_tokens": 121,
+    "estimated_cost": 0.0005631999999999999,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjkasAHlvsNoKZ15BdyEorZZ",
+  "object": "chat.completion",
+  "created": 1790436738,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil deve oferecer vistos humanitários para refugiados de países com restrições severas aos direitos humanos.\"},\n    {\"id\": \"P2\", \"text\": \"O Comitê Nacional para os Refugiados deve receber mais apoio orçamentário e de pessoal para reduzir a fila de espera e o tempo de processos de regularização.\"},\n    {\"id\": \"P3\", \"text\": \"Deve ser revogada a portaria que permite repatriação ou deportação imediata de refugiados baseada em regras da pandemia de Covid-19.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1715,
+    "total_tokens": 1871,
+    "completion_tokens": 156,
+    "estimated_cost": 0.0006797999999999999,
+    "prompt_tokens_details": null
+  }
+}

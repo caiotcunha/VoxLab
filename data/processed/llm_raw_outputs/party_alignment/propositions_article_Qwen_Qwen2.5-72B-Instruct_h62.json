@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RV1hZqRV32XvrzBzBXAGC41X",
+  "object": "chat.completion",
+  "created": 1790436534,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O SUS deve oferecer gratuitamente os medicamentos Tegsedi e Onpatrro para tratar a polineuropatia amiloidótica familiar em fases avançadas\"},\n    {\"id\": \"P2\", \"text\": \"O Tafamidis, medicamento para as fases iniciais da polineuropatia amiloidótica familiar, deve estar disponível gratuitamente no SUS sem interrupções\"},\n    {\"id\": \"P3\", \"text\": \"O transplante de fígado é a opção mais adequada para o tratamento da polineuropatia amiloidótica familiar em fases iniciais\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1446,
+    "total_tokens": 1615,
+    "completion_tokens": 169,
+    "estimated_cost": 0.00058816,
+    "prompt_tokens_details": null
+  }
+}

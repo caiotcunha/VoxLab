@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9ozxagslD1QKx38qm0tywK0",
+  "object": "chat.completion",
+  "created": 1790436622,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Política nacional de cuidados para idosos deve envolver ação conjunta entre Estado, famílias e iniciativa privada\"},\n    {\"id\": \"P2\", \"text\": \"Política de cuidados para idosos deve extrapolar o âmbito familiar e envolver outros setores da sociedade\"},\n    {\"id\": \"P3\", \"text\": \"Políticas de cuidados para idosos devem considerar a diversidade e heterogeneidade do envelhecimento\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1319,
+    "total_tokens": 1446,
+    "completion_tokens": 127,
+    "estimated_cost": 0.00052564,
+    "prompt_tokens_details": null
+  }
+}

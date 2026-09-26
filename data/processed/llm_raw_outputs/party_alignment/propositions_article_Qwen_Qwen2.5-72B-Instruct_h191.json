@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RacPIioFqDix7cNpaOXlVIBc",
+  "object": "chat.completion",
+  "created": 1790436718,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O bem-estar animal é fundamental para a redução das emissões de gases do efeito estufa\"},\n    {\"id\": \"P2\", \"text\": \"A produção de alimentos a partir de proteínas alternativas pode oferecer novas oportunidades econômicas\"},\n    {\"id\": \"P3\", \"text\": \"O fim do uso massivo de antibióticos e da crueldade na criação de animais em cativeiro é necessário para melhorar o bem-estar animal\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1478,
+    "total_tokens": 1607,
+    "completion_tokens": 129,
+    "estimated_cost": 0.0005836799999999999,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2OOkfQUfnlJi6OfyWJvzLDu",
+  "object": "chat.completion",
+  "created": 1790436745,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O desmonte das políticas públicas de proteção a mulheres contribuiu para o aumento da violência contra elas.\"},\n    {\"id\": \"P2\", \"text\": \"A ascensão do ultraconservadorismo é uma causa do aumento da violência contra mulheres.\"},\n    {\"id\": \"P3\", \"text\": \"A desigualdade estrutural entre homens e mulheres é a base da violência de gênero.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1706,
+    "total_tokens": 1826,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00066216,
+    "prompt_tokens_details": null
+  }
+}

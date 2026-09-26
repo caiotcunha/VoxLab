@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYIPtw2nzyeitjNvBQXP8kJ8",
+  "object": "chat.completion",
+  "created": 1790436199,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos.\"},\n    {\"id\": \"P2\", \"text\": \"A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos deve ser opcional, decidida pelos pais.\"},\n    {\"id\": \"P3\", \"text\": \"A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos é segura e eficaz.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1559,
+    "total_tokens": 1690,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00061364,
+    "prompt_tokens_details": null
+  }
+}

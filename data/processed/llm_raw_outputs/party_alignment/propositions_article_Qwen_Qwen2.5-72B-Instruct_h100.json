@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYkTW97BgOmSrYb1boLZGzbS",
+  "object": "chat.completion",
+  "created": 1790436578,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Autoridades devem ter acesso direto a dados de conexão de suspeitos de crimes sexuais contra crianças e adolescentes sem necessidade de decisão judicial\"},\n    {\"id\": \"P2\", \"text\": \"Provedores de internet devem ser obrigados a fornecer dados de conexão de suspeitos de crimes sexuais contra crianças e adolescentes\"},\n    {\"id\": \"P3\", \"text\": \"Plataformas de redes sociais devem aumentar o controle parental sobre o conteúdo acessado por crianças e adolescentes\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1567,
+    "total_tokens": 1703,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00061852,
+    "prompt_tokens_details": null
+  }
+}

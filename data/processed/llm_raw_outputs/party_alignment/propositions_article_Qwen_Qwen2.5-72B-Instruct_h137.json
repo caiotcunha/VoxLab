@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHSRzfKnXb6jGykEcd4fz8Ey",
+  "object": "chat.completion",
+  "created": 1790436635,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Professores da rede pública devem poder ter um segundo emprego público de qualquer natureza\"},\n    {\"id\": \"P2\", \"text\": \"A permissão para professores terem um segundo emprego público de qualquer natureza pode precarizar a profissionalização docente\"},\n    {\"id\": \"P3\", \"text\": \"A liberdade de escolha do professor deve ser assegurada, permitindo que ele decida sobre a carga horária de trabalho\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1451,
+    "total_tokens": 1575,
+    "completion_tokens": 124,
+    "estimated_cost": 0.00057196,
+    "prompt_tokens_details": null
+  }
+}

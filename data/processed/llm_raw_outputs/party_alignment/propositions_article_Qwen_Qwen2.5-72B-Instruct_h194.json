@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RELLEb6M3IHr3nDS0u1m2C34",
+  "object": "chat.completion",
+  "created": 1790436724,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A redução da velocidade nas vias públicas aumenta a segurança de pedestres e ciclistas.\"},\n    {\"id\": \"P2\", \"text\": \"A educação no trânsito deve ser incluída na grade curricular das escolas brasileiras.\"},\n    {\"id\": \"P3\", \"text\": \"A redução da velocidade nas vias pode reduzir significativamente o número de mortes no trânsito.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1166,
+    "total_tokens": 1285,
+    "completion_tokens": 119,
+    "estimated_cost": 0.00046736,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6f8DUqMubJ2yoB1NVVKwxAR",
+  "object": "chat.completion",
+  "created": 1790436276,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O ensino de filosofia e sociologia deve ser mantido e ampliado na rede pública de ensino.\"},\n    {\"id\": \"P2\", \"text\": \"A Reforma do Ensino Médio de 2017 reduziu a oferta de aulas de filosofia e sociologia nas escolas públicas.\"},\n    {\"id\": \"P3\", \"text\": \"O ensino de filosofia e sociologia é essencial para a formação cidadã e crítica dos alunos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1455,
+    "total_tokens": 1589,
+    "completion_tokens": 134,
+    "estimated_cost": 0.0005774,
+    "prompt_tokens_details": null
+  }
+}

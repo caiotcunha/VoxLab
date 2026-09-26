@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYEv1skZg0w9v68KgAFkMH7o",
+  "object": "chat.completion",
+  "created": 1790436512,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A extensão universitária deve contar com orçamento permanente próprio.\"},\n    {\"id\": \"P2\", \"text\": \"Os programas de extensão universitária devem se integrar às políticas governamentais de educação básica e distribuição de renda.\"},\n    {\"id\": \"P3\", \"text\": \"A curricularização da extensão universitária deve complementar a educação integral e de qualidade.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1782,
+    "total_tokens": 1897,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0006875200000000001,
+    "prompt_tokens_details": null
+  }
+}

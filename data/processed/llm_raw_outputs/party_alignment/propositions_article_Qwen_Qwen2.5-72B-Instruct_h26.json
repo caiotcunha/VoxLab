@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rozgnk07Gw9A7sQSznbpjrQk",
+  "object": "chat.completion",
+  "created": 1790436293,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O trabalho de cuidado não remunerado deve ser incluído no cálculo do PIB.\"},\n    {\"id\": \"P2\", \"text\": \"A inclusão da economia do cuidado no PIB pode mudar a percepção social sobre a importância desse trabalho.\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas de cuidado podem melhorar o Índice de Desenvolvimento Humano mais do que o PIB.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1087,
+    "total_tokens": 1212,
+    "completion_tokens": 125,
+    "estimated_cost": 0.00044132,
+    "prompt_tokens_details": null
+  }
+}

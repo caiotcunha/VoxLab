@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ret2rHxBoYu6A2X6mEL1ZKCB",
+  "object": "chat.completion",
+  "created": 1790436677,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Investimentos anuais de R$ 31,5 bilhões são necessários para universalizar o saneamento básico até 2033\"},\n    {\"id\": \"P2\", \"text\": \"A universalização do saneamento básico só será alcançada em 2040 com o ritmo atual de investimentos\"},\n    {\"id\": \"P3\", \"text\": \"O novo marco regulatório do saneamento básico deve ser implementado com diversidade de modelos, incluindo públicos e privados\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1460,
+    "total_tokens": 1592,
+    "completion_tokens": 132,
+    "estimated_cost": 0.0005784000000000001,
+    "prompt_tokens_details": null
+  }
+}

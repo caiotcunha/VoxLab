@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rn4MIdDBsXwCEFsnU52qS39M",
+  "object": "chat.completion",
+  "created": 1790436099,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Centros de reabilitação devem ser implementados em todos os municípios para atender pessoas com TEA.\"},\n    {\"id\": \"P2\", \"text\": \"Plano educacional individualizado é essencial para a inclusão efetiva de alunos com TEA nas escolas.\"},\n    {\"id\": \"P3\", \"text\": \"A sociedade deve reconhecer a neurodiversidade e as potencialidades das pessoas com TEA.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2241,
+    "total_tokens": 2361,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00085476,
+    "prompt_tokens_details": null
+  }
+}

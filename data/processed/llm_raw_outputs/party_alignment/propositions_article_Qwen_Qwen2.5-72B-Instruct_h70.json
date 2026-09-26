@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RI2uqIi16tJFj2mSn700g3FY",
+  "object": "chat.completion",
+  "created": 1790436538,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Termelétricas flutuantes devem ser instaladas na Baía de Sepetiba com estudos ambientais prévios\"},\n    {\"id\": \"P2\", \"text\": \"A elevação da temperatura da água da Baía de Sepetiba por termelétricas flutuantes ameaça a fauna local\"},\n    {\"id\": \"P3\", \"text\": \"Recursos usados para instalar termelétricas flutuantes poderiam ser utilizados para reflorestamento e recarga de águas subterrâneas\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1477,
+    "total_tokens": 1619,
+    "completion_tokens": 142,
+    "estimated_cost": 0.00058852,
+    "prompt_tokens_details": null
+  }
+}

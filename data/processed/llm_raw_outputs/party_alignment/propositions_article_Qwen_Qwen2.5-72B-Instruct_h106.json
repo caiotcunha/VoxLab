@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBU9bzduPQiUjGCzcayIoNOl",
+  "object": "chat.completion",
+  "created": 1790436588,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O produtor rural deve poder acionar o seguro para várias culturas em uma mesma propriedade.\"},\n    {\"id\": \"P2\", \"text\": \"O governo deve reduzir os gastos com o Proagro devido a usos inadequados do programa.\"},\n    {\"id\": \"P3\", \"text\": \"A redução do faturamento mínimo para enquadramento no Proagro deve ser de R$ 335 mil para R$ 270 mil por ano.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1162,
+    "total_tokens": 1293,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00047072000000000005,
+    "prompt_tokens_details": null
+  }
+}

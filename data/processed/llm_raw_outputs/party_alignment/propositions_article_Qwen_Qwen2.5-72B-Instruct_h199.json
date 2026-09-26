@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ZFQpGtVy6GcgwO2HY3QqCi",
+  "object": "chat.completion",
+  "created": 1790436735,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil deve buscar autossuficiência na produção de insumos para a saúde\"},\n    {\"id\": \"P2\", \"text\": \"A compra emergencial de medicamentos pelo SUS deve ser realizada com rigoroso controle de qualidade\"},\n    {\"id\": \"P3\", \"text\": \"A homologação da Resolução 715/23 pela 17ª Conferência Nacional de Saúde não implica apoio a todas as suas orientações\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1854,
+    "total_tokens": 1977,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00071664,
+    "prompt_tokens_details": null
+  }
+}

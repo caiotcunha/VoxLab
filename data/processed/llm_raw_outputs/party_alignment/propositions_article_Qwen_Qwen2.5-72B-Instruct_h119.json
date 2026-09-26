@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyGDixqrotbkdoK7FeA5xz5Q",
+  "object": "chat.completion",
+  "created": 1790436606,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Peritos criminais devem ser treinados em questões de gênero para investigar feminicídios\"},\n    {\"id\": \"P2\", \"text\": \"A formação sobre violência de gênero deve ser uma política pública unificada proposta pelo governo federal\"},\n    {\"id\": \"P3\", \"text\": \"A investigação de feminicídios deve seguir um protocolo específico, diferente de outros homicídios\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1434,
+    "total_tokens": 1551,
+    "completion_tokens": 117,
+    "estimated_cost": 0.0005630400000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R64ZlyoPyoazVqqUE4cJZO2n",
+  "object": "chat.completion",
+  "created": 1790436385,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A regulação econômica da praticagem deve ser implementada para controlar abusos nos preços.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1659,
+    "total_tokens": 1705,
+    "completion_tokens": 46,
+    "estimated_cost": 0.00061564,
+    "prompt_tokens_details": null
+  }
+}

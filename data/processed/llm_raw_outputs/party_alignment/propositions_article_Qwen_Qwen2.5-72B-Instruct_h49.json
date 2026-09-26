@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTAdO6VPkEEjDtborlmNrPai",
+  "object": "chat.completion",
+  "created": 1790436508,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A concessão da BR-101 em Santa Catarina deve ser estendida em 15 anos para incluir a construção de túneis e conter deslizamentos\"},\n    {\"id\": \"P2\", \"text\": \"A obra de construção dos túneis no Morro dos Cavalos deve ser incluída no contrato atual, sem extensão da concessão\"},\n    {\"id\": \"P3\", \"text\": \"A extensão da concessão deve contemplar a construção de uma rodovia paralela à BR-101 para resolver definitivamente os problemas de fluidez de trânsito\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1742,
+    "total_tokens": 1902,
+    "completion_tokens": 160,
+    "estimated_cost": 0.00069112,
+    "prompt_tokens_details": null
+  }
+}

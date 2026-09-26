@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RN0l7hD8KUZ9Ngptxs59VwF6",
+  "object": "chat.completion",
+  "created": 1790436575,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Rota 2030 precisa de maior articulação com o uso de conteúdo nacional e etapas de produção.\"},\n    {\"id\": \"P2\", \"text\": \"A carga tributária e o custo Brasil são entraves significativos para a competitividade do setor automotivo.\"},\n    {\"id\": \"P3\", \"text\": \"As empresas que recebem incentivos fiscais devem ter cláusulas protetivas de responsabilidade social, como evitar demissões em massa.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1715,
+    "total_tokens": 1848,
+    "completion_tokens": 133,
+    "estimated_cost": 0.0006706,
+    "prompt_tokens_details": null
+  }
+}

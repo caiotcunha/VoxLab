@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJ9hd8ltRvmS1y7XVEQmIN5E",
+  "object": "chat.completion",
+  "created": 1790436743,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A quiropraxia deve ser regulamentada como profissão distinta.\"},\n    {\"id\": \"P2\", \"text\": \"A quiropraxia deve ser incluída como especialidade da Fisioterapia ou da Medicina.\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação da quiropraxia aumentará a segurança e a qualidade do atendimento à população.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1525,
+    "total_tokens": 1638,
+    "completion_tokens": 113,
+    "estimated_cost": 0.0005942,
+    "prompt_tokens_details": null
+  }
+}

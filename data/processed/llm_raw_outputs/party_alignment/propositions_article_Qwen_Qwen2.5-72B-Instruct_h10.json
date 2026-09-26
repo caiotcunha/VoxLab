@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhH9z9qi9RkpNERniWGDOnBJ",
+  "object": "chat.completion",
+  "created": 1790436154,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O saque-aniversário do FGTS deve ser substituído por um empréstimo consignado com juros mais baixos.\"},\n    {\"id\": \"P2\", \"text\": \"O saque-aniversário do FGTS compromete a sustentabilidade do fundo e inviabiliza o financiamento de moradias para famílias de baixa renda.\"},\n    {\"id\": \"P3\", \"text\": \"O trabalhador deve ter a opção de escolher entre o saque-aniversário e o empréstimo consignado, mantendo a liberdade de decisão.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1633,
+    "total_tokens": 1790,
+    "completion_tokens": 157,
+    "estimated_cost": 0.00065068,
+    "prompt_tokens_details": null
+  }
+}

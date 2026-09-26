@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtKyxzqCpgeBEQgAg4Ewu7hd",
+  "object": "chat.completion",
+  "created": 1790436747,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Profissionais de saúde devem ser capacitados para reconhecer a distonia.\"},\n    {\"id\": \"P2\", \"text\": \"Deve ser criada uma cadeira obrigatória sobre doenças de origem genética nos cursos superiores de medicina.\"},\n    {\"id\": \"P3\", \"text\": \"Pessoas com distonia devem ter acesso a uma rede de reabilitação multiprofissional no SUS.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1469,
+    "total_tokens": 1585,
+    "completion_tokens": 116,
+    "estimated_cost": 0.00057524,
+    "prompt_tokens_details": null
+  }
+}

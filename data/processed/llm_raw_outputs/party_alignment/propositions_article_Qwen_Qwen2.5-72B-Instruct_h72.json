@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHIyY83xlsy6vzAVNqZxvOOH",
+  "object": "chat.completion",
+  "created": 1790436542,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Grandes empresas devem ser responsabilizadas pelo trabalho escravo nas empresas subcontratadas\"},\n    {\"id\": \"P2\", \"text\": \"Deve-se aumentar o número de parcelas de seguro-desemprego para trabalhadores resgatados de trabalho escravo\"},\n    {\"id\": \"P3\", \"text\": \"A Emenda Constitucional 81 deve ser regulamentada para desapropriar propriedades rurais que praticam trabalho escravo\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1656,
+    "total_tokens": 1786,
+    "completion_tokens": 130,
+    "estimated_cost": 0.00064816,
+    "prompt_tokens_details": null
+  }
+}

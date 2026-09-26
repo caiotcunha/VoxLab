@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcjBVoa8AbbQpsT29Y2vRyP2",
+  "object": "chat.completion",
+  "created": 1790436608,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O setor mineral mata quase três vezes mais do que os outros setores econômicos.\"},\n    {\"id\": \"P2\", \"text\": \"A Lei da Terceirização acentua a precarização do trabalho na mineração.\"},\n    {\"id\": \"P3\", \"text\": \"A emenda constitucional que estabelece idade mínima para aposentadoria especial dificulta a aposentadoria dos trabalhadores da mineração.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1724,
+    "total_tokens": 1848,
+    "completion_tokens": 124,
+    "estimated_cost": 0.00067024,
+    "prompt_tokens_details": null
+  }
+}

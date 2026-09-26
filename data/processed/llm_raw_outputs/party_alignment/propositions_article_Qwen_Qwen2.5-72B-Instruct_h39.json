@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0NWpfRbUnzKF3DEPtDtsFGK",
+  "object": "chat.completion",
+  "created": 1790436421,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"As Forças Armadas não possuem poder de atuação autônoma e estão subordinadas ao presidente da República.\"},\n    {\"id\": \"P2\", \"text\": \"A tese do poder moderador das Forças Armadas é incompatível com a Constituição de 1988.\"},\n    {\"id\": \"P3\", \"text\": \"Militares que assumam cargos políticos devem ser automaticamente desligados das forças armadas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2281,
+    "total_tokens": 2404,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00087036,
+    "prompt_tokens_details": null
+  }
+}

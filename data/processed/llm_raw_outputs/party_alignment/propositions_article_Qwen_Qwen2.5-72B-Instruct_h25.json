@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUFk52yRJqizbErTgeoIfLr8",
+  "object": "chat.completion",
+  "created": 1790436284,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Operações com carros pipa devem ser implementadas para socorrer a região norte de Minas Gerais\"},\n    {\"id\": \"P2\", \"text\": \"Crédito rural deve ser liberado para auxiliar os produtores afetados pela seca\"},\n    {\"id\": \"P3\", \"text\": \"Políticas sociais devem ser ampliadas nos municípios atingidos pela seca\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 978,
+    "total_tokens": 1093,
+    "completion_tokens": 115,
+    "estimated_cost": 0.00039808000000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwW6ty7ZGAZLoq1zBb0jb32R",
+  "object": "chat.completion",
+  "created": 1790436675,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Empresas devem adotar medidas para prevenir transtornos mentais no ambiente de trabalho\"},\n    {\"id\": \"P2\", \"text\": \"Superiores hierárquicos devem estimular tratamento justo e respeitoso nas relações no ambiente de trabalho\"},\n    {\"id\": \"P3\", \"text\": \"Gestores devem atuar como promotores de saúde mental nos locais de trabalho\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1437,
+    "total_tokens": 1551,
+    "completion_tokens": 114,
+    "estimated_cost": 0.0005629200000000001,
+    "prompt_tokens_details": null
+  }
+}

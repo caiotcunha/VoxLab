@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYVteo0eJuzSgC8uBRNMo4R6",
+  "object": "chat.completion",
+  "created": 1790436502,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Recursos do Fust devem ser aplicados para conectar o meio rural à internet\"},\n    {\"id\": \"P2\", \"text\": \"O leilão do 5G pode aumentar significativamente a cobertura de internet no meio rural\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas são necessárias para garantir o acesso à internet de pessoas de baixa renda no meio rural\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2082,
+    "total_tokens": 2196,
+    "completion_tokens": 114,
+    "estimated_cost": 0.00079512,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwxjqLBNT0diuFag8RSxvRia",
+  "object": "chat.completion",
+  "created": 1790436245,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Projetos que permitem o uso de terras indígenas para mineração e exploração devem ser consultados com os povos afetados.\"},\n    {\"id\": \"P2\", \"text\": \"A legalização do desmatamento em terras indígenas e tradicionais é uma forma de retirar direitos desses povos.\"},\n    {\"id\": \"P3\", \"text\": \"É necessário eleger mais representantes indígenas no Congresso para evitar perdas de direitos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1640,
+    "total_tokens": 1775,
+    "completion_tokens": 135,
+    "estimated_cost": 0.0006443999999999999,
+    "prompt_tokens_details": null
+  }
+}

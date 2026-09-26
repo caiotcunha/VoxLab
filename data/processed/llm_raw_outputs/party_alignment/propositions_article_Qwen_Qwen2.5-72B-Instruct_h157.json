@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUA0lFdDyN00N0OcTSUMQstU",
+  "object": "chat.completion",
+  "created": 1790436672,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A desoneração tributária pode baratear os custos de remédios para doenças raras.\"},\n    {\"id\": \"P2\", \"text\": \"Os preços dos medicamentos para terapias gênicas devem levar em conta os custos superiores de pesquisa e desenvolvimento.\"},\n    {\"id\": \"P3\", \"text\": \"A precificação justa de medicamentos para doenças raras deve ser separada das regras para medicamentos de doenças prevalentes.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1454,
+    "total_tokens": 1585,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00057584,
+    "prompt_tokens_details": null
+  }
+}

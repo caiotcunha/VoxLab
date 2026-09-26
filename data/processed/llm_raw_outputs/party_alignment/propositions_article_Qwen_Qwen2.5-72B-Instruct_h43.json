@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLaYOJBeZebTxoMWqY11rs3J",
+  "object": "chat.completion",
+  "created": 1790436508,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A Lei 13.954/19 aumentou a desigualdade salarial entre praças e oficiais das Forças Armadas\"},\n    {\"id\": \"P2\", \"text\": \"A Lei 13.954/19 causou perdas salariais significativas para praças e pensionistas das Forças Armadas\"},\n    {\"id\": \"P3\", \"text\": \"A contribuição mensal para as pensões aumentou de 7,5% para 10,5% após a Lei 13.954/19\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1404,
+    "total_tokens": 1556,
+    "completion_tokens": 152,
+    "estimated_cost": 0.00056624,
+    "prompt_tokens_details": null
+  }
+}

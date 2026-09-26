@@ -1,0 +1,6290 @@
+{
+  "label_source": "MODEL_PREDICTION",
+  "camara_data": true,
+  "deputy_rows": 357,
+  "deputy_rows_matched_to_camara": 352,
+  "bloc_thresholds": [
+    0.4,
+    0.7
+  ],
+  "party_governism": {
+    "AVANTE|BOLSONARO": 0.7599,
+    "AVANTE|LULA": 0.8625,
+    "CIDADANIA|BOLSONARO": 0.7561,
+    "CIDADANIA|LULA": 0.6788,
+    "MDB|BOLSONARO": 0.8679,
+    "MDB|LULA": 0.78,
+    "NOVO|BOLSONARO": 0.6777,
+    "NOVO|LULA": 0.2418,
+    "PATRIOTA|BOLSONARO": 0.9141,
+    "PATRIOTA|LULA": 0.7277,
+    "PCDOB|BOLSONARO": 0.2871,
+    "PCDOB|LULA": 0.9686,
+    "PDT|BOLSONARO": 0.4357,
+    "PDT|LULA": 0.9065,
+    "PL|BOLSONARO": 0.9272,
+    "PL|LULA": 0.3763,
+    "PODEMOS|BOLSONARO": 0.8395,
+    "PODEMOS|LULA": 0.7671,
+    "PP|BOLSONARO": 0.9324,
+    "PP|LULA": 0.7573,
+    "PRD|LULA": 0.5351,
+    "PROS|BOLSONARO": 0.8925,
+    "PSB|BOLSONARO": 0.3339,
+    "PSB|LULA": 0.939,
+    "PSC|BOLSONARO": 0.9286,
+    "PSD|BOLSONARO": 0.8491,
+    "PSD|LULA": 0.813,
+    "PSDB|BOLSONARO": 0.7732,
+    "PSDB|LULA": 0.7131,
+    "PSOL|BOLSONARO": 0.2108,
+    "PSOL|LULA": 0.8128,
+    "PT|BOLSONARO": 0.2893,
+    "PT|LULA": 0.9761,
+    "PTB|BOLSONARO": 0.9452,
+    "PV|BOLSONARO": 0.3004,
+    "PV|LULA": 0.9549,
+    "REDE|BOLSONARO": 0.2508,
+    "REDE|LULA": 0.8956,
+    "REPUBLICANOS|BOLSONARO": 0.9024,
+    "REPUBLICANOS|LULA": 0.784,
+    "SOLIDARIEDADE|BOLSONARO": 0.8456,
+    "SOLIDARIEDADE|LULA": 0.8303,
+    "UNIAO|BOLSONARO": 0.8849,
+    "UNIAO|LULA": 0.699
+  },
+  "runs": {
+    "Qwen/Qwen2.5-72B-Instruct|speech": {
+      "rq1": {
+        "party": {
+          "n_pairs_same_group": 69,
+          "n_pairs_diff_group": 236,
+          "agreement_same_group": 0.9275,
+          "agreement_diff_group": 0.8305,
+          "gap": 0.097,
+          "permutation_p": 0.0792,
+          "n_permutations": 5000
+        },
+        "bloc": {
+          "n_pairs_same_group": 160,
+          "n_pairs_diff_group": 145,
+          "agreement_same_group": 0.9125,
+          "agreement_diff_group": 0.7862,
+          "gap": 0.1263,
+          "permutation_p": 0.012,
+          "n_permutations": 5000
+        },
+        "bloc_sensitivity_0.35_0.65": {
+          "n_pairs_same_group": 209,
+          "n_pairs_diff_group": 96,
+          "agreement_same_group": 0.866,
+          "agreement_diff_group": 0.8229,
+          "gap": 0.0431,
+          "permutation_p": 0.3027,
+          "n_permutations": 1000
+        },
+        "bloc_sensitivity_0.45_0.75": {
+          "n_pairs_same_group": 148,
+          "n_pairs_diff_group": 157,
+          "agreement_same_group": 0.9054,
+          "agreement_diff_group": 0.8025,
+          "gap": 0.1029,
+          "permutation_p": 0.017,
+          "n_permutations": 1000
+        }
+      },
+      "rq2": {
+        "speech_vs_vote_governism": {
+          "BOLSONARO": {
+            "n": 35,
+            "rho": 0.6411,
+            "p": 0.0
+          },
+          "LULA": {
+            "n": 154,
+            "rho": 0.6386,
+            "p": 0.0
+          }
+        },
+        "party_pair_agreement_vs_covoting": {
+          "min_pairs_per_party_pair": 3,
+          "n": 35,
+          "rho": 0.118,
+          "p": 0.4996,
+          "note": "party pairs share parties, so observations are not independent; descriptive only"
+        }
+      },
+      "rq3": {
+        "government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 130,
+            "n_addressed": 105,
+            "net_support": -0.4381,
+            "counts": {
+              "CRITICIZE": 58,
+              "NEUTRAL": 35,
+              "NOT_ADDRESSED": 25,
+              "SUPPORT": 12
+            },
+            "n_hearings": 34,
+            "ci95": [
+              -0.617,
+              -0.2456
+            ]
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 441,
+            "n_addressed": 341,
+            "net_support": 0.1584,
+            "counts": {
+              "CRITICIZE": 65,
+              "MIXED": 9,
+              "NEUTRAL": 148,
+              "NOT_ADDRESSED": 100,
+              "SUPPORT": 119
+            },
+            "n_hearings": 153,
+            "ci95": [
+              0.0673,
+              0.2454
+            ]
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 8,
+            "n_addressed": 8,
+            "net_support": 0.625,
+            "counts": {
+              "NEUTRAL": 3,
+              "SUPPORT": 5
+            },
+            "n_hearings": 8,
+            "ci95": [
+              0.25,
+              1.0
+            ]
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 68,
+            "n_addressed": 66,
+            "net_support": 0.8788,
+            "counts": {
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 58
+            },
+            "n_hearings": 58,
+            "ci95": [
+              0.7969,
+              0.9467
+            ]
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 6,
+            "net_support": 0.1667,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 2
+            },
+            "n_hearings": 7,
+            "ci95": [
+              -0.4,
+              0.7143
+            ]
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.6667,
+              0.6667
+            ]
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 5,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2,
+              "SUPPORT": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.3333,
+              0.8333
+            ]
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 8,
+            "net_support": 0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 5
+            },
+            "n_hearings": 11,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PL|LULA": {
+            "n": 54,
+            "n_addressed": 49,
+            "net_support": -0.6122,
+            "counts": {
+              "CRITICIZE": 36,
+              "MIXED": 4,
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 6
+            },
+            "n_hearings": 36,
+            "ci95": [
+              -0.8039,
+              -0.381
+            ]
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 5,
+            "net_support": 0.6,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.1667,
+              1.0
+            ]
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 17,
+            "net_support": -0.0588,
+            "counts": {
+              "CRITICIZE": 5,
+              "MIXED": 2,
+              "NEUTRAL": 6,
+              "SUPPORT": 4
+            },
+            "n_hearings": 16,
+            "ci95": [
+              -0.3889,
+              0.3125
+            ]
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 5,
+            "net_support": -0.8,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              -0.4
+            ]
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.8333,
+            "counts": {
+              "NEUTRAL": 1,
+              "SUPPORT": 5
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.5,
+              1.0
+            ]
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 4,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 13,
+            "net_support": 0.3846,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 7
+            },
+            "n_hearings": 14,
+            "ci95": [
+              -0.0667,
+              0.8182
+            ]
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 5,
+            "net_support": 0.4,
+            "counts": {
+              "CRITICIZE": 1,
+              "MIXED": 1,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.3333,
+              1.0
+            ]
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 28,
+            "net_support": 0.5,
+            "counts": {
+              "CRITICIZE": 5,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 19
+            },
+            "n_hearings": 29,
+            "ci95": [
+              0.1538,
+              0.8077
+            ]
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 15,
+            "n_addressed": 15,
+            "net_support": -0.9333,
+            "counts": {
+              "CRITICIZE": 14,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 12,
+            "ci95": [
+              -1.0,
+              -0.7692
+            ]
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 65,
+            "net_support": 0.6154,
+            "counts": {
+              "CRITICIZE": 5,
+              "MIXED": 5,
+              "NEUTRAL": 10,
+              "NOT_ADDRESSED": 6,
+              "SUPPORT": 45
+            },
+            "n_hearings": 57,
+            "ci95": [
+              0.459,
+              0.7571
+            ]
+          },
+          "PARTY:PV|LULA": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": 0.6667,
+            "counts": {
+              "NEUTRAL": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 2,
+            "net_support": 0.5,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.5,
+              0.5
+            ]
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 16,
+            "net_support": 0.0625,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 7,
+              "SUPPORT": 5
+            },
+            "n_hearings": 23,
+            "ci95": [
+              -0.3125,
+              0.4375
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 5,
+            "net_support": 0.4,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 2
+            },
+            "n_hearings": 7,
+            "ci95": [
+              0.0,
+              0.8333
+            ]
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": -0.75,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -0.5
+            ]
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 20,
+            "n_addressed": 16,
+            "net_support": -0.25,
+            "counts": {
+              "CRITICIZE": 8,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 4
+            },
+            "n_hearings": 20,
+            "ci95": [
+              -0.625,
+              0.1818
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 5,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "MIXED": 1,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.6,
+              0.6
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "shift_bolsonaro_to_lula": {
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "bolsonaro": -0.4381,
+            "lula": 0.1584,
+            "shift": 0.5965,
+            "n_bolsonaro": 105,
+            "n_lula": 341
+          },
+          "FEDERAL_EXECUTIVE": {
+            "bolsonaro": 0.625,
+            "lula": 0.8788,
+            "shift": 0.2538,
+            "n_bolsonaro": 8,
+            "n_lula": 66
+          },
+          "PARTY:NOVO": {
+            "bolsonaro": -0.5,
+            "lula": -0.6667,
+            "shift": -0.1667,
+            "n_bolsonaro": 2,
+            "n_lula": 6
+          },
+          "PARTY:PCDOB": {
+            "bolsonaro": -0.5,
+            "lula": 0.3333,
+            "shift": 0.8333,
+            "n_bolsonaro": 2,
+            "n_lula": 6
+          },
+          "PARTY:PDT": {
+            "bolsonaro": 0.0,
+            "lula": 0.5,
+            "shift": 0.5,
+            "n_bolsonaro": 1,
+            "n_lula": 8
+          },
+          "PARTY:PL": {
+            "bolsonaro": 1.0,
+            "lula": -0.6122,
+            "shift": -1.6122,
+            "n_bolsonaro": 2,
+            "n_lula": 49
+          },
+          "PARTY:PODEMOS": {
+            "bolsonaro": 1.0,
+            "lula": 0.6,
+            "shift": -0.4,
+            "n_bolsonaro": 1,
+            "n_lula": 5
+          },
+          "PARTY:PP": {
+            "bolsonaro": 0.0,
+            "lula": -0.0588,
+            "shift": -0.0588,
+            "n_bolsonaro": 2,
+            "n_lula": 17
+          },
+          "PARTY:PSB": {
+            "bolsonaro": -0.8,
+            "lula": 0.8333,
+            "shift": 1.6333,
+            "n_bolsonaro": 5,
+            "n_lula": 6
+          },
+          "PARTY:PSD": {
+            "bolsonaro": 0.0,
+            "lula": 0.3846,
+            "shift": 0.3846,
+            "n_bolsonaro": 2,
+            "n_lula": 13
+          },
+          "PARTY:PSDB": {
+            "bolsonaro": -0.5,
+            "lula": 0.4,
+            "shift": 0.9,
+            "n_bolsonaro": 2,
+            "n_lula": 5
+          },
+          "PARTY:PSOL": {
+            "bolsonaro": -1.0,
+            "lula": 0.5,
+            "shift": 1.5,
+            "n_bolsonaro": 1,
+            "n_lula": 28
+          },
+          "PARTY:PT": {
+            "bolsonaro": -0.9333,
+            "lula": 0.6154,
+            "shift": 1.5487,
+            "n_bolsonaro": 15,
+            "n_lula": 65
+          },
+          "PARTY:REPUBLICANOS": {
+            "bolsonaro": 0.5,
+            "lula": 0.0625,
+            "shift": -0.4375,
+            "n_bolsonaro": 2,
+            "n_lula": 16
+          },
+          "PARTY:SOLIDARIEDADE": {
+            "bolsonaro": 1.0,
+            "lula": 0.4,
+            "shift": -0.6,
+            "n_bolsonaro": 1,
+            "n_lula": 5
+          },
+          "PARTY:UNIAO": {
+            "bolsonaro": -0.75,
+            "lula": -0.25,
+            "shift": 0.5,
+            "n_bolsonaro": 4,
+            "n_lula": 16
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "bolsonaro": -0.3333,
+            "lula": 0.0,
+            "shift": 0.3333,
+            "n_bolsonaro": 3,
+            "n_lula": 5
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "bolsonaro": -1.0,
+            "lula": 1.0,
+            "shift": 2.0,
+            "n_bolsonaro": 1,
+            "n_lula": 1
+          }
+        },
+        "government_stance_by_lula_bloc": {
+          "GOVERNMENT|BOLSONARO": {
+            "n": 38,
+            "n_addressed": 34,
+            "net_support": -0.5294,
+            "counts": {
+              "CRITICIZE": 21,
+              "MIXED": 2,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 3
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.7576,
+              -0.2727
+            ]
+          },
+          "GOVERNMENT|LULA": {
+            "n": 216,
+            "n_addressed": 186,
+            "net_support": 0.4194,
+            "counts": {
+              "CRITICIZE": 27,
+              "MIXED": 11,
+              "NEUTRAL": 43,
+              "NOT_ADDRESSED": 30,
+              "SUPPORT": 105
+            },
+            "n_hearings": 145,
+            "ci95": [
+              0.3085,
+              0.525
+            ]
+          },
+          "OPPOSITION|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": 0.25,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 4,
+            "ci95": [
+              -0.5,
+              1.0
+            ]
+          },
+          "OPPOSITION|LULA": {
+            "n": 60,
+            "n_addressed": 55,
+            "net_support": -0.6182,
+            "counts": {
+              "CRITICIZE": 41,
+              "MIXED": 4,
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 7
+            },
+            "n_hearings": 38,
+            "ci95": [
+              -0.7971,
+              -0.3636
+            ]
+          },
+          "PIVOT|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": -0.75,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -0.5
+            ]
+          },
+          "PIVOT|LULA": {
+            "n": 29,
+            "n_addressed": 23,
+            "net_support": -0.1739,
+            "counts": {
+              "CRITICIZE": 10,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 6,
+              "SUPPORT": 6
+            },
+            "n_hearings": 27,
+            "ci95": [
+              -0.4783,
+              0.1739
+            ]
+          }
+        },
+        "shift_by_lula_bloc": {
+          "GOVERNMENT": {
+            "bolsonaro": -0.5294,
+            "lula": 0.4194,
+            "shift": 0.9488,
+            "n_bolsonaro": 34,
+            "n_lula": 186
+          },
+          "OPPOSITION": {
+            "bolsonaro": 0.25,
+            "lula": -0.6182,
+            "shift": -0.8682,
+            "n_bolsonaro": 4,
+            "n_lula": 55
+          },
+          "PIVOT": {
+            "bolsonaro": -0.75,
+            "lula": -0.1739,
+            "shift": 0.5761,
+            "n_bolsonaro": 4,
+            "n_lula": 23
+          }
+        },
+        "previous_government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 130,
+            "n_addressed": 17,
+            "net_support": -0.5294,
+            "counts": {
+              "CRITICIZE": 12,
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 113,
+              "SUPPORT": 3
+            },
+            "n_hearings": 34,
+            "ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 440,
+            "n_addressed": 138,
+            "net_support": -0.8333,
+            "counts": {
+              "CRITICIZE": 118,
+              "MIXED": 2,
+              "NEUTRAL": 15,
+              "NOT_ADDRESSED": 302,
+              "SUPPORT": 3
+            },
+            "n_hearings": 152,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 8,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 68,
+            "n_addressed": 31,
+            "net_support": -0.9032,
+            "counts": {
+              "CRITICIZE": 29,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 37,
+              "SUPPORT": 1
+            },
+            "n_hearings": 58,
+            "ci95": null
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 7,
+              "SUPPORT": 1
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "MIXED": 1,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 3,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 9,
+              "SUPPORT": 1
+            },
+            "n_hearings": 11,
+            "ci95": null
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PL|LULA": {
+            "n": 54,
+            "n_addressed": 17,
+            "net_support": 0.0588,
+            "counts": {
+              "CRITICIZE": 7,
+              "MIXED": 2,
+              "NOT_ADDRESSED": 37,
+              "SUPPORT": 8
+            },
+            "n_hearings": 36,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 9,
+            "net_support": 0.2222,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 8,
+              "SUPPORT": 5
+            },
+            "n_hearings": 16,
+            "ci95": null
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 5,
+            "ci95": null
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 16
+            },
+            "n_hearings": 14,
+            "ci95": null
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 4,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 21,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 21,
+              "NOT_ADDRESSED": 12
+            },
+            "n_hearings": 29,
+            "ci95": null
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 15,
+            "n_addressed": 4,
+            "net_support": 0.75,
+            "counts": {
+              "MIXED": 1,
+              "NOT_ADDRESSED": 11,
+              "SUPPORT": 3
+            },
+            "n_hearings": 12,
+            "ci95": null
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 36,
+            "net_support": -0.9722,
+            "counts": {
+              "CRITICIZE": 35,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 35
+            },
+            "n_hearings": 57,
+            "ci95": null
+          },
+          "PARTY:PV|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 21
+            },
+            "n_hearings": 23,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 20,
+            "n_addressed": 6,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 5,
+              "NOT_ADDRESSED": 14,
+              "SUPPORT": 1
+            },
+            "n_hearings": 20,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 7
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "recurrent_actors_both_periods": [
+          {
+            "actor_id": "adriana ventura",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "alexandre kalache",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "augusto coutinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "bia kicis",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 1.0,
+            "lula_n": 4,
+            "lula_net_support": -0.75
+          },
+          {
+            "actor_id": "danilo forte",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": -0.3333
+          },
+          {
+            "actor_id": "diego alves",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "dr zacharias calil",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": 0.6667
+          },
+          {
+            "actor_id": "erika kokay",
+            "bolsonaro_n": 5,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 11,
+            "lula_net_support": 0.4444
+          },
+          {
+            "actor_id": "lafayette de andrada",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 3,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "lidice da mata",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "marcelo de souza do nascimento",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "paulo teixeira",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "rodrigo agostinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.5
+          },
+          {
+            "actor_id": "rogerio correia",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "sidney leite",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "taliria petrone",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": 0.3333
+          },
+          {
+            "actor_id": "vanessa pirolo",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "vitor lippi",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "ze neto",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "ze silva",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          }
+        ]
+      }
+    },
+    "Qwen/Qwen2.5-72B-Instruct|lds_summary": {
+      "rq1": {
+        "party": {
+          "n_pairs_same_group": 9,
+          "n_pairs_diff_group": 43,
+          "agreement_same_group": 1.0,
+          "agreement_diff_group": 0.8605,
+          "gap": 0.1395,
+          "permutation_p": 0.4025,
+          "n_permutations": 5000
+        },
+        "bloc": {
+          "n_pairs_same_group": 27,
+          "n_pairs_diff_group": 25,
+          "agreement_same_group": 0.963,
+          "agreement_diff_group": 0.8,
+          "gap": 0.163,
+          "permutation_p": 0.6421,
+          "n_permutations": 5000
+        },
+        "bloc_sensitivity_0.35_0.65": {
+          "n_pairs_same_group": 32,
+          "n_pairs_diff_group": 20,
+          "agreement_same_group": 0.9375,
+          "agreement_diff_group": 0.8,
+          "gap": 0.1375,
+          "permutation_p": 0.5564,
+          "n_permutations": 1000
+        },
+        "bloc_sensitivity_0.45_0.75": {
+          "n_pairs_same_group": 25,
+          "n_pairs_diff_group": 27,
+          "agreement_same_group": 0.96,
+          "agreement_diff_group": 0.8148,
+          "gap": 0.1452,
+          "permutation_p": 0.6583,
+          "n_permutations": 1000
+        }
+      },
+      "rq2": {
+        "speech_vs_vote_governism": {
+          "BOLSONARO": {
+            "n": 16,
+            "rho": 0.3309,
+            "p": 0.2106
+          },
+          "LULA": {
+            "n": 76,
+            "rho": 0.3337,
+            "p": 0.0032
+          }
+        },
+        "party_pair_agreement_vs_covoting": {
+          "min_pairs_per_party_pair": 3,
+          "n": 4,
+          "rho": null,
+          "p": null,
+          "note": "party pairs share parties, so observations are not independent; descriptive only"
+        }
+      },
+      "rq3": {
+        "government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 144,
+            "n_addressed": 50,
+            "net_support": -0.7,
+            "counts": {
+              "CRITICIZE": 39,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 94,
+              "SUPPORT": 4
+            },
+            "n_hearings": 35,
+            "ci95": [
+              -0.8636,
+              -0.4706
+            ]
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 469,
+            "n_addressed": 103,
+            "net_support": -0.1553,
+            "counts": {
+              "CRITICIZE": 40,
+              "NEUTRAL": 39,
+              "NOT_ADDRESSED": 366,
+              "SUPPORT": 24
+            },
+            "n_hearings": 156,
+            "ci95": [
+              -0.3061,
+              0.0
+            ]
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 9,
+            "n_addressed": 5,
+            "net_support": 0.0,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 9,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 70,
+            "n_addressed": 37,
+            "net_support": 0.3514,
+            "counts": {
+              "CRITICIZE": 4,
+              "MIXED": 2,
+              "NEUTRAL": 14,
+              "NOT_ADDRESSED": 33,
+              "SUPPORT": 17
+            },
+            "n_hearings": 59,
+            "ci95": [
+              0.1282,
+              0.5588
+            ]
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 7,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 4,
+            "net_support": -0.75,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              -0.25
+            ]
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "MIXED": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 3,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 11,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PL|LULA": {
+            "n": 55,
+            "n_addressed": 22,
+            "net_support": -0.5455,
+            "counts": {
+              "CRITICIZE": 13,
+              "MIXED": 2,
+              "NEUTRAL": 6,
+              "NOT_ADDRESSED": 33,
+              "SUPPORT": 1
+            },
+            "n_hearings": 36,
+            "ci95": [
+              -0.75,
+              -0.3333
+            ]
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 5,
+            "net_support": -0.4,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.3333
+            ]
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 10,
+            "net_support": -0.2,
+            "counts": {
+              "CRITICIZE": 5,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 7,
+              "SUPPORT": 3
+            },
+            "n_hearings": 16,
+            "ci95": [
+              -0.8571,
+              0.4
+            ]
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 4,
+            "net_support": -0.25,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 14,
+              "SUPPORT": 1
+            },
+            "n_hearings": 14,
+            "ci95": [
+              -1.0,
+              1.0
+            ]
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 12,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 6,
+              "NOT_ADDRESSED": 21,
+              "SUPPORT": 3
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.4167,
+              0.4545
+            ]
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 16,
+            "n_addressed": 7,
+            "net_support": -0.7143,
+            "counts": {
+              "CRITICIZE": 5,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 9
+            },
+            "n_hearings": 13,
+            "ci95": [
+              -1.0,
+              -0.3333
+            ]
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 17,
+            "net_support": -0.0588,
+            "counts": {
+              "CRITICIZE": 6,
+              "NEUTRAL": 6,
+              "NOT_ADDRESSED": 54,
+              "SUPPORT": 5
+            },
+            "n_hearings": 57,
+            "ci95": [
+              -0.4211,
+              0.3636
+            ]
+          },
+          "PARTY:PV|LULA": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 4,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 4,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 19,
+              "SUPPORT": 1
+            },
+            "n_hearings": 23,
+            "ci95": [
+              -1.0,
+              0.6
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 7,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 21,
+            "n_addressed": 4,
+            "net_support": -0.75,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 17
+            },
+            "n_hearings": 20,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "shift_bolsonaro_to_lula": {
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "bolsonaro": -0.7,
+            "lula": -0.1553,
+            "shift": 0.5447,
+            "n_bolsonaro": 50,
+            "n_lula": 103
+          },
+          "FEDERAL_EXECUTIVE": {
+            "bolsonaro": 0.0,
+            "lula": 0.3514,
+            "shift": 0.3514,
+            "n_bolsonaro": 5,
+            "n_lula": 37
+          },
+          "PARTY:NOVO": {
+            "bolsonaro": -1.0,
+            "lula": -0.75,
+            "shift": 0.25,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          },
+          "PARTY:PCDOB": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 2
+          },
+          "PARTY:PODEMOS": {
+            "bolsonaro": 0.0,
+            "lula": -0.4,
+            "shift": -0.4,
+            "n_bolsonaro": 1,
+            "n_lula": 5
+          },
+          "PARTY:PP": {
+            "bolsonaro": 0.0,
+            "lula": -0.2,
+            "shift": -0.2,
+            "n_bolsonaro": 1,
+            "n_lula": 10
+          },
+          "PARTY:PSB": {
+            "bolsonaro": -0.5,
+            "lula": 1.0,
+            "shift": 1.5,
+            "n_bolsonaro": 2,
+            "n_lula": 1
+          },
+          "PARTY:PSDB": {
+            "bolsonaro": -1.0,
+            "lula": -0.5,
+            "shift": 0.5,
+            "n_bolsonaro": 1,
+            "n_lula": 2
+          },
+          "PARTY:PSOL": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 12
+          },
+          "PARTY:PT": {
+            "bolsonaro": -0.7143,
+            "lula": -0.0588,
+            "shift": 0.6555,
+            "n_bolsonaro": 7,
+            "n_lula": 17
+          },
+          "PARTY:REPUBLICANOS": {
+            "bolsonaro": 0.0,
+            "lula": -0.5,
+            "shift": -0.5,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          },
+          "PARTY:UNIAO": {
+            "bolsonaro": -1.0,
+            "lula": -0.75,
+            "shift": 0.25,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          }
+        },
+        "government_stance_by_lula_bloc": {
+          "GOVERNMENT|BOLSONARO": {
+            "n": 39,
+            "n_addressed": 15,
+            "net_support": -0.6,
+            "counts": {
+              "CRITICIZE": 9,
+              "NEUTRAL": 6,
+              "NOT_ADDRESSED": 24
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.8462,
+              -0.3333
+            ]
+          },
+          "GOVERNMENT|LULA": {
+            "n": 217,
+            "n_addressed": 66,
+            "net_support": -0.1212,
+            "counts": {
+              "CRITICIZE": 24,
+              "MIXED": 2,
+              "NEUTRAL": 24,
+              "NOT_ADDRESSED": 151,
+              "SUPPORT": 16
+            },
+            "n_hearings": 145,
+            "ci95": [
+              -0.3281,
+              0.0843
+            ]
+          },
+          "OPPOSITION|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "OPPOSITION|LULA": {
+            "n": 61,
+            "n_addressed": 26,
+            "net_support": -0.5769,
+            "counts": {
+              "CRITICIZE": 16,
+              "MIXED": 2,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 35,
+              "SUPPORT": 1
+            },
+            "n_hearings": 38,
+            "ci95": [
+              -0.7778,
+              -0.3571
+            ]
+          },
+          "PIVOT|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PIVOT|LULA": {
+            "n": 30,
+            "n_addressed": 6,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 24
+            },
+            "n_hearings": 27,
+            "ci95": [
+              -1.0,
+              -0.25
+            ]
+          }
+        },
+        "shift_by_lula_bloc": {
+          "GOVERNMENT": {
+            "bolsonaro": -0.6,
+            "lula": -0.1212,
+            "shift": 0.4788,
+            "n_bolsonaro": 15,
+            "n_lula": 66
+          },
+          "OPPOSITION": {
+            "bolsonaro": -1.0,
+            "lula": -0.5769,
+            "shift": 0.4231,
+            "n_bolsonaro": 1,
+            "n_lula": 26
+          },
+          "PIVOT": {
+            "bolsonaro": -1.0,
+            "lula": -0.6667,
+            "shift": 0.3333,
+            "n_bolsonaro": 1,
+            "n_lula": 6
+          }
+        },
+        "previous_government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 144,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 142,
+              "SUPPORT": 1
+            },
+            "n_hearings": 35,
+            "ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 470,
+            "n_addressed": 11,
+            "net_support": -0.7273,
+            "counts": {
+              "CRITICIZE": 9,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 459,
+              "SUPPORT": 1
+            },
+            "n_hearings": 156,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 9,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 9,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 70,
+            "n_addressed": 7,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 7,
+              "NOT_ADDRESSED": 63
+            },
+            "n_hearings": 59,
+            "ci95": null
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 11
+            },
+            "n_hearings": 11,
+            "ci95": null
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PL|LULA": {
+            "n": 55,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 54
+            },
+            "n_hearings": 36,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "MIXED": 1,
+              "NOT_ADDRESSED": 16
+            },
+            "n_hearings": 16,
+            "ci95": null
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 5,
+            "ci95": null
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 17
+            },
+            "n_hearings": 14,
+            "ci95": null
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 33
+            },
+            "n_hearings": 29,
+            "ci95": null
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 16,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 16
+            },
+            "n_hearings": 13,
+            "ci95": null
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 3,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 68
+            },
+            "n_hearings": 57,
+            "ci95": null
+          },
+          "PARTY:PV|LULA": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 23
+            },
+            "n_hearings": 23,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 7
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 21,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 21
+            },
+            "n_hearings": 20,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "recurrent_actors_both_periods": [
+          {
+            "actor_id": "adriana ventura",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "alexandre kalache",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "augusto coutinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "bia kicis",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 4,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "carlos zarattini",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "danilo forte",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "diego alves",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "dr zacharias calil",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "erika kokay",
+            "bolsonaro_n": 5,
+            "bolsonaro_net_support": -0.5,
+            "lula_n": 11,
+            "lula_net_support": -0.3333
+          },
+          {
+            "actor_id": "lafayette de andrada",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "lidice da mata",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "marcel van hattem",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": -0.5
+          },
+          {
+            "actor_id": "marcelo de souza do nascimento",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "paulo teixeira",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "rodrigo agostinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "rogerio correia",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "sidney leite",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "taliria petrone",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "vanessa pirolo",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "vitor lippi",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "ze neto",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "ze silva",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          }
+        ]
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo|speech": {
+      "rq1": {
+        "party": {
+          "n_pairs_same_group": 83,
+          "n_pairs_diff_group": 356,
+          "agreement_same_group": 0.8434,
+          "agreement_diff_group": 0.7753,
+          "gap": 0.0681,
+          "permutation_p": 0.5361,
+          "n_permutations": 5000
+        },
+        "bloc": {
+          "n_pairs_same_group": 227,
+          "n_pairs_diff_group": 212,
+          "agreement_same_group": 0.8018,
+          "agreement_diff_group": 0.7736,
+          "gap": 0.0282,
+          "permutation_p": 0.5039,
+          "n_permutations": 5000
+        },
+        "bloc_sensitivity_0.35_0.65": {
+          "n_pairs_same_group": 273,
+          "n_pairs_diff_group": 166,
+          "agreement_same_group": 0.8022,
+          "agreement_diff_group": 0.7651,
+          "gap": 0.0371,
+          "permutation_p": 0.4615,
+          "n_permutations": 1000
+        },
+        "bloc_sensitivity_0.45_0.75": {
+          "n_pairs_same_group": 213,
+          "n_pairs_diff_group": 226,
+          "agreement_same_group": 0.7887,
+          "agreement_diff_group": 0.7876,
+          "gap": 0.0011,
+          "permutation_p": 0.5095,
+          "n_permutations": 1000
+        }
+      },
+      "rq2": {
+        "speech_vs_vote_governism": {
+          "BOLSONARO": {
+            "n": 37,
+            "rho": 0.6195,
+            "p": 0.0
+          },
+          "LULA": {
+            "n": 160,
+            "rho": 0.6951,
+            "p": 0.0
+          }
+        },
+        "party_pair_agreement_vs_covoting": {
+          "min_pairs_per_party_pair": 3,
+          "n": 48,
+          "rho": -0.1144,
+          "p": 0.4387,
+          "note": "party pairs share parties, so observations are not independent; descriptive only"
+        }
+      },
+      "rq3": {
+        "government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 130,
+            "n_addressed": 117,
+            "net_support": -0.4274,
+            "counts": {
+              "CRITICIZE": 57,
+              "NEUTRAL": 53,
+              "NOT_ADDRESSED": 13,
+              "SUPPORT": 7
+            },
+            "n_hearings": 34,
+            "ci95": [
+              -0.6066,
+              -0.2458
+            ]
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 441,
+            "n_addressed": 395,
+            "net_support": 0.081,
+            "counts": {
+              "CRITICIZE": 51,
+              "NEUTRAL": 261,
+              "NOT_ADDRESSED": 46,
+              "SUPPORT": 83
+            },
+            "n_hearings": 153,
+            "ci95": [
+              0.0105,
+              0.1504
+            ]
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 8,
+            "n_addressed": 8,
+            "net_support": 0.125,
+            "counts": {
+              "NEUTRAL": 7,
+              "SUPPORT": 1
+            },
+            "n_hearings": 8,
+            "ci95": [
+              0.0,
+              0.375
+            ]
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 68,
+            "n_addressed": 67,
+            "net_support": 0.7761,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 13,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 53
+            },
+            "n_hearings": 58,
+            "ci95": [
+              0.6615,
+              0.8788
+            ]
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 6,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 7,
+            "ci95": [
+              -0.5,
+              0.4286
+            ]
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 5,
+            "net_support": -0.4,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.8333,
+              0.0
+            ]
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 5,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.1667,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 3,
+              "SUPPORT": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -0.3333,
+              0.6667
+            ]
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 8,
+            "net_support": 0.125,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 5,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 2
+            },
+            "n_hearings": 11,
+            "ci95": [
+              -0.2857,
+              0.5556
+            ]
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PL|LULA": {
+            "n": 54,
+            "n_addressed": 50,
+            "net_support": -0.72,
+            "counts": {
+              "CRITICIZE": 38,
+              "MIXED": 2,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 2
+            },
+            "n_hearings": 36,
+            "ci95": [
+              -0.8654,
+              -0.5319
+            ]
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 5,
+            "net_support": 0.4,
+            "counts": {
+              "NEUTRAL": 3,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.8333
+            ]
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": 0.5,
+            "counts": {
+              "NEUTRAL": 1,
+              "SUPPORT": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 17,
+            "net_support": 0.0588,
+            "counts": {
+              "CRITICIZE": 3,
+              "MIXED": 1,
+              "NEUTRAL": 9,
+              "SUPPORT": 4
+            },
+            "n_hearings": 16,
+            "ci95": [
+              -0.2353,
+              0.375
+            ]
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 4,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 4,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.6667,
+            "counts": {
+              "NEUTRAL": 2,
+              "SUPPORT": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.3333,
+              1.0
+            ]
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 4,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 16,
+            "net_support": 0.125,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 10,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 4
+            },
+            "n_hearings": 14,
+            "ci95": [
+              -0.1765,
+              0.4118
+            ]
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 6,
+            "net_support": 0.6667,
+            "counts": {
+              "NEUTRAL": 2,
+              "SUPPORT": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.3333,
+              1.0
+            ]
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 30,
+            "net_support": 0.1333,
+            "counts": {
+              "CRITICIZE": 7,
+              "NEUTRAL": 12,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 11
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.1613,
+              0.4194
+            ]
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 15,
+            "n_addressed": 15,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 15
+            },
+            "n_hearings": 12,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 69,
+            "net_support": 0.5362,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 24,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 41
+            },
+            "n_hearings": 57,
+            "ci95": [
+              0.3881,
+              0.6866
+            ]
+          },
+          "PARTY:PV|LULA": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": 0.3333,
+            "counts": {
+              "NEUTRAL": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": 0.3333,
+            "counts": {
+              "NEUTRAL": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.5
+            ]
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 20,
+            "net_support": 0.1,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 14,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 4
+            },
+            "n_hearings": 23,
+            "ci95": [
+              -0.1364,
+              0.3333
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 7,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 5,
+              "SUPPORT": 1
+            },
+            "n_hearings": 7,
+            "ci95": [
+              -0.4286,
+              0.4286
+            ]
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 4
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 20,
+            "n_addressed": 17,
+            "net_support": -0.1176,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 11,
+              "NOT_ADDRESSED": 3,
+              "SUPPORT": 2
+            },
+            "n_hearings": 20,
+            "ci95": [
+              -0.3846,
+              0.1667
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 7,
+            "net_support": 0.2857,
+            "counts": {
+              "NEUTRAL": 5,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.6
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              1.0,
+              1.0
+            ]
+          }
+        },
+        "shift_bolsonaro_to_lula": {
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "bolsonaro": -0.4274,
+            "lula": 0.081,
+            "shift": 0.5084,
+            "n_bolsonaro": 117,
+            "n_lula": 395
+          },
+          "FEDERAL_EXECUTIVE": {
+            "bolsonaro": 0.125,
+            "lula": 0.7761,
+            "shift": 0.6511,
+            "n_bolsonaro": 8,
+            "n_lula": 67
+          },
+          "PARTY:NOVO": {
+            "bolsonaro": -0.5,
+            "lula": -0.6667,
+            "shift": -0.1667,
+            "n_bolsonaro": 2,
+            "n_lula": 6
+          },
+          "PARTY:PCDOB": {
+            "bolsonaro": -1.0,
+            "lula": 0.1667,
+            "shift": 1.1667,
+            "n_bolsonaro": 2,
+            "n_lula": 6
+          },
+          "PARTY:PDT": {
+            "bolsonaro": -0.5,
+            "lula": 0.125,
+            "shift": 0.625,
+            "n_bolsonaro": 2,
+            "n_lula": 8
+          },
+          "PARTY:PL": {
+            "bolsonaro": 1.0,
+            "lula": -0.72,
+            "shift": -1.72,
+            "n_bolsonaro": 2,
+            "n_lula": 50
+          },
+          "PARTY:PODEMOS": {
+            "bolsonaro": 1.0,
+            "lula": 0.4,
+            "shift": -0.6,
+            "n_bolsonaro": 1,
+            "n_lula": 5
+          },
+          "PARTY:PP": {
+            "bolsonaro": 0.5,
+            "lula": 0.0588,
+            "shift": -0.4412,
+            "n_bolsonaro": 2,
+            "n_lula": 17
+          },
+          "PARTY:PSB": {
+            "bolsonaro": -1.0,
+            "lula": 0.6667,
+            "shift": 1.6667,
+            "n_bolsonaro": 4,
+            "n_lula": 6
+          },
+          "PARTY:PSD": {
+            "bolsonaro": -0.3333,
+            "lula": 0.125,
+            "shift": 0.4583,
+            "n_bolsonaro": 3,
+            "n_lula": 16
+          },
+          "PARTY:PSDB": {
+            "bolsonaro": 0.0,
+            "lula": 0.6667,
+            "shift": 0.6667,
+            "n_bolsonaro": 2,
+            "n_lula": 6
+          },
+          "PARTY:PSOL": {
+            "bolsonaro": -1.0,
+            "lula": 0.1333,
+            "shift": 1.1333,
+            "n_bolsonaro": 1,
+            "n_lula": 30
+          },
+          "PARTY:PT": {
+            "bolsonaro": -1.0,
+            "lula": 0.5362,
+            "shift": 1.5362,
+            "n_bolsonaro": 15,
+            "n_lula": 69
+          },
+          "PARTY:REPUBLICANOS": {
+            "bolsonaro": 0.3333,
+            "lula": 0.1,
+            "shift": -0.2333,
+            "n_bolsonaro": 3,
+            "n_lula": 20
+          },
+          "PARTY:SOLIDARIEDADE": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 7
+          },
+          "PARTY:UNIAO": {
+            "bolsonaro": -1.0,
+            "lula": -0.1176,
+            "shift": 0.8824,
+            "n_bolsonaro": 4,
+            "n_lula": 17
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "bolsonaro": -0.3333,
+            "lula": 0.2857,
+            "shift": 0.619,
+            "n_bolsonaro": 3,
+            "n_lula": 7
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "bolsonaro": -1.0,
+            "lula": 1.0,
+            "shift": 2.0,
+            "n_bolsonaro": 1,
+            "n_lula": 1
+          }
+        },
+        "government_stance_by_lula_bloc": {
+          "GOVERNMENT|BOLSONARO": {
+            "n": 38,
+            "n_addressed": 36,
+            "net_support": -0.6111,
+            "counts": {
+              "CRITICIZE": 25,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 2,
+              "SUPPORT": 3
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.8378,
+              -0.3529
+            ]
+          },
+          "GOVERNMENT|LULA": {
+            "n": 216,
+            "n_addressed": 201,
+            "net_support": 0.2736,
+            "counts": {
+              "CRITICIZE": 25,
+              "MIXED": 1,
+              "NEUTRAL": 95,
+              "NOT_ADDRESSED": 15,
+              "SUPPORT": 80
+            },
+            "n_hearings": 145,
+            "ci95": [
+              0.1818,
+              0.365
+            ]
+          },
+          "OPPOSITION|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": 0.25,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 1,
+              "SUPPORT": 2
+            },
+            "n_hearings": 4,
+            "ci95": [
+              -0.5,
+              1.0
+            ]
+          },
+          "OPPOSITION|LULA": {
+            "n": 60,
+            "n_addressed": 56,
+            "net_support": -0.7143,
+            "counts": {
+              "CRITICIZE": 43,
+              "MIXED": 2,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 3
+            },
+            "n_hearings": 38,
+            "ci95": [
+              -0.8551,
+              -0.5111
+            ]
+          },
+          "PIVOT|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 4,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 4
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PIVOT|LULA": {
+            "n": 29,
+            "n_addressed": 24,
+            "net_support": -0.125,
+            "counts": {
+              "CRITICIZE": 6,
+              "NEUTRAL": 15,
+              "NOT_ADDRESSED": 5,
+              "SUPPORT": 3
+            },
+            "n_hearings": 27,
+            "ci95": [
+              -0.36,
+              0.12
+            ]
+          }
+        },
+        "shift_by_lula_bloc": {
+          "GOVERNMENT": {
+            "bolsonaro": -0.6111,
+            "lula": 0.2736,
+            "shift": 0.8847,
+            "n_bolsonaro": 36,
+            "n_lula": 201
+          },
+          "OPPOSITION": {
+            "bolsonaro": 0.25,
+            "lula": -0.7143,
+            "shift": -0.9643,
+            "n_bolsonaro": 4,
+            "n_lula": 56
+          },
+          "PIVOT": {
+            "bolsonaro": -1.0,
+            "lula": -0.125,
+            "shift": 0.875,
+            "n_bolsonaro": 4,
+            "n_lula": 24
+          }
+        },
+        "previous_government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 130,
+            "n_addressed": 7,
+            "net_support": 0.4286,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 123,
+              "SUPPORT": 5
+            },
+            "n_hearings": 34,
+            "ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 441,
+            "n_addressed": 104,
+            "net_support": -0.8558,
+            "counts": {
+              "CRITICIZE": 94,
+              "NEUTRAL": 5,
+              "NOT_ADDRESSED": 337,
+              "SUPPORT": 5
+            },
+            "n_hearings": 153,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 8,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 68,
+            "n_addressed": 22,
+            "net_support": -0.8636,
+            "counts": {
+              "CRITICIZE": 20,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 46,
+              "SUPPORT": 1
+            },
+            "n_hearings": 58,
+            "ci95": null
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 7
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 10
+            },
+            "n_hearings": 11,
+            "ci95": null
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PL|LULA": {
+            "n": 54,
+            "n_addressed": 18,
+            "net_support": 0.5,
+            "counts": {
+              "CRITICIZE": 4,
+              "MIXED": 1,
+              "NOT_ADDRESSED": 36,
+              "SUPPORT": 13
+            },
+            "n_hearings": 36,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 7,
+            "net_support": 0.2857,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 10,
+              "SUPPORT": 4
+            },
+            "n_hearings": 16,
+            "ci95": null
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 5,
+            "ci95": null
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 17
+            },
+            "n_hearings": 14,
+            "ci95": null
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 20,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 20,
+              "NOT_ADDRESSED": 13
+            },
+            "n_hearings": 29,
+            "ci95": null
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 15,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 14,
+              "SUPPORT": 1
+            },
+            "n_hearings": 12,
+            "ci95": null
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 32,
+            "net_support": -0.9375,
+            "counts": {
+              "CRITICIZE": 31,
+              "NOT_ADDRESSED": 39,
+              "SUPPORT": 1
+            },
+            "n_hearings": 57,
+            "ci95": null
+          },
+          "PARTY:PV|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 3,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 20
+            },
+            "n_hearings": 23,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 20,
+            "n_addressed": 5,
+            "net_support": 0.2,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 15,
+              "SUPPORT": 3
+            },
+            "n_hearings": 20,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "SUPPORT": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "recurrent_actors_both_periods": [
+          {
+            "actor_id": "adriana ventura",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "alexandre kalache",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "augusto coutinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "bia kicis",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 1.0,
+            "lula_n": 4,
+            "lula_net_support": -0.75
+          },
+          {
+            "actor_id": "danilo forte",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": -0.6667
+          },
+          {
+            "actor_id": "diego alves",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "dr zacharias calil",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "erika kokay",
+            "bolsonaro_n": 5,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 11,
+            "lula_net_support": 0.4545
+          },
+          {
+            "actor_id": "lafayette de andrada",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 3,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "lidice da mata",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "marcelo de souza do nascimento",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "paulo teixeira",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "rodrigo agostinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "rogerio correia",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "sidney leite",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "taliria petrone",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": -0.3333
+          },
+          {
+            "actor_id": "vanessa pirolo",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "vitor lippi",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 2,
+            "lula_net_support": 0.5
+          },
+          {
+            "actor_id": "ze neto",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "ze silva",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.5
+          }
+        ]
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo|lds_summary": {
+      "rq1": {
+        "party": {
+          "n_pairs_same_group": 23,
+          "n_pairs_diff_group": 84,
+          "agreement_same_group": 0.913,
+          "agreement_diff_group": 0.8452,
+          "gap": 0.0678,
+          "permutation_p": 0.1936,
+          "n_permutations": 5000
+        },
+        "bloc": {
+          "n_pairs_same_group": 49,
+          "n_pairs_diff_group": 58,
+          "agreement_same_group": 0.9184,
+          "agreement_diff_group": 0.8103,
+          "gap": 0.108,
+          "permutation_p": 0.2769,
+          "n_permutations": 5000
+        },
+        "bloc_sensitivity_0.35_0.65": {
+          "n_pairs_same_group": 58,
+          "n_pairs_diff_group": 49,
+          "agreement_same_group": 0.9655,
+          "agreement_diff_group": 0.7347,
+          "gap": 0.2308,
+          "permutation_p": 0.0839,
+          "n_permutations": 1000
+        },
+        "bloc_sensitivity_0.45_0.75": {
+          "n_pairs_same_group": 46,
+          "n_pairs_diff_group": 61,
+          "agreement_same_group": 0.913,
+          "agreement_diff_group": 0.8197,
+          "gap": 0.0934,
+          "permutation_p": 0.2747,
+          "n_permutations": 1000
+        }
+      },
+      "rq2": {
+        "speech_vs_vote_governism": {
+          "BOLSONARO": {
+            "n": 18,
+            "rho": 0.3067,
+            "p": 0.2158
+          },
+          "LULA": {
+            "n": 91,
+            "rho": 0.3936,
+            "p": 0.0001
+          }
+        },
+        "party_pair_agreement_vs_covoting": {
+          "min_pairs_per_party_pair": 3,
+          "n": 7,
+          "rho": 0.6667,
+          "p": 0.1019,
+          "note": "party pairs share parties, so observations are not independent; descriptive only"
+        }
+      },
+      "rq3": {
+        "government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 144,
+            "n_addressed": 69,
+            "net_support": -0.7101,
+            "counts": {
+              "CRITICIZE": 52,
+              "NEUTRAL": 14,
+              "NOT_ADDRESSED": 75,
+              "SUPPORT": 3
+            },
+            "n_hearings": 35,
+            "ci95": [
+              -0.8375,
+              -0.5606
+            ]
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 470,
+            "n_addressed": 122,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 23,
+              "NEUTRAL": 76,
+              "NOT_ADDRESSED": 348,
+              "SUPPORT": 23
+            },
+            "n_hearings": 156,
+            "ci95": [
+              -0.1193,
+              0.1237
+            ]
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 9,
+            "n_addressed": 5,
+            "net_support": -0.2,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 9,
+            "ci95": [
+              -0.6667,
+              0.0
+            ]
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 70,
+            "n_addressed": 42,
+            "net_support": 0.381,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 22,
+              "NOT_ADDRESSED": 28,
+              "SUPPORT": 18
+            },
+            "n_hearings": 59,
+            "ci95": [
+              0.2143,
+              0.561
+            ]
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 3,
+            "net_support": -0.3333,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 7,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 3,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 3,
+            "net_support": -0.6667,
+            "counts": {
+              "CRITICIZE": 2,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              0.0
+            ]
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1,
+              "SUPPORT": 1
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              1.0
+            ]
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 3,
+            "net_support": 0.3333,
+            "counts": {
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 8,
+              "SUPPORT": 1
+            },
+            "n_hearings": 11,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PL|LULA": {
+            "n": 55,
+            "n_addressed": 28,
+            "net_support": -0.6429,
+            "counts": {
+              "CRITICIZE": 19,
+              "MIXED": 1,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 27,
+              "SUPPORT": 1
+            },
+            "n_hearings": 36,
+            "ci95": [
+              -0.8125,
+              -0.45
+            ]
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 4,
+            "net_support": -0.75,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 6,
+            "ci95": [
+              -1.0,
+              -0.25
+            ]
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 11,
+            "net_support": -0.2727,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 6,
+              "NOT_ADDRESSED": 6,
+              "SUPPORT": 1
+            },
+            "n_hearings": 16,
+            "ci95": [
+              -0.6,
+              0.125
+            ]
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 3,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 4,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 8,
+            "net_support": -0.375,
+            "counts": {
+              "CRITICIZE": 3,
+              "NEUTRAL": 5,
+              "NOT_ADDRESSED": 10
+            },
+            "n_hearings": 14,
+            "ci95": [
+              -0.75,
+              0.0
+            ]
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 2,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 2,
+            "net_support": 0.5,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 4,
+              "SUPPORT": 1
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 16,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 4,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 17,
+              "SUPPORT": 4
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -0.3636,
+              0.3333
+            ]
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 16,
+            "n_addressed": 7,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 7,
+              "NOT_ADDRESSED": 9
+            },
+            "n_hearings": 13,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 21,
+            "net_support": -0.1429,
+            "counts": {
+              "CRITICIZE": 10,
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 50,
+              "SUPPORT": 7
+            },
+            "n_hearings": 57,
+            "ci95": [
+              -0.5556,
+              0.2857
+            ]
+          },
+          "PARTY:PV|LULA": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 4,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 4,
+            "net_support": -0.5,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 19,
+              "SUPPORT": 1
+            },
+            "n_hearings": 23,
+            "ci95": [
+              -1.0,
+              0.6
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1
+            },
+            "n_hearings": 1,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 7,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 21,
+            "n_addressed": 4,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 4,
+              "NOT_ADDRESSED": 17
+            },
+            "n_hearings": 20,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 1,
+            "net_support": 0.0,
+            "counts": {
+              "NEUTRAL": 1,
+              "NOT_ADDRESSED": 7
+            },
+            "n_hearings": 6,
+            "ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "shift_bolsonaro_to_lula": {
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "bolsonaro": -0.7101,
+            "lula": 0.0,
+            "shift": 0.7101,
+            "n_bolsonaro": 69,
+            "n_lula": 122
+          },
+          "FEDERAL_EXECUTIVE": {
+            "bolsonaro": -0.2,
+            "lula": 0.381,
+            "shift": 0.581,
+            "n_bolsonaro": 5,
+            "n_lula": 42
+          },
+          "PARTY:NOVO": {
+            "bolsonaro": -1.0,
+            "lula": -0.6667,
+            "shift": 0.3333,
+            "n_bolsonaro": 1,
+            "n_lula": 3
+          },
+          "PARTY:PCDOB": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 2
+          },
+          "PARTY:PL": {
+            "bolsonaro": -1.0,
+            "lula": -0.6429,
+            "shift": 0.3571,
+            "n_bolsonaro": 1,
+            "n_lula": 28
+          },
+          "PARTY:PODEMOS": {
+            "bolsonaro": 0.0,
+            "lula": -0.75,
+            "shift": -0.75,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          },
+          "PARTY:PSB": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 3,
+            "n_lula": 2
+          },
+          "PARTY:PSD": {
+            "bolsonaro": -1.0,
+            "lula": -0.375,
+            "shift": 0.625,
+            "n_bolsonaro": 1,
+            "n_lula": 8
+          },
+          "PARTY:PSDB": {
+            "bolsonaro": -1.0,
+            "lula": 0.5,
+            "shift": 1.5,
+            "n_bolsonaro": 1,
+            "n_lula": 2
+          },
+          "PARTY:PSOL": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 16
+          },
+          "PARTY:PT": {
+            "bolsonaro": -1.0,
+            "lula": -0.1429,
+            "shift": 0.8571,
+            "n_bolsonaro": 7,
+            "n_lula": 21
+          },
+          "PARTY:REPUBLICANOS": {
+            "bolsonaro": 0.0,
+            "lula": -0.5,
+            "shift": -0.5,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          },
+          "PARTY:SOLIDARIEDADE": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 2
+          },
+          "PARTY:UNIAO": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 4
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "bolsonaro": -1.0,
+            "lula": 0.0,
+            "shift": 1.0,
+            "n_bolsonaro": 1,
+            "n_lula": 1
+          }
+        },
+        "government_stance_by_lula_bloc": {
+          "GOVERNMENT|BOLSONARO": {
+            "n": 39,
+            "n_addressed": 17,
+            "net_support": -0.8824,
+            "counts": {
+              "CRITICIZE": 15,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 22
+            },
+            "n_hearings": 29,
+            "ci95": [
+              -1.0,
+              -0.6923
+            ]
+          },
+          "GOVERNMENT|LULA": {
+            "n": 217,
+            "n_addressed": 81,
+            "net_support": -0.1728,
+            "counts": {
+              "CRITICIZE": 30,
+              "NEUTRAL": 35,
+              "NOT_ADDRESSED": 136,
+              "SUPPORT": 16
+            },
+            "n_hearings": 145,
+            "ci95": [
+              -0.3562,
+              0.0119
+            ]
+          },
+          "OPPOSITION|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 2,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 2,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 5,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "OPPOSITION|LULA": {
+            "n": 61,
+            "n_addressed": 31,
+            "net_support": -0.6452,
+            "counts": {
+              "CRITICIZE": 21,
+              "MIXED": 1,
+              "NEUTRAL": 8,
+              "NOT_ADDRESSED": 30,
+              "SUPPORT": 1
+            },
+            "n_hearings": 38,
+            "ci95": [
+              -0.8214,
+              -0.4571
+            ]
+          },
+          "PIVOT|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": [
+              -1.0,
+              -1.0
+            ]
+          },
+          "PIVOT|LULA": {
+            "n": 30,
+            "n_addressed": 8,
+            "net_support": -0.125,
+            "counts": {
+              "CRITICIZE": 1,
+              "NEUTRAL": 7,
+              "NOT_ADDRESSED": 22
+            },
+            "n_hearings": 27,
+            "ci95": [
+              -0.4,
+              0.0
+            ]
+          }
+        },
+        "shift_by_lula_bloc": {
+          "GOVERNMENT": {
+            "bolsonaro": -0.8824,
+            "lula": -0.1728,
+            "shift": 0.7096,
+            "n_bolsonaro": 17,
+            "n_lula": 81
+          },
+          "OPPOSITION": {
+            "bolsonaro": -1.0,
+            "lula": -0.6452,
+            "shift": 0.3548,
+            "n_bolsonaro": 2,
+            "n_lula": 31
+          },
+          "PIVOT": {
+            "bolsonaro": -1.0,
+            "lula": -0.125,
+            "shift": 0.875,
+            "n_bolsonaro": 1,
+            "n_lula": 8
+          }
+        },
+        "previous_government_stance_by_group": {
+          "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": {
+            "n": 144,
+            "n_addressed": 2,
+            "net_support": 0.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 142,
+              "SUPPORT": 1
+            },
+            "n_hearings": 35,
+            "ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER|LULA": {
+            "n": 470,
+            "n_addressed": 22,
+            "net_support": -0.7273,
+            "counts": {
+              "CRITICIZE": 18,
+              "NEUTRAL": 2,
+              "NOT_ADDRESSED": 448,
+              "SUPPORT": 2
+            },
+            "n_hearings": 156,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|BOLSONARO": {
+            "n": 9,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 9
+            },
+            "n_hearings": 9,
+            "ci95": null
+          },
+          "FEDERAL_EXECUTIVE|LULA": {
+            "n": 70,
+            "n_addressed": 5,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 5,
+              "NOT_ADDRESSED": 65
+            },
+            "n_hearings": 59,
+            "ci95": null
+          },
+          "PARTY:CIDADANIA|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:DEM|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:MDB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:NOVO|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:NOVO|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PATRIOTA|LULA": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:PCDOB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PCDOB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PDT|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PDT|LULA": {
+            "n": 11,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 11
+            },
+            "n_hearings": 11,
+            "ci95": null
+          },
+          "PARTY:PL|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PL|LULA": {
+            "n": 55,
+            "n_addressed": 1,
+            "net_support": 1.0,
+            "counts": {
+              "NOT_ADDRESSED": 54,
+              "SUPPORT": 1
+            },
+            "n_hearings": 36,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PODEMOS|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PP|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PP|LULA": {
+            "n": 17,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 16
+            },
+            "n_hearings": 16,
+            "ci95": null
+          },
+          "PARTY:PRD|LULA": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSB|BOLSONARO": {
+            "n": 5,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 5
+            },
+            "n_hearings": 5,
+            "ci95": null
+          },
+          "PARTY:PSB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSD|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:PSD|LULA": {
+            "n": 18,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 17
+            },
+            "n_hearings": 14,
+            "ci95": null
+          },
+          "PARTY:PSDB|BOLSONARO": {
+            "n": 2,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:PSDB|LULA": {
+            "n": 6,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 6
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "PARTY:PSOL|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:PSOL|LULA": {
+            "n": 33,
+            "n_addressed": 3,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 3,
+              "NOT_ADDRESSED": 30
+            },
+            "n_hearings": 29,
+            "ci95": null
+          },
+          "PARTY:PT|BOLSONARO": {
+            "n": 16,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 16
+            },
+            "n_hearings": 13,
+            "ci95": null
+          },
+          "PARTY:PT|LULA": {
+            "n": 71,
+            "n_addressed": 4,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 4,
+              "NOT_ADDRESSED": 67
+            },
+            "n_hearings": 57,
+            "ci95": null
+          },
+          "PARTY:PV|LULA": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 4,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 2,
+            "ci95": null
+          },
+          "PARTY:REPUBLICANOS|LULA": {
+            "n": 23,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 23
+            },
+            "n_hearings": 23,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "PARTY:SOLIDARIEDADE|LULA": {
+            "n": 7,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 7
+            },
+            "n_hearings": 7,
+            "ci95": null
+          },
+          "PARTY:UNIAO|BOLSONARO": {
+            "n": 4,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 4
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "PARTY:UNIAO|LULA": {
+            "n": 21,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 21
+            },
+            "n_hearings": 20,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|BOLSONARO": {
+            "n": 3,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 3
+            },
+            "n_hearings": 3,
+            "ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE|LULA": {
+            "n": 8,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 8
+            },
+            "n_hearings": 6,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|BOLSONARO": {
+            "n": 1,
+            "n_addressed": 0,
+            "net_support": null,
+            "counts": {
+              "NOT_ADDRESSED": 1
+            },
+            "n_hearings": 1,
+            "ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN|LULA": {
+            "n": 3,
+            "n_addressed": 1,
+            "net_support": -1.0,
+            "counts": {
+              "CRITICIZE": 1,
+              "NOT_ADDRESSED": 2
+            },
+            "n_hearings": 3,
+            "ci95": null
+          }
+        },
+        "recurrent_actors_both_periods": [
+          {
+            "actor_id": "adriana ventura",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "alexandre kalache",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 1,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "augusto coutinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": 0.0,
+            "lula_n": 2,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "bia kicis",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 4,
+            "lula_net_support": -0.5
+          },
+          {
+            "actor_id": "carlos zarattini",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "danilo forte",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "diego alves",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "dr zacharias calil",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "erika kokay",
+            "bolsonaro_n": 5,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 11,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "lafayette de andrada",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "lidice da mata",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "marcel van hattem",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 3,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "marcelo de souza do nascimento",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "paulo teixeira",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": 1.0
+          },
+          {
+            "actor_id": "rodrigo agostinho",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "rogerio correia",
+            "bolsonaro_n": 2,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "sidney leite",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": 0.0
+          },
+          {
+            "actor_id": "taliria petrone",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 3,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "vanessa pirolo",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 1,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "vitor lippi",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": null
+          },
+          {
+            "actor_id": "ze neto",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": null,
+            "lula_n": 2,
+            "lula_net_support": -1.0
+          },
+          {
+            "actor_id": "ze silva",
+            "bolsonaro_n": 1,
+            "bolsonaro_net_support": -1.0,
+            "lula_n": 2,
+            "lula_net_support": 0.0
+          }
+        ]
+      }
+    }
+  },
+  "rq4": {
+    "label": "INTER_MODEL_AND_INTER_CONDITION_AGREEMENT (not gold)",
+    "models|speech": {
+      "government_stance": {
+        "n": 1014,
+        "raw_agreement": 0.7081,
+        "cohens_kappa": 0.6075,
+        "annotator_1_counts": {
+          "CRITICIZE": 230,
+          "MIXED": 27,
+          "NEUTRAL": 261,
+          "NOT_ADDRESSED": 177,
+          "SUPPORT": 319
+        },
+        "annotator_2_counts": {
+          "CRITICIZE": 216,
+          "MIXED": 3,
+          "NEUTRAL": 468,
+          "NOT_ADDRESSED": 89,
+          "SUPPORT": 238
+        },
+        "prevalence_warning": ""
+      },
+      "proposition_stance": {
+        "n": 2957,
+        "raw_agreement": 0.722,
+        "cohens_kappa": 0.5529,
+        "annotator_1_counts": {
+          "AGAINST": 257,
+          "DET_NO": 353,
+          "DET_UNCERTAIN": 668,
+          "FAVOR": 1658,
+          "UNCERTAIN": 21
+        },
+        "annotator_2_counts": {
+          "": 26,
+          "AGAINST": 327,
+          "DET_NO": 599,
+          "DET_UNCERTAIN": 307,
+          "FAVOR": 1693,
+          "UNCERTAIN": 5
+        },
+        "prevalence_warning": ""
+      }
+    },
+    "models|lds_summary": {
+      "government_stance": {
+        "n": 1064,
+        "raw_agreement": 0.813,
+        "cohens_kappa": 0.6315,
+        "annotator_1_counts": {
+          "CRITICIZE": 139,
+          "MIXED": 7,
+          "NEUTRAL": 103,
+          "NOT_ADDRESSED": 753,
+          "SUPPORT": 62
+        },
+        "annotator_2_counts": {
+          "CRITICIZE": 148,
+          "MIXED": 1,
+          "NEUTRAL": 169,
+          "NOT_ADDRESSED": 685,
+          "SUPPORT": 61
+        },
+        "prevalence_warning": "SINGLETON_CLASS"
+      },
+      "proposition_stance": {
+        "n": 3123,
+        "raw_agreement": 0.69,
+        "cohens_kappa": 0.5511,
+        "annotator_1_counts": {
+          "AGAINST": 155,
+          "DET_NO": 1129,
+          "DET_UNCERTAIN": 1002,
+          "FAVOR": 836,
+          "UNCERTAIN": 1
+        },
+        "annotator_2_counts": {
+          "AGAINST": 133,
+          "DET_NO": 1447,
+          "DET_UNCERTAIN": 463,
+          "FAVOR": 1078,
+          "UNCERTAIN": 2
+        },
+        "prevalence_warning": "SINGLETON_CLASS"
+      }
+    },
+    "conditions|Qwen/Qwen2.5-72B-Instruct": {
+      "government_stance": {
+        "n": 1013,
+        "raw_agreement": 0.3238,
+        "cohens_kappa": 0.1579,
+        "annotator_1_counts": {
+          "CRITICIZE": 229,
+          "MIXED": 27,
+          "NEUTRAL": 261,
+          "NOT_ADDRESSED": 177,
+          "SUPPORT": 319
+        },
+        "annotator_2_counts": {
+          "CRITICIZE": 132,
+          "MIXED": 7,
+          "NEUTRAL": 100,
+          "NOT_ADDRESSED": 713,
+          "SUPPORT": 61
+        },
+        "prevalence_warning": ""
+      },
+      "proposition_stance": {
+        "n": 2919,
+        "raw_agreement": 0.4741,
+        "cohens_kappa": 0.2796,
+        "annotator_1_counts": {
+          "AGAINST": 239,
+          "DET_NO": 351,
+          "DET_UNCERTAIN": 664,
+          "FAVOR": 1644,
+          "UNCERTAIN": 21
+        },
+        "annotator_2_counts": {
+          "AGAINST": 149,
+          "DET_NO": 1063,
+          "DET_UNCERTAIN": 931,
+          "FAVOR": 775,
+          "UNCERTAIN": 1
+        },
+        "prevalence_warning": "SINGLETON_CLASS"
+      }
+    },
+    "known_group_federal_executive|Qwen/Qwen2.5-72B-Instruct|speech": {
+      "BOLSONARO": {
+        "n": 8,
+        "n_addressed": 8,
+        "net_support": 0.625,
+        "counts": {
+          "NEUTRAL": 3,
+          "SUPPORT": 5
+        }
+      },
+      "LULA": {
+        "n": 68,
+        "n_addressed": 66,
+        "net_support": 0.8788,
+        "counts": {
+          "NEUTRAL": 8,
+          "NOT_ADDRESSED": 2,
+          "SUPPORT": 58
+        }
+      }
+    },
+    "known_group_federal_executive|Qwen/Qwen2.5-72B-Instruct|lds_summary": {
+      "BOLSONARO": {
+        "n": 9,
+        "n_addressed": 5,
+        "net_support": 0.0,
+        "counts": {
+          "MIXED": 1,
+          "NEUTRAL": 4,
+          "NOT_ADDRESSED": 4
+        }
+      },
+      "LULA": {
+        "n": 70,
+        "n_addressed": 37,
+        "net_support": 0.3514,
+        "counts": {
+          "CRITICIZE": 4,
+          "MIXED": 2,
+          "NEUTRAL": 14,
+          "NOT_ADDRESSED": 33,
+          "SUPPORT": 17
+        }
+      }
+    },
+    "conditions|meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "government_stance": {
+        "n": 1014,
+        "raw_agreement": 0.3087,
+        "cohens_kappa": 0.1621,
+        "annotator_1_counts": {
+          "CRITICIZE": 216,
+          "MIXED": 3,
+          "NEUTRAL": 468,
+          "NOT_ADDRESSED": 89,
+          "SUPPORT": 238
+        },
+        "annotator_2_counts": {
+          "CRITICIZE": 142,
+          "MIXED": 1,
+          "NEUTRAL": 166,
+          "NOT_ADDRESSED": 646,
+          "SUPPORT": 59
+        },
+        "prevalence_warning": "SINGLETON_CLASS"
+      },
+      "proposition_stance": {
+        "n": 3021,
+        "raw_agreement": 0.5498,
+        "cohens_kappa": 0.3481,
+        "annotator_1_counts": {
+          "": 27,
+          "AGAINST": 341,
+          "DET_NO": 610,
+          "DET_UNCERTAIN": 308,
+          "FAVOR": 1730,
+          "UNCERTAIN": 5
+        },
+        "annotator_2_counts": {
+          "AGAINST": 150,
+          "DET_NO": 1388,
+          "DET_UNCERTAIN": 447,
+          "FAVOR": 1034,
+          "UNCERTAIN": 2
+        },
+        "prevalence_warning": ""
+      }
+    },
+    "known_group_federal_executive|meta-llama/Llama-3.3-70B-Instruct-Turbo|speech": {
+      "BOLSONARO": {
+        "n": 8,
+        "n_addressed": 8,
+        "net_support": 0.125,
+        "counts": {
+          "NEUTRAL": 7,
+          "SUPPORT": 1
+        }
+      },
+      "LULA": {
+        "n": 68,
+        "n_addressed": 67,
+        "net_support": 0.7761,
+        "counts": {
+          "CRITICIZE": 1,
+          "NEUTRAL": 13,
+          "NOT_ADDRESSED": 1,
+          "SUPPORT": 53
+        }
+      }
+    },
+    "known_group_federal_executive|meta-llama/Llama-3.3-70B-Instruct-Turbo|lds_summary": {
+      "BOLSONARO": {
+        "n": 9,
+        "n_addressed": 5,
+        "net_support": -0.2,
+        "counts": {
+          "CRITICIZE": 1,
+          "NEUTRAL": 4,
+          "NOT_ADDRESSED": 4
+        }
+      },
+      "LULA": {
+        "n": 70,
+        "n_addressed": 42,
+        "net_support": 0.381,
+        "counts": {
+          "CRITICIZE": 2,
+          "NEUTRAL": 22,
+          "NOT_ADDRESSED": 28,
+          "SUPPORT": 18
+        }
+      }
+    },
+    "malformed_rows": {
+      "Qwen/Qwen2.5-72B-Instruct|lds_summary": 106,
+      "Qwen/Qwen2.5-72B-Instruct|speech": 122,
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo|speech": 60
+    }
+  }
+}

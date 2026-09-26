@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7KV7jhmV0OLEJpZtFypW3v6",
+  "object": "chat.completion",
+  "created": 1790436505,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Projeto de Lei 5167/09 proíbe a equiparação de relações entre pessoas do mesmo sexo a casamento ou entidade familiar.\"},\n    {\"id\": \"P2\", \"text\": \"A decisão do STF sobre a união homoafetiva usurpou a competência legislativa do Congresso.\"},\n    {\"id\": \"P3\", \"text\": \"Proibir a formação de famílias de pessoas do mesmo sexo é impor uma moral fundamentalista religiosa à sociedade.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1330,
+    "total_tokens": 1466,
+    "completion_tokens": 136,
+    "estimated_cost": 0.0005332,
+    "prompt_tokens_details": null
+  }
+}

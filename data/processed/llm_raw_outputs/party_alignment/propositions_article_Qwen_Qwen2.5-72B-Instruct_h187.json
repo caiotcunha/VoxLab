@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rsp0eMYyMHEXzpunus8ukTZZ",
+  "object": "chat.completion",
+  "created": 1790436715,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O povo cigano deve ser incluído no Censo demográfico brasileiro para garantir acesso a políticas públicas.\"},\n    {\"id\": \"P2\", \"text\": \"O Estado deve garantir a igualdade de oportunidades e defender a dignidade e os valores culturais dos ciganos por meio de políticas públicas.\"},\n    {\"id\": \"P3\", \"text\": \"A violência policial contra os ciganos deve ser reconhecida e combatida como uma forma de discriminação sistêmica.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1405,
+    "total_tokens": 1544,
+    "completion_tokens": 139,
+    "estimated_cost": 0.0005614,
+    "prompt_tokens_details": null
+  }
+}

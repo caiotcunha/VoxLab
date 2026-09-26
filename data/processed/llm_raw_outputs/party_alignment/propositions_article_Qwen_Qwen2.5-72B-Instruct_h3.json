@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcbxJOcSCAo0PasAZ0fHUCYM",
+  "object": "chat.completion",
+  "created": 1790436081,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O saque-aniversário do FGTS deve ser substituído por uma nova modalidade de crédito consignado\"},\n    {\"id\": \"P2\", \"text\": \"A nova modalidade de crédito consignado não trará prejuízos aos trabalhadores\"},\n    {\"id\": \"P3\", \"text\": \"O saque-aniversário do FGTS é essencial para os trabalhadores como um 14º salário\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1319,
+    "total_tokens": 1437,
+    "completion_tokens": 118,
+    "estimated_cost": 0.00052204,
+    "prompt_tokens_details": null
+  }
+}

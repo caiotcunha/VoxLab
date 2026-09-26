@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMk1JQNZxZpSetWDQLHNRDDx",
+  "object": "chat.completion",
+  "created": 1790436690,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Políticas públicas devem reconhecer e enfrentar as violações sofridas por crianças negras e indígenas na primeira infância\"},\n    {\"id\": \"P2\", \"text\": \"O ambiente escolar deve ser transformado em um espaço seguro e acolhedor para crianças negras e indígenas\"},\n    {\"id\": \"P3\", \"text\": \"O racismo na primeira infância afeta negativamente tanto as crianças negras e indígenas quanto as crianças brancas\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1382,
+    "total_tokens": 1517,
+    "completion_tokens": 135,
+    "estimated_cost": 0.0005515200000000001,
+    "prompt_tokens_details": null
+  }
+}

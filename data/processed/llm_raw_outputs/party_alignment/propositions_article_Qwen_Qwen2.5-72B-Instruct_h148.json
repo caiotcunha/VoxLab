@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfV6FTAjVBJ5EWDADR7Ztg54",
+  "object": "chat.completion",
+  "created": 1790436655,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Ibama deve retomar urgentemente as autorizações para caça a javalis.\"},\n    {\"id\": \"P2\", \"text\": \"A caça a javalis é essencial para o controle da população e mitigação dos prejuízos à agropecuária e ao meio ambiente.\"},\n    {\"id\": \"P3\", \"text\": \"O Plano Nacional de Prevenção, Controle e Monitoramento do Javali deve ser atualizado e implementado com urgência.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1496,
+    "total_tokens": 1625,
+    "completion_tokens": 129,
+    "estimated_cost": 0.00059016,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSYufrCnTaBTssJlC1s2923L",
+  "object": "chat.completion",
+  "created": 1790436596,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A língua de sinais deve ser a língua de instrução em todas as aulas de escolas bilíngues para surdos.\"},\n    {\"id\": \"P2\", \"text\": \"As aulas em escolas bilíngues para surdos devem ter duração maior para permitir pausas de escrita e registro.\"},\n    {\"id\": \"P3\", \"text\": \"A seleção de professores para escolas bilíngues para surdos deve incluir avaliação de proficiência em Libras por bancas formadas por pessoas surdas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1425,
+    "total_tokens": 1573,
+    "completion_tokens": 148,
+    "estimated_cost": 0.0005722,
+    "prompt_tokens_details": null
+  }
+}

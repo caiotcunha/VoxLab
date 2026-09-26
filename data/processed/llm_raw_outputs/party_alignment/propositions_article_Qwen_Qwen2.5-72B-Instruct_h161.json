@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4eBTZDzi5XYdFBS1dUC1BQF",
+  "object": "chat.completion",
+  "created": 1790436674,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O aumento dos preços das passagens aéreas no Brasil é explicado principalmente pelo aumento do preço do combustível e da variação do dólar.\"},\n    {\"id\": \"P2\", \"text\": \"A entrada de novas companhias aéreas no mercado pode reduzir os preços das passagens.\"},\n    {\"id\": \"P3\", \"text\": \"A maioria das passagens aéreas no Brasil pode ser encontrada por menos de R$ 500 com planejamento e compras antecipadas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1181,
+    "total_tokens": 1320,
+    "completion_tokens": 139,
+    "estimated_cost": 0.00048076,
+    "prompt_tokens_details": null
+  }
+}

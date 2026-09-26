@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNvNwMIp3RqbrHOuubiiRBe1",
+  "object": "chat.completion",
+  "created": 1790436736,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Os presos dos atos de 8 de janeiro devem ter suas condutas individualizadas.\"},\n    {\"id\": \"P2\", \"text\": \"As detenções dos atos de 8 de janeiro desrespeitam convenções internacionais de direitos humanos.\"},\n    {\"id\": \"P3\", \"text\": \"A maioria dos presos dos atos de 8 de janeiro não tinha intenção de participar de uma tentativa de golpe.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1642,
+    "total_tokens": 1770,
+    "completion_tokens": 128,
+    "estimated_cost": 0.0006423200000000002,
+    "prompt_tokens_details": null
+  }
+}

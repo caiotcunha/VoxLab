@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBtPeQ0eK6nrCisYb42tZB81",
+  "object": "chat.completion",
+  "created": 1790436530,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil precisa de uma política nacional de cuidados de longa duração para idosos em instituições de longa permanência.\"},\n    {\"id\": \"P2\", \"text\": \"É essencial criar um cadastro nacional com dados oficiais sobre a oferta de instituições de longa permanência e a população assistida.\"},\n    {\"id\": \"P3\", \"text\": \"O orçamento público deve ser ajustado para atender às necessidades crescentes da população idosa no Brasil.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1408,
+    "total_tokens": 1540,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00055968,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVRQcNUI9w8Dhd7sM28tIgx9",
+  "object": "chat.completion",
+  "created": 1790436620,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Regulamentar as associações de produtores de cannabis é essencial para democratizar o acesso ao tratamento medicinal.\"},\n    {\"id\": \"P2\", \"text\": \"A proibição do cultivo de cannabis no Brasil eleva o custo dos medicamentos derivados da planta.\"},\n    {\"id\": \"P3\", \"text\": \"O Ministério da Saúde deve regulamentar a produção e venda de produtos medicinais à base de cannabis no Brasil.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1523,
+    "total_tokens": 1644,
+    "completion_tokens": 121,
+    "estimated_cost": 0.00059668,
+    "prompt_tokens_details": null
+  }
+}

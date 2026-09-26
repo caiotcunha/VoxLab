@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCfZgEKqfeqkGQUndqSbehbm",
+  "object": "chat.completion",
+  "created": 1790436570,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Reajustes nas tarifas de energia elétrica devem ser postergados para evitar impacto imediato nos consumidores\"},\n    {\"id\": \"P2\", \"text\": \"Subsídios e tributos nas contas de luz devem ser reduzidos para diminuir o custo total\"},\n    {\"id\": \"P3\", \"text\": \"O mercado livre de energia elétrica deve ser ampliado para incluir consumidores residenciais\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2172,
+    "total_tokens": 2295,
+    "completion_tokens": 123,
+    "estimated_cost": 0.0008311199999999999,
+    "prompt_tokens_details": null
+  }
+}

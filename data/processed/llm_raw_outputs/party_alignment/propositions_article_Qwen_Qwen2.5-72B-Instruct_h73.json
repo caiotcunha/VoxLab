@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFml43yznS6tpU6HizcdniSl",
+  "object": "chat.completion",
+  "created": 1790436542,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Seguradoras devem oferecer contratos de seguro de vida mais acessíveis para idosos\"},\n    {\"id\": \"P2\", \"text\": \"O cálculo do prêmio do seguro de vida deve considerar a idade e as condições de saúde do contratante\"},\n    {\"id\": \"P3\", \"text\": \"Contratos de seguro de vida para idosos devem ser claros e legíveis\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1618,
+    "total_tokens": 1728,
+    "completion_tokens": 110,
+    "estimated_cost": 0.00062648,
+    "prompt_tokens_details": null
+  }
+}

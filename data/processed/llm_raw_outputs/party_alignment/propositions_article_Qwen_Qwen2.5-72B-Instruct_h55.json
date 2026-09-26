@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPUB1cbq5cB0GEHapEt2yIB0",
+  "object": "chat.completion",
+  "created": 1790436521,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Servidores públicos aposentados e pensionistas que recebem acima do salário mínimo devem contribuir para a Previdência Social.\"},\n    {\"id\": \"P2\", \"text\": \"A emenda constitucional permite que servidores públicos que recebem abaixo do teto do INSS sejam tributados em até 14%.\"},\n    {\"id\": \"P3\", \"text\": \"Estados e municípios têm autonomia para decidir se adotam a contribuição previdenciária sobre valores acima do salário mínimo para aposentados e pensionistas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1606,
+    "total_tokens": 1760,
+    "completion_tokens": 154,
+    "estimated_cost": 0.0006397600000000001,
+    "prompt_tokens_details": null
+  }
+}

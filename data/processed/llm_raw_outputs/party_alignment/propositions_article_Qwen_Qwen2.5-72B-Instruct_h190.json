@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1CmvZrDPuNH3iAYL8tl8CJy",
+  "object": "chat.completion",
+  "created": 1790436718,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Brasil deve receber mais incentivos para participar de pesquisas clínicas internacionais sobre doenças raras.\"},\n    {\"id\": \"P2\", \"text\": \"O Fundo Nacional para Custeio e Fornecimento de Medicações e Terapias destinadas ao Tratamento de Doenças Raras ou Negligenciadas deve ser aprovado.\"},\n    {\"id\": \"P3\", \"text\": \"Centros de referência para doenças raras devem ser instalados em todo o Brasil para melhorar o diagnóstico e tratamento.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1188,
+    "total_tokens": 1335,
+    "completion_tokens": 147,
+    "estimated_cost": 0.00048648,
+    "prompt_tokens_details": null
+  }
+}

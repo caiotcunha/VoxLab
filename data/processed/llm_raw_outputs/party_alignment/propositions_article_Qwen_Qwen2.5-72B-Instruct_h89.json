@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiLtmSP4iQtsssPLKKZeuFFv",
+  "object": "chat.completion",
+  "created": 1790436562,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Estado deve fortalecer as estruturas de fiscalização para impedir a invasão de terras indígenas por garimpeiros.\"},\n    {\"id\": \"P2\", \"text\": \"As mulheres indígenas devem ser empoderadas com instrumentos de proteção e defesa para denunciar e reverter a violência.\"},\n    {\"id\": \"P3\", \"text\": \"O governo federal deve implementar políticas públicas a longo prazo para proteger as mulheres e crianças indígenas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1655,
+    "total_tokens": 1794,
+    "completion_tokens": 139,
+    "estimated_cost": 0.0006514,
+    "prompt_tokens_details": null
+  }
+}

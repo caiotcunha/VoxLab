@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ru20izgpIrCnRdCnOP5NBtQo",
+  "object": "chat.completion",
+  "created": 1790436629,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Rádios comunitárias devem ter pelo menos uma emissora em cada município do Brasil\"},\n    {\"id\": \"P2\", \"text\": \"Rádios comunitárias devem ser autorizadas a usar a sigla FM\"},\n    {\"id\": \"P3\", \"text\": \"Aumentar a potência das rádios comunitárias resultará em interferências generalizadas\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1675,
+    "total_tokens": 1787,
+    "completion_tokens": 112,
+    "estimated_cost": 0.0006478,
+    "prompt_tokens_details": null
+  }
+}

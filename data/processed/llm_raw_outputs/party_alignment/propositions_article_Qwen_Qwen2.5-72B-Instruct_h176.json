@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWMWoYgDxFxBlxxT5n12dT6t",
+  "object": "chat.completion",
+  "created": 1790436700,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A deficiência não está nas pessoas, mas no ambiente que não oferece acessibilidade e inclusão.\"},\n    {\"id\": \"P2\", \"text\": \"A educação inclusiva deve garantir que alunos com deficiência aprendam o mesmo conteúdo dos demais alunos.\"},\n    {\"id\": \"P3\", \"text\": \"A avaliação biopsicossocial deve ser adotada para definir as necessidades e o apoio necessário aos alunos com deficiência no ambiente escolar.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1141,
+    "total_tokens": 1267,
+    "completion_tokens": 126,
+    "estimated_cost": 0.00046116000000000006,
+    "prompt_tokens_details": null
+  }
+}

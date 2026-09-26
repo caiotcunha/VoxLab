@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSogY9FkAr3uTM8ExrCDpV33",
+  "object": "chat.completion",
+  "created": 1790436583,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A redução das emissões de carbono em terminais marítimos é benéfica para a economia brasileira\"},\n    {\"id\": \"P2\", \"text\": \"O Brasil deve enfrentar a competição de subsídios oferecidos por outros países para combustíveis limpos\"},\n    {\"id\": \"P3\", \"text\": \"O setor de transporte marítimo deve adotar combustíveis menos poluentes para atingir a meta de emissões zero em 2050\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1119,
+    "total_tokens": 1250,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00045524000000000004,
+    "prompt_tokens_details": null
+  }
+}

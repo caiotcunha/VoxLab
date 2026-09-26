@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAaw4fRC0eCSclX3K0jTtOxg",
+  "object": "chat.completion",
+  "created": 1790436718,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Políticas públicas específicas são necessárias para reduzir a disparidade de gênero nas ciências exatas e tecnológicas.\"},\n    {\"id\": \"P2\", \"text\": \"A maternidade deve ser considerada como fator de compensação em critérios de avaliação para pesquisadoras.\"},\n    {\"id\": \"P3\", \"text\": \"A menor remuneração de mulheres doutoras está associada à menor participação em cargos gerenciais e de liderança.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2642,
+    "total_tokens": 2772,
+    "completion_tokens": 130,
+    "estimated_cost": 0.00100312,
+    "prompt_tokens_details": null
+  }
+}

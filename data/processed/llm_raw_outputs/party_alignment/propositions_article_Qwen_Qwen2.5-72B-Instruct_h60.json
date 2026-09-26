@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNolmSZT599VlEbCaaOCXVMp",
+  "object": "chat.completion",
+  "created": 1790436524,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Programa QualiSUS Cardio deve ser implementado para melhorar a assistência cardiovascular a idosos no SUS\"},\n    {\"id\": \"P2\", \"text\": \"A tabela de preços do SUS deve ser revisada para evitar impactos negativos no Programa QualiSUS Cardio\"},\n    {\"id\": \"P3\", \"text\": \"O SUS deve incorporar novas tecnologias para melhorar o atendimento a idosos com doenças cardiovasculares\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1327,
+    "total_tokens": 1451,
+    "completion_tokens": 124,
+    "estimated_cost": 0.00052732,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RF7N7lIUAPZpaAtrJaiQ52AB",
+  "object": "chat.completion",
+  "created": 1790436551,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O projeto de código de defesa dos contribuintes deve diferenciar o tratamento entre bons e maus pagadores de impostos.\"},\n    {\"id\": \"P2\", \"text\": \"O projeto de código de defesa dos contribuintes impõe limitações excessivas ao trabalho de fiscalização e autuação de contribuintes.\"},\n    {\"id\": \"P3\", \"text\": \"O projeto de código de defesa dos contribuintes cria uma blindagem patrimonial para sonegadores e fraudadores.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1829,
+    "total_tokens": 1963,
+    "completion_tokens": 134,
+    "estimated_cost": 0.00071204,
+    "prompt_tokens_details": null
+  }
+}

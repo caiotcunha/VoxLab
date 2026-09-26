@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsBUQfQVM3FZM5OmVL57HUvC",
+  "object": "chat.completion",
+  "created": 1790436730,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A regulamentação dos mercados digitais no Brasil deve ser mais flexível e adaptada aos interesses nacionais, evitando seguir modelos estrangeiros muito intervencionistas.\"},\n    {\"id\": \"P2\", \"text\": \"A regulação dos mercados digitais deve focar na suavização do controle de acesso essencial das plataformas, em vez de combater fake news.\"},\n    {\"id\": \"P3\", \"text\": \"A regulação dos mercados digitais no Brasil pode aumentar os custos para consumidores e empresas, que serão repassados aos usuários finais.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1836,
+    "total_tokens": 1989,
+    "completion_tokens": 153,
+    "estimated_cost": 0.00072216,
+    "prompt_tokens_details": null
+  }
+}

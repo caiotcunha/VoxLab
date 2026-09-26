@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNjFXYvSi0UWmcUOckMqVqqC",
+  "object": "chat.completion",
+  "created": 1790436268,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O biometano deve ser incentivado para uso no setor de transportes pesados.\"},\n    {\"id\": \"P2\", \"text\": \"A infraestrutura existente de gasodutos e postos de gás natural veicular deve ser utilizada para o biometano.\"},\n    {\"id\": \"P3\", \"text\": \"O biometano deve ser incluído em planos de mobilidade urbana e receber linhas de financiamento específicas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1230,
+    "total_tokens": 1353,
+    "completion_tokens": 123,
+    "estimated_cost": 0.000492,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3lBxqWKwpFGgalwDGFNJb0A",
+  "object": "chat.completion",
+  "created": 1790436445,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Congresso deve aprovar rapidamente a ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos com quórum qualificado.\"},\n    {\"id\": \"P2\", \"text\": \"A ratificação da convenção deve ser aprovada antes de outubro para comemorar os 20 anos do Estatuto da Pessoa Idosa.\"},\n    {\"id\": \"P3\", \"text\": \"A Convenção Interamericana inova na definição de conceitos como abuso, abandono, maus-tratos, negligência e discriminação contra pessoas idosas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1528,
+    "total_tokens": 1689,
+    "completion_tokens": 161,
+    "estimated_cost": 0.00061448,
+    "prompt_tokens_details": null
+  }
+}

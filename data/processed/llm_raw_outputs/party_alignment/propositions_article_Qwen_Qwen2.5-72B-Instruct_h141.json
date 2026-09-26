@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqgobKYorC82ncTnj4BJus0y",
+  "object": "chat.completion",
+  "created": 1790436645,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Professores devem receber apoio jurídico e psicológico para lidar com perseguições políticas\"},\n    {\"id\": \"P2\", \"text\": \"É necessário criar um protocolo para regular o papel fiscalizador de parlamentares e evitar perseguições a professores\"},\n    {\"id\": \"P3\", \"text\": \"A liberdade de ensino dos professores deve ser protegida por políticas públicas e redes de apoio\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1293,
+    "total_tokens": 1418,
+    "completion_tokens": 125,
+    "estimated_cost": 0.00051548,
+    "prompt_tokens_details": null
+  }
+}

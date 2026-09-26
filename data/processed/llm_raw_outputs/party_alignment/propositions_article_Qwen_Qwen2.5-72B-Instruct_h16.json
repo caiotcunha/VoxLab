@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkxRN8mLXmwlZ3R4uQZ2l48P",
+  "object": "chat.completion",
+  "created": 1790436207,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Ministério dos Direitos Humanos deve ser responsabilizado por custear a viagem de pessoas com antecedentes criminais.\"},\n    {\"id\": \"P2\", \"text\": \"O Ministério dos Direitos Humanos deve aprimorar as regras de emissão de passagens e diárias para evitar situações controversas.\"},\n    {\"id\": \"P3\", \"text\": \"A morte de detentos em presídios federais deve ser investigada com rigor para identificar falhas no sistema de saúde e segurança prisional.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1731,
+    "total_tokens": 1873,
+    "completion_tokens": 142,
+    "estimated_cost": 0.00067996,
+    "prompt_tokens_details": null
+  }
+}

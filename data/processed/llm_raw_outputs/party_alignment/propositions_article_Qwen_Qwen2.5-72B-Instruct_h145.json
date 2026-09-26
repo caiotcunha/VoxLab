@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROqdZWp8o2J6KklZ0H2HaWb1",
+  "object": "chat.completion",
+  "created": 1790436649,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O governo Lula tem melhorado os resultados na segurança pública em comparação com 2022.\"},\n    {\"id\": \"P2\", \"text\": \"Empresas de tecnologia e plataformas de internet estão respeitando as leis brasileiras.\"},\n    {\"id\": \"P3\", \"text\": \"O orçamento para a segurança pública em 2024 será o mesmo de 2023, com um aumento de 17% em relação a 2022.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1600,
+    "total_tokens": 1733,
+    "completion_tokens": 133,
+    "estimated_cost": 0.0006292,
+    "prompt_tokens_details": null
+  }
+}

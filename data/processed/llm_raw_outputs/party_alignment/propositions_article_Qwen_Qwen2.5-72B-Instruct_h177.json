@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxbkfPlWI0j2QbhWXwyktB5I",
+  "object": "chat.completion",
+  "created": 1790436705,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A regulamentação do setor de aplicativos de transporte e entrega pode prejudicar a concorrência e aumentar os preços para os consumidores.\"},\n    {\"id\": \"P2\", \"text\": \"A contribuição para o INSS baseada no faturamento da empresa é mais justa e viável para aplicativos regionais.\"},\n    {\"id\": \"P3\", \"text\": \"A regulamentação para entregadores deve ser diferente da aplicada para motoristas de passageiros devido às diferenças nas atividades e ganhos.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1895,
+    "total_tokens": 2034,
+    "completion_tokens": 139,
+    "estimated_cost": 0.0007377999999999999,
+    "prompt_tokens_details": null
+  }
+}

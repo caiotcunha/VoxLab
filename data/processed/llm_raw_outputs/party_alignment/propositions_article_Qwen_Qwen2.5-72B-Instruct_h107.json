@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXVbogw6Fv6FuPpx2Ws7wkvM",
+  "object": "chat.completion",
+  "created": 1790436583,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Deve ser criado um sistema de radar nacional para previsão meteorológica.\"},\n    {\"id\": \"P2\", \"text\": \"Deve ser implementado um sistema de alerta de risco mais eficiente, como o Céu Broadcast.\"},\n    {\"id\": \"P3\", \"text\": \"A liberação de recursos para atendimento emergencial deve ser desburocratizada.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1586,
+    "total_tokens": 1692,
+    "completion_tokens": 106,
+    "estimated_cost": 0.00061336,
+    "prompt_tokens_details": null
+  }
+}

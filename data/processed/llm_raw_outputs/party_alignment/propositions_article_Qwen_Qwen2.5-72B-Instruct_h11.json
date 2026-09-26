@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ro9MvKPJsJWhP4Ae6SAVmBp0",
+  "object": "chat.completion",
+  "created": 1790436166,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O avanço do semiárido brasileiro pode levar 30% da região a se tornar semideserto com menos de 400 mm de chuva anual.\"},\n    {\"id\": \"P2\", \"text\": \"A solução para a desertificação no Semiárido passa por incentivos a modelos agrícolas que valorizem a Caatinga e a agroecologia.\"},\n    {\"id\": \"P3\", \"text\": \"É necessário retomar o Plano Nacional de Combate à Desertificação e reforçar o Programa de Cisternas e a Operação Carro-Pipa.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1877,
+    "total_tokens": 2037,
+    "completion_tokens": 160,
+    "estimated_cost": 0.0007397200000000001,
+    "prompt_tokens_details": null
+  }
+}

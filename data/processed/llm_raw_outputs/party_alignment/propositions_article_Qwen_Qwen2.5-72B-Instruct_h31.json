@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIJ0xffdQES6ofebq1hxT5Xz",
+  "object": "chat.completion",
+  "created": 1790436335,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Parfor deve ser transformado em política de Estado permanente\"},\n    {\"id\": \"P2\", \"text\": \"A existência de muitos professores temporários dificulta a formação contínua\"},\n    {\"id\": \"P3\", \"text\": \"O orçamento do Parfor deve ser ampliado para permitir novos editais e custeio\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1352,
+    "total_tokens": 1454,
+    "completion_tokens": 102,
+    "estimated_cost": 0.00052752,
+    "prompt_tokens_details": null
+  }
+}

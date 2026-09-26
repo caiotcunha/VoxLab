@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzWFAxtZZvV5QjB8A69amMsi",
+  "object": "chat.completion",
+  "created": 1790436656,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Estado deve oferecer uma rede de atendimento para a população idosa, incluindo serviços de saúde, moradia e cuidados pessoais.\"},\n    {\"id\": \"P2\", \"text\": \"O planejamento para o envelhecimento da população deve considerar as desigualdades regionais do Brasil.\"},\n    {\"id\": \"P3\", \"text\": \"A formalização dos postos de trabalho é essencial para amenizar o déficit previdenciário causado pelo envelhecimento da população.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1477,
+    "total_tokens": 1612,
+    "completion_tokens": 135,
+    "estimated_cost": 0.0005857200000000001,
+    "prompt_tokens_details": null
+  }
+}

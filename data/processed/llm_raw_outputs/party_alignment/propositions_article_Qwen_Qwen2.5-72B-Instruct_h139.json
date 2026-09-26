@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmGR34gQuvGPmCre4oTo7wH1",
+  "object": "chat.completion",
+  "created": 1790436637,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Indígenas presos devem ter acesso a direitos específicos garantidos por uma legislação prisional própria\"},\n    {\"id\": \"P2\", \"text\": \"O reconhecimento de indígenas no sistema prisional é frequentemente comprometido por falta de conhecimento das autoridades policiais\"},\n    {\"id\": \"P3\", \"text\": \"O racismo contra indígenas no sistema prisional é uma forma de criminalização que visa impedir o acesso a direitos territoriais\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1648,
+    "total_tokens": 1783,
+    "completion_tokens": 135,
+    "estimated_cost": 0.00064728,
+    "prompt_tokens_details": null
+  }
+}

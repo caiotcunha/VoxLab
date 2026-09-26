@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAQgOgeWVZtkj4YTHFeNByaA",
+  "object": "chat.completion",
+  "created": 1790436727,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Financiamento estudantil sustentável é necessário para atingir a meta de 33% de jovens matriculados no ensino superior.\"},\n    {\"id\": \"P2\", \"text\": \"Estudantes com renda de até 1,5 salário mínimo por mês devem ter direito à bolsa integral no Fies.\"},\n    {\"id\": \"P3\", \"text\": \"O pagamento do financiamento estudantil não deve ultrapassar 13% da renda do beneficiário após a formatura.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1649,
+    "total_tokens": 1792,
+    "completion_tokens": 143,
+    "estimated_cost": 0.0006508400000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDfdw4ELmMLCd0DPuFx2UGRC",
+  "object": "chat.completion",
+  "created": 1790436724,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Microempresários devem ter acesso a um programa Desenrola para enfrentar o endividamento agravado por altas taxas de juros\"},\n    {\"id\": \"P2\", \"text\": \"A política monetária do Banco Central deve priorizar o controle da inflação, mesmo com impactos negativos no setor produtivo\"},\n    {\"id\": \"P3\", \"text\": \"O spread bancário pode ser reduzido com a diminuição dos custos de intermediação financeira\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1549,
+    "total_tokens": 1680,
+    "completion_tokens": 131,
+    "estimated_cost": 0.0006100400000000001,
+    "prompt_tokens_details": null
+  }
+}

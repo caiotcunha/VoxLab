@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0lk3yZJVlaXIwyUV5ToCXYC",
+  "object": "chat.completion",
+  "created": 1790436566,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Estatuto do Aprendiz deve focar em adolescentes de 14 a 18 anos.\"},\n    {\"id\": \"P2\", \"text\": \"Contratos de aprendizagem devem ter prazo de até dois anos.\"},\n    {\"id\": \"P3\", \"text\": \"A aprendizagem deve ser tratada como política pública pelo Estado.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1668,
+    "total_tokens": 1769,
+    "completion_tokens": 101,
+    "estimated_cost": 0.00064088,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1OcxAUWt3EVUDzp4LPrSYSb",
+  "object": "chat.completion",
+  "created": 1790436692,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O governo deve acelerar a demarcação e titulação das terras quilombolas.\"},\n    {\"id\": \"P2\", \"text\": \"O Incra precisa ser reestruturado com mais técnicos e orçamento para regularizar territórios quilombolas.\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas específicas, como formação escolar e linhas de financiamento, são necessárias para as comunidades quilombolas.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1606,
+    "total_tokens": 1735,
+    "completion_tokens": 129,
+    "estimated_cost": 0.00062976,
+    "prompt_tokens_details": null
+  }
+}

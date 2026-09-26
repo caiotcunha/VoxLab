@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQi6VBtWFjM8NTkMLODSvxR7",
+  "object": "chat.completion",
+  "created": 1790436670,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"É necessário prever recursos específicos para a educação inclusiva no Orçamento de 2024.\"},\n    {\"id\": \"P2\", \"text\": \"O atual modelo de educação pública está falido e precisa ser repensado para incluir melhor os alunos com deficiência.\"},\n    {\"id\": \"P3\", \"text\": \"É preciso ampliar a concepção de escola para incluir realidades diversas, como escolas nas águas, nas florestas e no campo.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1423,
+    "total_tokens": 1554,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00056468,
+    "prompt_tokens_details": null
+  }
+}

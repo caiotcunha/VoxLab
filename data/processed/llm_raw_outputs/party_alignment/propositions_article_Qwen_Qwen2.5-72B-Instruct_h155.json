@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnUxyxceiHqegwnjwKd9zWmM",
+  "object": "chat.completion",
+  "created": 1790436660,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Mais orçamento é necessário para as políticas públicas para a população idosa\"},\n    {\"id\": \"P2\", \"text\": \"Instituições de Longa Permanência (ILPIs) devem ter garantia de financiamento\"},\n    {\"id\": \"P3\", \"text\": \"A rede de centros-dias deve ser consolidada para atender a população idosa\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1396,
+    "total_tokens": 1504,
+    "completion_tokens": 108,
+    "estimated_cost": 0.00054576,
+    "prompt_tokens_details": null
+  }
+}

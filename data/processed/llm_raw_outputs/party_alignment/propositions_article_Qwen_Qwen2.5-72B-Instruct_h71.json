@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTDdbIReGt56DtekEzpdW2vl",
+  "object": "chat.completion",
+  "created": 1790436538,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"A venda da Regap pode criar um monopólio privado regional com práticas de preços abusivos\"},\n    {\"id\": \"P2\", \"text\": \"A privatização da Regap resultará em aumento de preços e desabastecimento de combustíveis em Minas Gerais\"},\n    {\"id\": \"P3\", \"text\": \"A Petrobras está vendendo refinarias como parte de um acordo para encerrar investigação de conduta anticompetitiva\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1712,
+    "total_tokens": 1838,
+    "completion_tokens": 126,
+    "estimated_cost": 0.00066672,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTt3QPR18yZni6xzR7CizHNX",
+  "object": "chat.completion",
+  "created": 1790436641,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Policiais penais devem ter regulamentação específica de suas atividades\"},\n    {\"id\": \"P2\", \"text\": \"Policiais penais precisam de políticas públicas para reduzir a sobrecarga de trabalho e melhorar a saúde mental\"},\n    {\"id\": \"P3\", \"text\": \"A ressocialização dos presos deve ser priorizada com ênfase nos direitos humanos\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1518,
+    "total_tokens": 1631,
+    "completion_tokens": 113,
+    "estimated_cost": 0.00059168,
+    "prompt_tokens_details": null
+  }
+}

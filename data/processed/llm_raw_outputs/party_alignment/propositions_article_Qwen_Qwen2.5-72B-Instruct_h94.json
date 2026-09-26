@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RISiQk3UeWLlG3oDZ4M47U7a",
+  "object": "chat.completion",
+  "created": 1790436570,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"Pessoas autistas devem ter acesso a terapias e políticas públicas específicas\"},\n    {\"id\": \"P2\", \"text\": \"Pais e responsáveis de pessoas autistas devem ser capacitados para realizar terapias\"},\n    {\"id\": \"P3\", \"text\": \"Políticas públicas existentes para pessoas autistas devem ser implementadas efetivamente\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1154,
+    "total_tokens": 1261,
+    "completion_tokens": 107,
+    "estimated_cost": 0.00045823999999999995,
+    "prompt_tokens_details": null
+  }
+}

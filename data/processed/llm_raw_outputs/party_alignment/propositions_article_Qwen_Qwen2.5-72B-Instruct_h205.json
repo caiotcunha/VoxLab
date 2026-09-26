@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKXSL9Ak5jFMQsxcqbHiqzc7",
+  "object": "chat.completion",
+  "created": 1790436747,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"As Forças Armadas devem ter maior participação na segurança das fronteiras\"},\n    {\"id\": \"P2\", \"text\": \"O Ministério da Justiça deve destinar mais recursos para o Programa Guardiões da Fronteira\"},\n    {\"id\": \"P3\", \"text\": \"É necessário desenvolver indicadores para medir o impacto das operações de fronteira sobre a população\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2555,
+    "total_tokens": 2662,
+    "completion_tokens": 107,
+    "estimated_cost": 0.0009626000000000001,
+    "prompt_tokens_details": null
+  }
+}

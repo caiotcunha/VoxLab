@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjxJeZm9opcHDsaNWfI6PalL",
+  "object": "chat.completion",
+  "created": 1790436566,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O Seguro Social de Catástrofe deve fornecer indenização emergencial de R$ 15 mil por moradia após desastres naturais.\"},\n    {\"id\": \"P2\", \"text\": \"O Fundo de Seguro Rural deve ser criado com participação da União e das seguradoras para ampliar a cobertura do seguro rural.\"},\n    {\"id\": \"P3\", \"text\": \"O seguro contra rompimento de barragens deve ser obrigatório e incluir garantias para descomissionamento e descaracterização de barragens.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2252,
+    "total_tokens": 2396,
+    "completion_tokens": 144,
+    "estimated_cost": 0.0008683200000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxujCgnnW4hECniuO33381hC",
+  "object": "chat.completion",
+  "created": 1790436608,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O colapso climático já começou e exige medidas urgentes de descarbonização, reflorestamento e monitoramento dos biomas.\"},\n    {\"id\": \"P2\", \"text\": \"O aumento da temperatura nos oceanos é um indicador claro do colapso climático e não pode ser atribuído apenas ao fenômeno El Niño.\"},\n    {\"id\": \"P3\", \"text\": \"A redução do desmatamento e da produção de combustíveis fósseis é essencial para mitigar os efeitos do colapso climático.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1852,
+    "total_tokens": 1997,
+    "completion_tokens": 145,
+    "estimated_cost": 0.00072472,
+    "prompt_tokens_details": null
+  }
+}

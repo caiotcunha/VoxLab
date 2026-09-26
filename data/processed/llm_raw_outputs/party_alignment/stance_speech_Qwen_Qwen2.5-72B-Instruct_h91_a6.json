@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGrOKOS5niXWn2ZA3S3Ezglx",
+  "object": "chat.completion",
+  "created": 1790438776,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": {\n    \"P1\": {\"stance_determinable\": \"YES\", \"stance\": \"AGAINST\"},\n    \"P2\": {\"stance_determinable\": \"YES\", \"stance\": \"FAVOR\"},\n    \"P3\": {\"stance_determinable\": \"YES\", \"stance\": \"FAVOR\"}\n  },\n  \"government_stance\": \"NEUTRAL\",\n  \"previous_government_stance\": \"NOT_ADDRESSED\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3012,
+    "total_tokens": 3111,
+    "completion_tokens": 99,
+    "estimated_cost": 0.00112392,
+    "prompt_tokens_details": null
+  }
+}

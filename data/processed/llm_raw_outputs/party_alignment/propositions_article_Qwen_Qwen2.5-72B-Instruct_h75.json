@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RENRL3F3qXlIV7w92rB6BvYR",
+  "object": "chat.completion",
+  "created": 1790436544,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"propositions\": [\n    {\"id\": \"P1\", \"text\": \"O financiamento de creches via FGTS contraria a legislação trabalhista.\"},\n    {\"id\": \"P2\", \"text\": \"A MP 1116/22 desobriga as empresas de instalar creches em suas dependências.\"},\n    {\"id\": \"P3\", \"text\": \"A suspensão do contrato de trabalho para qualificação profissional prejudica os direitos das trabalhadoras.\"}\n  ]\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1871,
+    "total_tokens": 1987,
+    "completion_tokens": 116,
+    "estimated_cost": 0.0007199600000000001,
+    "prompt_tokens_details": null
+  }
+}
