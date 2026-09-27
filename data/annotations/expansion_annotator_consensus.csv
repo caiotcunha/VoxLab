@@ -1,5 +1,5 @@
-"pair_id","event_a","date_a","topic_a","text_a","context_before_a","evidence_a","context_after_a","event_b","date_b","topic_b","text_b","context_before_b","evidence_b","context_after_b","blinding_warning","stance_determinable_a","stance_determinable_b","target_proposition_a","target_proposition_b","same_proposition","stance_a","stance_b","determinability_confidence_a","determinability_confidence_b","proposition_confidence_a","proposition_confidence_b","comparability_confidence","stance_confidence_a","stance_confidence_b","annotation_notes_a","annotation_notes_b","comparability_notes"
-"9b028d8dc263fd18","PUBLIC_HEARING","2023-08-09","Revisão do Marco Legal da Inovação para facilitar sua operacionalização","Bom dia.
+pair_id,event_a,date_a,topic_a,text_a,context_before_a,evidence_a,context_after_a,event_b,date_b,topic_b,text_b,context_before_b,evidence_b,context_after_b,blinding_warning,stance_determinable_a,stance_determinable_b,target_proposition_a,target_proposition_b,same_proposition,stance_a,stance_b,determinability_confidence_a,determinability_confidence_b,proposition_confidence_a,proposition_confidence_b,comparability_confidence,stance_confidence_a,stance_confidence_b,annotation_notes_a,annotation_notes_b,comparability_notes
+9b028d8dc263fd18,PUBLIC_HEARING,2023-08-09,Revisão do Marco Legal da Inovação para facilitar sua operacionalização,"Bom dia.
 
 Em nome do Presidente da CNI, Robson Braga de Andrade, eu gostaria de saudar a Deputada Luisa Canziani e parabenizá-la por requerer esta audiência, que trata de um tema tão estratégico e importante para o nosso País.
 
@@ -99,7 +99,7 @@ Eu coloco a CNI e a MEI à disposição para detalhar ainda mais esses pontos qu
 
 Obrigada.(Palmas.)
 
-","PUBLIC_HEARING","2023-08-30","Discussão sobre mudanças na Lei do Bem para facilitar a colaboração entre universidades, empresas e governo e promover inovações","Bom dia a todos e a todas.
+",PUBLIC_HEARING,2023-08-30,"Discussão sobre mudanças na Lei do Bem para facilitar a colaboração entre universidades, empresas e governo e promover inovações","Bom dia a todos e a todas.
 
 Deputado Vitor Lippi, o senhor também dedica sua vida a essa causa, como todos nós aqui. Precisamos ampliar e trazer mais pessoas para essa causa.
 
@@ -177,7 +177,7 @@ Aqui apresento algumas das fraquezas do nosso sistema nacional de inovação, a 
 
 A fragmentação do sistema de educação e pesquisa e do sistema de produção e inovação e a ineficiência, muitas vezes, dos subsistemas de política e regulação, isso requer importantes reformas relacionadas à tributação, à regulação das empresas e à política macroeconômica, que não tem, algumas vezes, uma visão de longo prazo desvinculada da inovação.
 
-Aí, sobre esse ponto, Deputado, da política macroeconômica, de uma falta de visão de longo prazo, eu aproveito para fazer um apelo, em nome da CNI, para que o PL da Lei do Bem seja colocado em votação. ","Estamos falando do único instrumento fiscal que o Brasil tem para apoiar as empresas a inovarem."," Entendemos que, por princípio conceitual, talvez a área econômica não esteja de acordo, talvez nunca estará. Então, nós, setor empresarial, consideramos a Lei do Bem o principal instrumento para as empresas inovarem. E esse tipo de instrumento é amplamente utilizado nos países da OCDE, nos países mais desenvolvidos, nos países mais inovadores. Precisamos trazer isso para o Brasil. Sem esse instrumento, a Lei do Bem continuará sendo restrita a poucas empresas, sem gerar um impacto positivo na nossa economia. E ela é importante não só para o setor empresarial, mas também para a academia, porque ela vai estimular que mais pesquisadores sejam contratados, vai estimular uma maior articulação entre os setores.
+Aí, sobre esse ponto, Deputado, da política macroeconômica, de uma falta de visão de longo prazo, eu aproveito para fazer um apelo, em nome da CNI, para que o PL da Lei do Bem seja colocado em votação. ",Estamos falando do único instrumento fiscal que o Brasil tem para apoiar as empresas a inovarem.," Entendemos que, por princípio conceitual, talvez a área econômica não esteja de acordo, talvez nunca estará. Então, nós, setor empresarial, consideramos a Lei do Bem o principal instrumento para as empresas inovarem. E esse tipo de instrumento é amplamente utilizado nos países da OCDE, nos países mais desenvolvidos, nos países mais inovadores. Precisamos trazer isso para o Brasil. Sem esse instrumento, a Lei do Bem continuará sendo restrita a poucas empresas, sem gerar um impacto positivo na nossa economia. E ela é importante não só para o setor empresarial, mas também para a academia, porque ela vai estimular que mais pesquisadores sejam contratados, vai estimular uma maior articulação entre os setores.
 
 Então, Deputado Vitor Lippi, o senhor, como Relator desse PL, de autoria da Deputada Canziani, eu estou fazendo aqui, realmente, um apelo, em nome da CNI — e isso foi conversado internamente —, para que esse PL entre em votação o mais rápido possível.
 
@@ -219,8 +219,8 @@ E qualquer dúvida nós estamos à disposição.
 
 Obrigada.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","As ICTs públicas devem ter autonomia de gestão e de orçamento","A Câmara deve votar o projeto que muda a Lei do Bem","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala representa a CNI e a MEI","Quem fala representa a CNI","A pede autonomia de gestão para as ICTs públicas e B pede a votação do projeto da Lei do Bem"
-"ffe531755c6def2e","PUBLIC_HEARING","2024-03-21","Regulamentação do trabalho de motoristas de aplicativo","Há outro absurdo nesse projeto de lei que o Governo apresentou, além do fracasso que vimos nessa regulamentação do GT, além de os sindicatos estarem ali envolvidos. Eles colocam uma autoridade para a plataforma, para fazer o banimento unilateral, baseado inclusive no termo da própria plataforma. Isso é até inconstitucional. Todos nós temos o direito de fazer a nossa livre defesa. Temos direito. A Constituição nos garante isso. O projeto franquia para a plataforma o banimento unilateral, o que é um absurdo. Isso já acontece conosco o tempo todo: banimentos injustos. O motorista simplesmente dorme e acorda no dia seguinte banido, sem direito a nada.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,As ICTs públicas devem ter autonomia de gestão e de orçamento,A Câmara deve votar o projeto que muda a Lei do Bem,NO,FAVOR,FAVOR,HIGH,MEDIUM,HIGH,HIGH,HIGH,HIGH,HIGH,Quem fala representa a CNI e a MEI,Quem fala representa a CNI,A pede autonomia de gestão para as ICTs públicas e B pede a votação do projeto da Lei do Bem
+ffe531755c6def2e,PUBLIC_HEARING,2024-03-21,Regulamentação do trabalho de motoristas de aplicativo,"Há outro absurdo nesse projeto de lei que o Governo apresentou, além do fracasso que vimos nessa regulamentação do GT, além de os sindicatos estarem ali envolvidos. Eles colocam uma autoridade para a plataforma, para fazer o banimento unilateral, baseado inclusive no termo da própria plataforma. Isso é até inconstitucional. Todos nós temos o direito de fazer a nossa livre defesa. Temos direito. A Constituição nos garante isso. O projeto franquia para a plataforma o banimento unilateral, o que é um absurdo. Isso já acontece conosco o tempo todo: banimentos injustos. O motorista simplesmente dorme e acorda no dia seguinte banido, sem direito a nada.
 
 Observamos que esse projeto, Deputado, é muito parecido com a CLT, mas sem os direitos que a CLT oferece. Nós não queremos CLT. O motorista quer autonomia. Esse projeto é uma CLT disfarçada, com toda essa amarração que vemos na regulamentação, mas sem direito nenhum para nós. Só temos deveres, só temos taxação, só temos menos ganhos. Não há garantia nenhuma para o motorista. Então, nós queremos a rejeição total desse projeto. Estamos batendo de porta em porta, procuramos os Deputados desta Casa, que é a Casa do Povo, e pedimos que ele seja rejeitado integralmente.
 
@@ -236,7 +236,7 @@ Que trabalhemos e apresentemos, então, um projeto que seja realmente viável, �
 
 Obrigado.(Palmas.)
 
-","PUBLIC_HEARING","2024-04-25","Regulamentação do trabalho de motoristas de aplicativo","Obrigado, Presidente da Mesa.
+",PUBLIC_HEARING,2024-04-25,Regulamentação do trabalho de motoristas de aplicativo,"Obrigado, Presidente da Mesa.
 
 Cumprimento os Deputados, o Ministro, as autoridades presentes e agradeço a oportunidade de estar aqui falando sobre a regulamentação da categoria.
 
@@ -270,7 +270,7 @@ Muito obrigado.(Palmas.)
 
 Cumprimento os Deputados, o Ministro, as autoridades presentes e agradeço a oportunidade de estar aqui falando sobre a regulamentação da categoria.
 
-É importante dizer o seguinte, Ministro: sou motorista e rodo desde 2017 na cidade de Belo Horizonte. Desde o início, nós como motoristas fomos excluídos deste debate. Os motoristas foram excluídos. Muito me admira um governo que diz defender o trabalhador montar um GT, um grupo de trabalho do qual o próprio trabalhador foi excluído. Participei da primeira reunião do GT como convidado, mas não tive direito a voz, não tive direito a voto e fui praticamente expulso da reunião. Desde então, desde o início da montagem desse grupo de trabalho, tentamos participar do debate. Fomos totalmente ignorados. O Governo montou um grupo de trabalho e chamou centrais sindicais pelas quais os motoristas não se sentem representados. Apesar de sabermos que a Constituição dá o direito a sindicatos, a centrais sindicais, não nos sentimos representados. Por quê? Sabemos que, em alguns sindicatos, há motoristas, sim, sabemos que a Cacá é motorista, que há alguns motoristas neles, dois ou três, mas que a grande maioria não é, e não conhece os desafios que temos na rua. A representatividade, por exemplo, da Cacá, que é motorista, torna ela até muito responsável por esse projeto, pela dificuldade, pela rejeição que o projeto obteve. Por quê? O motorista, qualquer motorista que rode, que sabe dos desafios, que conhece os desafios, é totalmente contrário ao projeto da forma como ele foi apresentado. ","Temos uma rejeição de mais de 98% dos motoristas a este projeto."," Quem é motorista de fato vai rejeitar este projeto.
+É importante dizer o seguinte, Ministro: sou motorista e rodo desde 2017 na cidade de Belo Horizonte. Desde o início, nós como motoristas fomos excluídos deste debate. Os motoristas foram excluídos. Muito me admira um governo que diz defender o trabalhador montar um GT, um grupo de trabalho do qual o próprio trabalhador foi excluído. Participei da primeira reunião do GT como convidado, mas não tive direito a voz, não tive direito a voto e fui praticamente expulso da reunião. Desde então, desde o início da montagem desse grupo de trabalho, tentamos participar do debate. Fomos totalmente ignorados. O Governo montou um grupo de trabalho e chamou centrais sindicais pelas quais os motoristas não se sentem representados. Apesar de sabermos que a Constituição dá o direito a sindicatos, a centrais sindicais, não nos sentimos representados. Por quê? Sabemos que, em alguns sindicatos, há motoristas, sim, sabemos que a Cacá é motorista, que há alguns motoristas neles, dois ou três, mas que a grande maioria não é, e não conhece os desafios que temos na rua. A representatividade, por exemplo, da Cacá, que é motorista, torna ela até muito responsável por esse projeto, pela dificuldade, pela rejeição que o projeto obteve. Por quê? O motorista, qualquer motorista que rode, que sabe dos desafios, que conhece os desafios, é totalmente contrário ao projeto da forma como ele foi apresentado. ",Temos uma rejeição de mais de 98% dos motoristas a este projeto.," Quem é motorista de fato vai rejeitar este projeto.
 
 Estamos enfrentando uma dificuldade muito grande, e não é porque não queremos regulamentação. O Secretário da Previdência falou sobre o INSS. Somos favoráveis ao INSS, à contribuição, achamos que ela é importante. Assim como o meu colega Denis falou, já consta na Lei nº 13.640 a previsão da contribuição. Porém, ela não veio de forma obrigatória, e sabemos da dificuldade de fazer o pagamento. O Governo pode, sim, criar mecanismos para que o MEI seja ampliado. Assim como foi feito para os caminhoneiros, que também seja feito para os motoristas, de forma que ele também seja obrigatório, e consigamos ter a garantia previdenciária.
 
@@ -296,8 +296,8 @@ Para finalizar, Deputado, nós precisamos que sejam realmente vistos estes ponto
 
 Muito obrigado.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","A Câmara deve aprovar o projeto que regulamenta o trabalho dos motoristas de aplicativo","A Câmara deve aprovar o projeto que regulamenta o trabalho dos motoristas de aplicativo","YES","AGAINST","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","","",""
-"42af9ecf027d72bc","PUBLIC_HEARING","2023-08-08","Apoio ao Projeto de Lei 1673/21 que institui a Política Nacional de Saúde Funcional","Eu quero mais uma vez agradecer a participação de todas as pessoas que estiveram conosco, muitas que nos acompanharam e participaram de formaon-line.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,A Câmara deve aprovar o projeto que regulamenta o trabalho dos motoristas de aplicativo,A Câmara deve aprovar o projeto que regulamenta o trabalho dos motoristas de aplicativo,YES,AGAINST,AGAINST,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,,,
+42af9ecf027d72bc,PUBLIC_HEARING,2023-08-08,Apoio ao Projeto de Lei 1673/21 que institui a Política Nacional de Saúde Funcional,"Eu quero mais uma vez agradecer a participação de todas as pessoas que estiveram conosco, muitas que nos acompanharam e participaram de formaon-line.
 
 Agradeço ao Sr. Arthur de Almeida Medeiros, Coordenador-Geral de Saúde da Pessoa com Deficiência do Ministério da Saúde; ao Sr. Wolnei Caumo, da Universidade Federal do Rio Grande do Sul; à Sra. Genilza Valente, do Comitê Científico da ANFIBRO; ao Sr. Eduardo Santana Cordeiro, da Associação Internacional de Especialistas e Pesquisadores em Funcionalidade e CIF; à Sra. Nadja Waléria Vilela Camara, da CIF Brasil, que é a Classificação Internacional de Funcionalidade; ao Dr. Roberto Rodrigues Filho, do Hospital de Base de Brasília; ao Dr. Carlos Gropen Júnior, da Sociedade para Estudo da Dor do DF; e à Sra. Djane da Silva Bento, da Associação Nacional das Pessoas com Lúpus.
 
@@ -337,7 +337,7 @@ Com essas considerações, mais uma vez eu gostaria de agradecer a participaçã
 
 Não havendo mais nada a tratar, eu gostaria de encerrar a presente reunião, mas, antes disso, convoco as Deputadas e os Deputados deste colegiado para a reunião deliberativa desta Comissão de Legislação Participativa, que acontecerá amanhã, dia 9 de agosto, às 13h30min, no Plenário 3.
 
-Declaro encerrada a presente audiência.","PUBLIC_HEARING","2023-11-29","Política nacional de cuidados para idosos","Muito bom, Prof. Vicente Faleiros.
+Declaro encerrada a presente audiência.",PUBLIC_HEARING,2023-11-29,Política nacional de cuidados para idosos,"Muito bom, Prof. Vicente Faleiros.
 
 Nós acabamos de aprovar um projeto na Comissão de Previdência para assegurar o direito à aposentadoria das mães cuidadoras, aos 62 anos, podendo parcelar o débito com a Previdência. Acabamos de aprovar essa matéria, reconhecendo que há um trabalho no cuidar. O cuidar é um trabalho. Para além disso, o cuidar envolve mais do que o próprio trabalho. Os meninos têm que cuidar, os professores têm que cuidar, enfim, muitos cuidam e têm que cuidar. Os governantes, em particular, têm que cuidar. Eu me lembro muito de Lula, quando diz que, mais do que administrar, precisamos cuidar — e cuidar com a centralidade nas próprias pessoas. Também o cuidar não pode ser apropriado pelo mercado. Às vezes, cuida-se mais dos produtos ou das mercadorias do que das próprias pessoas; e, ao mesmo tempo, mercantilizam-se as próprias pessoas.
 
@@ -353,8 +353,8 @@ Então, nesse sentido, é importante que nós possamos ter cuidado, até porque,
 
 Passo então a palavra à Walquiria Cristina Batista, que é representante do Conselho Nacional de Saúde.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","A Classificação Internacional de Funcionalidade deve ser usada junto com a Classificação Internacional de Doenças","O cuidado com as pessoas pode ser tratado como um negócio","NO","FAVOR","AGAINST","MEDIUM","HIGH","MEDIUM","MEDIUM","HIGH","HIGH","HIGH","","","A fala trata da classificação de saúde funcional e a B do papel do mercado no cuidado das pessoas"
-"16c67be32f60e074","PUBLIC_HEARING","2024-04-16","Participação da Câmara na definição das regras de renovação das concessões das distribuidoras de energia elétrica","Obrigado, Presidente Deputado Hugo Leal. Parabenizo V.Exa. pela iniciativa do debate neste momento mais do que oportuno.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,A Classificação Internacional de Funcionalidade deve ser incorporada à Classificação Internacional de Doenças.,O cuidado com as pessoas pode ser tratado como um negócio,NO,FAVOR,AGAINST,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,MEDIUM,HIGH,,,A fala trata da classificação de saúde funcional e a B do papel do mercado no cuidado das pessoas
+16c67be32f60e074,PUBLIC_HEARING,2024-04-16,Participação da Câmara na definição das regras de renovação das concessões das distribuidoras de energia elétrica,"Obrigado, Presidente Deputado Hugo Leal. Parabenizo V.Exa. pela iniciativa do debate neste momento mais do que oportuno.
 
 O Brasil hoje consolida a opinião de que a energia é essencial, tanto para a sobrevivência da família brasileira quanto para o desenvolvimento econômico. O mérito desse debate cabe ao Congresso Nacional. São mais de 10 anos de debate intensivo nesta Casa e nesta Comissão a respeito do tema.
 
@@ -382,7 +382,7 @@ O Brasil hoje consolida a opinião de que a energia é essencial, tanto para a s
 
 Hoje, ninguém vive sem energia, ninguém desenvolve um país ou uma economia sem energia. O Brasil, ávido por essa oportunidade, tem o melhor desempenho, diante dessa transformação energética que o mundo vive. O Brasil se coloca como modelo na transição energética, com a perspectiva de, a partir dela, compatibilizar a competitividade brasileira com a do resto do mundo.
 
-Não tenho dúvida de que o trabalho feito nesta Casa já construiu vários consensos. ","Um deles é que o modelo atual das concessionárias de energia no Brasil precisa ser modificado."," O modelo de negócio atual faz com que todas as empresas tenham um reconhecimento negativo por parte da sociedade brasileira. Em qualquer Estado do Brasil, há queixa com relação ao comportamento e à postura das concessionárias, das distribuidoras de energia. Há uma incompatibilidade com os demais segmentos. Essa situação do setor macula a própria relação, que poderia ser confortável, de bom convívio, de debate e de diálogo, com a impossibilidade da manutenção desse sistema.
+Não tenho dúvida de que o trabalho feito nesta Casa já construiu vários consensos. ",Um deles é que o modelo atual das concessionárias de energia no Brasil precisa ser modificado.," O modelo de negócio atual faz com que todas as empresas tenham um reconhecimento negativo por parte da sociedade brasileira. Em qualquer Estado do Brasil, há queixa com relação ao comportamento e à postura das concessionárias, das distribuidoras de energia. Há uma incompatibilidade com os demais segmentos. Essa situação do setor macula a própria relação, que poderia ser confortável, de bom convívio, de debate e de diálogo, com a impossibilidade da manutenção desse sistema.
 
 Existem alguns consensos. Primeiro, tarifa social é responsabilidade da União. Eu quis trazer esse debate, no ano passado, para o Orçamento Geral da União, quando fui Relator da LDO. O Governo não topou a ideia. Hoje estamos vendo que a tarifa social tem que ser tratada pelo conjunto da sociedade no Orçamento Geral da União.
 
@@ -398,7 +398,7 @@ Esta Casa se afirma com este debate. Eu gostei muito do que foi trazido pelo Sec
 
 Obrigado.
 
-","PUBLIC_HEARING","2022-05-12","Reajustes nas tarifas de energia elétrica devido ao represamento durante a pandemia e a escassez hídrica","Obrigado, Anton.
+",PUBLIC_HEARING,2022-05-12,Reajustes nas tarifas de energia elétrica devido ao represamento durante a pandemia e a escassez hídrica,"Obrigado, Anton.
 
 Alguém mais deseja falar?(Pausa.)
 
@@ -442,8 +442,8 @@ Aproveito a oportunidade para dizer que o Brasil tem agora um momento diferencia
 
 Vamos continuar juntos na luta, gerando e distribuindo energia com preço capaz de ser assumido e de sensibilidade com o povo brasileiro.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O modelo atual das distribuidoras de energia no Brasil deve mudar","O Brasil deve acelerar a troca para energia limpa","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","MEDIUM","HIGH","HIGH","HIGH","Quem fala conta que foi relator da LDO e que criou com emenda própria o primeiro curso de energia solar do IFCE no Ceará","Dei MEDIUM na proposição porque ele fala da transição de forma muito ampla, sem especificar nenhuma medida","A pede mudança no modelo das distribuidoras e B pede avanço da energia limpa"
-"370ab0f946469bab","PUBLIC_HEARING","2023-10-04","Consolidação de políticas públicas para idosos no contexto dos 20 anos do Estatuto do Idoso","Boa tarde a todas as pessoas presentes. Espero que vocês estejam bem. Que bom estarmos aqui reunidos para falar de um avanço tão importante para o nosso País.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,O modelo atual das concessões de distribuição de energia elétrica deve ser modificado.,O Brasil deve acelerar a troca para energia limpa,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,HIGH,Quem fala conta que foi relator da LDO e que criou com emenda própria o primeiro curso de energia solar do IFCE no Ceará,"Dei MEDIUM na proposição porque ele fala da transição de forma muito ampla, sem especificar nenhuma medida",A pede mudança no modelo das distribuidoras e B pede avanço da energia limpa
+370ab0f946469bab,PUBLIC_HEARING,2023-10-04,Consolidação de políticas públicas para idosos no contexto dos 20 anos do Estatuto do Idoso,"Boa tarde a todas as pessoas presentes. Espero que vocês estejam bem. Que bom estarmos aqui reunidos para falar de um avanço tão importante para o nosso País.
 
 Eu quero iniciar minha fala com os primeiros agradecimentos.
 
@@ -627,7 +627,7 @@ Eu quero agradecer o convite mais uma vez e, desde já, dizer que a nossa Secret
 
 Obrigado.(Palmas.)
 
-","PUBLIC_HEARING","2023-05-17","Discussão sobre o preconceito contra idosos e medidas para combatê-lo","Boa tarde a todas as pessoas presentes.
+",PUBLIC_HEARING,2023-05-17,Discussão sobre o preconceito contra idosos e medidas para combatê-lo,"Boa tarde a todas as pessoas presentes.
 
 Quero agradecer mais uma vez ao Deputado Castro Neto pelo convite e também à CIDOSO por essa parceria necessária para discutirmos um ponto tão importante.
 
@@ -799,8 +799,8 @@ Coloco-me à disposição para fazer mais explicações. Vou deixar aqui na mesa
 
 Obrigado.(Palmas.)
 
-","POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","A flexibilização das leis trabalhistas prejudicaram a aposentadoria das pessoas","A sociedade enxerga a velhice como algo ruim","NO","FAVOR","FAVOR","HIGH","MEDIUM","MEDIUM","MEDIUM","HIGH","HIGH","HIGH","Dei MEDIUM na proposição porque ele fala de ""algumas flexibilizações"", mas não especifica quais. A fala revela o cargo do orador","Quem fala se apresenta como Secretário Nacional dos Direitos da Pessoa Idosa. Dei MEDIUM porque parece mais uma aula do que uma defesa",""
-"90a4cc8b19325243","PUBLIC_HEARING","2023-11-07","Lições da pandemia e providências para futuras emergências sanitárias, com foco na vacinação e combate à desinformação","Obrigado, Deputada Iza Arruda. Parabéns pela iniciativa!
+",POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,A flexibilização das leis trabalhistas prejudicaram a aposentadoria das pessoas,Existe uma discriminação cultural contra pessoas idosas que associa a velhice a algo ruim e ultrapassado.,NO,FAVOR,FAVOR,HIGH,MEDIUM,MEDIUM,MEDIUM,MEDIUM,HIGH,HIGH,"Dei MEDIUM na proposição porque ele fala de ""algumas flexibilizações"", mas não especifica quais. A fala revela o cargo do orador",Quem fala se apresenta como Secretário Nacional dos Direitos da Pessoa Idosa. Dei MEDIUM porque parece mais uma aula do que uma defesa,
+90a4cc8b19325243,PUBLIC_HEARING,2023-11-07,"Lições da pandemia e providências para futuras emergências sanitárias, com foco na vacinação e combate à desinformação","Obrigado, Deputada Iza Arruda. Parabéns pela iniciativa!
 
 É uma oportunidade ímpar termos aqui o nosso companheiro Jarbas Barbosa, Diretor-Geral da OPAS.
 
@@ -880,7 +880,7 @@ Não há justificativa tecnológica ou de infraestrutura para não darmos esse s
 
 Obrigado.(Palmas.)
 
-","MINISTER_APPEARANCE","2023-11-28","Debate sobre a vacinação de crianças contra Covid-19","Obrigado, Presidente.
+",MINISTER_APPEARANCE,2023-11-28,Debate sobre a vacinação de crianças contra Covid-19,"Obrigado, Presidente.
 
 Perdoem-me, mas eu vou precisar dizer alguns termos, de forma bem objetiva: é movimento antivacina, sim!
 
@@ -972,8 +972,8 @@ Portanto, chega de mentira! Chega de utilização eleitoreira e político-partid
 
 Obrigado.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","A área da saúde deve dar mais atenção a como a desigualdade social aumenta riscos para a população","O Brasil deve enfrentar o movimento antivacina e recuperar a cobertura de vacinação do povo","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","MEDIUM","HIGH","HIGH","HIGH","Quem fala conta que foi Secretário de Saúde da Bahia a partir de 2007","",""
-"406f53bbc7b4086a","PUBLIC_HEARING","2024-04-09","Cumprimento dos direitos das pessoas com autismo","Muito obrigada.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,A área da saúde deve dar mais atenção a como a desigualdade social aumenta riscos para a população,O Brasil deve enfrentar o movimento antivacina e recuperar a cobertura de vacinação do povo,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,HIGH,Quem fala conta que foi Secretário de Saúde da Bahia a partir de 2007,,
+406f53bbc7b4086a,PUBLIC_HEARING,2024-04-09,Cumprimento dos direitos das pessoas com autismo,"Muito obrigada.
 
 Boa tarde a todos.
 
@@ -1037,7 +1037,7 @@ Por essas e outras questões é que a neurodiversidade nos lembra de que pessoas
 
 Muito obrigada.(Palmas.)
 
-","PUBLIC_HEARING","2023-06-27","Garantia de oportunidades e respeito às singularidades das pessoas autistas","Boa tarde a todos.
+",PUBLIC_HEARING,2023-06-27,Garantia de oportunidades e respeito às singularidades das pessoas autistas,"Boa tarde a todos.
 
 Neste momento, eu estou aqui representando a Ana Paula Feminella. Ela viria para cá, só que, infelizmente, ela teve um pequeno probleminha de saúde e não pôde comparecer. Ela gostaria de estar prestigiando este evento, que é muito importante, sobre o orgulho autista.
 
@@ -1081,8 +1081,8 @@ Esse é o meu depoimento como pessoa autista.
 
 É isso.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O autismo deve ser visto como uma neurodiversidade, com respeito às diferenças de cada pessoa autista","Pessoas autistas conseguem ocupar espaços importantes na sociedade se tiverem apoio e acessibilidade","NO","FAVOR","FAVOR","MEDIUM","HIGH","MEDIUM","HIGH","MEDIUM","HIGH","HIGH","Dei MEDIUM porque a posição vem de uma inferência curta pelo contexto. Quem fala representa a Secretaria Nacional dos Direitos das Pessoas com Deficiência e descreve a própria aparência","Quem fala representa a Secretária Ana Paula Feminella, conta que é autista, servidora pública e doutoranda da UnB e descreve a própria aparência","Dei MEDIUM porque as ideias andam muito juntas, e a mesma pessoa claramente sustenta ambas, mas não são a mesma ideia"
-"e13d509a937ffa5f","PUBLIC_HEARING","2023-08-16","Redução da vida útil de celulares e obsolescência programada","Isso.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"O autismo deve ser visto como uma neurodiversidade, com respeito às diferenças de cada pessoa autista",Pessoas autistas conseguem ocupar espaços importantes na sociedade se tiverem apoio e acessibilidade,NO,FAVOR,FAVOR,MEDIUM,HIGH,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,Dei MEDIUM porque a posição vem de uma inferência curta pelo contexto. Quem fala representa a Secretaria Nacional dos Direitos das Pessoas com Deficiência e descreve a própria aparência,"Quem fala representa a Secretária Ana Paula Feminella, conta que é autista, servidora pública e doutoranda da UnB e descreve a própria aparência","Dei MEDIUM porque as ideias andam muito juntas, e a mesma pessoa claramente sustenta ambas, mas não são a mesma ideia"
+e13d509a937ffa5f,PUBLIC_HEARING,2023-08-16,Redução da vida útil de celulares e obsolescência programada,"Isso.
 
 Ao lado dela, depois houve a questão também das meias femininas, de peças de veículos e das impressoras também.
 
@@ -1126,7 +1126,7 @@ São essas as minhas breves palavras neste primeiro momento. Fico à disposiçã
 
 Muito obrigado, mais uma vez, pela palavra, pelo convite e pela iniciativa de trazer para o debate assunto tão relevante para nossa sociedade.
 
-","PUBLIC_HEARING","2022-07-13","Debate sobre critérios mais acessíveis nos contratos de seguro de vida para idosos","Exmo. Sr. Deputado Denis Bezerra, primeiramente, eu peço sinceras desculpas a todos pelo imprevisto na parte técnica com relação ao meu áudio. Ainda bem que, pelo menos, isso foi consertado a tempo.
+",PUBLIC_HEARING,2022-07-13,Debate sobre critérios mais acessíveis nos contratos de seguro de vida para idosos,"Exmo. Sr. Deputado Denis Bezerra, primeiramente, eu peço sinceras desculpas a todos pelo imprevisto na parte técnica com relação ao meu áudio. Ainda bem que, pelo menos, isso foi consertado a tempo.
 
 Inicialmente, Sr. Deputado, eu já afirmo que os órgãos de defesa do consumidor, notadamente os PROCONs, estão de acordo com a proposta do Projeto de Lei nº 2.002, de 2019. E digo isso não só como Presidente, como Diretor-Geral aqui do PROCON-DF, mas também como Presidente da PROCONs-Brasil, que é a Associação Brasileira de PROCONs, que congrega diversos PROCONs de todas as cinco regiões do País. Lembro que há no País 988 PROCONs.
 
@@ -1182,8 +1182,8 @@ Sr. Deputado, espero não ter extravasado o meu tempo. Fico à disposição para
 
 Muito obrigado pela oportunidade. Parabenizo mais uma vez a iniciativa desta Casa Legislativa.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O fabricante deve continuar tendo que consertar um produto que foi feito para durar menos, mesmo depois que a garantia dele acabar","Os contratos dados para os idosos trazem informações claras e fáceis de entender","NO","FAVOR","AGAINST","MEDIUM","HIGH","MEDIUM","HIGH","HIGH","MEDIUM","HIGH","Votei MEDIUM para a stance porque ele apresenta a decisão dos tribunais sem dizer explicitamente que concorda. A evidência relata o entendimento dos tribunais, e inferi a posição de quem fala pelo contexto. Quem fala representa o PROCON","Quem fala se apresenta como Diretor-Geral do PROCON-DF e presidente da associação nacional dos PROCONs",""
-"62551a12ba0d40a1","PUBLIC_HEARING","2023-12-07","Precarização do trabalho na mineração brasileira","Muito obrigado, Lourival Andrade, aqui representando o Observatório Sindical Brasileiro Clodesmidt Riani.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"O fabricante deve continuar tendo que consertar um produto que foi feito para durar menos, mesmo depois que a garantia dele acabar",Os contratos de seguro de vida para idosos são abusivos,NO,FAVOR,FAVOR,MEDIUM,HIGH,MEDIUM,MEDIUM,HIGH,MEDIUM,HIGH,"Votei MEDIUM para a stance porque ele apresenta a decisão dos tribunais sem dizer explicitamente que concorda. A evidência relata o entendimento dos tribunais, e inferi a posição de quem fala pelo contexto. Quem fala representa o PROCON",Quem fala se apresenta como Diretor-Geral do PROCON-DF e presidente da associação nacional dos PROCONs,
+62551a12ba0d40a1,PUBLIC_HEARING,2023-12-07,Precarização do trabalho na mineração brasileira,"Muito obrigado, Lourival Andrade, aqui representando o Observatório Sindical Brasileiro Clodesmidt Riani.
 
 Eu queria esclarecer, até em resposta às palavras do próprio Lourival, que fizemos vários convites aqui.Lucineide Varjão, Vice-Presidente da IndustriaLL Global Union, foi convidada, mas não fez qualquer manifestação. Raul Jungmann justificou a ausência, porém, poderia ter enviado representante. Acho que a fala foi muito pertinente também em relação às participações que aconteceram de forma virtual. Poderiam ter emitido suas opiniões. O Presidente da Associação dos Municípios Mineradores também poderia ter enviado representante.
 
@@ -1207,7 +1207,7 @@ Existe então todo esse contexto, e não há a participação do outro lado."," 
 
 Vou abrir a palavra para que possam apresentar considerações finais, caso queiram fazê-las. Isso fica a critério dos senhores. Se algum dos senhores que aqui já se manifestaram quiser fazer alguma consideração final, dispõe de 1 minuto.
 
-","PUBLIC_HEARING","2023-10-18","Mudança demográfica e a necessidade de reestruturação do Estado para atender ao envelhecimento da população brasileira","Inicialmente, boa tarde a todos e a todas.
+",PUBLIC_HEARING,2023-10-18,Mudança demográfica e a necessidade de reestruturação do Estado para atender ao envelhecimento da população brasileira,"Inicialmente, boa tarde a todos e a todas.
 
 Declaro aberta esta reunião de audiência pública da Comissão de Defesa dos Direitos da Pessoa Idosa.
 
@@ -1279,8 +1279,8 @@ Trabalhamos com o tempo máximo de 10 minutos, mas, se houver necessidade, nós 
 
 Tem a palavra o Sr. Alexandre da Silva.
 
-","POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Os danos da mineração à população recebem a atenção que merecem","O Estado brasileiro deve se preparar para o envelhecimento da população","NO","AGAINST","FAVOR","MEDIUM","HIGH","MEDIUM","HIGH","HIGH","HIGH","HIGH","Dei MEDIUM porque ele reclama mais do que afirma. Dá pra inferir a posição dele, porque ele claramente acha que o tema é ignorado","",""
-"a9bdcddb335a5a07","PUBLIC_HEARING","2023-09-20","Discussão sobre a Lei de Diretrizes Orçamentárias (LDO) de 2024 e suas implicações para o déficit fiscal e políticas voltadas para mulheres","Muito obrigada, Elaine.
+",POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Os danos da mineração à população recebem a atenção que merecem,O Estado brasileiro deve se preparar para o envelhecimento da população,NO,AGAINST,FAVOR,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,HIGH,HIGH,"Dei MEDIUM porque ele reclama mais do que afirma. Dá pra inferir a posição dele, porque ele claramente acha que o tema é ignorado",,
+a9bdcddb335a5a07,PUBLIC_HEARING,2023-09-20,Discussão sobre a Lei de Diretrizes Orçamentárias (LDO) de 2024 e suas implicações para o déficit fiscal e políticas voltadas para mulheres,"Muito obrigada, Elaine.
 
 Eu acho que fui meio dura na minha fala porque fui gestora por mais tempo do que sou Parlamentar e tenho muita dificuldade com os melindres.
 
@@ -1296,7 +1296,7 @@ Tenho muita esperança neste Governo com relação à área social, porque eu fu
 
 Vou fazer outra colocação. ","Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não passar esse recurso direto para a gerência do Ministério das Mulheres? É isso o que eu questiono. Eu não questiono que estejamos em todos os meandros da sociedade ou das políticas públicas. Estamos sim em todos os lugares. Agora, eu não concordo com essa parte que eu citei."," Quanto é que vai sobrar?
 
-","PUBLIC_HEARING","2023-08-02","Aumento da violência contra mulheres devido ao desmonte de políticas públicas e ascensão do ultraconservadorismo","É um prazer participar desta audiência pública conjunta, tanto da Comissão de Direitos Humanos, Minorias e Igualdade Racial, não é, Denise, quanto da nossa Comissão. É um prazer também estar participando desta audiência sob a Presidência da Deputada Ana Pimentel, que busca com o seu mandato avançar nas políticas públicas de direitos humanos, de igualdade de direitos e em defesa das mulheres e das minorias.
+",PUBLIC_HEARING,2023-08-02,Aumento da violência contra mulheres devido ao desmonte de políticas públicas e ascensão do ultraconservadorismo,"É um prazer participar desta audiência pública conjunta, tanto da Comissão de Direitos Humanos, Minorias e Igualdade Racial, não é, Denise, quanto da nossa Comissão. É um prazer também estar participando desta audiência sob a Presidência da Deputada Ana Pimentel, que busca com o seu mandato avançar nas políticas públicas de direitos humanos, de igualdade de direitos e em defesa das mulheres e das minorias.
 
 Então, é um prazer estar com V.Exa. aqui, Deputada Ana Pimentel, ladeando-a, e ter V.Exa. como Presidente.
 
@@ -1356,8 +1356,8 @@ Eu gostaria de concluir, Deputada Ana Pimentel, nossa Presidente desta audiênci
 
 Quanto à educação, nós precisamos que as crianças respeitem uns aos outros. Então, para mim, é uma rede de proteção que pega o Ministério do Flávio Dino, o nosso Ministério das Mulheres, o Ministério da Educação, o Ministério da Saúde, todos nessa interatividade para que possamos avançar, porque está assustador. Essas são as minhas palavras: é assustador o que vivemos hoje de violência contra as mulheres e os idosos.Nós nem estamos tendo tempo de olhar por eles, às vezes, porque é tanta questão da mulher, das crianças, do estupro no País. Até falei ontem com a Laura, não encontrei a Ana, mas sou contra a pena de ir diluindo... Como é que se fala?
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O dinheiro das patrulhas e da Casa da Mulher Brasileira deve ficar com o Ministério das Mulheres","O poder público deve ajudar mulheres vítimas de violência a conquistar renda própria e romper o ciclo da violência","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala conta que foi prefeita de 2009 a 2012","Quem fala revela a trajetória política em Goiás","A discute qual ministério deve gerir o dinheiro das políticas e B defende a independência econômica das vítimas"
-"6a7b7af41cec3ff3","PUBLIC_HEARING","2023-11-08","Debate sobre a possibilidade de professores da rede pública terem dois cargos públicos em áreas diferentes","Sr. Presidente, caríssimos expositores, senhoras e senhores, inicialmente, quero dizer que a PEC 169, de 2019, é da lavra do Deputado Capitão Alberto Neto e teve o apoio de um terço dos Deputados. Então, não é iniciativa de um único Deputado. S.Exa. tem o mérito de ter sido o primeiro propositor. E S.Exa. o fez exatamente no sentido de assegurar a liberdade. Esta é a palavra-chave desta PEC: a liberdade de escolha que o professor deve ter.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"Os recursos das políticas para mulheres devem ser geridos diretamente pelo Ministério das Mulheres, e não pelo Ministério da Justiça.",Políticas de independência econômica para mulheres vítimas de violência devem ser adotadas para interromper o ciclo da violência.,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,Quem fala conta que foi prefeita de 2009 a 2012,Quem fala revela a trajetória política em Goiás,A discute qual ministério deve gerir o dinheiro das políticas e B defende a independência econômica das vítimas
+6a7b7af41cec3ff3,PUBLIC_HEARING,2023-11-08,Debate sobre a possibilidade de professores da rede pública terem dois cargos públicos em áreas diferentes,"Sr. Presidente, caríssimos expositores, senhoras e senhores, inicialmente, quero dizer que a PEC 169, de 2019, é da lavra do Deputado Capitão Alberto Neto e teve o apoio de um terço dos Deputados. Então, não é iniciativa de um único Deputado. S.Exa. tem o mérito de ter sido o primeiro propositor. E S.Exa. o fez exatamente no sentido de assegurar a liberdade. Esta é a palavra-chave desta PEC: a liberdade de escolha que o professor deve ter.
 
 A própria Constituição assevera que é livre a atividade do exercício profissional, atendidas as qualificações profissionais que a lei estabelecer. Pois bem, uma vez tendo a devida qualificação, compete a ele, profissional, escolher se quer trabalhar 20 horas, se quer trabalhar 40 horas, se quer trabalhar 60 horas.
 
@@ -1393,7 +1393,7 @@ Veja que você pode, como o senhor aqui acabou de dizer, e não é nada demerit�
 
 Sr. Presidente, nós vamos ter ainda outras audiências, vamos ouvir outros segmentos. Estamos inclusive convidando outros colegas também para fazer parte da nossa Comissão. Ainda hoje pedi ao meu colega de bancada, o Deputado Prof. Reginaldo Veras, que entrasse na vaga de suplente do meu partido, para que nós também tenhamos outros olhares, outras sugestões no sentido de aprimorar, repito, o texto apresentado por um terço dos Deputados da nossa Casa.
 
-","PUBLIC_HEARING","2023-10-30","Regulamentação do empréstimo consignado para servidores públicos","Obrigado pela sua participação.
+",PUBLIC_HEARING,2023-10-30,Regulamentação do empréstimo consignado para servidores públicos,"Obrigado pela sua participação.
 
 Estamos encerrando a nossa audiência. O horário foi cumprido rigorosamente, não apenas o de início, mas também o de cada um dos expositores. Espero que isso sirva também, de maneira pedagógica, às outras Comissões, que geralmente costumam se atrasar.
 
@@ -1429,8 +1429,8 @@ Nada mais havendo a tratar, declaro encerrada a presente reunião, antes, porém
 
 Agradeço a presença de todos e encerro os trabalhos.
 
-Está encerrada a reunião.","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Professores da rede pública devem poder ter um segundo cargo público em qualquer área","O cartão consignado é uma forma segura de crédito para o servidor","NO","FAVOR","AGAINST","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala indica que vai dar o parecer da PEC 169 de 2019 e conta que é professor, jornalista e radialista","Quem fala se apresenta como relator da matéria sobre o consignado na Comissão",""
-"982501e57fbbcdcc","PUBLIC_HEARING_WITH_DELIBERATION","2023-12-12","Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta","Sr. Presidente, Deputado Leo Prates, quero parabenizar V.Exa. pelo seu trabalho nesta Comissão.
+Está encerrada a reunião.",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"Professores devem poder escolher sua carga horária, inclusive acumulando dois cargos públicos.",O cartão consignado é uma forma segura de crédito para o servidor,NO,FAVOR,AGAINST,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,"Quem fala indica que vai dar o parecer da PEC 169 de 2019 e conta que é professor, jornalista e radialista",Quem fala se apresenta como relator da matéria sobre o consignado na Comissão,
+982501e57fbbcdcc,PUBLIC_HEARING_WITH_DELIBERATION,2023-12-12,Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta,"Sr. Presidente, Deputado Leo Prates, quero parabenizar V.Exa. pelo seu trabalho nesta Comissão.
 
 Cumprimento todos os Deputados aqui presentes.
 
@@ -1510,7 +1510,7 @@ E quero chamar a atenção para a votação esta semana do Veto nº 28, ao Proje
 
 Muito obrigado.
 
-","PUBLIC_HEARING_WITH_DELIBERATION","2024-04-10","Melhorias na infraestrutura de prevenção a desastres e calamidades naturais","Nosso agradecimento ao Sosthenes Macêdo, Diretor-Geral da Defesa Civil de Salvador e também Presidente do Fórum Nacional dos Secretários e Dirigentes da Defesa Civil das Capitais e Grandes Cidades.
+",PUBLIC_HEARING_WITH_DELIBERATION,2024-04-10,Melhorias na infraestrutura de prevenção a desastres e calamidades naturais,"Nosso agradecimento ao Sosthenes Macêdo, Diretor-Geral da Defesa Civil de Salvador e também Presidente do Fórum Nacional dos Secretários e Dirigentes da Defesa Civil das Capitais e Grandes Cidades.
 
 Sua fala muito forte mostra a necessidade de investimentos nos Estados e, de forma especial, nos Municípios, porque a vida acontece nos Municípios. Então, é lá que as pessoas precisam dessa atenção do poder público.
 
@@ -1538,8 +1538,8 @@ O Governo Federal gastou em torno de 2 bilhões de reais por ano, em média, em 
 
 Então, espero que esse debate...
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","O poder público deve investir mais em prevenir desastres ao invés de agir só reativamente","O Fundo de Calamidade Pública deve ter orçamento para prevenir e responder a desastres","UNCERTAIN","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","LOW","HIGH","HIGH","Quem fala revela que é do Espírito Santo, que foi Secretário de Governo do estado e que é autor do PL 920 de 2023","A fala revela o estado de quem fala e sua atuação pelo Fundo de Calamidade Pública","As duas falas defendem mais recursos contra desastres, mas A foca só na prevenção sobre a resposta e B no abastecimento do Fundo de Calamidade Pública para prevenção e ajuda reativa"
-"1f862b43757396e1","PUBLIC_HEARING","2024-04-25","Regulamentação do trabalho de motoristas de aplicativo","Sr. Presidente, Deputado Josenildo, prezado Ministro Luiz Marinho, cumprimentando-os, eu cumprimento todos. Estamos todos já cansados e com fome. Portanto, eu não vou me demorar.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,O poder público deve investir mais em prevenir desastres ao invés de agir só reativamente,O Fundo de Calamidade Pública deve ter orçamento para prevenir e responder a desastres,YES,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,"Quem fala revela que é do Espírito Santo, que foi Secretário de Governo do estado e que é autor do PL 920 de 2023",A fala revela o estado de quem fala e sua atuação pelo Fundo de Calamidade Pública,"As duas falas defendem mais recursos contra desastres, mas A foca só na prevenção sobre a resposta e B no abastecimento do Fundo de Calamidade Pública para prevenção e ajuda reativa"
+1f862b43757396e1,PUBLIC_HEARING,2024-04-25,Regulamentação do trabalho de motoristas de aplicativo,"Sr. Presidente, Deputado Josenildo, prezado Ministro Luiz Marinho, cumprimentando-os, eu cumprimento todos. Estamos todos já cansados e com fome. Portanto, eu não vou me demorar.
 
 Primeiro, Presidente, quero parabenizar V.Exa. pela condução do trabalho. Com esse seu jeito manso, V.Exa. conduziu muito bem, interferiu nas horas em que era necessário interferir. Eu fico muito feliz com o que pudemos ouvir no dia de hoje. Ouvimos todos atentamente. O pessoal da assessoria da Câmara está aqui ouvindo tudo também. Depois, vamos nos sentar para conversar.
 
@@ -1571,7 +1571,7 @@ Então, agradeço a todos a participação. Nós estamos abertos, completamente 
 
 Muito obrigado a todos.(Palmas.)
 
-","PUBLIC_HEARING","2022-06-28","Regulamentação do lobby junto ao poder público","O.k.
+",PUBLIC_HEARING,2022-06-28,Regulamentação do lobby junto ao poder público,"O.k.
 
 Então, é nisso que dá. Precisamos ter coragem de discutir com transparência.
 
@@ -1587,7 +1587,7 @@ Muito obrigado.","O.k.
 
 Então, é nisso que dá. Precisamos ter coragem de discutir com transparência.
 
-Quero parabenizar a CGU, pois foi fundamental que o Governo desse um caminho à discussão. ","Temos como harmonizar esses projetos que estão em debate. Acho que essa é a solução para que consigamos avançar."," Não se trata de projeto de Governo ou de Oposição; esse é um projeto do País. E acho que é importante avançarmos nisso.
+Quero parabenizar a CGU, pois foi fundamental que o Governo desse um caminho à discussão. ",Temos como harmonizar esses projetos que estão em debate. Acho que essa é a solução para que consigamos avançar.," Não se trata de projeto de Governo ou de Oposição; esse é um projeto do País. E acho que é importante avançarmos nisso.
 
 Cumprindo o protocolo, quero agradecer aos senhores convidados a presença e a participação.
 
@@ -1595,8 +1595,8 @@ Nada mais havendo a tratar, encerro a presente reunião, antes convocando os Srs
 
 Declaro encerrada a reunião.
 
-Muito obrigado.","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O Congresso deve aprovar uma lei que regulamente o trabalho dos motoristas de aplicativo","O Congresso deve juntar os projetos em debate e aprovar uma regulamentação do lobby","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala indica que relata o projeto dos motoristas de aplicativo na comissão","",""
-"b4a84fb6380ec371","PUBLIC_HEARING","2023-09-21","Discussão sobre a educação de meninas e mulheres negras na Câmara dos Deputados","Bom dia a todas, a todes e a todos.
+Muito obrigado.",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,O Congresso deve aprovar uma lei que regulamente o trabalho dos motoristas de aplicativo,O Congresso deve juntar os projetos em debate e aprovar uma regulamentação do lobby,NO,FAVOR,FAVOR,HIGH,MEDIUM,HIGH,HIGH,HIGH,HIGH,HIGH,Quem fala indica que relata o projeto dos motoristas de aplicativo na comissão,,
+b4a84fb6380ec371,PUBLIC_HEARING,2023-09-21,Discussão sobre a educação de meninas e mulheres negras na Câmara dos Deputados,"Bom dia a todas, a todes e a todos.
 
 É um prazer estar aqui.
 
@@ -1684,7 +1684,7 @@ Era o que tinha a dizer.
 
 Muito obrigada.(Palmas.)
 
-","PUBLIC_HEARING","2023-06-29","Denúncia do racismo na primeira infância debatida na Comissão de Direitos Humanos da Câmara dos Deputados","Boa tarde a todas, todos e todes. É um prazer estar aqui.
+",PUBLIC_HEARING,2023-06-29,Denúncia do racismo na primeira infância debatida na Comissão de Direitos Humanos da Câmara dos Deputados,"Boa tarde a todas, todos e todes. É um prazer estar aqui.
 
 Agradeço à Sra. Deputada Erika Kokay pela realização desta audiência pública. É uma iniciativa que coloca o racismo como um tema que deve integrar o debate sobre as políticas públicas para a primeira infância, colocando essa questão sobre a primeira infância em outro patamar, ou seja, a questão racial deve ser parte integrante de todas as políticas públicas.
 
@@ -1740,8 +1740,8 @@ Também atuamos localmente nas cidades em que estamos sediadas com a realizaçã
 
 Muito obrigada.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O Governo Federal agiu bem na educação durante a pandemia","O combate ao racismo deve começar já nos serviços públicos para crianças pequenas","NO","AGAINST","FAVOR","MEDIUM","HIGH","MEDIUM","HIGH","HIGH","MEDIUM","HIGH","Dei MEDIUM porque a opinião dela aparece em uma palavra, o resto da frase é só dado de pesquisa. Ela diz basicamente ""a pesquisa mostrou que as meninas não tinham acesso à internet"" e isso é um fato, não uma opinião. Quem fala representa a área de educação do Geledés","Quem fala representa o Geledés e o Grupo Articulador Primeira Infância no Centro",""
-"06f6bf71ce0746e2","PUBLIC_HEARING_WITH_DELIBERATION","2023-12-12","Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta","Sr. Presidente, Deputado Leo Prates, quero parabenizar V.Exa. pelo seu trabalho nesta Comissão.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"Devemos enfrentar o racismo, em especial a mulheres durante a educação",O combate ao racismo deve começar já nos serviços públicos para crianças pequenas,NO,FAVOR,FAVOR,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,MEDIUM,HIGH,"Dei MEDIUM porque a opinião dela aparece em uma palavra, o resto da frase é só dado de pesquisa. Ela diz basicamente ""a pesquisa mostrou que as meninas não tinham acesso à internet"" e isso é um fato, não uma opinião. Quem fala representa a área de educação do Geledés",Quem fala representa o Geledés e o Grupo Articulador Primeira Infância no Centro,
+06f6bf71ce0746e2,PUBLIC_HEARING_WITH_DELIBERATION,2023-12-12,Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta,"Sr. Presidente, Deputado Leo Prates, quero parabenizar V.Exa. pelo seu trabalho nesta Comissão.
 
 Cumprimento todos os Deputados aqui presentes.
 
@@ -1821,7 +1821,7 @@ E quero chamar a atenção para a votação esta semana do Veto nº 28, ao Proje
 
 Muito obrigado.
 
-","PUBLIC_HEARING","2024-03-20","Ações de prevenção de desastres naturais e auxílio à população detalhadas por ministérios na Câmara dos Deputados","Agradeço ao Deputado Federal Leo Prates, que preside esse trabalho da nossa Comissão e nos orienta a organizar audiências como essa, em função de trabalharmos, ao final, um relatório que consiga proporcionar um arcabouço de prevenção de desastres e de calamidade pública no nosso País.
+",PUBLIC_HEARING,2024-03-20,Ações de prevenção de desastres naturais e auxílio à população detalhadas por ministérios na Câmara dos Deputados,"Agradeço ao Deputado Federal Leo Prates, que preside esse trabalho da nossa Comissão e nos orienta a organizar audiências como essa, em função de trabalharmos, ao final, um relatório que consiga proporcionar um arcabouço de prevenção de desastres e de calamidade pública no nosso País.
 
 Essa é uma pauta que nós temos trabalhado constantemente nesta Casa, que tem sido chamada à discussão e, quase sempre, para pronta resposta, ou seja, após o acontecimento dos desastres.
 
@@ -1873,8 +1873,8 @@ Passarei a palavra agora, por 20 minutos, para a Sra. Vera Campelo, Coordenadora
 
 Tem a palavra a Sra. Vera Campelo.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","O poder público deve investir mais em prevenir desastres ao invés de agir só reativamente","O país deve destinar recursos específicas para a prevenção de desastres","YES","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","MEDIUM","HIGH","HIGH","Quem fala revela que é do Espírito Santo, que foi Secretário de Governo do estado e que é autor do PL 920 de 2023","Quem fala se apresenta como autor da lei do fundo de calamidades",""
-"87fa10a79fe070e0","PUBLIC_HEARING_WITH_DELIBERATION","2023-12-19","Cobrança à Justiça para destravar a renegociação com mineradoras sobre reparação em Mariana","Presidente, saúdo V.Exa., os demais colegas, o Deputado Pedro Aihara, o Deputado Helder e todos que participam desta Mesa.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,O poder público deve investir mais em prevenir desastres ao invés de agir só reativamente,O país deve destinar recursos específicas para a prevenção de desastres,YES,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,"Quem fala revela que é do Espírito Santo, que foi Secretário de Governo do estado e que é autor do PL 920 de 2023",Quem fala se apresenta como autor da lei do fundo de calamidades,
+87fa10a79fe070e0,PUBLIC_HEARING_WITH_DELIBERATION,2023-12-19,Cobrança à Justiça para destravar a renegociação com mineradoras sobre reparação em Mariana,"Presidente, saúdo V.Exa., os demais colegas, o Deputado Pedro Aihara, o Deputado Helder e todos que participam desta Mesa.
 
 Se em 2022 conseguimos impedir de certa forma a conclusão da repactuação, se foi uma vitória do segmento não ter permitido a repactuação em 2022, eu entendo que é uma derrota concluirmos 2023 sem fazer essa reputação, até porque ela foi trabalhada, inclusive com o próprio Governo Federal, em diligências em que as pessoas eram ouvidas. É lamentável esse controle das empresas, esse grande controle do capital financeiro.
 
@@ -1914,7 +1914,7 @@ Aqui nós temos que cumular força para garantir isso, já trabalhando uma tese,
 
 Só que eu quero acreditar no nosso Governo. Esse Governo é nosso, dos pobres, e não pode estar a serviço do capital financeiro criminoso, que continua matando e ficando impune, porque, infelizmente, o sistema judiciário é fraco ainda diante da crueldade dessas empresas gananciosas que matam a mãe terra, matam rios, matam a biodiversidade e matam gente.
 
-","PUBLIC_HEARING","2023-04-18","Reparação aos pescadores afetados pelo rompimento da barragem do Fundão em Mariana (MG) em 2015","Nosso boa-tarde a todas e todos.
+",PUBLIC_HEARING,2023-04-18,Reparação aos pescadores afetados pelo rompimento da barragem do Fundão em Mariana (MG) em 2015,"Nosso boa-tarde a todas e todos.
 
 Nos termos regimentais, declaro iniciados os trabalhos da Comissão Externa destinada a fiscalizar os rompimentos de barragem e, em especial, acompanhar a repactuação do acordo de Mariana e a reparação do crime de Brumadinho.
 
@@ -1966,8 +1966,8 @@ Poderíamos ouvir os pescadores primeiro para colocarem a situação? Pode ser a
 
 Passo a palavra ao Sr. Benilde Madeira, liderança dos pescadores e da Comissão de Atingidos, que terá até 10 minutos.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O novo acordo de reparação de Mariana deve ser fechado logo","O Ministério Público Federal e a Justiça cobram a Fundação Renova como deveriam","NO","FAVOR","AGAINST","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","","","A pede o fechamento do acordo e B critica a omissão do MPF da Justiça diante da Renova"
-"597ab529d9e58c55","MINISTER_APPEARANCE","2023-09-13","Esclarecimentos da ministra da Saúde, Nísia Trindade, sobre polêmicas e investimentos do novo PAC na Saúde","Eu quero desejar boa tarde a todos os Parlamentares, Deputadas e Deputados das duas Comissões, e aos membros que fizeram o convite para que eu aqui estivesse.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,O novo acordo de reparação de Mariana deve ser fechado logo,O Ministério Público Federal e a Justiça cobram a Fundação Renova como deveriam,NO,FAVOR,AGAINST,MEDIUM,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,,,A pede o fechamento do acordo e B critica a omissão do MPF da Justiça diante da Renova
+597ab529d9e58c55,MINISTER_APPEARANCE,2023-09-13,"Esclarecimentos da ministra da Saúde, Nísia Trindade, sobre polêmicas e investimentos do novo PAC na Saúde","Eu quero desejar boa tarde a todos os Parlamentares, Deputadas e Deputados das duas Comissões, e aos membros que fizeram o convite para que eu aqui estivesse.
 
 Eu vou fazer uma atualização de ações e, nesta atualização, já responderei também, ao menos parcialmente, aos principais pontos dos requerimentos que levaram a este convite. Eu acho que esta é uma forma também de otimizar o diálogo e o debate. Eu vou pedir para projetarem a apresentação, por favor.
 
@@ -2191,7 +2191,7 @@ Então, eu queria agradecer a vocês pela oportunidade. Eu me alonguei um pouco,
 
 Muito obrigada.(Palmas.)
 
-","MINISTER_APPEARANCE","2023-08-09","Autossuficiência na produção de insumos para a saúde e questões relacionadas à compra emergencial de medicamentos pelo SUS","Está bem.
+",MINISTER_APPEARANCE,2023-08-09,Autossuficiência na produção de insumos para a saúde e questões relacionadas à compra emergencial de medicamentos pelo SUS,"Está bem.
 
 Rapidamente, como eu vou deixar a exposição disponível, quero dizer a vocês que todos os procedimentos adotados foram pactuados com o Conselho Nacional de Secretários de Saúde, com os Secretários Estaduais de Saúde e com os Secretários Municipais de Saúde de que houve autorização da ANVISA por unanimidade, em junho de 2023, com relação a essa aquisição emergencial de insulina.
 
@@ -2239,8 +2239,8 @@ Por fim, eu quero acentuar a importância desse diálogo com o Congresso. Até j
 
 Muito obrigada.(Palmas.)
 
-","POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","A gestão atual está recuperando os hospitais federais do Rio de Janeiro","A gestão atual está recuperando os hospitais federais do Rio de Janeiro","YES","FAVOR","FAVOR","LOW","LOW","MEDIUM","MEDIUM","HIGH","HIGH","HIGH","Quem fala se apresenta como Ministra da Saúde. Dei LOW porque a  evidência traz só um dado, e a posição vem do contexto","Quem fala revela que comanda o Ministério da Saúde. A evidência também só traz dados, e a posição vem do contexto",""
-"56076bd074c74d1a","PUBLIC_HEARING","2023-09-20","Uso da tecnologia blockchain no serviço público","Felipe, eu quero agradecer pela sua participação, obviamente uma demonstração de conhecimento técnico extremamente importante, relevante para os trabalhos que iniciamos aos quais vamos dar continuidade nesta Comissão de Ciência, Tecnologia e Inovação da Câmara. Queria pedir a você que se mantivesse conosco, porque farei perguntas importantes para você, que tenho certeza você conseguirá esclarecer.
+",POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,A gestão atual está recuperando os hospitais federais do Rio de Janeiro,A gestão atual está recuperando os hospitais federais do Rio de Janeiro,YES,FAVOR,FAVOR,LOW,MEDIUM,LOW,MEDIUM,HIGH,HIGH,HIGH,"Quem fala se apresenta como Ministra da Saúde. Dei LOW porque a  evidência traz só um dado, e a posição vem do contexto","Quem fala revela que comanda o Ministério da Saúde. A evidência também só traz dados, e a posição vem do contexto",
+56076bd074c74d1a,PUBLIC_HEARING,2023-09-20,Uso da tecnologia blockchain no serviço público,"Felipe, eu quero agradecer pela sua participação, obviamente uma demonstração de conhecimento técnico extremamente importante, relevante para os trabalhos que iniciamos aos quais vamos dar continuidade nesta Comissão de Ciência, Tecnologia e Inovação da Câmara. Queria pedir a você que se mantivesse conosco, porque farei perguntas importantes para você, que tenho certeza você conseguirá esclarecer.
 
 Bom, eu gostaria de começar agradecendo, mais uma vez, pela presença de todos os participantes.
 
@@ -2272,7 +2272,7 @@ Diego, diante de toda a apresentação que você fez, uma das questões que eu v
 
 Portanto, eu queria saber se vocês estão nessa usabilidade de redes distribuídas, se já estão conseguindo perceber essa capacidade de redução de custo. Você tem algum dado com relação a isso que possa compartilhar conosco?
 
-","PUBLIC_HEARING","2023-11-07","Pedido de concurso público e fortalecimento da Agência Nacional de Proteção de Dados (ANPD)","Declaro abertos os trabalhos da reunião de audiência pública híbrida para prestar esclarecimentos a respeito dos recentes vazamentos de dados da população brasileira.
+",PUBLIC_HEARING,2023-11-07,Pedido de concurso público e fortalecimento da Agência Nacional de Proteção de Dados (ANPD),"Declaro abertos os trabalhos da reunião de audiência pública híbrida para prestar esclarecimentos a respeito dos recentes vazamentos de dados da população brasileira.
 
 A presente reunião tem amparo na aprovação do Requerimento nº 339, de 2023, de minha autoria.
 
@@ -2312,8 +2312,8 @@ Eu vou seguir adiante.
 
 Passo a palavra, pelo prazo de 15 minutos, ao Sr. Waldemar Gonçalves Ortunho Júnior, Diretor-Presidente da Agência Nacional de Proteção de Dados — ANPD.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O Brasil deve acompanhar os outros países no uso de blockchains","O Parlamento deve fortalecer a ANPD para que ela proteja melhor os dados dos cidadãos","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","","",""
-"8034e650e53050e1","PUBLIC_HEARING_WITH_DELIBERATION","2024-03-05","Colapso climático e medidas urgentes para enfrentá-lo","A distribuição de ansiedade foi tamanha que eu acho que até as palmas ficaram mais tímidas. Como batermos palmas para uma situação dessas, não é? Batemos palmas pela sua fala, agradecemos a você por nos trazer esse alerta, mas é difícil bater palmas numa situação como essa. Eu acho que, nas cinco falas que nós ouvimos aqui, isso foi notado.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"O Brasil deve avançar no uso de tecnologias de registros distribuídos, como a blockchain.",O Parlamento deve fortalecer a ANPD para que ela proteja melhor os dados dos cidadãos,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,,,
+8034e650e53050e1,PUBLIC_HEARING_WITH_DELIBERATION,2024-03-05,Colapso climático e medidas urgentes para enfrentá-lo,"A distribuição de ansiedade foi tamanha que eu acho que até as palmas ficaram mais tímidas. Como batermos palmas para uma situação dessas, não é? Batemos palmas pela sua fala, agradecemos a você por nos trazer esse alerta, mas é difícil bater palmas numa situação como essa. Eu acho que, nas cinco falas que nós ouvimos aqui, isso foi notado.
 
 Queria registrar a presença aqui no Plenário 4 da Deputada Daiana Santos e do Deputado Nilto Tatto. Muito obrigado pela presença.
 
@@ -2377,7 +2377,7 @@ Muito obrigado a todos e a todas.
 
 Tem a palavra o Relator, o Deputado Gilson Daniel.
 
-","PUBLIC_HEARING_WITH_DELIBERATION","2023-12-12","Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta","Muito obrigado, Presidente Leo Prates.
+",PUBLIC_HEARING_WITH_DELIBERATION,2023-12-12,Impacto dos desastres climáticos no Brasil em 2023 e medidas de prevenção e resposta,"Muito obrigado, Presidente Leo Prates.
 
 Quero parabenizar V.Exa. e também o Deputado Gilson Daniel pelas perguntas, pela explanação aqui.
 
@@ -2417,8 +2417,8 @@ Só para vocês terem uma ideia, a essa mesma matéria do jornalExtrahá a respo
 
 Obrigado, Presidente.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Os desastres climáticos também são causados pela desigualdade e atingem mais os pobres e a população negra","O Congresso deve derrubar o veto ao projeto que garante recursos contra desastres","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","MEDIUM","HIGH","HIGH","HIGH","Dei MEDIUM na proposição porque a fala diz só ""esse veto"", mas não explica qual é. Dá para entender pelo contexto da audiência, mas o texto em si não detalha. Quem fala conta que é do Rio de Janeiro e que presidiu a CPI das Enchentes na Câmara Municipal do Rio","",""
-"99ca50f2ecb70ba4","PUBLIC_HEARING","2023-05-31","Exploração de petróleo na Margem Equatorial, próxima à foz do Rio Amazonas","Bom dia a todos e a todas.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Os desastres climáticos também são causados pela desigualdade e atingem mais os pobres e a população negra,O Congresso deve derrubar o veto ao projeto que garante recursos contra desastres,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,"Dei MEDIUM na proposição porque a fala diz só ""esse veto"", mas não explica qual é. Dá para entender pelo contexto da audiência, mas o texto em si não detalha. Quem fala conta que é do Rio de Janeiro e que presidiu a CPI das Enchentes na Câmara Municipal do Rio",,
+99ca50f2ecb70ba4,PUBLIC_HEARING,2023-05-31,"Exploração de petróleo na Margem Equatorial, próxima à foz do Rio Amazonas","Bom dia a todos e a todas.
 
 É um prazer estar nesta Comissão!
 
@@ -2530,7 +2530,7 @@ Houve, em 2012, previamente à rodada 2013, uma decisão política de estabelece
 
 Passados 11 anos, já era para nós termos estes estudos de todas as áreas novas passíveis de exploração. Este é um ponto muito importante.
 
-Há outro ponto importante a esclarecer. Neste debate, tem havido muito ruído. É importante estarmos sentados à mesa, ao lado do Ministério de Minas e Energia e ao lado da PETROBRAS, porque ninguém mais recebe licença do IBAMA, nenhum empreendedor no Brasil recebe mais licença do IBAMA do que a PETROBRAS — ninguém! ","Nenhum empreendedor no Brasil tem mais licenças do IBAMA do que a PETROBRAS.","
+Há outro ponto importante a esclarecer. Neste debate, tem havido muito ruído. É importante estarmos sentados à mesa, ao lado do Ministério de Minas e Energia e ao lado da PETROBRAS, porque ninguém mais recebe licença do IBAMA, nenhum empreendedor no Brasil recebe mais licença do IBAMA do que a PETROBRAS — ninguém! ",Nenhum empreendedor no Brasil tem mais licenças do IBAMA do que a PETROBRAS.,"
 
 Neste ano, entre licenças e autorizações, foram emitidas 23 licenças. No ano passado, foram emitidas 57 licenças. Se fosse fácil, o Governo passado também teria emitido a licença para o Bloco 59. Em 2021, foram emitidas 42 licenças; em 2020, 52 licenças. Hoje, fora da área da Margem Equatorial, o IBAMA está analisando cerca de 100 processos de licenciamento da PETROBRAS.
 
@@ -2578,7 +2578,7 @@ Era só isso, Presidente.
 
 Muito obrigado.
 
-","MINISTER_APPEARANCE","2023-08-30","Veto do Ibama à licença para Petrobras perfurar na Foz do Amazonas e outras questões ambientais","Houve vários questionamentos aqui que são de responsabilidade do IBAMA, mas só quero complementar o que a Ministra já disse. A BR-319 teve a licença prévia, e agora o prazo está correndo para o DNIT para que apresente os estudos, para que possamos analisar a emissão da licença de instalação. Então, hoje, o processo no IBAMA não está correndo porque ele está aguardando o prazo para que o DNIT apresente os estudos.
+",MINISTER_APPEARANCE,2023-08-30,Veto do Ibama à licença para Petrobras perfurar na Foz do Amazonas e outras questões ambientais,"Houve vários questionamentos aqui que são de responsabilidade do IBAMA, mas só quero complementar o que a Ministra já disse. A BR-319 teve a licença prévia, e agora o prazo está correndo para o DNIT para que apresente os estudos, para que possamos analisar a emissão da licença de instalação. Então, hoje, o processo no IBAMA não está correndo porque ele está aguardando o prazo para que o DNIT apresente os estudos.
 
 Portanto, só para termos um nivelamento de informação, foi emitida já a licença prévia. São três fases de licença: prévia, de instalação e de operação. Então, nessa fase agora, estamos aguardando o DNIT.
 
@@ -2594,8 +2594,8 @@ Em relação aos questionamentos dos Deputados Welter, do Paraná, e Leo Prates,
 
 A PETROBRAS pediu-nos uma prioridade muito grande para a Bacia Potiguar. Para essa bacia, temos uma licença já emitida em 2019, para o sistema de produção no Campo de Aratum. Temos outra licença, em 2021, para os Campos de Arabaiana, Pescada e Dentão. Em 2022, temos uma licença para a produção e escoamento no Campo de Agulha; e mais outra licença para Ubarana, Cioba e Oeste de Ubarana. Então, é uma região que a PETROBRAS está avaliando com grandes olhos. Neste momento, o IBAMA analisa hoje duas licenças na Bacia Potiguar para a PETROBRAS.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O IBAMA dificulta de propósito as licenças da Petrobras","O IBAMA dificulta de propósito as licenças da Petrobras","YES","AGAINST","AGAINST","MEDIUM","MEDIUM","MEDIUM","MEDIUM","MEDIUM","HIGH","HIGH","Dei MEDIUM porque a frase da evidência é um número. A posição só aparece quando você olha o texto todo. Por isso a confiança é média na determinabilidade e na proposição. A stance fica HIGH, porque ele claramente rejeita a ideia de perseguição. Quem fala se apresenta como dirigente do IBAMA","O MEDIUM tem o mesmo motivo do lado A. Quem fala responde pelo IBAMA em primeira pessoa",""
-"f8189fa4faeb557c","PUBLIC_HEARING","2023-08-09","Revisão do Marco Legal da Inovação para facilitar sua operacionalização","Bom dia a todos e a todas.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,O IBAMA não cria obstáculos indevidos ao licenciamento da Petrobras.,O IBAMA não cria obstáculos indevidos ao licenciamento da Petrobras.,YES,FAVOR,FAVOR,MEDIUM,MEDIUM,MEDIUM,MEDIUM,MEDIUM,MEDIUM,MEDIUM,"Dei MEDIUM porque a frase da evidência é um número. A posição só aparece quando você olha o texto todo. Por isso a confiança é média na determinabilidade e na proposição. A stance fica HIGH, porque ele claramente rejeita a ideia de perseguição. Quem fala se apresenta como dirigente do IBAMA",O MEDIUM tem o mesmo motivo do lado A. Quem fala responde pelo IBAMA em primeira pessoa,
+f8189fa4faeb557c,PUBLIC_HEARING,2023-08-09,Revisão do Marco Legal da Inovação para facilitar sua operacionalização,"Bom dia a todos e a todas.
 
 Eu quero agradecer à Deputada Luisa Canziani pelo convite e também ao Deputado Raimundo Santos. Quero cumprimentar os nossos colegas de Mesa, o Bruno Portela, o Leopoldo Muraro e também o Francisco Saboya.
 
@@ -2691,7 +2691,7 @@ Então, esses mecanismos, meus caros procuradores, têm que ser institucionaliza
 
 Obrigado a todos.(Palmas.)
 
-","PUBLIC_HEARING","2023-08-30","Discussão sobre mudanças na Lei do Bem para facilitar a colaboração entre universidades, empresas e governo e promover inovações","Bom dia a todos e a todas.
+",PUBLIC_HEARING,2023-08-30,"Discussão sobre mudanças na Lei do Bem para facilitar a colaboração entre universidades, empresas e governo e promover inovações","Bom dia a todos e a todas.
 
 Eu agradeço muito ao Deputado Vitor Lippi, de São Paulo, que já conheço há bastante tempo, esse convite.
 
@@ -2795,8 +2795,8 @@ O último ponto, Guilherme — talvez eu tenha uma visão um pouquinho diferente
 
 Obrigado.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Institutos públicos de pesquisa devem poder comprar sem concorrência os equipamentos que só um fabricante produz","Institutos públicos de pesquisa devem continuar podendo contratar empresas diretamente para desenvolver equipamentos (como a lei já permite)","UNCERTAIN","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","LOW","HIGH","HIGH","Quem fala conta que preside uma agência de fomento e que dirigiu o Centro Brasileiro de Pesquisas Físicas e o INPE","Quem fala conta que dirigiu o INPE","A trata da compra de um produto pronto de fabricante único e B trata da encomenda de um desenvolvimento a empresas. Fiquei em dúvida se isso forma o mesmo pedido."
-"8c2dfcbfad142a02","PUBLIC_HEARING","2023-08-17","Ações de bem-estar animal e seus benefícios para o Brasil","Muito obrigada, Deputado Bruno Ganem, que, além da pauta ambiental, também carrega o desafio e a missão — eu considero missão — da pauta animal e o tem feito de forma magistral.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Institutos públicos de pesquisa devem poder comprar sem concorrência os equipamentos que só um fabricante produz,Institutos públicos de pesquisa devem continuar podendo contratar empresas diretamente para desenvolver equipamentos (como a lei já permite),UNCERTAIN,FAVOR,FAVOR,HIGH,HIGH,HIGH,MEDIUM,LOW,HIGH,HIGH,Quem fala conta que preside uma agência de fomento e que dirigiu o Centro Brasileiro de Pesquisas Físicas e o INPE,Quem fala conta que dirigiu o INPE,A trata da compra de um produto pronto de fabricante único e B trata da encomenda de um desenvolvimento a empresas. Fiquei em dúvida se isso forma o mesmo pedido.
+8c2dfcbfad142a02,PUBLIC_HEARING,2023-08-17,Ações de bem-estar animal e seus benefícios para o Brasil,"Muito obrigada, Deputado Bruno Ganem, que, além da pauta ambiental, também carrega o desafio e a missão — eu considero missão — da pauta animal e o tem feito de forma magistral.
 
 Muito obrigada por sua luta aqui dentro.
 
@@ -2872,7 +2872,7 @@ Essa votação no PPA Participativo obriga o Governo a dar uma resposta a essa d
 
 Muito obrigada.(Palmas.)
 
-","PUBLIC_HEARING","2023-06-28","Segurança sanitária e sustentabilidade na produção de alimentos de origem animal","É que, do alto da nossa arrogância, esquecemos que o ser humano também é mais uma das espécies animais.
+",PUBLIC_HEARING,2023-06-28,Segurança sanitária e sustentabilidade na produção de alimentos de origem animal,"É que, do alto da nossa arrogância, esquecemos que o ser humano também é mais uma das espécies animais.
 
 Alguém bem pontuou a zoonose: 70% das doenças que acometem os seres humanos desde a década de 40 — isso está documentado pela ONU — têm origem nessa exploração desenfreada, predatória, que fazemos contra o meio ambiente, contra as outras espécies de vida. Está tudo muito bem ligado.
 
@@ -2912,8 +2912,8 @@ Então, não estamos promovendo um equilíbrio na diversidade. E não é à toa 
 
 Bom, já vou caminhando para o final. Eu sei que o tempo é curto, e eu falo demais.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Cuidar do bem-estar dos animais também é proteger a vida humana","Cuidar do bem-estar dos animais ajuda a proteger o meio ambiente e a saúde humana","YES","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","MEDIUM","HIGH","HIGH","Quem fala representa um departamento do governo federal que cuida do bem-estar animal","","As duas defendem que cuidar do bem-estar animal também protege a vida humana. A B acrescenta o meio ambiente"
-"e2e808118c9ee9de","PUBLIC_HEARING","2022-08-17","Falhas no protocolo do SUS para o tratamento da retinopatia diabética","Muito obrigado, Patrícia.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Cuidar do bem-estar dos animais também é proteger a vida humana,Cuidar do bem-estar dos animais ajuda a proteger o meio ambiente e a saúde humana,YES,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,Quem fala representa um departamento do governo federal que cuida do bem-estar animal,,As duas defendem que cuidar do bem-estar animal também protege a vida humana. A B acrescenta o meio ambiente
+e2e808118c9ee9de,PUBLIC_HEARING,2022-08-17,Falhas no protocolo do SUS para o tratamento da retinopatia diabética,"Muito obrigado, Patrícia.
 
 Eu acho que o Ministério da Saúde lavou as mãos! Jogou o problema para os gestores municipais e estaduais. Esta audiência pública é importante por causa disso! O financiamento que chega aos Estados e aos Municípios não contempla esse tipo de tratamento. Então, vamos ter de brigar para que esse tratamento seja disponibilizado para a sociedade. Como falei desde o início: há inovações, há novos medicamentos, e aí vem a judicialização!
 
@@ -2921,11 +2921,11 @@ Eu acho que o Ministério da Saúde tem que voltar a discutir esse assunto, e n�
 
 ","Muito obrigado, Patrícia.
 
-","Eu acho que o Ministério da Saúde lavou as mãos!"," Jogou o problema para os gestores municipais e estaduais. Esta audiência pública é importante por causa disso! O financiamento que chega aos Estados e aos Municípios não contempla esse tipo de tratamento. Então, vamos ter de brigar para que esse tratamento seja disponibilizado para a sociedade. Como falei desde o início: há inovações, há novos medicamentos, e aí vem a judicialização!
+",Eu acho que o Ministério da Saúde lavou as mãos!," Jogou o problema para os gestores municipais e estaduais. Esta audiência pública é importante por causa disso! O financiamento que chega aos Estados e aos Municípios não contempla esse tipo de tratamento. Então, vamos ter de brigar para que esse tratamento seja disponibilizado para a sociedade. Como falei desde o início: há inovações, há novos medicamentos, e aí vem a judicialização!
 
 Eu acho que o Ministério da Saúde tem que voltar a discutir esse assunto, e não falar desta forma:""Não, isso é problema de gestão"". E como isso é problema de gestão, se o recurso que chega, de determinado valor, o Estado ou o Município não pode transferir para cobrir outro, porque o outro também vai ficar sem?
 
-","PUBLIC_HEARING","2022-12-06","Benefícios e desafios do Programa QualiSUS Cardio para o atendimento a idosos no SUS","Muito obrigado.
+",PUBLIC_HEARING,2022-12-06,Benefícios e desafios do Programa QualiSUS Cardio para o atendimento a idosos no SUS,"Muito obrigado.
 
 Terminadas as exposições, vou franquear a palavra aos convidados, para que façam suas considerações finais. Fiquem à vontade, por favor.(Pausa.)
 
@@ -2961,8 +2961,8 @@ Nada mais havendo a tratar, vou encerrar os trabalhos, antes convocando reunião
 
 Declaro encerrada a presente reunião.
 
-Muito obrigado a todos.","POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","O Ministério da Saúde faz a sua parte no tratamento da retinopatia diabética","As doenças do coração que surgem com o envelhecimento devem ser mais divulgadas","NO","AGAINST","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","","Quem fala conta que relatou o PL 3.811 de 2019 na Comissão de Seguridade Social e Família",""
-"379d85fc73b5d187","PUBLIC_HEARING","2023-08-24","Discussão sobre o Estatuto do Povo Cigano e a inclusão dos ciganos em políticas públicas e no Censo demográfico brasileiro","Bom dia a todas e a todos.
+Muito obrigado a todos.",POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,"O Ministério da Saúde se omitiu no financiamento do tratamento da retinopatia diabética, transferindo o problema a estados e municípios.",As doenças do coração que surgem com o envelhecimento devem ser mais divulgadas,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,MEDIUM,HIGH,HIGH,,Quem fala conta que relatou o PL 3.811 de 2019 na Comissão de Seguridade Social e Família,
+379d85fc73b5d187,PUBLIC_HEARING,2023-08-24,Discussão sobre o Estatuto do Povo Cigano e a inclusão dos ciganos em políticas públicas e no Censo demográfico brasileiro,"Bom dia a todas e a todos.
 
 Declaro aberta esta audiência pública da Comissão de Direitos Humanos, Minorias e Igualdade Racial destinada a debater o Projeto de Lei nº 1.387, de 2022, que institui o Estatuto dos Povos Ciganos.
 
@@ -3078,7 +3078,7 @@ Serão três por teleconferência. Então, vamos fazer o revezamento entre os qu
 
 Seja muito bem-vindo, Jan Jarab.
 
-","PUBLIC_HEARING","2023-12-13","Inclusão da economia do cuidado no cálculo do PIB","Boa tarde a todas e a todos. Sejam bem-vindos à nossa audiência pública.
+",PUBLIC_HEARING,2023-12-13,Inclusão da economia do cuidado no cálculo do PIB,"Boa tarde a todas e a todos. Sejam bem-vindos à nossa audiência pública.
 
 Declaro aberta esta audiência pública da Comissão de Direitos Humanos, Minorias e Igualdade Racial, destinada a debater a economia do cuidado.
 
@@ -3214,8 +3214,8 @@ Antes de a Rosane falar, eu quero dizer, como sempre digo aqui e ia esquecer, qu
 
 Minha querida Rosane, seja bem-vinda. Obrigada pela presença.
 
-","POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","YES","YES","Os povos ciganos sãoinvisibilizados por expulsões e pela falta de registro","O trabalho de cuidado é um problema grande no Brasil e precisa sair da invisibilidade","NO","FAVOR","FAVOR","MEDIUM","HIGH","MEDIUM","HIGH","HIGH","HIGH","HIGH","Dei MEDIUM porque a evidência é quase toda descrição e a posição só aparece na ideia de que as expulsões servem para silenciar essa população. Quem fala diz o próprio nome","Quem fala conta que foi prefeita, que presidiu a Comissão de Direitos Humanos da Assembleia do Ceará e que hoje preside a da Câmara",""
-"8b9017a72effb414","PUBLIC_HEARING","2023-05-17","Discussão sobre o preconceito contra idosos e medidas para combatê-lo","Boa tarde a todas as pessoas presentes.
+",POSSIBLE_ACTOR_NAME_IN_ORIGINAL_TEXT|POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,YES,YES,Os povos ciganos são invisibilizados por expulsões e pela falta de registro,A economia do cuidado é uma questão invisível no Brasil que precisa ganhar visibilidade.,NO,FAVOR,FAVOR,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,HIGH,HIGH,Dei MEDIUM porque a evidência é quase toda descrição e a posição só aparece na ideia de que as expulsões servem para silenciar essa população. Quem fala diz o próprio nome,"Quem fala conta que foi prefeita, que presidiu a Comissão de Direitos Humanos da Assembleia do Ceará e que hoje preside a da Câmara",
+8b9017a72effb414,PUBLIC_HEARING,2023-05-17,Discussão sobre o preconceito contra idosos e medidas para combatê-lo,"Boa tarde a todas as pessoas presentes.
 
 Quero agradecer mais uma vez ao Deputado Castro Neto pelo convite e também à CIDOSO por essa parceria necessária para discutirmos um ponto tão importante.
 
@@ -3387,7 +3387,7 @@ Coloco-me à disposição para fazer mais explicações. Vou deixar aqui na mesa
 
 Obrigado.(Palmas.)
 
-","PUBLIC_HEARING","2023-06-28","Aprovação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos","Boa tarde a todas as pessoas presentes.
+",PUBLIC_HEARING,2023-06-28,Aprovação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos,"Boa tarde a todas as pessoas presentes.
 
 É um prazer estar aqui mais uma vez. Quero agradecer ao nosso Presidente da CIDOSO, o Aliel Machado, e a toda a equipe da Comissão.
 
@@ -3471,8 +3471,8 @@ Enfim, há todo esse movimento com o propósito de que essa ratificação seja f
 
 Obrigado.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O preconceito contra idosos continua presente na sociedade e se espalhando","A Convenção Interamericana dos direitos das pessoas idosas deve ser aprovada como emenda constitucional","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala se apresenta como Secretário Nacional dos Direitos da Pessoa Idosa","Quem fala representa a Secretaria Nacional dos Direitos da Pessoa Idosa",""
-"3ebdfd5f91baeb30","PUBLIC_HEARING","2023-05-16","Participação de pessoas com deficiência nos projetos culturais para garantir inclusão","Foi muito importante a fala do Luérgio.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Devemos pensar em políticas públicas para as pessoas idosas,A Convenção Interamericana dos direitos das pessoas idosas deve ser aprovada como emenda constitucional,NO,FAVOR,FAVOR,HIGH,HIGH,MEDIUM,HIGH,MEDIUM,HIGH,HIGH,Quem fala se apresenta como Secretário Nacional dos Direitos da Pessoa Idosa,Quem fala representa a Secretaria Nacional dos Direitos da Pessoa Idosa,
+3ebdfd5f91baeb30,PUBLIC_HEARING,2023-05-16,Participação de pessoas com deficiência nos projetos culturais para garantir inclusão,"Foi muito importante a fala do Luérgio.
 
 Nós estamos aqui analisando vários aspectos. Nós estamos falando da plateia, da acessibilidade, dos instrumentos de acessibilidade, para que as pessoas obviamente tenham acesso a todas as expressões culturais, considerando que a arte transforma e a arte cicatriza as dores do corpo e da alma, como também é a expressão de humanidade pura.
 
@@ -3532,7 +3532,7 @@ Depois, vamos conceder 1 minuto ou 2 minutos para os convidados fazerem suas con
 
 Agora sim, com muita alegria, concedo a palavra à Renata Rezende.
 
-","PUBLIC_HEARING","2024-04-09","Cumprimento dos direitos das pessoas com autismo","Deputada, quero parabenizá-la pela realização desta audiência pública. Nós tivemos uma sessão solene no dia de hoje e é importante que nós possamos, em um espaço como a audiência pública, discutir os desafios que estão postos ainda.
+",PUBLIC_HEARING,2024-04-09,Cumprimento dos direitos das pessoas com autismo,"Deputada, quero parabenizá-la pela realização desta audiência pública. Nós tivemos uma sessão solene no dia de hoje e é importante que nós possamos, em um espaço como a audiência pública, discutir os desafios que estão postos ainda.
 
 Penso que nós conseguimos avançar bastante na legislação, entretanto, como Drummond dizia,“As leis não bastam. Os lírios não nascem das leis”. Eu penso que as leis são instrumentos importantes,para que se assegurem direitos, mas é preciso que nós tenhamos a efetivação das próprias leis e que elas sejam transformadas em políticas públicas. Primeiro, porque nós precisamos ter a noção exata de que o lemaValorize as capacidades e respeite os limitesé fundamental para que nós possamos construir políticas públicas que sejam universais. As políticas públicas só são universais se elas respeitarem as diversas subjetividades e as diversas especificidades.
 
@@ -3580,8 +3580,8 @@ Aqui temos a Lei nº 4.568, de 2011, que carrega o nome de Fernando Cotta, pela 
 
 Então, sugeriria esses dois requerimentos que apresento ainda no dia de hoje, ou mais tardar nesta semana, para que façamos um encontro de todas as Assembleias Legislativas para ver como podemos estimular a criação de Comissões, para que tenhamos também diagnósticos acerca disso e para que possamos fazer uma subcomissão. Eu sei que há uma subcomissão ligada à Comissão de Saúde desta Casa que incorporou doenças raras, a trissomia do cromossomo 21 e uma série de outras especificidades. Mas é preciso que esta Comissão tenha essa subcomissão para que nós possamos verificar se os avanços nas legislações realmente se transformaram em políticas públicas, porque nós queremos, parafraseando Drummond, que os lírios nasçam das leis.(Palmas.)
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","Os editais de fomento à cultura devem reservar vagas para artistas com deficiência","A Comissão deve criar uma subcomissão para acompanhar se as leis sobre autismo estão sendo cumpridas","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","","",""
-"9a442461500dc62e","PUBLIC_HEARING","2023-08-31","Riscos e benefícios da regulamentação do mercado digital","Maravilha. Muito obrigada.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,Os editais de fomento à cultura devem reservar vagas para artistas com deficiência,A Comissão deve criar uma subcomissão para acompanhar se as leis sobre autismo estão sendo cumpridas,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,,,
+9a442461500dc62e,PUBLIC_HEARING,2023-08-31,Riscos e benefícios da regulamentação do mercado digital,"Maravilha. Muito obrigada.
 
 Eu quero agradecer a presença de todas vocês e dizer que esta sequência de audiências públicas foi extremamente importante para podermos discutir toda a complexidade que esse PL traz, com os diferentes pontos de vista. Eu acho que isso é muito rico, e ampliar o debate aqui na Casa sobre essa questão é fundamental.
 
@@ -3621,7 +3621,7 @@ Quero agradecer à Gabriella, ao Mark, que nos acompanharam através de vídeo, 
 
 Nada mais havendo a tratar, encerro os trabalhos da nossa audiência pública.
 
-Obrigada.","PUBLIC_HEARING","2023-08-10","Regulamentação dos mercados digitais no Brasil","Declaro aberta a reunião de audiência pública da Comissão de Desenvolvimento Econômico da Câmara dos Deputados, que tem como objetivo debater as experiências internacionais no desenvolvimento e regulamentação dos mercados digitais, matéria do Projeto de Lei nº 2.768, de 2022.
+Obrigada.",PUBLIC_HEARING,2023-08-10,Regulamentação dos mercados digitais no Brasil,"Declaro aberta a reunião de audiência pública da Comissão de Desenvolvimento Econômico da Câmara dos Deputados, que tem como objetivo debater as experiências internacionais no desenvolvimento e regulamentação dos mercados digitais, matéria do Projeto de Lei nº 2.768, de 2022.
 
 A realização desta reunião decorre da aprovação do Requerimento nº 7, de 2023, de minha iniciativa, subscrito pelo Deputado Florentino Neto.
 
@@ -3701,8 +3701,8 @@ E para enriquecer essa audiência, sugerimos os nomes de convidados especialista
 
 Então, gostaria de começar aqui chamando o nosso primeiro convidado, o Sr. Assimakis Komninos, que dispõe de 15 minutos, como eu disse anteriormente.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT","NO","NO","","","NO","","","MEDIUM","MEDIUM","","MEDIUM","MEDIUM","","HIGH","Dei MEDIUM porque logo depois da evidência, ela diz que o debate não termina ali e dá para ler isso como um pedido de mais debate antes da votação. Mas a frase da evidência em si é só um agradecimento","Dei MEDIUM na determinabilidade porque a evidência fala de uma ""oportunidade"" de aprender, mas não diz com todas as letras que a lei deve seguir esse caminho. Quem fala revela que relata o PL 2.768",""
-"892d7d3a6e934091","MINISTER_APPEARANCE","2023-11-28","Debate sobre a vacinação de crianças contra Covid-19","Obrigado, Presidente.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT|POSSIBLE_PARTY_IN_ORIGINAL_TEXT,NO,NO,,,,,,MEDIUM,MEDIUM,,,,,HIGH,"Dei MEDIUM porque logo depois da evidência, ela diz que o debate não termina ali e dá para ler isso como um pedido de mais debate antes da votação. Mas a frase da evidência em si é só um agradecimento","Dei MEDIUM na determinabilidade porque a evidência fala de uma ""oportunidade"" de aprender, mas não diz com todas as letras que a lei deve seguir esse caminho. Quem fala revela que relata o PL 2.768",
+892d7d3a6e934091,MINISTER_APPEARANCE,2023-11-28,Debate sobre a vacinação de crianças contra Covid-19,"Obrigado, Presidente.
 
 Perdoem-me, mas eu vou precisar dizer alguns termos, de forma bem objetiva: é movimento antivacina, sim!
 
@@ -3794,7 +3794,7 @@ Portanto, chega de mentira! Chega de utilização eleitoreira e político-partid
 
 Obrigado.(Palmas.)
 
-","PUBLIC_HEARING","2023-11-08","Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024","Para concluir, eu só vou citar três das muitas barbaridades que consegui anotar aqui:""A vacina não fica no braço"".É óbvio. Qualquer cidadão sabe que, ao ser injetada, a vacina não fica só no local de injeção. Outra:""A vacina leva à mutação"". Gente, eu nunca tinha ouvido alguém dizer que vacinação leva à mutação! É até o contrário. Se eu bloqueio a transmissão, bloqueio a reprodução, reduzo o risco — mas não vou ter tempo de seguir nessa linha. Por fim, eu quero que ele explique o que é índice de causalidade, que disse que foi superior a mais de noventa e tantos por cento de mortes pela vacina, em 400 autópsias feitas. Eu também desconheço esse indicador. Talvez seja algum indicador muito específico da imunologia da escola onde ele estudou, porque não consigo entender o que é isso. Poderia supor que dos, 400, quase todos morreram por causa da vacina. É isso que ele quer dizer?
+",PUBLIC_HEARING,2023-11-08,Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024,"Para concluir, eu só vou citar três das muitas barbaridades que consegui anotar aqui:""A vacina não fica no braço"".É óbvio. Qualquer cidadão sabe que, ao ser injetada, a vacina não fica só no local de injeção. Outra:""A vacina leva à mutação"". Gente, eu nunca tinha ouvido alguém dizer que vacinação leva à mutação! É até o contrário. Se eu bloqueio a transmissão, bloqueio a reprodução, reduzo o risco — mas não vou ter tempo de seguir nessa linha. Por fim, eu quero que ele explique o que é índice de causalidade, que disse que foi superior a mais de noventa e tantos por cento de mortes pela vacina, em 400 autópsias feitas. Eu também desconheço esse indicador. Talvez seja algum indicador muito específico da imunologia da escola onde ele estudou, porque não consigo entender o que é isso. Poderia supor que dos, 400, quase todos morreram por causa da vacina. É isso que ele quer dizer?
 
 Meu tempo se esgotou. Mas eu fico muito preocupado, Presidente Bia Kicis, porque nós não podemos contribuir para piorar ainda mais a cobertura de vacinação, não só da COVID, mas de todas. Isso é responsabilidade desta Casa, dos profissionais de saúde e do Estado brasileiro.
 
@@ -3806,8 +3806,8 @@ Meu tempo se esgotou. ","Mas eu fico muito preocupado, Presidente Bia Kicis, por
 
 Obrigado.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O Brasil deve enfrentar o movimento antivacina e recuperar a cobertura de vacinação do povo","A Câmara e o Estado devem evitar que a cobertura vacinal caia ainda mais","YES","FAVOR","FAVOR","HIGH","HIGH","MEDIUM","HIGH","HIGH","HIGH","HIGH","","",""
-"3f649c16713f4c6f","PUBLIC_HEARING","2023-09-20","Discussão sobre a Lei de Diretrizes Orçamentárias (LDO) de 2024 e suas implicações para o déficit fiscal e políticas voltadas para mulheres","Muito obrigada, Elaine.
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,O Brasil deve enfrentar o movimento antivacina e recuperar a cobertura de vacinação do povo,A Câmara e o Estado devem evitar que a cobertura vacinal caia ainda mais,YES,FAVOR,FAVOR,HIGH,HIGH,MEDIUM,MEDIUM,HIGH,HIGH,HIGH,,,
+3f649c16713f4c6f,PUBLIC_HEARING,2023-09-20,Discussão sobre a Lei de Diretrizes Orçamentárias (LDO) de 2024 e suas implicações para o déficit fiscal e políticas voltadas para mulheres,"Muito obrigada, Elaine.
 
 Eu acho que fui meio dura na minha fala porque fui gestora por mais tempo do que sou Parlamentar e tenho muita dificuldade com os melindres.
 
@@ -3823,7 +3823,7 @@ Tenho muita esperança neste Governo com relação à área social, porque eu fu
 
 Vou fazer outra colocação. ","Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não passar esse recurso direto para a gerência do Ministério das Mulheres? É isso o que eu questiono. Eu não questiono que estejamos em todos os meandros da sociedade ou das políticas públicas. Estamos sim em todos os lugares. Agora, eu não concordo com essa parte que eu citei."," Quanto é que vai sobrar?
 
-","PUBLIC_HEARING","2023-10-05","Políticas públicas voltadas para mulheres no climatério e menopausa","Declaro aberta a presente reunião de audiência pública da Comissão de Defesa dos Direitos da Mulher para debater os impactos do climatério e menopausa na saúde da mulher.
+",PUBLIC_HEARING,2023-10-05,Políticas públicas voltadas para mulheres no climatério e menopausa,"Declaro aberta a presente reunião de audiência pública da Comissão de Defesa dos Direitos da Mulher para debater os impactos do climatério e menopausa na saúde da mulher.
 
 Gostaríamos de registrar, com pesar, o falecimento do Dr. Diego Ralf Bomfim, irmão da Deputada Sâmia Bomfim, membro deste colegiado. Há indícios de execução de três médicos ortopedistas de São Paulo, que foram ao Rio de Janeiro para uma conferência em ortopedia. Eles foram brutalmente assassinados, na madrugada, em um quiosque na Barra da Tijuca.
 
@@ -3907,4 +3907,4 @@ Invertendo a ordem da exposição, a critério das próprias expositoras, convid
 
 De antemão, agradeço-lhe a presença.
 
-","POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT","YES","YES","O dinheiro das patrulhas e da Casa da Mulher Brasileira deve ficar com o Ministério das Mulheres","O Brasil deve criar políticas públicas para cuidar da saúde das mulheres na menopausa","NO","FAVOR","FAVOR","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","HIGH","Quem fala conta que foi prefeita de 2009 a 2012","Quem fala revela que relata o PL 5.602 de 2019","A discute qual ministério deve gerir o dinheiro contra a violência e B pede políticas de saúde para a menopausa"
+",POSSIBLE_POLITICAL_ROLE_IN_ORIGINAL_TEXT,YES,YES,"Os recursos das políticas para mulheres devem ser geridos diretamente pelo Ministério das Mulheres, e não pelo Ministério da Justiça.",O Brasil deve criar políticas públicas para cuidar da saúde das mulheres na menopausa,NO,FAVOR,FAVOR,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,HIGH,Quem fala conta que foi prefeita de 2009 a 2012,Quem fala revela que relata o PL 5.602 de 2019,A discute qual ministério deve gerir o dinheiro contra a violência e B pede políticas de saúde para a menopausa
