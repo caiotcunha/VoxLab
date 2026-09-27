@@ -202,6 +202,17 @@ Concordância entre pares de deputados que tomaram posição sobre a mesma propo
 - **Escala de apoio líquido:** SUPPORT = +1, CRITICIZE = −1, MIXED/NEUTRAL = 0. NOT_ADDRESSED é excluído. Os IC são por bootstrap de audiências.
 - **Partido:** o partido datado vem do registro de votos do deputado. Sem casamento com a Câmara, usa-se o partido do `cargo`, marcado em `party_source`.
 
+## Dashboard
+
+`site/index.html` é um site estático gerado por `voxlab.site_data`, com os dados embutidos em `site/data.js` (~2,6 MB). Abas:
+- visão geral (versões interativas das figuras);
+- audiências (proposições e postura de cada participante, com as divergências entre modelos destacadas);
+- deputados (partido, governismo e linha do tempo da postura sobre o governo);
+- partidos e grupos;
+- metodologia.
+
+Funciona por `file://` e está pronto para GitHub Pages, mas ainda não foi publicado.
+
 ## Reprodução
 
 ```bash
@@ -213,5 +224,6 @@ PYTHONPATH=src python -m voxlab.hearing_stance --stage stance --execute
 PYTHONPATH=src python -m voxlab.camara_api --download
 PYTHONPATH=src python -m voxlab.party_alignment
 PYTHONPATH=src python -m voxlab.party_figures
+PYTHONPATH=src python -m voxlab.site_data
 PYTHONPATH=src python -m unittest discover -s tests -v
 ```

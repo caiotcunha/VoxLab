@@ -86,3 +86,5 @@ Resultados, com 4.364 chamadas e US$ 2,88:
 - Nas proposições em pauta, as audiências são majoritariamente consensuais e o partido pesa pouco.
 
 Veja `docs/literature_review.md`, `docs/party_alignment.md` e `docs/figures/`.
+
+**Dashboard interativo** (`site/`, estático, sem backend): visão geral, explorador por audiência e por deputado, partidos e metodologia, com troca de modelo e de entrada. Para regenerar os dados, rode `PYTHONPATH=src python -m voxlab.site_data`. Para abrir, use `site/index.html` diretamente ou `python -m http.server -d site`.

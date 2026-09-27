@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>VoxLab: postura nas audiências</title>
+  <meta name="description" content="Postura de deputados e participantes das audiências públicas da Câmara (2022–2024) sobre as proposições em pauta e sobre o governo federal, validada contra votações nominais.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="top">
+      <h1>Postura nas audiências públicas da Câmara</h1>
+      <p class="lede">Como deputados e demais participantes se posicionam sobre as proposições em debate e sobre o
+        governo federal, antes e depois da alternância Bolsonaro→Lula. Dados: PublicHearingBR (206 audiências) e
+        votações nominais da Câmara, 2022–2024.</p>
+      <p class="notice">As posturas são <strong>previsões de modelos de linguagem</strong> (Qwen2.5-72B e
+        Llama-3.3-70B, prompts congelados e cegos a nome, partido e cargo), não anotação humana. A validação é externa:
+        votações nominais, grupo conhecido e concordância entre modelos. Veja a aba Metodologia.</p>
+      <div class="controls" role="group" aria-label="Controles globais">
+        <span><span class="seg-label">Modelo</span>
+          <span class="seg" id="ctl-model">
+            <button data-v="qwen" aria-pressed="true">Qwen2.5-72B</button>
+            <button data-v="llama" aria-pressed="false">Llama-3.3-70B</button>
+          </span></span>
+        <span><span class="seg-label">Entrada</span>
+          <span class="seg" id="ctl-cond">
+            <button data-v="fala" aria-pressed="true">Fala literal</button>
+            <button data-v="resumo" aria-pressed="false">Resumo da notícia</button>
+          </span></span>
+      </div>
+      <nav class="tabs" aria-label="Seções">
+        <a href="#geral">Visão geral</a>
+        <a href="#audiencias">Audiências</a>
+        <a href="#deputados">Deputados</a>
+        <a href="#partidos">Partidos e grupos</a>
+        <a href="#metodologia">Metodologia</a>
+      </nav>
+    </header>
+    <main id="view" tabindex="-1"></main>
+    <footer>VoxLab · código, prompts e respostas brutas no repositório (branch <code>party-alignment</code>) ·
+      rótulos <code>MODEL_PREDICTION</code>.</footer>
+  </div>
+  <div id="tip" role="tooltip"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
