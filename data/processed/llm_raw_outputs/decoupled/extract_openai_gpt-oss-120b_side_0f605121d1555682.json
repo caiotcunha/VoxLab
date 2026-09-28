@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4qUXG9xRjLkKfNxWQEgkFMI",
+  "object": "chat.completion",
+  "created": 1790624034,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas devem adotar a perspectiva da neurodiversidade para garantir os direitos das pessoas autistas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about neurodiversity, rights of autistic people, inclusion, etc. It advocates for neurodiversity perspective, criticizes stigma, calls for recognition of autistic adults, inclusion, etc. So there is a stance: likely in favor of adopting neurodiversity approach and policies supporting autistic rights. The question: need to formulate a neutral yes/no question that the speech answers. Could be: \"A abordagem da neurodiversidade deve ser adotada nas políticas públicas para pessoas com autismo?\" Or \"Políticas públicas devem reconhecer e garantir os direitos de pessoas autistas ao longo de toda a vida?\" The speech is clearly in favor. So stance_determinable = YES, target_question = something like \"As políticas públicas devem adotar a perspectiva da neurodiversidade para garantir os direitos das pessoas autistas?\" The answer is FAVOR (SIM). So stance = FAVOR.\n\nThus JSON:\n\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas devem adotar a perspectiva da neurodiversidade para garantir os direitos das pessoas autistas?\",\n  \"stance\": \"FAVOR\"\n}\n\nCheck format: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1703,
+    "total_tokens": 2022,
+    "completion_tokens": 319,
+    "estimated_cost": 0.00011724100000000001,
+    "prompt_tokens_details": null
+  }
+}

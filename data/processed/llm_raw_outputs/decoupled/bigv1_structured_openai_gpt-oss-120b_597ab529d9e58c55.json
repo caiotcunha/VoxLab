@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqGukQFJneARq9fCEfoyUNWR",
+  "object": "chat.completion",
+  "created": 1790632454,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Continuar investimento na Hemobrás para tornar o Brasil autossuficiente em imunoglobulina\",\n  \"target_proposition_b\": \"Vacinas não devem ser objeto de disputa política, devendo ser tratadas como questão científica\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine for each manifestation whether there is a target proposition determinable, and stance.\n\nWe must extract a specific proposition the speaker is affirming or rejecting. The theme is broad health system, etc. Need to find a specific claim.\n\nManifestation A: The speaker (likely Minister) talks about several things: acquisition of insulin, immunoglobulin, investment in Hemobrás to become self-sufficient in immunoglobulin, reopening beds, conferences, dialogue with Congress. Need a specific proposition. For stance determination, we need a proposition that the speaker either supports or opposes. The text includes statements like \"O Brasil pode ser autossuficiente em imunoglobulina. Para isso, temos que dar continuidade ao investimento na HEMOBRÁS\". That's a proposition: \"Brazil should continue investment in Hemobrás to achieve self-sufficiency in immunoglobulin.\" The speaker supports it (FAVOR). So stance_determinable = YES, target proposition = \"Continuar investimento na Hemobrás para tornar o Brasil autossuficiente em imunoglobulina\". Stance = FAVOR.\n\nCheck if any other proposition? Also mentions \"as compras emergenciais de insulina foram autorizadas\". That's a factual statement, not stance. The proposition about self-sufficiency is clear.\n\nThus for A: stance_determinable YES, target proposition as above, stance FAVOR.\n\nManifestation B: Very long. Many statements. Need a specific proposition the speaker supports or opposes. For example: \"A vacina não pode ser objeto de disputa política. Ela deve ser objeto de ciência, de esclarecimento, de educação, mas não de disputa política.\" That's a proposition: \"Vaccines should not be subject to political dispute; they should be treated scientifically.\" The speaker expresses that view, so FAVOR. So stance_determinable YES, target proposition = \"Vaccines should not be politicized and should be treated as a scientific matter.\" Stance FAVOR.\n\nAlternatively, there is also \"Fake news should be combated\" etc. But we need one proposition. Choose the vaccine one.\n\nThus both have determinable stance.\n\nNow same_proposition: Are the two propositions semantically equivalent? A is about continuing investment in Hemobrás for immunoglobulin self-sufficiency. B is about vaccines not being politicized. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\"/\"NO\"/\"UNCERTAIN\". Stance values: \"FAVOR\"/\"AGAINST\"/\"UNCERTAIN\". Provide empty strings if not determinable.\n\nThus:\n\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Continuar investimento na Hemobrás para tornar o Brasil autossuficiente em imunoglobulina\",\n  \"target_proposition_b\": \"Vacinas não devem ser objeto de disputa política, devendo ser tratadas como questão científica\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n\nCheck for any nuance: Are we sure stance_b is FAVOR? The speaker says \"A vacina não pode, a meu ver, ser objeto de disputa política. Ela deve ser objeto de ciência...\" That's a clear endorsement of that proposition. So FAVOR.\n\nThus final.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5583,
+    "total_tokens": 6415,
+    "completion_tokens": 832,
+    "estimated_cost": 0.000348011,
+    "prompt_tokens_details": null
+  }
+}

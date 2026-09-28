@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Raygco4nYi6T6Yd0Ae5XOk6L",
+  "object": "chat.completion",
+  "created": 1790624082,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Both questions ask whether the same convention on elderly rights should be adopted, using synonymous terms (ratified/approved) with the same polarity.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\" (Should the Inter-American Convention on the Protection of Human Rights of Older Persons be ratified?)\n\nQuestion2: \"A convenção sobre direitos da pessoa idosa deve ser aprovada?\" (Should the convention on rights of the elderly person be approved?)\n\nBoth ask about same convention? The first mentions \"Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\". The second says \"a convenção sobre direitos da pessoa idosa\". Likely same convention (the Inter-American one). Both ask whether it should be ratified/approved. \"Ratified\" vs \"approved\" essentially same action (approval by a legislative body). So they are same question, same polarity (both ask if should be approved). So relation: EQUIVALENT.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 646,
+    "completion_tokens": 244,
+    "estimated_cost": 5.6353999999999996e-05,
+    "prompt_tokens_details": null
+  }
+}

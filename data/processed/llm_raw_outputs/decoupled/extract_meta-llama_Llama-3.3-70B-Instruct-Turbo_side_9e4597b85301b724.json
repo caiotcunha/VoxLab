@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtnnRRUSTBqJWVy1GN8hUbvn",
+  "object": "chat.completion",
+  "created": 1790622344,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve ser responsabilizado pelo financiamento do tratamento da retinopatia diabética?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 714,
+    "total_tokens": 771,
+    "completion_tokens": 57,
+    "estimated_cost": 8.964e-05,
+    "prompt_tokens_details": null
+  }
+}

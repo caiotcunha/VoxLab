@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBmeawrMo79PnuccQQJioJg3",
+  "object": "chat.completion",
+  "created": 1790633207,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"The proposed regulation that gives platforms unilateral ban authority should be rejected\",\n  \"target_proposition_b\": \"The PLP 12 regulation for drivers should be approved\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: The speaker criticizes a bill that gives platforms unilateral ban authority, says it's unconstitutional, wants total rejection of the project. So target proposition: \"The bill that gives platforms unilateral ban authority should be rejected\" or \"The proposed regulation (project) should be rejected\". The stance is AGAINST the bill (i.e., against the proposal). So stance = AGAINST. Determinable? Yes.\n\nManifestation B: The speaker supports the PLP 12 (Projeto de Lei Complementar nº 12) and says it brings benefits, wants it approved. So target proposition: \"The PLP 12 regulation (including contribution model, transparency, etc.) should be approved\" or \"The proposed regulation (PLP 12) is beneficial and should be supported\". Stance = FAVOR. Determinable? Yes.\n\nNow comparability: Are they about same proposition? A is about rejecting a bill that gives unilateral ban authority (seems a different bill). B is about supporting PLP 12 which deals with contribution, retention, etc. Different propositions. So same_proposition = NO.\n\nNow produce JSON.\n\nNeed fields:\n\n\"stance_determinable_a\": \"YES\"\n\"stance_determinable_b\": \"YES\"\n\"target_proposition_a\": short neutral phrase. Something like \"The proposed regulation that gives platforms unilateral ban authority should be rejected\". Keep short.\n\n\"target_proposition_b\": \"The PLP 12 regulation for drivers should be approved\". Or \"The proposed PLP 12 regulation should be approved\".\n\n\"same_proposition\": \"NO\"\n\n\"stance_a\": \"AGAINST\"\n\"stance_b\": \"FAVOR\"\n\nCheck format: strings exactly as specified.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2566,
+    "total_tokens": 3037,
+    "completion_tokens": 471,
+    "estimated_cost": 0.00017501200000000002,
+    "prompt_tokens_details": null
+  }
+}

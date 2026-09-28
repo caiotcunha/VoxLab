@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgjleG9zmfDWSFafRtyqzhrE",
+  "object": "chat.completion",
+  "created": 1790622859,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deveria ser criada uma CPI para investigar a violência contra crianças, indígenas e mulheres nos territórios indígenas\",\n  \"target_proposition_b\": \"Deveriam ser criados planos e conselhos para políticas públicas voltadas à população LGBTQIA+ com intersetorialidade e participação da sociedade civil\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Let me analyze both manifestations carefully.\n\n**Manifestation A:**\n- Event: Public hearing on public policies for protection of indigenous women and children\n- The speaker advocates for:\n  - Protection of indigenous territories (demarcation and homologation)\n  - Combating illegal mining in indigenous territories\n  - Creating public policies with indigenous, gender, and age-specific cuts\n  - Creating a CPI to investigate violence against indigenous people, women, and children\n  - Budget allocation for these policies\n  - Respecting Convention 169 (consultation with indigenous peoples)\n  - The speaker clearly opposes the government's anti-indigenous stance and support for mining in indigenous territories\n\nThe speaker has clear positions. Let me identify the target proposition:\n- The speaker favors creating a CPI to investigate violence against indigenous children, women, and indigenous peoples\n- The speaker favors protecting/demarcating indigenous territories\n- The speaker opposes mining in indigenous territories\n- The speaker favors public policies with specific cuts for indigenous women and children\n\nThe most central proposition seems to be about creating public policies/plans for protecting indigenous women and children, with budget allocation, and creating a CPI. But I need to find a specific proposition.\n\nActually, looking more carefully, the speaker's main actionable proposition is: \"Deveria ser criada uma CPI para investigar a violência contra crianças, indígenas e mulheres nos territórios indígenas\" - this is a specific proposition the speaker clearly favors.\n\nBut there are multiple propositions. Let me pick the most prominent one. The speaker repeatedly calls for:\n1. A CPI to investigate violence\n2. Public policies with specific cuts (indigenous, gender, age)\n3. Protection of indigenous territories\n\nThe CPI suggestion is quite specific and prominent. But the overall thrust is about creating comprehensive public policies for protection of indigenous women and children.\n\nLet me think about what the core proposition is. The speaker is advocating for the creation of public policies/plans to protect indigenous women and children, with specific budget allocations, and specifically suggests a CPI. The CPI is the most concrete, specific actionable proposition.\n\n**Manifestation B:**\n- Event: Public hearing on difficulties in implementing public policies for LGBTQIA+ population\n- The speaker advocates for:\n  - Quality of equipment/facilities for LGBTQIA+ policies\n  - Budget allocation for these policies\n  - Existence of councils and plans for LGBTQIA+ policies\n  - Intersetoriality in policies\n  - Participation of civil society/LGBTQIA+ community\n  - A new public hearing to discuss best practices\n\nThe speaker's main proposition: \"Deveria ser realizada uma nova audiência pública para discutir boas práticas de políticas públicas para a população LGBTQIA+\"\n\nOr more broadly: \"Deveriam ser criados planos e conselhos para políticas públicas voltadas à população LGBTQIA+ com intersetorialidade e participação da sociedade civil\"\n\nNow, are these the same proposition? No. Manifestation A is about creating a CPI and public policies for indigenous women and children. Manifestation B is about plans, councils, and a new hearing for LGBTQIA+ policies. Different propositions, different themes.\n\nLet me formulate:\n\n**Manifestation A:**\n- stance_determinable_a: YES\n- target_proposition_a: \"Deveria ser criada uma CPI para investigar a violência contra crianças, indígenas e mulheres nos territórios indígenas\"\n- stance_a: FAVOR\n\n**Manifestation B:**\n- stance_determinable_b: YES\n- target_proposition_b: \"Deveriam ser criados planos e conselhos para políticas públicas voltadas à população LGBTQIA+ com intersetorialidade e participação da sociedade civil\"\n- stance_b: FAVOR\n\n**same_proposition: NO** - Different propositions entirely. One is about a CPI for violence against indigenous people, the other is about plans/councils for LGBTQIA+ policies.\n\nWait, let me reconsider. Both manifestations share a broader theme of public policies with intersetoriality and specific cuts, but the propositions are different. The speaker in both cases advocates for comprehensive public policies with participation of affected communities, but the target populations and specific mechanisms are different.\n\nActually, I should look more carefully. Is there a common proposition? Both mention:\n- The need for plans with intersetoriality\n- Budget allocation\n- Participation of affected communities\n- Combating discrimination\n\nBut the specific propositions are different - one is about a CPI for indigenous violence, the other is about plans/councils for LGBTQIA+ policies. These are not the same proposition.\n\nsame_proposition: NO",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3696,
+    "total_tokens": 4786,
+    "completion_tokens": 1090,
+    "estimated_cost": 0.0037774800010800004,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 952
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqXAosspObMktnyhpH08pui4",
+  "object": "chat.completion",
+  "created": 1790632322,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express clear support for their respective policies, but they address different propositions (health functional policy vs. elderly care policy), so they are not comparable.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we don't know name. We need to see if they respond to same proposition. Manifestation A is about support for PL 1673/21 establishing National Policy of Health Functional, focusing on chronic pain, disability, etc. The speaker thanks participants, mentions need for policies, etc. The stance: seems supportive of the policy, advocating inclusion, etc. So stance is FAVOR towards the policy.\n\nManifestation B is about a policy national of care for elderly, approving a project for retirement rights for caregiver mothers, etc. The speaker praises the approval, says caring is important. This is also supportive of that policy. However, are they responding to the same proposition? No, different topics: one about health functional policy for chronic pain, another about care for elderly and caregiver retirement. So they are not same proposition. Both have determinable stance (FAVOR). So relation is INCOMPARABLE (different propositions). Not uncertain. So answer: INCOMPARABLE.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1709,
+    "total_tokens": 1985,
+    "completion_tokens": 276,
+    "estimated_cost": 0.000110153,
+    "prompt_tokens_details": null
+  }
+}

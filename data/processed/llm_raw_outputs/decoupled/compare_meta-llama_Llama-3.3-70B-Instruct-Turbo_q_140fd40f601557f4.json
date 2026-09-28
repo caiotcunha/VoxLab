@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmbdAhJIk5r54EHKIFo7dYo7",
+  "object": "chat.completion",
+  "created": 1790622366,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos diferentes da política energética, uma sobre a implementação de um marco regulatório e a outra sobre o incentivo a um tipo específico de energia.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 463,
+    "completion_tokens": 58,
+    "estimated_cost": 5.906000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

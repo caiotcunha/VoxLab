@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQ1psQfp6hBk32IC0KtTWw2K",
+  "object": "chat.completion",
+  "created": 1790622257,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas legislativas diferentes: a revisão e aprimoramento do marco legal da inovação e a votação apressada da Lei do Bem.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 449,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00016396,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpMaJ8c7hHiI2ZuFEzf2GmXE",
+  "object": "chat.completion",
+  "created": 1790622509,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Devem ser adotadas cotas para pessoas com deficiência nas políticas de fomento cultural?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is making several clear points about including people with disabilities in cultural projects and policies. Let me identify the central question and stance.\n\nThe speaker advocates for:\n1. Incorporating people with disabilities in cultural funding policies (quotas for people with disabilities in public calls/editais)\n2. Accessibility in all cultural spaces\n3. Including accessibility as mandatory in arts education curricula\n4. Simple communication in public bodies\n\nThe main theme is about ensuring participation of people with disabilities in cultural projects for inclusion. The speaker clearly favors measures to include people with disabilities in cultural policies, funding, spaces, and education.\n\nThe central question could be: \"Deve haver cotas para pessoas com deficiência nas políticas de fomento cultural?\" or more broadly \"Devem ser adotadas medidas de inclusão de pessoas com deficiência nas políticas culturais?\"\n\nThe speaker clearly says YES to these measures. Let me formulate a neutral question.\n\nThe most central and specific point seems to be about quotas/reserved spaces for people with disabilities in cultural funding policies (editais). The speaker explicitly says \"que possamos ter cotas para as políticas de fomento, para a disputa de editais das pessoas com deficiência.\"\n\nA good target question: \"Devem ser reservadas cotas para pessoas com deficiência nas políticas de fomento cultural?\"\n\nStance: FAVOR (the speaker clearly supports this).",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1361,
+    "total_tokens": 1704,
+    "completion_tokens": 343,
+    "estimated_cost": 0.00120728250072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 288
+    }
+  }
+}

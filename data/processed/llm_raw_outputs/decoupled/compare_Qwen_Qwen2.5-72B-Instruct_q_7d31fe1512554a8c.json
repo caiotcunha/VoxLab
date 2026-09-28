@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Reti8tzzqA5Q0zs6WlKdOKPR",
+  "object": "chat.completion",
+  "created": 1790622258,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de propostas diferentes: uma sobre a rejeição de um projeto de lei, a outra sobre a rejeição e substituição de um grupo de trabalho.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 469,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00017108000000000002,
+    "prompt_tokens_details": null
+  }
+}

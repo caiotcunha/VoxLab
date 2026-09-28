@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIWcmy96l2j8iN7eDDvjmG2y",
+  "object": "chat.completion",
+  "created": 1790622390,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de regulamentações diferentes, uma sobre lobby e outra sobre trabalho de motoristas de aplicativo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 457,
+    "completion_tokens": 43,
+    "estimated_cost": 5.516e-05,
+    "prompt_tokens_details": null
+  }
+}

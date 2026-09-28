@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtN4yooD9Hiiq7kZfdsNlrNQ",
+  "object": "chat.completion",
+  "created": 1790624071,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos para prevenção e resposta a desastres devem ser alocados de forma fixa no Fundo de Calamidade Pública?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker talks about need for investments in municipalities, need for a career for civil defense, and expresses opposition to the way resources are placed in the Public Calamity Fund (Fundo de Calamidade Pública) – they are against fixed allocation, favoring ad hoc measures via provisional measures. So there is a clear stance: against the fixed allocation of resources to the Public Calamity Fund (i.e., against the proposal to allocate resources in that way). The question could be: \"Os recursos para prevenção e resposta a desastres devem ser alocados de forma fixa no Fundo de Calamidade Pública?\" The speaker says they are against that. So stance = AGAINST (i.e., answer NO to the question \"Should resources be allocated fixedly to the fund?\").\n\nThus stance_determinable = YES, target_question = \"Os recursos para prevenção e resposta a desastres devem ser alocados de forma fixa no Fundo de Calamidade Pública?\" stance = AGAINST.\n\nCheck if any other issues: also they support municipal investments, but the clearest specific policy is about the funding mechanism. So we can frame the question accordingly.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1092,
+    "total_tokens": 1405,
+    "completion_tokens": 313,
+    "estimated_cost": 9.3614e-05,
+    "prompt_tokens_details": null
+  }
+}

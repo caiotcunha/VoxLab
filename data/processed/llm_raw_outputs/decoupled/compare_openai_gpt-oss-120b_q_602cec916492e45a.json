@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbuTqYthVJx8sIEqSsGjLJqV",
+  "object": "chat.completion",
+  "created": 1790632284,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de assuntos distintos: inclusão em diagnóstico biopsicossocial versus manutenção de medida de aposentadoria para mães cuidadoras.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"A inclusão de pessoas com dor crônica no diagnóstico biopsicossocial deve ser garantida?\" Means: Should inclusion of people with chronic pain in the biopsychosocial diagnosis be guaranteed? It's about guaranteeing inclusion in diagnosis.\n\nQuestion2: \"A medida que assegura o direito à aposentadoria das mães cuidadoras aos 62 anos, com possibilidade de parcelar o débito com a Previdência, deve ser mantida?\" Means: Should the measure that ensures the right to retirement for caregiver mothers at 62, with possibility to parcel the debt with Social Security, be maintained? It's about maintaining a specific retirement measure.\n\nThese are different topics: one about medical diagnosis inclusion, other about retirement policy. So they are different. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 424,
+    "total_tokens": 646,
+    "completion_tokens": 222,
+    "estimated_cost": 5.3428e-05,
+    "prompt_tokens_details": null
+  }
+}

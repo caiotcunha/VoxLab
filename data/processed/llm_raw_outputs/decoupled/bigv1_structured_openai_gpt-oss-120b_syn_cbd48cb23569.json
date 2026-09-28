@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfL4baiEiabnFev3MgLaJT3f",
+  "object": "chat.completion",
+  "created": 1790633230,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"The bill that grants platforms unilateral ban authority over drivers should be rejected\",\n  \"target_proposition_b\": \"The current PLP 12 regulation of ride‑hailing drivers should be approved as presented\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: He says \"project ... gives unilateral ban by platform, unconstitutional, we want total rejection of this project.\" So target proposition: \"The proposed bill that allows platforms to unilaterally ban drivers should be rejected.\" Or \"The project that gives platforms unilateral ban is unconstitutional and should be rejected.\" So stance: AGAINST the proposition that the project should be accepted; i.e., he is against the project. So stance = AGAINST the proposition \"the project should be approved\". But we need to phrase proposition neutrally: \"The bill allowing platforms to unilaterally ban drivers\". That's the proposition. He wants rejection. So stance AGAINST that bill (i.e., against its approval). So stance_determinable = YES.\n\nManifestation B: He says many things. He rejects the current PLP 12 as presented, wants changes, and supports alternative proposal 536. He says \"any project that does not consider km and time will not be accepted by drivers.\" He says \"the project as presented does not meet us.\" So target proposition: \"The current PLP 12 (the proposed regulation) should be rejected / not approved in its current form.\" He also proposes alternative. So stance: AGAINST the current PLP 12 as presented. So stance_determinable = YES. Proposition: \"The current PLP 12 regulation of ride-hailing drivers should be approved as is.\" He opposes that. So AGAINST.\n\nNow comparability: Are the two propositions the same? Both are about rejecting a specific bill concerning regulation of ride-hailing drivers. A is about a bill that gives platforms unilateral ban authority (maybe part of same PLP 12? Not sure). B is about PLP 12's retention model and other aspects. They are different specific propositions: A focuses on unilateral ban authority; B focuses on retention model, km/time, etc. They are not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nKeys:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: short neutral phrase. Something like \"The bill that grants platforms unilateral ban authority over drivers should be rejected.\" (neutral). \ntarget_proposition_b: \"The current PLP 12 regulation of ride‑hailing drivers should be approved as presented.\" (neutral). Or \"The proposed PLP 12 regulation should be accepted.\" We'll phrase as \"The current PLP 12 regulation of ride‑hailing drivers should be approved.\"\n\nstance_a: AGAINST\nstance_b: AGAINST\nsame_proposition: NO\n\nCheck format: strings exactly as required.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2682,
+    "total_tokens": 3356,
+    "completion_tokens": 674,
+    "estimated_cost": 0.00021381400000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1hf5rVOd5w89SyTksZc4Z6x",
+  "object": "chat.completion",
+  "created": 1790632969,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas relacionados ao bem‑estar animal, mas a primeira foca na obrigação da produção, enquanto a segunda envolve priorização nacional com risco à segurança alimentar, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\" => Should animal-origin food production guarantee animal welfare? It's about whether production should guarantee welfare.\n\nQuestion2: \"O Brasil deve priorizar o bem-estar animal mesmo que isso comprometa a segurança alimentar?\" => Should Brazil prioritize animal welfare even if it compromises food security? This is about national policy prioritizing welfare over food security.\n\nAre they equivalent? Not exactly. Q1 is about production guaranteeing welfare (a normative requirement). Q2 is about prioritizing welfare even at cost to food security. They are related but not same. The answer to Q1 (yes) doesn't necessarily imply answer to Q2 (yes) because Q2 adds condition of compromising food security and national priority. So they are different questions. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 647,
+    "completion_tokens": 247,
+    "estimated_cost": 5.6790000000000003e-05,
+    "prompt_tokens_details": null
+  }
+}

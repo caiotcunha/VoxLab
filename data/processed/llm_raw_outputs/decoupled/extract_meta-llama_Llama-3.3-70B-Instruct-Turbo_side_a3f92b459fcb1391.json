@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RARs4efeWjJURQV6EG9ogkmV",
+  "object": "chat.completion",
+  "created": 1790622271,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve haver uma legislação específica do sistema prisional carcerário para as questões indígenas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 849,
+    "total_tokens": 904,
+    "completion_tokens": 55,
+    "estimated_cost": 0.0001025,
+    "prompt_tokens_details": null
+  }
+}

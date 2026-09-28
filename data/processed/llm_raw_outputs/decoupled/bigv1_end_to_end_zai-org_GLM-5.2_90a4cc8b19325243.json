@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwfFRFf6YTtLNkI1Vs5ITttz",
+  "object": "chat.completion",
+  "created": 1790623993,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se posicionam a favor da vacinação de crianças contra Covid-19 e contra a campanha antivacina, tratando da mesma proposição específica com a mesma direção de stance.\"\n}",
+        "reasoning_content": "We need answer JSON strict. Need classify relation between two manifestations. Need understand task. We have two literal manifestations by same actor in two parliamentary events, blinded. Need classify relation in exactly one category.\n\nDefinitions:\n- STANCE_MAINTAINED: both respond to same specific proposition with same stance direction (both FAVOR or both AGAINST).\n- STANCE_REVERSED: same specific proposition with opposite stance.\n- INCOMPARABLE: positions determinable, but not same specific proposition.\n- RELATION_UNCERTAIN: some step (determinability, comparability, stance) not sufficiently clear.\n- INSUFFICIENT_EVIDENCE: at least one manifestation no determinable position on any specific proposition.\n\nNeed judge only text. Need identify propositions and stance.\n\nManifestation A: Public hearing 2023-11-07 theme: lessons pandemic and future health emergencies, focus vaccination and combating disinformation. Speaker (likely same) talks about COVID, previous government destruction, vaccination coverage, Mais Médicos, Ministry recovery, social inequality, measles, industrial complex, antivaccine campaign. Specifically mentions tomorrow in plenary CFFC, initiative by Commission president to make anti-vaccine preaching against Ministry incorporating COVID-19 vaccine in children's vaccination planning. He says anti-vaccine campaign worrying, need confront scientific denialism, will go make counterpoint. Also supports digital vaccination records, etc. He clearly favors vaccination, including COVID-19 children? He criticizes anti-vaccine event against Ministry incorporating COVID-19 vaccine in children's planning. He says need combat antivaccine. So stance FAVOR to proposition \"COVID-19 vaccination of children\" or \"incorporating COVID-19 vaccine into children's vaccination planning\" and AGAINST anti-vaccine movement.\n\nManifestation B: Minister appearance 2023-11-28 theme: Debate about vaccination of children against Covid-19. Speaker strongly attacks antivaccine movement, says they are lying, supports Ministry, says need combat antivaccine agenda, supports COVID vaccine for children? He says \"com a campanha que fazem aqui contra a vacina da COVID–19 para crianças, vocês derrubam...\" He is against antivaccine campaign, favors vaccination. Same proposition: COVID-19 vaccination for children. Both FAVOR. So likely STANCE_MAINTAINED.\n\nNeed be careful: \"same specific proposition\" maybe A responds to broad pandemic lessons and future emergencies, not specifically child COVID vaccination? But A explicitly mentions anti-vaccine event against Ministry incorporating COVID-19 vaccine in children's planning and says will make counterpoint. B is specifically debate on child COVID vaccination and speaker favors. So same specific proposition: COVID-19 vaccination of children / incorporating COVID-19 vaccine into children's vaccination schedule. Both FAVOR. STANCE_MAINTAINED.\n\nNeed produce JSON with relation and reasoning. No extra. Need ensure exact keys.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4774,
+    "total_tokens": 5425,
+    "completion_tokens": 651,
+    "estimated_cost": 0.0037107750006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 585
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rrj6E4DiATEFueEbmBLTTtyy",
+  "object": "chat.completion",
+  "created": 1790622581,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A questão racial deve ser integrada às políticas públicas para a primeira infância?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is clearly advocating for the incorporation of racial issues into public policies for early childhood. They are representing a group (Grupo Articulador Primeira Infância no Centro) and presenting a clear position: racism should be addressed in public policies for early childhood, and specific actions should be taken to protect black and indigenous children.\n\nThe stance is clearly determinable - the speaker is making a clear argument that the racial dimension should be integrated into all public policies for early childhood, and they are advocating for specific actions and policies to address racism against black and indigenous children.\n\nThe target question could be: \"A questão racial deve ser integrada às políticas públicas para a primeira infância?\" or \"Devem ser implementadas políticas públicas específicas para o enfrentamento ao racismo na primeira infância?\"\n\nThe stance is clearly FAVOR - the speaker is advocating for this position throughout the entire speech.\n\nLet me formulate the target question as a neutral yes/no question.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1636,
+    "total_tokens": 1875,
+    "completion_tokens": 239,
+    "estimated_cost": 0.0011747700007200001,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwUEyKxTZ7kxHcexsT9cWhdl",
+  "object": "chat.completion",
+  "created": 1790622412,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As emendas propostas na LDO para combater a violência contra crianças e adolescentes devem ser acatadas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Let me analyze this manifestation carefully.\n\nThe speaker is presiding over or participating in a public hearing about including amendments in the LDO (Lei de Diretrizes Orçamentárias) to combat violence against children and adolescents.\n\nKey points from the speech:\n1. The speaker presents data about violence against children and adolescents\n2. The speaker mentions that the Rapporteur (Deputado Danilo Forte) has already accepted all five amendments presented by a coalition of 67+ entities\n3. The speaker describes the amendments in detail - they deal with prevention of violence against children and adolescents, transparency in budget allocation, resources for children and adolescents, etc.\n4. The speaker emphasizes the importance of budget resources for child protection policies\n5. The speaker highlights that only 5.6% of the federal budget goes to children and adolescents despite them representing 25% of the population\n\nThe speaker clearly supports the inclusion of these amendments in the LDO to combat violence against children and adolescents. They praise the fact that the amendments were accepted, describe them positively, and emphasize the importance of budget allocation for child protection.\n\nThe central question would be something like: \"As emendas da LDO voltadas ao combate da violência contra crianças e adolescentes devem ser incluídas/acatadas?\"\n\nThe speaker's position is clearly in FAVOR of these amendments being included.\n\nLet me formulate the target question neutrally: \"As emendas propostas na LDO para combater a violência contra crianças e adolescentes devem ser acatadas?\"\n\nThe speaker clearly supports the amendments - they express satisfaction that the rapporteur accepted them, describe them positively, and emphasize their importance.\n\nstance_determinable: YES\ntarget_question: \"As emendas propostas na LDO para combater a violência contra crianças e adolescentes devem ser acatadas?\"\nstance: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2071,
+    "total_tokens": 2505,
+    "completion_tokens": 434,
+    "estimated_cost": 0.0017704575007200002,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 376
+    }
+  }
+}

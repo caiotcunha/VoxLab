@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RefHXtWs37CCXSQjdPzZjtzg",
+  "object": "chat.completion",
+  "created": 1790622254,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da ratificação em si, enquanto a segunda questiona sobre o quórum necessário para a aprovação, abordando aspectos diferentes do processo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 467,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00017028,
+    "prompt_tokens_details": null
+  }
+}

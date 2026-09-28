@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsJPEcwAcefIfkPNYj15WUav",
+  "object": "chat.completion",
+  "created": 1790624083,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Both questions refer to PL 2768/22 regulating digital platforms/markets and ask whether it should be approved.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\" (Should PL 2768, which regulates digital platforms, be approved?)\n\nQuestion2: \"A proposta de regulamentação dos mercados digitais (PL 2768/22) deve ser aprovada?\" (Should the proposal to regulate digital markets (PL 2768/22) be approved?)\n\nBoth refer to same PL number (2768) and same subject: regulation of digital platforms/markets. Both ask if it should be approved. So they are equivalent. So relation: EQUIVALENT.\n\nProvide JSON with reasoning: same bill, same question.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 607,
+    "completion_tokens": 198,
+    "estimated_cost": 4.8793e-05,
+    "prompt_tokens_details": null
+  }
+}

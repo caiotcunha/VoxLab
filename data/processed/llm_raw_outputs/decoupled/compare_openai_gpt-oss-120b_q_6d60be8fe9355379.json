@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbJqLpyRLv6vO2lNMaQWFBXG",
+  "object": "chat.completion",
+  "created": 1790633109,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Both ask about the same bill, but one asks if it should be rejected while the other asks if it should be approved, making the answers opposite.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" => Should the bill be rejected? So a \"yes\" means reject, \"no\" means not reject (i.e., approve).\n\nQuestion2: \"O Projeto de Lei Complementar nº 12, que regulamenta o trabalho dos motoristas de aplicativo, deve ser aprovado?\" => Should the bill be approved? Yes means approve, no means not approve (i.e., reject).\n\nThus they are opposite polarity: rejecting vs approving same bill. They refer to same bill (project of law regulating work of app drivers). So answering \"SIM\" to Q1 equals \"NÃO\" to Q2. So relation OPPOSITE_POLARITY.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 411,
+    "total_tokens": 638,
+    "completion_tokens": 227,
+    "estimated_cost": 5.3797e-05,
+    "prompt_tokens_details": null
+  }
+}

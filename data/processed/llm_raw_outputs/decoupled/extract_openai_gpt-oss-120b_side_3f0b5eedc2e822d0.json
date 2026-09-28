@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbvYPs4jQ0TFiOpLMHyIATtu",
+  "object": "chat.completion",
+  "created": 1790624062,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação dos motoristas de aplicativo deve ser aprovada de forma precipitada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The topic is regulation of app drivers. The speaker expresses concern about rushing legislation, wants caution, wants to avoid irresponsible legislation, wants to avoid harming jobs, wants to ensure proper regulation. So the position is against a rushed, possibly harmful regulation; they favor a cautious approach, possibly delaying or ensuring proper safeguards. The specific question could be: \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada de forma precipitada?\" Or \"A aprovação rápida da regulamentação dos motoristas de aplicativo deve ser evitada?\" Need neutral yes/no question. Perhaps: \"A aprovação da regulamentação dos motoristas de aplicativo deve ser feita com cautela, evitando pressa?\" That's a statement, not a yes/no. Better: \"A regulamentação dos motoristas de aplicativo deve ser aprovada de forma precipitada?\" The speaker says no, they oppose precipitated approval. So stance: AGAINST (i.e., they answer NO to that question). So stance_determinable = YES, target_question = \"A regulamentação dos motoristas de aplicativo deve ser aprovada de forma precipitada?\" stance = AGAINST.\n\nCheck if any other specific question: Could be \"Deve-se avançar com a regulamentação dos motoristas de aplicativo sem cautela?\" That's similar. We'll use the first.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1133,
+    "total_tokens": 1468,
+    "completion_tokens": 335,
+    "estimated_cost": 9.8871e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB8cz0LfjnjMt7b8ypEeOTSk",
+  "object": "chat.completion",
+  "created": 1790622355,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O projeto de lei 12 deve ser aprovado como está?\",\n  \"stance\": \"NO\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2531,
+    "total_tokens": 2572,
+    "completion_tokens": 41,
+    "estimated_cost": 0.00026622,
+    "prompt_tokens_details": null
+  }
+}

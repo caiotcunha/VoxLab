@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R23VYdYy6I42q93cgtsXc0Uy",
+  "object": "chat.completion",
+  "created": 1790624055,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve avançar nas políticas de bem-estar animal para atender a compromissos internacionais e à demanda da sociedade?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a government official (executive) talking about animal welfare, its economic importance, international treaties, UN resolution, need for studies, etc. She expresses support for advancing animal welfare, linking to economic interests, and says government must respond to societal demand (PPA participativo). She says \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, é sobretudo pela vida humana na Terra.\" This is a clear stance favoring animal welfare policies and implementation of UN resolution. The question: what specific issue? Could be \"Should Brazil advance animal welfare policies to meet international commitments and societal demand?\" That's a yes/no. The speaker is in favor. So stance_determinable = YES. target_question: \"O Brasil deve avançar nas políticas de bem-estar animal para atender a compromissos internacionais e à demanda da sociedade?\" That's neutral yes/no. Stance = FAVOR.\n\nCheck rules: Must be a specific question. The speech covers multiple points but central is that Brazil should act on animal welfare (policy, studies, respond to UN resolution, societal demand). So yes.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2181,
+    "total_tokens": 2493,
+    "completion_tokens": 312,
+    "estimated_cost": 0.0017769,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 257
+    }
+  }
+}

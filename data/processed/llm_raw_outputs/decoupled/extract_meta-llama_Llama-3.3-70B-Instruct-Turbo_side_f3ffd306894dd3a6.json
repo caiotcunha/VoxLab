@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrY8Hro9qUf5oU2kEan9dUKp",
+  "object": "chat.completion",
+  "created": 1790622282,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve haver uma previsão orçamentária para o Fundo de Calamidade Pública?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1156,
+    "total_tokens": 1207,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00013192,
+    "prompt_tokens_details": null
+  }
+}

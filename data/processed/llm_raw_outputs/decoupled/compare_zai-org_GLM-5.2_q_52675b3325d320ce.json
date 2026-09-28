@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REcWiZomM1dwnJaz83BgIX9L",
+  "object": "chat.completion",
+  "created": 1790623833,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas e objetos completamente distintos: uma trata da inclusão de pessoas com dor crônica no diagnóstico biopsicossocial e a outra questiona se o cuidado deve ser reconhecido como trabalho.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two yes/no questions extracted from speeches by the same actor at different times.\n\nQuestion 1: \"As pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial?\" (Should people with chronic pain be included in the biopsychosocial diagnosis?)\nQuestion 2: \"O cuidado deve ser reconhecido como trabalho?\" (Should care be recognized as work?)\n\nThese questions are about completely different topics. Question 1 is about including people with chronic pain in a biopsychosocial diagnosis. Question 2 is about recognizing care as work. They are not the same question, nor do they have opposite polarities. They are different questions.\n\nRelation: DIFFERENT",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "total_tokens": 602,
+    "completion_tokens": 216,
+    "estimated_cost": 0.0004888050004800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 151
+    }
+  }
+}

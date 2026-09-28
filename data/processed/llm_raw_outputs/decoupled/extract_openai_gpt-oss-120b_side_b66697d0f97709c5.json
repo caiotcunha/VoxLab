@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFxi6897wwfUMC8h8xtCGCzB",
+  "object": "chat.completion",
+  "created": 1790624001,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The theme is substitution of saque-aniversário do FGMT by empréstimo consignado with lower interest. The speaker says: \"Acho que precisamos aprimorar o saque-aniversário, mas acabar neste momento seria uma solução muito cruel para os trabalhadores... não conte comigo para finalizá-lo, para acabar com ele.\" So they are against ending the saque-aniversário. They support improving it, not abolishing. So stance: AGAINST ending the saque-aniversário (i.e., against substitution). The target question: \"O saque-aniversário do FGTS deve ser mantido?\" Or \"Deve ser encerrado o saque-aniversário do FGTS?\" Need neutral yes/no. Since they are against ending, they favor maintaining. So question: \"O saque-aniversário do FGTS deve ser mantido?\" Their answer: SIM (FAVOR). So stance_determinable = YES, target_question = \"O saque-aniversário do FGTS deve ser mantido?\" stance = FAVOR.\n\nCheck if any nuance: They also propose new credit option, but they say not to end saque-aniversário. So clear position.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1664,
+    "total_tokens": 1965,
+    "completion_tokens": 301,
+    "estimated_cost": 0.000112738,
+    "prompt_tokens_details": null
+  }
+}

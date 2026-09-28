@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rrbi1AaMVrKtldlREvegys9f",
+  "object": "chat.completion",
+  "created": 1790622183,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Lei do Bem deve ser colocada em votação para apoiar as empresas a inovarem?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3072,
+    "total_tokens": 3126,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00112752,
+    "prompt_tokens_details": null
+  }
+}

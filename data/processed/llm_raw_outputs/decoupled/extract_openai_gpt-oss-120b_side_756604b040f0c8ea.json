@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6f4Lz0Wx4X5ElH3Km5Bh9PQ",
+  "object": "chat.completion",
+  "created": 1790624020,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser mantido como recurso específico e fixo para prevenção de desastres?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker discusses need for investments in municipalities, need for a career for civil defense, criticizes fixed funding for prevention (Fundo de Calamidade Pública) and suggests that a large fixed budget for prevention is absurd, prefers agile funding via provisional measures, etc. So there is a clear stance: against a specific fixed resource (Fundo de Calamidade Pública) and against large dedicated prevention budget; favor flexible, crisis response funding.\n\nWe need to formulate a neutral yes/no question that captures the central issue. Could be: \"Deve ser mantido o Fundo de Calamidade Pública como recurso específico e fixo para prevenção de desastres?\" Or \"A criação de um fundo específico e fixo para prevenção de desastres deve ser mantida?\" The speaker says it's not efficient, it's absurd. So stance is AGAINST.\n\nThus stance_determinable = YES, target_question = \"O Fundo de Calamidade Pública deve ser mantido como recurso específico e fixo para prevenção de desastres?\" stance = AGAINST.\n\nCheck if any nuance: He says \"colocar recursos no Fundo de Calamidade Pública, que foi criado em 1969, não é a solução mais eficiente... É questionável um recurso específico e engessado para prevenção.\" So indeed against that.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1015,
+    "total_tokens": 1358,
+    "completion_tokens": 343,
+    "estimated_cost": 9.586500000000002e-05,
+    "prompt_tokens_details": null
+  }
+}

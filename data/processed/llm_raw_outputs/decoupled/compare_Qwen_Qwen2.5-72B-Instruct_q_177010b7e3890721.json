@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXQw5krm2ok2NMjI3MojciCw",
+  "object": "chat.completion",
+  "created": 1790622226,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de decisões diferentes: uma sobre a compra de insulina por uma empresa, a outra sobre fiscalização de pagamentos por um Ministério.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 452,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00016476000000000001,
+    "prompt_tokens_details": null
+  }
+}

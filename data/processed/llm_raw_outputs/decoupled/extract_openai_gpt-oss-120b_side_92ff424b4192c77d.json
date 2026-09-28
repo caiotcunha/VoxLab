@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnUg1EJjTw4TbIqfEtWxkKCx",
+  "object": "chat.completion",
+  "created": 1790624014,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação dos mercados digitais deve ser avançada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is talking about the importance of discussing digital markets regulation, need for debate, cannot stay inert, must promote competition, innovation, growth, consumer and entrepreneur rights. They are in favor of advancing discussion, not staying inert. The specific issue: \"Regulamentação dos mercados digitais (PL 2768/22)\" – they seem to support advancing the discussion and regulation to promote competition, innovation, etc. The stance is favorable to advancing the regulation? The text says \"Não podemos ficar inertes e permitir que a competitividade e a promoção da concorrência nesses mercados sejam prejudicadas.\" So they are against staying inert, i.e., they favor action to promote competition. So the question could be: \"O projeto de regulamentação dos mercados digitais deve ser avançado?\" Or \"A discussão sobre a regulamentação dos mercados digitais deve ser mantida e avançada?\" The speaker supports advancing discussion and regulation. So stance = FAVOR (SIM). So stance_determinable = YES. target_question: \"A regulamentação dos mercados digitais deve ser avançada?\" Or \"Deve-se promover a regulamentação dos mercados digitais?\" Provide neutral yes/no question. Let's phrase: \"A regulamentação dos mercados digitais deve ser avançada?\" That is a yes/no. The speaker says yes. So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 742,
+    "total_tokens": 1073,
+    "completion_tokens": 331,
+    "estimated_cost": 8.3724e-05,
+    "prompt_tokens_details": null
+  }
+}

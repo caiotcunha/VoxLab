@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqfSggjjOrb78O9N44szeEya",
+  "object": "chat.completion",
+  "created": 1790624000,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is largely procedural, praising, describing plans, and stating intention to increase budget for TB program. At some point, the speaker says: \"O primeiro ato que nós vamos fazer — e esse nós vamos conseguir — é alterar, não sei para quanto, o orçamento do programa de combate à tuberculose do Brasil. ... Não se pode imaginar que nós vamos ter que erradicar essa doença, que tem 80 mil casos... com 14 milhões de reais. ... Portanto, houve o compromisso do Senador Marcelo Castro, e nós deveremos, sim, ampliar o orçamento, trabalhar nessa ampliação, mas não sabemos para quanto irão os recursos.\"\n\nThus the speaker expresses a stance: they support increasing the budget for TB program. So stance determinable = YES. Target question: \"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\" That's a yes/no question. The speaker says \"devemos, sim, ampliar o orçamento\". So stance = FAVOR (SIM). So JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\",\n \"stance\": \"FAVOR\"\n}\n\nCheck if any nuance: they also propose focusing on Amazonas, but main stance is about increasing budget. So answer accordingly.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2627,
+    "total_tokens": 2965,
+    "completion_tokens": 338,
+    "estimated_cost": 0.00015465900000000002,
+    "prompt_tokens_details": null
+  }
+}

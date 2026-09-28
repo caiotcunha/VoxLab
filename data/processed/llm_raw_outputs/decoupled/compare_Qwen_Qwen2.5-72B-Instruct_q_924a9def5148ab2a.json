@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMq0vjFXbtXMngZgoupDTapH",
+  "object": "chat.completion",
+  "created": 1790622242,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas diferentes: a ratificação de uma convenção internacional e a manutenção e fortalecimento de uma lei nacional.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 443,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00016144000000000003,
+    "prompt_tokens_details": null
+  }
+}

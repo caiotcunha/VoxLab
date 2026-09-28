@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmtTq89kuuYAB28LkTJoQlGk",
+  "object": "chat.completion",
+  "created": 1790632754,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de derrubar um veto específico a um projeto de lei, enquanto a outra trata de destinar recursos para retirar famílias de áreas de risco, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" Means: Should veto number 28 to Bill 920/23 be overturned? So it's about a specific veto to a specific bill.\n\nQuestion2: \"O governo deve destinar recursos específicos para a retirada de famílias de áreas de risco?\" Means: Should the government allocate specific resources for the removal of families from risk areas? That's about allocating resources for relocation of families from risk zones.\n\nThese are different topics: one is about a legislative veto; the other about government spending for relocation. So they are different issues. So relation = DIFFERENT.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 606,
+    "completion_tokens": 204,
+    "estimated_cost": 4.955400000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

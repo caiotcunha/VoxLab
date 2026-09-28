@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB08ANdFq65TAiqvJ5e4XIMQ",
+  "object": "chat.completion",
+  "created": 1790622356,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O recurso para a Casa da Mulher Brasileira deve ser mantido sob a gerência do Ministério da Justiça?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 802,
+    "total_tokens": 862,
+    "completion_tokens": 60,
+    "estimated_cost": 9.94e-05,
+    "prompt_tokens_details": null
+  }
+}

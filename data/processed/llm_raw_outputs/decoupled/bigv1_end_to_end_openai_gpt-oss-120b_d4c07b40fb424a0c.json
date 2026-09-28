@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0mPmFpquV6wyKdfks2JMaAH",
+  "object": "chat.completion",
+  "created": 1790624086,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same specific issue – mandatory COVID‑19 vaccination for children – and each expresses opposition to that mandate.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. Both discuss mandatory vaccination of children against Covid-19. Manifestation A: speaker (a deputy) expresses opposition to mandatory vaccination for children, argues against forced vaccination, says they are pro-life, etc. She says \"não quero que seja imposta a vacina, porque eu vou me opor a isso\". So stance: AGAINST mandatory vaccination.\n\nManifestation B: Minister says they are against the obligatoriness as well: \"O que nós somos contra é quanto a obrigatoriedade.\" So also AGAINST mandatory vaccination. Both address same proposition: mandatory vaccination of children (Covid-19). So same stance (both AGAINST). Therefore STANCE_MAINTAINED.\n\nWe must ensure that stance is determinable: yes. Both are about same proposition. So relation STANCE_MAINTAINED.\n\nProvide JSON with reason.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2880,
+    "total_tokens": 3125,
+    "completion_tokens": 245,
+    "estimated_cost": 0.00014821000000000002,
+    "prompt_tokens_details": null
+  }
+}

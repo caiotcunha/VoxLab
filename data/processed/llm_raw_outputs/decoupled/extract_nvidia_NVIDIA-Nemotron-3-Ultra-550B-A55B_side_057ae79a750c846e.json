@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZR92ErlWkHegT6x0YkePxLr",
+  "object": "chat.completion",
+  "created": 1790624076,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O PL da Lei do Bem deve ser votado sem ajustes prévios e discussão aprofundada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is from a CNI representative (but we don't know). They discuss the Lei do Bem (Good Law) and warn against voting it hastily without deep discussion and adjustments. They say \"a Lei do Bem, da forma como está, não é o instrumento principal para as empresas inovarem\" and \"reitero ... alerta, para que a Lei do Bem não seja votada de forma apressada, sem os devidos ajustes.\" That's a clear stance: against voting the bill as is, i.e., against immediate voting without reform. The question: \"Should the Lei do Bem bill be voted on now without further adjustments?\" Or \"Should the Lei do Bem be voted on in its current form?\" The stance is AGAINST (i.e., they oppose voting it now). So stance_determinable = YES. target_question neutral yes/no: \"O PL da Lei do Bem deve ser votado sem ajustes prévios?\" Or \"A Lei do Bem deve ser votada de forma apressada, sem discussão aprofundada?\" The answer: NÃO (AGAINST). So stance = AGAINST.\n\nWe must output JSON with keys exactly. Provide target_question string, stance \"AGAINST\". Ensure no extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2839,
+    "total_tokens": 3173,
+    "completion_tokens": 334,
+    "estimated_cost": 0.0021543,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 281
+    }
+  }
+}

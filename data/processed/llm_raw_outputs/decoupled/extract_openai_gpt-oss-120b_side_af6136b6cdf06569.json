@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ppU6LKwQrQ5ZldDFOWdECw",
+  "object": "chat.completion",
+  "created": 1790624016,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A atualização do protocolo de tratamento de edema macular diabético no SUS deve ser realizada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is a opening statement for a public hearing about updating protocol for diabetic macular edema (EMD) in SUS. The speaker says: \"Os protocolos clínicos atuais do SUS são fruto de extensa discussão... representam o melhor balanço... É importante ressaltar que o SUS já possui um sistema robusto... A prioridade deve ser a correta aplicação dos recursos e protocolos já existentes, e não a sua revisão constante, o que pode gerar instabilidade... Investir em mais capacitação... traria resultados mais concretos do que uma revisão dos protocolos.\"\n\nThus the speaker is taking a stance: against revising/updating the protocols, favoring maintaining current protocols and focusing on implementation and training. The question: \"A atualização do protocolo de tratamento de edema macular diabético no SUS deve ser realizada?\" Or \"Deve ser revisado o protocolo de tratamento de edema macular diabético no SUS?\" The speaker says no, should not revise. So stance: AGAINST.\n\nThus stance_determinable = YES, target_question = \"A atualização do protocolo de tratamento de edema macular diabético no SUS deve ser realizada?\" (or \"Deve ser revisado o protocolo...\"). Provide neutral phrasing. Then stance = AGAINST.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1656,
+    "total_tokens": 1979,
+    "completion_tokens": 323,
+    "estimated_cost": 0.000116182,
+    "prompt_tokens_details": null
+  }
+}

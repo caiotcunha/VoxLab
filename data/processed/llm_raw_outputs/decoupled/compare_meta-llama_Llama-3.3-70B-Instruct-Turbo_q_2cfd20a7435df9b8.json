@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ruz4kDzbcn1gbZSpi6Age8rQ",
+  "object": "chat.completion",
+  "created": 1790622386,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas de saúde diferentes, um sobre financiamento de tratamento de retinopatia diabética e outro sobre aprovação de projeto de lei sobre cardiopatia isquêmica.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 435,
+    "total_tokens": 501,
+    "completion_tokens": 66,
+    "estimated_cost": 6.462e-05,
+    "prompt_tokens_details": null
+  }
+}

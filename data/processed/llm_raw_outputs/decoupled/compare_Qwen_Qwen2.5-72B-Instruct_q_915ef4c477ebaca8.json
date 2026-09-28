@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rni4xNg8lvez6qsPmHMy1lUt",
+  "object": "chat.completion",
+  "created": 1790622250,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de leis diferentes (Marco Legal da Inovação e Lei do Bem) e focam em aspectos distintos da aplicação prática.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 464,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00016912,
+    "prompt_tokens_details": null
+  }
+}

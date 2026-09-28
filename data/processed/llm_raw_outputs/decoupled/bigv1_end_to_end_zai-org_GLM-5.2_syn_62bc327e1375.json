@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZVKd2yQyM67ny9v6oRkqeqF",
+  "object": "chat.completion",
+  "created": 1790632399,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator apoia fortemente o PL da Lei do Bem e o considera o principal instrumento fiscal para incentivar a inovação. Na Manifestação B, o ator alerta contra a votação do mesmo PL da Lei do Bem, afirmando que ele não é eficaz e precisa de uma reformulação profunda, configurando posições opostas sobre a mesma proposição.\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Compare two manifestations (A and B) from the same actor at different parliamentary events.\n    *   Classify the relationship into exactly one of: `STANCE_MAINTAINED`, `STANCE_REVERSED`, `INCOMPARABLE`, `RELATION_UNCERTAIN`, `INSUFFICIENT_EVIDENCE`.\n    *   Do not judge if the actor changed opinion or was consistent, just the relationship between the texts.\n    *   No external knowledge. Base only on the provided text.\n    *   Output strictly in JSON format with keys `relation` and `reasoning`.\n\n2.  **Analyze Manifestation A:**\n    *   *Event:* PUBLIC_HEARING (2023-08-09)\n    *   *Theme:* Revisão do Marco Legal da Inovação para facilitar sua operacionalização\n    *   *Key content:* The speaker (representing CNI/MEI) discusses the innovation ecosystem, mentions supporting the \"PL da Lei do Bem\" (Aproveito a presença do Relator aqui para parabenizá-lo. Temos discutido bastante com o setor empresarial. Entendemos que esse é o principal instrumento fiscal para incentivar os projetos de inovação, alinhado com as melhores práticas do mundo. É isso que se pratica nos países mais inovadores.).\n    *   *Stance on PL da Lei do Bem:* FAVOR. They \"apoiamos fortemente\" (strongly support) the PL da Lei do Bem and consider it the \"principal instrumento fiscal para incentivar os projetos de inovação\" (main fiscal instrument to encourage innovation projects).\n\n3.  **Analyze Manifestation B:**\n    *   *Event:* PUBLIC_HEARING (2023-08-30)\n    *   *Theme:* Discussão sobre mudanças na Lei do Bem para facilitar a colaboração entre universidades, empresas e governo e promover inovações\n    *   *Key content:* The speaker (same CNI/MEI context) makes an alert about the PL da Lei do Bem: \"aproveito para fazer um alerta, em nome da CNI, sobre os riscos de colocar o PL da Lei do Bem em votação de forma precipitada. Estamos falando de um instrumento fiscal que, na prática, não tem se mostrado eficaz para apoiar a maioria das empresas a inovarem... consideramos que a Lei do Bem, da forma como está, não é o instrumento principal para as empresas inovarem... Sem uma reformulação profunda, a Lei do Bem continuará sendo restrita a poucas empresas... alerta, para que esse PL não entre em votação antes de uma discussão mais aprofundada.\"\n    *   *Stance on PL da Lei do Bem:* AGAINST (or at least against its current form/approval without deep reformulation). They explicitly say it is not effective, not the main instrument, and should not be voted on without deep changes.\n\n4.  **Compare the Stances:**\n    *   *Proposition:* PL da Lei do Bem (specifically, its role as an innovation incentive and its approval/voting).\n    *   *Manifestation A:* FAVOR (supports it strongly, considers it the main fiscal instrument).\n    *   *Manifestation B:* AGAINST (alerts against precipitated voting, says it's not effective as is, needs profound reformulation before voting).\n    *   *Relation:* The stances on the same specific proposition (PL da Lei do Bem) are opposite. One supports it as the main instrument, the other opposes its current form/voting and says it's not the main instrument.\n\n5.  **Determine the Category:**\n    *   Since they respond to the same specific proposition (PL da Lei do Bem) with opposite directions of stance (A is FAVOR, B is AGAINST), the category is `STANCE_REVERSED`.\n\n6.  **Draft the JSON:**\n    *   `relation`: \"STANCE_REVERSED\"\n    *   `reasoning`: \"Na Manifestação A, o ator apoia fortemente o PL da Lei do Bem e o considera o principal instrumento fiscal para inovação. Na Manifestação B, o ator alerta contra a votação do mesmo PL da Lei do Bem, afirmando que ele não é eficaz e precisa de reformulação profunda, configurando posições opostas sobre a mesma proposição.\"",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4861,
+    "total_tokens": 5927,
+    "completion_tokens": 1066,
+    "estimated_cost": 0.004506712500599999,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 957
+    }
+  }
+}

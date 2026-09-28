@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsiE5IEuSy4WZc1IEVX44U8g",
+  "object": "chat.completion",
+  "created": 1790622265,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério deve arcar com despesas de viagem de condenados por crimes?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1542,
+    "total_tokens": 1593,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00017052000000000001,
+    "prompt_tokens_details": null
+  }
+}

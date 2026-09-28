@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6s3AvhwAALOh9ffMhB7f4MD",
+  "object": "chat.completion",
+  "created": 1790622426,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O orçamento para o combate à tuberculose no Brasil deve ser ampliado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "The user wants me to analyze a literal manifestation of an actor in a parliamentary event, following a specific set of rules and outputting a strict JSON format.\n\n1.  **Determinabilidade (stance_determinable)**: Does the manifestation present a sufficiently clear position on a specific issue? YES, NO, or UNCERTAIN.\n2.  **Pergunta-alvo (target_question)**: If YES, write the specific central question the manifestation answers, as a neutral YES/NO question, without revealing the speaker's answer.\n3.  **Resposta (stance)**: Is the speaker's answer YES (FAVOR) or NO (AGAINST)? If unclear, UNCERTAIN.\n\n**Rules**:\n- No external knowledge about the actor.\n- Reported speech is not the speaker's position.\n- Quoting a third party without explicit endorsement is not the actor's position.\n- Genuine question (request for info without endorsement) is usually NO.\n\n**Manifestation Analysis**:\n- Event: PUBLIC_HEARING\n- Date: 2023-12-05\n- Theme: Aumento de orçamento para combater a tuberculose no Brasil (Budget increase to combat tuberculosis in Brazil)\n- Speaker: A deputy (presiding the commission).\n- Content: The speaker opens the hearing, approves minutes, introduces guests. Then talks about the commission's purpose, mentions the UN assembly, and explicitly states: \"O primeiro ato que nós vamos fazer — e esse nós vamos conseguir — é alterar, não sei para quanto, o orçamento do programa de combate à tuberculose do Brasil... Portanto, houve o compromisso do Senador Marcelo Castro, e nós deveremos, sim, ampliar o orçamento, trabalhar nessa ampliação... Não se pode imaginar que nós vamos ter que erradicar essa doença... com 14 milhões de reais. Isso, digamos, não tem nenhuma razoabilidade.\"\n- The speaker clearly advocates for increasing the budget to combat tuberculosis. \"nós deveremos, sim, ampliar o orçamento, trabalhar nessa ampliação\" (we should, yes, increase the budget, work on this increase).\n\n**Determinabilidade**: YES. The speaker clearly states a position on increasing the budget for tuberculosis combat.\n\n**Pergunta-alvo**: \"O orçamento para o programa de combate à tuberculose no Brasil deve ser ampliado?\" (Should the budget for the tuberculosis combat program in Brazil be increased?) or \"O orçamento para combater a tuberculose no Brasil deve ser aumentado?\"\n\n**Resposta**: FAVOR (The speaker explicitly says \"nós deveremos, sim, ampliar o orçamento\" and criticizes the current low budget of 14 million reais).\n\nLet's refine the target question to be neutral and specific.\n\"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\"\nYes, this fits perfectly.\n\nLet's double check the rules.\n- \"Não use conhecimento externo sobre o ator.\" - Checked.\n- \"Discurso reportado... não é a posição do próprio falante.\" - The speaker says \"nós deveremos, sim, ampliar o orçamento\", this is the speaker's own position.\n- \"Citação de terceiro sem endosso explícito...\" - The speaker mentions Senator Marcelo Castro's commitment, but also explicitly endorses the increase (\"nós deveremos, sim, ampliar o orçamento\").\n- \"Pergunta genuína... é NO.\" - Not applicable here, it's a statement of intent/position.\n\nJSON format:\n```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\",\n  \"stance\": \"FAVOR\"\n}\n```\nWait, the theme is \"Aumento de orçamento para combater a tuberculose no Brasil\".\nThe question could be: \"O orçamento para combater a tuberculose no Brasil deve ser aumentado?\"\nLet's use: \"O orçamento para o combate à tuberculose no Brasil deve ser ampliado?\"\n\nLet's review the text again to ensure it's the speaker's stance.\n\"O primeiro ato que nós vamos fazer — e esse nós vamos conseguir — é alterar, não sei para quanto, o orçamento do programa de combate à tuberculose do Brasil.\"\n\"Portanto, houve o compromisso do Senador Marcelo Castro, e nós deveremos, sim, ampliar o orçamento, trabalhar nessa ampliação...\"\n\"Não se pode imaginar que nós vamos ter que erradicar essa doença... com 14 milhões de reais. Isso, digamos, não tem nenhuma razoabilidade.\"\n\nYes, the speaker is clearly in favor of increasing the budget.\n\nFinal check of the JSON keys:\n- stance_determinable: \"YES\"\n- target_question: \"O orçamento para o combate à tuberculose no Brasil deve ser ampliado?\"\n- stance: \"FAVOR\"\n\nLooks good.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2959,
+    "total_tokens": 4071,
+    "completion_tokens": 1112,
+    "estimated_cost": 0.00349035750072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1065
+    }
+  }
+}

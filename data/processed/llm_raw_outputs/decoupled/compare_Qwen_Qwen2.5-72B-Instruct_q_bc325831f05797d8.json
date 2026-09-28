@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3KCV5kz5IgBlthJ5so6zt7J",
+  "object": "chat.completion",
+  "created": 1790622233,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de aspectos diferentes do cuidado à saúde do diabético: a primeira questiona a melhoria do atendimento primário para a retinopatia diabética, enquanto a segunda questiona a manutenção de protocolos específicos para o tratamento do Edema Macular Diabético.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 490,
+    "completion_tokens": 86,
+    "estimated_cost": 0.00017984,
+    "prompt_tokens_details": null
+  }
+}

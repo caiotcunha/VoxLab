@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuYDHrPAlmcBjD0MFhytpGit",
+  "object": "chat.completion",
+  "created": 1790624024,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra COVID-19 de crianças deve ser obrigatória?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speech is about COVID-19 vaccination of children, opposing mandatory vaccination, questioning safety, citing data, etc. The speaker clearly opposes mandatory vaccination for children, supports voluntary vaccination, questions data, etc. So stance determinable = YES.\n\nTarget question: a neutral yes/no question about the central issue. Could be: \"A vacinação contra COVID-19 de crianças deve ser obrigatória?\" Or \"O governo deve impor a obrigatoriedade da vacina COVID-19 para crianças?\" That is a yes/no question. The speaker is against mandatory, so answer = AGAINST (i.e., responds NO to mandatory). Since FAVOR = responds YES. The question: \"A vacinação contra COVID-19 de crianças deve ser obrigatória?\" The speaker says \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" So they are against mandatory => answer NO => stance = AGAINST.\n\nWe must output JSON with keys exactly. Provide target_question string, stance \"AGAINST\". Ensure stance_determinable \"YES\". No extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1632,
+    "total_tokens": 1925,
+    "completion_tokens": 293,
+    "estimated_cost": 0.0014606000000000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 248
+    }
+  }
+}

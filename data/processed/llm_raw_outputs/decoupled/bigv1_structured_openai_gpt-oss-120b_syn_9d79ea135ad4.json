@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RC8dEEiSewxiGWkq5IY0AABI",
+  "object": "chat.completion",
+  "created": 1790632891,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Veto nº 28 should be overturned\",\n  \"target_proposition_b\": \"Resources should be allocated to the National Calamities Fund for removal of families from risk areas\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nWe must identify target proposition (specific statement) that the speaker accepts or rejects. Then stance (FAVOR/AGAINST/UNCERTAIN). Determine if stance determinable.\n\nManifestation A: Long speech. The speaker (Deputado Leo Prates) is praising, discussing need for prevention, criticizing veto that removes funding for prevention. He says \"Precisamos derrubar o Veto nº 28\" and \"o veto retira a mais importante fonte de recursos ...\". He wants to overturn veto. So target proposition: \"Veto nº 28, which removes funding for disaster prevention, should be overturned\" or \"Veto nº 28 should be rejected\". He is in favor of overturning the veto, i.e., against the veto. So stance: AGAINST the veto (i.e., against the government's action). The proposition is specific: \"Veto nº 28 should be overturned\" (or \"Veto nº 28 should not stand\"). He clearly favors overturning. So stance determinable = YES. Target proposition short neutral: \"Veto nº 28 should be overturned\". Stance: AGAINST (the veto) or FAVOR overturning? The proposition is \"Veto should be overturned\". He favors that, so FAVOR the proposition. Wait: Proposition is \"Veto should be overturned\". He wants it overturned, so he FAVOR that proposition. So stance = FAVOR.\n\nManifestation B: Speaker (maybe same deputy) says \"Eu fui autor de um projeto de lei ... que tem por objetivo colocar fontes de recursos no Fundo Nacional para Calamidades Públicas.\" He describes that he approved and wants resources for removal of families from risk areas. He seems to support the project. He also says \"A nossa intenção é que possamos dialogar ... recursos que garantam a segurança das famílias ...\". He is not rejecting anything. He is advocating for more resources, but not a specific proposition like \"the fund should receive X\". Could we extract proposition: \"Resources should be allocated to the National Calamities Fund to support removal of families from risk areas\". He supports that. So stance determinable = YES. Target proposition: \"Resources should be allocated to the National Calamities Fund for removal of families from risk areas\". He is FAVOR. However, is that explicit enough? He says \"Eu fui autor de um projeto ... que tem por objetivo colocar fontes de recursos no Fundo Nacional para Calamidades Públicas.\" He is stating that he authored a law that does that, and presumably supports it. So stance is FAVOR.\n\nNow comparability: Are the two propositions the same? A is about overturning Veto nº 28 that removes funding for disaster prevention. B is about allocating resources to the fund for removal of families from risk areas. They are related to funding for disaster prevention/response but not the same proposition. They are different specific measures. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: stance_determinable_a = \"YES\". stance_determinable_b = \"YES\". target_proposition_a = \"Veto nº 28 should be overturned\". target_proposition_b = \"Resources should be allocated to the National Calamities Fund for removal of families from risk areas\". same_proposition = \"NO\". stance_a = \"FAVOR\". stance_b = \"FAVOR\".\n\nMake sure strings exactly as required. No extra spaces. Use uppercase YES/NO. Provide JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3259,
+    "total_tokens": 4099,
+    "completion_tokens": 840,
+    "estimated_cost": 0.000263383,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0YroWVUDzKi3KJi6DaV9MZR",
+  "object": "chat.completion",
+  "created": 1790624169,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements advocate the creation of a legal/financial framework to support victims and small businesses after disasters, expressing the same supportive stance toward that proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nWe must determine if they respond to same specific proposition and stance.\n\nManifestation A: speaker (unknown) discussing need for a national framework for post-disaster recovery, tax measures, 13th salary, etc. He is asking about systems, mentions proposals like FGTS anticipation, fund created by Deputy Gilson, etc. He seems to be in favor of creating a national support system for victims, recovery, legal framework, etc. So stance: FAVOR (support) for creating such framework.\n\nManifestation B: This is a procedural text of a hearing, includes statements: \"nosso grande desafio ... criar um arcabouzo legal que possa dar proteção, especialmente aos pequenos negócios, nessas enchentes, nessas secas.\" Also mentions \"depois da criação do fundo, que é essencial para financiar todas essas ações\". This is also in favor of creating legal framework and fund to protect small businesses. So both are in favor of same proposition: creation of legal framework/fund for disaster recovery and protection of small businesses.\n\nAre they responding to same specific proposition? Both refer to \"criar um arcabouço legal\" for disaster recovery. The first is a speech asking for such framework; second is a procedural note also supporting creation. They seem to address same proposition (legal framework for disaster assistance). So stance same (FAVOR). Therefore relation STANCE_MAINTAINED.\n\nWe need brief reasoning.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2317,
+    "total_tokens": 2677,
+    "completion_tokens": 360,
+    "estimated_cost": 0.000146929,
+    "prompt_tokens_details": null
+  }
+}

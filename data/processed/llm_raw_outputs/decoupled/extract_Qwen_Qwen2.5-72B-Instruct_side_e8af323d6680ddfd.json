@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1WCzxJlkMNARbc16ilFxS2s",
+  "object": "chat.completion",
+  "created": 1790622141,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O País deve alocar recursos específicos para a prevenção de desastres naturais?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1435,
+    "total_tokens": 1487,
+    "completion_tokens": 52,
+    "estimated_cost": 0.0005374,
+    "prompt_tokens_details": null
+  }
+}

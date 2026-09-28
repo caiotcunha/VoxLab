@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFx1LSfgfjtsKgEyasb989kS",
+  "object": "chat.completion",
+  "created": 1790633073,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vaccination of children against Covid-19 should be mandatory\",\n  \"target_proposition_b\": \"Vaccination of children against Covid-19 should be mandatory\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: The speaker is discussing vaccination mandatory for children 6 months to 5 years. He lists \"barbarities\": \"A vacina não fica no braço\" (vaccine doesn't stay in arm) – he says it's obvious that vaccine does not stay only at injection site. He says \"A vacina leva à mutação\" – he says he never heard that, it's opposite. He also mentions \"índice de causalidade\" etc. Then he says: \"não podemos contribuir para piorar ainda mais a cobertura de vacinação, não só da COVID, mas de todas. Isso é responsabilidade...\" So overall, he is defending vaccination, criticizing anti-vaccine arguments. So target proposition could be: \"Vaccination of children against Covid-19 should be mandatory\" or \"Vaccines are safe and do not cause mutation\". Which specific proposition does he accept/reject? He rejects anti-vaccine claims: \"Vaccines cause mutation\" (reject), \"Vaccines cause deaths\" (reject). He supports vaccination coverage. So a plausible target proposition: \"Vaccines cause mutation\" – he is AGAINST that proposition. Or \"Vaccines cause deaths\" – AGAINST. Or \"Vaccination should be mandatory for children\" – he seems supportive? He says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação\" – implies he supports vaccination coverage, maybe supports mandatory. The theme is mandatory vaccination. He doesn't explicitly state \"should be mandatory\", but he is concerned about coverage. He seems in favor of vaccination. So we can set target proposition: \"Vaccination of children against Covid-19 should be mandatory\". Stance: FAVOR. Is stance determinable? Yes, his statements show support for vaccination and opposition to anti-vaccine arguments. So stance_determinable_a = YES. target_proposition_a = \"Vaccination of children against Covid-19 should be mandatory\". stance_a = FAVOR.\n\nManifestation B: Very long, speaker says \"é movimento antivacina, sim!\" He condemns anti-vaccine movement, says they are lying, etc. He says \"não podemos aceitar mais mentira! ... não podemos aceitar a utilização eleitoreira ...\". He is defending vaccination, criticizing anti-vaccine stance. He also says \"não podemos admitir ... campanha criminosa ... que vocês derrubam a cobertura vacinal\". So target proposition: \"Anti-vaccine movement is being used for political gain\" or \"Vaccination should be maintained and not undermined\". But we need a specific proposition. Could be \"Vaccination of children against Covid-19 should be mandatory\" – he likely supports that as well. He doesn't explicitly mention mandatory, but he defends vaccination coverage. So we can set same proposition: \"Vaccination of children against Covid-19 should be mandatory\". He is FAVOR. stance_determinable_b = YES. target_proposition_b = same phrase. stance_b = FAVOR.\n\nNow comparability: Are they same proposition? Both about vaccination of children against Covid-19 being mandatory. Manifestation A explicitly about mandatory vaccination for children 6 months to 5 years. Manifestation B is about anti-vaccine movement and coverage, but not explicitly about mandatory. However, both revolve around vaccination of children. The proposition \"Vaccination of children against Covid-19 should be mandatory\" is addressed in A; B does not explicitly mention mandatory, but he opposes anti-vaccine campaign that undermines coverage, which implies support for vaccination but not necessarily mandatory. The question: Are the propositions semantically equivalent? Might be considered overlapping but not identical. Since B does not state mandatory, the propositions are not the same. So same_proposition = NO (or UNCERTAIN). We need to decide. The rule: \"Mesmo tema, medidas diferentes ou proposições apenas sobrepostas recebem NO.\" Here B's proposition is about anti-vaccine movement, not about mandatory. So likely NO.\n\nThus output JSON.\n\nCheck fields: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nIf stance_determinable is YES, we provide target proposition and stance. If NO, empty strings.\n\nWe have YES for both.\n\nProvide same_proposition = NO.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2805,
+    "total_tokens": 3790,
+    "completion_tokens": 985,
+    "estimated_cost": 0.00027123500000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9BvUjFWoFvf7ih9g4IFiLat",
+  "object": "chat.completion",
+  "created": 1790624016,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O projeto-piloto de erradicação da tuberculose deve ser concentrado apenas no Amazonas?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about strategies for TB eradication, specifically about whether to focus pilot project in Amazonas or multiple states. The speaker argues that focusing on Amazonas alone is not good; proposes multi-state pilot. So there is a stance: they are against focusing pilot solely on Amazonas; they favor multi-state approach.\n\nWe need to formulate a neutral yes/no question that captures the issue. Something like: \"Deve o projeto-piloto de erradicação da tuberculose ser concentrado apenas no Amazonas?\" The answer from speaker is NO (against). So stance_determinable = YES, target_question = \"O projeto-piloto de erradicação da tuberculose deve ser concentrado apenas no Amazonas?\" stance = AGAINST (since they argue against focusing only Amazonas). Ensure phrasing neutral.\n\nCheck if any other positions? The main stance is about pilot location. So answer.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3408,
+    "total_tokens": 3663,
+    "completion_tokens": 255,
+    "estimated_cost": 0.00016944600000000002,
+    "prompt_tokens_details": null
+  }
+}

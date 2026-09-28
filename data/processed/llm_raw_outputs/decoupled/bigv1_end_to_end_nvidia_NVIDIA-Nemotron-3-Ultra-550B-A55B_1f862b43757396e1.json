@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Reb4qlEuJZauab0wGbpsNvrU",
+  "object": "chat.completion",
+  "created": 1790624164,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as manifestações expressam posição favorável a avançar com uma regulamentação, mas referem-se a proposições distintas (lobby vs. trabalho de motoristas de aplicativo), portanto não são comparáveis quanto ao mesmo tema.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are public hearings, different topics: first about regulation of lobbying, second about regulation of app drivers work. They are different propositions. Both have determinable stance? Let's see.\n\nManifestation A: speaker says \"Precisamos ter coragem de discutir com transparência. Quero parabenizar a CGU... Temos como harmonizar esses projetos... Acho que essa é a solução para que consigamos avançar. Não se trata de projeto de Governo ou de Oposição; esse é um projeto do País. E acho que é importante avançarmos nisso.\" This indicates support for advancing regulation of lobbying (favor). So stance is FAVOR towards regulation of lobbying.\n\nManifestation B: speaker says \"Fico muito feliz com a posição do Governo... aberto para construir uma boa solução... necessidade de se avançar com esse projeto é real... nós precisamos legislar... vamos tentar construir um relatório harmonioso... até o meio deste ano... oferecer ao Brasil uma legislação que seja justa...\" This indicates support for advancing regulation of app drivers work (favor). So both are FAVOR but on different specific propositions. The categories: STANCE_MAINTAINED requires same specific proposition. Not same. STANCE_REVERSED also same proposition opposite. INCOMPARABLE: both have determinable stance but not same proposition. That fits. RELATION_UNCERTAIN if unclear. INSUFFICIENT_EVIDENCE if at least one lacks determinable stance. Both have clear stance. So answer INCOMPARABLE.\n\nProvide JSON with relation and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1414,
+    "total_tokens": 1830,
+    "completion_tokens": 416,
+    "estimated_cost": 0.0016222,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 345
+    }
+  }
+}

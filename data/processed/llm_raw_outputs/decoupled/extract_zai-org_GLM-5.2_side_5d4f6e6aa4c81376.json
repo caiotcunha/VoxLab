@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RP43zx9Zpjf939L4hb8Q0K8S",
+  "object": "chat.completion",
+  "created": 1790622449,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 5.602/2019, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is opening a public hearing about public policies for women in climacteric and menopause. They mention being the rapporteur of PL 5.602/2019 and having presented a favorable opinion on the project. They also mention the hearing is to debate and improve the matter.\n\nThe key question: does the speaker present a sufficiently clear position on a specific issue?\n\nThe speaker says: \"Apresentei parecer favorável ao projeto e seus apensados, na forma do substitutivo, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" This is a clear statement of support for the bill that creates the Program of Attention for Women in Menopause and Climatério.\n\nSo the target question would be: \"O Projeto de Lei nº 5.602/2019, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério, deve ser aprovado?\" or similar.\n\nThe stance is FAVOR.\n\nLet me formulate the question neutrally.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2037,
+    "total_tokens": 2329,
+    "completion_tokens": 292,
+    "estimated_cost": 0.0014957325007199998,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 217
+    }
+  }
+}

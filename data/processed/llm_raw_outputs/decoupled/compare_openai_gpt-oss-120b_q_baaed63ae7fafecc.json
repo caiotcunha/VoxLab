@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZP32x1U94XLlpGAvH7DHgOu",
+  "object": "chat.completion",
+  "created": 1790633051,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de assuntos distintos: aprovação de um programa de aluguel social versus a gestão de recursos da Casa da Mulher Brasileira.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" Means: Should the Social Rental program for victims of domestic violence be approved? So it's about approving a program.\n\nQuestion2: \"O recurso da Casa da Mulher Brasileira deve permanecer sob a gerência do Ministério da Justiça?\" Means: Should the resource (funding?) of the Casa da Mulher Brasileira remain under the management of the Ministry of Justice? So it's about whether a resource should stay under a specific ministry.\n\nThese are different topics: one is about a specific program (Aluguel Social) approval; the other about administrative management of a resource of a women's house. They are not the same question, not opposite polarity. So relation = DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 633,
+    "completion_tokens": 230,
+    "estimated_cost": 5.401100000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

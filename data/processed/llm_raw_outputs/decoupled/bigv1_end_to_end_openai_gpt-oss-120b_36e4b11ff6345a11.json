@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4lXa7HXr6n1eBXuMmk99gwt",
+  "object": "chat.completion",
+  "created": 1790624103,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express positive stances toward government actions, but they address different specific propositions (health system achievements vs. human rights and social assistance initiatives), so they are not comparable on the same issue.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe must determine if they respond to same specific proposition. Manifestation A is about health system, autossuficiência, reconquista do Ministério da Saúde, conferences, indigenous health, etc. Manifestation B is about rights human, reconstruction of participation spaces, conference national de assistência social, Viver sem Limite program, rehabilitation services, etc. They are different topics: A focuses on health ministry achievements, B focuses on human rights ministry and social assistance, rehabilitation. Not same proposition. Both have clear stance (positive) towards government actions. So they have determinable positions but not same proposition => INCOMPARABLE.\n\nThus output JSON with relation INCOMPARABLE and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1578,
+    "total_tokens": 1791,
+    "completion_tokens": 213,
+    "estimated_cost": 9.4596e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtAcF8apHDY2dI0vZdTmOg01",
+  "object": "chat.completion",
+  "created": 1790623993,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O G20 deve priorizar a agenda do envelhecimento saudável?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is a presentation of programs, data, and calls for participation, but does it take a stance on a specific policy question? It seems more informational, advocating for inclusion of aging agenda in G20, but not a clear yes/no position on a specific measure. The question: \"Should the aging agenda be prioritized in the G20?\" The speaker says \"Considero fundamental também garantirmos uma participação social cada vez maior... eu acho que o G-20 também pode ser um bom espaço para que isso aconteça.\" That's supportive. But is that a clear position? Might be YES with target question \"Should the G20 prioritize the healthy aging agenda?\" The speaker favors. However the speech is largely descriptive, not a direct stance. The guidelines: \"Discurso reportado ... not position\". Here speaker expresses own view: \"Considero fundamental também garantirmos...\" and \"eu acho que o G-20 também pode ser um bom espaço\". That's a stance. So determinable YES. Target question neutral: \"O G20 deve priorizar a agenda do envelhecimento saudável?\" Answer: FAVOR (SIM). Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3664,
+    "total_tokens": 3974,
+    "completion_tokens": 310,
+    "estimated_cost": 0.002514,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 263
+    }
+  }
+}

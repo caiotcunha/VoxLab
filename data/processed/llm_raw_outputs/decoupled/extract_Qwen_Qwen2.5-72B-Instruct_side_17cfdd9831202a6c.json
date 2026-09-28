@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ra3x6vAdPyIllxlNUxmbHcPw",
+  "object": "chat.completion",
+  "created": 1790622169,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estado deve se preparar para enfrentar e mitigar os desastres socioambientais causados pelas mudanças climáticas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1868,
+    "total_tokens": 1928,
+    "completion_tokens": 60,
+    "estimated_cost": 0.00069648,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUpGelpidnrB5PeOkMQqo3BK",
+  "object": "chat.completion",
+  "created": 1790622471,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários para prevenção e resposta a desastres?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if there's a clear stance (Determinabilidade), formulate a neutral target question (Pergunta-alvo), and determine the stance (Resposta).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Context:* Public hearing about improvements in disaster prevention infrastructure.\n    *   *Content:* The speaker thanks Sosthenes Macêdo, agrees with his point about the need for investments in States and Municipalities. The speaker advocates for a specific career for Civil Defense in Municipalities. The speaker talks about their own work to secure funding for the Public Calamity Fund (Fundo de Calamidade Pública), which was created in 1969 but never funded. The speaker criticizes the reliance on Provisional Measures (medidas provisórias) for crisis response instead of having a budgetary forecast. The speaker criticizes the budget allocation (2 billion spent vs 250 million budgeted, and only 25 thousand for prevention).\n    *   *Stance:* The speaker clearly advocates for allocating budget/resources to the Public Calamity Fund and disaster prevention, rather than relying on provisional measures during crises. They also advocate for creating a specific career for Civil Defense in municipalities.\n\n3.  **Determine `stance_determinable`:**\n    *   Is there a clear position on a specific issue? Yes. The speaker explicitly argues for funding the Calamity Fund and investing in prevention.\n    *   Value: \"YES\"\n\n4.  **Formulate `target_question`:**\n    *   What is the central specific issue? The need to allocate budgetary resources to the Public Calamity Fund / disaster prevention.\n    *   Draft 1: O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários para prevenção e pronta resposta?\n    *   Draft 2: Devem ser alocados recursos orçamentários permanentes para o Fundo de Calamidade Pública?\n    *   Draft 3: O Fundo de Calamidade Pública deve receber dotação orçamentária para prevenção de desastres?\n    *   Let's go with a clear, neutral yes/no question: \"O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários para prevenção e resposta a desastres?\" or \"Devem ser alocados recursos orçamentários permanentes para o Fundo de Calamidade Pública?\"\n    *   Let's use: \"O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários para prevenção e resposta a desastres?\"\n\n5.  **Determine `stance`:**\n    *   Does the speaker answer \"YES\" (FAVOR) or \"NO\" (AGAINST) to the target question?\n    *   The speaker says: \"Eu trabalhei fortemente pelo financiamento, para colocar recursos no Fundo de Calamidade Pública... É inaceitável que não haja um recurso que não seja por medida provisória... Não podemos continuar sem uma previsão orçamentária.\"\n    *   This is clearly in favor of funding the Fund.\n    *   Value: \"FAVOR\"\n\n6.  **Format Output:**\n    *   JSON strict.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários para prevenção e resposta a desastres?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1093,
+    "total_tokens": 1948,
+    "completion_tokens": 855,
+    "estimated_cost": 0.00180245250144,
+    "prompt_tokens_details": {
+      "cached_tokens": 768,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 796
+    }
+  }
+}

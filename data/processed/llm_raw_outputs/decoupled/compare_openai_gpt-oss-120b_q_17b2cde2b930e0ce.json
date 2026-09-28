@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKHTOGQ1MG29ZB7P1aW8TOTg",
+  "object": "chat.completion",
+  "created": 1790633195,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de rejeitar o projeto de lei, a outra sobre incluir motoristas no grupo de trabalho; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" Means: Should the bill regulating the work of app drivers be rejected? So it's about rejecting the bill.\n\nQuestion2: \"O modelo de participação do grupo de trabalho para a regulamentação dos motoristas de aplicativo deve incluir participação direta dos motoristas?\" Means: Should the participation model of the working group for regulation of app drivers include direct participation of drivers? So it's about including drivers directly in the working group.\n\nThese are different issues: one is about rejecting the bill; the other is about the composition of the working group. They are not opposite polarity; they are different questions. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 411,
+    "total_tokens": 622,
+    "completion_tokens": 211,
+    "estimated_cost": 5.1077e-05,
+    "prompt_tokens_details": null
+  }
+}

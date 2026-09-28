@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ry2apCbzhe7dvHrP7XHOQXtI",
+  "object": "chat.completion",
+  "created": 1790623992,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A proposta de regulamentação dos mercados digitais (PL 2768/22) deve ser aprovada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker thanks, emphasizes importance of discussion, wants debate, wants policies that guarantee competitiveness and competition, fosters innovation, growth, consumer protection. No explicit stance on a specific legislative proposal? The theme is changes to regulation of digital markets (PL 2768/22). The speaker says discussion is essential, wants debate, wants policies that guarantee competition, etc. This is a general supportive stance toward regulation? The question could be: \"A regulamentação dos mercados digitais deve ser aprimorada para garantir competitividade e proteção ao consumidor?\" The speaker seems in favor of discussion and policies that guarantee competition, innovation, consumer protection. So they are favoring regulation. The stance is favorable to the regulation (i.e., they support the regulation). The question: \"A proposta de regulamentação dos mercados digitais (PL 2768/22) deve ser aprovada?\" The speaker didn't explicitly say yes, but they emphasize importance of discussion and policies that guarantee competition, etc. That suggests they are in favor of regulation. So stance determinable = YES. Target question: \"A proposta de regulamentação dos mercados digitais (PL 2768/22) deve ser aprovada?\" The stance: FAVOR (SIM). Let's output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 735,
+    "total_tokens": 1053,
+    "completion_tokens": 318,
+    "estimated_cost": 8.125500000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

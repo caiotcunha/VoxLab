@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpsXoPQAjP9ej6QuoUXGnTVo",
+  "object": "chat.completion",
+  "created": 1790624083,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express criticism and demand accountability, but they address different specific issues (insulin procurement vs travel expenses for a convicted individual), so they are not about the same proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are from same actor (the same person) but we don't know name. Manifestation A: about purchase of insulin, questioning procurement, asking for clarification, basically critical of the government's decision. Stance: She is questioning and seems against the procurement choice, seeking accountability. So stance is AGAINST the decision (against the contract with Global X, against lack of transparency). Manifestation B: about travel expenses for Luciane Barbosa Faria, questioning why ministry pays diárias, etc. She is also critical, questioning and demanding accountability. Both are questioning government actions, i.e., AGAINST the actions. Are they responding to same proposition? No, different topics: insulin procurement vs travel expenses for a convicted person. So they are not same proposition. Therefore relation is INCOMPARABLE (both have determinable stance, but not same proposition). So answer: INCOMPARABLE. Provide brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2230,
+    "total_tokens": 2484,
+    "completion_tokens": 254,
+    "estimated_cost": 0.00012569,
+    "prompt_tokens_details": null
+  }
+}

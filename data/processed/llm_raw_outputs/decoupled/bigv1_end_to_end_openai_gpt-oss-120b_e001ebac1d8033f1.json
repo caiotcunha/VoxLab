@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKeeuWJleaGmC9JN7Z7LQRWt",
+  "object": "chat.completion",
+  "created": 1790624119,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Em ambas as falas o ator defende a criação de um arcabouço legal para prevenção, resposta e recuperação de desastres, manifestando apoio ao mesmo tipo de medida.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B. Both are speeches by same actor (the same person) in two parliamentary events. We need to see if they respond to same specific proposition and stance.\n\nManifestation A: The speaker is discussing need for a national framework for post-disaster recovery, tax measures, 13th salary, etc. He is advocating for creation of a legal framework, support to victims, etc. He is basically in favor of establishing a \"arcabouço\" (framework) for disaster recovery, supporting victims, etc. He mentions proposals like fund, FGTS, etc. So stance: FAVOR creation of such measures.\n\nManifestation B: The speaker (same actor) is opening a hearing, mentions the need to create a legal framework to protect vulnerable, mentions \"nosso grande desafio ... criar um arcabouço legal que possa dar proteção, especialmente aos vulneráveis\". He is also in favor of creating a legal framework for disaster protection. So both are in favor of same proposition: creation of a legal framework for disaster response/recovery. They both support it. Are they responding to same specific proposition? The proposition is \"creation of a legal framework (arcabouço) for disaster response and assistance\". Both talk about that. So likely STANCE_MAINTAINED.\n\nWe must ensure they are responding to same specific proposition. In A, he is responding to earlier remarks and proposing a framework. In B, he is also discussing the same need. It's same proposition (legal framework for disaster response). So STANCE_MAINTAINED.\n\nThus output JSON with relation \"STANCE_MAINTAINED\" and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2323,
+    "total_tokens": 2730,
+    "completion_tokens": 407,
+    "estimated_cost": 0.000155141,
+    "prompt_tokens_details": null
+  }
+}

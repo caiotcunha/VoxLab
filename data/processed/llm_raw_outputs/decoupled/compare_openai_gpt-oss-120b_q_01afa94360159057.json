@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMRQPqOh2cclWShl6jO139JJ",
+  "object": "chat.completion",
+  "created": 1790624172,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de assuntos distintos: aprovação de um estatuto específico versus inclusão de um setor econômico no cálculo do PIB.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Estatuto dos Povos Ciganos deve ser aprovado?\" (Should the Statute of the Romani peoples be approved?)\n\nQuestion2: \"A economia do cuidado deve ser incluída no cálculo do PIB?\" (Should the care economy be included in the calculation of GDP?)\n\nThese are distinct topics: one about approving a legal statute for Romani peoples; the other about economic measurement inclusion. They are different issues. So relation = DIFFERENT.\n\nReturn JSON with relation and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 559,
+    "completion_tokens": 165,
+    "estimated_cost": 4.2628e-05,
+    "prompt_tokens_details": null
+  }
+}

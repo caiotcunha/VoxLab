@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvGzQgdXpaHu5XXhRG8k4pSA",
+  "object": "chat.completion",
+  "created": 1790622336,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O direito minerário das empresas responsáveis pelo desastre em Mariana deve ser cassado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1696,
+    "total_tokens": 1748,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00018624,
+    "prompt_tokens_details": null
+  }
+}

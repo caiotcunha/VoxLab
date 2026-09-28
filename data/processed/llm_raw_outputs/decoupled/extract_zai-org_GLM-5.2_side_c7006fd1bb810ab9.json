@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R32yjtbiQaNXTupgh6x7gvnH",
+  "object": "chat.completion",
+  "created": 1790622628,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos destinados à Casa da Mulher Brasileira e às patrulhas devem permanecer sob a gerência do Ministério da Justiça?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if there's a clear stance (Determinabilidade), formulate a neutral yes/no target question (Pergunta-alvo), and identify the speaker's stance (Resposta: FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Context:* Public hearing about LDO 2024, fiscal deficit, and policies for women.\n    *   *Speaker's literal words:*\n        *   \"Muito obrigada, Elaine.\"\n        *   \"Eu acho que fui meio dura na minha fala porque fui gestora por mais tempo do que sou Parlamentar e tenho muita dificuldade com os melindres.\"\n        *   \"Tenho muita esperança neste Governo com relação à área social, porque eu fui Prefeita durante outro mandato deste Governo que aí está, de 2009 a 2012, e sei exatamente que ele cuida do ser. Ele cuida da economia e cuida do ser. Então, em todas as pautas de todos os Ministérios voltados ao ser vamos ter uma visão melhor de mais cuidados com a pessoa.\"\n        *   \"Vou fazer outra colocação. Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não manter esse recurso sob a gerência do Ministério da Justiça? É isso o que eu defendo. Eu não questiono que estejamos em todos os meandros da sociedade ou das políticas públicas. Estamos sim em todos os lugares. Agora, eu concordo plenamente com essa estrutura que já existe. Quanto é que vamos ganhar em eficiência?\"\n\n3.  **Evaluate Determinability (Step 1):**\n    *   Does the speaker present a sufficiently clear position on a specific issue?\n    *   Yes. The speaker explicitly states: \"Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não manter esse recurso sob a gerência do Ministério da Justiça? É isso o que eu defendo.\"\n    *   The speaker defends keeping the resource for the \"Casa da Mulher Brasileira\" and \"patrulhas\" under the management of the Ministry of Justice, rather than transferring it or executing it elsewhere.\n    *   `stance_determinable`: YES.\n\n4.  **Formulate Target Question (Step 2):**\n    *   The specific issue: Should the resources for the \"Casa da Mulher Brasileira\" and \"patrulhas\" (patrols) remain under the management of the Ministry of Justice?\n    *   Neutral yes/no question: \"Os recursos para a Casa da Mulher Brasileira e as patrulhas devem ser mantidos sob a gerência do Ministério da Justiça?\"\n    *   Let's refine: \"Os recursos destinados à Casa da Mulher Brasileira e às patrulhas devem permanecer sob a gerência do Ministério da Justiça?\"\n\n5.  **Determine Stance (Step 3):**\n    *   The speaker says: \"É isso o que eu defendo.\" (That's what I defend/advocate for).\n    *   So the answer to the target question is YES.\n    *   `stance`: FAVOR.\n\n6.  **Format Output:**\n    *   JSON format required.\n    *   Keys: `stance_determinable`, `target_question`, `stance`.\n\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"Os recursos destinados à Casa da Mulher Brasileira e às patrulhas devem permanecer sob a gerência do Ministério da Justiça?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 760,
+    "total_tokens": 1677,
+    "completion_tokens": 917,
+    "estimated_cost": 0.0018145800010800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 858
+    }
+  }
+}

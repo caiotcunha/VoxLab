@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNsGIjos1ybAoHcOWVDtQ1Zf",
+  "object": "chat.completion",
+  "created": 1790632470,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da aprovação de um projeto de lei específico sobre critérios de seguro de vida para idosos, enquanto a segunda aborda a obrigação contínua de fabricantes de fornecer peças e assistência após a vida útil do produto; são temas, objetos e escopos distintos.\"\n}",
+        "reasoning_content": "We need to compare two yes/no questions. Q1: \"Should Bill 2002/2019, which proposes more accessible criteria in life insurance contracts for the elderly, be approved?\" Q2: \"Should the manufacturer's responsibility to provide spare parts and technical assistance continue after the end of the product's expected useful life?\" These are completely different topics: one about a specific legislative bill on life insurance for elderly; the other about manufacturer responsibility for spare parts after product life. Different measures, objects, scope. So relation = DIFFERENT. Provide reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 433,
+    "total_tokens": 635,
+    "completion_tokens": 202,
+    "estimated_cost": 0.0006609000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118
+    }
+  }
+}

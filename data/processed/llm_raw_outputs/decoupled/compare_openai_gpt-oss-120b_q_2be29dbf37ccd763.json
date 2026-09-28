@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmCLc8j5L9zVNL5W3wsHcoan",
+  "object": "chat.completion",
+  "created": 1790624108,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de programas distintos – um sobre aluguel social para vítimas de violência doméstica e outro sobre atenção a mulheres na menopausa – portanto não são equivalentes nem opostas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" => asks about approval of a program of social rent for victims of domestic violence.\n\nQuestion2: \"O Projeto de Lei nº 5.602, que cria o Programa de Atenção à Mulheres na Menopausa e Climatério, deve ser aprovado?\" => asks about approval of a bill that creates a program of attention to women in menopause and climacteric.\n\nThese are different programs: one is social rent for victims of domestic violence; the other is attention to women in menopause. Different subject matter. So relation is DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 635,
+    "completion_tokens": 218,
+    "estimated_cost": 5.2489e-05,
+    "prompt_tokens_details": null
+  }
+}

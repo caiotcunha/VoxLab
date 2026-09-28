@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB709GvGEp5TAwzoXH17WFFb",
+  "object": "chat.completion",
+  "created": 1790624040,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação deve ser tratada como questão científica e não como disputa política?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue, and if so, formulate a neutral yes/no question and indicate stance.\n\nThe speech is long, many statements. The minister is presenting achievements, asking for support, etc. The key positions: She asks \"apelo aos Parlamentares apoio a todas essas ações, com emendas parlamentares\" – that's a request for support, but not a yes/no question. She says \"A vacina não pode ser objeto de disputa política. Ela deve ser objeto de ciência...\" That's a stance: she says vaccines should not be politicized. Could be formulated as \"A vacinação deve ser tratada como questão científica e não política?\" She is in favor of that (Yes). That's a clear position.\n\nAlso she says \"O novo PAC inclui aporte expressivo...\" but that's descriptive.\n\nShe also says \"A questão da desinformação deve ser combatida\" – stance: \"É necessário combater a desinformação sobre saúde?\" She is in favor.\n\nBut we need a single question central. The most explicit stance: \"A vacina não pode ser objeto de disputa política.\" So question: \"A vacinação deve ser tratada como questão científica e não como disputa política?\" She says yes.\n\nThus stance_determinable = YES, target_question = that, stance = FAVOR.\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4605,
+    "total_tokens": 4926,
+    "completion_tokens": 321,
+    "estimated_cost": 0.00022495500000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RY9ohmpGYwJ6VEj6pMehzWqB",
+  "object": "chat.completion",
+  "created": 1790622365,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas diferentes, um sobre proteção de territórios indígenas e direitos de mulheres e crianças indígenas, e o outro sobre políticas públicas para a população LGBTQIA+.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 420,
+    "total_tokens": 489,
+    "completion_tokens": 69,
+    "estimated_cost": 6.408000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

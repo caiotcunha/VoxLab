@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1AGtihb3WxCNwlNvrcVSX1h",
+  "object": "chat.completion",
+  "created": 1790624020,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um orçamento permanente para a Defesa Civil nos municípios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing need for investments in municipalities, need for a career for civil defense, need for budgetary allocation to disaster prevention, criticizing reliance on provisional measures, and wants a permanent budget line. So the position is against the current lack of budget and for establishing permanent funding for disaster prevention and civil defense career.\n\nWe need to formulate a neutral yes/no question that captures the central issue. Could be: \"Deve ser criado um orçamento permanente para a Defesa Civil nos municípios?\" Or \"Deve haver financiamento permanente para a prevenção de desastres nos municípios?\" The speaker is in favor of that. So stance_determinable = YES, target_question = something like \"Deve ser criado um orçamento permanente para a Defesa Civil nos municípios?\" stance = FAVOR.\n\nCheck if any ambiguity: The speaker clearly advocates for permanent budget, not provisional measures. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 999,
+    "total_tokens": 1241,
+    "completion_tokens": 242,
+    "estimated_cost": 7.8103e-05,
+    "prompt_tokens_details": null
+  }
+}

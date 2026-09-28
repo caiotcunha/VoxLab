@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReUKEik3wAmMZm9fU76BjzZa",
+  "object": "chat.completion",
+  "created": 1790633161,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements oppose the same regulatory bill (PL Complementar nº 12) and call for its rejection, showing the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nBoth are about regulation of rideshare drivers. Both express opposition to the government's proposed bill (PLP 12). Manifest A: calls for total rejection of the project, says it's a disguised CLT, wants rejection. Manifest B: also rejects the project as presented, says drivers reject it, wants changes, proposes alternative PL 536, says not to approve this project. So both are against the same proposition: the government's regulatory bill (Projeto de Lei Complementar nº 12). Both stance is AGAINST. So same proposition, same stance => STANCE_MAINTAINED.\n\nWe need brief reasoning.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2445,
+    "total_tokens": 2639,
+    "completion_tokens": 194,
+    "estimated_cost": 0.00012344500000000002,
+    "prompt_tokens_details": null
+  }
+}

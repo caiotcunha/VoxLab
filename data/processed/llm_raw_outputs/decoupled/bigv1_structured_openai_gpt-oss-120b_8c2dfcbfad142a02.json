@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrE85EeFW1cyqON7VCdlkXEB",
+  "object": "chat.completion",
+  "created": 1790632589,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Animal welfare is an essential component of sustainability\",\n  \"target_proposition_b\": \"States should produce studies and reports on the nexus between animal welfare, environment, and sustainable development as required by the UN Nexus Resolution\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific claim) and stance.\n\nManifestation A: The speaker talks about importance of animal welfare, sustainability, mentions resolution Nexus, says \"O bem-estar animal é, sim, um componente essencial da sustentabilidade.\" Also says practices that violate animal rights have negative impacts. The overall stance seems to favor recognizing animal welfare as essential to sustainability, and likely supports policies that protect animal rights. But we need a specific proposition. The text does not propose a concrete policy, but could be \"Animal welfare should be considered essential for sustainability and environmental challenges.\" That's a proposition. The speaker affirms it. So stance = FAVOR. Stance determinable? Yes, because they express clear support for proposition that animal welfare is essential component of sustainability. So stance_determinable_a = YES. target_proposition_a: \"Animal welfare is an essential component of sustainability.\" (short neutral). stance_a = FAVOR.\n\nManifestation B: This is a longer speech praising others, discussing the Nexus resolution, need for studies, economic impacts, etc. The speaker supports the resolution and calls for studies, says \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, é sobretudo a vida humana.\" They are in favor of the resolution and of integrating animal welfare into policy. So a specific proposition could be \"States should produce studies and reports on the nexus between animal welfare, environment, and sustainable development as required by the UN Nexus Resolution.\" The speaker supports that. So stance = FAVOR. Stance determinable = YES. target_proposition_b: \"States should produce studies and reports on the nexus between animal welfare, environment, and sustainable development as required by the UN Nexus Resolution.\"\n\nNow comparability: Are the two propositions the same or semantically equivalent? Proposition A: \"Animal welfare is an essential component of sustainability.\" Proposition B: \"States should produce studies/reports on the nexus between animal welfare, environment, and sustainable development as required by the UN Nexus Resolution.\" They are related but not the same. A is a claim about the importance of animal welfare to sustainability; B is about procedural action (studies) per resolution. They are not the same proposition. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: YES/NO/UNCERTAIN etc.\n\nThus:\n\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Animal welfare is an essential component of sustainability\",\n  \"target_proposition_b\": \"States should produce studies and reports on the nexus between animal welfare, environment, and sustainable development as required by the UN Nexus Resolution\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n\nMake sure strings exactly.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2741,
+    "total_tokens": 3471,
+    "completion_tokens": 730,
+    "estimated_cost": 0.000225517,
+    "prompt_tokens_details": null
+  }
+}

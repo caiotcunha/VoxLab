@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RA0YQEZ5OEQEe5stWeFtBF6g",
+  "object": "chat.completion",
+  "created": 1790622371,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas são diferentes, uma se refere a um marco regulatório para a transição energética sustentável, enquanto a outra se refere ao uso do biometano na matriz energética brasileira.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 466,
+    "completion_tokens": 61,
+    "estimated_cost": 6.0020000000000005e-05,
+    "prompt_tokens_details": null
+  }
+}

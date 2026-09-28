@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REOIpN0Rm3RkpTvuOchE8z13",
+  "object": "chat.completion",
+  "created": 1790622432,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma CPI para investigar a violência contra povos indígenas, mulheres e crianças nos territórios indígenas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "A manifestação apresenta uma posição clara sobre várias questões interligadas. O falante defende:\n1. A criação de uma CPI para investigar a violência contra povos indígenas, com recorte de gênero e crianças/adolescentes.\n2. A demarcação e homologação de territórios indígenas.\n3. A oposição ao garimpo em territórios indígenas.\n4. A necessidade de políticas públicas com recortes específicos (indígena, gênero, etário) e participação dos povos indígenas.\n5. A necessidade de orçamento para essas políticas.\n6. O respeito à Convenção 169 da OIT (consulta pública).\n\nA questão central mais abrangente parece ser a criação de uma CPI para investigar a violência contra povos indígenas, mulheres e crianças, que é repetidamente sugerida ao final. Mas também há forte ênfase na demarcação/proteção de territórios indígenas e oposição ao garimpo.\n\nVou escolher a questão que parece mais central e recorrente: a criação de uma CPI para investigar a violência contra povos indígenas, mulheres e crianças. Ou talvez a demarcação de territórios indígenas, que é mencionada explicitamente como importante (\"É importante avançar na demarcação, na homologação dos territórios\").\n\nNa verdade, a sugestão mais propositiva e repetida é a criação da CPI. Vou formular a pergunta sobre isso.\n\nPergunta: \"Deve ser criada uma CPI para investigar a violência contra povos indígenas, mulheres e crianças?\"\n\nResposta: SIM (FAVOR)\n\nAlternativamente, poderia ser sobre a demarcação de territórios indígenas: \"Deve-se avançar na demarcação e homologação de territórios indígenas?\" - também SIM.\n\nA CPI é mencionada mais vezes e com mais ênfase no final. Vou com a CPI.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2648,
+    "total_tokens": 3155,
+    "completion_tokens": 507,
+    "estimated_cost": 0.00222642000072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 443
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7VAwZyfwnjLN3TvG0pTir2v",
+  "object": "chat.completion",
+  "created": 1790622250,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos diferentes do tema racial, com focos distintos: a primeira sobre a integração do racismo às políticas para a primeira infância, e a segunda sobre a educação específica de meninas e mulheres negras.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 460,
+    "completion_tokens": 70,
+    "estimated_cost": 0.0001684,
+    "prompt_tokens_details": null
+  }
+}

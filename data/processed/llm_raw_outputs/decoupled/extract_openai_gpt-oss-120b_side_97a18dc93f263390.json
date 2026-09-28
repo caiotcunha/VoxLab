@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQcXdE5jXATqjiRIN8cTS4Eu",
+  "object": "chat.completion",
+  "created": 1790624072,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação deve ser objeto de disputa política?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue, and if so, formulate a neutral yes/no question and indicate stance.\n\nThe speech is a long update from Minister of Health Nísia Trindade. She expresses support for many policies: expansion of primary care, PAC funding, universalizing SAMU, building CAPS, supporting hospitals, etc. She also says \"A vacina não pode, a meu ver, ser objeto de disputa política. Ela deve ser objeto de ciência, de esclarecimento, de educação, mas não de disputa política.\" That's a stance: vaccines should not be politicized. Could be a question: \"As vacinas devem ser objeto de disputa política?\" She says no, they should not. So stance AGAINST (i.e., answer is NO to \"vacinas devem ser objeto de disputa política\").\n\nBut also many other statements: \"Eu peço aos Parlamentares apoio a todas essas ações, com emendas parlamentares\" - that's a request for support, not a stance on a yes/no question.\n\nWe need to see if there is a specific question that can be extracted. The instruction: \"Pergunta-alvo: se a determinabilidade for YES, escreva a questão específica central que a manifestação responde, como uma PERGUNTA NEUTRA de sim ou não, sem revelar a resposta do falante. Exemplo: 'O saque-aniversário do FGTS deve ser mantido?'. Prefira a formulação afirmativa da medida ou avaliação em debate.\"\n\nThus we need to find a central issue. The speech covers many topics, but perhaps the central is about the PAC health funding? She says \"o novo PAC inclui aporte expressivo de recursos para a saúde\". That's not a stance, it's a statement.\n\nShe also says \"A vacina não pode ser objeto de disputa política.\" That's a clear position. So we can formulate question: \"A vacinação deve ser objeto de disputa política?\" Or \"A vacina deve ser objeto de disputa política?\" The neutral yes/no question: \"A vacinação deve ser objeto de disputa política?\" She says no. So stance AGAINST.\n\nThus stance_determinable = YES.\n\ntarget_question = \"A vacinação deve ser objeto de disputa política?\" (or \"A vacina deve ser objeto de disputa política?\").\n\nStance = AGAINST (since she says it should not be politicized, i.e., answer is NO to the question).\n\nCheck if any other clear stance? She also says \"A vacina não pode, a meu ver, ser objeto de disputa política.\" That's the only explicit normative statement.\n\nThus produce JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4611,
+    "total_tokens": 5184,
+    "completion_tokens": 573,
+    "estimated_cost": 0.000268017,
+    "prompt_tokens_details": null
+  }
+}

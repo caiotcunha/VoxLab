@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPqwJYLTKFJdeebF4nJhhQF1",
+  "object": "chat.completion",
+  "created": 1790624071,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma carreira permanente para a Defesa Civil nos municípios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing need for permanent career positions for Civil Defense in municipalities, criticizing temporary contracts, and calling for more funding. So stance: they are in favor of creating permanent career positions for Civil Defense in municipalities, and against temporary contracts, and against insufficient budget allocation. So the specific question could be: \"Deve ser criada uma carreira permanente para a Defesa Civil nos municípios?\" That's a yes/no. The speaker is clearly in favor. So stance_determinable = YES, target_question = \"Deve ser criada uma carreira permanente para a Defesa Civil nos municípios?\" stance = FAVOR.\n\nCheck if any nuance: they also mention budget allocation: \"Isso tem cabimento?\" but overall they argue for permanent career. So answer: YES, question as above, stance FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 988,
+    "total_tokens": 1212,
+    "completion_tokens": 224,
+    "estimated_cost": 7.4636e-05,
+    "prompt_tokens_details": null
+  }
+}

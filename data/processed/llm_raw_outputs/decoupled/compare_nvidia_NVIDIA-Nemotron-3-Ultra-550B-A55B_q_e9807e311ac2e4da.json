@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5Ia6niFqOzVSTKsN9OVioB8",
+  "object": "chat.completion",
+  "created": 1790632279,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da inclusão formal da vacina no calendário oficial, enquanto a segunda pergunta sobre a continuidade da vacinação já em curso; são questões de escopo distinto.\"\n}",
+        "reasoning_content": "We need to decide relation between two yes/no questions.\n\nQ1: \"A vacina contra a COVID-19 deve ser incorporada ao calendário de vacinação infantil?\" => Should the COVID-19 vaccine be incorporated into the childhood vaccination schedule?\n\nQ2: \"A vacinação de crianças contra a COVID-19 deve ser mantida?\" => Should vaccination of children against COVID-19 be maintained?\n\nInterpretation: Q1 asks about adding to schedule (i.e., making it a routine part). Q2 asks about maintaining current vaccination of children (maybe already happening). Could be similar but not exactly same. If currently children are being vaccinated (maybe under emergency use), \"maintained\" means continue current practice. \"Incorporated into calendar\" implies formal inclusion. They are related but not identical. Could be different scope: one about policy inclusion, other about continuation. The answer to one does not determine the other necessarily. Could be equivalent? If vaccine already in calendar, maintaining equals incorporating? But not guaranteed. Likely DIFFERENT.\n\nBut need to consider polarity: both are positive (should be). Not opposite.\n\nThus classification: DIFFERENT.\n\nProvide reasoning: they address different policy actions (incorporation vs maintenance).",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 714,
+    "completion_tokens": 316,
+    "estimated_cost": 0.0008941999999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 258
+    }
+  }
+}

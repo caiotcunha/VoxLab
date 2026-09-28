@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtXZ1A2avxV0KkOQRqQikjWq",
+  "object": "chat.completion",
+  "created": 1790624122,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Implementar o Aluguel Social para vítimas de violência contra a mulher\",\n  \"target_proposition_b\": \"Criar o Programa de Atenção à Mulher na Menopausa e Climatério\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then compare.\n\nFirst, Manifestation A: Long speech about violence against women, need to find a specific proposition the speaker accepts or rejects. She says: \"eu sou favorável, por exemplo, ao projeto... Aluguel Social é necessário para as vítimas de violência.\" Also she says need DEAMs in all cities, need specialized units, etc. She expresses favor for \"projeto\" (unspecified) and for \"Aluguel Social\". The proposition could be \"Aluguel Social para vítimas de violência deve ser implementado\". She says \"eu sou favorável\". So stance determinable = YES. Target proposition: \"Aluguel Social para vítimas de violência deve ser implementado\" (or \"Projeto de Aluguel Social para vítimas de violência\"). She also supports \"rede de proteção\", \"DEAMs in all cities\". But we need one proposition. Choose one clear: \"Aluguel Social para vítimas de violência deve ser criado\". She is FAVOR.\n\nManifestation B: She is relator of a bill, presented a favorable opinion: \"Apresentei parecer favorável ao projeto ... cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" She says \"Acredito que esta audiência pública possa contribuir...\" She is presenting a favorable opinion to the project. So stance determinable = YES. Target proposition: \"Criar o Programa de Atenção a Mulheres na Menopausa e Climatério\". She is FAVOR.\n\nNow comparability: Are the two propositions semantically equivalent? No: one is about Aluguel Social for victims of violence; the other about program for menopause health. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: stance_determinable_a: \"YES\". stance_determinable_b: \"YES\". target_proposition_a: short neutral phrase. target_proposition_b: short neutral phrase. same_proposition: \"NO\". stance_a: \"FAVOR\". stance_b: \"FAVOR\".\n\nMake sure strings exactly as required.\n\nLet's craft target propositions:\n\nA: \"Implementar o Aluguel Social para vítimas de violência contra a mulher\". B: \"Criar o Programa de Atenção à Mulher na Menopausa e Climatério\". Ensure short.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3599,
+    "total_tokens": 4223,
+    "completion_tokens": 624,
+    "estimated_cost": 0.000239243,
+    "prompt_tokens_details": null
+  }
+}

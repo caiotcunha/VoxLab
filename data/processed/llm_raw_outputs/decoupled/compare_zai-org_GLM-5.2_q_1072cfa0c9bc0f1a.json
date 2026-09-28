@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqBhsS6tzdv2vR49VEyg1kov",
+  "object": "chat.completion",
+  "created": 1790622737,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas e públicos distintos: uma sobre o Aluguel Social para mulheres vítimas de violência e outra sobre a aprovação de um projeto de lei voltado à atenção de mulheres na menopausa e climatério.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two yes/no questions extracted from speeches by the same actor at different times.\n\nQuestion 1: \"O Aluguel Social deve ser garantido às mulheres vítimas de violência?\" (Should Social Rent be guaranteed to women victims of violence?)\nQuestion 2: \"O Projeto de Lei nº 5.602/2019, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério, deve ser aprovado?\" (Should Bill No. 5,602/2019, which creates the Program for Attention to Women in Menopause and Climacteric, be approved?)\n\nThese are clearly different questions. One is about social rent for women victims of violence, the other is about a specific bill creating a program for women in menopause/climacteric. They are different measures, different target populations, different scopes.\n\nRelation: DIFFERENT",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 416,
+    "total_tokens": 682,
+    "completion_tokens": 266,
+    "estimated_cost": 0.0005956800004800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 193
+    }
+  }
+}

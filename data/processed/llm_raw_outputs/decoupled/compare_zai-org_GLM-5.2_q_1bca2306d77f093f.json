@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX9UN3eEa22w094w79xudh9d",
+  "object": "chat.completion",
+  "created": 1790623923,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As perguntas são idênticas em significado e polaridade, diferindo apenas na estrutura sintática (voz passiva vs. voz ativa).\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: Two yes/no questions extracted from speeches of the same actor at different times.\n    *   Task: Classify the relationship between the two questions.\n    *   Categories:\n        *   EQUIVALENT: Same question, same polarity. Wording/detail differences don't matter if the core decision is the same.\n        *   OPPOSITE_POLARITY: Same question, opposite polarity (Yes to one = No to the other).\n        *   DIFFERENT: Different questions (different measure, object, scope, etc.).\n        *   UNCERTAIN: Cannot decide safely.\n    *   Output: Strict JSON with keys \"relation\" and \"reasoning\".\n\n2.  **Analyze Question 1:**\n    *   \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada pelo Brasil?\"\n    *   Translation/Meaning: Should the Inter-American Convention on the Protection of the Human Rights of Older Persons be ratified by Brazil?\n\n3.  **Analyze Question 2:**\n    *   \"O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos?\"\n    *   Translation/Meaning: Should Brazil ratify the Inter-American Convention on the Protection of the Human Rights of Older Persons?\n\n4.  **Compare the Questions:**\n    *   Subject/Object: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\" (Inter-American Convention on the Protection of the Human Rights of Older Persons).\n    *   Action: \"ser ratificada\" / \"ratificar\" (be ratified / ratify).\n    *   Actor: \"pelo Brasil\" / \"O Brasil\" (by Brazil / Brazil).\n    *   Polarity: Both ask if it *should* be ratified (positive).\n    *   Difference: Only the syntactic structure (passive vs. active voice). The meaning is exactly the same.\n\n5.  **Determine the Relation:**\n    *   Since they ask the exact same thing with the same polarity, the relation is EQUIVALENT.\n\n6.  **Draft the JSON:**\n    *   `relation`: \"EQUIVALENT\"\n    *   `reasoning`: \"As duas perguntas possuem o mesmo objeto, ação e ator, diferindo apenas na voz verbal (passiva vs. ativa), mas mantendo a mesma polaridade e significado.\"\n\n7.  **Format Output:**\n    *   Ensure strict JSON format, no extra text.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 410,
+    "total_tokens": 1015,
+    "completion_tokens": 605,
+    "estimated_cost": 0.0012025050004800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 551
+    }
+  }
+}

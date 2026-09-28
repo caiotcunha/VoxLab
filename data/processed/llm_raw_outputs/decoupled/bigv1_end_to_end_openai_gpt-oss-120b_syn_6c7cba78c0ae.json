@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaOhcBX4Kujbjj9CWXhyQUgD",
+  "object": "chat.completion",
+  "created": 1790633032,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements refer to the UN Nexus resolution linking animal welfare, environment and sustainability and express a supportive stance toward integrating animal welfare into policy, thus sharing the same proposition with the same direction.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Determine if they address same specific proposition and stance same or opposite.\n\nManifestation A: talk about animal welfare, sustainability, zoonoses, UN Nexus resolution, need balance, criticize animal production that violates animal rights, negative impacts, etc. Stance: seems critical of current animal production practices, advocating for animal welfare, sustainability. So stance is AGAINST current practices, FOR animal welfare.\n\nManifestation B: praising Deputy Bruno Ganem, discussing animal welfare as economic and competitive, referencing same UN Nexus resolution, emphasizing importance, need to prepare, etc. Stance: supportive of animal welfare policies, sees it as beneficial, calls for action. Also supportive of the resolution. So stance is FAVOR animal welfare measures.\n\nDo they address same specific proposition? Both refer to the UN Nexus Resolution linking animal welfare, environment, sustainable development. They both discuss that resolution. So same proposition: the importance/implementation of the Nexus resolution. A says need to focus on balance, criticizes current practices, implies need to adopt resolution. B says resolution recognized, need to act, supportive. Both are in favor of the resolution? A: says \"bem-estar animal é, sim, um componente essencial da sustentabilidade\" and \"essas práticas de produção que violam os direitos animais têm impactos negativos\". He supports the idea that animal welfare is essential. So stance is favorable to the proposition that animal welfare should be integrated. B also favorable. So both FAVOR same proposition. So STANCE_MAINTAINED.\n\nCheck if any nuance: A is more critical of current production, but still supports the proposition that animal welfare is essential. B supports policy. So same direction.\n\nThus relation: STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2523,
+    "total_tokens": 2944,
+    "completion_tokens": 421,
+    "estimated_cost": 0.00016492100000000003,
+    "prompt_tokens_details": null
+  }
+}

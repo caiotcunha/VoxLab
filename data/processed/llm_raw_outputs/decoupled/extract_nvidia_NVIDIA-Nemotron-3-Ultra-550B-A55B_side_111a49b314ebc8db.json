@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbtP5bob9KTCVe5iBouuf299",
+  "object": "chat.completion",
+  "created": 1790623991,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to analyze the speech. The speaker is chairing a public hearing, thanking participants, emphasizing importance of discussion, wanting to promote competition, innovation, consumer protection. Does the speech present a clear position on a specific issue? The speech is procedural, not taking a stance on a specific policy question. It says \"We want to ensure competitiveness and promote competition... essential to foster innovation, growth, consumer protection\". That's a general supportive stance toward regulation that promotes competition. But is there a specific question? The theme is \"Mudanças no projeto de regulamentação dos mercados digitais (PL 2768/22)\". The speaker says they want to promote competition etc. Could be interpreted as favoring regulation that ensures competition. But the speech is generic, not a clear yes/no on a specific measure. The instruction: \"Determinabilidade: a manifestação apresenta posição suficientemente clara sobre alguma questão específica?\" The speech is more about process, not a specific stance. So likely NO.\n\nThus stance_determinable = NO, target_question empty, stance empty.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 785,
+    "total_tokens": 1035,
+    "completion_tokens": 250,
+    "estimated_cost": 0.0009425,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 224
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBIOH8gSCspWllPtSEo8zwuM",
+  "object": "chat.completion",
+  "created": 1790632970,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Both statements address the ratification of the Inter‑American Convention on the Rights of Older Persons, but the first supports it while the second argues against it.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are from same actor (same person) in two public hearings. Manifestation A: lengthy speech about ageism, need to ratify the Inter-American Convention on the Protection of Human Rights of Older Persons, urging approval of a constitutional amendment to implement policies. He says: \"O que queremos aqui é que haja a aprovação de uma proposta de emenda à Constituição para que, de fato, as políticas funcionem...\" He also reads article 5, emphasizes ratification. So stance: FAVOR of ratifying the convention (and constitutional amendment) – supportive.\n\nManifestation B: also about approval of the convention. He says: \"Precisamos fazer um movimento conjunto para que tenhamos essa ratificação, mas devemos questionar a necessidade de se conceder a essa aprovação o quórum qualificado...\". He argues that ratification may be unnecessary, creates bureaucracy, we already have laws. He says: \"não precisamos desse apoio adicional... não precisamos desse apoio adicional para avançar...\". He proposes to reconsider ratification with caution, suggests not to ratify? He says \"não precisamos desse apoio adicional...\". So stance: AGAINST ratification (or at least against the need for ratification, favor not ratifying). So both address same proposition: ratification of the Inter-American Convention (or amendment). One FAVOR, other AGAINST. So STANCE_REVERSED.\n\nCheck if both are about same specific proposition: yes, ratification of the convention (or constitutional amendment to implement). Both refer to same. So relation: STANCE_REVERSED.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5768,
+    "total_tokens": 6155,
+    "completion_tokens": 387,
+    "estimated_cost": 0.00027920600000000005,
+    "prompt_tokens_details": null
+  }
+}

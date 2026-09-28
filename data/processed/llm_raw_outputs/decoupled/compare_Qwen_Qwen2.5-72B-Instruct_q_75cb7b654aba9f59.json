@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rv9939bb5d1hoho04V1rx74f",
+  "object": "chat.completion",
+  "created": 1790622226,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da necessidade de mudar o Código Penal e fazer um trabalho conjunto, enquanto a segunda pergunta se refere à acatação de emendas específicas para combater a violência contra crianças e adolescentes.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 462,
+    "completion_tokens": 65,
+    "estimated_cost": 0.00016892,
+    "prompt_tokens_details": null
+  }
+}

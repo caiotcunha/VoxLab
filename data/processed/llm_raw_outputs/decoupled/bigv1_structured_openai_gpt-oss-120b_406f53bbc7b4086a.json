@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFBl7Yw2CNEonShKjF2GY384",
+  "object": "chat.completion",
+  "created": 1790632450,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"People with autism should be recognized as rights holders and not treated as a burden\",\n  \"target_proposition_b\": \"People with autism should be recognized as autonomous individuals with full rights, not treated as a burden\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then compare.\n\nFirst, identify propositions.\n\nManifestation A: The speaker talks about inclusion, rights, non-capacitism, support. What specific proposition? Could be \"People with disabilities, especially autistic, should receive support/accessibility measures\" or \"People with disabilities should not be seen as a burden\". The proposition is about guaranteeing inclusion and rights. The speaker says \"É por isso que não podemos ser enxergados como um fardo. Nós pessoas autistas somos pessoas detentoras de direitos...\" So proposition: \"People with autism should be recognized as rights holders and not seen as a burden.\" That's a proposition. Stance: Favor (they support that). So stance determinable = YES. target proposition short neutral: \"People with autism should be recognized as rights holders and not treated as a burden.\"\n\nManifestation B: The speaker discusses neurodiversity, inclusion, rights, etc. They argue that neurodiversity promotes autonomy, that autistic adults have rights, etc. Proposition: \"Neurodiversity perspective should be adopted to ensure rights and dignity of autistic people.\" Or \"People with autism should be recognized as autonomous individuals with full rights, not as children only.\" The speaker supports that. So stance determinable = YES. target proposition: \"People with autism should be recognized as autonomous individuals with full rights, not treated as a burden.\" That's similar to A. Are they semantically equivalent? Both talk about recognizing rights and not seeing as burden. A focuses on not being seen as a burden, inclusion. B focuses on neurodiversity and autonomy, but also says \"autistic people are protagonists of their own paths\" and \"they have rights\". The core proposition is similar: recognition of rights and non-stigmatization. Are they \"same proposition or semantically equivalent\"? Likely YES, because both assert that autistic people should be recognized as rights holders and not be seen as a burden. Slight nuance: A is about inclusion and not being a burden; B is about neurodiversity and autonomy. They overlap but are they same? The rule: \"Mesmo tema, medidas diferentes ou proposições apenas sobrepostas recebem NO.\" Here it's not about measures, it's about a principle. Both propose that autistic people should be recognized as rights holders and not be stigmatized. That seems semantically equivalent. So same_proposition = YES.\n\nNow produce JSON.\n\nKeys:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"People with autism should be recognized as rights holders and not treated as a burden\"\ntarget_proposition_b: \"People with autism should be recognized as autonomous individuals with full rights, not treated as a burden\"\nsame_proposition: YES\nstance_a: FAVOR\nstance_b: FAVOR\n\nMake sure strings exactly as required. No extra spaces? It's okay.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2455,
+    "total_tokens": 3166,
+    "completion_tokens": 711,
+    "estimated_cost": 0.00021170500000000002,
+    "prompt_tokens_details": null
+  }
+}

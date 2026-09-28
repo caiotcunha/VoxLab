@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqfTMB9TwOdB9mFvRyiGajoz",
+  "object": "chat.completion",
+  "created": 1790624037,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A ANPD deve ser fortalecida para melhorar a proteção dos dados pessoais dos brasileiros?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about opening a public hearing on data protection, emphasizing importance of protecting personal data, need for ANPD to have support, etc. Does it take a stance? It seems to support strengthening ANPD and protecting data, possibly advocating for more investment and support. The specific question could be: \"A ANPD deve receber maior apoio e recursos para proteger os dados pessoais dos brasileiros?\" Or \"O fortalecimento da ANPD é necessário para proteger os dados dos cidadãos?\" So stance is FAVOR.\n\nThus stance_determinable = YES. target_question: \"A ANPD deve ser fortalecida para melhorar a proteção dos dados pessoais dos brasileiros?\" That's a yes/no. The speaker is in favor. So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1218,
+    "total_tokens": 1435,
+    "completion_tokens": 217,
+    "estimated_cost": 8.195600000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

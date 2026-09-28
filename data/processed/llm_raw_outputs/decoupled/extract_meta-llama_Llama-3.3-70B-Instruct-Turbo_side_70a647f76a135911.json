@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rt7UJm622RKOSBixFluqMjeM",
+  "object": "chat.completion",
+  "created": 1790622279,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1968,
+    "total_tokens": 2010,
+    "completion_tokens": 42,
+    "estimated_cost": 0.00021024000000000005,
+    "prompt_tokens_details": null
+  }
+}

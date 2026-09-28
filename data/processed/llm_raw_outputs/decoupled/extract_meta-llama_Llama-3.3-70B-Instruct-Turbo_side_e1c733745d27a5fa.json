@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTQF59SR0m284vGhK7C4FOd4",
+  "object": "chat.completion",
+  "created": 1790622336,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra a Covid-19 deve ser apoiada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2736,
+    "total_tokens": 2786,
+    "completion_tokens": 50,
+    "estimated_cost": 0.00028960000000000005,
+    "prompt_tokens_details": null
+  }
+}

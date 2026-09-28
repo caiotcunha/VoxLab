@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdIs7TE8cBZIKeOEDQxJy4fA",
+  "object": "chat.completion",
+  "created": 1790624045,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O direito minerário das empresas de mineração deve ser cassado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing mining companies, repactuação (renegotiation) of reparations, and calls for \"cassar o direito minerário dessas empresas\" (to cancel mining rights). So the specific issue: Should mining rights of these companies be revoked? Or should the renegotiation be blocked? The speaker says: \"É preciso, de fato, cassar o direito minerário dessas empresas. Se não for feito isso, ...\". So they are advocating revoking mining rights. That's a clear stance.\n\nThus stance_determinable = YES.\n\nTarget question: \"O direito minerário das empresas de mineração deve ser cassado?\" Or \"Deve ser cassado o direito minerário das empresas?\" That's a yes/no.\n\nStance: The speaker is in favor of revoking, so they are FAVOR (i.e., they say yes). So stance = FAVOR.\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1453,
+    "total_tokens": 1698,
+    "completion_tokens": 245,
+    "estimated_cost": 9.5411e-05,
+    "prompt_tokens_details": null
+  }
+}

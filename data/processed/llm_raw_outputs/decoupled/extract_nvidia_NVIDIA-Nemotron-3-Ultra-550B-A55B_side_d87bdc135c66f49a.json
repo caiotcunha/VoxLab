@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcN2BFxRWQPp6hWqw5tFaXjt",
+  "object": "chat.completion",
+  "created": 1790623999,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O orçamento do programa de combate à tuberculose deve ser aumentado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is opening a hearing, describing the commission, its purpose, mentions budget increase for TB program, says they will work to increase budget, but not a clear stance on a specific question? The question: \"Should the budget for TB program be increased?\" The speaker says they will work to increase budget, and that current 14 million is unreasonable. That's a clear position favoring increase. So stance determinable YES. Target question: \"O orçamento do programa de combate à tuberculose deve ser aumentado?\" (Should the budget for the TB combat program be increased?) Answer: FAVOR (SIM). Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2858,
+    "total_tokens": 3049,
+    "completion_tokens": 191,
+    "estimated_cost": 0.0018492,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 146
+    }
+  }
+}

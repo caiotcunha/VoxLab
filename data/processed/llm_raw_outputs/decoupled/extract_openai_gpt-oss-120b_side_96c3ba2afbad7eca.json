@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFuggVO8wM73R4TfflnSsNGX",
+  "object": "chat.completion",
+  "created": 1790624027,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O veto nº 28 ao PL 920/23 deve ser derrubado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker (Deputado Leo Prates) is advocating for certain things: wants veto 28 to be overturned, supports PL 920/23 (prevention funding), wants a career plan for civil defense agents, wants more prevention funding, etc. So there are clear positions: e.g., \"the veto should be overturned\" (against the veto). Also \"need for a career plan for civil defense agents\" (in favor). The question: we need to produce a single target question that captures the central issue. The speech covers multiple issues, but we need to pick the specific central question. The main focus seems to be the veto of PL 920/23 (veto nº 28). He repeatedly says \"importance of derrubada do Veto nº 28\". So the central question could be: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" That's a yes/no. He is in favor of overturning, so stance = FAVOR (i.e., answer SIM). So stance_determinable = YES, target_question = \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" stance = FAVOR.\n\nCheck if any ambiguity: He explicitly says \"Esse veto precisa ser derrubado\" and \"importância da derrubada do Veto nº 28\". So clear.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2259,
+    "total_tokens": 2605,
+    "completion_tokens": 346,
+    "estimated_cost": 0.000142403,
+    "prompt_tokens_details": null
+  }
+}

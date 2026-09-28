@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFtFwUWNMPFjJFwZFzqNB03m",
+  "object": "chat.completion",
+  "created": 1790624029,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The topic is regulation of app drivers. The speaker expresses support for advancing legislation, wants to build a solution, wants to not delay, wants to legislate rather than courts, wants a just legislation, wants to generate employment, etc. The specific question could be: \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada?\" Or \"Deve ser avançado o projeto de regulamentação do trabalho de motoristas de aplicativo?\" The speaker is clearly in favor of advancing the legislation. So stance_determinable = YES. target_question: \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada?\" The stance: FAVOR (SIM). So output JSON.\n\nCheck if any nuance: He says \"Nós queremos que isso aconteça, gerando emprego, dando condição digna ao trabalhador, dando condição digna ao mercado.\" He supports the regulation. So yes.\n\nThus JSON:\n\n{\n \"stance_determinable\":\"YES\",\n \"target_question\":\"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada?\",\n \"stance\":\"FAVOR\"\n}\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1095,
+    "total_tokens": 1379,
+    "completion_tokens": 284,
+    "estimated_cost": 8.8795e-05,
+    "prompt_tokens_details": null
+  }
+}

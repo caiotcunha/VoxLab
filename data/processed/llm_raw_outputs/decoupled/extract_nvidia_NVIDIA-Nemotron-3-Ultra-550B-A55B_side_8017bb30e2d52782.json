@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZQS4W4wsVD31FecX8lkfHwA",
+  "object": "chat.completion",
+  "created": 1790624013,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um arcabouço legal para proteger populações vulneráveis de desastres naturais como enchentes e secas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. The speaker is chairing a committee meeting, opening, procedural. They make some statements: \"O nosso grande desafio... é criar um arcabouço legal que possa dar proteção, especialmente aos vulneráveis, nessas enchentes, nessas secas.\" They express support for creating a legal framework to protect vulnerable people in floods/droughts. Also they say \"a ação na área social e a participação do Ministério do Desenvolvimento Social são muito importantes para nós.\" And \"loucos para criar um arcabouço legal que possa proteger os cidadãos e as cidadãs mais vulneráveis.\"\n\nThus they have a clear position: they favor creating a legal framework for disaster prevention and assistance, especially for vulnerable populations. The question: \"Should a legal framework be created to protect vulnerable populations from natural disasters such as floods and droughts?\" That's a yes/no question. The speaker is in favor (FAVOR). Determinability: YES.\n\nWe must output JSON with stance_determinable YES, target_question neutral yes/no, stance FAVOR.\n\nMake sure target_question is neutral, not revealing answer. Eg: \"Deve ser criado um arcabouço legal para proteger populações vulneráveis de desastres naturais como enchentes e secas?\" That's a yes/no question.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1450,
+    "total_tokens": 1787,
+    "completion_tokens": 337,
+    "estimated_cost": 0.0014663999999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 278
+    }
+  }
+}

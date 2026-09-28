@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpvZqAJhIBuz0qaMLQ70CBfp",
+  "object": "chat.completion",
+  "created": 1790623744,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"relation\":\"STANCE_MAINTAINED\",\"reasoning\":\"Ambas as manifestações defendem a aprovação/ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos com status de emenda constitucional, indicando a mesma direção de stance sobre a mesma proposição específica.\"}",
+        "reasoning_content": "We need to classify relation between two manifestations by same actor in two parliamentary events. Need determine if both respond to same specific proposition with same stance, opposite, incomparable, uncertain, insufficient evidence. Need only text. Need JSON.\n\nWe need parse. Manifestation A: public hearing 2023-05-17 about prejudice against elderly and measures. Speaker is Secretary National of Rights of Older Persons. He discusses aging, idadismo, rights, and explicitly calls for ratification of Inter-American Convention on Protection of Human Rights of Older Persons, with status of constitutional amendment? Let's inspect. A: \"O que quero destacar aqui também, nesta Casa, hoje, é a busca, o quanto antes, da ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos, que começou lá em 2015. O Brasil foi o primeiro País a assiná-la. Na gestão anterior, isso não avançou nem um pouco. E agora, diante dos desafios que o envelhecimento está nos trazendo, é mais do que urgente que pensemos nisso. ... Conclamo todos para que nós possamos entender que a convenção é hoje o nosso ponto mais central. Falta muito pouco para podermos alcançar isso. Então, eu conto aqui com o apoio dos Deputados e Deputadas, Senadores e Senadoras. ... falta muito pouco. O que nós queremos aqui é que haja a aprovação de uma proposta de emenda à Constituição para que, de fato, as políticas funcionem da melhor forma possível.\" So A favors ratification/approval of convention as constitutional amendment.\n\nManifestation B: public hearing 2023-10-04 about consolidation of public policies for elderly in context 20 years Statute of Elderly. Speaker likely same Secretary. He discusses statute, policies, and says: \"Também quero lembrar algo de que já se falou aqui: a questão da aprovação da convenção com status de emenda constitucional, e nisso o Deputado Aliel tem sido um grande parceiro, trazendo várias possibilidades. Uma hora nós vamos conseguir.\" Also earlier: \"Esforços também tenho percebido do senhor e de outros Parlamentares para que pudéssemos avançar na discussão e manter a discussão para a aprovação da convenção.\" So B favors approval of convention with constitutional amendment status. Same specific proposition? Yes: approval/ratification of Inter-American Convention on Protection of Human Rights of Older Persons with status of constitutional amendment. Both FAVOR. So STANCE_MAINTAINED.\n\nNeed ensure no issue: Manifestation A also \"aprovação de uma proposta de emenda à Constituição\" maybe not exactly convention? It says \"convenção é hoje o nosso ponto central... haja a aprovação de uma proposta de emenda à Constituição para que, de fato, as políticas funcionem...\" It might refer to PEC to ratify convention with constitutional status. B explicitly \"aprovação da convenção com status de emenda constitucional\". Same. Both favor. Category STANCE_MAINTAINED.\n\nNeed produce JSON strict with relation and reasoning. No extra text. Need maybe mention both advocate approval/ratification of Inter-American Convention with constitutional amendment status. Good.\n\nNeed be careful: \"same specific proposition\" maybe \"ratification of Inter-American Convention...\" A says \"busca, o quanto antes, da ratificação da Convenção...\" and \"aprovação de uma proposta de emenda à Constituição\" maybe not exactly convention? It says \"convenção é hoje o nosso ponto central... haja a aprovação de uma proposta de emenda à Constituição para que, de fato, as políticas funcionem...\" It might refer to PEC to ratify convention with constitutional status. B explicitly \"aprovação da convenção com status de emenda constitucional\". Same. Both favor. Category STANCE_MAINTAINED.\n\nNeed produce JSON strict with relation and reasoning. No extra text. Need maybe mention both advocate approval/ratification of Inter-American Convention with constitutional amendment status. Good.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 8737,
+    "total_tokens": 9676,
+    "completion_tokens": 939,
+    "estimated_cost": 0.0064583625006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 866
+    }
+  }
+}

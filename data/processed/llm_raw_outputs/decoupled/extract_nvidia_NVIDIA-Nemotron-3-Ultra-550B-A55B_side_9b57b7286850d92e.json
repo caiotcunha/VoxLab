@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Resh0bXUO6QloLHegCEWyjnx",
+  "object": "chat.completion",
+  "created": 1790624077,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 deve ser aprovado como regulamentação do trabalho de motoristas de aplicativo?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a driver advocating for regulation, supporting PLP 12, and also mentions their own proposal 536. They clearly favor the PLP 12 and want it approved. So stance determinable = YES.\n\nTarget question: a neutral yes/no question about the central issue. The central issue: \"Should the PLP 12 (the complementary bill) be approved as regulation for app drivers?\" Or \"Should the regulation of app drivers be based on the PLP 12?\" Must be neutral. Probably: \"O Projeto de Lei Complementar nº 12 deve ser aprovado como regulamentação do trabalho de motoristas de aplicativo?\" That's a yes/no question.\n\nStance: speaker is in favor (FAVOR). So answer: stance_determinable YES, target_question as above, stance FAVOR.\n\nNeed JSON with exactly keys. Provide empty strings if not YES but it's YES.\n\nLet's craft.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2236,
+    "total_tokens": 2511,
+    "completion_tokens": 275,
+    "estimated_cost": 0.0017230000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 216
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrvjLhlGkI85axl2vZ5frUiL",
+  "object": "chat.completion",
+  "created": 1790622242,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de aumentar o financiamento para a prevenção de desastres, diferindo apenas na formulação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 446,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00016268,
+    "prompt_tokens_details": null
+  }
+}

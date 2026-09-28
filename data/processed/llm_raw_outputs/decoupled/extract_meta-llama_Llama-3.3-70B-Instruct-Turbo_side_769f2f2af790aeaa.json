@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDEVIApnATRjubd9yobG5xZl",
+  "object": "chat.completion",
+  "created": 1790622323,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve investir na autossuficiência em imunoglobulina?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1438,
+    "total_tokens": 1487,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00015948,
+    "prompt_tokens_details": null
+  }
+}

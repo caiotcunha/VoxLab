@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB8UVDk3RuYPzyRd2pmoqKPG",
+  "object": "chat.completion",
+  "created": 1790624168,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vaccination against COVID-19 should be mandatory for children 6 months to 5 years\",\n  \"target_proposition_b\": \"Vaccination against COVID-19 should be mandatory\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: Long speech about mandatory vaccination of children 6 months to 5 years. She says: \"Nós não vamos aceitar ... eu vou me opor a isso, enquanto eu tiver forças...\" She opposes mandatory vaccination. She also says \"Se acreditássemos que a vacina contra COVID-19 iria preservar a vida dos bebês, nós seríamos favoráveis. Nós não somos antivax...\". So target proposition: \"Vaccination against COVID-19 should be mandatory for children 6 months to 5 years.\" She opposes. So stance AGAINST. Determinable? Yes. So stance_determinable_a = YES. target_proposition_a = \"Vaccination against COVID-19 should be mandatory for children 6 months to 5 years.\"\n\nStance_a = AGAINST.\n\nManifestation B: Speech by a minister (likely health minister). She says: \"O que nós somos contra é quanto a obrigatoriedade.\" She opposes mandatory vaccination (for elderly? Actually she says \"O que nós somos contra é quanto a obrigatoriedade.\" She also says \"Nós somos todos favoráveis às vacinas que estão no PNI...\". So target proposition: \"Vaccination against COVID-19 should be mandatory.\" She opposes mandatory vaccination. So stance AGAINST. Determinable? Yes. target_proposition_b = \"Vaccination against COVID-19 should be mandatory.\"\n\nNow comparability: Are they same proposition? Both about mandatory vaccination of COVID-19. A focuses on children 6 months to 5 years. B seems about general mandatory vaccination, possibly for all ages, but she says \"O que nós somos contra é quanto a obrigatoriedade.\" She mentions elderly, but overall opposition to mandatory vaccination. The propositions are not exactly same: one specific to children, other general. Are they semantically equivalent? No, because one is about children, other about general (maybe all). So comparability = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\" etc.\n\nMake sure strings exactly as required.\n\nLet's craft.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3120,
+    "total_tokens": 3698,
+    "completion_tokens": 578,
+    "estimated_cost": 0.0002137,
+    "prompt_tokens_details": null
+  }
+}

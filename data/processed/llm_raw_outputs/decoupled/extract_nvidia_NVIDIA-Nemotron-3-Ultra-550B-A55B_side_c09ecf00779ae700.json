@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIvQGn56pSnnY1prWAgJvcb1",
+  "object": "chat.completion",
+  "created": 1790624055,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Should the environmental license for oil exploration in Block 59 (Foz do Amazonas) be granted?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is IBAMA official (though name hidden). He explains technical reasons for denying license for block 59, says IBAMA never said never authorize, but currently technical analysis shows inconsistencies, need for strategic environmental assessment. He states that IBAMA will say \"yes\" when viability demonstrated, \"no\" when not. So his position: currently the license should not be granted (i.e., against granting license for this specific block). The question: \"Should the environmental license for oil exploration in Block 59 (Foz do Amazonas) be granted?\" He is against granting now. So stance determinable YES. Target question neutral yes/no: \"Should the environmental license for oil exploration in Block 59 (Foz do Amazonas) be granted?\" Stance: AGAINST (i.e., answer NO). Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4124,
+    "total_tokens": 4362,
+    "completion_tokens": 238,
+    "estimated_cost": 0.0025856,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 187
+    }
+  }
+}

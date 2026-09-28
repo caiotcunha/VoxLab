@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnsQpnpiw2MSWRwQqYgP4OjJ",
+  "object": "chat.completion",
+  "created": 1790633162,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Veto nº 28 should be overturned to restore funding for disaster prevention\",\n  \"target_proposition_b\": \"A permanent career structure should be created for municipal civil defense professionals\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nWe must identify target proposition (specific statement) and stance.\n\nManifestation A: Long speech about need to invest in prevention, criticize veto, wants to overturn Veto nº 28 to allocate 5% of disaster agreement to prevention. Also mentions need for career for civil defense agents, etc. The core proposition? Could be \"Veto nº 28 should be overturned\" or \"Resources should be allocated to prevention of disasters\". The speaker is advocating for overturning veto, supporting prevention funding. So target proposition: \"Veto nº 28 (which removes funding for disaster prevention) should be overturned\" or \"Funding for disaster prevention should be increased\". Choose one concise.\n\nStance: FAVOR (supports overturning veto, supports prevention funding). Determinable? Yes, clear.\n\nManifestation B: Talks about need for career for municipal civil defense, criticizes temporary contracts, wants permanent career. Also mentions need for investments in municipalities. So target proposition: \"There should be a permanent career structure for municipal civil defense professionals\". Stance: FAVOR. Determinable: YES.\n\nNow comparability: Are the two propositions the same? A is about overturning a specific veto to allocate funds for prevention; B is about establishing permanent career for municipal civil defense. Different topics: one about funding/prevention, other about career structure. Not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nFields:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"Veto nº 28 should be overturned to restore funding for disaster prevention\"\ntarget_proposition_b: \"A permanent career structure should be created for municipal civil defense professionals\"\nsame_proposition: NO\nstance_a: FAVOR\nstance_b: FAVOR\n\nCheck format: strings exactly as required.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2993,
+    "total_tokens": 3474,
+    "completion_tokens": 481,
+    "estimated_cost": 0.000192511,
+    "prompt_tokens_details": null
+  }
+}

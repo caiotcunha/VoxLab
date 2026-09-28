@@ -110,6 +110,14 @@ Um prompt v2, que julga a comparabilidade apenas por perguntas neutras de sim/n�
 
 Veja `docs/question_gate.md`.
 
+## Atualização: gate desacoplado e modelos maiores (2026-09-28)
+
+Foram avaliados 5 modelos (Qwen2.5, Llama-3.3, GLM-5.2, Nemotron-3-Ultra, gpt-oss-120b) em cinco condições, nos 47 pares do gold e nos 39 contrafactuais. Custo: US$ 2,58.
+- **O trade-off se repete em todos os modelos:** o gate reduz falsas reversões e falsa comparabilidade, mas também o recall de reversões.
+- **O gate desacoplado remove o vazamento da stance, mas cria um problema de granularidade:** sem alvo compartilhado, as perguntas extraídas separadamente raramente são julgadas equivalentes.
+
+Próximo passo: um contrast set ampliado, com uma condição de alvo compartilhado. Veja `docs/decoupled_gate.md`.
+
 ## Próxima fase: gold expandido e avaliação prospectiva
 
 1. Os dois anotadores preenchem independentemente os 29 pacotes cegos, sem acesso a `data/processed/expansion29_model_predictions.csv`.

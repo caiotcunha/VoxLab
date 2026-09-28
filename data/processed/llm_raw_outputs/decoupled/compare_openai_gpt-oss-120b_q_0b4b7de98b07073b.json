@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWoL6oRuQam2buCfnTjLiCEu",
+  "object": "chat.completion",
+  "created": 1790632929,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas perguntas são idênticas, portanto têm a mesma polaridade.\"\n}",
+        "reasoning_content": "We have two questions: both are identical: \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" Both same wording. So relation is EQUIVALENT. Provide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 505,
+    "completion_tokens": 91,
+    "estimated_cost": 3.0788e-05,
+    "prompt_tokens_details": null
+  }
+}

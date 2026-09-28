@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjU0HblW7fUsjPbcjQXTjCRM",
+  "object": "chat.completion",
+  "created": 1790624128,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same proposition (the regulation of digital markets via PL 2768/22) and express a consistent supportive stance for careful debate and balanced regulation.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements (A and B). Both are from same actor (same person) in two public hearings about digital markets regulation (PL 2768/22). We need to see if they respond to same proposition with same stance, opposite stance, incomparable, uncertain, or insufficient evidence.\n\nWe need to identify proposition(s). Both talk about the importance of discussing digital markets regulation, need for debate, careful not to overregulate, etc. They seem to support the need for debate and careful regulation, not excessive rules. Both appear to have same stance: favor discussion, cautious about overregulation. They are about same proposition: the regulation of digital markets (the PL). Both are in favor of the process and careful regulation, not against. So stance same (FAVOR). So STANCE_MAINTAINED.\n\nWe must ensure that they indeed respond to same specific proposition. The proposition is \"the regulation of digital markets via PL 2768/22\". Both refer to that. So yes.\n\nThus output JSON with relation STANCE_MAINTAINED and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1882,
+    "total_tokens": 2169,
+    "completion_tokens": 287,
+    "estimated_cost": 0.00011842399999999999,
+    "prompt_tokens_details": null
+  }
+}

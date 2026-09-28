@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpoyxRI78lGH0xTzzo3LwEmk",
+  "object": "chat.completion",
+  "created": 1790624049,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is describing licensing process, stating that IBAMA is waiting for DNIT studies, and giving data about Petrobras licenses. No explicit stance for or against a policy. No clear position on a question like \"Should the IBAMA issue the license?\" He says process not moving because waiting for DNIT. That's more informational, not a stance. So stance_determinable = NO? Could be UNCERTAIN? The question: maybe the underlying issue is whether IBAMA should issue the license now? He says it's waiting, not saying yes or no. No clear position. So NO.\n\nThus JSON with stance_determinable \"NO\", target_question \"\", stance \"\".\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 951,
+    "total_tokens": 1134,
+    "completion_tokens": 183,
+    "estimated_cost": 6.6297e-05,
+    "prompt_tokens_details": null
+  }
+}

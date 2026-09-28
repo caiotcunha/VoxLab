@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0F3Ga5SIssQhzKMtFZ2cPSu",
+  "object": "chat.completion",
+  "created": 1790622337,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O bem-estar animal deve ser uma prioridade na política nacional?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2405,
+    "total_tokens": 2450,
+    "completion_tokens": 45,
+    "estimated_cost": 0.0002549,
+    "prompt_tokens_details": null
+  }
+}

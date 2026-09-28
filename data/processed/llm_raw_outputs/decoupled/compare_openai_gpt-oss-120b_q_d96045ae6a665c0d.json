@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuDSt2qMojfMb0e8PC7ERjto",
+  "object": "chat.completion",
+  "created": 1790624110,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de instituições distintas (STF vs ANEEL) e de questões diferentes (ativismo judicial vs rigor na fiscalização), portanto não se relacionam.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion 1: \"O Supremo Tribunal Federal deve se abster de legislar ou modificar leis existentes, limitando-se à interpretação da norma?\" This asks whether the Supreme Court should refrain from legislating or modifying existing laws, limiting itself to interpretation. It's about judicial activism vs restraint.\n\nQuestion 2: \"A ANEEL deve ser mais firme na fiscalização das concessionárias de energia elétrica?\" This asks whether the energy regulator (ANEEL) should be stricter in supervising electricity concessionaires. It's about regulatory enforcement.\n\nThese are different institutions, different subjects. Not same question, not opposite polarity. So relation = DIFFERENT.\n\nReturn JSON with brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 611,
+    "completion_tokens": 202,
+    "estimated_cost": 4.9473e-05,
+    "prompt_tokens_details": null
+  }
+}

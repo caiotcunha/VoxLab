@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvXy308u4XRfN8iyeyO5hKd7",
+  "object": "chat.completion",
+  "created": 1790632631,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Campanha antivacina deve ser combatida\",\n  \"target_proposition_b\": \"Campanha antivacina é criminosa e deve ser combatida\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nWe must identify target proposition (specific statement) and stance (FAVOR/AGAINST/UNCERTAIN). Determine if stance determinable.\n\nManifestation A: Long speech about vaccination, coverage, need for digital records, criticism of anti-vaccine campaign. What specific proposition? Possibly \"Campanha antivacina é preocupante e deve ser combatida\" or \"Vacinação infantil deve ser registrada individualmente\". The speaker says: \"Não há justificativa tecnológica... precisamos trazer para essa plataforma o conjunto da vacinação...\". Also says \"Essa campanha antivacina é algo realmente preocupante\". He seems to be against anti-vaccine campaign, favoring vaccination and digital records. Need a specific proposition: maybe \"Campanha antivacina deve ser combatida\" or \"Vacinas devem ser registradas individualmente\". Which is more concrete? The speech includes multiple points. The stance determinable? Yes, there are clear positions: He opposes anti-vaccine campaign (against). He favors digital individual vaccination records (favor). Which one is target? We need a single target proposition per manifestation. Choose the most central: \"Campanha antivacina é preocupante e deve ser combatida\". That is a proposition. He is AGAINST anti-vaccine campaign (i.e., he opposes it). So stance = AGAINST (against the anti-vaccine campaign). Or we could phrase proposition as \"Campanha antivacina deve ser combatida\". He is in favor of combating, i.e., AGAINST the campaign. So stance = AGAINST.\n\nThus stance_determinable_a = YES. target_proposition_a = \"Campanha antivacina deve ser combatida\". stance_a = AGAINST.\n\nManifestation B: Very strong condemnation of anti-vaccine movement, calling it criminal, etc. Proposition: \"Campanha antivacina é criminosa e deve ser combatida\" or \"Uso da pauta antivacina para fins políticos é criminoso\". He is AGAINST anti-vaccine campaign. So stance_determinable_b = YES. target_proposition_b = \"Campanha antivacina é criminosa e deve ser combatida\". stance_b = AGAINST.\n\nNow comparability: Are the two propositions the same? Both about anti-vaccine campaign being problematic and needing combat. They are semantically equivalent: both say anti-vaccine campaign is bad and should be combated. So same_proposition = YES.\n\nCheck rules: Must ensure we didn't misinterpret. Both are about anti-vaccine campaign. Yes.\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4406,
+    "total_tokens": 5028,
+    "completion_tokens": 622,
+    "estimated_cost": 0.00026876199999999997,
+    "prompt_tokens_details": null
+  }
+}

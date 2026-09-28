@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkpP688UZunbda4uqKegmfxj",
+  "object": "chat.completion",
+  "created": 1790622255,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de investimento em prevenção de desastres, com foco em medidas que reduzam riscos e danos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 457,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00016680000000000002,
+    "prompt_tokens_details": null
+  }
+}

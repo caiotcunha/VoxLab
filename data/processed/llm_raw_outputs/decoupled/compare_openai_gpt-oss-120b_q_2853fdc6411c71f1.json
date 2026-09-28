@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYTnv7xinZq7nmwZAfwjaaAS",
+  "object": "chat.completion",
+  "created": 1790624112,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da criação de um sistema de apoio concreto, a outra de um arcabouço legal de proteção; são medidas distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"Deve ser criado um sistema nacional de apoio às vítimas de desastres, incluindo auxílio emergencial e recuperação de pequenos negócios?\" => Should a national support system for disaster victims be created, including emergency aid and small business recovery?\n\nQuestion2: \"Deve ser criado um arcabouço legal para proteger os cidadãos vulneráveis em desastres naturais?\" => Should a legal framework be created to protect vulnerable citizens in natural disasters?\n\nBoth ask about creation of something: a system vs a legal framework. Both aim to support victims/vulnerable citizens in disasters. Are they equivalent? Not exactly: one is a system of support (including aid, recovery), the other is a legal framework to protect vulnerable citizens. They are related but not the same. The first is about a concrete support system (maybe program), the second about legal protections. Could be considered different measures. The answer to one does not necessarily determine the answer to the other. So classification: DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 416,
+    "total_tokens": 693,
+    "completion_tokens": 277,
+    "estimated_cost": 6.2482e-05,
+    "prompt_tokens_details": null
+  }
+}

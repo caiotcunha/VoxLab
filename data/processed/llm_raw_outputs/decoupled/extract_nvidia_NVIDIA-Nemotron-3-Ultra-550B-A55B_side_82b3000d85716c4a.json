@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5zPOR8nZ6ODxNBlPnhlmwz3",
+  "object": "chat.completion",
+  "created": 1790624008,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo deve reconstruir os conselhos e espaços de participação social?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is praising the Minister, supporting reconstruction of participation spaces, praising Viver sem Limite program, criticizing previous government. The question: what specific issue? Could be \"Should the government reconstruct social participation councils?\" or \"Should the Viver sem Limite program be implemented?\" The speaker clearly supports these. So stance determinable YES. Need a neutral yes/no question. Choose central issue: \"O governo deve reconstruir os espaços de participação social (conselhos)?\" Or \"O programa Viver sem Limite deve ser implementado?\" The speech mentions both. Which is central? The speech emphasizes reconstruction of participation spaces and Viver sem Limite. Could pick one. Probably the main is reconstruction of participation spaces. But also Viver sem Limite. Choose one. Let's pick \"O governo deve reconstruir os conselhos e espaços de participação social?\" That's a yes/no. The speaker is in favor. So stance FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1109,
+    "total_tokens": 1369,
+    "completion_tokens": 260,
+    "estimated_cost": 0.0011265,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 215
+    }
+  }
+}

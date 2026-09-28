@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rjos1bybg6b8WzmKfxFIqjzd",
+  "object": "chat.completion",
+  "created": 1790632632,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements refer to the same legislative proposal – the PL of the Lei do Bem – and each expresses support for it, indicating the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between two manifestations A and B.\n\nWe must see if they respond to same specific proposition and stance.\n\nBoth are in public hearings about innovation. Manifestation A: discussing revision of Marco Legal da Inovação, praising Deputada Luisa Canziani, mentions supporting PL da Lei do Bem, supporting FNDCT, etc. It says \"Apoiamos fortemente, Deputada, o seu PL da Lei do Bem.\" Also \"Contribuímos ... para a formulação do PL do FNDCT\". So stance: favorable to PL of Lei do Bem (support).\n\nManifestation B: also about changes in Lei do Bem to facilitate collaboration. It makes an appeal for PL of Lei do Bem to be put to vote, says \"Lei do Bem é o principal instrumento ... precisamos trazer isso para o Brasil. Sem esse instrumento, a Lei do Bem continuará sendo restrita...\". So stance: favorable to PL of Lei do Bem (support). Both refer to same proposition: the PL (project of law) of Lei do Bem (maybe amendment). Both are in favor.\n\nThus same specific proposition? Both talk about PL of Lei do Bem. Yes. So stance same (FAVOR). So relation STANCE_MAINTAINED.\n\nWe need brief reasoning.\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4238,
+    "total_tokens": 4561,
+    "completion_tokens": 323,
+    "estimated_cost": 0.00021171599999999998,
+    "prompt_tokens_details": null
+  }
+}

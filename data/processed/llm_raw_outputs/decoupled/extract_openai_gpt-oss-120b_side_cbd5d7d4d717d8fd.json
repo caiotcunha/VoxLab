@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVElUolDPNVCA0r36Th92Pn3",
+  "object": "chat.completion",
+  "created": 1790624024,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um programa específico de atenção à saúde da mulher na menopausa e climatério?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker is a relator of a bill (PL 5.602) that creates a Program of Attention to Women in Menopause and Climacteric. She says she presented a contrary opinion to the project and its annexes, stating that creation of a specific program is not the most effective solution, could overload system with bureaucracy, and that treatments can be incorporated into existing health programs. So she is against the creation of a specific program. The specific issue: creation of a specific program for menopause/menopause health (Programa de Atenção a Mulheres na Menopausa e Climatério). So stance determinable = YES. Target question: \"A criação de um programa específico de atenção à saúde da mulher na menopausa e climatério deve ser implementada?\" Or \"Deve ser criado um programa específico de atenção à saúde da mulher na menopausa e climatério?\" That's a yes/no. She is against, so stance = AGAINST (i.e., answer NO). So JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"Deve ser criado um programa específico de atenção à saúde da mulher na menopausa e climatério?\",\n \"stance\": \"AGAINST\"\n}\n\nCheck formatting: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1851,
+    "total_tokens": 2181,
+    "completion_tokens": 330,
+    "estimated_cost": 0.000124587,
+    "prompt_tokens_details": null
+  }
+}

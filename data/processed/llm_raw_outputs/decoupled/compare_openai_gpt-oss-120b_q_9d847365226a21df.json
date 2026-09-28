@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rklc44VxOi8om8hwU8T1On3r",
+  "object": "chat.completion",
+  "created": 1790633036,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de derrubar um veto específico a um projeto de lei, enquanto a outra trata da garantia orçamentária do Fundo de Calamidade Pública, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" Means: Should veto number 28 to Bill 920/23 be overturned? So it's about a specific veto on a specific bill.\n\nQuestion2: \"O Fundo de Calamidade Pública deve ter recursos garantidos no orçamento, sem depender de medida provisória?\" Means: Should the Public Calamity Fund have guaranteed resources in the budget, without depending on provisional measure? That's about funding mechanism for a fund.\n\nThese are different topics: one is about a specific veto on a bill, the other about budget guarantee for a fund. Not same issue, not opposite polarity. So relation = DIFFERENT.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 626,
+    "completion_tokens": 219,
+    "estimated_cost": 5.2289e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMgvM7UESfYAO9F2KyLsPZK9",
+  "object": "chat.completion",
+  "created": 1790622195,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O modelo atual das concessionárias de energia no Brasil deve ser preservado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1464,
+    "total_tokens": 1512,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00054624,
+    "prompt_tokens_details": null
+  }
+}

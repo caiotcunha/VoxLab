@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5VE8fuWR35mPQsobR9PnxoL",
+  "object": "chat.completion",
+  "created": 1790624088,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements support the regulation of digital markets under PL 2768, expressing the same favorable stance toward the same legislative proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are from same actor (same person) in two public hearings about same PL 2768 (digital markets). Manifestation A is opening the hearing, describing purpose, supporting regulation, emphasizing importance. Manifestation B is closing remarks, also emphasizing importance, supporting discussion, wanting policies that guarantee competitiveness, etc. Both express favorable stance toward regulation of digital markets, same proposition: that regulation is needed, that PL 2768 is important. So they respond to same proposition (need for regulation / importance of PL 2768) with same direction (favor). So STANCE_MAINTAINED.\n\nWe must ensure that proposition is same specific: \"regulation of digital markets via PL 2768\". Both talk about importance of discussion, need for regulation, support. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1869,
+    "total_tokens": 2094,
+    "completion_tokens": 225,
+    "estimated_cost": 0.000107403,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R19Ns0VNBkPDdHYbkuSjmYxq",
+  "object": "chat.completion",
+  "created": 1790624105,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express criticism of current SUS eye‑care protocols and call for improvement, but they address different specific issues (retinopathy vs. macular edema), so they are not responding to the same proposition.\"\n}",
+        "reasoning_content": "We need to determine relation between Manifestation A and B.\n\nBoth are from same actor (same person) in two public hearings. We need to see if they respond to same specific proposition and stance.\n\nManifestation A: He is speaking about failures in SUS protocol for diabetic retinopathy treatment. He emphasizes primary care should solve problem, mentions mutirões, long waiting lines, need for better follow-up. He is essentially criticizing the current system, pointing out problems (queues, delays). Stance: Against current protocol/implementation? He says \"o problema maior é a fila de espera... precisamos tomar precaução...\". He seems to be critical of current approach, advocating improvement. So stance: Against current protocol's effectiveness.\n\nManifestation B: He opens meeting, discusses need to update protocols for diabetic macular edema, calls for revision and update, better financing, etc. He is advocating for protocol revision, similar criticism of current protocols. He also mentions importance of addressing challenges. So both are about diabetic eye disease protocols, but specific proposition? A addresses \"Falhas no protocolo do SUS para o tratamento da retinopatia diabética\" focusing on waiting lines, primary care. B addresses \"Atualização do protocolo de tratamento de edema macular diabético no SUS\". Both are about protocols for diabetic eye disease, but different specific conditions: retinopathy vs macular edema. Are they same proposition? Likely not identical proposition; they are related but distinct specific issues. The categories: INCOMPARABLE if they have determinable positions but not same specific proposition. Here both have stance against current protocol (they want improvement). But the proposition is not the same specific one. So INCOMPARABLE.\n\nThus relation = INCOMPARABLE.\n\nProvide reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1887,
+    "total_tokens": 2313,
+    "completion_tokens": 426,
+    "estimated_cost": 0.000142239,
+    "prompt_tokens_details": null
+  }
+}

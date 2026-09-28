@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5xr9uFEKGgW27R37SqRfoha",
+  "object": "chat.completion",
+  "created": 1790624044,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos públicos devem ser destinados à prevenção, pronta resposta e acompanhamento posterior a desastres socioambientais?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker is discussing need for contingency reserves for emergencies, criticizing lack of resources for civil defense, calling for structuring civil defense, and says \"conte com o nosso voto ... pela derrubada desse veto\". He supports overturning a veto (presumably related to resources). He also says \"não reservar recursos para isso é errado, é uma imbecilidade\". So stance: favor allocating resources, support overturning veto, support creating contingency reserve for emergencies, support structuring civil defense.\n\nWe need to formulate a neutral yes/no question that captures the central issue. Could be: \"Deve ser criada uma reserva de contingência específica para emergências e desastres socioambientais?\" Or \"Os recursos públicos devem ser destinados à prevenção e resposta a desastres socioambientais?\" The speech supports that. So stance_determinable = YES. target_question = something like \"Os recursos públicos devem ser destinados à prevenção, pronta resposta e acompanhamento posterior a desastres socioambientais?\" That's a yes/no. The speaker is in favor, so stance = FAVOR.\n\nCheck if any ambiguity: He explicitly says \"conte com o nosso voto ... pela derrubada desse veto\". So he is in favor of overturning veto. The veto likely blocks resources. So stance is clear.\n\nThus JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"Os recursos públicos devem ser destinados à prevenção, pronta resposta e acompanhamento posterior a desastres socioambientais?\",\n \"stance\": \"FAVOR\"\n}\n\nMake sure no extra spaces.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1479,
+    "total_tokens": 1865,
+    "completion_tokens": 386,
+    "estimated_cost": 0.00012034300000000001,
+    "prompt_tokens_details": null
+  }
+}

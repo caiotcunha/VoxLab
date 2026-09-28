@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxnPCoAETZFUVS4OGdxeFRbT",
+  "object": "chat.completion",
+  "created": 1790623905,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"relation\":\"INCOMPARABLE\",\"reasoning\":\"A Manifestação A trata da regulamentação do crédito consignado para servidores públicos, enquanto a Manifestação B trata da PEC 169/2019 sobre acumulação de cargos por professores. São proposições específicas distintas, com posições determináveis em cada uma, mas não comparáveis entre si.\"}",
+        "reasoning_content": "We need answer JSON only. Need classify relation between two manifestations. Need determine same proposition? Manifestation A about regulation of consignado credit for public servants, as relator closing hearing. He observes risks associated with consignado credit increasing, need commissions appreciate matter. Does he express stance? It seems against current consignado credit/card? But proposition? \"Regulamentação do empréstimo consignado para servidores públicos\" maybe he supports regulation? Need careful.\n\nManifestation B about PEC 169/2019 allowing teachers to hold two public positions in different areas; he supports freedom of choice, defends PEC, against restrictions. Different topic/proposition. So likely INCOMPARABLE: both have determinable positions but not same proposition. Need ensure not INSUFFICIENT_EVIDENCE. A has position? It says risks, need regulation, maybe favor regulation? Determinable? It is about consignado credit regulation. B about PEC 169 favor. Different propositions. So INCOMPARABLE.\n\nNeed produce JSON strict with relation and reasoning. No extra.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2017,
+    "total_tokens": 2318,
+    "completion_tokens": 301,
+    "estimated_cost": 0.0015299625006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 220
+    }
+  }
+}

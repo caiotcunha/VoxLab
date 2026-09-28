@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYATzbfGFFoSDk4OWR6bYAHk",
+  "object": "chat.completion",
+  "created": 1790622361,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As perguntas têm a mesma questão central, apenas com diferenças de redação e generalidade que não alteram o que está sendo decidido.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 455,
+    "completion_tokens": 52,
+    "estimated_cost": 5.694e-05,
+    "prompt_tokens_details": null
+  }
+}

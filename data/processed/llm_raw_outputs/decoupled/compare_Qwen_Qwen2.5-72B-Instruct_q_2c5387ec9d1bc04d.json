@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RafX6DMdbOUjuV8GjSDAWmHe",
+  "object": "chat.completion",
+  "created": 1790622233,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de um arcabouço legal para lidar com desastres, diferindo apenas no foco específico (recuperação de áreas atingidas vs. proteção de vulneráveis).\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 478,
+    "completion_tokens": 69,
+    "estimated_cost": 0.00017484,
+    "prompt_tokens_details": null
+  }
+}

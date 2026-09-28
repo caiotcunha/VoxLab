@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2WQeqWDH17Ixj8JHm58dFbM",
+  "object": "chat.completion",
+  "created": 1790624097,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the proposal to replace the FGTS birthday withdrawal with a credit product and each argue against ending the saque-aniversário, showing the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are about the same topic: substitution of FGTS birthday withdrawal (saque-aniversário) by a new credit product. Manifestation A: strongly in favor of keeping the saque-aniversário, argues it's beneficial, against ending it. Manifestation B: also supports keeping it, says not to end it, wants improvement, opposes ending. Both are AGAINST ending the saque-aniversário (i.e., they favor maintaining it). So they respond to same proposition: \"Should the saque-aniversário be eliminated/substituted?\" Both stance: AGAINST elimination (i.e., FAVOR maintaining). So same direction. Therefore STANCE_MAINTAINED.\n\nWe must ensure that proposition is same specific: substitution of saque-aniversário by credit. Both talk about substitution, both oppose ending. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2338,
+    "total_tokens": 2578,
+    "completion_tokens": 240,
+    "estimated_cost": 0.000127306,
+    "prompt_tokens_details": null
+  }
+}

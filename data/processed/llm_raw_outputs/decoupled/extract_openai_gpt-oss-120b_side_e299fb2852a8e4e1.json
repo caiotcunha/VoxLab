@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ratou6nyCx5MVg3jPIguVSBz",
+  "object": "chat.completion",
+  "created": 1790624056,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A prática de obsolescência programada deve ser combatida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about programmed obsolescence, criticizing it, calling for PROCON action, notification of suppliers, need for spare parts, etc. The stance is against programmed obsolescence, favoring regulation/consumer protection. So stance_determinable = YES.\n\nTarget question: need a neutral yes/no question that the speech answers. Could be: \"A prática de obsolescência programada deve ser combatida?\" Or \"Deve o PROCON intervir para coibir a obsolescência programada?\" The speech supports intervention and condemns the practice. So question: \"A obsolescência programada deve ser combatida?\" That's a yes/no. Or \"Deve ser proibida a prática de reduzir propositalmente a vida útil dos produtos?\" That works.\n\nStance: The speaker is against obsolescence, i.e., favor combating it => answer SIM => FAVOR.\n\nThus JSON:\n\n{\n \"stance_determinable\":\"YES\",\n \"target_question\":\"A prática de obsolescência programada deve ser combatida?\",\n \"stance\":\"FAVOR\"\n}\n\nCheck format: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1444,
+    "total_tokens": 1742,
+    "completion_tokens": 298,
+    "estimated_cost": 0.000104088,
+    "prompt_tokens_details": null
+  }
+}

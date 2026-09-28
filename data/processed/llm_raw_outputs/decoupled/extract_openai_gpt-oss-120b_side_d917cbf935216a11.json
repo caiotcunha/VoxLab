@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REaX8ES9lBMtXNbxzfE3D4rU",
+  "object": "chat.completion",
+  "created": 1790624063,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about inclusion of care economy in PIB calculation, and about whether to treat care economy as public policy, allocate budget, etc. The speaker seems to be questioning whether we need to give more visibility, whether to transform into policy, evaluate if Brazil needs mechanisms to address invisibility. She seems to be neutral? She says \"questionar se realmente precisamos dar ainda mais visibilidade a uma questão que já é amplamente discutida\". She seems to be opening debate, not stating a clear stance. She says \"para avaliar se a economia do cuidado merece ser tratada como política pública de envergadura ou se devemos focar em outras prioridades\". She does not commit to either side. So stance not determinable? The speech is about opening a hearing, not stating position. So stance_determinable = NO.\n\nThus target_question empty, stance empty.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2651,
+    "total_tokens": 2876,
+    "completion_tokens": 225,
+    "estimated_cost": 0.000136337,
+    "prompt_tokens_details": null
+  }
+}

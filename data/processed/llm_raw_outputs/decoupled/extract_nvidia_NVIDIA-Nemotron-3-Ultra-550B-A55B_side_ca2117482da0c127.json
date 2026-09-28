@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGiDAjkTFWgqYvZj2Qc4oUzM",
+  "object": "chat.completion",
+  "created": 1790624055,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacina contra a COVID-19 deve ser incorporada ao calendário de vacinação infantil?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is a parliamentary hearing about pandemic lessons, vaccination, misinformation. The speaker (a parliamentarian) expresses support for current government's reconstruction of health system, praises Ministry of Health, criticizes previous government, supports vaccination, opposes anti-vaccine campaign, supports inclusion of COVID vaccine for children, supports digital vaccination records. So there are multiple positions. Need to pick a central specific question. Probably the main stance: Should the COVID-19 vaccine be included in the childhood vaccination schedule? The speaker opposes anti-vaccine campaign and supports inclusion. So stance: FAVOR inclusion. The question: \"A vacina contra a COVID-19 deve ser incorporada ao calendário de vacinação infantil?\" That's a yes/no question. The speaker is in favor (YES). So stance_determinable = YES. target_question = that question. stance = FAVOR.\n\nCheck rules: Must be neutral question, affirmative measure. Good.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2613,
+    "total_tokens": 2880,
+    "completion_tokens": 267,
+    "estimated_cost": 0.0018939,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 216
+    }
+  }
+}

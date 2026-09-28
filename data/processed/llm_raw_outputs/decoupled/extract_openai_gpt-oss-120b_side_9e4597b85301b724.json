@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZBiSkIU1NzWjJk1sQLhtgrM",
+  "object": "chat.completion",
+  "created": 1790622118,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve garantir o financiamento e a responsabilidade pelo tratamento da retinopatia diabética?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker says: \"Ministério da Saúde lavou as mãos, jogou o problema para gestores municipais e estaduais... financing does not cover this treatment... we must fight to make this treatment available... Ministry must return to discuss this, not say it's a management problem.\" So the issue: Should the Ministry of Health be responsible for providing funding/treatment for diabetic retinopathy, rather than leaving it to states/municipalities? The question could be: \"O Ministério da Saúde deve assumir a responsabilidade e garantir financiamento para o tratamento da retinopatia diabética?\" That's a yes/no.\n\nThus stance: The speaker is in favor of Ministry taking responsibility (i.e., they think Ministry should discuss and provide). So answer: FAVOR (i.e., they support that). So stance_determinable = YES, target_question = \"O Ministério da Saúde deve garantir o financiamento e a responsabilidade pelo tratamento da retinopatia diabética?\" stance = FAVOR.\n\nCheck if any nuance: They criticize Ministry for washing hands, want Ministry to discuss, not shift to management. So they are against Ministry saying it's management problem, and for Ministry to take responsibility. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 653,
+    "total_tokens": 965,
+    "completion_tokens": 312,
+    "estimated_cost": 7.7201e-05,
+    "prompt_tokens_details": null
+  }
+}

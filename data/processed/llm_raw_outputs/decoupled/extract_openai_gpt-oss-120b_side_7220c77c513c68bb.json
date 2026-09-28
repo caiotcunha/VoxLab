@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpAntAoZJ8mbvEpMsPuhwXp9",
+  "object": "chat.completion",
+  "created": 1790624005,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speech is praising the minister, highlighting achievements, etc. No explicit stance for/against a policy question. It mentions \"agilidade e pronta resposta do Ministério em relação ao genocídio em curso da população indígena\" – praising actions. No clear stance on a specific policy question like \"should the Ministry continue these actions?\" Not a clear position on a specific question. So stance_determinable = NO.\n\nThus target_question empty, stance empty.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1016,
+    "total_tokens": 1158,
+    "completion_tokens": 142,
+    "estimated_cost": 6.1732e-05,
+    "prompt_tokens_details": null
+  }
+}

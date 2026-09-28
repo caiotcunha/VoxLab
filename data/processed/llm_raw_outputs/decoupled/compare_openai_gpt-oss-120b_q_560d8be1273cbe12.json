@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsXyZYBIUuHjuMQ9BHj2ypWe",
+  "object": "chat.completion",
+  "created": 1790632292,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da garantia de apoio e acessibilidade, a outra da adoção da perspectiva neurodiversa nas políticas públicas; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O apoio e a acessibilidade para pessoas autistas devem ser garantidos?\" (Should support and accessibility for autistic people be guaranteed?)\n\nQuestion2: \"As políticas públicas devem adotar a perspectiva da neurodiversidade para garantir os direitos das pessoas autistas?\" (Should public policies adopt the neurodiversity perspective to guarantee the rights of autistic people?)\n\nBoth ask about guaranteeing rights/support for autistic people. Q1 is about guaranteeing support and accessibility. Q2 is about adopting neurodiversity perspective in public policies to guarantee rights. They are related but not exactly same question. Q1 is about guarantee of support/accessibility (a specific measure). Q2 is about adopting a perspective (neurodiversity) in policies to guarantee rights. The answer to Q1 (yes) would imply support/accessibility should be guaranteed, which could be achieved via neurodiversity perspective, but not necessarily; there could be other ways. So they are different questions: one about guarantee of support, the other about policy approach. They are not opposite polarity. So classification: DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 705,
+    "completion_tokens": 300,
+    "estimated_cost": 6.5985e-05,
+    "prompt_tokens_details": null
+  }
+}

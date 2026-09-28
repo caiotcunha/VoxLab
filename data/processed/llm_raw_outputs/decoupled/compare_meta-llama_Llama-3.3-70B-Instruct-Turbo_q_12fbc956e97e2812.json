@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkPT6ecXtGuuVfKXIpzqMdZY",
+  "object": "chat.completion",
+  "created": 1790622367,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos distintos, uma sobre a importância dos mercados digitais e outra sobre a prioridade na regulamentação desses mercados.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 466,
+    "completion_tokens": 54,
+    "estimated_cost": 5.848000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

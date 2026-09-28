@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9DTGkt7hqqOzpmNkljv5K09",
+  "object": "chat.completion",
+  "created": 1790622242,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos diferentes: a primeira trata da recuperação de áreas atingidas por desastres climáticos, enquanto a segunda foca na proteção de pequenos negócios afetados por desastres naturais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 485,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00017743999999999998,
+    "prompt_tokens_details": null
+  }
+}

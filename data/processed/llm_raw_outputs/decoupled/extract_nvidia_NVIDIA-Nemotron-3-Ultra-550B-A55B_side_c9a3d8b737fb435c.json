@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6eJqeNwkz0hERy5DP741kKq",
+  "object": "chat.completion",
+  "created": 1790624079,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo deve rejeitar o atual grupo de trabalho de regulamentação do trabalho de motoristas de aplicativo e adotar o PL 536/2024?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a driver advocating against the current working group (GT) and for direct participation, and supports PL 536/24. The central question could be: \"Should the government reject the current working group on app driver regulation and adopt the PL 536/24 proposal?\" That's a yes/no question. The speaker is clearly against the current GT and favors PL 536. So stance determinable = YES. Target question neutral: \"O governo deve rejeitar o atual grupo de trabalho de regulamentação do trabalho de motoristas de aplicativo e adotar o PL 536/2024?\" That's a yes/no. The speaker answers YES (favor rejecting GT and adopting PL). So stance = FAVOR (since FAVOR = responds SIM). Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2315,
+    "total_tokens": 2569,
+    "completion_tokens": 254,
+    "estimated_cost": 0.0017163,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 187
+    }
+  }
+}

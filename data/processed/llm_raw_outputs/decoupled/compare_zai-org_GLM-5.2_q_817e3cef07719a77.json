@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhfMG4ZpfueuksCWbfunsG1c",
+  "object": "chat.completion",
+  "created": 1790624106,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas e medidas distintas: uma sobre financiamento de tratamento da retinopatia diabética no SUS e a outra sobre a aprovação de um projeto de lei que cria uma semana de conscientização sobre cardiopatia isquêmica.\"\n}\n```",
+        "reasoning_content": "The user wants me to classify the relationship between two yes/no questions extracted from speeches by the same actor at different times.\n\nQuestion 1: \"O Ministério da Saúde deve assumir a responsabilidade de financiar e disponibilizar o tratamento da retinopatia diabética no SUS?\"\n(Should the Ministry of Health take responsibility for financing and providing treatment for diabetic retinopathy in SUS?)\n\nQuestion 2: \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\"\n(Should Bill No. 3,811, of 2019, which institutes the National Awareness Week on Ischemic Heart Disease, be approved?)\n\nThese are clearly different questions. One is about financing/providing treatment for diabetic retinopathy in SUS. The other is about approving a bill that creates an awareness week for ischemic heart disease. Different measures, different objects, different scopes. Even though both relate to health, they are distinct issues.\n\nRelation: DIFFERENT.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 431,
+    "total_tokens": 741,
+    "completion_tokens": 310,
+    "estimated_cost": 0.00068331750048,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 229
+    }
+  }
+}

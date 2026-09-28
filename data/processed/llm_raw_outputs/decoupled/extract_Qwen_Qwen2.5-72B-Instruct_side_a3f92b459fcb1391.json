@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYClNfDZczLK0grer0bA7DNy",
+  "object": "chat.completion",
+  "created": 1790622143,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma legislação específica do sistema prisional para questões indígenas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 842,
+    "total_tokens": 895,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00032432,
+    "prompt_tokens_details": null
+  }
+}

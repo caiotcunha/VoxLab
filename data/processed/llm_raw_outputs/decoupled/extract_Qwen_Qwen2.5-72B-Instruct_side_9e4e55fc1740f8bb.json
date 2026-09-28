@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxOoTzED3vwNQ22Ypd5eaSgp",
+  "object": "chat.completion",
+  "created": 1790622145,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve haver um arcabouço legal e tributário para a recuperação de áreas atingidas por desastres climáticos?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1712,
+    "total_tokens": 1775,
+    "completion_tokens": 63,
+    "estimated_cost": 0.00064152,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFuuzsLKkcHbyTASZocp46HS",
+  "object": "chat.completion",
+  "created": 1790622378,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos, um relacionado à reestruturação do Estado para atender ao envelhecimento da população e o outro sobre a precarização do trabalho na mineração brasileira.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 464,
+    "completion_tokens": 65,
+    "estimated_cost": 6.0700000000000005e-05,
+    "prompt_tokens_details": null
+  }
+}

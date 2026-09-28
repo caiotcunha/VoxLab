@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVJbeDg4ZqkiTak4sqMNSBCf",
+  "object": "chat.completion",
+  "created": 1790622149,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser abastecido com recursos orçamentários permanentes?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1151,
+    "total_tokens": 1205,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00043596000000000005,
+    "prompt_tokens_details": null
+  }
+}

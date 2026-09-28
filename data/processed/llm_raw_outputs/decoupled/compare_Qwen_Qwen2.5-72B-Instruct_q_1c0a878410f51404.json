@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3Amaxp53xZ7uFa0Dtv1u9hj",
+  "object": "chat.completion",
+  "created": 1790622244,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da visão das pessoas autistas como detentoras de direitos e cidadania, enquanto a segunda pergunta foca no apoio ao movimento da neurodiversidade para garantir esses direitos e dignidade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 477,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00017452000000000003,
+    "prompt_tokens_details": null
+  }
+}

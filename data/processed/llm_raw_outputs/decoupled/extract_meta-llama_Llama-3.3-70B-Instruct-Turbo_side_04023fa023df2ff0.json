@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYqkBRNPHuOsY8UboMrZIObo",
+  "object": "chat.completion",
+  "created": 1790622341,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas para a primeira infância devem incluir o enfrentamento ao racismo?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1765,
+    "total_tokens": 1817,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00019314,
+    "prompt_tokens_details": null
+  }
+}

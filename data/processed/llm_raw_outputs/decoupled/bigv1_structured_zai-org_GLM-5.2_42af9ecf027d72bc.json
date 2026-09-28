@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjSzlWI34RfcRSOTd7fmhr9F",
+  "object": "chat.completion",
+  "created": 1790623858,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial e em políticas de saúde e trabalho\",\n  \"target_proposition_b\": \"O cuidado deve ser reconhecido como trabalho e não deve ser apropriado pelo mercado\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze Manifestation A:**\n    *   **Context:** Public hearing about PL 1673/21 (National Policy for Functional Health).\n    *   **Content:** The speaker is thanking participants, summarizing the hearing, and making some forward-looking statements. They mention the inclusion of people with chronic pain in the biopsychosocial diagnosis, not just people with disabilities. They advocate for a multidisciplinary approach and labor policies that consider people with chronic pain.\n    *   **Proposition:** The speaker clearly favors including people with chronic pain in the biopsychosocial diagnosis and related health/labor policies. \"Pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial e em políticas de saúde e trabalho.\"\n    *   **Stance:** FAVOR.\n    *   **Determinability:** YES. The speaker explicitly states what they want to advance (\"queremos que as pessoas que convivem com dor... tenham direito ao direito diagnóstico biopsicossocial\", \"É preciso construir um código de relacionamento laboral...\").\n\n2.  **Analyze Manifestation B:**\n    *   **Context:** Public hearing about a national care policy for the elderly.\n    *   **Content:** The speaker mentions approving a project for \"mães cuidadoras\" (caregiver mothers) retirement. They emphasize that \"cuidar\" (caring) is work, but goes beyond work. Everyone needs to care, especially governments. They quote Lula about caring with centrality on people. They argue that care should not be appropriated by the market.\n    *   **Proposition:** The speaker favors a national care policy that recognizes care as work and prevents the commodification of care/people. \"O cuidado deve ser reconhecido como trabalho e não deve ser mercantilizado/apropriado pelo mercado.\" Or more broadly: \"É necessária uma política de cuidado que centralize as pessoas e não seja mercantilizada.\"\n    *   **Stance:** FAVOR.\n    *   **Determinability:** YES. The speaker clearly advocates for care not being appropriated by the market and being central to people.\n\n3.  **Compare Propositions:**\n    *   Prop A: Inclusion of people with chronic pain in biopsychosocial diagnosis and labor/health policies.\n    *   Prop B: Recognition of care as work and prevention of the commodification of care (national care policy for the elderly/caregivers).\n    *   Are they the same or semantically equivalent? No. One is about chronic pain and biopsychosocial diagnosis/labor relations for those with pain. The other is about the philosophy and policy of \"caring\" (cuidar), recognizing it as work and opposing its commodification. They are different topics and different propositions.\n\n4.  **Format Output:**\n    *   `stance_determinable_a`: \"YES\"\n    *   `stance_determinable_b`: \"YES\"\n    *   `target_proposition_a`: \"Pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial e em políticas de saúde e trabalho\"\n    *   `target_proposition_b`: \"O cuidado deve ser reconhecido como trabalho e não deve ser apropriado pelo mercado\"\n    *   `same_proposition`: \"NO\"\n    *   `stance_a`: \"FAVOR\"\n    *   `stance_b`: \"FAVOR\"",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2150,
+    "total_tokens": 2983,
+    "completion_tokens": 833,
+    "estimated_cost": 0.0024452550010799997,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 715
+    }
+  }
+}

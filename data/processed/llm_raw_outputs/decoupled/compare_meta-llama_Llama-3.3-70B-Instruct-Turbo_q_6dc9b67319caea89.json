@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnnuR85eIPNsxXr1sjw1oLOm",
+  "object": "chat.completion",
+  "created": 1790622367,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas perguntas são sobre a necessidade de recursos específicos para a prevenção de desastres, com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 457,
+    "completion_tokens": 49,
+    "estimated_cost": 5.648e-05,
+    "prompt_tokens_details": null
+  }
+}

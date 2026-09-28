@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ri0Q93Id4vBTGPVIwdtZjwbi",
+  "object": "chat.completion",
+  "created": 1790624106,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de políticas distintas: uma sobre concessão de aluguel social a vítimas de violência doméstica e outra sobre aprovação de um projeto de lei que cria programa de atenção a mulheres na menopausa.\"\n}",
+        "reasoning_content": "We need to classify relation between two yes/no questions. Q1: \"O Aluguel Social deve ser concedido a vítimas de violência doméstica?\" Q2: \"O Projeto de Lei nº 5.602/2019, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério, deve ser aprovado?\" They are different topics: social rent for domestic violence victims vs a bill for menopause program. Different issues. So relation = DIFFERENT. Provide reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 422,
+    "total_tokens": 605,
+    "completion_tokens": 183,
+    "estimated_cost": 0.0006136000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 113
+    }
+  }
+}

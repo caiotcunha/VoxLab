@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ro6W1NOIw4L0X9xmrWxi58M9",
+  "object": "chat.completion",
+  "created": 1790622618,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve avançar na implementação de ações e normas de bem-estar animal?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (public hearing on animal welfare).\n    *   Task: Determine if the stance is clear (Determinability), formulate a neutral yes/no target question, and determine the speaker's stance (FAVOR/AGAINST).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING\n    *   *Theme:* Ações de bem-estar animal e seus benefícios para o Brasil (Animal welfare actions and their benefits for Brazil)\n    *   *Content:* The speaker thanks the organizers, acknowledges colleagues from MAPA, Ministry of Health, EMBRAPA. States that animal welfare is not just for animal lovers but an economic agenda. Mentions international treaties (EU-MERCOSUR) and how lack of animal welfare progress can be a barrier. Mentions UNEP Nexus Resolution and how Brazil needs to respond. Emphasizes that animal welfare dialogues with competitiveness. Mentions PPA Participativo where cage-free production was the top voted proposal in MAPA, obligating the government to respond. Concludes: \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, é sobretudo pela competitividade econômica do Brasil.\" (It is for the good of the animals, yes. It is for the good of the animals, but don't be fooled, it is above all for the economic competitiveness of Brazil.)\n    *   *Stance:* The speaker strongly advocates for advancing animal welfare actions/policies in Brazil, citing both animal welfare and economic competitiveness (international trade, consumer demands) as reasons. She explicitly supports the implementation of animal welfare standards (e.g., cage-free production, responding to UNEP resolutions, preparing the productive sector).\n\n3.  **Determine Determinability:**\n    *   Is the position sufficiently clear on a specific issue? Yes. The speaker clearly supports advancing animal welfare actions/policies in Brazil (e.g., cage-free production, aligning with international standards).\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   The core issue is whether Brazil should advance/implement animal welfare actions/policies (specifically to align with international standards and societal demands).\n    *   Draft 1: O Brasil deve avançar nas ações de bem-estar animal?\n    *   Draft 2: O Brasil deve implementar políticas de bem-estar animal?\n    *   Draft 3: O Brasil deve adotar medidas de bem-estar animal, como a produção livre de gaiolas?\n    *   Let's keep it broad but specific to the hearing's theme: \"O Brasil deve avançar nas ações e normas de bem-estar animal?\" or \"O Brasil deve implementar ações de bem-estar animal?\"\n    *   Let's use: \"O Brasil deve avançar nas ações de bem-estar animal?\"\n\n5.  **Determine Stance:**\n    *   The speaker is clearly in favor of advancing these actions.\n    *   `stance`: \"FAVOR\"\n\n6.  **Format Output:**\n    *   JSON strict format.\n    *   Keys: `stance_determinable`, `target_question`, `stance`.\n\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"O Brasil deve avançar na implementação de ações e normas de bem-estar animal?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2283,
+    "total_tokens": 3096,
+    "completion_tokens": 813,
+    "estimated_cost": 0.00222054750216,
+    "prompt_tokens_details": {
+      "cached_tokens": 1152,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 765
+    }
+  }
+}

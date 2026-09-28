@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6dGMcsfUTLjmfpgBmI9mqBC",
+  "object": "chat.completion",
+  "created": 1790624067,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra Covid-19 deve ser mantida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about anti-vaccine movement, criticizing politicians for using anti-vaccine stance, calling it criminal, irresponsible, etc. The specific issue: vaccination of children against Covid-19? The speaker says \"é movimento antivacina, sim!\" and condemns anti-vaccine campaign, says they are using it for political gain, and calls it a crime. So the stance is against the anti-vaccine movement, i.e., they are in favor of vaccination (or against anti-vaccine stance). The question could be: \"A campanha antivacina contra a vacinação de crianças contra Covid-19 deve ser combatida?\" Or \"A vacinação de crianças contra Covid-19 deve ser mantida?\" The speech is about opposing anti-vaccine rhetoric, supporting vaccination. So a neutral question: \"A vacinação de crianças contra Covid-19 deve ser mantida?\" The speaker is in favor of vaccination, thus answer is SIM (FAVOR). So stance_determinable = YES, target_question = \"A vacinação de crianças contra Covid-19 deve ser mantida?\" stance = FAVOR.\n\nCheck if any nuance: The speaker condemns anti-vaccine movement, says it's a crime, wants to combat it. So they support vaccination. So answer is yes to maintain vaccination. So produce JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2289,
+    "total_tokens": 2613,
+    "completion_tokens": 324,
+    "estimated_cost": 0.00013977300000000002,
+    "prompt_tokens_details": null
+  }
+}

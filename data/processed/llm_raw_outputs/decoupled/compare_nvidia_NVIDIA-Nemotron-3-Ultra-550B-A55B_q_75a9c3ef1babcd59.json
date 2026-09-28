@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkWJOYuUmh0OIRHksxdqtYA0",
+  "object": "chat.completion",
+  "created": 1790624085,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta restringe a obrigatoriedade a crianças de 6 meses a 5 anos a partir de 2024, enquanto a segunda é genérica sobre crianças sem faixa etária nem data, então tratam de questões distintas.\"\n}",
+        "reasoning_content": "We need to compare two yes/no questions.\n\nQ1: \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos a partir de 2024?\" (Should Covid-19 vaccination be mandatory for children aged 6 months to 5 years starting 2024?)\n\nQ2: \"A vacinação de crianças contra a COVID-19 deve ser obrigatória?\" (Should vaccination of children against COVID-19 be mandatory?)\n\nQ1 is specific: age range 6 months to 5 years, starting 2024. Q2 is general: children (no age range, no start date). Are they the same issue? Not exactly; Q2 could refer to all children, any age, any time. The answer to Q1 does not determine answer to Q2. So they are DIFFERENT. Not opposite polarity. Not equivalent. Not uncertain. So relation = DIFFERENT.\n\nProvide JSON with relation and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 688,
+    "completion_tokens": 280,
+    "estimated_cost": 0.00082,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 210
+    }
+  }
+}

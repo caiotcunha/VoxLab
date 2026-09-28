@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpY2WsJubVuIWcQP1Q1jejHK",
+  "object": "chat.completion",
+  "created": 1790624098,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da redução da fila de espera, a outra da revisão de protocolos clínicos; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A fila de espera para oftalmologista especializado em retina deve ser reduzida?\" Means: Should the waiting list for retina specialist ophthalmologist be reduced? So it's about reducing waiting times.\n\nQuestion2: \"O SUS deve revisar e atualizar os protocolos clínicos para o tratamento do edema macular diabético?\" Means: Should the SUS (Brazilian health system) review and update clinical protocols for treating diabetic macular edema? That's about updating protocols.\n\nThese are different issues: one is about waiting list length, the other about clinical protocols. Not same question, not opposite polarity. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 593,
+    "completion_tokens": 189,
+    "estimated_cost": 4.7078e-05,
+    "prompt_tokens_details": null
+  }
+}

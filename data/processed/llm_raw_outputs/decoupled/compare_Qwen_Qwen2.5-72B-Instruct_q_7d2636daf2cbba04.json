@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQdPbgO279UW7iWPAeYm9hrH",
+  "object": "chat.completion",
+  "created": 1790622243,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos diferentes da política energética: a primeira trata do fortalecimento da soberania nacional através de energias limpas e renováveis, enquanto a segunda questiona a necessidade de modificar o modelo de concessões de energia.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 462,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00016916,
+    "prompt_tokens_details": null
+  }
+}

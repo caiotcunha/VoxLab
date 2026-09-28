@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsExWEp91PfjDqP1jz503RQk",
+  "object": "chat.completion",
+  "created": 1790624121,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A specific prison law for indigenous people should be created through public consultation.\",\n  \"target_proposition_b\": \"The PNGATI report should be immediately approved in the Environment Committee.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two statements.\n\nFirst, identify theme, target proposition, stance, determinability, comparability.\n\nWe must output JSON with keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nWe need to decide for each if stance determinable (YES/NO/UNCERTAIN). Then if YES, provide target proposition (short neutral phrase) and stance (FAVOR/AGAINST/UNCERTAIN). Then compare if same proposition.\n\nLet's parse Manifestation A.\n\nEvent: public hearing about racism and prejudice against indigenous in prison system and proposal of specific prison law for indigenous.\n\nSpeaker says: thanks, shares mesa yesterday about anti-racist struggle. Talks about criminalization of indigenous leaders, case of Cacique Babau, narrative of criminalization, drugs planted. Then says: \"I would like to put here, as a follow-up of today's hearing, our mandate at disposal, together with you and others at the table, to think about a specific legislation for the prison system for indigenous issues from a public consultation. I would like to take this as a follow-up.\"\n\nSo the speaker is proposing/endorsing the creation of a specific prison law for indigenous people, via public consultation. That's a clear stance: they favor the proposition \"There should be a specific prison legislation for indigenous people, developed through public consultation.\" So stance determinable = YES. Target proposition: \"A specific prison law for indigenous people should be created through public consultation.\" Stance: FAVOR.\n\nManifestation B.\n\nEvent: public hearing about approval of PL 4347/21 to make permanent the National Policy for Territorial and Environmental Management of Indigenous Lands (PNGATI).\n\nSpeaker gives a long speech about food without poison, contradictions of agribusiness, need for budget, allocation of resources from PPA for PNGATI implementation, recognition of indigenous environmental agents, articulation with education and health policies, need for consultation, not just giving processed food, expanding PNAE, issues of pesticides causing diabetes, weapons, cooptation, cultural traits, bioeconomy, not wanting tractors over rights, mirrors vs retroescavadeiras, CPMI 8 Jan, garimpo, mining, machine found in Kayapo territory, need to incorporate financing policies, then proposes as follow-up: immediate approval in Environment Committee of the PNGATI report, because once dispatched the opinion it will move through committees. Want to leave this year with positive balance to schedule in plenary next year. Also propose listing six priority points (like six biomes) and a simplified letter signed by MPI, FUNAI, APIB, COIAB, ANMIGA, etc., to send to 513 parliamentarians. Ask if consensus.\n\nSo the speaker clearly favors approval of the PNGATI report in the Environment Committee, and wants budget allocation, etc. The main proposition: \"The PNGATI report should be immediately approved in the Environment Committee.\" Also \"Resources from PPA should be allocated for PNGATI implementation.\" There are multiple propositions. But we need a single target proposition per manifestation? The instruction: \"Proposição-alvo: afirmação específica que a manifestação aceita ou rejeita.\" Could be multiple but we choose the main one. The speaker explicitly says \"a imediata aprovação na Comissão de Meio Ambiente do relatório da PNGATI\". That's a clear stance: FAVOR. Also they propose other actions but the main stance is favor approval. So stance determinable = YES. Target proposition: \"The PNGATI report should be immediately approved in the Environment Committee.\" Stance: FAVOR.\n\nNow comparability: Are the two manifestations about the same proposition or semantically equivalent? Manifestation A is about creating a specific prison law for indigenous people. Manifestation B is about approving PNGATI report and budget. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck fields: stance_determinable_a = \"YES\", stance_determinable_b = \"YES\". target_proposition_a = \"A specific prison law for indigenous people should be created through public consultation.\" target_proposition_b = \"The PNGATI report should be immediately approved in the Environment Committee.\" same_proposition = \"NO\". stance_a = \"FAVOR\". stance_b = \"FAVOR\".\n\nMake sure strings are short neutral phrase. Good.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2396,
+    "total_tokens": 3436,
+    "completion_tokens": 1040,
+    "estimated_cost": 0.0034860000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 939
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6GKw2zY5vzsC6nSJnnRtFUU",
+  "object": "chat.completion",
+  "created": 1790624173,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas expressam apoio a avançar em projetos, mas tratam de temas diferentes (regulamentação do lobby vs regulamentação do trabalho de motoristas de aplicativo), portanto não respondem à mesma proposição.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements.\n\nManifestation A: about regulation of lobby, mentions need for transparency, praising CGU, says it's a project of the country, wants to advance. No explicit stance on a specific proposition? He mentions \"debater a Resolução CNCP nº 53/2022, sobre entidades fechadas de previdência complementar.\" But the speech is about lobbying regulation, not directly about that resolution. He seems supportive of discussion, transparency, advancing. He is not stating a stance for/against a specific proposition. So stance maybe not determinable.\n\nManifestation B: about regulation of work of app drivers. He praises government, says need to advance, wants legislation, supportive of the project. He is in favor of advancing the legislation.\n\nThus both have some supportive stance but on different topics: lobbying regulation vs app drivers regulation. They are not same proposition. So relation is INCOMPARABLE (both have determinable stance but on different propositions). Need to ensure stance determinable: A expresses support for transparency and advancing regulation, but not a clear stance on a specific proposition. Could be considered stance for the project of lobbying regulation. He says \"acho que essa é a solução... avançarmos\". So supportive. So both have stance, but different propositions => INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1287,
+    "total_tokens": 1629,
+    "completion_tokens": 342,
+    "estimated_cost": 0.00010575899999999999,
+    "prompt_tokens_details": null
+  }
+}

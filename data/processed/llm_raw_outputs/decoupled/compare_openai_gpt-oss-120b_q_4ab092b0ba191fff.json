@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB1MFLt5KhyOJ5v2iHmBTvuX",
+  "object": "chat.completion",
+  "created": 1790624156,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta propõe criar um novo sistema nacional de apoio, enquanto a outra trata de manter a participação de um ministério existente, questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"Deve ser criado um sistema nacional de apoio às vítimas de desastres, incluindo auxílio emergencial e recuperação de pequenos negócios?\" Means: Should a national system of support for disaster victims be created, including emergency aid and recovery of small businesses?\n\nQuestion2: \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres naturais deve ser mantida?\" Means: Should the participation of the Ministry of Social Development in prevention and aid actions for natural disasters be maintained?\n\nThese are different issues: Q1 is about creating a new national system of support. Q2 is about maintaining the participation of a specific ministry in prevention and aid actions. They are not the same question, nor opposite polarity. They are different. So relation = DIFFERENT.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 644,
+    "completion_tokens": 227,
+    "estimated_cost": 5.4019000000000006e-05,
+    "prompt_tokens_details": null
+  }
+}

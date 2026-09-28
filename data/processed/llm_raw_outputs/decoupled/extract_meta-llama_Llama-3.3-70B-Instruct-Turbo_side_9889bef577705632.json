@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDdZfek08pFxSvIZTrB5bDpY",
+  "object": "chat.completion",
+  "created": 1790622269,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estatuto da Pessoa Idosa deve ser fortalecido e implementado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3226,
+    "total_tokens": 3275,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00033828000000000005,
+    "prompt_tokens_details": null
+  }
+}

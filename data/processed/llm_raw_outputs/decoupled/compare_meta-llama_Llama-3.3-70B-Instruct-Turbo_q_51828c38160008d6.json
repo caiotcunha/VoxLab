@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RS2ZqPgwrTAtYIOWADrHjdmh",
+  "object": "chat.completion",
+  "created": 1790622383,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de objetos e medidas diferentes, uma sobre veto a um projeto de lei e outra sobre abastecimento de recursos a um fundo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 444,
+    "completion_tokens": 51,
+    "estimated_cost": 5.562e-05,
+    "prompt_tokens_details": null
+  }
+}

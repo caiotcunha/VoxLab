@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaREx1H34JLb7z7cSGx1J0a6",
+  "object": "chat.completion",
+  "created": 1790622140,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A implantação de políticas públicas para a população LGBTQIA+ deve ser melhorada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1338,
+    "total_tokens": 1389,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00050208,
+    "prompt_tokens_details": null
+  }
+}

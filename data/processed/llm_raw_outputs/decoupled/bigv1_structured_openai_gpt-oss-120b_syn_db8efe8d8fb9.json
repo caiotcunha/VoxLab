@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RU02zvLGeiGur77OL5vanHSo",
+  "object": "chat.completion",
+  "created": 1790632961,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"People with chronic pain should be included in biopsychosocial diagnosis and related health and labor policies\",\n  \"target_proposition_b\": \"Mothers who are caregivers should have the right to retire at 62 with the possibility to parcel their debt with Social Security\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then compare if same proposition.\n\nFirst, Manifestation A: Long speech about inclusion of people with chronic pain in biopsychosocial diagnosis, policies, etc. The theme is \"Apoio ao Projeto de Lei 1673/21 que institui a Política Nacional de Saúde Funcional\". The speaker thanks participants, mentions projects, wants meeting to include chronic pain people, wants policies, etc. The target proposition? Likely something like \"People with chronic pain should be included in biopsychosocial diagnosis and have related policies\". The speaker advocates for that. So stance is FAVOR. Is stance determinable? Yes, clear support for inclusion of chronic pain people in diagnosis and policies. So stance_determinable_a = YES. target_proposition_a: \"People with chronic pain should be included in biopsychosocial diagnosis and related policies\". Or \"Inclusion of people with chronic pain in biopsychosocial diagnosis and policies\". Must be short neutral phrase.\n\nManifestation B: Speech about approving a project to ensure retirement rights for mother caregivers at 62, parceling debt, acknowledges caring work, says caring is work, etc. The speaker says \"Nós acabamos de aprovar um projeto ...\". So they are supporting that project. The target proposition: \"Retirement rights for mother caregivers at 62 should be guaranteed, with ability to parcel debt\". The speaker is in favor. So stance determinable = YES, stance = FAVOR. target_proposition_b: \"Retirement rights for mother caregivers at 62 should be guaranteed\". Or \"Mothers who are caregivers should have the right to retire at 62\". Good.\n\nNow comparability: Are the two propositions the same? No. One about chronic pain inclusion in health policy; other about retirement rights for mother caregivers. Different topics. So same_proposition = NO.\n\nNow produce JSON with keys:\n\nstance_determinable_a: \"YES\"\nstance_determinable_b: \"YES\"\ntarget_proposition_a: phrase\ntarget_proposition_b: phrase\nsame_proposition: \"NO\"\nstance_a: \"FAVOR\"\nstance_b: \"FAVOR\"\n\nMake sure strings exactly as required.\n\nLet's craft target propositions:\n\nFor A: \"People with chronic pain should be included in biopsychosocial diagnosis and related health and labor policies\"\n\nFor B: \"Mothers who are caregivers should have the right to retire at 62 with the possibility to parcel their debt with Social Security\"\n\nMake them short but clear.\n\nNow output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1959,
+    "total_tokens": 2601,
+    "completion_tokens": 642,
+    "estimated_cost": 0.000181623,
+    "prompt_tokens_details": null
+  }
+}

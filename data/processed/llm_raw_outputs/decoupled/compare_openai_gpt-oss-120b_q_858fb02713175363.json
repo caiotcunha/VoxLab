@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rra1kCQBUFjXZGfKC2lgljG0",
+  "object": "chat.completion",
+  "created": 1790624101,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da alocação geral de recursos para prevenção de desastres, enquanto a outra trata de financiamento permanente de um fundo específico, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\" Means: Should Brazil allocate specific resources for prevention of natural disasters? It's about allocation of resources for prevention.\n\nQuestion2: \"O Fundo de Calamidade Pública deve receber recursos permanentes, sem depender de medida provisória?\" Means: Should the Public Calamity Fund receive permanent resources, without depending on provisional measure? That's about funding the fund permanently, not dependent on provisional measure.\n\nAre they the same issue? Both about funding for disaster-related matters, but Q1 is about allocating resources for prevention of natural disasters (maybe general budget allocation). Q2 is about a specific fund (Public Calamity Fund) receiving permanent resources, not provisional. That's about funding for calamities (likely response/relief) not specifically prevention. Also the mechanism differs: specific fund vs general allocation. So they are different questions. The answer to one does not determine answer to other. So relation = DIFFERENT.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 682,
+    "completion_tokens": 277,
+    "estimated_cost": 6.207499999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

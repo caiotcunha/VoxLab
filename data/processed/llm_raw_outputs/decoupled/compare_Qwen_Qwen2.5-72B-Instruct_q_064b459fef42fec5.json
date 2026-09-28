@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUWk87efQmtOZhZ4CFCkgzAH",
+  "object": "chat.completion",
+  "created": 1790622247,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de aspectos diferentes: a primeira questiona a regulamentação de riscos de empréstimos consignados, enquanto a segunda aborda a liberdade de professores exercerem dois cargos públicos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 486,
+    "completion_tokens": 69,
+    "estimated_cost": 0.00017772000000000003,
+    "prompt_tokens_details": null
+  }
+}

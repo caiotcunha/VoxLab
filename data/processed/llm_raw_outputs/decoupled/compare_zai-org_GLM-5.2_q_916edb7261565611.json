@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxP74c7zFunpdAMn6NUEnZin",
+  "object": "chat.completion",
+  "created": 1790624088,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "",
+        "reasoning_content": "```json\n{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da integração da questão racial em políticas públicas para a primeira infância, enquanto a segunda trata da efetivação de uma lei específica (Lei nº 10.639/2003) nas escolas, envolvendo objetos e escopos distintos.\"\n}\n```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 476,
+    "completion_tokens": 83,
+    "estimated_cost": 0.00025334250047999993,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 79
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYpoBxNDD8xn2BunrEbGPsq8",
+  "object": "chat.completion",
+  "created": 1790633201,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Veto nº 28 to PL 920/23 should be overturned\",\n  \"target_proposition_b\": \"Resources should be allocated to the Fundo de Calamidade Pública\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then comparability.\n\nFirst, Manifestation A: Long speech about disaster prevention, funding, veto of PL 920/23, need to invest in prevention, need to overturn veto, need career for civil defense agents, etc. We need to identify a specific proposition the speaker accepts or rejects. The speaker seems to support the proposition: \"Veto nº 28 (to PL 920/23) should be overturned\" and \"More resources should be allocated to prevention of disasters\". Also \"There should be a career for civil defense agents\". The speech includes many statements. We need to pick a single target proposition. The instruction: \"target_proposition_a: phrase short and neutral\". We need to decide if stance determinable: Yes, because there are clear positions. So stance_determinable_a = YES. Then target proposition: maybe \"The veto to PL 920/23 should be overturned\" or \"Resources should be allocated to disaster prevention\". Which is more central? The speech repeatedly calls for overturning veto and for more prevention funding. Choose one. Let's pick \"The veto to PL 920/23 should be overturned\". That's a specific proposition. Stance: FAVOR (they want to overturn). So stance_a = FAVOR.\n\nNow Manifestation B: The speaker says: \"I am against the way resources are placed in the Fundo de Calamidade Pública, created 1969, never funded, it's inefficient. It's an error to allocate resources fixed for prevention and response. Allocation via measure provisional is better.\" So the proposition: \"Resources should be allocated to the Fundo de Calamidade Pública (public calamity fund)\". The speaker is against that. So target proposition: \"Resources should be allocated to the Fundo de Calamidade Pública\". Stance: AGAINST. So stance_determinable_b = YES.\n\nNow comparability: Are the two propositions the same? A is about overturning veto to PL 920/23 which concerns allocating 5% of agreements to a calamity fund for prevention. B is about opposing allocation of resources to the same Fundo de Calamidade Pública (the fund created 1969). Both involve the fund, but A wants to keep the provision (overturn veto) that would allocate resources to the fund; B opposes allocating resources to the fund. They are opposite positions on the same underlying proposition: \"Resources should be allocated to the Fundo de Calamidade Pública\". However A's proposition is about overturning a veto to a specific PL that would allocate resources to the fund. B's proposition is about the general allocation to the fund being a bad idea. They are semantically about the same policy (allocation to the fund). So they are about the same proposition (or at least semantically equivalent). The instruction: \"Comparability: the two manifestations treat the same proposition or semantically equivalent? YES, NO, UNCERTAIN. Same theme, different measures or overlapping propositions receive NO.\" Here they are about same fund allocation, albeit one is about a specific PL's veto, the other about the general principle of allocating resources to the fund. They are essentially the same proposition: allocate resources to the fund. So same_proposition = YES.\n\nCheck if any nuance: A's proposition is \"Veto nº 28 should be overturned\" which would keep the allocation of 5% of agreements to the fund. B's proposition is \"Resources should not be allocated to the fund\". So they are opposite stances on the same underlying proposition. So comparability YES.\n\nNow produce JSON.\n\nKeys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\", \"YES\", \"The veto to PL 920/23 should be overturned\", \"Resources should be allocated to the Fundo de Calamidade Pública\", \"YES\", \"FAVOR\", \"AGAINST\". Ensure strings exactly as required.\n\nCheck if target proposition phrasing neutral: \"The veto to PL 920/23 should be overturned\" is a proposition. Could be \"Veto nº 28 to PL 920/23 should be overturned\". Use that. For B: \"Resources should be allocated to the Fundo de Calamidade Pública\". Good.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3097,
+    "total_tokens": 4092,
+    "completion_tokens": 995,
+    "estimated_cost": 0.00028373900000000003,
+    "prompt_tokens_details": null
+  }
+}

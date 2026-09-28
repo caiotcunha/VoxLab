@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rkzhx6k0CPMeMkjol6Gw5FUi",
+  "object": "chat.completion",
+  "created": 1790624049,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve implementar registro individualizado de vacinação?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker praises vaccination efforts, criticizes anti-vaccine campaign, calls for digital vaccination records, increased investment, etc. The central stance: opposition to anti-vaccine campaign? Or support for digital vaccination records? The speech includes multiple points. We need a single question that captures the central issue. Likely: \"A campanha antivacina deve ser combatida?\" Or \"O registro individualizado de vacinação deve ser implementado?\" The speaker says \"Não há justificativa... para não darmos esse salto...\". So they are in favor of implementing individual digital vaccination records. Also they criticize anti-vaccine campaign, saying it's concerning and must be countered. Which is more central? The speech overall is about improving vaccination coverage, combating misinformation, and implementing digital records. The question could be: \"O Ministério da Saúde deve implementar registro individualizado de vacinação?\" That is a clear stance: they are in favor. So stance_determinable = YES, target_question = \"O Ministério da Saúde deve implementar registro individualizado de vacinação?\" stance = FAVOR.\n\nCheck if any ambiguity: they clearly support it. So answer JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2384,
+    "total_tokens": 2673,
+    "completion_tokens": 289,
+    "estimated_cost": 0.000137338,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVUWzElmCv2GExgtBSI9aeQn",
+  "object": "chat.completion",
+  "created": 1790632501,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações referem-se ao mesmo projeto de lei do governo (PLP 12) e expressam posição contrária a ele, pedindo sua rejeição e a adoção de uma proposta alternativa.\"\n}",
+        "reasoning_content": "We need to compare two statements. Both are from same actor (blinded) at two public hearings about regulation of app drivers. Both express opposition to the government's bill (PLP 12) and support for alternative proposal (PL 536). In A, they call for total rejection of the project. In B, they also say \"não aprovem este projeto em vista de como ele se apresenta\" and want new text PL 536. So both are against the same specific proposition (the government bill). Both stance = AGAINST. So STANCE_MAINTAINED.\n\nCheck if same specific proposition: both refer to \"este projeto\" (the government bill). Yes. So classification STANCE_MAINTAINED.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2688,
+    "total_tokens": 2911,
+    "completion_tokens": 223,
+    "estimated_cost": 0.0018346,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157
+    }
+  }
+}

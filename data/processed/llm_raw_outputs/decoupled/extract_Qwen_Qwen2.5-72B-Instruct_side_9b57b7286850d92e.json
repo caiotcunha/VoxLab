@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1cZ0VYgpx2nAz0D35zffn2q",
+  "object": "chat.completion",
+  "created": 1790622220,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2403,
+    "total_tokens": 2452,
+    "completion_tokens": 49,
+    "estimated_cost": 0.0008846800000000001,
+    "prompt_tokens_details": null
+  }
+}

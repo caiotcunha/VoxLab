@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxTtyhhz32JxKHOlOBB8ele1",
+  "object": "chat.completion",
+  "created": 1790622280,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Comissão Externa deve focar em um Estado piloto único para erradicar a tuberculose até 2030?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4078,
+    "total_tokens": 4138,
+    "completion_tokens": 60,
+    "estimated_cost": 0.000427,
+    "prompt_tokens_details": null
+  }
+}

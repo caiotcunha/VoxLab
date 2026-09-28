@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REvAioz20CzFIUPlsZrSeQcD",
+  "object": "chat.completion",
+  "created": 1790624036,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A inclusão de pessoas com dor crônica no diagnóstico biopsicossocial deve ser garantida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about supporting inclusion of people with chronic pain in biopsychosocial diagnosis, policies, etc. It seems the speaker is advocating for inclusion of chronic pain patients in health policies, a biopsychosocial diagnosis, and labor policies. So there is a stance: they are in favor of policies that include chronic pain patients. The specific question could be: \"A inclusão de pessoas com dor crônica no diagnóstico biopsicossocial deve ser garantida?\" Or \"Deve ser criada uma política nacional para pessoas com dor crônica?\" The speech supports that. So stance_determinable = YES. target_question: \"A inclusão de pessoas com dor crônica no diagnóstico biopsicossocial deve ser garantida?\" The stance: FAVOR (SIM). Provide JSON.\n\nCheck if any nuance: The speech is about requesting meeting to include chronic pain people, advocating for policies. So yes.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1426,
+    "total_tokens": 1680,
+    "completion_tokens": 254,
+    "estimated_cost": 9.594200000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

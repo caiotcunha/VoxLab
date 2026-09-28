@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXDuEvSVA5IUSCZJpN6xLQcF",
+  "object": "chat.completion",
+  "created": 1790622919,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se posicionam de forma contrária (AGAINST) à obrigatoriedade da vacinação contra Covid-19 em crianças, abordando a mesma proposição específica com a mesma direção de stance.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two manifestations from the same actor in two different parliamentary events.\nI need to output a strict JSON with \"relation\" and \"reasoning\".\n\nManifestation A:\n- Event: PUBLIC_HEARING\n- Date: 2023-11-08\n- Theme: Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\n- Stance: AGAINST the mandatory COVID-19 vaccination for children 6 months to 5 years. \"Eu vou me opor a isso... O que nós somos contra é quanto a obrigatoriedade.\" (Wait, the last part is from B, but A says \"Eu vou me opor a isso... enquanto eu tiver mandato...\"). She says \"Nós não somos antivax... Mas nós não somos cegos... existe uma elite globalista que quer, sim, forçar essa vacinação, inclusive em bebês... Nós queremos um Governo que... nos convença... não queremos um Governo que seja tirânico...\". She is clearly AGAINST the mandatory COVID-19 vaccination for children.\n\nManifestation B:\n- Event: MINISTER_APPEARANCE\n- Date: 2023-11-28\n- Theme: Debate sobre a vacinação de crianças contra Covid-19\n- Stance: AGAINST the mandatory COVID-19 vaccination. \"O que nós somos contra é quanto a obrigatoriedade.\" \"Não é possível que simplesmente se obrigue e ainda se punam pessoas...\". She is AGAINST the mandatory COVID-19 vaccination for children (and people in general, but the theme is children).\n\nProposition:\nA: Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024.\nB: Debate sobre a vacinação de crianças contra Covid-19. (She mentions \"O que nós somos contra é quanto a obrigatoriedade\" and talks about children/idosos, but the theme is vaccination of children against Covid-19).\n\nAre they the same specific proposition?\nA is about the *mandatory* COVID-19 vaccination for children 6 months to 5 years starting in 2024.\nB is about the vaccination of children against Covid-19, and she explicitly states she is against the *mandatory* nature of it (\"O que nós somos contra é quanto a obrigatoriedade\").\n\nBoth are against the mandatory COVID-19 vaccination for children.\nIs it the same specific proposition? Yes, mandatory COVID-19 vaccination for children.\nDirection of stance: Both are AGAINST.\n\nLet's check the categories:\n- STANCE_MAINTAINED: same specific proposition, same stance.\n- STANCE_REVERSED: same specific proposition, opposite stance.\n- INCOMPARABLE: determinable position, but not the same specific proposition.\n- RELATION_UNCERTAIN: unclear.\n- INSUFFICIENT_EVIDENCE: no determinable position.\n\nBoth manifestations clearly express a stance AGAINST the mandatory COVID-19 vaccination for children.\nManifestation A: \"obrigatoriedade da imunização contra a COVID-19 em crianças de 6 meses a 5 anos\" -> \"Eu vou me opor a isso... não queremos um Governo que seja tirânico, que queira usar de tirania para cima das famílias.\"\nManifestation B: \"vacinação de crianças contra Covid-19\" -> \"O que nós somos contra é quanto a obrigatoriedade.\"\n\nTherefore, the relation is STANCE_MAINTAINED.\n\nReasoning: Ambas as manifestações se posicionam contra a obrigatoriedade da vacinação contra Covid-19 em crianças, sendo a Manifestação A contra a imposição para crianças de 6 meses a 5 anos e a Manifestação B reafirmando a oposição à obrigatoriedade da vacina.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3243,
+    "total_tokens": 4104,
+    "completion_tokens": 861,
+    "estimated_cost": 0.0023784675040800004,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 795
+    }
+  }
+}

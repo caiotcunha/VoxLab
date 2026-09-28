@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjJW4sFobGfnsfOaImT6lnUk",
+  "object": "chat.completion",
+  "created": 1790622301,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4361,
+    "total_tokens": 4419,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00045466000000000007,
+    "prompt_tokens_details": null
+  }
+}

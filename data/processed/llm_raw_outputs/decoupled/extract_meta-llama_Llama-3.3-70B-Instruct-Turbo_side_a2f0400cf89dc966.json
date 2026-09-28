@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ry9UUJEFh0gbJfDdsBwy2O0k",
+  "object": "chat.completion",
+  "created": 1790622277,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A ANEEL deve ser mais firme na fiscalização e punição das concessionárias de energia elétrica?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1319,
+    "total_tokens": 1375,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00014982,
+    "prompt_tokens_details": null
+  }
+}

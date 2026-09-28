@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWkD7Beo3aZw1psLkSrJgS8B",
+  "object": "chat.completion",
+  "created": 1790632496,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma trata da derrubada de um veto a um projeto de lei, a outra sobre a forma de financiamento permanente do Fundo de Calamidade Pública, questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" Means: Should veto number 28 to Bill 920/23 be overturned? So it's about a specific veto to a bill.\n\nQuestion2: \"O Fundo de Calamidade Pública deve receber recursos permanentes, sem depender de medida provisória?\" Means: Should the Public Calamity Fund receive permanent resources, without depending on provisional measure? That's about funding mechanism for a fund.\n\nThese are different topics: one about a specific veto to a bill, the other about funding source for a fund. Not same issue. So relation = DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 619,
+    "completion_tokens": 214,
+    "estimated_cost": 5.136500000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

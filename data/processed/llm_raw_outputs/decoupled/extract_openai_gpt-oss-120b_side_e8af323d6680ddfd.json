@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RN7O6iO5eNN0lUiPBySEyRNH",
+  "object": "chat.completion",
+  "created": 1790624004,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker (unknown) is speaking at a public hearing about prevention of natural disasters and funding. They thank deputies, talk about need for resources, mention they authored a bill that created funding sources for the National Fund for Public Calamities, and they support allocating resources for prevention. The stance: they are in favor of allocating resources, creating funding sources, and prevention measures. The specific question could be: \"Deve o Brasil criar fontes de recursos específicas para a prevenção de desastres naturais?\" Or \"Deve ser alocado mais recursos para a prevenção de desastres?\" The speech clearly supports that. So stance_determinable = YES. target_question: \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\" The answer: they are in favor, so stance = FAVOR.\n\nCheck if any nuance: they propose more resources, they authored law to fund. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1244,
+    "total_tokens": 1500,
+    "completion_tokens": 256,
+    "estimated_cost": 8.954799999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

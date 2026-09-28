@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ruq0rW0Esd6eaJmuKW34zW4r",
+  "object": "chat.completion",
+  "created": 1790622367,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre o aumento do orçamento para combater a tuberculose e a outra sobre a estratégia de erradicação da doença em um Estado piloto.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 471,
+    "completion_tokens": 64,
+    "estimated_cost": 6.118000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

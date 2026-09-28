@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaMYv3rsygVF7KtoaLxd3x1j",
+  "object": "chat.completion",
+  "created": 1790623996,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The issue is \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\". The speaker expresses opposition to mandatory vaccination, says \"não quero que seja imposta\", \"vou me opor a isso\". She also says they are not anti-vax but oppose forced vaccination. So stance is against mandatory vaccination. So determinable = YES.\n\nTarget question: \"A obrigatoriedade da vacinação contra Covid-19 para crianças de 6 meses a 5 anos deve ser mantida?\" Or \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\" The answer is NO (against). So stance = AGAINST.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1846,
+    "total_tokens": 2070,
+    "completion_tokens": 224,
+    "estimated_cost": 0.000106382,
+    "prompt_tokens_details": null
+  }
+}

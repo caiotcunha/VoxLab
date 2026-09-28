@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHdFwYyGDJ7T0mI5aWOCjo2x",
+  "object": "chat.completion",
+  "created": 1790633157,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Aluguel Social is necessary for victims of violence\",\n  \"target_proposition_b\": \"The resource for Casa da Mulher Brasileira should remain under the management of the Ministry of Justice\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: Long speech about violence against women, need for protection network, DEAMs, NEANS, etc. She says \"eu sou favorável, por exemplo, ao projeto... Aluguel Social é necessário...\" Also she says \"não me digam os gestores que nós temos que ter delegacias apenas em cidades de porte médio e de porte maior. Nós temos que ter DEAMs em todas as cidades brasileiras. Nós temos que ter Núcleos Especializados...\" So target proposition could be \"DEAMs and specialized units should exist in all Brazilian cities\" or \"Aluguel Social is necessary for victims of violence\". Need a short neutral phrase.\n\nWe need to decide stance determinable: Yes, because she expresses favor. So stance_determinable_a = YES. target_proposition_a: maybe \"DEAMs and specialized units should be present in all Brazilian cities\". Or \"Aluguel Social is necessary for victims of violence\". Which is more central? She says \"eu sou favorável, por exemplo, ao projeto... Aluguel Social é necessário\". That is a clear proposition. Let's choose that.\n\nStance: FAVOR.\n\nNow Manifestation B: She says \"Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não manter esse recurso sob a gerência do Ministério da Justiça? É isso o que eu defendo. Eu não questiono que estejamos em todos os meandros... Agora, eu concordo plenamente com essa estrutura que já existe. Quanto é que vamos ganhar em eficiência?\" She is defending keeping the resource under the Ministry of Justice. So target proposition: \"The resource for Casa da Mulher Brasileira should remain under the management of the Ministry of Justice\". She says she defends that. So stance determinable = YES, stance = FAVOR.\n\nNow comparability: Are the two propositions the same? No. One is about Aluguel Social for victims of violence; the other about management of Casa da Mulher Brasileira under Ministry of Justice. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nAll values strings.\n\nThus:\n\n{\n \"stance_determinable_a\": \"YES\",\n \"stance_determinable_b\": \"YES\",\n \"target_proposition_a\": \"Aluguel Social is necessary for victims of violence\",\n \"target_proposition_b\": \"The resource for Casa da Mulher Brasileira should remain under the management of the Ministry of Justice\",\n \"same_proposition\": \"NO\",\n \"stance_a\": \"FAVOR\",\n \"stance_b\": \"FAVOR\"\n}\n\nMake sure no extra spaces.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2512,
+    "total_tokens": 3204,
+    "completion_tokens": 692,
+    "estimated_cost": 0.000210584,
+    "prompt_tokens_details": null
+  }
+}

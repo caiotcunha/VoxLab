@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rouzs82EyjidQUJ6dVWRe4hf",
+  "object": "chat.completion",
+  "created": 1790624046,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The topic is ratification of the Inter-American Convention on the Protection of Human Rights of Older Persons. The speaker repeatedly emphasizes importance of ratification, calls for approval, urges movement, proposes date before October, etc. So stance is clearly in favor of ratification. So stance_determinable = YES. Target question: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada pelo Brasil?\" (Yes/No). Or \"O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos?\" That's neutral. Stance: FAVOR (since they support ratification). Provide JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2543,
+    "total_tokens": 2748,
+    "completion_tokens": 205,
+    "estimated_cost": 0.000128941,
+    "prompt_tokens_details": null
+  }
+}

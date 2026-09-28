@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJR1YQzPTdeZdcZQ6NqrLo3z",
+  "object": "chat.completion",
+  "created": 1790622242,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: a primeira sobre a instituição de um estatuto para povos ciganos, e a segunda sobre a inclusão da economia do cuidado no PIB e sua transformação em política pública.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 463,
+    "completion_tokens": 69,
+    "estimated_cost": 0.00016944,
+    "prompt_tokens_details": null
+  }
+}

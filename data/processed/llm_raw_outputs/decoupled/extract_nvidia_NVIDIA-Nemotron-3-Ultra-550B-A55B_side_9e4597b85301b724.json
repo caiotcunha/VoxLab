@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlkDtQAnYzV59EOZfvAhsNKJ",
+  "object": "chat.completion",
+  "created": 1790622112,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve revisar o protocolo do SUS e garantir financiamento para o tratamento da retinopatia diabética?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there's a clear position on a specific issue. The speaker says Ministry of Health washed its hands, pushed problem to municipal/state managers. Funding doesn't cover treatment. Need to fight for treatment to be available. Ministry should discuss again, not say it's management problem. So position: Ministry of Health should take responsibility / revise protocol / fund treatment. The question: \"Should the Ministry of Health revise the SUS protocol and ensure funding for diabetic retinopathy treatment?\" That's a yes/no. The speaker is in favor of Ministry taking action. So stance = FAVOR (YES). Determine stance_determinable = YES. Provide target_question neutral. Provide stance = FAVOR.\n\nMake sure JSON keys exactly.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 682,
+    "total_tokens": 898,
+    "completion_tokens": 216,
+    "estimated_cost": 0.0008162,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 157
+    }
+  }
+}

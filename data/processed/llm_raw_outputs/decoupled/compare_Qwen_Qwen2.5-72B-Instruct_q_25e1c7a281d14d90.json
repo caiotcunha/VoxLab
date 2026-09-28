@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RM7DDMzBVhCutC3X1R3z2h3I",
+  "object": "chat.completion",
+  "created": 1790622249,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: proteção aos consumidores idosos e combate à obsolescência programada.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 452,
+    "completion_tokens": 45,
+    "estimated_cost": 0.00016452,
+    "prompt_tokens_details": null
+  }
+}

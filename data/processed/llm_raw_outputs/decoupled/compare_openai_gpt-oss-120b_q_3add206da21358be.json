@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYXkX5MpWAcNt6KVU5krjniU",
+  "object": "chat.completion",
+  "created": 1790633108,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de assuntos distintos: uma sobre aprovação de lei de proteção ao consumidor idoso em seguros de vida, a outra sobre obrigação de fabricantes de manter peças e assistência indefinidamente.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.002/2019, que visa garantir maior proteção aos consumidores idosos nos contratos de seguro de vida, deve ser aprovado?\" So asks: Should the bill be approved? It's about consumer protection for elderly in life insurance contracts.\n\nQuestion2: \"Os fabricantes devem ser obrigados a manter peças de reposição e assistência técnica indefinidamente, mesmo após o término da vida útil do produto?\" Asks: Should manufacturers be required to keep spare parts and technical assistance indefinitely, even after product's end of life.\n\nThese are different topics: one about insurance consumer protection for elderly; the other about right to repair/obligation for manufacturers. Different measures, objects, scope. So relation = DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 429,
+    "total_tokens": 671,
+    "completion_tokens": 242,
+    "estimated_cost": 5.701299999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

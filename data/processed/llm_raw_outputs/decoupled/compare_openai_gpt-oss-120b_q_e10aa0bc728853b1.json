@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNe2e92tyGNfb0tBngGWST03",
+  "object": "chat.completion",
+  "created": 1790624182,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas distintas: inclusão de cotas em políticas culturais versus criação de subcomissão para fiscalizar políticas de autismo.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"As políticas de fomento cultural devem incluir cotas para pessoas com deficiência?\" => Should cultural promotion policies include quotas for people with disabilities?\n\nQuestion2: \"Deve ser criada uma subcomissão para fiscalizar a implementação das políticas públicas e leis relativas ao Transtorno do Espectro Autista?\" => Should a subcommittee be created to monitor implementation of public policies and laws related to Autism Spectrum Disorder?\n\nThese are different issues: first about inclusion quotas in cultural policies for people with disabilities (general disability). Second about creating a subcommittee to monitor autism policies. While both relate to disability, they are distinct measures, objects, scope. So relation is DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 632,
+    "completion_tokens": 219,
+    "estimated_cost": 5.2511e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQnSw7lliK4yKGm2qh80KdE5",
+  "object": "chat.completion",
+  "created": 1790624089,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações abordam a mesma proposição — a obrigatoriedade da vacinação contra COVID‑19 em crianças — e em ambas o orador se posiciona contra a obrigatoriedade, defendendo a liberdade de escolha e questionando a segurança e os dados que fundamentam a medida.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are about mandatory vaccination of children against COVID-19. Both speakers oppose mandatory vaccination, argue for freedom, question data, mention safety concerns. Both are against mandatory vaccination (i.e., stance AGAINST mandatory vaccination). They are responding to same specific proposition? The proposition: \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\" (mandatory vaccination). Both speak against it. So same proposition, same stance (AGAINST). Therefore STANCE_MAINTAINED.\n\nCheck if any nuance: Both are against mandatory vaccination, but both also support vaccines generally. So stance on the specific proposition is same. So answer STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3145,
+    "total_tokens": 3398,
+    "completion_tokens": 253,
+    "estimated_cost": 0.0021291,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170
+    }
+  }
+}

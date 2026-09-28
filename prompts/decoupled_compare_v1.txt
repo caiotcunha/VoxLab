@@ -1,0 +1,23 @@
+Duas perguntas de sim ou não foram extraídas, de forma independente, de duas falas do mesmo ator em momentos diferentes. Cada pergunta descreve a questão central que uma das falas responde. Você NÃO recebe as falas nem as respostas do ator: julgue apenas as perguntas.
+
+Classifique a relação entre as duas perguntas:
+
+- EQUIVALENT: são a mesma questão, com a mesma polaridade. Diferenças de redação, de detalhe ou de generalidade que não mudam o que está sendo decidido contam como EQUIVALENT.
+- OPPOSITE_POLARITY: são a mesma questão, mas uma pergunta pelo oposto da outra, de modo que responder SIM a uma equivale a responder NÃO à outra. Exemplo: "O saque-aniversário do FGTS deve ser mantido?" e "O saque-aniversário do FGTS deve ser extinto?".
+- DIFFERENT: são questões diferentes (outra medida, instrumento, objeto, população ou escopo), mesmo que o tema seja o mesmo. A resposta a uma não determina a resposta à outra.
+- UNCERTAIN: não é possível decidir com segurança.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "relation": "EQUIVALENT|OPPOSITE_POLARITY|DIFFERENT|UNCERTAIN",
+  "reasoning": "explicação breve, uma frase"
+}}
+
+Não inclua texto fora do JSON.
+
+--- Pergunta 1 ---
+{question_x}
+
+--- Pergunta 2 ---
+{question_y}

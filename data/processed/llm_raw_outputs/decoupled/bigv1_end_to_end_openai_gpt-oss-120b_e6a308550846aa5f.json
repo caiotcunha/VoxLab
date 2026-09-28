@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R93g6h6ydbjQ6CRAzmhB5QkV",
+  "object": "chat.completion",
+  "created": 1790624120,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INSUFFICIENT_EVIDENCE\",\n  \"reasoning\": \"Nenhuma das manifestações apresenta uma posição clara (favor ou contra) sobre uma proposição específica; ambas são comentários gerais sobre descarbonização.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe must see if they respond to same specific proposition. Manifestation A is about descarbonization of fuel sector, transition energy, mentions need for regulatory framework, ACV, etc. No explicit stance on a specific proposition (e.g., a bill). It's more general discussion, not clearly favor or against a specific measure. Manifestation B is about measures to incentivize biometano, discusses criteria, mentions need for investment, etc. Also not a clear stance on a specific proposition. Both are discussing decarbonization, but not same specific proposition. So they are not comparable? They have determinable positions? They express concerns, but not a clear stance (favor/against) on a specific proposition. So likely INSUFFICIENT_EVIDENCE because no clear stance on a proposition. Or maybe INCOMPARABLE because they have positions but not same proposition. The categories: INSUFFICIENT_EVIDENCE: at least one manifestation does not present position determinable on any specific proposition. Here both lack a clear stance on a specific proposition. So INSUFFICIENT_EVIDENCE.\n\nThus output JSON with relation INSUFFICIENT_EVIDENCE and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2416,
+    "total_tokens": 2721,
+    "completion_tokens": 305,
+    "estimated_cost": 0.000141242,
+    "prompt_tokens_details": null
+  }
+}

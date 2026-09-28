@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIunuo4xA6rYaAT4cR1JQUem",
+  "object": "chat.completion",
+  "created": 1790624055,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 2.002/2019, que visa garantir maior proteção aos consumidores idosos nos contratos de seguro de vida, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is a PROCON director, stating that they are in agreement with the proposal of PL 2002/2019 that aims to guarantee greater protection to elderly consumers. He says \"nós estamos de acordo com a proposição\". So the stance is favorable to the proposal (which is about more accessible criteria in life insurance contracts for elderly). The specific question could be: \"O Projeto de Lei nº 2.002/2019, que visa garantir maior proteção aos consumidores idosos nos contratos de seguro de vida, deve ser aprovado?\" Or \"A proposta de tornar os critérios de seguros de vida mais acessíveis para idosos deve ser mantida?\" The central issue: support for the proposal. So stance_determinable = YES. target_question: a neutral yes/no question about the proposal. Something like \"O Projeto de Lei nº 2.002/2019, que trata de critérios mais acessíveis nos contratos de seguro de vida para idosos, deve ser aprovado?\" The speaker says they are in agreement, so stance = FAVOR (SIM). So JSON.\n\nCheck if any nuance: He also mentions issues with insurance, but overall he supports the proposal. So answer.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2284,
+    "total_tokens": 2604,
+    "completion_tokens": 320,
+    "estimated_cost": 0.000138908,
+    "prompt_tokens_details": null
+  }
+}

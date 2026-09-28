@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX01Go7s87dvJEXXpNV72mVM",
+  "object": "chat.completion",
+  "created": 1790622386,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"UNCERTAIN\",\n  \"reasoning\": \"Não há informações suficientes para determinar se o Projeto de Lei Complementar nº 12 se refere ao mesmo tema de regulamentação do trabalho de motoristas de aplicativo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 460,
+    "completion_tokens": 58,
+    "estimated_cost": 5.876e-05,
+    "prompt_tokens_details": null
+  }
+}

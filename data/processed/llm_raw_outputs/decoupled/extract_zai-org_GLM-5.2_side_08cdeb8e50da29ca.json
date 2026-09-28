@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPd8sbrBRQmUJs9BhL4oUhr4",
+  "object": "chat.completion",
+  "created": 1790622441,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from an actor at a parliamentary event (blinded).\n    *   Task: Determine if the stance is determinable (YES/NO/UNCERTAIN), formulate a neutral target question (if YES), and determine the stance (FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON format with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING\n    *   *Date:* 2023-11-09\n    *   *Theme:* Aprovação do Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI).\n    *   *Speech highlights:*\n        *   \"O Brasil agora precisa sustentar o direito dos povos indígenas...\"\n        *   \"É importante dizer que um dos encaminhamentos que vamos tirar daqui... é alocar recursos específicos do PPA para a implementação da PNGATI...\"\n        *   \"A PNGATI deve estar articulada com a política de educação escolar indígena e de atendimento à saúde indígena...\"\n        *   \"a imediata aprovação na Comissão de Meio Ambiente do relatório da PNGATI...\"\n        *   \"Nós queríamos sair deste ano com um saldo positivo, para conseguirmos, no ano que vem, pautar no plenário principal a PNGATI.\"\n        *   \"sensibilizando os Parlamentares a apoiar a PNGATI.\"\n\n3.  **Evaluate Determinability:**\n    *   Does the speaker take a clear position on a specific issue? Yes. The speaker explicitly advocates for the approval, implementation, and funding of the PNGATI (Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas).\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   The central issue is the approval/implementation of the PNGATI (Projeto de Lei 4347/21).\n    *   Draft question: \"O Projeto de Lei 4347/21, que torna permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI), deve ser aprovado?\"\n    *   Refinement: Keep it neutral and focused on the main theme. \"A Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI) deve ser aprovada e implementada?\" or \"O Projeto de Lei 4347/21, que torna permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI), deve ser aprovado?\" Let's stick closer to the event theme: \"O Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas deve ser aprovado?\"\n\n5.  **Determine Stance:**\n    *   The speaker says: \"a imediata aprovação na Comissão de Meio Ambiente do relatório da PNGATI\", \"Nós queríamos sair deste ano com um saldo positivo, para conseguirmos, no ano que vem, pautar no plenário principal a PNGATI\", \"sensibilizando os Parlamentares a apoiar a PNGATI\".\n    *   The speaker is clearly in favor of the approval and implementation of the PNGATI.\n    *   `stance`: \"FAVOR\"\n\n6.  **Format Output:**\n    *   JSON strict format.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"O Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas deve ser aprovado?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1929,
+    "total_tokens": 2872,
+    "completion_tokens": 943,
+    "estimated_cost": 0.0026067825007199995,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 877
+    }
+  }
+}

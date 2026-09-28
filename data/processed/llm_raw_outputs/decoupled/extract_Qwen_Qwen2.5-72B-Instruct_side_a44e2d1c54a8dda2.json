@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUECvp5S9HMTkt4tWMN9hil3",
+  "object": "chat.completion",
+  "created": 1790622201,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas para pessoas com Transtorno do Espectro Autista devem ser efetivamente implementadas e fiscalizadas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2322,
+    "total_tokens": 2383,
+    "completion_tokens": 61,
+    "estimated_cost": 0.0008603199999999999,
+    "prompt_tokens_details": null
+  }
+}

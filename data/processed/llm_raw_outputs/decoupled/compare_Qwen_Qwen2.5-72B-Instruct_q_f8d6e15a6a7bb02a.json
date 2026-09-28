@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMYXr4Eu75Al5d2VFyR8oouP",
+  "object": "chat.completion",
+  "created": 1790622255,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de aspectos distintos da gestão de desastres climáticos: financiamento à prevenção e estruturação de carreiras na Defesa Civil.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 451,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00016464,
+    "prompt_tokens_details": null
+  }
+}

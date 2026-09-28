@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8FigNtZBFvaNyUagQ4bBRXB",
+  "object": "chat.completion",
+  "created": 1790624114,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express clear positions, but they address different propositions: A critiques judicial activism, while B addresses regulation of energy concessionaires.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe have Manifestation A: about judicial activism, criticizes Supreme Court for overstepping legislative role. Stance: Against judicial activism / against Supreme Court overreach. So stance is AGAINST judicial activism / against Supreme Court acting beyond competence.\n\nManifestation B: about concessionaires, wants stricter regulation, ANEEL more firm, proposes criteria for renewal, criticizes concessionaires for not complying with law. Stance: AGAINST concessionaires non-compliance, for stricter regulation. It's about a different proposition: regulation of energy concessions, not about judicial activism. So they are not about same specific proposition. Both have determinable positions (they express stance). But they are about different topics, so INCOMPARABLE.\n\nThus relation = INCOMPARABLE. Provide brief reasoning.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2273,
+    "total_tokens": 2498,
+    "completion_tokens": 225,
+    "estimated_cost": 0.000122351,
+    "prompt_tokens_details": null
+  }
+}

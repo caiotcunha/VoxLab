@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtUpGjni5iH8WnjAlhQs2HEs",
+  "object": "chat.completion",
+  "created": 1790622132,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra a COVID-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2153,
+    "total_tokens": 2209,
+    "completion_tokens": 56,
+    "estimated_cost": 0.0007974800000000002,
+    "prompt_tokens_details": null
+  }
+}

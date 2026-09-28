@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoO30EoIViTsy11cHmC69OCw",
+  "object": "chat.completion",
+  "created": 1790624130,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A defende a disponibilização de tratamento de retinopatia diabética pelo SUS e critica o Ministério da Saúde, enquanto a Manifestação B apoia o PL 3.811/2019 e políticas cardiovasculares no SUS; são proposições específicas distintas.\"\n}",
+        "reasoning_content": "We need answer JSON strict. Need classify relation between two manifestations. Need understand task. We have two literal manifestations same actor in different parliamentary events, blinded. Need classify relation in categories. Need not judge actor consistency, only relation. Need determine if both respond to same specific proposition with same/opposite stance, or incomparable etc.\n\nWe need parse Manifestation A and B.\n\nA: Public hearing 2022-08-17 theme failures in SUS protocol for diabetic retinopathy treatment. Speaker criticizes Ministry of Health for washing hands, shifting problem to municipal/state managers, funding doesn't include treatment, need fight for treatment availability, innovations/new meds, judicialization. Ministry should resume discussing subject. It's about SUS protocol/funding for diabetic retinopathy treatment. Position: against Ministry's stance/protocol? Favor treatment availability? Need identify proposition specific. It responds to proposition maybe \"SUS should provide treatment for diabetic retinopathy / Ministry should fund/discuss protocol\" favor. But no explicit proposition under consideration? It's a public hearing about failures. Determinable stance: favors making treatment available via SUS, criticizes Ministry. But \"proposition\" in categories likely means specific policy proposal/bill/proposition? Need infer. B: Public hearing 2022-12-06 theme benefits/challenges QualiSUS Cardio for elderly in SUS. Speaker (maybe chair) thanks, discusses heart diseases, supports approval of PL 3811/2019 instituting National Awareness Week on Ischemic Heart Disease, supports SUS adjustments for cardiac valvular diseases under three pillars, \"apoio total e irrestrito às temáticas do coração.\" Position favor PL 3811/2019 and heart disease SUS attention. Different proposition: diabetic retinopathy treatment vs cardiac awareness/treatment. Not same specific proposition. Both have determinable positions. So INCOMPARABLE.\n\nNeed ensure no same proposition? Both about SUS funding/treatment? But specific propositions differ. A: diabetic retinopathy treatment in SUS; B: PL 3811/2019 National Awareness Week on Ischemic Heart Disease and QualiSUS Cardio/heart diseases. Not same. So INCOMPARABLE.\n\nNeed produce JSON only. Reasoning brief. Need maybe mention A supports SUS treatment for diabetic retinopathy; B supports PL 3811/2019 and heart disease policies; different propositions. relation INCOMPARABLE.\n\nNeed be careful: Manifestation B includes \"deixo aqui o meu apoio total e irrestrito às temáticas do coração\" and PL. A has no bill, but stance on SUS protocol. Both determinable.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1111,
+    "total_tokens": 1734,
+    "completion_tokens": 623,
+    "estimated_cost": 0.0015999375005999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 539
+    }
+  }
+}

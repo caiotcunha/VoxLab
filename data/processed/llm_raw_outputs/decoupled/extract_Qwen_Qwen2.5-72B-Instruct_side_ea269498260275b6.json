@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3PJrixLGK2nQZoTFQFXXins",
+  "object": "chat.completion",
+  "created": 1790622133,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1651,
+    "total_tokens": 1708,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00061716,
+    "prompt_tokens_details": null
+  }
+}

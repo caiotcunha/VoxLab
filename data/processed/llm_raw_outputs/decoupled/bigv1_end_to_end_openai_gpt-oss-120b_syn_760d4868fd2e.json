@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwldokEKQun1huWGR4VvQSeQ",
+  "object": "chat.completion",
+  "created": 1790624125,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements support the discussion and advancement of the digital markets regulation (PL 2768/22), showing the same favorable stance toward the same legislative proposal.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are from same actor (same person) in two public hearings about same PL 2768/22. Manifestation A is opening the hearing, describing purpose, supporting regulation, emphasizing importance. Manifestation B is closing remarks, also emphasizing importance, urging discussion, supporting regulation. Both express favorable stance toward regulation of digital markets. They respond to same proposition: the regulation of digital markets via PL 2768/22. So stance same (FAVOR). Therefore STANCE_MAINTAINED.\n\nWe need brief reasoning. Provide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1876,
+    "total_tokens": 2055,
+    "completion_tokens": 179,
+    "estimated_cost": 9.9842e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUM2bddCGKgAozNtIsgqsPn9",
+  "object": "chat.completion",
+  "created": 1790622601,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Devem ser criadas políticas públicas específicas voltadas para mulheres no climatério e menopausa?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": "The speaker is opening a public hearing about policies for women in menopause and climacteric. Let me analyze their stance.\n\nKey passages:\n- \"Apresentei parecer contrário ao projeto e seus apensados, na forma do substitutivo, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" - She presented a contrary opinion on the bill that creates a program for women in menopause/climacteric.\n- \"acredito que a criação de políticas públicas específicas não é a solução efetiva para melhorar a qualidade de vida dessas mulheres.\" - She believes creating specific public policies is not the effective solution.\n- \"acredito que a solução está na conscientização individual e na atuação do setor privado, e não na criação de novas políticas públicas.\" - She believes the solution is in individual awareness and private sector action, not in creating new public policies.\n- \"demonstrar que o amparo à saúde da mulher no climatério e na menopausa pode ser alcançado sem a necessidade de políticas públicas específicas.\" - She wants to show that support for women's health in menopause can be achieved without specific public policies.\n\nSo the speaker is clearly against creating specific public policies for women in menopause/climacteric. The target question would be something like: \"Should specific public policies be created for women in menopause and climacteric?\" and the answer is AGAINST (NÃO).",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2067,
+    "total_tokens": 2431,
+    "completion_tokens": 364,
+    "estimated_cost": 0.0014372475015600001,
+    "prompt_tokens_details": {
+      "cached_tokens": 832,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 309
+    }
+  }
+}

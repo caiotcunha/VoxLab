@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ro63cvPi1Od56leA4dcbspfI",
+  "object": "chat.completion",
+  "created": 1790624004,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O SUS deve revisar e atualizar os protocolos clínicos para o tratamento do edema macular diabético?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is largely procedural, opening remarks, justification of absence, and then calls for updating protocols and financing for diabetic macular edema (EDM) in SUS, and promoting April Brown, etc. The speaker expresses that \"É fundamental que o SUS revise e atualize seus protocolos clínicos...\" and \"é necessário garantir um sistema de financiamento adequado...\" So they are taking a stance: they support updating protocols and financing. The question could be: \"O SUS deve revisar e atualizar os protocolos clínicos para o tratamento do edema macular diabético?\" Or \"O SUS deve garantir financiamento adequado para o tratamento do edema macular diabético?\" Both are yes/ no. The stance is FAVOR (yes). So stance_determinable = YES, target_question = something like \"O SUS deve revisar e atualizar os protocolos clínicos para o tratamento do edema macular diabético?\" stance = FAVOR.\n\nWe need to ensure it's a neutral question of yes/no. Provide JSON.\n\nThus:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"O SUS deve revisar e atualizar os protocolos clínicos para o tratamento do edema macular diabético?\",\n \"stance\": \"FAVOR\"\n}\n\nCheck if any ambiguity: The speaker says it's fundamental that SUS revise and update protocols, and guarantee financing. That's a clear position. So YES.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1629,
+    "total_tokens": 1973,
+    "completion_tokens": 344,
+    "estimated_cost": 0.000118753,
+    "prompt_tokens_details": null
+  }
+}

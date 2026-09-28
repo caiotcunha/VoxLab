@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMXGgruBTAhsOxOqw9JVvmHm",
+  "object": "chat.completion",
+  "created": 1790624082,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta restringe a obrigatoriedade a crianças de 6 meses a 5 anos, enquanto a segunda abrange todas as crianças, portanto são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\" (Should Covid-19 vaccination be mandatory for children aged 6 months to 5 years?)\n\nQuestion2: \"A vacinação contra a COVID-19 deve ser obrigatória para crianças?\" (Should Covid-19 vaccination be mandatory for children?)\n\nQuestion2 is broader: for children (presumably all ages). Question1 is specific to age 6 months to 5 years. Are they equivalent? No, because the scope differs. If you answer yes to Q1 (mandatory for 6 months-5 years) does not necessarily answer Q2 (mandatory for all children). Could be yes for that group but maybe no for older children. So they are different questions. So classification: DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 656,
+    "completion_tokens": 253,
+    "estimated_cost": 5.7920999999999997e-05,
+    "prompt_tokens_details": null
+  }
+}

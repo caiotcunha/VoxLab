@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4nTNl7b4mdjGkVTQpTiZGci",
+  "object": "chat.completion",
+  "created": 1790632340,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: investimento em Hemobrás para imunoglobulina versus a abordagem da vacinação como questão científica.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O Brasil deve continuar investindo na Hemobrás para alcançar autossuficiência em imunoglobulina?\" This asks whether Brazil should continue investing in Hemobrás to achieve self-sufficiency in immunoglobulin.\n\nQuestion2: \"A vacinação deve ser tratada como questão científica e não como disputa política?\" This asks whether vaccination should be treated as a scientific issue, not a political dispute.\n\nThese are different topics: one about investment in a specific company for immunoglobulin production; the other about framing vaccination as scientific vs political. They are not the same issue, not opposite polarity, different. So relation = DIFFERENT.\n\nProvide JSON with reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 602,
+    "completion_tokens": 198,
+    "estimated_cost": 4.8608e-05,
+    "prompt_tokens_details": null
+  }
+}

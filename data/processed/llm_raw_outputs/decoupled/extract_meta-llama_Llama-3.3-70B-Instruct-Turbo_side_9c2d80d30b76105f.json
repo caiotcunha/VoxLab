@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPR2yeOTQgTwbhbD3ri87945",
+  "object": "chat.completion",
+  "created": 1790622328,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os professores da rede pública devem ter a liberdade de escolher trabalhar em mais de um cargo público em áreas diferentes?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1473,
+    "total_tokens": 1532,
+    "completion_tokens": 59,
+    "estimated_cost": 0.00016618,
+    "prompt_tokens_details": null
+  }
+}

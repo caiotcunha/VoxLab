@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3SVDc5uS1ye5x6JdERNGOgA",
+  "object": "chat.completion",
+  "created": 1790622378,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre reserva orçamentária para desastres socioambientais e a outra sobre priorização de esforços para mitigar as mudanças climáticas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 463,
+    "completion_tokens": 62,
+    "estimated_cost": 5.994000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

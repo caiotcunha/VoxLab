@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJbSZ0YBYAa4506bo8bzTAgO",
+  "object": "chat.completion",
+  "created": 1790622361,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre a reestruturação do Estado brasileiro e a outra sobre a prioridade do envelhecimento saudável na agenda do G20.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 464,
+    "completion_tokens": 60,
+    "estimated_cost": 5.96e-05,
+    "prompt_tokens_details": null
+  }
+}

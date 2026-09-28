@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzTLn9XjkHf6KneDqz9REAj8",
+  "object": "chat.completion",
+  "created": 1790624060,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. The speaker is chairing a public hearing, thanking participants, emphasizing importance of approving PL 3811/2019 which establishes National Awareness Week on Ischemic Heart Disease. Also says \"deixo aqui o meu apoio total e irrestrito às temáticas do coração\" and mentions need for proper care via SUS on three pillars. So there is a clear position: support for the PL and for heart disease attention. The question: we need a specific yes/no question. Could be \"O Projeto de Lei nº 3.811/2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\" The speaker supports it, so stance FAVOR.\n\nDeterminability: YES.\n\nTarget question: neutral yes/no question about approval of PL 3811/2019.\n\nStance: FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 906,
+    "total_tokens": 1187,
+    "completion_tokens": 281,
+    "estimated_cost": 0.0010712,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 205
+    }
+  }
+}

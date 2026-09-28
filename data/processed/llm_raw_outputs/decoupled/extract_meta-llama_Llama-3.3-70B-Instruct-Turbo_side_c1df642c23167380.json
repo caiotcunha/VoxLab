@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3D8hPJqZgmnRHwf2OqDzH0k",
+  "object": "chat.completion",
+  "created": 1790622281,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As emendas para combater a violência contra crianças e adolescentes devem ser incluídas na LDO?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2254,
+    "total_tokens": 2310,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00024332,
+    "prompt_tokens_details": null
+  }
+}

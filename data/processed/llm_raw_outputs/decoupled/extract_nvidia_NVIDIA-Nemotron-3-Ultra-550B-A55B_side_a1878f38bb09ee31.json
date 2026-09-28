@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvYcTFcvyqQxdFf4uCe9Bpby",
+  "object": "chat.completion",
+  "created": 1790624038,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 1.387, de 2022, que institui o Estatuto dos Povos Ciganos, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. The speaker is the chair of the hearing, opening. She expresses support for the statute for Roma people, says \"Queremos ajudar... que esse processo se dê da melhor forma possível e também que se dê com todo o respeito que o povo cigano merece\". Also \"Contem conosco e com esta Comissão nessa luta do povo cigano pelo reconhecimento e pelo estatuto.\" She also describes the need for the statute, mentions the project, says \"o momento é agora\". So she clearly supports the creation of the statute. The question: \"Should the Statute of the Roma People (PL 1387/2022) be approved?\" That's a yes/no question. Her stance is FAVOR (YES). Determinability: YES. Provide target_question neutral: \"O Projeto de Lei nº 1.387, de 2022, que institui o Estatuto dos Povos Ciganos, deve ser aprovado?\" That's a yes/no. Stance: FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2380,
+    "total_tokens": 2675,
+    "completion_tokens": 295,
+    "estimated_cost": 0.0018390000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 227
+    }
+  }
+}

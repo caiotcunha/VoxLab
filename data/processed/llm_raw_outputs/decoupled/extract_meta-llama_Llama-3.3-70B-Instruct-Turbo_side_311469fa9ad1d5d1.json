@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rbmh15jSj2HjU1y5U2CwvjUc",
+  "object": "chat.completion",
+  "created": 1790622333,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1213,
+    "total_tokens": 1237,
+    "completion_tokens": 24,
+    "estimated_cost": 0.00012898,
+    "prompt_tokens_details": null
+  }
+}

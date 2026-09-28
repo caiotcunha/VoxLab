@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxnYiYSkXb5T3a6K6qXOmOt7",
+  "object": "chat.completion",
+  "created": 1790624121,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da aprovação de um PL específico, enquanto a outra aborda de forma geral se a regulamentação dos mercados digitais deve avançar, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\" Means: Should PL 2768, which regulates digital platforms, be approved? So it's about a specific bill.\n\nQuestion2: \"A regulamentação dos mercados digitais deve ser avançada?\" Means: Should the regulation of digital markets be advanced? That's a more general question about advancing regulation of digital markets.\n\nAre they equivalent? Not exactly: Q1 asks about a specific bill approval; Q2 asks about advancing regulation of digital markets (maybe more general, could include other measures). The answer to Q1 (yes) would imply support for regulation, but not necessarily that regulation should be advanced (maybe already advanced). Also Q2 could be answered yes even if the specific bill is not approved (maybe other regulation). So they are different.\n\nThus relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 650,
+    "completion_tokens": 251,
+    "estimated_cost": 5.7433e-05,
+    "prompt_tokens_details": null
+  }
+}

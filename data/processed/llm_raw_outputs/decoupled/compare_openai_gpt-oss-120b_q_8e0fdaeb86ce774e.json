@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLRMJuttzmFTm9vAwIOCyTQ5",
+  "object": "chat.completion",
+  "created": 1790624122,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da aprovação de um PL específico, a outra sobre o conteúdo desejado da regulamentação, questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\" => Should the bill be approved? It's about a specific bill regulating digital platforms.\n\nQuestion2: \"A regulamentação dos mercados digitais deve garantir a segurança e a proteção dos dados pessoais?\" => Should the regulation of digital markets guarantee security and protection of personal data? That's about content of regulation: should it guarantee security and data protection.\n\nThese are different issues: one is about approval of a specific bill; the other is about a principle (security and data protection) that regulation should guarantee. They are not the same question, nor opposite polarity. The answer to one does not determine the other. So relation = DIFFERENT.\n\nReturn JSON with relation and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 623,
+    "completion_tokens": 218,
+    "estimated_cost": 5.2045e-05,
+    "prompt_tokens_details": null
+  }
+}

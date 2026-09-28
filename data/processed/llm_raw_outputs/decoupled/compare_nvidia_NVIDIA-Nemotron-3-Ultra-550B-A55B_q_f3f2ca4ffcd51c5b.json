@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROdZTlHQnDi0C2ssLeP3fi7D",
+  "object": "chat.completion",
+  "created": 1790624185,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da urgência na regulamentação do empréstimo consignado para servidores públicos, enquanto a segunda refere-se à permissão, via PEC 169/2019, para que professores da rede pública acumulem dois cargos públicos em áreas distintas; são temas, medidas e objetos distintos.\"\n}",
+        "reasoning_content": "We need to compare two questions.\n\nQ1: \"A Comissão deve apreciar com urgência a regulamentação do empréstimo consignado para servidores públicos?\" This asks whether a commission should urgently consider regulation of consigned loan for public servants.\n\nQ2: \"A PEC 169/2019 deve permitir que professores da rede pública acumulem dois cargos públicos em áreas diferentes?\" This asks whether a specific constitutional amendment (PEC 169/2019) should allow public school teachers to hold two public positions in different areas.\n\nThese are different topics: one about loan regulation, the other about accumulation of public posts for teachers. Different measures, objects, populations. So DIFFERENT.\n\nThus answer JSON with relation DIFFERENT and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 416,
+    "total_tokens": 671,
+    "completion_tokens": 255,
+    "estimated_cost": 0.0007690000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 165
+    }
+  }
+}

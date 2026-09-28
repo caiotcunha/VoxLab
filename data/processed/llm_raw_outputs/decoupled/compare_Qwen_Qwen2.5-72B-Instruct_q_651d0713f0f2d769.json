@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQnBP0G7SDFIVeB5C1bR4nLr",
+  "object": "chat.completion",
+  "created": 1790622232,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da alocação geral de recursos para prevenção de desastres naturais, enquanto a segunda se refere especificamente ao abastecimento do Fundo de Calamidade Pública, que é um instrumento específico.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 463,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00016936,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rc9C3xGHtHX6XH59DdqG28DO",
+  "object": "chat.completion",
+  "created": 1790622488,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um arcabouço legal para proteger pequenos negócios em desastres naturais?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is opening a parliamentary hearing and making procedural statements. They express the importance of the Ministry of Social Development's participation and the need to create a legal framework to protect small businesses in disasters. Let me analyze if there's a determinable stance on a specific question.\n\nThe speaker expresses support for:\n1. The presence/participation of the Ministry of Social Development in disaster prevention\n2. Creating a legal framework to protect small businesses in floods and droughts\n3. The creation of a fund to finance these actions\n\nThese are positions on specific questions. The most central one seems to be about creating a legal framework to protect small businesses from natural disasters, and the importance of the Ministry of Social Development's participation.\n\nLet me determine the target question. The speaker clearly favors creating a legal framework to protect small businesses in natural disasters and considers the Ministry's participation important.\n\nThe target question could be: \"Deve ser criado um arcabouço legal para proteger pequenos negócios em desastres naturais?\"\n\nThe stance is FAVOR.\n\nstance_determinable: YES\ntarget_question: \"Deve ser criado um arcabouço legal para proteger pequenos negócios em desastres naturais?\"\nstance: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1477,
+    "total_tokens": 1783,
+    "completion_tokens": 306,
+    "estimated_cost": 0.0013816125,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 249
+    }
+  }
+}

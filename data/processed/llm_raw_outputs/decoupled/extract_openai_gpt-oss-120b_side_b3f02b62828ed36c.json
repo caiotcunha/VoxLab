@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNs7KSpZpTOvvZyBqpxrcKxm",
+  "object": "chat.completion",
+  "created": 1790624037,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A medida que assegura o direito à aposentadoria das mães cuidadoras aos 62 anos, com possibilidade de parcelar o débito com a Previdência, deve ser mantida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker says they approved a project to ensure retirement rights for mother caregivers at 62, allowing parceling debt with Previdência. They talk about caring being work, etc. The stance is supportive of that policy. The specific question could be: \"A aposentadoria das mães cuidadoras aos 62 anos, com possibilidade de parcelar o débito com a Previdência, deve ser mantida?\" Or \"A medida que assegura o direito à aposentadoria das mães cuidadoras aos 62 anos deve ser aprovada?\" The speaker says they approved it, so they are in favor. So stance_determinable = YES, target_question = something like \"A medida que assegura o direito à aposentadoria das mães cuidadoras aos 62 anos, com possibilidade de parcelar o débito com a Previdência, deve ser mantida?\" stance = FAVOR.\n\nWe must ensure neutral question. Provide yes/no. So answer: YES, target_question string, stance FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 774,
+    "total_tokens": 1061,
+    "completion_tokens": 287,
+    "estimated_cost": 7.742799999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

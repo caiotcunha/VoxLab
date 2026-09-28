@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSsE2lOy5eD3YenNMujC6Kwf",
+  "object": "chat.completion",
+  "created": 1790622376,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos, um sobre o uso da tecnologia blockchain e o outro sobre a proteção de dados pessoais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 453,
+    "completion_tokens": 48,
+    "estimated_cost": 5.5860000000000004e-05,
+    "prompt_tokens_details": null
+  }
+}

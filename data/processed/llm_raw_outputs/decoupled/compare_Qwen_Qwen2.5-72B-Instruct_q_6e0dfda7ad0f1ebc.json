@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rxel4ttjEj9ZFxIPpHRT5fM8",
+  "object": "chat.completion",
+  "created": 1790622243,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas distintas para políticas de proteção à mulher, uma sobre transferência de recursos e outra sobre aprovação de um programa específico.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 461,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00016804,
+    "prompt_tokens_details": null
+  }
+}

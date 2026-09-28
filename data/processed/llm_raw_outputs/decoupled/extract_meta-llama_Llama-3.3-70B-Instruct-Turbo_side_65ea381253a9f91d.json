@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVkjEqExb1sQ66RsGsF1dUBM",
+  "object": "chat.completion",
+  "created": 1790622345,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O País deve ter recursos financeiros específicos para a retirada de famílias de áreas de risco?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1484,
+    "total_tokens": 1536,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00016504,
+    "prompt_tokens_details": null
+  }
+}

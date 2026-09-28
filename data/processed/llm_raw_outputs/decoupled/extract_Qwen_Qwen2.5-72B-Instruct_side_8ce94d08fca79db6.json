@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVHOMZgzyV3ij8qoBjPo54k3",
+  "object": "chat.completion",
+  "created": 1790622212,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser abastecido de recursos para prevenção e pronta resposta a desastres naturais?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1154,
+    "total_tokens": 1216,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00044024,
+    "prompt_tokens_details": null
+  }
+}

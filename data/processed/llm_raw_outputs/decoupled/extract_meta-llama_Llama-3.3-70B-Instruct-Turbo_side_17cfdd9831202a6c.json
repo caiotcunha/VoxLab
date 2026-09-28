@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0l6cWAfpqbxeGnyRX7WK08Z",
+  "object": "chat.completion",
+  "created": 1790622335,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os esforços para mitigar as mudanças climáticas devem ser priorizados?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1874,
+    "total_tokens": 1924,
+    "completion_tokens": 50,
+    "estimated_cost": 0.00020340000000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RT4IttOOehFXSwWyQ1Z7ip7T",
+  "object": "chat.completion",
+  "created": 1790624163,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Embora ambas tratem de apoio a pequenos negócios em desastres, uma propõe um sistema nacional de apoio geral e a outra um arcabouço legal específico, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"Deve ser criado um sistema nacional de apoio às vítimas de desastres, incluindo auxílio emergencial e recuperação de pequenos negócios?\" So asks: Should a national system of support to disaster victims be created, including emergency aid and recovery of small businesses?\n\nQuestion2: \"Deve ser criado um arcabouço legal para proteger pequenos negócios contra desastros naturais?\" Asks: Should a legal framework be created to protect small businesses against natural disasters?\n\nBoth are about creating something to help small businesses in disaster context. Q1 is broader: a national system of support to victims, including emergency aid and recovery of small businesses. Q2 is specifically a legal framework to protect small businesses against natural disasters. They are not exactly same; Q1 includes victims generally, not only small businesses, and includes emergency aid and recovery. Q2 is about legal framework for small businesses. They are related but different scope. So classification: DIFFERENT (different measures). Not opposite polarity. Not equivalent. So answer: DIFFERENT.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 699,
+    "completion_tokens": 285,
+    "estimated_cost": 6.3768e-05,
+    "prompt_tokens_details": null
+  }
+}

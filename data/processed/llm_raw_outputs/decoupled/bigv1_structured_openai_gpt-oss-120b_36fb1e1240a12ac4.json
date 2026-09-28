@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbTM1ULHsVCscSWkwWlJ3pQ5",
+  "object": "chat.completion",
+  "created": 1790624120,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"legislação específica para o sistema prisional indígena\",\n  \"target_proposition_b\": \"aprovação e financiamento da PNGATI (Programa Nacional de Gestão Territorial e Ambiental das Terras Indígenas)\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: The speaker thanks, mentions antiracism, criminalization of indigenous leaders, then says: \"Eu já gostaria de colocar aqui, como encaminhamento desta audiência do dia de hoje, o nosso mandato à disposição, juntamente com a senhora e os demais que compõem a Mesa, para pensar numa legislação específica do sistema prisional carcerário para as questões indígenas a partir de uma consulta pública inclusive. Eu já gostaria de tomar isso como encaminhamento.\"\n\nSo the proposition: \"Criar legislação específica para o sistema prisional para questões indígenas\" (i.e., a specific prison law for indigenous issues). The speaker is proposing to think about such legislation, offering mandate to work on it. This is a favorable stance toward the proposition (they want to create it). So stance = FAVOR. Determinable? Yes, clear.\n\nTarget proposition phrase: \"legislação específica do sistema prisional para questões indígenas\". Need short neutral phrase.\n\nManifestation B: Long speech about PNGATI (Programa Nacional de Gestão Territorial e Ambiental das Terras Indígenas), budget allocations, etc. The speaker says: \"É preciso ampliar a implementação do Programa Nacional de Alimentação Escolar — PNAE nas comunidades indígenas, com procedimentos adequados, e não envenenando as crianças.\" Also \"queremos ... alocar recursos específicos do PPA para a implementação da PNGATI\". Also \"queremos que a comissão aprove o relatório da PNGATI\". So what is the specific proposition? Could be \"aprovar a PNGATI\" or \"alocar recursos específicos do PPA para a implementação da PNGATI\". The speaker is advocating for approval and allocation. So target proposition: \"aprovar e financiar a PNGATI (Programa Nacional de Gestão Territorial e Ambiental das Terras Indígenas)\". The stance is FAVOR. Determinable? Yes.\n\nNow comparability: Are the two propositions the same? No. One is about specific prison legislation for indigenous issues; the other about PNGATI (territorial and environmental management program) and budget allocation. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nNeed keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: stance_determinable_a = \"YES\", stance_determinable_b = \"YES\". target_proposition_a = \"legislação específica para o sistema prisional indígena\". target_proposition_b = \"aprovação e financiamento da PNGATI (Programa Nacional de Gestão Territorial e Ambiental das Terras Indígenas)\". stance_a = \"FAVOR\", stance_b = \"FAVOR\". same_proposition = \"NO\".\n\nCheck if any uncertainty: The speaker in B also asks a question: \"Eu gostaria de perguntar se é de comum acordo e perguntar, inclusive, aqui para os integrantes da Mesa se acham importante esse encaminhamento\". That's a question about consensus, but overall they are advocating for approval. The stance is clear: they want approval. So yes.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2196,
+    "total_tokens": 2948,
+    "completion_tokens": 752,
+    "estimated_cost": 0.00020909200000000002,
+    "prompt_tokens_details": null
+  }
+}

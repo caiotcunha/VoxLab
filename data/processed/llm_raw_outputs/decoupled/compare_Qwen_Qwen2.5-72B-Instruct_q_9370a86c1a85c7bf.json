@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyJ98627IiMtY25xAQGKRBHj",
+  "object": "chat.completion",
+  "created": 1790622225,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas perguntas são idênticas, perguntando se o saque-aniversário do FGTS deve ser mantido.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 380,
+    "total_tokens": 427,
+    "completion_tokens": 47,
+    "estimated_cost": 0.00015560000000000001,
+    "prompt_tokens_details": null
+  }
+}

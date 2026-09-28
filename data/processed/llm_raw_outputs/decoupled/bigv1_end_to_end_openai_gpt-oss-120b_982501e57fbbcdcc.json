@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rq17DstE0K58XLmsDSUOcOP6",
+  "object": "chat.completion",
+  "created": 1790632544,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas defendem maior financiamento e carreira na Defesa Civil, mas tratam de proposições diferentes (A foca no PL 920/23 e no veto nº 28, B discute o Fundo de Calamidade Pública e medidas provisórias), portanto não respondem à mesma proposição específica.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nWe must determine if they respond to same specific proposition (e.g., same bill, veto, policy) and stance.\n\nManifestation A: Discusses PL 920/23, veto nº 28, wants to overturn veto, supports prevention funding, criticizes lack of prevention resources, calls for career for civil defense agents, mentions budget, etc.\n\nManifestation B: Talks about need for resources for Fundo de Calamidade Pública, mentions lack of funding, need for career for municipal civil defense, criticism of reliance on measures provisórias, etc. No explicit mention of PL 920/23 or veto nº 28. Both discuss similar theme: prevention funding, career for civil defense, resources, but not same specific proposition. The specific proposition could be \"veto nº 28\" vs \"budget allocations\" not same.\n\nThus they are comparable in theme but not same specific proposition. So category: INCOMPARABLE (they have determinable positions but not same proposition). Both have stance: they are in favor of more prevention funding, career, against current lack. But not same proposition.\n\nThus answer: INCOMPARABLE.\n\nProvide brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2758,
+    "total_tokens": 3094,
+    "completion_tokens": 336,
+    "estimated_cost": 0.00015916600000000003,
+    "prompt_tokens_details": null
+  }
+}

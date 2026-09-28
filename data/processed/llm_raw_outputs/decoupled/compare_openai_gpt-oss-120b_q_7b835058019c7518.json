@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rhoa4Ww1MEbql8cZ6KJ5DZkb",
+  "object": "chat.completion",
+  "created": 1790624128,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de políticas distintas – uma sobre o saque-aniversário do FGTS e outra sobre crédito consignado privado – portanto não são equivalentes nem opostas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O saque-aniversário do FGTS deve ser mantido?\" (Should the FGTS birthday withdrawal be maintained?)\n\nQuestion2: \"O crédito consignado privado deve ser mantido como opção para os trabalhadores?\" (Should private payroll loan be maintained as an option for workers?)\n\nThese are about different policies: one about FGTS withdrawal scheme, the other about private payroll loan. Different objects, not same issue. So relation is DIFFERENT.\n\nReturn JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 572,
+    "completion_tokens": 176,
+    "estimated_cost": 4.4572e-05,
+    "prompt_tokens_details": null
+  }
+}

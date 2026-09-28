@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcRO9R5aqJR2iB4jXVrtScoy",
+  "object": "chat.completion",
+  "created": 1790624073,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O PL da Lei do Bem deve ser votado de forma precipitada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about the Lei do Bem (Law of Good) PL, and the speaker warns against voting it prematurely, says the law in its current form is not effective, needs reform, and should not be voted before deeper discussion. So there is a clear stance: they are against the current version being voted as is, and against premature voting. The specific question could be: \"O PL da Lei do Bem deve ser votado de forma precipitada?\" Or \"A Lei do Bem, na sua forma atual, deve ser aprovada sem reformas?\" The central issue: whether to vote the PL of Lei do Bem now, without reforms. So target question: \"O PL da Lei do Bem deve ser votado de forma precipitada?\" The speaker says no, they warn against it. So stance = AGAINST (i.e., they are against voting it prematurely). So stance_determinable = YES, target_question as above, stance = AGAINST.\n\nMake JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2615,
+    "total_tokens": 2879,
+    "completion_tokens": 264,
+    "estimated_cost": 0.00014163499999999998,
+    "prompt_tokens_details": null
+  }
+}

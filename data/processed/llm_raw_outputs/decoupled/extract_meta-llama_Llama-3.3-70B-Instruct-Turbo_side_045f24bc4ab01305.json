@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCCpIlalW8dfC2MaZhZcgUK5",
+  "object": "chat.completion",
+  "created": 1790622275,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Supremo Tribunal Federal deve exercer ativismo judicial para modificar leis existentes?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1903,
+    "total_tokens": 1949,
+    "completion_tokens": 46,
+    "estimated_cost": 0.00020502000000000004,
+    "prompt_tokens_details": null
+  }
+}

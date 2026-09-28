@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4CPiJgEPNfGynRyekPVRTgk",
+  "object": "chat.completion",
+  "created": 1790622248,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas diferentes para apoiar a inovação: revisão do marco legal e votação da Lei do Bem.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 448,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00016324000000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmYF75lAaWcvtaxGIrPRMA3F",
+  "object": "chat.completion",
+  "created": 1790624123,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Aprovar o PL aumenta a regulação, enquanto limitar a regulação implica o oposto, tornando as respostas opostas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\" => Should the bill be approved? Yes/No.\n\nQuestion2: \"A regulamentação dos mercados digitais deve ser limitada para não sufocar a competitividade?\" => Should regulation of digital markets be limited so as not to stifle competition? Yes/No.\n\nAre they the same issue? Q1 is about a specific bill regulating digital platforms. Q2 is about limiting regulation of digital markets to avoid harming competition. The bill aims to regulate platforms; limiting regulation could be opposite of approving a regulation. But not necessarily same: Q2 is about limiting regulation, i.e., less regulation. Approving the bill would increase regulation. So they are opposite polarity? However Q2 is about limiting regulation, not necessarily about the specific bill. Could be a broader principle. The relation: they are about regulation of digital platforms/markets, but Q1 asks to approve a specific regulation; Q2 asks to limit regulation to avoid harming competition. If you answer \"yes\" to Q1 (approve the bill), you likely would answer \"no\" to Q2 (you would not want to limit regulation). So they are opposite polarity regarding the same general issue (regulation of digital markets). However the nuance: Q2 is about limiting regulation, not about approving a specific bill. But the core is whether to regulate heavily vs limit regulation. So they are opposite.\n\nThus classification: OPPOSITE_POLARITY.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 782,
+    "completion_tokens": 377,
+    "estimated_cost": 7.9075e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ra0lulW6qmCDSIJSqaCLeK6r",
+  "object": "chat.completion",
+  "created": 1790624100,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Ampliar o orçamento do programa de combate à tuberculose no Brasil\",\n  \"target_proposition_b\": \"Realizar um projeto‑piloto de combate à tuberculose no estado do Amazonas\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then comparability.\n\nWe have two speeches, both are opening remarks for public hearings about tuberculosis. They are largely procedural, praising, etc. Need to find any specific proposition the speaker accepts or rejects.\n\nManifestation A: The speaker mentions \"o primeiro ato que nós vamos fazer — e esse nós vamos conseguir — é alterar, não sei para quanto, o orçamento do programa de combate à tuberculose do Brasil.\" He says \"faremos... ampliar o orçamento, trabalhar nessa ampliação\". He says \"fizemos uma proposta ousada para o Senador, mas precisaremos do apoio... para apresentarmos... ampliação de orçamento e programas claros\". He also says \"não se pode imaginar que nós vamos ter que erradicar essa doença, ... com 14 milhões de reais. ... não tem nenhuma razoabilidade.\" He says \"deveremos, sim, ampliar o orçamento\". So proposition: \"Ampliar o orçamento do programa de combate à tuberculose\". He seems in favor of that. So stance determinable = YES. Target proposition: \"Ampliar o orçamento do programa de combate à tuberculose no Brasil\". Stance = FAVOR.\n\nAny other proposition? He also mentions focusing on Amazonas, but that's more a plan. He says \"Precisamos focar no Amazonas\". Could be proposition: \"Focar ações de combate à tuberculose no Amazonas\". He seems supportive. But we need one target proposition. Choose the main: budget increase.\n\nManifestation B: He discusses focusing on Amazonas as pilot, mentions \"provocação ... para que possamos fazer este projeto piloto\". He says \"Eu provoquei o CIEDDS para que nós possamos fazer este projeto piloto, todos os Ministérios, em um só Estado\". He also says \"Se não conseguirmos erradicar até 2025 num Estado piloto, pelo menos teremos ações\". He seems to propose that the pilot in Amazonas is a good strategy. He seems in favor of focusing a pilot in Amazonas. Also earlier he says \"Precisamos focar no Amazonas\". So proposition: \"Realizar um projeto-piloto de combate à tuberculose no Amazonas\". He is in favor. So stance determinable = YES. Target proposition: \"Realizar um projeto-piloto de combate à tuberculose no Amazonas\". Stance = FAVOR.\n\nNow comparability: Are the two propositions the same? One is about increasing budget for TB program nationwide. The other is about implementing a pilot project in Amazonas. They are different. Not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck fields:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: short neutral phrase.\ntarget_proposition_b: short neutral phrase.\nsame_proposition: NO\nstance_a: FAVOR\nstance_b: FAVOR\n\nMake sure strings exactly as required.\n\nLet's craft target propositions:\n\nA: \"Ampliar o orçamento do programa de combate à tuberculose no Brasil\"\nB: \"Realizar um projeto‑piloto de combate à tuberculose no estado do Amazonas\"\n\nOk.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5717,
+    "total_tokens": 6477,
+    "completion_tokens": 760,
+    "estimated_cost": 0.000340729,
+    "prompt_tokens_details": null
+  }
+}

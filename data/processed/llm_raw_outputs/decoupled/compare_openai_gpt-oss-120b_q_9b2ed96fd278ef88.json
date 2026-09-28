@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXcuFDplhYXF74ESW1KpXZMC",
+  "object": "chat.completion",
+  "created": 1790632491,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da implementação de registro individualizado de vacinação, a outra sobre a manutenção da vacinação de crianças contra Covid-19; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Ministério da Saúde deve implementar registro individualizado de vacinação?\" Means: Should the Ministry of Health implement individualized vaccination records? That's about implementing a system of individual vaccination records.\n\nQuestion2: \"A vacinação de crianças contra Covid-19 deve ser mantida?\" Means: Should the vaccination of children against Covid-19 be maintained? That's about continuing vaccination of children.\n\nThese are different issues: one is about record-keeping system, the other about policy of vaccinating children. Not same question, not opposite polarity. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 576,
+    "completion_tokens": 183,
+    "estimated_cost": 4.5651e-05,
+    "prompt_tokens_details": null
+  }
+}

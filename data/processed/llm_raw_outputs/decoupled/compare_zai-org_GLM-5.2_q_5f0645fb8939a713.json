@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R96RsDV60dEWUcyxULWTOAlI",
+  "object": "chat.completion",
+  "created": 1790624042,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"relation\":\"DIFFERENT\",\"reasoning\":\"As perguntas tratam de instrumentos legislativos distintos e ações diferentes: revisar o Marco Legal da Inovação versus colocar em votação o PL da Lei do Bem.\"}",
+        "reasoning_content": "We need answer JSON. Need classify relation between two yes/no questions extracted from speeches same actor different moments. Need judge only questions.\n\nQuestion1: \"O Marco Legal da Inovação deve ser revisado para facilitar sua operacionalização?\" Should the Legal Framework for Innovation be revised to facilitate its operationalization?\n\nQuestion2: \"O PL da Lei do Bem deve ser colocado em votação?\" Should the PL of Lei do Bem be put to vote?\n\nNeed determine relation. They are about Brazilian innovation policy laws. Marco Legal da Inovação (Law 13.243/2016?) and Lei do Bem (Law 11.196/2005 tax incentives for R&D). PL da Lei do Bem maybe bill to update. Are they same issue? Need decide. The questions ask different actions: revising Marco Legal da Inovação vs putting PL da Lei do Bem to vote. Different measures/instruments. Even if same theme, answer to one doesn't determine answer to other. So DIFFERENT. Need brief reasoning in Portuguese. JSON strict. Ensure no extra text.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 666,
+    "completion_tokens": 277,
+    "estimated_cost": 0.00060029250048,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 226
+    }
+  }
+}

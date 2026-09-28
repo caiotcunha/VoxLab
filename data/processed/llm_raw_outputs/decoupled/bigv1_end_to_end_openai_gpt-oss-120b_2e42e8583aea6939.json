@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUeBIPTTegCPSu8Ieo7Ot2wy",
+  "object": "chat.completion",
+  "created": 1790624088,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express support for actions against tuberculosis, but they address different specific proposals (budget increase vs. pilot focus in Amazonas), so they are not responding to the same proposition.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we don't know name. Both are public hearing about tuberculosis. Need to see if they respond to same specific proposition and stance.\n\nManifestation A: The speaker is opening 2nd extraordinary meeting, discussing need to increase budget for TB, propose amendment to increase budget, focus on Amazonas, propose pilot project, etc. The stance: supportive of increasing budget and actions to combat TB, favorable to proposal to increase budget and pilot.\n\nManifestation B: Opening 3rd extraordinary meeting, also discussing strategies, mentions need for pilot in Amazonas, acknowledges difficulty, but seems supportive of actions, wants to focus on Amazonas, propose pilot, etc. Also supportive of increasing efforts, not explicitly about budget but about strategy. The specific proposition? Could be \"increase budget for TB\" vs \"focus pilot in Amazonas\". Are they same proposition? Not exactly same specific proposition. The first is about increasing budget; second is about focusing pilot in Amazonas and overall strategy. Both are about combating TB, but not same specific proposition. So they are not responding to same specific proposition. Therefore relation is INCOMPARABLE (positions determinable but not same proposition). Both have stance favorable to TB fight, but not same proposition.\n\nThus classification: INCOMPARABLE.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5480,
+    "total_tokens": 5814,
+    "completion_tokens": 334,
+    "estimated_cost": 0.00025954,
+    "prompt_tokens_details": null
+  }
+}

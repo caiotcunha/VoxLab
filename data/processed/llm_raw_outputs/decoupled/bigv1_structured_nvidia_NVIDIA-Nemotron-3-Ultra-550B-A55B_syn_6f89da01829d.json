@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R84fqHk31rR0QnN5wpat8aQd",
+  "object": "chat.completion",
+  "created": 1790632537,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"The government bill on app driver regulation should be approved.\",\n  \"target_proposition_b\": \"The government bill (PLP 12) on app driver regulation should be approved.\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two statements.\n\nFirst, identify theme: both about regulation of app drivers.\n\nWe need target proposition for each: a specific claim that the speaker accepts or rejects.\n\nManifestation A: speaker criticizes the government bill (PL) as \"absurd\", \"unconstitutional\", \"CLT disguised\", wants total rejection. So target proposition could be \"The government bill (PL) on app driver regulation should be rejected.\" The speaker is against the bill (i.e., favors rejection). Stance: AGAINST the bill (or FAVOR rejection). Since stance is about proposition: if proposition is \"The bill should be rejected\", speaker is FAVOR. But we need to define proposition neutrally. Usually target proposition is something like \"The government bill on app driver regulation should be approved.\" Then speaker is AGAINST. Let's pick a neutral proposition: \"The government bill on app driver regulation should be approved.\" Speaker opposes => AGAINST.\n\nStance determinable? Yes, clear.\n\nManifestation B: speaker supports the PLP 12 (the bill) and also mentions their own proposal 536. They say \"we need the government and deputies to support this project in view of the advance it represents, so that we can have a regulation approved in this House with PLP 12\". So they favor approval of PLP 12. Target proposition: \"The PLP 12 (government bill) on app driver regulation should be approved.\" Stance: FAVOR.\n\nStance determinable? Yes.\n\nNow comparability: Are they same proposition? Both refer to the same bill? Manifestation A refers to \"projeto de lei que o Governo apresentou\" (the government bill). Manifestation B refers to \"PLP 12\" which is a \"Projeto de Lei Complementar nº 12\" presented by government. Likely same bill. So same proposition (approval of that bill). So same_proposition = YES.\n\nBut need to ensure they are semantically equivalent: A wants rejection, B wants approval. Same proposition about approval. So YES.\n\nNow produce JSON.\n\nFields:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"The government bill on app driver regulation should be approved.\"\ntarget_proposition_b: \"The government bill (PLP 12) on app driver regulation should be approved.\"\nsame_proposition: YES\nstance_a: AGAINST\nstance_b: FAVOR\n\nCheck rules: stance values must be FAVOR|AGAINST|UNCERTAIN. Good.\n\nAll keys present.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2818,
+    "total_tokens": 3476,
+    "completion_tokens": 658,
+    "estimated_cost": 0.0028566000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 556
+    }
+  }
+}

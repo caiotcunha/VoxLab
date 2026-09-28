@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQKi8wsqYgWi2bT6F9agM6XW",
+  "object": "chat.completion",
+  "created": 1790624167,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de regulamentações distintas: uma sobre lobby e outra sobre motoristas de aplicativo.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A regulamentação do lobby junto ao poder público deve ser avançada?\" Means: Should the regulation of lobbying with public power be advanced? i.e., should we advance regulation of lobbying.\n\nQuestion2: \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada?\" Means: Should the regulation of the work of ride-hailing drivers be approved? i.e., should we approve regulation of app drivers.\n\nThese are different topics: one about lobbying regulation, the other about regulation of app drivers. So they are different issues. So relation = DIFFERENT.\n\nReturn JSON with relation and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 580,
+    "completion_tokens": 183,
+    "estimated_cost": 4.579899999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

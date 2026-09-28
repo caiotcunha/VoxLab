@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxDr9hm61GIHnUO2gY9LsMsy",
+  "object": "chat.completion",
+  "created": 1790622244,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de direitos diferentes: uma sobre atenção biopsicossocial para pessoas com dor crônica, outra sobre aposentadoria para mães cuidadoras.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 457,
+    "completion_tokens": 55,
+    "estimated_cost": 0.00016672,
+    "prompt_tokens_details": null
+  }
+}

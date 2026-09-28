@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R22KfMn4oYxHw99yrQs6SNtv",
+  "object": "chat.completion",
+  "created": 1790622729,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A vacinação contra COVID-19 deve ser obrigatória para crianças de 6 meses a 5 anos\",\n  \"target_proposition_b\": \"A vacinação contra COVID-19 deve ser obrigatória para crianças\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": "Let me analyze both manifestations carefully.\n\n**Manifestation A:**\n- Event: Public hearing about mandatory COVID-19 vaccination for children 6 months to 5 years\n- The speaker is clearly against mandatory COVID-19 vaccination for children\n- Key quotes: \"Se acreditássemos que a vacina contra COVID-19 iria preservar a vida dos bebês, nós seríamos favoráveis\" - conditional support\n- \"Nós não somos antivax aqui\" - clarifies they're not anti-vaccine in general\n- \"o que nós somos contra é quanto a obrigatoriedade\" - against mandatory vaccination\n- \"eu vou me opor a isso\" - will oppose mandatory vaccination\n- She criticizes the vaccine's safety, mentions deaths, myocarditis, sudden deaths\n- She's against the government being \"tirânico\" about forcing vaccination\n- Target proposition: \"A vacinação contra COVID-19 deve ser obrigatória para crianças de 6 meses a 5 anos\"\n- Stance: AGAINST\n\n**Manifestation B:**\n- Event: Minister appearance about COVID-19 vaccination for children\n- The speaker is also against mandatory COVID-19 vaccination\n- Key quotes: \"O que nós somos contra é quanto a obrigatoriedade\" - against mandatory vaccination\n- \"Nós somos todos favoráveis às vacinas que estão no PNI\" - favorable to traditional vaccines\n- \"Nós estamos questionando muito claramente essa terapia gênica\" - questioning the COVID-19 vaccine\n- \"se vocês têm filhos, levem seus filhos para se vacinarem. Entretanto, a vacina da COVID-19 precisa ser debatida\" - says people should vaccinate but COVID vaccine needs debate\n- \"Não é possível que simplesmente se obrigue e ainda se punam pessoas\" - against mandatory vaccination and punishment\n- Target proposition: \"A vacinação contra COVID-19 deve ser obrigatória para crianças\"\n- Stance: AGAINST\n\n**Comparability:**\nBoth manifestations are about mandatory COVID-19 vaccination for children. Both speakers are against the mandatory nature of the COVID-19 vaccine for children. The propositions are semantically equivalent - both oppose mandatory COVID-19 vaccination for children.\n\nLet me be more precise:\n- Manifestation A: Against mandatory COVID-19 vaccination for children 6 months to 5 years\n- Manifestation B: Against mandatory COVID-19 vaccination for children (general)\n\nThese are essentially the same proposition - opposing mandatory COVID-19 vaccination for children. The age range in A is more specific (6 months to 5 years) while B is more general about children, but the core proposition is the same: opposing mandatory COVID-19 vaccination for children.\n\nI'll say same_proposition = YES, as both are about opposing mandatory COVID-19 vaccination for children.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3489,
+    "total_tokens": 4189,
+    "completion_tokens": 700,
+    "estimated_cost": 0.0029590425010800002,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 589
+    }
+  }
+}

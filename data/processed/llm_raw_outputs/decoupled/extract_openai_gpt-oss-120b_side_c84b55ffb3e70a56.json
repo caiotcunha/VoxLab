@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVgBC3IbuLmow29IuM8aIuDZ",
+  "object": "chat.completion",
+  "created": 1790624034,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O apoio e a acessibilidade para pessoas autistas devem ser garantidos?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker talks about inclusion, fighting capacitism, guaranteeing inclusion, rights, dignity, support. The specific issue could be \"the guarantee of opportunities and respect for the singularities of autistic people\" – but need a yes/no question. Perhaps: \"Políticas de inclusão para pessoas autistas devem ser mantidas e ampliadas?\" Or \"O apoio e acessibilidade para pessoas autistas deve ser garantido?\" The speaker is clearly in favor of inclusion and support. So stance_determinable = YES. Target question: \"O apoio e a acessibilidade para pessoas autistas devem ser garantidos?\" That's a yes/no. The speaker's stance is FAVOR (yes). So JSON.\n\nCheck if any nuance: The statement is a testimonial advocating inclusion, against seeing autism as a burden. So yes.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1006,
+    "total_tokens": 1237,
+    "completion_tokens": 231,
+    "estimated_cost": 7.6492e-05,
+    "prompt_tokens_details": null
+  }
+}

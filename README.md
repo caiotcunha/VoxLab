@@ -92,3 +92,7 @@ Os dois experimentos usam só o gold existente, sem anotação humana nova, e ro
 - **A concordância humana de stance na expansão é maior do que parecia.** A canonização mostra que 5 dos 8 desacordos são só polaridade da formulação, e o κ sobe de 0,27 para 0,54.
 - **Correção em resultado anterior.** A auditoria de polaridade anterior comparava lados trocados em parte da expansão. Veja `docs/stress_and_canonicalization.md`.
 - **Gate v2, com comparabilidade julgada por perguntas neutras de sim/não (`docs/question_gate.md`): resultado negativo.** O protocolo teve dev, congelamento por hash e teste. O v2 aumenta o recall de pares comparáveis, mas volta a aceitar proposições deslocadas e não recupera as reversões no teste. O prompt move o limiar do gate sem melhorar a discriminação.
+- **Gate desacoplado e modelos maiores (`docs/decoupled_gate.md`).** Foram 5 modelos de 4 famílias. Os resultados se agrupam pela condição (com gate, sem gate, end-to-end), não pelo modelo, e nenhuma combinação chega ao canto ideal da figura `docs/figures/gate_tradeoff.png`.
+  - Desacoplar a extração da comparação elimina o vazamento da stance.
+  - Mas, sem um alvo compartilhado, cada fala gera a própria pergunta, e o comparador as julga diferentes.
+

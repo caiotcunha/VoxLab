@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R86bFTIxfmZBBOo8JZ4KrHW9",
+  "object": "chat.completion",
+  "created": 1790622546,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Professores da rede pública devem ter a possibilidade de acumular dois cargos públicos em áreas diferentes?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if the stance is determinable (YES/NO/UNCERTAIN), formulate a neutral yes/no target question, and identify the stance (FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING\n    *   *Date:* 2023-11-08\n    *   *Theme:* Debate on the possibility of public school teachers holding two public positions in different areas.\n    *   *Speech:* The speaker is defending PEC 169/2019, which allows teachers to have the freedom of choice to work multiple jobs (20, 40, or 60 hours). They argue against \"dedicação exclusiva\" (exclusive dedication) requirements, pointing out that teachers already work in multiple schools (public, private, community, etc.). They clarify that the PEC covers all teaching levels, not just higher education, and includes technical and scientific positions. They advocate for the freedom to exercise multiple professions (e.g., teacher and app driver, teacher and journalist).\n\n3.  **Determine Stance Determinability:**\n    *   Does the speaker present a clear position on a specific issue? Yes. The speaker explicitly supports PEC 169/2019, which allows public teachers to hold more than one public position (or work multiple jobs without exclusive dedication). They argue for \"liberdade de escolha\" (freedom of choice) and against \"dedicação exclusiva\" (exclusive dedication).\n    *   *stance_determinable:* YES\n\n4.  **Formulate Target Question:**\n    *   The core issue is whether public teachers should be allowed to hold two public positions in different areas (or whether they should be allowed to have multiple jobs / not be subject to exclusive dedication).\n    *   *Draft 1:* Professores da rede pública devem poder acumular dois cargos públicos em áreas diferentes?\n    *   *Draft 2:* A PEC 169/2019, que permite a professores da rede pública a acumulação de cargos públicos, deve ser aprovada?\n    *   *Draft 3 (Focusing on the measure):* Professores da rede pública devem ter a liberdade de exercer mais de um cargo público em áreas diferentes?\n    *   Let's stick to the theme provided: \"Debate sobre a possibilidade de professores da rede pública terem dois cargos públicos em áreas diferentes\".\n    *   *Target Question:* Professores da rede pública devem ter a possibilidade de acumular dois cargos públicos em áreas diferentes?\n\n5.  **Determine Stance:**\n    *   The speaker is clearly in favor of this possibility (defending the PEC, arguing for freedom of choice, arguing against exclusive dedication).\n    *   *stance:* FAVOR\n\n6.  **Format Output:**\n    *   JSON format required.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"Professores da rede pública devem ter a possibilidade de acumular dois cargos públicos em áreas diferentes?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1394,
+    "total_tokens": 2153,
+    "completion_tokens": 759,
+    "estimated_cost": 0.00197464500072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 708
+    }
+  }
+}

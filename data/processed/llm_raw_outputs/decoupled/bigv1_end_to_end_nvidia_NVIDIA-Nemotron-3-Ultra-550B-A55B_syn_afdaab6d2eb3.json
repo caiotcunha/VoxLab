@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1AmEHMWZApuJFhc3GudBaMU",
+  "object": "chat.completion",
+  "created": 1790624148,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam oposição clara à obrigatoriedade da vacinação de crianças contra a COVID‑19, mantendo a mesma direção de stance (AGAINST) em relação à mesma proposição específica.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are about COVID-19 vaccination of children (and also elderly). Manifestation A: speaker opposes mandatory vaccination of children 6 months to 5 years, argues against mandatory, says not anti-vax, wants data, opposes tyranny. Stance: AGAINST mandatory vaccination of children (i.e., against the proposition \"mandatory vaccination of children 6 months to 5 years\").\n\nManifestation B: speaker also opposes mandatory vaccination, says they are not against vaccines in general, but against mandatory COVID vaccine, especially for children? Actually B mentions elderly, but also says \"we are against mandatory\". The proposition in B: \"mandatory vaccination of children against COVID-19\"? The event theme: \"Debate sobre a vacinação de crianças contra Covid-19\". The speech argues against mandatory, says they are against mandatory. So both are against mandatory vaccination of children. Same specific proposition? A is about a specific proposal: \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\". B is about \"vacinação de crianças contra Covid-19\" generally mandatory? The theme says debate about vaccination of children. The speaker says \"O que nós somos contra é quanto a obrigatoriedade.\" So both oppose mandatory vaccination of children. So same proposition (mandatory vaccination of children). Both stance AGAINST. So STANCE_MAINTAINED.\n\nCheck if any nuance: A also mentions broader anti-globalist, but stance on mandatory is clear. B also clear. So relation = STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3154,
+    "total_tokens": 3574,
+    "completion_tokens": 420,
+    "estimated_cost": 0.0025009999999999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 353
+    }
+  }
+}

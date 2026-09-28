@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RM4ylxhBIQ3JKqvWUXwUhG4A",
+  "object": "chat.completion",
+  "created": 1790622167,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos públicos devem ser reservados para prevenção e resposta a desastres socioambientais?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1742,
+    "total_tokens": 1796,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00064872,
+    "prompt_tokens_details": null
+  }
+}

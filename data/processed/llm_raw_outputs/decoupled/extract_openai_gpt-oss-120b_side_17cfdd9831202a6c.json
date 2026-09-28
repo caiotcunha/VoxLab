@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrXeff4e3G08XnKL9uVVbQuB",
+  "object": "chat.completion",
+  "created": 1790624042,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo federal deve assumir a responsabilidade e financiar políticas de adaptação e mitigação dos desastres climáticos?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about climate change, disasters, need for state preparedness, adaptation, funding, etc. The speaker seems to argue that municipalities cannot handle climate disaster costs, need national/state action, need budget, policies, adaptation. So the position: support increased state/federal action and funding for climate disaster mitigation and adaptation. The specific question could be: \"O Estado federal deve assumir a responsabilidade e financiar medidas de adaptação e mitigação dos desastres climáticos, em vez de deixar os municípios sozinhos?\" Or \"O governo deve aumentar o orçamento e políticas para enfrentar as mudanças climáticas e desastres socioambientais?\" That's a yes/no.\n\nThus stance determinable = YES. Target question: \"O governo federal deve assumir a responsabilidade e financiar políticas de adaptação e mitigação dos desastres climáticos?\" The speaker is in favor (they argue it's necessary). So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1612,
+    "total_tokens": 1873,
+    "completion_tokens": 261,
+    "estimated_cost": 0.000104014,
+    "prompt_tokens_details": null
+  }
+}

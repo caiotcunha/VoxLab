@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLjtd41QAepb8U0VSn5sRBvo",
+  "object": "chat.completion",
+  "created": 1790622420,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if the stance is determinable (YES/NO/UNCERTAIN), formulate a neutral target question if YES, and determine the stance (FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   Event: PUBLIC_HEARING\n    *   Date: 2023-06-28\n    *   Theme: Aprovação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\n    *   Speech: The speaker opens the hearing, mentions it was convened to debate the ratification of the Inter-American Convention on the Protection of the Human Rights of Older Persons. The speaker says: \"Acredito que a reunião desta audiência pública ficará registrada na história, visto que estamos agora num processo de articulação para aprovação desta que é uma necessidade para o nosso País. Constrange-nos, há tanto tempo, ter isso na pauta, para aprovação, e ainda não termos conseguido.\" (I believe this hearing will go down in history, as we are now in a process of articulation for the approval of this which is a necessity for our Country. It embarrasses us, for so long, to have this on the agenda, for approval, and still not have achieved it.) The speaker also mentions meeting with AMB and Arthur Lira to help pass it. \"Vai ser gerado um documento desta audiência, que vai subsidiar as ações de articulação política que estamos fazendo para que possamos ter a aprovação da convenção o mais rápido possível.\" (A document will be generated to subsidize political articulation actions we are doing so we can have the approval of the convention as quickly as possible.)\n\n3.  **Evaluate Determinability:**\n    *   Does the speaker present a clear position on a specific issue? Yes. The speaker explicitly advocates for the approval/ratification of the Inter-American Convention on the Protection of the Human Rights of Older Persons. They call it a \"necessity for our Country\" and are actively articulating for its approval.\n\n4.  **Formulate Target Question:**\n    *   The issue is the ratification/approval of the Inter-American Convention on the Protection of the Human Rights of Older Persons.\n    *   Neutral yes/no question: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" (Should the Inter-American Convention on the Protection of the Human Rights of Older Persons be approved?) or \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\" (Should the Inter-American Convention on the Protection of the Human Rights of Older Persons be ratified?)\n    *   Let's use \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\"\n\n5.  **Determine Stance:**\n    *   The speaker is clearly in favor of the ratification/approval.\n    *   Stance: FAVOR.\n\n6.  **Format Output:**\n    *   JSON format required.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1584,
+    "total_tokens": 2410,
+    "completion_tokens": 826,
+    "estimated_cost": 0.0022021200007199997,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 771
+    }
+  }
+}

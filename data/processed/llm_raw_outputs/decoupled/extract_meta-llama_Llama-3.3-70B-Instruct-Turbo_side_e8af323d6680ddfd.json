@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rj1YqfFu57OAEWPElu3asCsz",
+  "object": "chat.completion",
+  "created": 1790622271,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O País deve ter uma fonte de recursos específica para a prevenção de desastres?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1467,
+    "total_tokens": 1520,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00016366000000000002,
+    "prompt_tokens_details": null
+  }
+}

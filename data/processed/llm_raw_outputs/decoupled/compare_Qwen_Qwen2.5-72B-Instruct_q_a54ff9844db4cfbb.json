@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RA7uH42RtqxDIAclfWe3u4rp",
+  "object": "chat.completion",
+  "created": 1790622239,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da alocação de recursos específicos, enquanto a segunda questiona a flexibilidade do financiamento, abordando aspectos diferentes da gestão financeira para prevenção de desastres naturais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 466,
+    "completion_tokens": 64,
+    "estimated_cost": 0.00017032,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmrX954zqWCD6TKnBQOaAewS",
+  "object": "chat.completion",
+  "created": 1790622342,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A educação deve priorizar a redução das desigualdades de raça e gênero?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2906,
+    "total_tokens": 2960,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00030788,
+    "prompt_tokens_details": null
+  }
+}

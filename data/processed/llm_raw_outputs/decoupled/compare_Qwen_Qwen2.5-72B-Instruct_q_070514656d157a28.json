@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrZOg2hq8mAEHZuRQZ1kA03x",
+  "object": "chat.completion",
+  "created": 1790622240,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata do aumento do orçamento para combater a tuberculose no Brasil, enquanto a segunda pergunta se concentra no foco geográfico para a erradicação da doença até 2030.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 463,
+    "completion_tokens": 66,
+    "estimated_cost": 0.00016932000000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRuX79mOVYTycy64hxyJIB43",
+  "object": "chat.completion",
+  "created": 1790624054,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A revisão do Marco Legal da Inovação deve permitir que as ICTs públicas tenham autonomia gerencial, orçamentária e financeira?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about revising the legal framework for innovation. The speaker (representing CNI and MEI) expresses support for various measures: they support the PL of Lei do Bem, they support PL of FNDCT, they support advances like tax exemptions, autonomy for ICTs, security juridical, etc. They also call for further improvements: ability to forecast operational expenses, autonomy for ICTs, security for scholarships, import tax exemptions, etc. So there is a clear stance: they are in favor of revising the Marco Legal da Inovação to include these improvements. The specific question could be: \"O Marco Legal da Inovação deve ser revisado para incluir maior autonomia e segurança jurídica às ICTs públicas?\" Or \"A revisão do Marco Legal da Inovação deve incluir a possibilidade de previsão de despesas operacionais e autonomia gerencial das ICTs?\" The speech supports those changes. So stance_determinable = YES. Target question: need a neutral yes/no question about a specific measure. Choose one central: \"A revisão do Marco Legal da Inovação deve permitir que as ICTs públicas tenham autonomia gerencial, orçamentária e financeira?\" That is a specific point. The speaker is in favor. So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2142,
+    "total_tokens": 2478,
+    "completion_tokens": 336,
+    "estimated_cost": 0.000136374,
+    "prompt_tokens_details": null
+  }
+}

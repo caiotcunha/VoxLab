@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2cE3Zw6Dl4OkIb2pwRecjQl",
+  "object": "chat.completion",
+  "created": 1790624039,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve continuar investindo na Hemobrás para alcançar autossuficiência em imunoglobulina?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speech covers many topics: acquisition of insulin, immunoglobulin, autossuficiência (self-sufficiency) in immunoglobulin, investment in Hemobrás, reopening beds, conferences, etc. The key stance: \"O Brasil pode ser autossuficiente em imunoglobulina. Para isso, temos que dar continuidade ao investimento na HEMOBRÁS...\" This is a position: supports continuation of investment in Hemobrás to achieve self-sufficiency. So a question could be: \"O Brasil deve continuar investindo na Hemobrás para alcançar autossuficiência em imunoglobulina?\" The speaker is in favor. Also earlier they say acquisition of insulin was authorized unanimously, implying support for that acquisition. But the clearest stance is supporting continuation of investment.\n\nThus stance_determinable = YES. target_question = \"O Brasil deve continuar investindo na Hemobrás para alcançar autossuficiência em imunoglobulina?\" stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1232,
+    "total_tokens": 1503,
+    "completion_tokens": 271,
+    "estimated_cost": 9.1654e-05,
+    "prompt_tokens_details": null
+  }
+}

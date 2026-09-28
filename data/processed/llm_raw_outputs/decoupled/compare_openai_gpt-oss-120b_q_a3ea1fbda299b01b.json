@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROhViWizCKxvDfCAQ6GJxgBc",
+  "object": "chat.completion",
+  "created": 1790632995,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas relacionados ao bem‑estar animal, mas a primeira pergunta aborda o princípio geral de garantir bem‑estar na produção, enquanto a segunda foca na adoção de normas mais rigorosas no Brasil para fins de competitividade, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\" => Should animal-origin food production guarantee animal welfare? It's a normative question about whether production should guarantee welfare.\n\nQuestion2: \"O Brasil deve adotar normas mais rigorosas de bem‑estar animal para garantir a competitividade do agronegócio?\" => Should Brazil adopt stricter animal welfare standards to ensure agribusiness competitiveness? This is about adopting stricter standards for competitiveness.\n\nAre they equivalent? Not exactly. Q1 is about whether production should guarantee welfare (general principle). Q2 is about adopting stricter standards for competitiveness (specific policy). They are related but not same question; answer to Q1 (yes) doesn't necessarily imply answer to Q2 (yes) because one could think production should guarantee welfare but not via stricter standards for competitiveness, maybe other means. Also Q2 includes a purpose (competitiveness) and is about Brazil adopting stricter norms, not just guaranteeing welfare. So they are different.\n\nThus relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 712,
+    "completion_tokens": 305,
+    "estimated_cost": 6.6909e-05,
+    "prompt_tokens_details": null
+  }
+}

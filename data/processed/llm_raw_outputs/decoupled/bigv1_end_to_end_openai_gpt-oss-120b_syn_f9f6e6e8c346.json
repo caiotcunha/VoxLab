@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCXjkPVVEbAjJfK77n6duVEL",
+  "object": "chat.completion",
+  "created": 1790633100,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas expressam apoio a maior financiamento e carreira na Defesa Civil, mas a Manifestação A foca especificamente no PL 920/23 e no veto nº 28, enquanto a Manifestação B não menciona essa proposição, tratando de questões gerais de recursos e carreira.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are from same actor (same person) in two public hearings. We need to see if they respond to same specific proposition. Manifestation A: discusses PL 920/23, veto nº 28, need to overturn veto, prevention funding, career for civil defense, measures provisórias, etc. Manifestation B: also discusses need for career for civil defense, funding, criticism of reliance on measures provisórias, need for resources for prevention, etc. Are they responding to same specific proposition? The specific proposition could be the same PL 920/23 (project) or the veto. In B, there is no mention of PL 920/23 or veto. It mentions funding for the Fundo de Calamidade Pública, need for budgetary allocation, career for defense civil, etc. While A also mentions career and funding, but the specific proposition is the veto of PL 920/23. B does not address that specific proposition. So they are not responding to same specific proposition. They both have stance on general issue of prevention funding and career, but not same proposition. So classification: INCOMPARABLE (they have determinable positions but not same specific proposition). Both have clear stance: they are in favor of more funding, career, against measures provisórias. So INCOMPARABLE.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2769,
+    "total_tokens": 3132,
+    "completion_tokens": 363,
+    "estimated_cost": 0.00016416300000000002,
+    "prompt_tokens_details": null
+  }
+}

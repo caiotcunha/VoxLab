@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCe9SCVvDcYqdMdnQHWkytn5",
+  "object": "chat.completion",
+  "created": 1790622663,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a mesma proposição específica de criar um projeto-piloto focado no Estado do Amazonas para o enfrentamento e erradicação da tuberculose, mantendo a mesma direção de stance (FAVOR).\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Task: Classify the relationship between two literal manifestations by the same actor in two different parliamentary events.\n    *   Categories:\n        *   `STANCE_MAINTAINED`: Same specific proposition, same stance (both FAVOR or both AGAINST).\n        *   `STANCE_REVERSED`: Same specific proposition, opposite stance.\n        *   `INCOMPARABLE`: Determinable stance, but different specific propositions.\n        *   `RELATION_UNCERTAIN`: Unclear determinability, comparability, or stance.\n        *   `INSUFFICIENT_EVIDENCE`: At least one manifestation lacks a determinable stance on any specific proposition.\n    *   Constraint: Strict JSON output with exactly the keys `relation` and `reasoning`. No external knowledge. Judge only based on the text.\n\n2.  **Analyze Manifestation A:**\n    *   Event: PUBLIC_HEARING (2023-12-05)\n    *   Theme: Aumento de orçamento para combater a tuberculose no Brasil\n    *   Content: The speaker is opening a commission meeting. They talk about the need to increase the budget for tuberculosis combat (from 14 million to something higher). They also propose focusing on the state of Amazonas as a pilot project to eradicate TB by 2030.\n    *   Propositions identified:\n        1. Increasing the budget for TB combat in Brazil. Stance: FAVOR (explicitly says \"nós deveremos, sim, ampliar o orçamento\").\n        2. Focusing on Amazonas as a pilot project for TB eradication. Stance: FAVOR (explicitly says \"Levei ao Ministro... a necessidade de focar no Amazonas... para que tenhamos um Estado... com um projeto-piloto no Amazonas\").\n\n3.  **Analyze Manifestation B:**\n    *   Event: PUBLIC_HEARING (2024-03-19)\n    *   Theme: Estratégias para a erradicação da tuberculose no Brasil até 2030\n    *   Content: The speaker is opening another commission meeting. They discuss the strategy to eradicate TB by 2030. They strongly advocate for focusing on the state of Amazonas as a pilot project, comparing its population to Uruguay's, to show results by 2025/2030.\n    *   Propositions identified:\n        1. Focusing on Amazonas as a pilot project for TB eradication. Stance: FAVOR (explicitly says \"a Comissão Externa provocou o Ministério da Saúde e agora provoca o CIEDDS para que busquemos o Amazonas como plano piloto\").\n\n4.  **Compare the Manifestations:**\n    *   Manifestation A supports increasing the budget and focusing on Amazonas as a pilot project.\n    *   Manifestation B supports focusing on Amazonas as a pilot project.\n    *   Both manifestations address the *same specific proposition*: implementing a pilot project focusing on the state of Amazonas for the eradication of tuberculosis.\n    *   In both, the stance is FAVOR (supportive of the Amazonas pilot project).\n    *   Therefore, the relation is `STANCE_MAINTAINED`.\n\n5.  **Draft the JSON:**\n    *   `relation`: \"STANCE_MAINTAINED\"\n    *   `reasoning`: \"Ambas as manifestações defendem a mesma proposição específica de implementar um projeto-piloto focado no Estado do Amazonas para o enfrentamento e erradicação da tuberculose, mantendo a mesma direção de stance (FAVOR).\"\n\n6.  **Review against constraints:**\n    *   Strict JSON? Yes.\n    *   Exactly the keys `relation` and `reasoning`? Yes.\n    *   No external knowledge used? Yes.\n    *   Category correct? Yes, both favor the Amazonas pilot project.\n\n7.  **Final Polish:**\n    ```json\n    {\n      \"relation\": \"STANCE_MAINTAINED\",\n      \"reasoning\": \"Ambas as manifestações defendem a mesma proposição específica de criar um projeto-piloto focado no Estado do Amazonas para o enfrentamento e erradicação da tuberculose, mantendo a mesma direção de stance (FAVOR).\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6208,
+    "total_tokens": 7185,
+    "completion_tokens": 977,
+    "estimated_cost": 0.0051042000006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 903
+    }
+  }
+}

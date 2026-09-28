@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3rJhkVmClxOYivRBeca400S",
+  "object": "chat.completion",
+  "created": 1790622382,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas são diferentes, uma pergunta sobre a revisão do marco legal da inovação e a outra sobre a aprovação da Lei do Bem.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 456,
+    "completion_tokens": 53,
+    "estimated_cost": 5.7260000000000004e-05,
+    "prompt_tokens_details": null
+  }
+}

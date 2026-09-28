@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rlsdt0uigs2lz3VKcohuIlJb",
+  "object": "chat.completion",
+  "created": 1790624060,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo deve destinar recursos específicos para a retirada de famílias de áreas de risco?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker (unknown) is speaking at a public hearing about prevention of natural disasters and assistance to population. They thank deputies, talk about need for resources, mention they authored a law creating funding sources for the National Fund for Public Calamities, and they support allocating resources for removal of families from risk areas. The stance: they are in favor of allocating resources, creating funding sources, and supporting prevention measures. The specific question could be: \"Deve ser criado e mantido um fundo nacional de calamidades públicas com fontes de recursos específicas para prevenção e retirada de famílias de áreas de risco?\" Or \"O governo deve destinar recursos específicos para a retirada de famílias de áreas de risco?\" The speaker clearly supports that. So stance_determinable = YES. Target question: \"O governo deve destinar recursos específicos para a retirada de famílias de áreas de risco?\" The answer is FAVOR (SIM). So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1254,
+    "total_tokens": 1511,
+    "completion_tokens": 257,
+    "estimated_cost": 9.008800000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdUdUOD3KEjNKgGE5CVF5rTc",
+  "object": "chat.completion",
+  "created": 1790624183,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both speeches advocate for the approval/ratification of the Inter‑American Convention on the Rights of Older Persons and related policy measures, expressing a supportive stance toward the same proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nWe must see if they respond to same specific proposition with same or opposite stance, or incomparable, etc.\n\nBoth are speeches at public hearings about elderly issues. Manifestation A: speaker is Secretary National of Rights of Elderly, discussing ageism, need to ratify Inter-American Convention, propose constitutional amendment, etc. He advocates for approval of the convention, for policies, etc. Stance: FAVOR (support) for ratification of convention, for policies.\n\nManifestation B: also at public hearing about 20 years of Estatuto do Idoso, praising advances, discussing policies, also mentions need to approve the convention (approval of the convention). He supports the convention, mentions \"aprovação da convenção\". So both are in favor of same proposition: ratification/approval of the Inter-American Convention on the Rights of Older Persons (or similar). They both support it. So same specific proposition: approval of the convention. Both FAVOR. So relation STANCE_MAINTAINED.\n\nCheck if any nuance: A says \"aprovacao de proposta de emenda à Constituição para que as políticas funcionem\". Also calls for ratification of the convention. B also calls for approval of the convention. So same proposition.\n\nThus classification: STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 7697,
+    "total_tokens": 8035,
+    "completion_tokens": 338,
+    "estimated_cost": 0.00034224900000000004,
+    "prompt_tokens_details": null
+  }
+}

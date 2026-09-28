@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0508nhggMYHe96h3KuSRcVJ",
+  "object": "chat.completion",
+  "created": 1790624069,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve priorizar o bem-estar animal mesmo que isso comprometa a segurança alimentar?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker thanks and praises, discusses importance of animal welfare, mentions economic impacts, calls for discussion, mentions need to prepare sector, mentions that excessive animal welfare could threaten food production, etc. Does she take a stance on a specific policy? Possibly stance on \"Treaty between EU and MERCOSUL should not be hindered by animal welfare clauses\" – she says it's a prejudice for agribusiness, implying she is against those clauses. Also she says \"É pelo bem dos animais, mas, não se iludam, não é pela vida humana na Terra.\" She also says \"É um equívoco perigoso achar que bem-estar animal dialoga com a fome! Se priorizarmos excessivamente a produção de alimentos seguindo o requisito de bem-estar animal, colocaremos em xeque, inclusive, a capacidade de alimentar as pessoas.\" That is a stance against prioritizing animal welfare over food production. So a specific question could be: \"Deve o Brasil priorizar o bem-estar animal mesmo que isso possa comprometer a produção de alimentos?\" She says it's dangerous, so she is against that. So stance: AGAINST.\n\nBut is the question determinable? The speech is broad, but includes clear position: \"É um equívoco perigoso achar que bem-estar animal dialoga com a fome! Se priorizarmos excessivamente...\". So she opposes excessive animal welfare that harms food supply. So we can formulate target question: \"O Brasil deve priorizar o bem-estar animal mesmo que isso comprometa a segurança alimentar?\" She says no. So stance AGAINST.\n\nThus stance_determinable = YES, target_question as above, stance = AGAINST.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1973,
+    "total_tokens": 2384,
+    "completion_tokens": 411,
+    "estimated_cost": 0.000142871,
+    "prompt_tokens_details": null
+  }
+}

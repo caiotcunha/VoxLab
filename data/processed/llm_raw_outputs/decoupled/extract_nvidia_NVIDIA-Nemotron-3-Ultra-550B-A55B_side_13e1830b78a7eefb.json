@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKUcvuAVNFPImE7WGKX8etho",
+  "object": "chat.completion",
+  "created": 1790624001,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there's a clear position on a specific issue. The speech is about \"Saque-Aniversário do FGTS\" and argues against ending it. The speaker says it would be cruel and malign to end it, defends it, provides data. So stance determinable = YES. Target question: Should the saque-aniversário do FGTS be maintained? Or \"Should the saque-aniversário do FGTS be ended?\" The instruction: \"Prefira a formulação afirmativa da medida ou avaliação em debate.\" So question: \"O saque-aniversário do FGTS deve ser mantido?\" That's a yes/no question. The speaker is in favor of maintaining, so stance = FAVOR (responds SIM). Provide JSON.\n\nCheck rules: No extra text. Provide exactly keys. Ensure target_question non-empty string. stance non-empty. Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1252,
+    "total_tokens": 1480,
+    "completion_tokens": 228,
+    "estimated_cost": 0.0011276,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185
+    }
+  }
+}

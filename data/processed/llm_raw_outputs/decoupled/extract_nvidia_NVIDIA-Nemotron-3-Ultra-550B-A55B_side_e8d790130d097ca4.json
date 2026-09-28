@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzRM95SN58GVrywNPNwp0qkv",
+  "object": "chat.completion",
+  "created": 1790624076,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve avançar nas regulamentações de bem-estar animal para garantir competitividade econômica e cumprir acordos internacionais?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a government official (executive) discussing animal welfare, its economic importance, international treaties, UN resolution, need for studies, competitiveness, and mentions that 88% Brazilians care, and PPA participatory vote demands cage-free production. The speaker says \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, é sobretudo pela competitividade econômica do Brasil.\" This indicates a stance: supports animal welfare measures because they are needed for economic competitiveness. The question: what specific issue? Could be \"Should Brazil adopt animal welfare standards to maintain international competitiveness?\" Or \"Should the government implement cage-free production as demanded by society?\" The speech mentions multiple things: need to advance internal debate on animal welfare to avoid trade barriers, need to respond to UN resolution, need to prepare productive sector, and that government must respond to societal demand for cage-free production. The central position: supports advancing animal welfare policies for economic competitiveness and to meet international obligations and societal demand. So a specific yes/no question: \"Should Brazil advance animal welfare regulations to ensure economic competitiveness and comply with international agreements?\" That is a yes/no. The speaker is in favor (YES). So stance_determinable = YES. target_question neutral: \"O Brasil deve avançar nas regulamentações de bem-estar animal para garantir competitividade econômica e cumprir acordos internacionais?\" stance = FAVOR.\n\nCheck rules: Must be a specific question. The speech covers multiple but central is about advancing animal welfare debate/regulation for competitiveness. That seems determinable.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2198,
+    "total_tokens": 2606,
+    "completion_tokens": 408,
+    "estimated_cost": 0.0019966,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 351
+    }
+  }
+}

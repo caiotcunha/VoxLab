@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R831FelcXC4FB7w1XiRZORgk",
+  "object": "chat.completion",
+  "created": 1790622326,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A precarização do trabalho na mineração brasileira deve ser combatida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1079,
+    "total_tokens": 1123,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00012198000000000001,
+    "prompt_tokens_details": null
+  }
+}

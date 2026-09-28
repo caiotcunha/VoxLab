@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmtIgVs5g3ssOUTwL1uJZkGv",
+  "object": "chat.completion",
+  "created": 1790622345,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo Nacional para Calamidades Públicas deve ter fontes de recursos garantidas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1486,
+    "total_tokens": 1537,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00016492000000000004,
+    "prompt_tokens_details": null
+  }
+}

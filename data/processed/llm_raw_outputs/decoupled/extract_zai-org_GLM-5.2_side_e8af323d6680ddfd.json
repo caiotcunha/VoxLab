@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5q2OfwdcGya0p0vqBBjbxLb",
+  "object": "chat.completion",
+  "created": 1790622440,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Devem ser alocados recursos financeiros específicos para a prevenção de desastres naturais no Brasil?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Let me analyze this manifestation carefully.\n\nThe speaker is presiding over or moderating a public hearing about disaster prevention. Let me look at what positions they take:\n\n1. They express that the country needs financial resources for disaster prevention: \"O País necessita de recursos financeiros, precisa organizar fontes de recursos específicas para a prevenção de desastres.\"\n\n2. They mention their own project that was approved and sanctioned: \"Eu fui autor de um projeto de lei que foi aprovado... que tem por objetivo colocar fontes de recursos no Fundo Nacional para Calamidades Públicas.\"\n\n3. They advocate for prevention rather than just response: \"podem haver recursos não só para a pronta resposta, mas também para avançar no trabalho de prevenção, que é a nossa principal tarefa nesta Comissão\"\n\n4. They want more resources allocated for disaster prevention: \"para alocar mais recursos para a prevenção de desastres\"\n\nThe speaker clearly takes a position in favor of allocating financial resources for disaster prevention. They also mention their own legislative work creating funding sources for the National Fund for Public Calamities.\n\nThe central question could be: \"Devem ser alocados recursos financeiros específicos para a prevenção de desastres naturais?\" or \"O Fundo Nacional para Calamidades Públicas deve ter fontes de recursos específicas para prevenção de desastres?\"\n\nThe speaker is clearly in FAVOR of this.\n\nLet me formulate the target question neutrally: \"Devem ser destinados recursos financeiros específicos para a prevenção de desastres naturais no Brasil?\"\n\nThe stance is clearly FAVOR.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1370,
+    "total_tokens": 1768,
+    "completion_tokens": 398,
+    "estimated_cost": 0.00131134500072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 341
+    }
+  }
+}

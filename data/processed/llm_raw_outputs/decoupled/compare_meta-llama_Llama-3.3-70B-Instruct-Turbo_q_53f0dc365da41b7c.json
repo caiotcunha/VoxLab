@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnybDzRpwLdfvwNurfMK8sZ4",
+  "object": "chat.completion",
+  "created": 1790622390,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As perguntas tratam da mesma questão energética, mas uma prioriza a transição para energia limpa, enquanto a outra defende a manutenção do modelo atual, implicando opiniões opostas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 460,
+    "completion_tokens": 66,
+    "estimated_cost": 6.052e-05,
+    "prompt_tokens_details": null
+  }
+}

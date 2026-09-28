@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2ZutI9JHJUPqnz6ZpmBoSvm",
+  "object": "chat.completion",
+  "created": 1790622141,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve retomar a autoridade técnica e política na coordenação do SUS?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1155,
+    "total_tokens": 1207,
+    "completion_tokens": 52,
+    "estimated_cost": 0.0004366,
+    "prompt_tokens_details": null
+  }
+}

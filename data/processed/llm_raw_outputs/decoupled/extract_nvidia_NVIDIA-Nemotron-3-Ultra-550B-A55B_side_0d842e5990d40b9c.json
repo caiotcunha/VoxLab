@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rp0R8QaJgpAPj3r5AuefpDPM",
+  "object": "chat.completion",
+  "created": 1790624075,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo federal deve criar carreiras permanentes para profissionais da Defesa Civil nos municípios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speech talks about need for permanent career for Civil Defense professionals in municipalities, criticizes temporary contracts, mentions budget numbers. The speaker says they have worked strongly for financing to guarantee creation of structured careers. So they are in favor of creating permanent careers for Civil Defense. The question: \"Should the federal government create permanent career positions for Civil Defense professionals in municipalities?\" That's a yes/no question. The speaker is in favor (FAVOR). Determinability: YES. Provide target_question neutral. Stance: FAVOR.\n\nWe must output JSON with keys exactly. Ensure target_question is a neutral yes/no question. Provide stance \"FAVOR\". No extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1059,
+    "total_tokens": 1264,
+    "completion_tokens": 205,
+    "estimated_cost": 0.0009805,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 155
+    }
+  }
+}

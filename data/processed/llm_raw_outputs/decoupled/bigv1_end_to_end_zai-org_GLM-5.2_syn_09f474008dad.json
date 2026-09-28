@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rf6v0mWaRJGDEH2w84gzswSB",
+  "object": "chat.completion",
+  "created": 1790622891,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A trata da oposição ao ativismo judicial e à atuação do Supremo Tribunal Federal em competências do Legislativo, enquanto a Manifestação B aborda a regulação e as regras para renovação das concessões de distribuidoras de energia elétrica. Como os temas e as proposições específicas são distintos, as manifestações são incomparáveis.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two literal manifestations of the same actor in two different parliamentary events.\n\nCategories:\n- STANCE_MAINTAINED: Same specific proposition, same stance.\n- STANCE_REVERSED: Same specific proposition, opposite stance.\n- INCOMPARABLE: Determinable position, but not the same specific proposition.\n- RELATION_UNCERTAIN: Not clear enough to decide.\n- INSUFFICIENT_EVIDENCE: At least one manifestation lacks a determinable position on any specific proposition.\n\nManifestation A:\nEvent: SEMINAR\nDate: 2023-12-06\nTheme: Debate on judicial activism in the Chamber of Deputies.\nContent: The speaker criticizes judicial activism, specifically by the Supreme Federal Court (STF). They argue that the STF should not legislate, fill gaps, or modify existing laws. They believe the Legislative branch should express the voice of the people and legislate. The STF should defend the law as written. Stance: AGAINST judicial activism / AGAINST STF legislating.\n\nManifestation B:\nEvent: PUBLIC_HEARING\nDate: 2024-04-16\nTheme: Participation of the Chamber in defining the rules for renewing energy distribution concessions.\nContent: The speaker talks about energy distributors, the challenges they face, regulatory uncertainties, and suggests ANEEL consider the sector's difficulties. They mention their bill PL 970/24, which brings highway concession rules to energy concessions (caderno de obrigações, cronograma de investimentos, etc.). They argue for caution in imposing new criteria and say distributors operate within the law. Stance: FAVOR a more stable regulatory environment / FAVOR their bill PL 970/24 / AGAINST overly burdensome new criteria.\n\nComparison:\nManifestation A is about judicial activism and the separation of powers (STF vs. Legislature).\nManifestation B is about energy concession renewals, regulatory rules, and a specific bill (PL 970/24).\n\nAre they responding to the same specific proposition?\nNo. Manifestation A is about judicial activism. Manifestation B is about energy concession rules.\n\nTherefore, they are INCOMPARABLE. Both have determinable positions (A is against judicial activism, B is in favor of PL 970/24 / regulatory stability for energy distributors), but they do not respond to the same specific proposition.\n\nLet's double check.\nManifestation A: Proposition = Judicial activism by the STF (or STF legislating). Stance = AGAINST.\nManifestation B: Proposition = Rules for renewing energy distribution concessions (or PL 970/24). Stance = FAVOR (their bill / regulatory stability).\n\nSince the propositions are different, the relation is INCOMPARABLE.\n\nReasoning: Manifestation A expresses a stance against judicial activism and the Supreme Court legislating, while Manifestation B expresses a stance on the regulatory rules for energy concession renewals and a specific bill. Since they address different specific propositions, they are incomparable.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2564,
+    "total_tokens": 3285,
+    "completion_tokens": 721,
+    "estimated_cost": 0.00192021000336,
+    "prompt_tokens_details": {
+      "cached_tokens": 1792,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 617
+    }
+  }
+}

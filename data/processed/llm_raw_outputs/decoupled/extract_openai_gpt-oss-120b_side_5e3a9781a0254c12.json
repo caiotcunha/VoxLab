@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKqA6JYq2ofbXcCyzHTROA5m",
+  "object": "chat.completion",
+  "created": 1790624003,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser realizada uma nova audiência pública para discutir boas práticas de políticas públicas para a população LGBTQIA+?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker talks about importance of research, need for public hearing, need for quality equipment, budget allocation, existence of councils and plans, intersectorality, etc. They advocate for more public hearings, for discussing good practices, for policies. So there is a stance: they are in favor of holding another public hearing on good practices, and generally favor policies for LGBTQIA+.\n\nWe need to formulate a neutral yes/no question that captures the central issue. Could be: \"Deve ser realizada uma nova audiência pública para discutir boas práticas de políticas públicas para a população LGBTQIA+?\" That seems central. The speaker says \"É muito importante... Nós vamos sugerir uma nova audiência para discutir esse tema.\" So they are in favor.\n\nThus stance_determinable = YES, target_question = \"Deve ser realizada uma nova audiência pública para discutir boas práticas de políticas públicas para a população LGBTQIA+?\" stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1162,
+    "total_tokens": 1424,
+    "completion_tokens": 262,
+    "estimated_cost": 8.753399999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

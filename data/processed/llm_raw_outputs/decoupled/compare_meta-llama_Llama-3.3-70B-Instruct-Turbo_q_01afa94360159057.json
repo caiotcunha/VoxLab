@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQzMx5vFxpSiBgsFAZ3gL8TD",
+  "object": "chat.completion",
+  "created": 1790622375,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos, um sobre o Estatuto dos Povos Ciganos e o outro sobre a inclusão da economia do cuidado no cálculo do PIB.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 458,
+    "completion_tokens": 62,
+    "estimated_cost": 5.943999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFzzAIbGPeU0lhE0aRAuW3Cc",
+  "object": "chat.completion",
+  "created": 1790622349,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do trabalho de motoristas de aplicativo deve ser feita de forma rápida e sem considerar as implicações a longo prazo?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1293,
+    "total_tokens": 1357,
+    "completion_tokens": 64,
+    "estimated_cost": 0.00014978,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnZt9mY9NXvHjxsR0pvEeODq",
+  "object": "chat.completion",
+  "created": 1790622370,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas diferentes, uma sobre políticas públicas de proteção às mulheres e a outra sobre um programa específico para a saúde da mulher.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 434,
+    "total_tokens": 486,
+    "completion_tokens": 52,
+    "estimated_cost": 6.004e-05,
+    "prompt_tokens_details": null
+  }
+}

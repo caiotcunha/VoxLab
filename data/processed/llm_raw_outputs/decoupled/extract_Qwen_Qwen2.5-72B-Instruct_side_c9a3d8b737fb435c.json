@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ru5vj9nL1J9gX041imIa3iHL",
+  "object": "chat.completion",
+  "created": 1790622217,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O grupo de trabalho para a regulamentação do trabalho de motoristas de aplicativo deve ser rejeitado e substituído por um novo modelo com participação direta dos motoristas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2497,
+    "total_tokens": 2567,
+    "completion_tokens": 70,
+    "estimated_cost": 0.0009269199999999999,
+    "prompt_tokens_details": null
+  }
+}

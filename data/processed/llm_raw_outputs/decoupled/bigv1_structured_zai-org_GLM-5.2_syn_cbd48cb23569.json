@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhY1ZM2aUirXuTqIMj3Uyq2v",
+  "object": "chat.completion",
+  "created": 1790632541,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser aprovado\",\n  \"target_proposition_b\": \"O projeto de lei do Governo (PLP 12) para a regulamentação dos motoristas de aplicativo deve ser aprovado\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "1.  **Analyze Manifestation A:**\n    *   **Context:** Public hearing on regulating app-based drivers' work (2024-03-21).\n    *   **Content:** The speaker strongly opposes the government's bill. They argue it allows unilateral banning by platforms (unconstitutional), resembles the CLT (labor code) without its rights, and imposes taxes/restrictions without benefits. They explicitly demand the total rejection of the bill (\"nós queremos a rejeição total desse projeto\", \"pedimos que ele seja rejeitado integralmente\").\n    *   **Theme:** Regulamentação do trabalho de motoristas de aplicativo.\n    *   **Target Proposition:** The government's bill for regulating app-based drivers should be rejected.\n    *   **Stance:** AGAINST (rejecting the bill).\n    *   **Stance Determinable:** YES.\n\n2.  **Analyze Manifestation B:**\n    *   **Context:** Public hearing on regulating app-based drivers' work (2024-04-25).\n    *   **Content:** The speaker opposes the government's bill (PLP 12). They argue it doesn't represent drivers, the contribution model (retention/hour worked) is bad, and platforms will pass costs to drivers and users. They demand the bill not be approved as presented (\"não aprovem este projeto em vista de como ele se apresenta\") and advocate for an alternative bill (PL 536/24) that they helped create.\n    *   **Theme:** Regulamentação do trabalho de motoristas de aplicativo.\n    *   **Target Proposition:** The government's bill (PLP 12) for regulating app-based drivers should be rejected.\n    *   **Stance:** AGAINST (rejecting the bill).\n    *   **Stance Determinable:** YES.\n\n3.  **Compare Propositions:**\n    *   Manifestation A opposes the \"projeto de lei que o Governo apresentou\" (government's bill).\n    *   Manifestation B opposes \"este projeto de lei\" / \"PLP 12\" (government's bill).\n    *   Both are specifically about rejecting the government's proposed bill for regulating app-based drivers. The target proposition is semantically equivalent: \"The government's bill for regulating app-based drivers should be rejected.\"\n    *   **Same Proposition:** YES.\n\n4.  **Format Output:**\n    *   `stance_determinable_a`: \"YES\"\n    *   `stance_determinable_b`: \"YES\"\n    *   `target_proposition_a`: \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser rejeitado\"\n    *   `target_proposition_b`: \"O projeto de lei do Governo (PLP 12) para regulamentação do trabalho de motoristas de aplicativo deve ser rejeitado\"\n    *   `same_proposition`: \"YES\"\n    *   `stance_a`: \"FAVOR\" (Wait, if the proposition is \"should be rejected\", favoring the proposition means favoring rejection. Let's make the proposition neutral and stance clear. Proposition: \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser aprovado\". Stance: AGAINST. Or Proposition: \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser rejeitado\". Stance: FAVOR. Let's use the latter to keep it simple, or the former. Let's use: \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser aprovado\" -> AGAINST. This is often safer to avoid \"FAVOR rejection\" confusion, but \"FAVOR\" to \"should be rejected\" is perfectly fine. Let's use: \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser rejeitado\" and Stance: FAVOR. Actually, let's use \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser aprovado\" and Stance: AGAINST. Both are fine. Let's go with \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser rejeitado\" and Stance: FAVOR. Wait, the prompt says: \"Stance: o ator favorece (FAVOR) ou rejeita (AGAINST) sua própria proposição-alvo.\" So if the proposition is \"The bill should be rejected\", the actor favors it. Stance: FAVOR. Let's use: \"O projeto de lei do Governo para regulamentação do trabalho de motoristas de aplicativo deve ser aprovado\" and Stance: AGAINST. This is more standard. Let's stick to \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser aprovado\" -> AGAINST.\n    *   Let's refine:\n        *   `target_proposition_a`: \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser aprovado\"\n        *   `stance_a`: \"AGAINST\"\n        *   `target_proposition_b`: \"O projeto de lei do Governo (PLP 12) para a regulamentação dos motoristas de aplicativo deve ser aprovado\"\n        *   `stance_b`: \"AGAINST\"\n        *   `same_proposition`: \"YES\"\n\n5.  **Final check of rules:**\n    *   JSON strict format.\n    *   No external knowledge.\n    *   No text outside JSON.\n    *   Keys exactly as requested.\n\n    ```json\n    {\n      \"stance_determinable_a\": \"YES\",\n      \"stance_determinable_b\": \"YES\",\n      \"target_proposition_a\": \"O projeto de lei do Governo para a regulamentação dos motoristas de aplicativo deve ser aprovado\",\n      \"target_proposition_b\": \"O projeto de lei do Governo (PLP 12) para a regulamentação dos motoristas de aplicativo deve ser aprovado\",\n      \"same_proposition\": \"YES\",\n      \"stance_a\": \"AGAINST\",\n      \"stance_b\": \"AGAINST\"\n    }\n    ```\n    Looks solid. Both speakers are clearly against the government's bill. The propositions are semantically equivalent (rejecting the government's bill on app-drivers regulation).",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2993,
+    "total_tokens": 4449,
+    "completion_tokens": 1456,
+    "estimated_cost": 0.00368948250252,
+    "prompt_tokens_details": {
+      "cached_tokens": 1344,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1337
+    }
+  }
+}

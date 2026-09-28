@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RD1tSinr9yn8Tq0fnvf7FHgn",
+  "object": "chat.completion",
+  "created": 1790624150,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de programas distintos – um de aluguel social para vítimas de violência doméstica e outro de saúde da mulher na menopausa – portanto são questões diferentes.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" => Should the Social Rental program for victims of domestic violence be approved?\n\nQuestion2: \"Deve ser criado um programa específico de atenção à saúde da mulher na menopausa e climatério?\" => Should a specific program for women's health in menopause and climacteric be created?\n\nThese are different topics: one is about a social rental housing program for victims of domestic violence; the other is about a health program for women in menopause. Different measures, objects, scope. So relation is DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 599,
+    "completion_tokens": 194,
+    "estimated_cost": 4.7965000000000006e-05,
+    "prompt_tokens_details": null
+  }
+}

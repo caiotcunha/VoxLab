@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLw8M1jBj5HU8imaXQtAN5qH",
+  "object": "chat.completion",
+  "created": 1790622180,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O racismo deve ser integrado ao debate sobre as políticas públicas para a primeira infância?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1738,
+    "total_tokens": 1790,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00064648,
+    "prompt_tokens_details": null
+  }
+}

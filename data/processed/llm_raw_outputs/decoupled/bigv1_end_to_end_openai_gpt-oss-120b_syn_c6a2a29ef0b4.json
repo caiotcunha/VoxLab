@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtWxqARXuGXaHXWcXTctzMRR",
+  "object": "chat.completion",
+  "created": 1790624155,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express clear positions (favoring a women's protection project in A, opposing a menopause program in B), but they address different specific policy proposals, so they are not comparable.\"\n}",
+        "reasoning_content": "We need to determine relation between Manifestação A and B.\n\nWe must see if they respond to same specific proposition. Manifestation A is about violence against women, feminicide, policies, support for project (maybe a specific project about social rent, etc). She says \"eu sou favorável, por exemplo, ao projeto.\" So stance is favorable to a project related to women's protection, maybe a specific legislative proposal.\n\nManifestation B is about a public hearing on policies for women in climacteric/menopause. She is the relator of PL 5.602/2019, and she presented a \"parecer contrário\" (opposition) to the project and its amendments, stating that creating a specific program is not the best solution. So she is against the creation of a specific program.\n\nThus they are about different propositions: A is about violence against women and possibly a specific project (maybe social rent, etc). B is about a program for menopause. Not same proposition. So they are INCOMPARABLE (both have determinable stance, but not same proposition). So relation = INCOMPARABLE.\n\nProvide brief reasoning.\n\nCheck if any chance they could be same proposition? No. Different topics. So INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3399,
+    "total_tokens": 3716,
+    "completion_tokens": 317,
+    "estimated_cost": 0.000179653,
+    "prompt_tokens_details": null
+  }
+}

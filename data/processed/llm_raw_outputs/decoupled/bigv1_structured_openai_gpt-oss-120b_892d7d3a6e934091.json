@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RT7ZyHMISNrV9vfaJ8BVClPr",
+  "object": "chat.completion",
+  "created": 1790632547,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Children aged 6 months to 5 years should be vaccinated against Covid-19\",\n  \"target_proposition_b\": \"Vaccination of children against Covid-19 should be maintained and not opposed\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: The speaker is discussing vaccination mandatory for children 6 months to 5 years. He lists \"barbarities\": \"A vacina não fica no braço\" (vaccine doesn't stay in arm), \"A vacina leva à mutação\" (vaccine leads to mutation). He says \"É óbvio...\". He seems to be refuting those claims, i.e., he says they are false. He also says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação\". So his stance is in favor of vaccination coverage, against anti-vaccine claims. The proposition target could be: \"Vaccination of children against Covid-19 should be mandatory\" or \"Vaccination is safe and should not be opposed\". The theme is mandatory vaccination. The specific proposition: \"Children should be vaccinated against Covid-19\". He seems to support that. So target proposition: \"Children aged 6 months to 5 years should be vaccinated against Covid-19\". Stance: FAVOR. Determinable? Yes, clear.\n\nManifestation B: Very long rant. He says \"é movimento antivacina, sim!\" He criticizes anti-vaccine movement, says they are lying, etc. He defends vaccination. He says \"Vocês não podem ... derrubar a cobertura vacinal ... isso é crime\". So his stance is in favor of vaccination, against anti-vaccine movement. The proposition: \"Vaccination campaigns should continue and not be undermined; anti-vaccine movement is harmful\". Could be \"Vaccination of children against Covid-19 should be maintained\" or \"Anti-vaccine movement should be stopped\". The theme same. So target proposition: \"Vaccination of children against Covid-19 should be continued and not opposed\". Stance: FAVOR (favor vaccination). Determinable: YES.\n\nNow comparability: Are the two propositions the same? Both about mandatory vaccination of children for Covid-19. A's proposition: \"Children should be vaccinated (mandatory)\". B's proposition: \"Anti-vaccine movement is harmful; vaccination should be maintained\". They are semantically equivalent regarding supporting vaccination of children. So same proposition? Yes.\n\nThus produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nProvide strings.\n\ntarget_proposition strings short neutral: \"Children aged 6 months to 5 years should be vaccinated against Covid-19\". For B: \"Vaccination of children against Covid-19 should be maintained and not opposed\". Could be similar but okay.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2792,
+    "total_tokens": 3452,
+    "completion_tokens": 660,
+    "estimated_cost": 0.00021550399999999996,
+    "prompt_tokens_details": null
+  }
+}

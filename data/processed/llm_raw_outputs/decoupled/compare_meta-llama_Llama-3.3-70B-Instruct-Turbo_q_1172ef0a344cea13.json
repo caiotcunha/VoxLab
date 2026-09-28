@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwndakstM1fxUaTcx0Oz48zF",
+  "object": "chat.completion",
+  "created": 1790622400,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As perguntas referem-se ao mesmo tema, a aprovação de um projeto de lei sobre regulamentação do trabalho de motoristas de aplicativo, com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 471,
+    "completion_tokens": 58,
+    "estimated_cost": 5.986e-05,
+    "prompt_tokens_details": null
+  }
+}

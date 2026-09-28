@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbXLwvON7QVZgFrFJuzfR9df",
+  "object": "chat.completion",
+  "created": 1790632314,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Veto nº 28 to PL 920/23 should be overturned\",\n  \"target_proposition_b\": \"Resources should be allocated to the National Calamities Fund for disaster prevention\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nWe must identify target proposition (specific statement) that the speaker accepts or rejects. Then stance (FAVOR/AGAINST/UNCERTAIN). Determine if stance determinable.\n\nManifestation A: Long speech by Deputy Leo Prates (maybe). He talks about need to invest in prevention, criticizes veto that removes funding, wants to overturn veto. He says \"a derrubada do Veto nº 28\" is important. He says \"o veto precisa ser derrubado\". So target proposition: \"Veto nº 28 to PL 920/23 should be overturned\" or \"Veto should be rejected\". He favors overturning. So stance determinable = YES. Target proposition: \"Veto nº 28 to PL 920/23 should be overturned\" (or \"Veto should be rejected\"). Stance = FAVOR (he wants to derrubar). Also he supports more funding for prevention. Could be proposition: \"Resources should be allocated to prevention of disasters\". He favors that. But we need one proposition. Choose the most explicit: \"Veto nº 28 should be overturned\". That's clear.\n\nManifestation B: Speaker (maybe same deputy) says \"Eu fui autor de um projeto de lei ... que tem por objetivo colocar fontes de recursos no Fundo Nacional para Calamidades Públicas.\" He describes that they approved and wants to allocate resources for prevention. He seems to favor the law. He also says \"a principal tarefa ... é prevenção\". He is not rejecting anything. He is stating that they have done this. Does he express stance on a proposition? Possibly \"Resources should be allocated to the National Calamities Fund for prevention\". He supports that. He says \"a intenção ... é que possamos levar recursos ...\". He is in favor. So stance determinable = YES. Target proposition: \"Resources should be allocated to the National Calamities Fund for disaster prevention\". Stance = FAVOR.\n\nNow comparability: Are the two propositions the same? First is about overturning a specific veto that removes 5% funding for prevention. Second is about allocating resources to the fund for prevention (general). They are related but not semantically equivalent. One is about a specific legislative action (overturn veto). The other is about establishing funding sources. Not same proposition. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\" etc.\n\ntarget_proposition strings short neutral.\n\nLet's craft:\n\ntarget_proposition_a: \"Veto nº 28 to PL 920/23 should be overturned\"\n\ntarget_proposition_b: \"Resources should be allocated to the National Calamities Fund for disaster prevention\"\n\nStance_a: FAVOR\n\nStance_b: FAVOR\n\nNow produce JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3249,
+    "total_tokens": 3948,
+    "completion_tokens": 699,
+    "estimated_cost": 0.000239043,
+    "prompt_tokens_details": null
+  }
+}

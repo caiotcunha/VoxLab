@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKy5gKHscf98X2wvGNOOHCKl",
+  "object": "chat.completion",
+  "created": 1790622371,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre a criação de um sistema nacional e outra sobre a participação de um ministério específico em ações de prevenção e auxílio.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 415,
+    "total_tokens": 477,
+    "completion_tokens": 62,
+    "estimated_cost": 6.134e-05,
+    "prompt_tokens_details": null
+  }
+}

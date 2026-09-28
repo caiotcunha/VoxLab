@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUtER4XEqnndEYbnN0U5g4nD",
+  "object": "chat.completion",
+  "created": 1790623994,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is largely procedural, opening a public hearing, describing purpose, advocating for the importance of regulation, but does it express a stance (favor/against) on a specific policy? The speaker is the rapporteur of PL 2.768, which deals with regulation of digital platforms. The speaker emphasizes need for regulation, says \"é imprescindível que a Câmara promova amplo debate\" and \"necessária legislação adequada para garantir proteção dos consumidores e concorrência justa, além de estimular inovação e desenvolvimento econômico, obviamente, não burocratizando\". This suggests support for regulation of digital markets. The specific question could be: \"A regulamentação dos mercados digitais no Brasil deve ser avançada?\" Or \"O Projeto de Lei nº 2.768, que regula plataformas digitais, deve ser aprovado?\" The speaker is in favor of the regulation, advocating for it. So stance determinable = YES. Target question: \"O Projeto de Lei nº 2.768, que regula as plataformas digitais, deve ser aprovado?\" Or \"A regulamentação dos mercados digitais no Brasil deve ser avançada?\" The answer is FAVOR (SIM). So produce JSON.\n\nCheck if any ambiguity: The speech is supportive of regulation, not neutral. So stance = FAVOR.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1625,
+    "total_tokens": 1950,
+    "completion_tokens": 325,
+    "estimated_cost": 0.00011537499999999999,
+    "prompt_tokens_details": null
+  }
+}

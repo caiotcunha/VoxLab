@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXsGsGgtI9Q6q2EJ3xUTiYT3",
+  "object": "chat.completion",
+  "created": 1790622492,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O veto presidencial ao PL 920/23 deve ser derrubado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "The user wants to analyze a parliamentary speech and extract the stance on a specific issue.\nThe output must be in strict JSON format with specific keys: `stance_determinable`, `target_question`, `stance`.\n\n1.  **Determinabilidade**: Does the speech present a clear position on a specific issue?\n    The speaker talks about disaster prevention, response, and specifically advocates for the rejection of a presidential veto (Veto nº 28) on PL 920/23. The veto removed a funding source (5% of judicial agreements) for a public calamity fund. The speaker explicitly says: \"esse veto precisa ser derrubado\" (this veto needs to be overturned) and calls for attention to vote against it.\n    So, YES, there is a clear position.\n\n2.  **Pergunta-alvo**: If YES, what is the specific central question the speech answers, as a neutral yes/no question?\n    The central issue is whether the presidential veto on PL 920/23 (which removed the allocation of 5% of judicial agreements to the public calamity fund) should be overturned/rejected.\n    Formulation: \"O veto presidencial ao PL 920/23 deve ser derrubado?\" or \"O Veto nº 28 ao PL 920/23 deve ser rejeitado?\"\n    Let's use: \"O veto presidencial ao PL 920/23 deve ser derrubado?\"\n\n3.  **Resposta**: What is the speaker's answer?\n    The speaker says the veto needs to be overturned (\"esse veto precisa ser derrubado\"). So the answer is YES (FAVOR).\n\nLet's double check the rules.\n- No external knowledge. (Check)\n- Reported speech is not the speaker's position. (Check)\n- Citation without endorsement is not position. (Check)\n- Genuine question is NO. (The speaker asks questions to Wolnei, but also makes a clear statement about the veto).\n- JSON strict format.\n\nLet's refine the target question.\n\"O veto presidencial ao PL 920/23 deve ser derrubado?\"\nThis is a clear yes/no question.\n\nLet's check if there are other clear positions.\n- \"precisamos sair da pronta resposta e realmente trabalhar na prevenção\" -> \"O Brasil deve priorizar o investimento em prevenção de desastres em detrimento da pronta resposta?\" (Maybe, but the veto is the most specific and actionable item).\n- \"importância da derrubada do Veto nº 28\" -> This is the strongest stance.\n\nSo:\n`stance_determinable`: \"YES\"\n`target_question`: \"O veto presidencial ao PL 920/23 deve ser derrubado?\"\n`stance`: \"FAVOR\"\n\nWait, the prompt says \"O saque-aniversário do FGTS deve ser mantido?\" as an example. \"Prefira a formulação afirmativa da medida ou avaliação em debate.\"\nThe measure in debate is the overturning of the veto.\n\"O veto presidencial ao PL 920/23 deve ser derrubado?\" fits perfectly.\n\nLet's review the JSON structure.\n```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O veto presidencial ao PL 920/23 deve ser derrubado?\",\n  \"stance\": \"FAVOR\"\n}\n```\n\nIs there any ambiguity? The speaker explicitly says \"esse veto precisa ser derrubado\" and \"a importância da derrubada do Veto nº 28\". This is a very clear FAVOR for overturning the veto.\n\nLet's consider if the target question should be broader, like \"O PL 920/23 deve ser sancionado sem o veto?\" No, the veto already happened, the debate is about overturning it. \"O veto presidencial ao PL 920/23 deve ser derrubado?\" is accurate.\n\nLet's consider if the target question should be about the allocation of 5% of judicial agreements to the calamity fund. \"5% dos acordos judiciais devem ser destinados ao fundo de calamidade pública?\" The speaker supports this, which was vetoed. But the immediate action is overturning the veto. Both are valid, but the veto is the specific object of the call to action. I will stick with the veto.\n\nLet's do a final check on the text.\n\"esse veto precisa ser derrubado.\"\n\"Eu queria alertar os Deputados que estão aqui sobre o veto a ser votado... esse veto precisa ser derrubado.\"\n\"Um ponto é a importância da derrubada do Veto nº 28...\"\n\"quero chamar a atenção para a votação desta semana do Veto nº 28... para que nós possamos derrubá-lo.\"\n\nYes, the stance is unequivocally FAVOR for overturning the veto.\n\nJSON format:\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O veto presidencial ao PL 920/23 deve ser derrubado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2566,
+    "total_tokens": 3688,
+    "completion_tokens": 1122,
+    "estimated_cost": 0.0032872950007200004,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1075
+    }
+  }
+}

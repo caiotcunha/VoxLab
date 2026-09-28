@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJ7JxMFHbCTiiyJwVGrnWPdu",
+  "object": "chat.completion",
+  "created": 1790622272,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A reconstrução do Sistema Único de Saúde deve ser priorizada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1182,
+    "total_tokens": 1230,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00013356,
+    "prompt_tokens_details": null
+  }
+}

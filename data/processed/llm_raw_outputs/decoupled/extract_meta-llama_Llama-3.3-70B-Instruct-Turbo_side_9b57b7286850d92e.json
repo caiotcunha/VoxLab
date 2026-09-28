@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQQyeoafVtplrjzqBnaB9gab",
+  "object": "chat.completion",
+  "created": 1790622357,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 sobre a regulamentação do trabalho de motoristas de aplicativo deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2402,
+    "total_tokens": 2464,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00026004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RG4ILZq0uHGN2NCjIY8xjVsZ",
+  "object": "chat.completion",
+  "created": 1790632651,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas expressam posições claras sobre políticas para mulheres, mas tratam de proposições diferentes (A defende projetos específicos de proteção e apoio, B discute a alocação orçamentária na LDO); portanto não respondem à mesma proposição.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we ignore identity. Need to see if they respond to same specific proposition. Manifestation A is about violence against women, policies, support for projects like social rental, MEI, etc. She says \"eu sou favorável, por exemplo, ao projeto...\" which project? Likely a proposal for social rental? She is supportive of measures to protect women, etc. Manifestation B is about LDO 2024 and its implications for deficit and policies for women. She discusses hope for government, suggests moving resources from Ministry of Justice to Ministry of Women, and says \"não concordo com essa parte que eu citei. Quanto é que vai sobrar?\" She expresses some disagreement about a part of LDO? She is not clearly stating stance on a specific proposition. She says she doesn't agree with a part, but not clear which proposition. She suggests reallocation of resources. Both talk about policies for women. Are they responding to same proposition? Not exactly; A is about specific legislation (feminicídio law, social rental, etc). B is about budget allocation in LDO. Not same proposition. So they are INCOMPARABLE if both have determinable stance. Both have stance: A is favorable to certain projects, B is partially disagreeing with part of LDO but also supportive of overall social policies. They are about different propositions. So relation INCOMPARABLE.\n\nCheck if any uncertainty: We can determine stance in both. Yes. So INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2276,
+    "total_tokens": 2681,
+    "completion_tokens": 405,
+    "estimated_cost": 0.00015306199999999998,
+    "prompt_tokens_details": null
+  }
+}

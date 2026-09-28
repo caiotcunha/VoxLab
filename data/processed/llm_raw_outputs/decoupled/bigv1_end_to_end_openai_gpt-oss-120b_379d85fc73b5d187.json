@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RW76M6ZxZ9tCUM7okoztiT2X",
+  "object": "chat.completion",
+  "created": 1790624176,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express clear support for their respective proposals (the Romani statute and the care economy policy), but they address different specific propositions, making them incomparable.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we don't know name. Manifestation A is about Estatuto dos Povos Ciganos, supporting the bill. She expresses support, wants recognition, etc. So stance: FAVOR the statute.\n\nManifestation B is about inclusion of economy of care in PIB, supporting that policy, advocating for it. She supports that proposal. So both are FAVOR different propositions: one about statute for ciganos, another about economy of care. They are different propositions. So relation is INCOMPARABLE (both have determinable stance but not same proposition). Not reversed. So answer: INCOMPARABLE.\n\nProvide brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4347,
+    "total_tokens": 4549,
+    "completion_tokens": 202,
+    "estimated_cost": 0.00019517900000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbjPp4GNJuSHkfehlZRBBAXy",
+  "object": "chat.completion",
+  "created": 1790622226,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos diferentes do SUS relacionados à saúde do diabetes: a primeira foca no atendimento primário para retinopatia diabética, enquanto a segunda foca na revisão de protocolos clínicos para edema macular diabético.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 422,
+    "total_tokens": 499,
+    "completion_tokens": 77,
+    "estimated_cost": 0.00018272,
+    "prompt_tokens_details": null
+  }
+}

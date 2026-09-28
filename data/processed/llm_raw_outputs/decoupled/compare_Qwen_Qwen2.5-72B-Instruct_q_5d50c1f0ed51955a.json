@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcYWviulFk7yOCA63MUrs9eB",
+  "object": "chat.completion",
+  "created": 1790622239,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas diferentes para combater a violência: uma propõe mudanças no Código Penal, enquanto a outra se refere a emendas na LDO.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 457,
+    "completion_tokens": 55,
+    "estimated_cost": 0.00016672,
+    "prompt_tokens_details": null
+  }
+}

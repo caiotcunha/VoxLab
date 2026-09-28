@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAVmU8pVjqz8TqUna7zEI6gM",
+  "object": "chat.completion",
+  "created": 1790624107,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Saque-Aniversário deve ser mantido\",\n  \"target_proposition_b\": \"O Saque-Aniversário deve ser encerrado\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: The speaker is defending the Saque-Aniversário (withdrawal) and says it should not be ended. So proposition: \"The Saque-Aniversário should be maintained (not eliminated)\". Or \"The Saque-Aniversário should continue\". That's a specific proposition. Stance: FAVOR (favor maintaining). So stance_determinable = YES. target_proposition_a: \"O Saque-Aniversário deve ser mantido\" (in Portuguese). Provide short neutral phrase.\n\nManifestation B: The speaker discusses substitution of Saque-Aniversário by credit, but says \"não conte comigo para finalizá-lo, para acabar com ele.\" He says he will not count on ending it. He says \"acabar neste momento seria uma solução muito cruel\". So proposition: \"The Saque-Aniversário should be ended (replaced by credit)\". He opposes that. So stance: AGAINST (against ending). So stance_determinable = YES. target_proposition_b: \"O Saque-Aniversário deve ser encerrado/substituído\". Provide neutral phrase.\n\nNow comparability: Are they same proposition? Both about whether Saque-Aniversário should be maintained vs ended. They are opposite sides of same issue. The proposition in A is \"maintain Saque-Aniversário\". B is \"end Saque-Aniversário\". Are they semantically equivalent? The definition: same proposition or semantically equivalent. Here they are opposite, not equivalent. The question: \"as duas manifestações tratam da mesma proposição ou de proposições semanticamente equivalentes?\" Since they are opposite, they are not the same proposition. So answer NO.\n\nNow produce JSON.\n\nKeys:\n\nstance_determinable_a: \"YES\"\nstance_determinable_b: \"YES\"\ntarget_proposition_a: short neutral phrase. \"O Saque-Aniversário deve ser mantido\"\ntarget_proposition_b: \"O Saque-Aniversário deve ser encerrado\"\nsame_proposition: \"NO\"\nstance_a: \"FAVOR\"\nstance_b: \"AGAINST\"\n\nCheck if any uncertainty: The statements are clear. So yes.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2575,
+    "total_tokens": 3137,
+    "completion_tokens": 562,
+    "estimated_cost": 0.00019081500000000002,
+    "prompt_tokens_details": null
+  }
+}

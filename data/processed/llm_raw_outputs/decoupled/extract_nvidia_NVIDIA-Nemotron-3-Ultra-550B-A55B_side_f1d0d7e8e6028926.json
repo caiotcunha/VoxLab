@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRlzeIRxKjfuHCMR68H4IHSS",
+  "object": "chat.completion",
+  "created": 1790624042,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Devem as pessoas com dor crônica ser incluídas no diagnóstico biopsicossocial e nas políticas de saúde e trabalho correlatas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is a closing of a public hearing about support for PL 1673/21 instituting National Policy of Functional Health. The speaker thanks participants, mentions projects, says they will request a meeting to include chronic pain patients in biopsychosocial diagnosis, says need to incorporate chronic pain patients in all forms of diagnosis, need multidisciplinary care, need labor health policy, need code of labor relations for chronic pain patients, need family attention. These are positions advocating for inclusion of chronic pain patients in biopsychosocial diagnosis and broader policies. So there is a clear stance: they favor inclusion of chronic pain patients in biopsychosocial diagnosis and related policies. The question: \"Should chronic pain patients be included in biopsychosocial diagnosis and related health and labor policies?\" That's a yes/no question. The speaker is in favor. So stance_determinable = YES. target_question: \"Devem as pessoas com dor crônica ser incluídas no diagnóstico biopsicossocial e nas políticas de saúde e trabalho correlatas?\" That's neutral yes/no. stance = FAVOR.\n\nWe must output JSON with those keys.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1540,
+    "total_tokens": 1844,
+    "completion_tokens": 304,
+    "estimated_cost": 0.0014388,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 247
+    }
+  }
+}

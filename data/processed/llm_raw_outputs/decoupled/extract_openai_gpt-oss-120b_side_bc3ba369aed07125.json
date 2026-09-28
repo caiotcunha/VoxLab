@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcqEsa5LTiyDFNDAIrQTaa67",
+  "object": "chat.completion",
+  "created": 1790623991,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A agenda de envelhecimento saudável deve ser priorizada no G20?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is a broad presentation of policies, programs, and calls for inclusion, but does it express a stance (favor/against) on a specific question? It seems to be advocating for prioritizing the agenda of healthy aging in G20, supporting programs, expanding participation, etc. The central issue could be: \"Should the G20 prioritize the agenda of healthy aging?\" The speaker is advocating for it, praising inclusion, etc. So stance determinable = YES. Target question: \"A agenda de envelhecimento saudável deve ser priorizada no G20?\" (Should the healthy aging agenda be prioritized in the G20?) The speaker is in favor. So stance = FAVOR.\n\nCheck if any ambiguous? The speech is largely supportive, no opposition. So answer.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3383,
+    "total_tokens": 3605,
+    "completion_tokens": 222,
+    "estimated_cost": 0.00016291099999999999,
+    "prompt_tokens_details": null
+  }
+}

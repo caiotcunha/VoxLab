@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoyClxIP15sUrMutmjBLlUnC",
+  "object": "chat.completion",
+  "created": 1790632556,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements condemn the anti‑vaccine campaign and support vaccination of children, addressing the same issue with the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe have Manifestation A: a speech at public hearing about lessons from pandemic, praising vaccination efforts, criticizing previous government, emphasizing need to combat antivaccine movement, etc. The stance: He is against antivaccine movement, supports vaccination, praises current government's actions. So stance: FAVOR vaccination, AGAINST antivaccine.\n\nManifestation B: speech at minister appearance about vaccination of children against Covid-19. He says \"é movimento antivacina, sim!\" He condemns antivaccine movement, criticizes those using antivaccine for politics, supports vaccination. So also AGAINST antivaccine, FAVOR vaccination.\n\nNow are they responding to same specific proposition? Both talk about vaccination of children against Covid-19 and broader antivaccine movement. The specific proposition could be \"the anti-vaccine campaign being promoted by some parliamentarians\" or \"the vaccination of children against Covid-19\". Both address the same issue: anti-vaccine stance and need to vaccinate children. They seem to be responding to the same proposition: opposition to vaccinating children (i.e., they are against anti-vaccine campaign). Both share same stance (against anti-vaccine, favor vaccination). So likely STANCE_MAINTAINED.\n\nWe must ensure comparability: Are they responding to same proposition? Manifestation A mentions \"pregação antivacina\" by some commission, and says need to counter it. Manifestation B directly calls it \"movimento antivacina\". Both refer to anti-vaccine campaign. So yes same proposition: anti-vaccine campaign against child Covid vaccination. So STANCE_MAINTAINED.\n\nThus output JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4169,
+    "total_tokens": 4556,
+    "completion_tokens": 387,
+    "estimated_cost": 0.000220043,
+    "prompt_tokens_details": null
+  }
+}

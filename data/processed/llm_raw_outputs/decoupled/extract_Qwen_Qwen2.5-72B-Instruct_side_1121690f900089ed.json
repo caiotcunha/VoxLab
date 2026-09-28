@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnH6qppnEly0x6urz4D6y5MQ",
+  "object": "chat.completion",
+  "created": 1790622141,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O SUS deve revisar e atualizar seus protocolos clínicos para incluir diretrizes claras e abrangentes para o diagnóstico, tratamento e acompanhamento do edema macular diabético?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1941,
+    "total_tokens": 2018,
+    "completion_tokens": 77,
+    "estimated_cost": 0.0007295600000000001,
+    "prompt_tokens_details": null
+  }
+}

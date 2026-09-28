@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhH5Ro9A5zib1G6bLahB8fuM",
+  "object": "chat.completion",
+  "created": 1790624028,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Programa de Atenção a Mulheres na Menopausa e Climatério deve ser criado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze the speech. The speaker is opening a public hearing, mentions a tragedy, then says they are the rapporteur of PL 5602/2019, presented a contrary opinion (parecer contrário) to the project and its apensados, in the form of a substitute that creates a Program for Attention to Women in Menopause and Climacteric. However, they have not put the project on the agenda for voting to attend civil society request for debate. They state: \"É necessário debater a promoção da saúde da mulher para esse ciclo da vida, mas a criação de um programa específico não é a solução mais eficaz, podendo sobrecarregar o sistema com estruturas burocráticas desnecessárias.\" Also: \"A ciência, a tecnologia e o mundo evoluíram sobre esse tema, mas acreditamos que a criação de um programa específico não é a melhor forma de abordar o problema. Os tratamentos e medicações já podem ser incorporados pelos programas de saúde existentes, sem a necessidade de uma nova estrutura.\"\n\nThus the speaker has a clear position: against creating a specific program (i.e., against the bill that creates the program). The question: \"Should a specific program for women in menopause and climacteric be created?\" Or \"Should the bill creating the Program of Attention to Women in Menopause and Climacteric be approved?\" The speaker is against. So stance_determinable = YES. target_question neutral yes/no: \"O Programa de Atenção a Mulheres na Menopausa e Climatério deve ser criado?\" Or \"O projeto de lei que cria o Programa de Atenção a Mulheres na Menopausa e Climatério deve ser aprovado?\" That's a yes/no question. The speaker's stance: AGAINST (i.e., answers NO). So stance = AGAINST.\n\nWe must output JSON with keys exactly. Provide target_question string, stance \"AGAINST\". Ensure no extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2014,
+    "total_tokens": 2479,
+    "completion_tokens": 465,
+    "estimated_cost": 0.00203,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 414
+    }
+  }
+}

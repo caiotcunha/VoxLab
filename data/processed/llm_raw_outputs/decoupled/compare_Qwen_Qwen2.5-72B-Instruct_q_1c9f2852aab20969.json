@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWUT6gGwpWPfidZBvXbmCVKd",
+  "object": "chat.completion",
+  "created": 1790622232,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de ministérios e políticas diferentes, embora ambos sejam relacionados à área social.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 445,
+    "completion_tokens": 42,
+    "estimated_cost": 0.00016188000000000002,
+    "prompt_tokens_details": null
+  }
+}

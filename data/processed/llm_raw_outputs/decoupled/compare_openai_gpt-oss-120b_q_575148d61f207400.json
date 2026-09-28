@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHUDFPuI6c5tnjVkAtSX5g1N",
+  "object": "chat.completion",
+  "created": 1790632659,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de duas leis distintas, cada uma com objetivo específico, portanto são questões diferentes.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Marco Legal da Inovação deve ser revisado para melhorar sua operacionalização?\" => Should the Innovation Legal Framework be revised to improve its operationalization?\n\nQuestion2: \"A Lei do Bem deve ser modificada para facilitar a colaboração entre governo, academia e empresas?\" => Should the \"Law of Good\" (Lei do Bem) be modified to facilitate collaboration between government, academia and companies?\n\nThese are about two different laws: Marco Legal da Inovação vs Lei do Bem. They are distinct legislative instruments. The questions ask about modifying/revising each law for different purposes. So they are different issues. Therefore relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 598,
+    "completion_tokens": 194,
+    "estimated_cost": 4.7928e-05,
+    "prompt_tokens_details": null
+  }
+}

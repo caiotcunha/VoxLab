@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdyETsYJUgQR0cLMxXoqtfxc",
+  "object": "chat.completion",
+  "created": 1790622371,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre a criação de um sistema nacional de apoio e outra sobre a participação de um ministério específico na criação de um arcabouço legal.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 481,
+    "completion_tokens": 64,
+    "estimated_cost": 6.217999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

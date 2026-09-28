@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRraFHDZZ2pEejpBWZkukV3p",
+  "object": "chat.completion",
+  "created": 1790624177,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da inclusão de pessoas com dor crônica em diagnósticos e políticas de saúde/trabalho, enquanto a segunda trata do direito à aposentadoria de mães cuidadoras; são temas e objetos distintos.\"\n}",
+        "reasoning_content": "We need to compare two yes/no questions.\n\nQ1: \"Devem as pessoas com dor crônica ser incluídas no diagnóstico biopsicossocial e nas políticas de saúde e trabalho correlatas?\" This asks whether people with chronic pain should be included in biopsychosocial diagnosis and related health and work policies.\n\nQ2: \"O direito à aposentadoria das mães cuidadoras aos 62 anos, com possibilidade de parcelamento do débito previdenciário, deve ser garantido?\" This asks whether the right to retirement for caregiver mothers at age 62, with possibility of installment of social security debt, should be guaranteed.\n\nThese are completely different topics: chronic pain inclusion vs retirement rights for caregiver mothers. So relation is DIFFERENT.\n\nWe must output JSON with relation and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 425,
+    "total_tokens": 661,
+    "completion_tokens": 236,
+    "estimated_cost": 0.0007317,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167
+    }
+  }
+}

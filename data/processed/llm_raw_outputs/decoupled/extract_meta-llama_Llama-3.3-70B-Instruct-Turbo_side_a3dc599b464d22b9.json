@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFSIK1eRfmM8PaxAmdLBXIda",
+  "object": "chat.completion",
+  "created": 1790622356,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A obsolescência programada deve ser coibida?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1758,
+    "total_tokens": 1802,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00018988000000000002,
+    "prompt_tokens_details": null
+  }
+}

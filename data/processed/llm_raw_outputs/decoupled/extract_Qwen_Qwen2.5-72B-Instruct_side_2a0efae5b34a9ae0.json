@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxdPjkkkd6gXWaB3H8jxx1Qj",
+  "object": "chat.completion",
+  "created": 1790622212,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A campanha antivacina deve ser combatida?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2714,
+    "total_tokens": 2758,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00099464,
+    "prompt_tokens_details": null
+  }
+}

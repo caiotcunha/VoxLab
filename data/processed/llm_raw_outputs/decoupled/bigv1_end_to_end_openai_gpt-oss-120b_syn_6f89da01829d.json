@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdVKRztTPu6NGsxaCWYH4eBl",
+  "object": "chat.completion",
+  "created": 1790633151,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Both manifestos address the same regulatory bill for ride‑hailing drivers, but A calls for its total rejection while B expresses support and urges its approval.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nBoth are about regulation of ride-hailing drivers. Manifestation A is strongly against the proposed bill, calling it absurd, CLT disguised, wants total rejection. Manifestation B is supportive of the PLP 12, praising regulation, says it's a step forward, wants approval. So they are responding to same proposition? Both refer to the same legislative proposal (Projeto de Lei Complementar nº 12). A calls it \"projeto de lei que o Governo apresentou\" and wants rejection. B supports PLP 12. So they are opposite stances on same proposition. Therefore STANCE_REVERSED.\n\nWe must ensure that they indeed refer to same specific proposition. A mentions \"projeto de lei\" about regulation, mentions banimento unilateral, CLT disguised. B mentions PLP 12, which is the same regulation. Likely same. So STANCE_REVERSED.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2329,
+    "total_tokens": 2581,
+    "completion_tokens": 252,
+    "estimated_cost": 0.00012901299999999998,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rjrfg0f4wQVeyJdX6l7LIdKp",
+  "object": "chat.completion",
+  "created": 1790622145,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O biometano deve ser incentivado na matriz energética brasileira?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2219,
+    "total_tokens": 2265,
+    "completion_tokens": 46,
+    "estimated_cost": 0.0008172399999999999,
+    "prompt_tokens_details": null
+  }
+}

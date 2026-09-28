@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Re3Gp56YKcUv9CZVDIWd7E6i",
+  "object": "chat.completion",
+  "created": 1790622156,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estatuto do Idoso deve ser mantido e fortalecido?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5421,
+    "total_tokens": 5468,
+    "completion_tokens": 47,
+    "estimated_cost": 0.00197036,
+    "prompt_tokens_details": null
+  }
+}

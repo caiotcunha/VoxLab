@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUcnn3hQevAicAiVr77NaKjD",
+  "object": "chat.completion",
+  "created": 1790623998,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is opening a public hearing about ratifying the Inter-American Convention on the Protection of Human Rights of Older Persons. The speaker says: \"Acredito que a reunião desta audiência pública ficará registrada na história, visto que estamos agora num processo de articulação para aprovação desta que é uma necessidade para o nosso País. Constrange-nos, há tanto tempo, ter isso na pauta, para aprovação, e ainda não termos conseguido.\" This indicates support for approval of the convention. He also mentions \"para que possamos ter a aprovação da convenção o mais rápido possível.\" So the stance is clearly in favor of ratifying the convention.\n\nThus stance_determinable = YES. Target question: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada?\" Or \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" Need neutral yes/no question. So: \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser ratificada pelo Brasil?\" That is fine.\n\nStance: FAVOR (since he supports approval). So JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1422,
+    "total_tokens": 1726,
+    "completion_tokens": 304,
+    "estimated_cost": 0.000104294,
+    "prompt_tokens_details": null
+  }
+}

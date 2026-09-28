@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROAVKF4rAPy69ZR918OGjIeW",
+  "object": "chat.completion",
+  "created": 1790622203,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"UNCERTAIN\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3150,
+    "total_tokens": 3179,
+    "completion_tokens": 29,
+    "estimated_cost": 0.0011455999999999999,
+    "prompt_tokens_details": null
+  }
+}

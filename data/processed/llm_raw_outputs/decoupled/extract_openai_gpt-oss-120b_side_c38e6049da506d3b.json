@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmQAVBv50QlDFF2TUDTszW9X",
+  "object": "chat.completion",
+  "created": 1790624024,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres naturais deve ser mantida?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker (unknown) is speaking at a public hearing about prevention and aid for natural disasters. They express concerns about the participation of the Ministry of Development Social, saying they are cautious about its participation and worried about creating a legal framework that does not encourage inefficiency and assistance (assistencialismo), focusing on market solutions. They also mention that after creation of the fund, the action in the social area and participation of the Ministry is a risk of creating dependency and not solving structural problems. So they are expressing a stance against the involvement of the Ministry of Development Social in the legal framework, i.e., they are against that participation. The specific question could be: \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres deve ser mantida?\" Or \"A participação do Ministério do Desenvolvimento Social nas políticas de prevenção e auxílio a desastres deve ser permitida?\" The speaker says they are cautious and see it as a risk, so they are against it. So stance_determinable = YES. target_question: \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres naturais deve ser mantida?\" The stance: AGAINST (since they are against participation). Ensure neutral phrasing. Provide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1377,
+    "total_tokens": 1706,
+    "completion_tokens": 329,
+    "estimated_cost": 0.000106879,
+    "prompt_tokens_details": null
+  }
+}

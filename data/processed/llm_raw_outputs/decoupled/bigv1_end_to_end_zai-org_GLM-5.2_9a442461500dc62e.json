@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4xrhlXxhx1lzwbUMpC57POW",
+  "object": "chat.completion",
+  "created": 1790632246,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INSUFFICIENT_EVIDENCE\",\n  \"reasoning\": \"Ambas as manifestações referem-se ao PL 2.768/2022, mas nenhuma delas apresenta uma posição determinável (favor ou contra) sobre a proposição; a Manifestação A abre uma audiência pública sem tomar stance, e a Manifestação B encerra a série de audiências afirmando que a legislação precisa ser aprimorada, sem expressar apoio ou oposição ao projeto.\"\n}\n```",
+        "reasoning_content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as manifestações tratam do PL 2.768/2022, mas a Manifestação A é a abertura de uma audiência pública sem expressar uma posição favorável ou contrária ao projeto, enquanto a Manifestação B é o encerramento de outra audiência, também sem expressar uma posição clara a favor ou contra a mesma proposição.\"\n}\n```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2659,
+    "total_tokens": 2872,
+    "completion_tokens": 213,
+    "estimated_cost": 0.0017326875005999997,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 98
+    }
+  }
+}

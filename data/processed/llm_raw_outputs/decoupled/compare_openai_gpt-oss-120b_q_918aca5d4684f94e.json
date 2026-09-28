@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAnvMOhQiBB8HBntOVICS5su",
+  "object": "chat.completion",
+  "created": 1790632468,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta foca na garantia de bem‑estar na produção de alimentos de origem animal, enquanto a segunda trata da adoção de normas mais rígidas de bem‑estar animal no Brasil, abrangendo um escopo mais amplo.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1 (Portuguese): \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\" => Should the production of animal-origin foods guarantee animal welfare? It's a yes/no question about guaranteeing animal welfare in production.\n\nQuestion2 (English): \"Should Brazil adopt stronger animal welfare standards?\" => Should Brazil adopt stronger animal welfare standards? This is about adopting stronger standards, presumably for animal welfare in general, not limited to food production. It's about policy at national level, possibly broader than just food production. The first is about production of animal-origin foods guaranteeing welfare. The second is about Brazil adopting stronger animal welfare standards (could be across all sectors). They are related but not the same question. The first is about guarantee in production; the second is about adopting stronger standards (policy). Could be considered different because the scope differs: one is about production of animal-origin foods, the other about national standards (maybe includes all animal uses). So answer: DIFFERENT.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 670,
+    "completion_tokens": 280,
+    "estimated_cost": 6.203e-05,
+    "prompt_tokens_details": null
+  }
+}

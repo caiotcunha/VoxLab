@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIuytjyl0ok0RIIRlCZorzIn",
+  "object": "chat.completion",
+  "created": 1790623877,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A defende o uso e a inovação da tecnologia blockchain no serviço público, enquanto a Manifestação B defende o fortalecimento da ANPD e a proteção de dados pessoais. Embora ambas tratem de temas de tecnologia, elas respondem a proposições específicas distintas, tornando as manifestações incomparáveis.\"\n}",
+        "reasoning_content": "The user wants to classify the relationship between two parliamentary manifestations from the same actor.\nI need to output a JSON with \"relation\" and \"reasoning\".\n\nCategories:\n- STANCE_MAINTAINED: Same specific proposition, same stance.\n- STANCE_REVERSED: Same specific proposition, opposite stance.\n- INCOMPARABLE: Determinable stance, but different specific propositions.\n- RELATION_UNCERTAIN: Unclear determinability, comparability, or stance.\n- INSUFFICIENT_EVIDENCE: At least one manifestation lacks determinable stance on any specific proposition.\n\nManifestation A:\n- Event: PUBLIC_HEARING\n- Date: 2023-09-20\n- Theme: Uso da tecnologia blockchain no serviço público\n- Content: The speaker is enthusiastic about blockchain technology, talks about its potential, asks a question to a TCU representative about cost reduction using blockchain. The speaker is clearly in favor of exploring/using blockchain in the public sector (\"inovar é sempre um caminho importante\", \"Brasil não pode e não deve ficar para trás\", asks about cost reduction using distributed networks).\n- Proposition: Adoption/use of blockchain technology in public service / innovation in tech.\n- Stance: FAVOR.\n\nManifestation B:\n- Event: PUBLIC_HEARING\n- Date: 2023-11-07\n- Theme: Pedido de concurso público e fortalecimento da Agência Nacional de Proteção de Dados (ANPD)\n- Content: The speaker opens the hearing, talks about the importance of data protection, mentions data leaks, unauthorized sharing of data by companies, and the need to strengthen the ANPD to protect citizens' data. The speaker is clearly in favor of strengthening ANPD and protecting data (\"precisamos ter o apoio deste Parlamento, a fim de que a ANPD possa desenvolver esse trabalho com cada vez mais eficiência\", \"continuarmos avançando na proteção de dados\").\n- Proposition: Strengthening ANPD / protecting personal data / holding a public contest for ANPD.\n- Stance: FAVOR.\n\nComparability:\n- Manifestation A is about adopting blockchain in the public sector.\n- Manifestation B is about strengthening ANPD and data protection.\n- Are these the same specific proposition? No. They are related to technology and public administration, but they are distinct topics/propositions. One is about blockchain adoption, the other is about data protection agency strengthening.\n- Therefore, they respond to different specific propositions.\n\nSince they have determinable stances but do not respond to the same specific proposition, the relation is INCOMPARABLE.\n\nLet's double check.\nManifestation A: Proposition = Use of blockchain in public service. Stance = FAVOR.\nManifestation B: Proposition = Strengthening ANPD / Data protection. Stance = FAVOR.\nThey are not the same proposition. So INCOMPARABLE.\n\nReasoning: Manifestation A supports the adoption of blockchain technology in the public sector, while Manifestation B supports the strengthening of the ANPD and data protection. Since they address different specific propositions, they are incomparable.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2014,
+    "total_tokens": 2738,
+    "completion_tokens": 724,
+    "estimated_cost": 0.0022896750005999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 631
+    }
+  }
+}

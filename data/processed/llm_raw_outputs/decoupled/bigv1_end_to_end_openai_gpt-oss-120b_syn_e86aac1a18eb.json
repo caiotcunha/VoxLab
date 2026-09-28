@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rs7S52GOphWbdm0UgFRNOjO2",
+  "object": "chat.completion",
+  "created": 1790633087,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas defendem a prevenção de desastres e a criação de carreiras na Defesa Civil, mas tratam de proposições diferentes (PL 920/23 e veto nº 28 vs. demanda por carreira e recursos municipais), não respondendo à mesma proposta específica.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. Both are about disaster prevention, funding, career for civil defense. Manifestation A discusses PL 920/23, veto nº 28, need to allocate 5% of agreements to disaster prevention, and calls for removal of veto. Manifestation B talks about need for career for municipal civil defense, funding, and mentions resources, but not the same specific legislative proposition (PL 920/23 or veto). So they are about same general theme (prevention, funding) but not same specific proposition. Therefore category: INCOMPARABLE (they have determinable stance on positions, but not same proposition). Both have stance: they are in favor of more prevention funding, career creation. So INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2756,
+    "total_tokens": 3012,
+    "completion_tokens": 256,
+    "estimated_cost": 0.000145492,
+    "prompt_tokens_details": null
+  }
+}

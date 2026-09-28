@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuLIOIhoLkac1qf9Ua48MtR0",
+  "object": "chat.completion",
+  "created": 1790622574,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Ações de bem-estar animal devem ser promovidas no Brasil?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is clearly advocating for animal welfare actions and their benefits for Brazil. Let me analyze the key points:\n\n1. The speaker emphasizes that animal welfare is an important economic agenda, not just for animal lovers\n2. They mention international treaties (EU-MERCOSUL) being blocked due to animal welfare clauses, which they see as harmful\n3. They reference the UNEP Resolution on the nexus between animal welfare, environment, and sustainable development\n4. They mention that 88% of Brazilians care about animal welfare\n5. They highlight that the PPA Participativo's most voted proposal in MAPA was for cage-free production\n6. They call for action, studies, and government response to these demands\n7. They explicitly say \"É pelo bem dos animais, sim\" (Yes, it's for the animals' well-being)\n\nThe speech is clearly in favor of advancing animal welfare actions/policies in Brazil. The target question could be: \"Ações de bem-estar animal devem ser promovidas no Brasil?\" or more specifically about advancing animal welfare policies.\n\nThe stance is clearly FAVOR - the speaker is advocating for animal welfare actions throughout the speech.\n\nLet me formulate the target question neutrally: \"Ações de bem-estar animal devem ser promovidas no Brasil?\"",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2255,
+    "total_tokens": 2564,
+    "completion_tokens": 309,
+    "estimated_cost": 0.00164895750072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 262
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPTRrn96bd8V3E8ROhGDeWAS",
+  "object": "chat.completion",
+  "created": 1790622370,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas completamente diferentes, uma sobre vacinação contra Covid-19 e a outra sobre saque-aniversário do FGTS.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 449,
+    "completion_tokens": 50,
+    "estimated_cost": 5.5900000000000004e-05,
+    "prompt_tokens_details": null
+  }
+}

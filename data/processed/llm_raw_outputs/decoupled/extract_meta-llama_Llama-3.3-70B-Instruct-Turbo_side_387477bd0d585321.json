@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6QNboU3gS0jQI6xUTZYZhib",
+  "object": "chat.completion",
+  "created": 1790622341,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os critérios mais acessíveis nos contratos de seguro de vida para idosos devem ser implementados?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2726,
+    "total_tokens": 2780,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00028988,
+    "prompt_tokens_details": null
+  }
+}

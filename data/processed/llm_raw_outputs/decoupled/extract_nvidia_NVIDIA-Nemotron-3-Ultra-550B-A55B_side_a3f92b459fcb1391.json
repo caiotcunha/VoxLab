@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R21E9BU7GIz84OAW06lGjUl0",
+  "object": "chat.completion",
+  "created": 1790624008,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma legislação prisional específica para indígenas, elaborada a partir de consulta pública?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speech: speaker thanks Aléssia, mentions sharing a panel yesterday about anti-racist struggle. Talks about criminalization of indigenous leaders, referencing Cacique Babau, describing violence and narrative. Then says: \"Eu já gostaria de colocar aqui, como encaminhamento desta audiência do dia de hoje, o nosso mandato à disposição, juntamente com a senhora e os demais que compõem a Mesa, para pensar numa legislação específica do sistema prisional carcerário para as questões indígenas a partir de uma consulta pública inclusive. Eu já gostaria de tomar isso como encaminhamento.\"\n\nSo the speaker is proposing that their mandate is available to work on a specific prison legislation for indigenous issues, via public consultation. That's a position: they support creating a specific prison law for indigenous people. The question: \"Should a specific prison legislation for indigenous people be created (via public consultation)?\" The speaker is in favor (FAVOR). Determinability: YES, clear position.\n\nWe must output JSON with stance_determinable YES, target_question neutral yes/no question, stance FAVOR.\n\nTarget question: \"Deve ser criada uma legislação prisional específica para indígenas, elaborada a partir de consulta pública?\" That's neutral yes/no.\n\nStance: FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 788,
+    "total_tokens": 1133,
+    "completion_tokens": 345,
+    "estimated_cost": 0.0011530000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 293
+    }
+  }
+}

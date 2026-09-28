@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmdD78MboVMxjranRnxGbqFk",
+  "object": "chat.completion",
+  "created": 1790622246,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas questionam a ratificação da mesma convenção, com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 444,
+    "completion_tokens": 40,
+    "estimated_cost": 0.00016144,
+    "prompt_tokens_details": null
+  }
+}

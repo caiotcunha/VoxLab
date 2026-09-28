@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4nZRP2sSsqTscuICDjN24IN",
+  "object": "chat.completion",
+  "created": 1790632422,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da inclusão conceitual do bem-estar animal como componente essencial da sustentabilidade, enquanto a segunda pergunta refere-se a uma ação política específica do Brasil para cumprir uma resolução da PNUMA; responder a uma não determina a resposta à outra.\"\n}",
+        "reasoning_content": "We need to decide relation between two yes/no questions.\n\nQ1: \"Should animal welfare be considered an essential component of sustainability in animal food production?\" This is a normative question about whether animal welfare should be considered essential component of sustainability.\n\nQ2: \"Should Brazil adopt measures to comply with the UNEP Nexus Resolution on animal welfare, environment and sustainable development?\" This asks about Brazil adopting measures to comply with a specific resolution.\n\nThese are different questions: one is about conceptual inclusion of animal welfare in sustainability; the other about a specific policy action by Brazil regarding a specific resolution. Even if related, answering yes to one does not determine answer to other. So DIFFERENT.\n\nThus output JSON with relation DIFFERENT and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 638,
+    "completion_tokens": 224,
+    "estimated_cost": 0.0006998,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 148
+    }
+  }
+}

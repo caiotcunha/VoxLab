@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzpuFTuJjgSvCBUQGswgmzgE",
+  "object": "chat.completion",
+  "created": 1790623997,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As emendas à LDO que visam prevenir a violência contra crianças e adolescentes devem ser incluídas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the manifestation (the speech) presents a clear position on a specific issue. The speaker is a moderator/host, not the deputy. She thanks, presents data, mentions that the Relator (Deputado Danilo Forte) has accepted five amendments concerning prevention of violence against children and adolescents. She seems to support inclusion of these amendments, but does she express a stance? She says \"É importante registrar esses números, porque nós temos a responsabilidade de debater... Não se faz política pública sem garantir recursos...\" She is advocating for resources, supporting the amendments. She does not explicitly say \"I support the inclusion of these amendments\" but she is praising them, highlighting importance, urging resources. The question: what specific issue? Likely \"Incluir emendas na LDO para combater violência contra crianças e adolescentes\". So the target question could be: \"As emendas à LDO que visam prevenir a violência contra crianças e adolescentes devem ser incluídas?\" The speaker's stance appears favorable (FAVOR). Is it determinable? Yes, she expresses support for the amendments. So stance_determinable = YES, target_question = \"As emendas à LDO que visam prevenir a violência contra crianças e adolescentes devem ser incluídas?\" stance = FAVOR.\n\nCheck if any ambiguity: She is not the one who voted, but she is advocating. She says \"É importante... Não se faz política pública sem garantir recursos...\" She praises that the Relator accepted them. So clearly supportive. So answer JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1869,
+    "total_tokens": 2233,
+    "completion_tokens": 364,
+    "estimated_cost": 0.000131033,
+    "prompt_tokens_details": null
+  }
+}

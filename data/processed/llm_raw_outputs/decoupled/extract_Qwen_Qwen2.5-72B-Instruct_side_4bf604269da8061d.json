@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5Q8nRddE1GXGm9j1cjdYVNU",
+  "object": "chat.completion",
+  "created": 1790622155,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O projeto de regulamentação do trabalho de motoristas de aplicativo deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1245,
+    "total_tokens": 1296,
+    "completion_tokens": 51,
+    "estimated_cost": 0.0004686,
+    "prompt_tokens_details": null
+  }
+}

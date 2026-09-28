@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkOVuFiOMdHFjWC4li9HlF5O",
+  "object": "chat.completion",
+  "created": 1790624165,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: uma sobre derrubar um veto legislativo específico e outra sobre alocação de recursos para prevenção de desastres.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" Means: Should veto number 28 to Bill 920/23 be overturned? So it's about a specific legislative veto.\n\nQuestion2: \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\" Means: Should Brazil allocate specific resources for disaster prevention? Different subject.\n\nThus they are different issues. So relation = DIFFERENT.\n\nProvide JSON with brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 568,
+    "completion_tokens": 166,
+    "estimated_cost": 4.3094e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjiZF5e7AXkLAV2K0fwXuWJZ",
+  "object": "chat.completion",
+  "created": 1790622201,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O direito à aposentadoria das mães cuidadoras deve ser assegurado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 866,
+    "total_tokens": 914,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00033096,
+    "prompt_tokens_details": null
+  }
+}

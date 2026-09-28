@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHpOH2hR3yCAIkteTujWstns",
+  "object": "chat.completion",
+  "created": 1790624054,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O bem-estar animal deve ser considerado um componente essencial da sustentabilidade na produção de alimentos de origem animal?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech discusses animal welfare, sustainability, zoonoses, UN resolution, need for balance, etc. The speaker seems to advocate for animal welfare as essential to sustainability, and criticizes current production practices that violate animal rights. So there is a clear stance: they are in favor of recognizing animal welfare as essential to sustainability, and against current practices that violate animal rights. The question: need a specific yes/no question. Could be: \"Should animal welfare be recognized as an essential component of sustainability in food production?\" Or \"Should production practices that violate animal rights be changed to promote sustainability?\" The speaker says \"O bem-estar animal é, sim, um componente essencial da sustentabilidade.\" That's a clear affirmative stance. So target question: \"O bem-estar animal deve ser considerado um componente essencial da sustentabilidade na produção de alimentos de origem animal?\" That's a yes/no. The speaker answers YES (FAVOR). So stance_determinable = YES, target_question as above, stance = FAVOR.\n\nWe must output JSON with those keys. Ensure no extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1100,
+    "total_tokens": 1387,
+    "completion_tokens": 287,
+    "estimated_cost": 0.0011814,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 235
+    }
+  }
+}

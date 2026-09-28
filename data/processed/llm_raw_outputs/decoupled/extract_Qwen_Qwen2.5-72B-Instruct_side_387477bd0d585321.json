@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpcUYShD9VbOdhr9zXDgMqwX",
+  "object": "chat.completion",
+  "created": 1790622188,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 2.002, de 2019, que visa garantir maior proteção aos consumidores idosos, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2687,
+    "total_tokens": 2757,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00099532,
+    "prompt_tokens_details": null
+  }
+}

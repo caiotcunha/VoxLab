@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8wl5JGpMNfjw6UXH52vxO2C",
+  "object": "chat.completion",
+  "created": 1790622386,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de leis e marcos legais diferentes, o que indica questões distintas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 447,
+    "completion_tokens": 41,
+    "estimated_cost": 5.372e-05,
+    "prompt_tokens_details": null
+  }
+}

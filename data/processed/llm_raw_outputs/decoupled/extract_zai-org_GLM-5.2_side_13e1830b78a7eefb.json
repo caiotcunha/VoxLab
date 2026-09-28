@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxS2jEPwkFtdzyMcV7EkZZif",
+  "object": "chat.completion",
+  "created": 1790622426,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is clearly defending the maintenance of the \"saque-aniversário do FGTS\" (FGTS birthday withdrawal). They argue it would be \"cruel and even malignant\" to end it, present data about its usage, and defend that the money belongs to the worker. The position is clearly in favor of maintaining the saque-aniversário.\n\nThe target question would be about whether the saque-aniversário do FGTS should be maintained (or whether it should be ended/replaced).\n\nThe theme mentions \"substituição do saque-aniversário do FGTS por uma nova modalidade de crédito consignado\" - so the debate is about replacing it. The speaker is against replacing/ending it, which means they are in favor of maintaining it.\n\nLet me formulate the question: \"O saque-aniversário do FGTS deve ser mantido?\" - this is a neutral yes/no question.\n\nThe answer is YES (FAVOR) - the speaker wants to maintain it.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1260,
+    "total_tokens": 1511,
+    "completion_tokens": 251,
+    "estimated_cost": 0.0009848700007200001,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 204
+    }
+  }
+}

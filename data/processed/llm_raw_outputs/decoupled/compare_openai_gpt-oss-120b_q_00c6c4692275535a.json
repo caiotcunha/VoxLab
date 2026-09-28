@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RE2QaVYTJRPfZ2YDvqL1Sfyy",
+  "object": "chat.completion",
+  "created": 1790632805,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: uma sobre avançar na transição para energia limpa, a outra sobre manter o modelo de concessões elétricas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Brasil deve avançar na transição energética para energia limpa e renovável?\" => Should Brazil advance in energy transition to clean and renewable energy?\n\nQuestion2: \"O modelo atual de concessões de energia elétrica no Brasil deve ser preservado?\" => Should the current model of electricity concessions in Brazil be preserved?\n\nThese are different issues: first about advancing transition to clean energy (policy direction). Second about preserving current concession model (regulatory framework). They are not same question, not opposite polarity. So relation = DIFFERENT.\n\nProvide JSON with brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 584,
+    "completion_tokens": 184,
+    "estimated_cost": 4.608e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcwDV0HaBp49DZU933gDC6wv",
+  "object": "chat.completion",
+  "created": 1790622956,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da derrubada de um veto presidencial a um projeto de lei específico (PL 920/23), enquanto a segunda aborda a alocação de recursos financeiros para prevenção de desastres naturais, sendo questões distintas.\"\n}\n```",
+        "reasoning_content": "```json\n{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da derrubada de um veto presidencial a um projeto de lei específico, enquanto a segunda aborda a alocação de recursos financeiros para prevenção de desastres naturais, sendo questões distintas.\"\n}\n```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 549,
+    "completion_tokens": 151,
+    "estimated_cost": 0.00037855500048,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 71
+    }
+  }
+}

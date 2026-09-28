@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReIFfExraxW4t3c457ylEXqe",
+  "object": "chat.completion",
+  "created": 1790622266,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve a vacinação de crianas contra a COVID-19 ser obrigada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1781,
+    "total_tokens": 1826,
+    "completion_tokens": 45,
+    "estimated_cost": 0.00019250000000000004,
+    "prompt_tokens_details": null
+  }
+}

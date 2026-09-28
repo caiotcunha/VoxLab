@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRJQy6NdFNvSYcR8bQvGb6mo",
+  "object": "chat.completion",
+  "created": 1790624010,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 5.602, que cria o Programa de Atenção à Mulheres na Menopausa e Climatério, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is largely opening a public hearing, expressing condolences, describing the project, and advocating for discussion and policies for menopause. The speaker says she presented a favorable opinion on the bill (Projeto de Lei nº 5.602) that creates a Program of Attention to Women in Menopause and Climacteric. She says she presented a favorable opinion (parecer favorável). That is a position: she is in favor of the program. The question could be: \"O Programa de Atenção à Mulher na Menopausa e Climatério deve ser criado?\" Or \"O Projeto de Lei nº 5.602, que cria o Programa de Atenção à Mulheres na Menopausa e Climatério, deve ser aprovado?\" The stance is favorable (YES). So stance_determinable = YES, target_question = something like \"O Projeto de Lei nº 5.602, que cria o Programa de Atenção à Mulheres na Menopausa e Climatério, deve ser aprovado?\" The stance = FAVOR.\n\nCheck if any other positions? She also says \"É necessário debater a promoção da saúde da mulher...\" but that's more a call for debate, not a yes/no. The clear stance is favorable to the program. So answer JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1814,
+    "total_tokens": 2150,
+    "completion_tokens": 336,
+    "estimated_cost": 0.000124238,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1oPSpMI6fh1vUI1a7vMMZAB",
+  "object": "chat.completion",
+  "created": 1790622232,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de políticas públicas para grupos diferentes: mulheres e crianças indígenas versus população LGBTQIA+.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 448,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00016303999999999998,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R55SX9crOWP6yvHTsXK4dHOP",
+  "object": "chat.completion",
+  "created": 1790622278,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação dos mercados digitais deve priorizar a livre concorrência em detrimento de políticas excessivas?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 844,
+    "total_tokens": 901,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00010264,
+    "prompt_tokens_details": null
+  }
+}

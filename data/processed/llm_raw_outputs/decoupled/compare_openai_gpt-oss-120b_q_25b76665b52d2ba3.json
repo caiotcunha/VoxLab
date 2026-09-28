@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdeIl94ogM7ZwqeewmdQ50Ca",
+  "object": "chat.completion",
+  "created": 1790624147,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Embora ambas tratem de financiamento para prevenção de desastres, uma pergunta refere‑se à alocação nacional de recursos e a outra à criação de um orçamento permanente municipal para a Defesa Civil, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\" Means: Should Brazil allocate specific resources for prevention of natural disasters? It's about allocation of resources at national level for prevention.\n\nQuestion2: \"Deve ser criado um orçamento permanente para a Defesa Civil nos municípios?\" Means: Should a permanent budget be created for Civil Defense in municipalities? That's about creating a permanent budget for Civil Defense at municipal level.\n\nBoth are about funding for disaster prevention/response, but one is about Brazil allocating resources (maybe national) for prevention of natural disasters generally; the other is about creating a permanent budget for Civil Defense in municipalities. They are related but not the same question: one is about allocation of resources for prevention (maybe national policy), the other is about a specific mechanism (permanent budget for municipal civil defense). They are different issues: one is about allocation of resources for prevention; the other is about establishing a permanent budget for civil defense at municipal level. The answer to one does not necessarily determine the answer to the other. So classification: DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 712,
+    "completion_tokens": 313,
+    "estimated_cost": 6.7973e-05,
+    "prompt_tokens_details": null
+  }
+}

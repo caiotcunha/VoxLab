@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBCEvNs8ECRajaN3px31wYc1",
+  "object": "chat.completion",
+  "created": 1790624113,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Ministério da Saúde reconstruiu o SUS e restaurou sua autoridade de coordenação nacional.\",\n  \"target_proposition_b\": \"O Ministério dos Direitos Humanos está reconstruindo espaços de participação social e o programa Viver sem Limite restaurará serviços de reabilitação.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two statements. Determine stance determinable, target proposition, stance, and comparability.\n\nFirst, identify each manifestation's target proposition: a specific claim that the speaker accepts or rejects.\n\nManifestation A: Speaker thanks Minister, praises reconstruction of SUS, mentions regained authority, dialogue, conference, indigenous health actions, WHO resolution. The speaker is expressing support for the Ministry's actions. What specific proposition? Could be \"The Ministry has successfully reconstructed the SUS and regained coordination authority\" or \"The Ministry's actions on indigenous health are positive\". The speaker is favoring those actions. So stance determinable = YES. Target proposition: something like \"The Ministry of Health has successfully reconstructed the SUS and restored its coordination authority.\" Stance = FAVOR.\n\nManifestation B: Speaker thanks Minister of Human Rights, praises reconstruction of participation spaces, mentions Viver sem Limite program, criticizes previous government for destroying rights and freezing funding. Again supportive of current ministry's actions. Proposition: \"The Ministry of Human Rights is successfully reconstructing social participation and the Viver sem Limite program will restore rehabilitation services.\" Stance = FAVOR. Determinable = YES.\n\nNow comparability: Are they same proposition? No, different ministries, different topics (health vs human rights). So same_proposition = NO.\n\nWe must output JSON with keys exactly.\n\nIf stance_determinable is YES, provide target_proposition and stance. Else empty strings.\n\nThus:\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"O Ministério da Saúde reconstruiu o SUS e restaurou sua autoridade de coordenação nacional.\"\ntarget_proposition_b: \"O Ministério dos Direitos Humanos está reconstruindo espaços de participação social e o programa Viver sem Limite restaurará serviços de reabilitação.\"\nsame_proposition: NO\nstance_a: FAVOR\nstance_b: FAVOR\n\nMake sure JSON strict, no extra spaces? It's okay.\n\nCheck rules: target proposition should be short neutral phrase. Provide in Portuguese.\n\nOk.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1950,
+    "total_tokens": 2509,
+    "completion_tokens": 559,
+    "estimated_cost": 0.0022048000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 434
+    }
+  }
+}

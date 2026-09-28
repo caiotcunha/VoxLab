@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLrCSmkiL5IzATrGJP3pZaQ5",
+  "object": "chat.completion",
+  "created": 1790622400,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos distintos, uma sobre a aprovação de um projeto de lei e outra sobre a participação de motoristas em um grupo de trabalho.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 453,
+    "completion_tokens": 55,
+    "estimated_cost": 5.7400000000000006e-05,
+    "prompt_tokens_details": null
+  }
+}

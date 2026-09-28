@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZn1FB2J6YGMynwgC4xqHssb",
+  "object": "chat.completion",
+  "created": 1790622479,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra a Covid-19 deve ser obrigatória?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": "The speaker is discussing Covid-19 vaccination for children. Let me analyze the key positions:\n\n1. The speaker supports traditional vaccines in the PNI (National Immunization Program).\n2. The speaker questions the Covid-19 vaccine, calling it \"gene therapy\" and saying it shouldn't be confused with traditional vaccines.\n3. The speaker opposes mandatory Covid-19 vaccination: \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\"\n4. The speaker argues against punishing people who don't vaccinate their children.\n5. The speaker questions the safety of Covid-19 vaccines for children and demands data.\n\nThe central question seems to be about whether Covid-19 vaccination for children should be mandatory. The speaker clearly opposes mandatory vaccination.\n\nLet me formulate the target question: \"A vacinação de crianças contra a Covid-19 deve ser obrigatória?\"\n\nThe answer is clearly AGAINST (NÃO).\n\nstance_determinable: YES\ntarget_question: \"A vacinação de crianças contra a Covid-19 deve ser obrigatória?\"\nstance: AGAINST",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1672,
+    "total_tokens": 1937,
+    "completion_tokens": 265,
+    "estimated_cost": 0.0011247000012000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 640,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 217
+    }
+  }
+}

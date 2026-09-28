@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqDMTdeaOMqLOpoN7g4LjoXq",
+  "object": "chat.completion",
+  "created": 1790624124,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de questões distintas: uma sobre reduzir fila de espera e outra sobre atualizar protocolo de tratamento.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A fila de espera para oftalmologista especializado em retina deve ser reduzida?\" => Should the waiting list for retina specialist be reduced?\n\nQuestion2: \"A atualização do protocolo de tratamento de edema macular diabético no SUS deve ser realizada?\" => Should the update of the treatment protocol for diabetic macular edema in SUS be carried out?\n\nThese are different issues: one is about reducing waiting list for retina specialist; the other is about updating treatment protocol for diabetic macular edema. Both are ophthalmology related but distinct. Reducing waiting list does not imply updating protocol. So they are different questions. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 595,
+    "completion_tokens": 193,
+    "estimated_cost": 4.7684e-05,
+    "prompt_tokens_details": null
+  }
+}

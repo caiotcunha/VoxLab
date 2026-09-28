@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX8L7aqBF299Lj37Euue2eLj",
+  "object": "chat.completion",
+  "created": 1790622264,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estado brasileiro deve ser reestruturado para atender ao envelhecimento da população?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1647,
+    "total_tokens": 1698,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00018102000000000003,
+    "prompt_tokens_details": null
+  }
+}

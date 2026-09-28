@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuuWNFGnXtMSUqToZa8Za2tD",
+  "object": "chat.completion",
+  "created": 1790624079,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 (PLP 12) deve ser aprovado na forma como foi apresentado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a driver advocating against the current PLP 12 and for PL 536/24. The central question: Should the PLP 12 be approved as is? Or should the regulation adopt the model of remuneration per km and time, and reject PLP 12? The speaker clearly opposes PLP 12 and supports alternative proposal. So stance determinable = YES.\n\nTarget question: \"O Projeto de Lei Complementar nº 12 (PLP 12) deve ser aprovado na forma como foi apresentado?\" That's a yes/no question. Or \"A regulamentação do trabalho de motoristas de aplicativo deve adotar o modelo de remuneração por quilômetro rodado e tempo, rejeitando o PLP 12?\" But need neutral yes/no. Probably \"O PLP 12 deve ser aprovado na forma como foi apresentado?\" Answer: NÃO (AGAINST). So stance = AGAINST.\n\nCheck rules: stance FAVOR = responds SIM. Here speaker says not approve, so AGAINST.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2345,
+    "total_tokens": 2660,
+    "completion_tokens": 315,
+    "estimated_cost": 0.0018655,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 255
+    }
+  }
+}

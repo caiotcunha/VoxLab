@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RInRDALALrFjvzyifEieHDUT",
+  "object": "chat.completion",
+  "created": 1790624041,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Professores da rede pública devem poder ocupar dois cargos públicos simultaneamente?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The issue: possibility of teachers holding two public positions (or any other job) simultaneously. The speaker argues for freedom, supports the PEC that allows teachers to have another job, says it's about freedom of choice, not exclusive dedication, includes examples of teachers working in multiple places, supports the idea that they can be professor and driver, etc. So they are in favor of allowing teachers to hold two public positions (or any other job). So stance_determinable = YES.\n\nTarget question: Should teachers in the public network be allowed to hold two public positions (or any other job) simultaneously? Formulate as neutral yes/no: \"Professores da rede pública devem poder ocupar dois cargos públicos simultaneamente?\" Or \"A PEC que permite que professores da rede pública tenham dois cargos públicos deve ser aprovada?\" Something like that.\n\nStance: The speaker is in favor, so answer is SIM => FAVOR.\n\nThus JSON:\n\n{\n \"stance_determinable\":\"YES\",\n \"target_question\":\"Professores da rede pública devem poder ocupar dois cargos públicos simultaneamente?\",\n \"stance\":\"FAVOR\"\n}\n\nCheck formatting: no extra spaces? It's okay.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1258,
+    "total_tokens": 1555,
+    "completion_tokens": 297,
+    "estimated_cost": 9.7036e-05,
+    "prompt_tokens_details": null
+  }
+}

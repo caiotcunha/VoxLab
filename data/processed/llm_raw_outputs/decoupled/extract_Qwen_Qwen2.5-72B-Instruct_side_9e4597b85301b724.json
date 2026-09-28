@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R597TjYLJvSiMMqAgVEeXP7Z",
+  "object": "chat.completion",
+  "created": 1790622187,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério da Saúde deve reassumir a responsabilidade pelo financiamento do tratamento da retinopatia diabética no SUS?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 700,
+    "total_tokens": 757,
+    "completion_tokens": 57,
+    "estimated_cost": 0.0002748,
+    "prompt_tokens_details": null
+  }
+}

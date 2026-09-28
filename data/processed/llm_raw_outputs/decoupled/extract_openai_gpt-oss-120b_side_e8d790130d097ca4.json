@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjXZTPOxD0iA5ZyaHxY9vrYy",
+  "object": "chat.completion",
+  "created": 1790624069,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve adotar normas mais rigorosas de bem‑estar animal para garantir a competitividade do agronegócio?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is praising Deputy Bruno Ganem, discussing importance of animal welfare, linking to economic competitiveness, urging discussion, etc. Does she take a stance on a specific policy question? She seems to support advancing animal welfare policies, integrating them, and says it's important for competitiveness. She also mentions that clauses in EU-Mercosur treaty are hindering, implying they should be removed or addressed. The central question could be: \"Should Brazil adopt stronger animal welfare standards to enhance economic competitiveness?\" Or \"Should the Brazilian government prioritize animal welfare in trade negotiations?\" She expresses favor for that. So stance determinable = YES.\n\nTarget question: need neutral yes/no. Something like: \"O Brasil deve adotar normas mais rigorosas de bem‑estar animal para garantir a competitividade do agronegócio?\" That captures. Or \"A adoção de normas de bem‑estar animal deve ser priorizada nas políticas públicas brasileiras?\" She is in favor.\n\nThus stance = FAVOR (SIM). Provide JSON.\n\nCheck if any ambiguity: She is clearly supportive of animal welfare policies, linking to competitiveness, urging action. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1982,
+    "total_tokens": 2285,
+    "completion_tokens": 303,
+    "estimated_cost": 0.00012484399999999999,
+    "prompt_tokens_details": null
+  }
+}

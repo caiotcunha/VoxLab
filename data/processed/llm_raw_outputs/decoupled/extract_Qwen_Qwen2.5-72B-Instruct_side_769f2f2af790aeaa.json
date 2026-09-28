@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2AnIR4xTTIG4gdtvwHm5lej",
+  "object": "chat.completion",
+  "created": 1790622161,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve investir na autossuficiência na produção de imunoglobulina?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1423,
+    "total_tokens": 1474,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00053268,
+    "prompt_tokens_details": null
+  }
+}

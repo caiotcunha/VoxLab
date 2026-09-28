@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmxZxCaSQtnsR95fDz6GRovO",
+  "object": "chat.completion",
+  "created": 1790622225,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de instrumentos legais diferentes: uma sobre a Convenção Interamericana, outra sobre o Estatuto da Pessoa Idosa.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 446,
+    "completion_tokens": 51,
+    "estimated_cost": 0.0001626,
+    "prompt_tokens_details": null
+  }
+}

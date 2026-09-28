@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPbevt8qFz7HJoqHTOYpSscs",
+  "object": "chat.completion",
+  "created": 1790632857,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da alocação de recursos entre ministérios, a outra sobre manutenção de políticas de saúde para menopausa, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"Os recursos destinados à Casa da Mulher Brasileira devem ser repassados diretamente ao Ministério das Mulheres, em vez de passar pelo Ministério da Justiça?\" This asks about allocation of resources: should they be transferred directly to Ministry of Women instead of through Ministry of Justice.\n\nQuestion2: \"A criação de políticas públicas específicas para a saúde da mulher no climatério e menopausa deve ser mantida?\" This asks about maintaining specific public policies for women's health in climacteric and menopause.\n\nThese are different topics: one about budgetary/administrative transfer of resources between ministries; the other about maintaining specific health policies for women in climacteric/menopause. They are not the same issue, not opposite polarity, not equivalent. So relation = DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "total_tokens": 648,
+    "completion_tokens": 230,
+    "estimated_cost": 5.4566000000000006e-05,
+    "prompt_tokens_details": null
+  }
+}

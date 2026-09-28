@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9zmvIBgPYQNih5TirLd5ck0",
+  "object": "chat.completion",
+  "created": 1790622379,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam objetos diferentes, uma se refere à produção de alimentos e a outra à política nacional.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 439,
+    "completion_tokens": 42,
+    "estimated_cost": 5.314e-05,
+    "prompt_tokens_details": null
+  }
+}

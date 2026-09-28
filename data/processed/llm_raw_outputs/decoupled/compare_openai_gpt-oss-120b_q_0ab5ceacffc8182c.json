@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMPHXCszS9R5QbO6deWCfWCW",
+  "object": "chat.completion",
+  "created": 1790633008,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de derrubar um veto específico a um PL, a outra sobre alocação fixa de recursos a um fundo de calamidade, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O veto nº 28 ao PL 920/23 deve ser derrubado?\" Means: Should veto number 28 to Bill 920/23 be overturned? So it's about a specific veto on a bill.\n\nQuestion2: \"Os recursos para prevenção e resposta a desastres devem ser alocados de forma fixa no Fundo de Calamidade Pública?\" Means: Should resources for disaster prevention and response be allocated in a fixed manner in the Public Calamity Fund? That's about allocation of resources to a fund.\n\nThese are different topics: one is about overturning a veto on a specific bill; the other is about allocation of disaster resources to a fund. No direct relation. So classification: DIFFERENT.\n\nReturn JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 410,
+    "total_tokens": 638,
+    "completion_tokens": 228,
+    "estimated_cost": 5.393e-05,
+    "prompt_tokens_details": null
+  }
+}

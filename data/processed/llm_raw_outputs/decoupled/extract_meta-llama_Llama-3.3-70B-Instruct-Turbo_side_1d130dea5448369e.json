@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMRGX1XXRLaBRX0NHnjoxiO8",
+  "object": "chat.completion",
+  "created": 1790622337,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A licença para a PETROBRAS perfurar na Foz do Amazonas deve ser emitida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1040,
+    "total_tokens": 1090,
+    "completion_tokens": 50,
+    "estimated_cost": 0.00012,
+    "prompt_tokens_details": null
+  }
+}

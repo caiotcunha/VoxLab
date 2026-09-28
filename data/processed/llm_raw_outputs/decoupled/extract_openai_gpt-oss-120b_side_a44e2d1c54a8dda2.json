@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RawooOqKoLQjQY0mTuWq19yc",
+  "object": "chat.completion",
+  "created": 1790624068,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma subcomissão na Comissão para monitorar a implementação das políticas públicas para pessoas com Transtorno do Espectro Autista?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a deputy (but we ignore identity). The speech is about policies for autism, inclusion, and specifically they propose two requests: (1) meeting with state legislative assemblies to discuss rights of people with autism; (2) they say they do NOT see need to create a subcommittee to verify implementation of policies. So they are taking a stance against creating a subcommittee. Also they are in favor of meeting assemblies. The question: we need a neutral yes/no question that captures the central issue. The central issue seems to be: \"Should a subcommittee be created within the Commission to monitor the implementation of autism-related policies?\" The speaker says they do not see need to create a subcommittee. So stance: AGAINST (i.e., answer is NO to the question \"Should a subcommittee be created...\").\n\nWe need to see if there is a single clear position. The speech also supports meeting assemblies, but the more concrete stance is against subcommittee. The question should be about that. So stance_determinable = YES. target_question: \"Deve ser criada uma subcomissão na Comissão para monitorar a implementação das políticas públicas para pessoas com Transtorno do Espectro Autista?\" (Yes/No). The speaker says no. So stance = AGAINST.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1969,
+    "total_tokens": 2317,
+    "completion_tokens": 348,
+    "estimated_cost": 0.000132013,
+    "prompt_tokens_details": null
+  }
+}

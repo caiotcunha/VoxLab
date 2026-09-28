@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPdP3GRW64Fba1PCGOgxSHDB",
+  "object": "chat.completion",
+  "created": 1790624006,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI) deve ser aprovada e receber recursos orçamentários?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing the need for budget allocation to PNGATI, implementation of policies, opposition to agro-industrial practices that poison food, support for bioeconomy, technology but not tractors that violate rights, etc. The core issue: Should the PNGATI (Programa Nacional de Gestão Territorial e Ambiental das Terras Indígenas) be permanently approved / funded? The speech advocates for allocation of resources, approval, etc. So stance is clearly in favor of the policy. The target question could be: \"A Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI) deve ser aprovada e receber recursos orçamentários?\" That's a yes/no. So stance determinable = YES, target_question = \"A Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI) deve ser aprovada e receber recursos orçamentários?\" The stance = FAVOR (SIM). Provide JSON.\n\nCheck if any nuance: The speaker also mentions need to expand PNAE, not envenenado, etc. But overall they are advocating for the policy. So answer.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1695,
+    "total_tokens": 1997,
+    "completion_tokens": 302,
+    "estimated_cost": 0.00011405499999999999,
+    "prompt_tokens_details": null
+  }
+}

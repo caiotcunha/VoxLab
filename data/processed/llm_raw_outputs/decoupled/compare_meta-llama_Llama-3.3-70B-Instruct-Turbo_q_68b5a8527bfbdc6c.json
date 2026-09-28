@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROabnbPTTtorjrcVFC1APoCf",
+  "object": "chat.completion",
+  "created": 1790622361,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas diferentes para lidar com a tuberculose, uma sobre aumento de orçamento e outra sobre um projeto-piloto de erradicação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 457,
+    "completion_tokens": 55,
+    "estimated_cost": 5.78e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1gZpGC6xel6CNfu9C11PFFU",
+  "object": "chat.completion",
+  "created": 1790624075,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Brasil deve adotar medidas para cumprir a Resolução Nexus do PNUMA sobre bem-estar animal, meio ambiente e desenvolvimento sustentável?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a government official (executive) discussing animal welfare, its economic importance, UN resolution, need for studies, etc. She seems to advocate for advancing animal welfare policies, aligning with UN resolution, responding to societal demand, and preparing productive sector. She says \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, não é pela vida humana na Terra.\" That last sentence seems contradictory: \"não é pela vida humana na Terra\" maybe a typo: \"não é só pela vida humana\"? But she says it's for animals but not only for human life? Actually \"não se iludam, não é pela vida humana na Terra\" could mean \"it's not for human life on Earth\" which is odd. But overall she supports animal welfare as state policy, economic, etc. So there is a clear stance: she favors advancing animal welfare policies and implementing UN resolution. The question: we need a specific yes/no question. Could be: \"O Brasil deve implementar as recomendações da Resolução Nexus do PNUMA sobre bem-estar animal, meio ambiente e desenvolvimento sustentável?\" She is in favor. Or \"O governo deve priorizar políticas de bem-estar animal como pauta de Estado?\" She says yes. Choose a neutral yes/no question. Probably: \"O Brasil deve adotar medidas para cumprir a Resolução Nexus do PNUMA sobre bem-estar animal, meio ambiente e desenvolvimento sustentável?\" She supports. So stance = FAVOR.\n\nCheck determinability: YES.\n\nNow produce JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2192,
+    "total_tokens": 2595,
+    "completion_tokens": 403,
+    "estimated_cost": 0.0019825999999999997,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 342
+    }
+  }
+}

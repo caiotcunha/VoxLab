@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RURhApL6KM44undi8ift3Wnv",
+  "object": "chat.completion",
+  "created": 1790622193,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Lei do Bem e suas regulamentações devem ser aperfeiçoadas e aplicadas para facilitar a colaboração entre universidades, empresas e governo?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3345,
+    "total_tokens": 3413,
+    "completion_tokens": 68,
+    "estimated_cost": 0.0012314,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDOO1ZNSPjfPbnLMCEd9soB5",
+  "object": "chat.completion",
+  "created": 1790632433,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata de tornar a vacinação obrigatória para faixa etária específica, enquanto a segunda pergunta se refere genericamente a manter a vacinação infantil, sem especificar obrigatoriedade ou faixa etária.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos a partir de 2024?\" Means: Should Covid-19 vaccination be mandatory for children 6 months to 5 years starting 2024?\n\nQuestion2: \"A vacinação de crianças contra Covid-19 deve ser mantida?\" Means: Should the vaccination of children against Covid-19 be maintained? This is more general: maintain vaccination of children (maybe already in place). It doesn't specify age range or mandatory nature. Could be about continuing a policy (maybe voluntary). The first asks about making it mandatory for a specific age group starting 2024. The second asks about maintaining vaccination of children (maybe existing program). They are not the same question; they differ in scope and polarity? Not opposite polarity; they are different issues. So classification: DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 679,
+    "completion_tokens": 271,
+    "estimated_cost": 6.1166e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQxqU7dbOj4ve67jf2GyfydX",
+  "object": "chat.completion",
+  "created": 1790622742,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações tratam da mesma proposição específica — a substituição/extinção do saque-aniversário do FGTS — e ambas se posicionam contra (AGAINST): a Manifestação A chama o fim de 'cruel e até maligno', e a Manifestação B afirma que acabar com o saque-aniversário 'seria uma solução muito cruel' e que não contará com o apoio do parlamentar para finalizá-lo.\"\n}\n```",
+        "reasoning_content": "Let me analyze both manifestations carefully.\n\n**Manifestation A:**\n- Event: MINISTER_APPEARANCE, 2024-04-17\n- Theme: Discussion about substituting FGTS saque-aniversário with a new consigned credit modality\n- The speaker strongly defends the saque-aniversário, saying ending it would be \"cruel and even malignant\"\n- Argues the money belongs to the worker\n- Cites statistics: 34.5 million workers used it, R$75 billion injected into the economy\n- Says the fund increased 14.3% since creation of saque-aniversário\n- Clearly AGAINST ending/substituting the saque-aniversário\n\n**Manifestation B:**\n- Event: PUBLIC_HEARING, 2024-04-24\n- Theme: Substitution of FGTS saque-aniversário by consigned loan with lower interest rates\n- The speaker says \"jamais queremos fragilizar o FGTS\" (we never want to weaken FGTS)\n- Acknowledges the importance of FGTS for society\n- Defends the saque-aniversário: says it was used to save lives during the pandemic, 34 million people used it\n- Says the saque-aniversário needs \"aprimoramento\" (improvement)\n- Praises the Government's idea of creating a new consigned credit for the private sector, calling it \"uma saída\" (a way out)\n- But says it shouldn't be \"excludente\" - the worker should have options\n- Says ending the saque-aniversário \"seria uma solução muito cruel para os trabalhadores\" (would be a very cruel solution for workers)\n- \"que não conte comigo para finalizá-lo, para acabar com ele\" (don't count on me to end it)\n\nBoth manifestations are about the same proposition: the substitution/ending of the saque-aniversário do FGTS.\n\nIn Manifestation A: The speaker is clearly AGAINST ending the saque-aniversário. They say it would be \"cruel e até maligno\" to end it.\n\nIn Manifestation B: The speaker is also AGAINST ending the saque-aniversário. They say ending it \"seria uma solução muito cruel\" and explicitly says \"não conte comigo para finalizá-lo, para acabar com ele.\"\n\nBoth respond to the same specific proposition (substituting/ending the saque-aniversário do FGTS) with the same stance direction (AGAINST ending it).\n\nSo the relation is STANCE_MAINTAINED.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2619,
+    "total_tokens": 3278,
+    "completion_tokens": 659,
+    "estimated_cost": 0.0025129875006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 536
+    }
+  }
+}

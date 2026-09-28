@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3snQB3U4sB7WSbvPmqhsgEE",
+  "object": "chat.completion",
+  "created": 1790622361,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre a reestruturação do Estado para atender ao envelhecimento da população e outra sobre a priorização da criação de uma Secretaria Nacional da Pessoa Idosa.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 467,
+    "completion_tokens": 67,
+    "estimated_cost": 6.144000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

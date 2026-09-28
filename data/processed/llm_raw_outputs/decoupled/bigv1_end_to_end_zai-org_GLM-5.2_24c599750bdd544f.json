@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rt7ssDuI1gBSc8P41912NxYw",
+  "object": "chat.completion",
+  "created": 1790622658,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INSUFFICIENT_EVIDENCE\",\n  \"reasoning\": \"Ambas as manifestações consistem em falas de abertura e encerramento de audiências públicas sobre o PL 2768/22, em que a atora destaca a importância do debate e os objetivos da regulamentação, mas não assume uma posição determinável (favor ou contra) em relação à aprovação da proposição específica.\"\n}",
+        "reasoning_content": "A tarefa é classificar a relação entre duas manifestações do mesmo ator (cegadas) em eventos parlamentares diferentes.\n\nCategorias:\n- STANCE_MAINTAINED: mesma proposição, mesma direção de stance.\n- STANCE_REVERSED: mesma proposição, direções opostas.\n- INCOMPARABLE: posição determinável, mas não respondem à mesma proposição.\n- RELATION_UNCERTAIN: alguma etapa não é clara.\n- INSUFFICIENT_EVIDENCE: pelo menos uma manifestação não apresenta posição determinável sobre nenhuma proposição específica.\n\nManifestação A:\nEvento: PUBLIC_HEARING (2023-08-10)\nTema: Regulamentação dos mercados digitais no Brasil\nFala: Abertura de audiência pública sobre o PL 2768/22. A relatora fala sobre a importância do debate, a necessidade de legislação para garantir proteção aos consumidores, concorrência justa, estimular inovação e desenvolvimento econômico, \"obviamente, não burocratizando cada vez mais\". Ela não diz explicitamente \"sou a favor do PL 2768/22\" ou \"sou contra\", mas como relatora e autora dos requerimentos de audiência, ela está conduzindo o processo e reconhece a necessidade de legislação adequada. Ela defende a criação de um \"marco eficiente e inovador\". Ela não toma um stance explícito de FAVOR ou AGAINST ao PL 2768/22 em si, mas fala sobre a importância de debater e criar legislação.\n\nManifestação B:\nEvento: PUBLIC_HEARING (2023-08-24)\nTema: Mudanças no projeto de regulamentação dos mercados digitais (PL 2768/22)\nFala: Encerramento de audiência pública. Ela ressalta a importância da discussão, dos mercados digitais, a necessidade de criar políticas que garantam competitividade, concorrência, inovação, crescimento econômico e proteção de direitos. Agradece a presença e encerra.\n\nAnálise:\nAmbas as manifestações são de abertura/encerramento de audiências públicas sobre o PL 2768/22. A atora (relatora) fala sobre a importância do debate e os objetivos da regulação (competitividade, inovação, proteção de direitos). No entanto, em nenhuma das duas ela toma um stance explícito (FAVOR ou AGAINST) em relação à aprovação do PL 2768/22 ou de uma proposição específica. Ela fala sobre os objetivos gerais que a regulação deve buscar, mas não declara apoio ou oposição ao texto do projeto. \n\nA categoria INSUFFICIENT_EVIDENCE se aplica quando \"pelo menos uma das manifestações não apresenta posição determinável sobre nenhuma proposição específica\". \nA relatora não apresenta um stance determinável (FAVOR/AGAINST) sobre o PL 2768/22 em nenhuma das falas. Ela apenas reconhece a importância do debate e dos objetivos da regulação.\n\nPortanto, a relação é INSUFFICIENT_EVIDENCE.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2182,
+    "total_tokens": 2964,
+    "completion_tokens": 782,
+    "estimated_cost": 0.0026349750000000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 687
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rfs4i27Vl0HxdIP2v8HcEwyq",
+  "object": "chat.completion",
+  "created": 1790624132,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express support for TB eradication, but they address different specific proposals (A advocates increasing budget and a pilot in Amazonas; B opposes a single‑state pilot and suggests multiple locations), so they are not comparable on the same proposition.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we don't know name. Both are public hearings about tuberculosis. Need to see if they respond to same specific proposition. In Manifestation A, the speaker discusses need to increase budget for TB, mentions proposal to amplify budget, mentions target to deliver result by Feb 7, focusing on Amazonas pilot, etc. The stance: supportive of increasing budget and actions to combat TB. In Manifestation B, speaker also discusses strategies, mentions not focusing solely on Amazonas, suggests multiple states pilot, mentions need to achieve eradication by 2030, etc. The stance: supportive of TB eradication strategies, but differs on specific proposition: In A, they propose to focus pilot on Amazonas (and increase budget). In B, they argue against focusing solely on Amazonas, propose multiple states. So they are responding to different specific propositions: A's proposition is \"increase budget and focus pilot on Amazonas\" while B's proposition is \"not focus solely on Amazonas, use multiple states\". They are not the same proposition. Both have determinable stance (favor TB eradication, but different specific proposals). So relation is INCOMPARABLE (different propositions). Not reversed because not same proposition. So answer: INCOMPARABLE. Provide brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5544,
+    "total_tokens": 5886,
+    "completion_tokens": 342,
+    "estimated_cost": 0.000263268,
+    "prompt_tokens_details": null
+  }
+}

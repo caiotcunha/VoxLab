@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2LKatfG8XmvTUnk1yY0HJ1M",
+  "object": "chat.completion",
+  "created": 1790622257,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de diferentes projetos de lei, um sobre motoristas de aplicativo e outro não especificado, portanto são questões diferentes.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 443,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00016140000000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrFvYffnmYq8nbUVzaZfG4DS",
+  "object": "chat.completion",
+  "created": 1790633096,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express a favorable stance toward policies for women, but they address different specific propositions (A supports specific protective measures and projects, B discusses the administrative placement of resources), so they are not comparable on the same issue.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) in two public hearings. We need to see if they respond to same specific proposition. Manifestation A is about violence against women, policies, support for projects like Aluguel Social, network protection, etc. Manifestation B is about LDO 2024, deficit, and also mentions \"Casa da Mulher Brasileira\" and suggests keeping resource under Ministry of Justice. The specific proposition: In A, she is favorable to a project (maybe Aluguel Social) and to policies for women, supportive of legislation. In B, she is discussing resource management, says \"Eu não questiono... concordo plenamente com essa estrutura que já existe. Quanto é que vamos ganhar em eficiência?\" She defends keeping resource under Ministry of Justice. Not same proposition. Both have stance favorable to women's policies, but not same specific proposition. So they are INCOMPARABLE (both have determinable stance but not same proposition). Need to ensure stance determinable: A is clearly favorable to projects for women, supportive. B is favorable to keeping resource under Ministry of Justice (i.e., supportive). Both have stance but different propositions. So INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2275,
+    "total_tokens": 2598,
+    "completion_tokens": 323,
+    "estimated_cost": 0.000139085,
+    "prompt_tokens_details": null
+  }
+}

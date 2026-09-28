@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMbJFzx4C7XHzIGZhlrm4n6W",
+  "object": "chat.completion",
+  "created": 1790624032,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma subcomissão para fiscalizar a implementação das políticas públicas e leis relativas ao Transtorno do Espectro Autista?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker proposes creation of a subcommittee to monitor implementation of policies for people with autism, and a meeting of state legislative assemblies. The stance is in favor of those proposals. So stance_determinable = YES. Target question: \"Deve ser criada uma subcomissão na Comissão de Saúde para monitorar a implementação das políticas públicas para pessoas com autismo?\" Or more general: \"A criação de subcomissão para fiscalizar a implementação das leis de direitos das pessoas com autismo deve ser aprovada?\" Need neutral yes/no question. Let's craft: \"Deve ser criada uma subcomissão para fiscalizar a implementação das políticas públicas e leis relativas ao Transtorno do Espectro Autista?\" That's a yes/no. The speaker is in favor, so stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1958,
+    "total_tokens": 2202,
+    "completion_tokens": 244,
+    "estimated_cost": 0.00011392599999999999,
+    "prompt_tokens_details": null
+  }
+}

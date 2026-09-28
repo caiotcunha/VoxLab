@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIeDtNxkhWlaf8wRWbal1Jub",
+  "object": "chat.completion",
+  "created": 1790622485,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um programa específico de atenção à saúde da mulher no climatério e na menopausa?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if there's a clear stance on a specific issue (Determinability), formulate a neutral yes/no target question, and identify the speaker's stance (FAVOR/AGAINST).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING\n    *   *Date:* 2023-10-05\n    *   *Theme:* Public policies for women in climacteric and menopause.\n    *   *Literal speech:* The speaker opens the hearing, mentions a tragic event involving a colleague's brother, and then discusses the subject of the hearing.\n    *   *Key excerpts regarding the subject:*\n        *   \"Sou a Relatora do Projeto de Lei nº 5.602, de 2019, que trata do tema. Apresentei parecer contrário ao projeto e seus apensados, na forma do substitutivo, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" (I am the Rapporteur of PL 5602/2019. I presented a contrary opinion to the bill and its attachments, in the form of a substitute, which creates the Program for Attention to Women in Menopause and Climacteric.)\n        *   \"É necessário debater a promoção da saúde da mulher para esse ciclo da vida, mas a criação de um programa específico não é a solução mais eficaz, podendo sobrecarregar o sistema com estruturas burocráticas desnecessárias.\" (It is necessary to debate the promotion of women's health for this life cycle, but the creation of a specific program is not the most effective solution, potentially overloading the system with unnecessary bureaucratic structures.)\n        *   \"A ciência, a tecnologia e o mundo evoluíram sobre esse tema, mas acreditamos que a criação de um programa específico não é a melhor forma de abordar o problema. Os tratamentos e medicações já podem ser incorporados pelos programas de saúde existentes, sem a necessidade de uma nova estrutura.\" (Science, technology, and the world have evolved on this topic, but we believe that creating a specific program is not the best way to approach the problem. Treatments and medications can already be incorporated by existing health programs, without the need for a new structure.)\n        *   \"Acredito que esta audiência pública possa contribuir para o aprofundamento da discussão e demonstrar que o amparo à saúde da mulher no climatério e na menopausa pode ser feito de forma mais eficiente dentro da estrutura já existente, sem a criação de um novo programa.\" (I believe this public hearing can contribute to deepening the discussion and demonstrate that support for women's health in climacteric and menopause can be done more efficiently within the existing structure, without creating a new program.)\n\n3.  **Evaluate Determinability:**\n    *   Does the speaker present a clear position on a specific issue? Yes. The speaker explicitly states opposition to creating a specific program for women in menopause/climacteric (PL 5.602/2019), arguing that existing structures should be used instead.\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   The issue is the creation of a specific program for women in menopause/climacteric (or the approval of PL 5.602/2019 which creates it).\n    *   Neutral yes/no question: \"O Programa de Atenção a Mulheres na Menopausa e Climatério deve ser criado?\" or \"O Projeto de Lei nº 5.602, de 2019, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério, deve ser aprovado?\"\n    *   Let's use the broader policy question: \"Deve ser criado um programa específico de atenção a mulheres na menopausa e climatério?\" or \"O Projeto de Lei nº 5.602, de 2019, deve ser aprovado?\"\n    *   The text says: \"Apresentei parecer contrário ao projeto e seus apensados, na forma do substitutivo, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" and \"a criação de um programa específico não é a solução mais eficaz\".\n    *   Target question: \"Deve ser criado um programa específico de atenção à saúde da mulher no climatério e na menopausa?\"\n\n5.  **Evaluate Stance:**\n    *   The speaker says \"Apresentei parecer contrário ao projeto\" (I presented a contrary opinion to the bill) and \"a criação de um programa específico não é a solução mais eficaz\" (the creation of a specific program is not the most effective solution).\n    *   Therefore, the speaker is AGAINST the creation of the program / the bill.\n    *   `stance`: \"AGAINST\"\n\n6.  **Format Output:**\n    *   JSON format required.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"Deve ser criado um programa específico de atenção à saúde da mulher no climatério e na menopausa?\",\n      \"stance\": \"AGAINST\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2082,
+    "total_tokens": 3319,
+    "completion_tokens": 1237,
+    "estimated_cost": 0.00304636500144,
+    "prompt_tokens_details": {
+      "cached_tokens": 768,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1183
+    }
+  }
+}

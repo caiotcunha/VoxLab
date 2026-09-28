@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjQgkufpKSbTxW4K4sdLdlnV",
+  "object": "chat.completion",
+  "created": 1790632588,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"target_proposition_b\": \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to produce JSON with fields:\n\n- stance_determinable_a\n- stance_determinable_b\n- target_proposition_a\n- target_proposition_b\n- same_proposition\n- stance_a\n- stance_b\n\nWe must first identify for each manifestation whether there is a clear proposition the speaker supports or rejects. The theme is about elderly rights, idadismo, ratification of the Inter-American Convention on the Protection of Human Rights of Older Persons.\n\nManifestation A: Long speech. At the end, says: \"O que queremos aqui é que haja a aprovação de uma proposta de emenda à Constituição para que, de fato, as políticas funcionem da melhor forma possível.\" Also earlier: \"Eu conto aqui com o apoio dos Deputados e Deputadas, Senadores e Senadoras.\" Also earlier: \"Conclamo todos para que nós possamos entender que a convenção é hoje o nosso ponto mais central.\" He reads article 5, says importance. So the proposition: \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\" (or \"aprovar a ratificação da Convenção\") and also \"aprovar proposta de emenda constitucional para garantir políticas\". The main target proposition likely: \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\". He is in favor. So stance_determinable_a = YES. target_proposition_a = \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\". stance_a = FAVOR.\n\nManifestation B: Also about ratification. He says: \"Precisamos desse apoio para que possamos avançar... Enfatiza a importância da ratificação da convenção... propondo data antes de outubro para celebração da aprovação da ratificação.\" So stance_determinable_b = YES. target_proposition_b = same: \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\". stance_b = FAVOR.\n\nNow same_proposition: Are they same? Yes, both talk about ratification of the same convention. So same_proposition = YES.\n\nCheck if any nuance: Manifestation A also mentions \"aprovação de proposta de emenda à Constituição\". But also mentions ratification. The target proposition we choose is ratification. That is present in both. So same_proposition YES.\n\nThus JSON:\n\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"target_proposition_b\": \"Ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n\nMake sure strings exactly as required.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5948,
+    "total_tokens": 6656,
+    "completion_tokens": 708,
+    "estimated_cost": 0.000340436,
+    "prompt_tokens_details": null
+  }
+}

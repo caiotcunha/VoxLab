@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Riu46EUxOE0vocYzMmt1ws7y",
+  "object": "chat.completion",
+  "created": 1790632482,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Both statements address the same issue of child Covid‑19 vaccination; Manifestation A questions and criticizes the vaccine (against), while Manifestation B defends and promotes vaccination (in favor), showing opposite stances.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe have Manifestation A: In a public hearing about mandatory vaccination for children 6 months to 5 years. The speaker seems skeptical, questioning vaccine safety, mentions \"barbarities\", \"vaccine does not stay in arm\", \"vaccine leads to mutation\", etc. He seems critical of vaccine, possibly against mandatory vaccination. He says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação\" – he worries about worsening coverage? Actually he says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação, não só da COVID, mas de todas.\" That suggests he is concerned about coverage being worsened, maybe he opposes anti-vaccine rhetoric? But overall tone is skeptical of vaccine claims, seems to be anti-vaccine or at least questioning.\n\nManifestation B: In a minister appearance, about vaccination of children. The speaker is a health professional, strongly pro-vaccination, condemning anti-vaccine movement, calling it criminal, irresponsible, etc. He defends vaccination.\n\nThus both refer to same proposition: vaccination of children against Covid-19 (mandatory). A seems to be against (or at least questioning) the mandatory vaccination, B is in favor of vaccination (pro). So they respond to same proposition with opposite stance. So STANCE_REVERSED.\n\nWe must ensure that stance is determinable: A expresses skepticism, possibly against mandatory vaccination. He says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação\" – maybe he is warning not to worsen coverage, but earlier he lists \"barbaridades\" about vaccine, seems to be anti. So stance is AGAINST mandatory vaccination. B is clearly FAVOR vaccination. So opposite.\n\nThus relation: STANCE_REVERSED.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2555,
+    "total_tokens": 2986,
+    "completion_tokens": 431,
+    "estimated_cost": 0.000167805,
+    "prompt_tokens_details": null
+  }
+}

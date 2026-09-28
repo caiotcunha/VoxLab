@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYaN6hYa00PnGi5QRi4mlOay",
+  "object": "chat.completion",
+  "created": 1790623999,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra a COVID-19 deve ser obrigatória?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speech is about vaccination of children against COVID-19. The speaker says they are against mandatory vaccination, supports voluntary, questions safety, wants data, criticizes Anvisa, etc. So stance determinable = YES. Target question: a neutral yes/no question about a specific policy. Could be \"A vacinação de crianças contra COVID-19 deve ser obrigatória?\" Or \"O governo deve tornar obrigatória a vacinação de crianças contra COVID-19?\" The speaker is against mandatory, so stance = AGAINST (i.e., answers NO to mandatory). The stance mapping: FAVOR = responds YES. Since speaker opposes mandatory, they would answer NO to \"Should vaccination be mandatory?\" So stance = AGAINST.\n\nWe must output JSON with keys exactly. target_question must be neutral yes/no question. Provide that. stance_determinable YES. stance AGAINST.\n\nCheck rules: No extra text. Provide JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1627,
+    "total_tokens": 1890,
+    "completion_tokens": 263,
+    "estimated_cost": 0.0013921,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 217
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiqC1chk8jQ9hqD2p05Cv0tX",
+  "object": "chat.completion",
+  "created": 1790622225,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas questionam a obrigatoriedade da vacinação contra a COVID-19 para crianças, com a segunda sendo uma generalização da primeira.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 449,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00016376000000000002,
+    "prompt_tokens_details": null
+  }
+}

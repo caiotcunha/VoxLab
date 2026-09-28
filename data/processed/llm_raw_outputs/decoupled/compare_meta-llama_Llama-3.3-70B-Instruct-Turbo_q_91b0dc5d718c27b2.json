@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCwZg1wNrlK3tB5hiqyTeX8h",
+  "object": "chat.completion",
+  "created": 1790622365,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de um sistema ou arcabouço para proteger ou apoiar vítimas de desastres, com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 471,
+    "completion_tokens": 59,
+    "estimated_cost": 6.008e-05,
+    "prompt_tokens_details": null
+  }
+}

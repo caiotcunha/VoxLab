@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RM7bvCK9xN8AIRy3gVFIwL7q",
+  "object": "chat.completion",
+  "created": 1790622258,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da ampliação e fortalecimento da rede de proteção para mulheres vítimas de violência, enquanto a segunda pergunta se refere especificamente à manutenção da gerência dos recursos para patrulhas e Casa da Mulher Brasileira pelo Ministério da Justiça.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 480,
+    "completion_tokens": 79,
+    "estimated_cost": 0.00017596000000000002,
+    "prompt_tokens_details": null
+  }
+}

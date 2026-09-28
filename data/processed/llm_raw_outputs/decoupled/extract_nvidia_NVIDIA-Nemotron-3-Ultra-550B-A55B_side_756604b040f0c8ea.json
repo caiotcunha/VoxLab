@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROvM4evmlTlQzYvMRYooLVUO",
+  "object": "chat.completion",
+  "created": 1790624026,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser mantido como verba fixa e engessada para prevenção de desastres?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speaker thanks Sosthenes, mentions need for investments in municipalities, career for civil defense, criticizes fixed fund for calamity (Fundo de Calamidade Pública) as inefficient, says fixed budget for prevention is absurd, prefers flexible allocation via MP for response. So they have a stance: against having a fixed, earmarked fund for prevention (i.e., against maintaining the Fundo de Calamidade Pública as currently structured). They favor flexible funding via provisional measures for response. So determinable YES.\n\nTarget question: Should the Calamity Public Fund (Fundo de Calamidade Pública) remain as a fixed, earmarked budget for disaster prevention? Or \"Should disaster prevention funding be kept as a fixed, earmarked budget (Fundo de Calamidade Pública)?\" That's a yes/no question. The speaker says NO (against). So stance = AGAINST.\n\nWe must output JSON with keys exactly. Provide target_question as neutral yes/no question. Use affirmative measure: \"O Fundo de Calamidade Pública deve ser mantido como verba fixa e engessada para prevenção de desastres?\" That's neutral. Stance = AGAINST.\n\nCheck rules: stance_determinable YES, target_question non-empty, stance FAVOR/AGAINST/UNCERTAIN. Provide JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1102,
+    "total_tokens": 1463,
+    "completion_tokens": 361,
+    "estimated_cost": 0.0013452,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 301
+    }
+  }
+}

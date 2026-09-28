@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4MOPlY5U780ZFL4YrSglbcP",
+  "object": "chat.completion",
+  "created": 1790622334,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A reserva de contingência para desastres socioambientais deve ser separada no orçamento público?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1746,
+    "total_tokens": 1796,
+    "completion_tokens": 50,
+    "estimated_cost": 0.0001906,
+    "prompt_tokens_details": null
+  }
+}

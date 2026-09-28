@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RE9BqzuFUZ7pFFv0axCDeMLZ",
+  "object": "chat.completion",
+  "created": 1790622345,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 958,
+    "total_tokens": 1032,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00011948,
+    "prompt_tokens_details": null
+  }
+}

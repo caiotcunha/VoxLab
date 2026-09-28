@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ue9HnBfo4ZhBUj9g3SQqwv",
+  "object": "chat.completion",
+  "created": 1790622296,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A criação de um programa específico para a saúde da mulher no climatério e na menosá is a melhor forma de abordar o problema?\",\n  \"stance\": \"NO\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2185,
+    "total_tokens": 2245,
+    "completion_tokens": 60,
+    "estimated_cost": 0.0002377,
+    "prompt_tokens_details": null
+  }
+}

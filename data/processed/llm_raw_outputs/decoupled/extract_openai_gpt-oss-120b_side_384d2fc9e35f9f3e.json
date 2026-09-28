@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlbBLZUcqxaKkEc7ss5wnxro",
+  "object": "chat.completion",
+  "created": 1790623994,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Secretaria Nacional da Pessoa Idosa deve ser ampliada para mais municípios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about priority for healthy aging agenda in G20, creation of a National Secretariat for the Elderly, need to multiply policies, strengthen municipal councils, etc. The speaker expresses support for the Secretariat, wants it to be expanded beyond pilot municipalities, wants policies to be prioritized, criticizes budget distortions, etc. So there is a clear stance: they are in favor of expanding and prioritizing the Secretariat and policies for elderly. The specific question could be: \"A Secretaria Nacional da Pessoa Idosa deve ser ampliada e priorizada nas políticas públicas?\" Or \"A agenda de envelhecimento saudável deve ser prioridade no G20?\" The speech supports that. So stance_determinable = YES. target_question: \"A agenda de envelhecimento saudável deve ser prioridade no G20?\" Or \"A Secretaria Nacional da Pessoa Idosa deve ser ampliada e priorizada?\" Choose one. The speech mentions \"Parabenizo a existência dessa Secretaria. Espero que ela se multiplique além dos 13 projetos, dos 13 Municípios-piloto.\" So the question: \"A Secretaria Nacional da Pessoa Idosa deve ser ampliada para mais municípios?\" That is a yes/no. The speaker is in favor. So stance = FAVOR.\n\nThus JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"A Secretaria Nacional da Pessoa Idosa deve ser ampliada para mais municípios?\",\n \"stance\": \"FAVOR\"\n}\n\nCheck if any nuance: The speech also criticizes budget allocation and political distortions, but overall supportive of the agenda. So answer accordingly.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1574,
+    "total_tokens": 1958,
+    "completion_tokens": 384,
+    "estimated_cost": 0.000123518,
+    "prompt_tokens_details": null
+  }
+}

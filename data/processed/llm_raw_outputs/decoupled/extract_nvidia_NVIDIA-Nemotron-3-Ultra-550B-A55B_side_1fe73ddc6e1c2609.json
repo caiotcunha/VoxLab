@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKw1O5x7ALPjlmkqGVZ2XUn4",
+  "object": "chat.completion",
+  "created": 1790624062,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Lei do Bem deve ser alterada para melhorar a colaboração entre universidades, empresas e governo?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about changes to Lei do Bem to facilitate collaboration between universities, companies, government. The speaker discusses problems with current implementation, need to \"lubrificar\" mechanisms, need institutions bridging academia and industry, need innovation driven by science. He seems to be advocating for changes to improve collaboration, i.e., supports changes to Lei do Bem. So stance determinable = YES. Target question: \"Should the Lei do Bem be amended to improve collaboration between universities, companies, and government?\" That's a yes/no question. The speaker is in favor (FAVOR). Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3006,
+    "total_tokens": 3193,
+    "completion_tokens": 187,
+    "estimated_cost": 0.0019144000000000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 135
+    }
+  }
+}

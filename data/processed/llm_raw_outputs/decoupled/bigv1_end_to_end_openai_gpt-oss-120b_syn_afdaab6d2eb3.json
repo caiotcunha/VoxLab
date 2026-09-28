@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rqq8ntDBgX5fUIRgLLKFk1zw",
+  "object": "chat.completion",
+  "created": 1790624157,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same issue of mandatory COVID‑19 vaccination for children and express opposition to it.\"\n}",
+        "reasoning_content": "We need to determine relation between Manifestation A and B. Both are from same actor (same person) but we don't know name. Both discuss vaccination of children against Covid. Manifestation A: She (deputada) expresses opposition to mandatory vaccination for children, says she is not anti-vax, wants freedom, opposes forced vaccination, wants data, etc. She is against mandatory vaccination for children. She also defends life, etc. So stance: AGAINST mandatory vaccination for children.\n\nManifestation B: Minister appearance, speaker says \"what we are against is the obligatoriness\" (we are against mandatory). She says \"O que nós somos contra é quanto a obrigatoriedade.\" So also AGAINST mandatory vaccination. So both respond to same proposition: mandatory vaccination of children (or maybe of elderly? but main theme is mandatory vaccination of children). Both are AGAINST. So same stance, same proposition. So STANCE_MAINTAINED.\n\nCheck if any nuance: B also mentions \"vacina da COVID-19 precisa ser debatida\" and \"não é possível que simplesmente se obrigue\". So yes, same proposition. So relation STANCE_MAINTAINED.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2883,
+    "total_tokens": 3177,
+    "completion_tokens": 294,
+    "estimated_cost": 0.000156651,
+    "prompt_tokens_details": null
+  }
+}

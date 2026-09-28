@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLglwbsY8ALqEdST1oyUcBf0",
+  "object": "chat.completion",
+  "created": 1790624000,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser implementado um projeto‑piloto de erradicação da tuberculose no estado do Amazonas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is long, mostly procedural, praising, proposing a pilot project in Amazonas to eradicate TB, suggesting that focusing on Amazonas as pilot will help achieve eradication by 2030. The speaker seems to support the idea of a pilot project in Amazonas to eradicate TB, and also supports the overall goal of eradicating TB by 2030. The question could be: \"Should the pilot project to eradicate tuberculosis be implemented in the state of Amazonas?\" Or \"Should the government adopt a pilot program in Amazonas to eradicate tuberculosis by 2030?\" The speaker is in favor. So stance_determinable = YES. target_question: \"Deve ser implementado um projeto-piloto de erradicação da tuberculose no estado do Amazonas?\" (Yes/No). The stance: FAVOR (SIM). So produce JSON.\n\nCheck if any ambiguity: The speaker proposes and advocates for the pilot in Amazonas, says it's strategic. So clear position: in favor. So output.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3344,
+    "total_tokens": 3616,
+    "completion_tokens": 272,
+    "estimated_cost": 0.000169968,
+    "prompt_tokens_details": null
+  }
+}

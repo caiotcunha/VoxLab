@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RR7aD7HJD7T3N9IAx0W5s4ed",
+  "object": "chat.completion",
+  "created": 1790622279,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O protocolo de tratamento de edema macular diabético no SUS deve ser atualizado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1994,
+    "total_tokens": 2042,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00021476,
+    "prompt_tokens_details": null
+  }
+}

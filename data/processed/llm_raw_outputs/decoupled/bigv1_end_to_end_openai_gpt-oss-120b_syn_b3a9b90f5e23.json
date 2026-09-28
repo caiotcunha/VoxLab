@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGyNfPj6Mi9LAy6FsWAxvVXv",
+  "object": "chat.completion",
+  "created": 1790624152,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same proposal of mandatory COVID‑19 vaccination for young children and express opposition to the mandate, showing the same stance.\"\n}",
+        "reasoning_content": "We need to determine relation between Manifestation A and B.\n\nBoth are about mandatory vaccination of children against COVID-19. Both express opposition to mandatory vaccination, while supporting voluntary vaccination. So they respond to same proposition: \"obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos\". Both are AGAINST mandatory vaccination. So stance same (against). Therefore STANCE_MAINTAINED.\n\nWe must ensure that both have determinable stance. Yes.\n\nThus output JSON with relation STANCE_MAINTAINED and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2884,
+    "total_tokens": 3056,
+    "completion_tokens": 172,
+    "estimated_cost": 0.000135948,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RB9rFtHJwYXk2pVeOzXcQq0M",
+  "object": "chat.completion",
+  "created": 1790624060,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker criticizes a bill (project) regulating app drivers, calling it unconstitutional, a disguised CLT, and wants total rejection. So stance determinable = YES. Target question: Should the proposed bill regulating app drivers be rejected? Or \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" That's a yes/no. The speaker says they want total rejection, so stance = AGAINST the bill (i.e., they are against the bill, favor rejection). The question is \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser aprovado?\" But we need neutral phrasing. Better: \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" The speaker says yes (they want rejection). So stance = FAVOR (since they favor rejection). But careful: The stance is about the bill: they are against the bill, i.e., they want it rejected. The question: \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" Their answer is yes (they want rejection). So stance = FAVOR.\n\nThus JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\",\n \"stance\": \"FAVOR\"\n}\n\nCheck format: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 784,
+    "total_tokens": 1139,
+    "completion_tokens": 355,
+    "estimated_cost": 8.935800000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

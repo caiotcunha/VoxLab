@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKbmB8Hy9hFqUKggWtJLevZU",
+  "object": "chat.completion",
+  "created": 1790622499,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O trabalho de motoristas de aplicativo deve ser regulamentado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "The user wants me to analyze a parliamentary speech and determine if it has a clear stance on a specific issue.\n\n1.  **Determinabilidade (stance_determinable)**: Does the text present a sufficiently clear position on a specific issue?\n    The speaker talks about the regulation of app drivers (the theme of the hearing). They say: \"A necessidade de se avançar com esse projeto é real.\" (The need to advance with this project is real). \"Nós precisamos... legislar para não deixar legislarem por nós.\" (We need to legislate so others don't legislate for us). \"Nós vamos nos sentar com o Governo e ouvi-lo.\" (We will sit down with the Government and listen to them). \"Vamos tentar construir um relatório harmonioso, para que avancemos com essa matéria e consigamos... oferecer ao Brasil uma legislação que seja justa...\" (We will try to build a harmonious report so we advance with this matter and manage to offer Brazil fair legislation).\n    The speaker clearly supports advancing with the legislation/regulation of app drivers. They want a law to be passed. So, the stance is determinable (YES).\n\n2.  **Pergunta-alvo (target_question)**: If YES, what is the specific central question the manifestation answers, as a neutral yes/no question?\n    The theme is \"Regulamentação do trabalho de motoristas de aplicativo\" (Regulation of app drivers' work).\n    The speaker supports advancing the project to regulate this.\n    Question: \"O trabalho de motoristas de aplicativo deve ser regulamentado?\" (Should the work of app drivers be regulated?) or \"O projeto de lei que regulamenta o trabalho de motoristas de aplicativo deve ser aprovado?\" (Should the bill regulating app drivers' work be approved?).\n    Let's go with: \"O trabalho de motoristas de aplicativo deve ser regulamentado por meio de aprovação do projeto de lei?\" or simply \"O trabalho de motoristas de aplicativo deve ser regulamentado?\"\n\n3.  **Resposta (stance)**: Is the speaker's answer YES (FAVOR) or NO (AGAINST)?\n    The speaker says \"A necessidade de se avançar com esse projeto é real\" and wants to \"oferecer ao Brasil uma legislação que seja justa\". This is clearly in favor of advancing the regulation.\n    Stance: FAVOR.\n\nLet's double check the rules.\n- \"Não use conhecimento externo sobre o ator. Julgue apenas pelo texto.\" - Checked.\n- \"Discurso reportado... não é a posição do próprio falante.\" - The speaker is stating their own position (\"A necessidade de se avançar... é real\", \"Nós precisamos... legislar\").\n- \"Pergunta genuína... geralmente é stance_determinable=NO.\" - Not a genuine question, it's a statement of intent and support.\n\nThe text clearly supports the advancement of the bill regulating app drivers.\n\nJSON format:\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O trabalho de motoristas de aplicativo deve ser regulamentado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1194,
+    "total_tokens": 1907,
+    "completion_tokens": 713,
+    "estimated_cost": 0.0017793450007200001,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 670
+    }
+  }
+}

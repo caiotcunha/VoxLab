@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJP7PGahfZ1cx69qT2l2Thar",
+  "object": "chat.completion",
+  "created": 1790622265,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O envelhecimento saudável e ativo deve ser priorizado na agenda do G20?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4083,
+    "total_tokens": 4136,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00042526000000000006,
+    "prompt_tokens_details": null
+  }
+}

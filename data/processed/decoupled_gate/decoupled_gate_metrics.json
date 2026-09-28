@@ -1,0 +1,3483 @@
+{
+  "experiment_version": "decoupled_gate_v1",
+  "timestamp": "2026-09-28T22:13:03.315630+00:00",
+  "models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+    "zai-org/GLM-5.2",
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+    "openai/gpt-oss-120b"
+  ],
+  "stopped_early": "",
+  "new_calls": 0,
+  "new_cost_usd": 0.0,
+  "prompt_sha256": {
+    "prompts/decoupled_extract_v1.txt": "c9e9f97bedcd8dc5903b242eb427d2611dbbb93035cbfb4d462cd234a9f3919a",
+    "prompts/decoupled_compare_v1.txt": "da2fc97f506593825e42c6102ae972d8207a64daf6b8535c96c5133a82259dd1",
+    "prompts/baseline_a_end_to_end_v1.txt": "d768b61c8178aa95ce75a1c4a8095e240fac212ca6b94e6e7adf8bcdafd179e2",
+    "prompts/structured_extraction_v1.txt": "584a80d9c92cc34037fc9cce392181fa060a34c550f54bbfc0e1fcebb3e20765"
+  },
+  "git_commit": "4628046359c620e3450bf0f7093abf4590523682",
+  "malformed": {
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "decoupled": 0,
+      "v1": 0
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "decoupled": 7,
+      "v1": 0
+    },
+    "zai-org/GLM-5.2": {
+      "decoupled": 3,
+      "v1": 15
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+      "decoupled": 0,
+      "v1": 0
+    },
+    "openai/gpt-oss-120b": {
+      "decoupled": 0,
+      "v1": 0
+    }
+  },
+  "natural": {
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "dev": {
+        "n": 18,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.7778,
+            "macro_f1": 0.5381,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.7778,
+            "macro_f1": 0.5841,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.7222,
+            "macro_f1": 0.5399,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 16,
+          "accuracy": 0.9375,
+          "f1_positive_class_YES": 0.8889,
+          "precision_YES": 1.0,
+          "recall_YES": 0.8,
+          "n_gold_uncertain_excluded": 2
+        },
+        "comparability_D": {
+          "n_binary": 16,
+          "accuracy": 0.8125,
+          "f1_positive_class_YES": 0.75,
+          "precision_YES": 1.0,
+          "recall_YES": 0.6,
+          "n_gold_uncertain_excluded": 2
+        }
+      },
+      "test": {
+        "n": 29,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.5862,
+            "macro_f1": 0.2969,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6207,
+            "macro_f1": 0.4055,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5517,
+            "macro_f1": 0.3454,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 27,
+          "accuracy": 0.7407,
+          "f1_positive_class_YES": 0.5333,
+          "precision_YES": 0.5,
+          "recall_YES": 0.5714,
+          "n_gold_uncertain_excluded": 1
+        },
+        "comparability_D": {
+          "n_binary": 27,
+          "accuracy": 0.5556,
+          "f1_positive_class_YES": 0.1818,
+          "precision_YES": 0.25,
+          "recall_YES": 0.1429,
+          "n_gold_uncertain_excluded": 1
+        }
+      },
+      "all": {
+        "n": 47,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.6596,
+            "macro_f1": 0.337,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6809,
+            "macro_f1": 0.4181,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.617,
+            "macro_f1": 0.3672,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 43,
+          "accuracy": 0.814,
+          "f1_positive_class_YES": 0.6667,
+          "precision_YES": 0.6667,
+          "recall_YES": 0.6667,
+          "n_gold_uncertain_excluded": 3
+        },
+        "comparability_D": {
+          "n_binary": 43,
+          "accuracy": 0.6512,
+          "f1_positive_class_YES": 0.4211,
+          "precision_YES": 0.5714,
+          "recall_YES": 0.3333,
+          "n_gold_uncertain_excluded": 3
+        }
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "dev": {
+        "n": 18,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.8333,
+            "macro_f1": 0.5808,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.7222,
+            "macro_f1": 0.5278,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.7222,
+            "macro_f1": 0.5167,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 16,
+          "accuracy": 0.875,
+          "f1_positive_class_YES": 0.75,
+          "precision_YES": 1.0,
+          "recall_YES": 0.6,
+          "n_gold_uncertain_excluded": 2
+        },
+        "comparability_D": {
+          "n_binary": 16,
+          "accuracy": 0.8125,
+          "f1_positive_class_YES": 0.75,
+          "precision_YES": 1.0,
+          "recall_YES": 0.6,
+          "n_gold_uncertain_excluded": 2
+        }
+      },
+      "test": {
+        "n": 29,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.6897,
+            "macro_f1": 0.3503,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6552,
+            "macro_f1": 0.4405,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5517,
+            "macro_f1": 0.1905,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 27,
+          "accuracy": 0.7037,
+          "f1_positive_class_YES": 0.3333,
+          "precision_YES": 0.4,
+          "recall_YES": 0.2857,
+          "n_gold_uncertain_excluded": 1
+        },
+        "comparability_D": {
+          "n_binary": 27,
+          "accuracy": 0.6296,
+          "f1_positive_class_YES": 0.1818,
+          "precision_YES": 0.25,
+          "recall_YES": 0.1429,
+          "n_gold_uncertain_excluded": 1
+        }
+      },
+      "all": {
+        "n": 47,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.7447,
+            "macro_f1": 0.3818,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6809,
+            "macro_f1": 0.422,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.617,
+            "macro_f1": 0.2773,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 43,
+          "accuracy": 0.7674,
+          "f1_positive_class_YES": 0.5,
+          "precision_YES": 0.625,
+          "recall_YES": 0.4167,
+          "n_gold_uncertain_excluded": 3
+        },
+        "comparability_D": {
+          "n_binary": 43,
+          "accuracy": 0.6977,
+          "f1_positive_class_YES": 0.4211,
+          "precision_YES": 0.5714,
+          "recall_YES": 0.3333,
+          "n_gold_uncertain_excluded": 3
+        }
+      }
+    },
+    "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+      "dev": {
+        "n": 18,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.7778,
+            "macro_f1": 0.5433,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6111,
+            "macro_f1": 0.4647,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5,
+            "macro_f1": 0.343,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 16,
+          "accuracy": 0.75,
+          "f1_positive_class_YES": 0.6667,
+          "precision_YES": 0.75,
+          "recall_YES": 0.6,
+          "n_gold_uncertain_excluded": 2
+        },
+        "comparability_D": {
+          "n_binary": 16,
+          "accuracy": 0.5625,
+          "f1_positive_class_YES": 0.3333,
+          "precision_YES": 1.0,
+          "recall_YES": 0.2,
+          "n_gold_uncertain_excluded": 2
+        }
+      },
+      "test": {
+        "n": 29,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.5517,
+            "macro_f1": 0.2464,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6207,
+            "macro_f1": 0.3576,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5862,
+            "macro_f1": 0.1889,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 27,
+          "accuracy": 0.6667,
+          "f1_positive_class_YES": 0.3333,
+          "precision_YES": 0.4,
+          "recall_YES": 0.2857,
+          "n_gold_uncertain_excluded": 1
+        },
+        "comparability_D": {
+          "n_binary": 27,
+          "accuracy": 0.6296,
+          "f1_positive_class_YES": 0.0,
+          "precision_YES": 0.0,
+          "recall_YES": 0.0,
+          "n_gold_uncertain_excluded": 1
+        }
+      },
+      "all": {
+        "n": 47,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.6383,
+            "macro_f1": 0.3059,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.617,
+            "macro_f1": 0.3609,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5532,
+            "macro_f1": 0.2195,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 43,
+          "accuracy": 0.6977,
+          "f1_positive_class_YES": 0.4762,
+          "precision_YES": 0.5556,
+          "recall_YES": 0.4167,
+          "n_gold_uncertain_excluded": 3
+        },
+        "comparability_D": {
+          "n_binary": 43,
+          "accuracy": 0.6047,
+          "f1_positive_class_YES": 0.1429,
+          "precision_YES": 0.5,
+          "recall_YES": 0.0833,
+          "n_gold_uncertain_excluded": 3
+        }
+      }
+    },
+    "openai/gpt-oss-120b": {
+      "dev": {
+        "n": 18,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.7778,
+            "macro_f1": 0.5758,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6111,
+            "macro_f1": 0.4889,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.4444,
+            "macro_f1": 0.3571,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 16,
+          "accuracy": 0.8125,
+          "f1_positive_class_YES": 0.8,
+          "precision_YES": 0.8,
+          "recall_YES": 0.8,
+          "n_gold_uncertain_excluded": 2
+        },
+        "comparability_D": {
+          "n_binary": 16,
+          "accuracy": 0.5,
+          "f1_positive_class_YES": 0.5,
+          "precision_YES": 0.6667,
+          "recall_YES": 0.4,
+          "n_gold_uncertain_excluded": 2
+        }
+      },
+      "test": {
+        "n": 29,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.5517,
+            "macro_f1": 0.2743,
+            "false_reversal_count": 1
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.4483,
+            "macro_f1": 0.1936,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.6552,
+            "macro_f1": 0.3532,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 27,
+          "accuracy": 0.5185,
+          "f1_positive_class_YES": 0.1538,
+          "precision_YES": 0.1667,
+          "recall_YES": 0.1429,
+          "n_gold_uncertain_excluded": 1
+        },
+        "comparability_D": {
+          "n_binary": 27,
+          "accuracy": 0.6667,
+          "f1_positive_class_YES": 0.2222,
+          "precision_YES": 0.5,
+          "recall_YES": 0.1429,
+          "n_gold_uncertain_excluded": 1
+        }
+      },
+      "all": {
+        "n": 47,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.6383,
+            "macro_f1": 0.3378,
+            "false_reversal_count": 1
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.5106,
+            "macro_f1": 0.2652,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5745,
+            "macro_f1": 0.3179,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 43,
+          "accuracy": 0.6279,
+          "f1_positive_class_YES": 0.4348,
+          "precision_YES": 0.4545,
+          "recall_YES": 0.4167,
+          "n_gold_uncertain_excluded": 3
+        },
+        "comparability_D": {
+          "n_binary": 43,
+          "accuracy": 0.6047,
+          "f1_positive_class_YES": 0.3529,
+          "precision_YES": 0.6,
+          "recall_YES": 0.25,
+          "n_gold_uncertain_excluded": 3
+        }
+      }
+    },
+    "zai-org/GLM-5.2": {
+      "dev": {
+        "n": 18,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.6667,
+            "macro_f1": 0.6214,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.8889,
+            "macro_f1": 0.8283,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.3889,
+            "macro_f1": 0.2121,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 16,
+          "accuracy": 0.9375,
+          "f1_positive_class_YES": 0.9091,
+          "precision_YES": 0.8333,
+          "recall_YES": 1.0,
+          "n_gold_uncertain_excluded": 2
+        },
+        "comparability_D": {
+          "n_binary": 16,
+          "accuracy": 0.4375,
+          "f1_positive_class_YES": 0.0,
+          "precision_YES": "undefined",
+          "recall_YES": 0.0,
+          "n_gold_uncertain_excluded": 2
+        }
+      },
+      "test": {
+        "n": 29,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.5172,
+            "macro_f1": 0.35,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.5517,
+            "macro_f1": 0.2743,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5862,
+            "macro_f1": 0.2905,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 27,
+          "accuracy": 0.7037,
+          "f1_positive_class_YES": 0.4286,
+          "precision_YES": 0.4286,
+          "recall_YES": 0.4286,
+          "n_gold_uncertain_excluded": 1
+        },
+        "comparability_D": {
+          "n_binary": 27,
+          "accuracy": 0.5926,
+          "f1_positive_class_YES": 0.0,
+          "precision_YES": 0.0,
+          "recall_YES": 0.0,
+          "n_gold_uncertain_excluded": 1
+        }
+      },
+      "all": {
+        "n": 47,
+        "relation": {
+          "A_end_to_end": {
+            "accuracy": 0.5745,
+            "macro_f1": 0.4347,
+            "false_reversal_count": 0
+          },
+          "C_structured_with_gate": {
+            "accuracy": 0.6809,
+            "macro_f1": 0.4714,
+            "false_reversal_count": 0
+          },
+          "D_decoupled_gate": {
+            "accuracy": 0.5106,
+            "macro_f1": 0.2251,
+            "false_reversal_count": 0
+          }
+        },
+        "comparability_C": {
+          "n_binary": 43,
+          "accuracy": 0.7907,
+          "f1_positive_class_YES": 0.64,
+          "precision_YES": 0.6154,
+          "recall_YES": 0.6667,
+          "n_gold_uncertain_excluded": 3
+        },
+        "comparability_D": {
+          "n_binary": 43,
+          "accuracy": 0.5349,
+          "f1_positive_class_YES": 0.0,
+          "precision_YES": 0.0,
+          "recall_YES": 0.0,
+          "n_gold_uncertain_excluded": 3
+        }
+      }
+    }
+  },
+  "synthetic_headline": {
+    "dev": {
+      "Qwen/Qwen2.5-72B-Instruct": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 6,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0968,
+              0.7
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        }
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 6,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0968,
+              0.7
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 6,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0968,
+              0.7
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        }
+      },
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        }
+      },
+      "openai/gpt-oss-120b": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "wilson_95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 4,
+            "n": 6,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.3,
+              0.9032
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        }
+      },
+      "zai-org/GLM-5.2": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 3,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.0615,
+              0.7923
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 3,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.2077,
+              0.9385
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 3,
+            "rate": 1.0,
+            "wilson_95": [
+              0.4385,
+              1.0
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 3,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.5615
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        }
+      }
+    },
+    "test": {
+      "Qwen/Qwen2.5-72B-Instruct": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 11,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2588
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 11,
+            "rate": 0.2727,
+            "wilson_95": [
+              0.0975,
+              0.5657
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        }
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 11,
+            "rate": 0.2727,
+            "wilson_95": [
+              0.0975,
+              0.5657
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 11,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2588
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 4,
+            "n": 11,
+            "rate": 0.3636,
+            "wilson_95": [
+              0.1517,
+              0.6462
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        }
+      },
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 4,
+            "n": 11,
+            "rate": 0.3636,
+            "wilson_95": [
+              0.1517,
+              0.6462
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 11,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2588
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 6,
+            "n": 11,
+            "rate": 0.5455,
+            "wilson_95": [
+              0.2801,
+              0.7873
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        }
+      },
+      "openai/gpt-oss-120b": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 11,
+            "rate": 0.2727,
+            "wilson_95": [
+              0.0975,
+              0.5657
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 4,
+            "rate": 0.75,
+            "wilson_95": [
+              0.3006,
+              0.9544
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 6,
+            "n": 11,
+            "rate": 0.5455,
+            "wilson_95": [
+              0.2801,
+              0.7873
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        }
+      },
+      "zai-org/GLM-5.2": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 4,
+            "n": 11,
+            "rate": 0.3636,
+            "wilson_95": [
+              0.1517,
+              0.6462
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 11,
+            "rate": 0.1818,
+            "wilson_95": [
+              0.0514,
+              0.477
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 11,
+            "rate": 0.0909,
+            "wilson_95": [
+              0.0162,
+              0.3774
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 4,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0456,
+              0.6994
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 4,
+            "rate": 0.5,
+            "wilson_95": [
+              0.15,
+              0.85
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 6,
+            "n": 11,
+            "rate": 0.5455,
+            "wilson_95": [
+              0.2801,
+              0.7873
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 4,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.4899
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 4,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5101,
+              1.0
+            ]
+          }
+        }
+      }
+    },
+    "all": {
+      "Qwen/Qwen2.5-72B-Instruct": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 7,
+            "rate": 0.5714,
+            "wilson_95": [
+              0.2505,
+              0.8418
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 17,
+            "rate": 0.1176,
+            "wilson_95": [
+              0.0329,
+              0.3434
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 17,
+            "rate": 0.1765,
+            "wilson_95": [
+              0.0619,
+              0.4103
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 7,
+            "n": 8,
+            "rate": 0.875,
+            "wilson_95": [
+              0.5291,
+              0.9776
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 8,
+            "rate": 0.5,
+            "wilson_95": [
+              0.2152,
+              0.7848
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 17,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.1843
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 8,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0715,
+              0.5907
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 5,
+            "n": 17,
+            "rate": 0.2941,
+            "wilson_95": [
+              0.1328,
+              0.5313
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 7,
+            "n": 8,
+            "rate": 0.875,
+            "wilson_95": [
+              0.5291,
+              0.9776
+            ]
+          }
+        }
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 7,
+            "rate": 0.5714,
+            "wilson_95": [
+              0.2505,
+              0.8418
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 5,
+            "n": 17,
+            "rate": 0.2941,
+            "wilson_95": [
+              0.1328,
+              0.5313
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 17,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.1843
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 8,
+            "rate": 0.25,
+            "wilson_95": [
+              0.0715,
+              0.5907
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 17,
+            "rate": 0.1176,
+            "wilson_95": [
+              0.0329,
+              0.3434
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 8,
+            "rate": 0.125,
+            "wilson_95": [
+              0.0224,
+              0.4709
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 6,
+            "n": 17,
+            "rate": 0.3529,
+            "wilson_95": [
+              0.1731,
+              0.587
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 6,
+            "n": 8,
+            "rate": 0.75,
+            "wilson_95": [
+              0.4093,
+              0.9285
+            ]
+          }
+        }
+      },
+      "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 17,
+            "rate": 0.1765,
+            "wilson_95": [
+              0.0619,
+              0.4103
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 8,
+            "rate": 0.5,
+            "wilson_95": [
+              0.2152,
+              0.7848
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 7,
+            "n": 17,
+            "rate": 0.4118,
+            "wilson_95": [
+              0.2161,
+              0.6399
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 7,
+            "n": 8,
+            "rate": 0.875,
+            "wilson_95": [
+              0.5291,
+              0.9776
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 8,
+            "rate": 0.375,
+            "wilson_95": [
+              0.1368,
+              0.6943
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 8,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3244
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 7,
+            "rate": 0.5714,
+            "wilson_95": [
+              0.2505,
+              0.8418
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 9,
+            "n": 17,
+            "rate": 0.5294,
+            "wilson_95": [
+              0.3096,
+              0.7384
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 7,
+            "n": 8,
+            "rate": 0.875,
+            "wilson_95": [
+              0.5291,
+              0.9776
+            ]
+          }
+        }
+      },
+      "openai/gpt-oss-120b": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 7,
+            "rate": 0.5714,
+            "wilson_95": [
+              0.2505,
+              0.8418
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 17,
+            "rate": 0.1765,
+            "wilson_95": [
+              0.0619,
+              0.4103
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 6,
+            "n": 8,
+            "rate": 0.75,
+            "wilson_95": [
+              0.4093,
+              0.9285
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 6,
+            "n": 7,
+            "rate": 0.8571,
+            "wilson_95": [
+              0.4869,
+              0.9743
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 6,
+            "n": 17,
+            "rate": 0.3529,
+            "wilson_95": [
+              0.1731,
+              0.587
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 8,
+            "rate": 0.125,
+            "wilson_95": [
+              0.0224,
+              0.4709
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 0,
+            "n": 8,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3244
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 5,
+            "n": 7,
+            "rate": 0.7143,
+            "wilson_95": [
+              0.3589,
+              0.9178
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 10,
+            "n": 17,
+            "rate": 0.5882,
+            "wilson_95": [
+              0.3601,
+              0.7839
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 7,
+            "rate": 0.1429,
+            "wilson_95": [
+              0.0257,
+              0.5131
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        }
+      },
+      "zai-org/GLM-5.2": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 17,
+            "rate": 0.1765,
+            "wilson_95": [
+              0.0619,
+              0.4103
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 8,
+            "rate": 0.375,
+            "wilson_95": [
+              0.1368,
+              0.6943
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 7,
+            "rate": 0.5714,
+            "wilson_95": [
+              0.2505,
+              0.8418
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 7,
+            "n": 17,
+            "rate": 0.4118,
+            "wilson_95": [
+              0.2161,
+              0.6399
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 8,
+            "n": 8,
+            "rate": 1.0,
+            "wilson_95": [
+              0.6756,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 2,
+            "n": 7,
+            "rate": 0.2857,
+            "wilson_95": [
+              0.0822,
+              0.6411
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 3,
+            "n": 17,
+            "rate": 0.1765,
+            "wilson_95": [
+              0.0619,
+              0.4103
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 3,
+            "n": 8,
+            "rate": 0.375,
+            "wilson_95": [
+              0.1368,
+              0.6943
+            ]
+          }
+        },
+        "D_decoupled_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 7,
+            "rate": 0.4286,
+            "wilson_95": [
+              0.1582,
+              0.7495
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 17,
+            "rate": 0.0588,
+            "wilson_95": [
+              0.0105,
+              0.2698
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 8,
+            "rate": 0.125,
+            "wilson_95": [
+              0.0224,
+              0.4709
+            ]
+          }
+        },
+        "D_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 5,
+            "n": 7,
+            "rate": 0.7143,
+            "wilson_95": [
+              0.3589,
+              0.9178
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 9,
+            "n": 17,
+            "rate": 0.5294,
+            "wilson_95": [
+              0.3096,
+              0.7384
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 7,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3543
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 7,
+            "n": 8,
+            "rate": 0.875,
+            "wilson_95": [
+              0.5291,
+              0.9776
+            ]
+          }
+        }
+      }
+    }
+  }
+}

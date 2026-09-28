@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8bLErjc8xBH2gDInz1aVwWp",
+  "object": "chat.completion",
+  "created": 1790624150,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta foca especificamente em crianças de 6 meses a 5 anos, enquanto a segunda trata da obrigatoriedade de forma geral, sem especificar faixa etária\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A vacinação contra Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\" (Should Covid-19 vaccination be mandatory for children 6 months to 5 years?)\n\nQuestion2: \"A vacinação contra a Covid-19 deve ser obrigatória?\" (Should Covid-19 vaccination be mandatory?) This is a general question, not specifying age group.\n\nAre they equivalent? The first is a specific subset (children 6 months to 5 years). The second is general, could be interpreted as overall population. The answer to the general does not necessarily determine answer to specific. If you say yes to general, you might think yes for all, but could be ambiguous. The question asks about mandatory vaccination overall; could be interpreted as for everyone, but not necessarily includes children. So they are different scopes. So relation = DIFFERENT.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 658,
+    "completion_tokens": 257,
+    "estimated_cost": 5.8527e-05,
+    "prompt_tokens_details": null
+  }
+}

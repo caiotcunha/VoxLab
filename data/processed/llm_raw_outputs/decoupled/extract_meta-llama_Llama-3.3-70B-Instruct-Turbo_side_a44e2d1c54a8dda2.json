@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rb3BchrzdWD3LMMKjHfbFKg1",
+  "object": "chat.completion",
+  "created": 1790622352,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas para pessoas com Transtorno do Espectro Autista devem ser implementadas e fiscalizadas pelo Poder Legislativo?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2332,
+    "total_tokens": 2397,
+    "completion_tokens": 65,
+    "estimated_cost": 0.000254,
+    "prompt_tokens_details": null
+  }
+}

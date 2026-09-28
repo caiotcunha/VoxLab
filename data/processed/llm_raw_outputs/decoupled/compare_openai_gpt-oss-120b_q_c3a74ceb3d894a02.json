@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhudMLWdrsSyJ9sJPqUuDYBr",
+  "object": "chat.completion",
+  "created": 1790624217,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da adoção de blockchain, a outra da fortificação da ANPD para proteção de dados, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O Brasil deve permanecer na vanguarda da adoção da tecnologia blockchain?\" Means: Should Brazil remain at the forefront of adopting blockchain technology? It's about blockchain adoption.\n\nQuestion2: \"A ANPD deve ser fortalecida para melhorar a proteção dos dados pessoais dos brasileiros?\" Means: Should the ANPD (National Data Protection Authority) be strengthened to improve protection of personal data of Brazilians? It's about strengthening ANPD for data protection.\n\nThese are different topics: blockchain adoption vs data protection authority. Not same issue. So relation is DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 588,
+    "completion_tokens": 188,
+    "estimated_cost": 4.675999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

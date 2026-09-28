@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPGuljUQQ3v5oM28RBhKKtdM",
+  "object": "chat.completion",
+  "created": 1790622802,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deve ser criado um arcabouço legal de proteção e apoio a vítimas de desastres, incluindo medidas de recuperação pós-desastre\",\n  \"target_proposition_b\": \"Deve ser criado um arcabouço legal de proteção a vítimas de desastres, especialmente aos vulneráveis\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Avaliando as duas manifestações:\n\nManifestação A: O ator defende a criação de um sistema nacional de apoio a vítimas de desastres, um arcabouço tributário para recuperação de pequenos negócios, antecipação do 13º para aposentados em áreas de desastre, e clareza na definição da poligonal do desastre. A proposição central parece ser a criação de um arcabouço legal/sistema nacional de proteção e apoio a vítimas de desastres que inclua recuperação pós-desastre.\n\nManifestação B: O ator defende a criação de um arcabouço legal que dê proteção aos vulneráveis em enchentes e secas, destaca a importância do fundo de desastre e da participação do Ministério do Desenvolvimento Social.\n\nAmbas as manifestações defendem a criação de um arcabouço legal de proteção a vítimas de desastres, especialmente aos mais vulneráveis. A Manifestação A foca mais em aspectos tributários, antecipação do 13º, e definição de poligonal, enquanto a B foca na importância do MDS e do fundo. Mas a proposição central em ambas é bastante similar: criar um arcabouço legal de proteção a vítimas de desastres, especialmente vulneráveis.\n\nVou formular as proposições-alvo de forma neutra e comparável.\n\nProposição A: \"Deve ser criado um arcabouço legal/sistema nacional de proteção e apoio a vítimas de desastres, incluindo medidas de recuperação pós-desastre\"\n\nProposição B: \"Deve ser criado um arcabouço legal de proteção a vítimas de desastres, especialmente aos vulneráveis\"\n\nSão semanticamente equivalentes? Sim, ambas defendem a criação de um arcabouço legal de proteção a vítimas de desastres. A A é mais detalhada, mas a essência é a mesma. Vou julgar same_proposition = YES.\n\nStance em ambas: FAVOR.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2880,
+    "total_tokens": 3484,
+    "completion_tokens": 604,
+    "estimated_cost": 0.0024436800010799995,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 464
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvREmGQ79pJQdgjuDSq01bbl",
+  "object": "chat.completion",
+  "created": 1790632368,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A defende explicitamente a derrubada do Veto nº 28 ao PL 920/23, posicionando-se FAVOR à derrubada do veto. A Manifestação B discute genericamente a necessidade de investimentos em prevenção a desastres, recursos para o Fundo de Calamidade Pública e carreira de defesa civil, mas não se refere ao PL 920/23 ou ao Veto nº 28, não respondendo à mesma proposição específica.\"\n}\n```",
+        "reasoning_content": "A manifestação A discute o PL 920/23, que foi sancionado com veto (Veto nº 28). O ator defende a derrubada do veto, argumentando que o veto retira a mais importante fonte de recursos do projeto (5% dos acordos judiciais e extrajudiciais destinados a um fundo de calamidade pública). O ator é FAVOR à derrubada do veto.\n\nA manifestação B discute a necessidade de investimentos em prevenção a desastres, recursos para o Fundo de Calamidade Pública, carreira para defesa civil, e crítica ao uso de medidas provisórias. Não menciona especificamente o PL 920/23 ou o Veto nº 28.\n\nAmbas as manifestações tratam de temas relacionados a prevenção de desastres e financiamento, mas a Manifestação A foca especificamente na derrubada do Veto nº 28 ao PL 920/23, enquanto a Manifestação B trata de forma mais geral a necessidade de recursos para prevenção e o Fundo de Calamidade Pública.\n\nA Manifestação B não responde à mesma proposição específica (derrubada do Veto nº 28 ao PL 920/23). Ela discute temas adjacentes (necessidade de recursos para prevenção, carreira de defesa civil, crítica ao uso de MPs), mas não se posiciona sobre o veto específico.\n\nPortanto, a relação é INCOMPARABLE, pois ambas têm posição determinável, mas não respondem à mesma proposição específica.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3173,
+    "total_tokens": 3647,
+    "completion_tokens": 474,
+    "estimated_cost": 0.0013496925052800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 2816,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 342
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RI8H39blX1hJL05lWKWkUiiG",
+  "object": "chat.completion",
+  "created": 1790624073,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12, que regulamenta o trabalho dos motoristas de aplicativo, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is a driver advocating for regulation (PLP 12) that includes remuneration per km and time, transparency, contribution to INSS, etc. The central question could be: \"O PLP 12, que regulamenta o trabalho dos motoristas de aplicativo, deve ser aprovado?\" Or \"A regulamentação da categoria de motoristas de aplicativo, conforme o PLP 12, deve ser aprovada?\" The speaker is clearly in favor. So stance_determinable = YES, target_question = something like \"O Projeto de Lei Complementar nº 12, que regulamenta o trabalho dos motoristas de aplicativo, deve ser aprovado?\" stance = FAVOR.\n\nMake sure JSON format exactly.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2036,
+    "total_tokens": 2253,
+    "completion_tokens": 217,
+    "estimated_cost": 0.000112222,
+    "prompt_tokens_details": null
+  }
+}

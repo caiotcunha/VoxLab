@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVkkGzyWCzM3iqyWi9Wk4yTU",
+  "object": "chat.completion",
+  "created": 1790632501,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deve ser criada reserva de contingência específica para emergências climáticas e desastres socioambientais\",\n  \"target_proposition_b\": \"O Estado deve adotar políticas e orçamento para prevenir e responder a desastres socioambientais\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation for stance determinability, target proposition, stance, and then comparability.\n\nFirst, Manifestation A: The speaker talks about need for contingency reserves, better civil defense, more staff, better salaries, etc. He asks for diagnosis, says \"não dá para compactuar com uma situação dessas!\" He says \"É preciso estruturar as defesas civis...\". He also says \"conta com o nosso voto pela derrubada desse veto\". The proposition target? Could be \"Reserva de contingência para emergências climáticas deve ser criada\" or \"Defesa civil deve ser estruturada com carreira de Estado\". The speaker is advocating for that. So there is a clear stance: FAVOR for creating contingency reserve for emergencies and structuring civil defense. So stance determinable = YES. Target proposition: \"Reserva de contingência deve ser criada para emergências climáticas e desastres socioambientais\" (or \"Estruturação da defesa civil com carreira de Estado e recursos adequados\"). Need a short neutral phrase. Choose one proposition. The main specific proposition: \"Reserva de contingência para emergências climáticas deve ser separada da reserva fiscal\". That is specific. He also asks for diagnosis, but that's request for info, not stance. The stance is about need for contingency reserve and better civil defense. So target proposition: \"Deve ser criada reserva de contingência específica para emergências climáticas e desastres socioambientais\". Stance: FAVOR.\n\nNow Manifestation B: The speaker discusses climate change, need for state preparedness, infrastructure, budget, policies. He says \"É preciso que corramos atrás disso...\". He seems to favor actions to prevent disasters, allocate budget, etc. He does not state a specific proposition but overall stance is in favor of measures to address climate change and socio-environmental disasters. The proposition could be \"O Estado deve adotar políticas e orçamento para prevenir e responder a desastres socioambientais\". He is in favor. So stance determinable = YES. Target proposition: \"O Estado deve adotar políticas e orçamento para prevenir e responder a desastres socioambientais\". Stance: FAVOR.\n\nNow comparability: Are the two propositions the same or semantically equivalent? First is about creating a specific contingency reserve for emergencies (budgetary measure). Second is about broader state policies and budget for prevention and response. They are related but not the same proposition. They are different specific measures. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\" etc.\n\ntarget_proposition strings short neutral.\n\nLet's craft:\n\ntarget_proposition_a: \"Deve ser criada reserva de contingência específica para emergências climáticas e desastres socioambientais\"\n\ntarget_proposition_b: \"O Estado deve adotar políticas e orçamento para prevenir e responder a desastres socioambientais\"\n\nNow stance_a: FAVOR, stance_b: FAVOR.\n\nsame_proposition: NO.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2837,
+    "total_tokens": 3594,
+    "completion_tokens": 757,
+    "estimated_cost": 0.00023365900000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPmwa4QiRvfehvkYm6306b1e",
+  "object": "chat.completion",
+  "created": 1790622369,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da obrigatoriedade da vacinação contra Covid-19 em crianças, com a segunda pergunta sendo mais genérica, mas não alterando a essência da questão.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 469,
+    "completion_tokens": 64,
+    "estimated_cost": 6.098000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

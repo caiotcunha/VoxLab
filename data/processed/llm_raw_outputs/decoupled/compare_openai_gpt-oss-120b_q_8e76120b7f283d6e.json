@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8YfUph4RyajpB8WMSHT11MQ",
+  "object": "chat.completion",
+  "created": 1790624184,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da destinação de recursos da Casa da Mulher Brasileira, a outra sobre aprovação de um projeto de lei para programa de menopausa, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"Os recursos destinados à Casa da Mulher Brasileira devem ser repassados diretamente ao Ministério das Mulheres, em vez de passar pelo Ministério da Justiça?\" So asks: Should the resources for Casa da Mulher Brasileira be transferred directly to Ministry of Women instead of going through Ministry of Justice? It's about allocation of resources, institutional arrangement.\n\nQuestion2: \"O Projeto de Lei nº 5.602, que cria o Programa de Atenção à Mulheres na Menopausa e Climatério, deve ser aprovado?\" This asks whether a specific bill creating a program for women in menopause should be approved. Different subject: a program for menopause, not about resource transfer.\n\nThus they are different issues. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 428,
+    "total_tokens": 646,
+    "completion_tokens": 218,
+    "estimated_cost": 5.2896e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwhJNEFmsZVp2nE3T5FNhFha",
+  "object": "chat.completion",
+  "created": 1790624069,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ter recursos garantidos no orçamento, sem depender de medida provisória?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing need for investments in municipalities, need for a career for civil defense, need for budgetary allocation for disaster prevention, criticizing reliance on provisional measures, calling it unacceptable that there is no budgetary forecast, etc. So there is a clear stance: they are in favor of establishing permanent budgetary resources for disaster prevention and civil defense, and against using provisional measures only. So the target question could be: \"Deve haver previsão orçamentária permanente para o Fundo de Calamidade Pública e recursos de prevenção de desastres?\" Or \"O Fundo de Calamidade Pública deve ter recursos garantidos no orçamento, sem depender de medida provisória?\" That's a yes/no.\n\nThus stance_determinable = YES. target_question = \"O Fundo de Calamidade Pública deve ter recursos garantidos no orçamento, sem depender de medida provisória?\" The speaker says it's unacceptable not to have that, so they are in favor. So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1001,
+    "total_tokens": 1272,
+    "completion_tokens": 271,
+    "estimated_cost": 8.3107e-05,
+    "prompt_tokens_details": null
+  }
+}

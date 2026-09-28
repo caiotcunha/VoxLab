@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQyLhCzZOwwS6hxRui1rO4mK",
+  "object": "chat.completion",
+  "created": 1790624032,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas de fomento cultural devem incluir cotas para pessoas com deficiência?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is advocating for inclusion of people with disabilities in cultural funding policies, accessibility in cultural spaces, quotas, training, etc. So they have a stance: they are in favor of policies that ensure inclusion, accessibility, quotas for people with disabilities in cultural funding. The question: \"As políticas de fomento cultural devem incluir cotas para pessoas com deficiência?\" Or \"Devem ser garantidos instrumentos de acessibilidade em todos os espaços culturais?\" The central issue: inclusion of people with disabilities in cultural funding policies (cotas). So stance is FAVOR.\n\nThus stance_determinable = YES, target_question = \"As políticas de fomento cultural devem incluir cotas para pessoas com deficiência?\" (or similar). Provide in Portuguese. Stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1228,
+    "total_tokens": 1449,
+    "completion_tokens": 221,
+    "estimated_cost": 8.3006e-05,
+    "prompt_tokens_details": null
+  }
+}

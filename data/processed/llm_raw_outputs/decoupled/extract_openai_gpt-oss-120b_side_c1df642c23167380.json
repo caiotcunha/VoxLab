@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R83Y2tgM6GXwr4eoiOI2S9jk",
+  "object": "chat.completion",
+  "created": 1790624019,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um novo gasto específico no Orçamento da União para a prevenção da violência contra crianças e adolescentes?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speaker (the person whose literal speech is given) expresses a clear position on a specific issue. The speech is a moderator/host, thanking, presenting data, describing emendas, and stating that they want to optimize existing resources without creating new specific allocations that could \"engessar\" (rigidify) budget allocation. They also say \"não criar novas destinações específicas que podem engessar a alocação orçamentária.\" That suggests a stance: they are against creating new specific budget allocations for child protection, preferring to optimize existing resources. The central question could be: \"Deve ser criado um novo gasto específico no Orçamento para a prevenção da violência contra crianças e adolescentes?\" Or \"Deve ser criado um novo destino orçamentário específico para a proteção de crianças e adolescentes?\" The speaker says \"não se faz política pública criando mais gastos específicos sem antes garantir a eficiência e a otimização dos recursos já existentes\". So they are against creating new specific budget lines. So stance: AGAINST.\n\nWe need to produce JSON with stance_determinable YES, target_question a neutral yes/no question, and stance AGAINST.\n\nFormulate question: \"Deve ser criado um novo gasto específico no Orçamento da União para a prevenção da violência contra crianças e adolescentes?\" That captures the issue.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1890,
+    "total_tokens": 2221,
+    "completion_tokens": 331,
+    "estimated_cost": 0.0001262,
+    "prompt_tokens_details": null
+  }
+}

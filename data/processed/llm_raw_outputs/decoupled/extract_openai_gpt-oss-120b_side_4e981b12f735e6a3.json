@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtoMyXxfZhaa11m4DtA9hV5E",
+  "object": "chat.completion",
+  "created": 1790624053,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O PL da Lei do Bem deve ser colocado em votação?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is about urging that the PL (bill) of the Lei do Bem be put to vote quickly. The speaker makes an appeal for the PL to be voted on. So the position is that the PL should be voted on (i.e., support the bill). The specific question could be: \"O PL da Lei do Bem deve ser colocado em votação?\" Or \"A Lei do Bem deve ser mantida?\" But the speech is about voting the PL, not about maintaining the law. So the target question: \"O PL da Lei do Bem deve ser colocado em votação?\" The stance: they are in favor (they want it voted). So stance = FAVOR (i.e., answer SIM). So stance_determinable = YES.\n\nThus JSON:\n\n{\n \"stance_determinable\":\"YES\",\n \"target_question\":\"O PL da Lei do Bem deve ser colocado em votação?\",\n \"stance\":\"FAVOR\"\n}\n\nCheck if any nuance: The speaker says \"apelo ... para que esse PL entre em votação o mais rápido possível.\" That's a clear position. So answer is yes.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2587,
+    "total_tokens": 2873,
+    "completion_tokens": 286,
+    "estimated_cost": 0.000144339,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R71nSG3c24vKeS0ym2nppvWY",
+  "object": "chat.completion",
+  "created": 1790622247,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da responsabilidade do Estado em se preparar e responder a desastres socioambientais, com foco na prevenção e mitigação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 460,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00016784,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSWNL0PlT1x5C4UchkWICrOe",
+  "object": "chat.completion",
+  "created": 1790624138,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Ministério da Saúde deve assumir a responsabilidade pelo financiamento e disponibilização do tratamento de retinopatia diabética no SUS\",\n  \"target_proposition_b\": \"O SUS deve garantir atendimento adequado para doenças valvares cardíacas e o PL 3.811/2019 deve ser aprovado\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Let me analyze both manifestations carefully.\n\n**Manifestation A:**\n- Event: PUBLIC_HEARING\n- Date: 2022-08-17\n- Theme: Failures in SUS protocol for diabetic retinopathy treatment\n- The speaker criticizes the Ministry of Health for \"washing its hands\" and pushing the problem to municipal and state managers\n- The speaker argues that funding reaching states and municipalities doesn't cover this type of treatment\n- The speaker says they need to fight for this treatment to be made available to society\n- The speaker wants the Ministry of Health to resume discussing this issue\n- The speaker mentions judicialization as a consequence\n\nThe speaker is clearly taking a position: the Ministry of Health should take responsibility for diabetic retinopathy treatment and ensure funding/availability of this treatment through SUS.\n\nTarget proposition: \"O Ministério da Saúde deve garantir financiamento e disponibilização do tratamento de retinopatia diabética no SUS\"\n\nStance: FAVOR (the speaker favors this proposition)\n\nStance determinable: YES\n\n**Manifestation B:**\n- Event: PUBLIC_HEARING\n- Date: 2022-12-06\n- Theme: Benefits and challenges of QualiSUS Cardio program for elderly care in SUS\n- The speaker is chairing the hearing and closing it\n- The speaker emphasizes the importance of publicizing complex heart diseases related to aging\n- The speaker highlights the importance of approving PL 3.811/2019, which creates a National Awareness Week for Ischemic Heart Disease\n- The speaker supports adjustments to SUS regarding longevity, specifically mentioning cardiac valve diseases need adequate care through SUS (prevention, diagnosis, treatment)\n- The speaker expresses total and unrestricted support for heart-related themes\n\nTarget proposition: \"O SUS deve garantir atendimento adequado para doenças valvares cardíacas (prevenção, diagnóstico e tratamento) e o PL 3.811/2019 deve ser aprovado\"\n\nActually, let me think more carefully. The speaker supports:\n1. Approval of PL 3.811/2019 (National Awareness Week for Ischemic Heart Disease)\n2. SUS should provide adequate care for cardiac valve diseases (prevention, diagnosis, treatment)\n\nThe main proposition seems to be about SUS providing adequate care for cardiac diseases, particularly valve diseases, and approving the PL.\n\nStance: FAVOR\n\nStance determinable: YES\n\n**Comparability:**\n- Manifestation A is about diabetic retinopathy treatment in SUS - specifically about Ministry of Health responsibility and funding\n- Manifestation B is about cardiac diseases in SUS - specifically about awareness, PL 3.811/2019, and adequate care for cardiac valve diseases\n\nThese are different propositions. They both relate to SUS healthcare provision, but they address different diseases, different specific measures, and different aspects of SUS policy. The propositions are not semantically equivalent.\n\nSame proposition: NO",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1365,
+    "total_tokens": 2096,
+    "completion_tokens": 731,
+    "estimated_cost": 0.0018200925010800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 594
+    }
+  }
+}

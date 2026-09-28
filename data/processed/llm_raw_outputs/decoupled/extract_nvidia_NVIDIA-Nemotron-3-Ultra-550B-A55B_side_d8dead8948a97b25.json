@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkE1bynKNdYrutMoR9alZUzd",
+  "object": "chat.completion",
+  "created": 1790624064,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 (PLP 12) deve ser rejeitado em favor do PL 536/2024 para regulamentar o trabalho de motoristas de aplicativo?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a driver advocating against PLP 12 and for PL 536/24. The central question: Should the PLP 12 (the government's proposed regulation) be rejected in favor of PL 536/24? Or more specifically: Should the regulation of app drivers be based on kilometer and time remuneration (as in PL 536) rather than the hour-worked contribution model in PLP 12? The speech clearly opposes PLP 12 and supports PL 536. So stance determinable = YES.\n\nTarget question: \"O Projeto de Lei Complementar nº 12 (PLP 12) deve ser rejeitado em favor do PL 536/2024 para regulamentar o trabalho de motoristas de aplicativo?\" That's a yes/no question. Or \"A regulamentação do trabalho de motoristas de aplicativo deve adotar o modelo de remuneração por quilômetro rodado e tempo (como no PL 536/2024) em vez do modelo de hora trabalhada proposto no PLP 12?\" That is neutral.\n\nStance: The speaker is against PLP 12, for PL 536. So answer to question \"Should PLP 12 be rejected in favor of PL 536?\" => YES (FAVOR to rejection). But the stance mapping: FAVOR = responds SIM to the question. If question is \"Should PLP 12 be rejected in favor of PL 536?\" then speaker says YES => FAVOR. Good.\n\nWe'll output JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2335,
+    "total_tokens": 2782,
+    "completion_tokens": 447,
+    "estimated_cost": 0.0021509,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 368
+    }
+  }
+}

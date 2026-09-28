@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ry0UE00RvbysZq5IXaGPv3hv",
+  "object": "chat.completion",
+  "created": 1790624074,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is a driver, discussing regulation of ride-hailing drivers. He opposes the current PL Complementar nº12 as presented, because it doesn't consider kilometer/time remuneration, has variable platform retention, etc. He supports alternative proposal PL 536/24, which he says meets drivers' needs. So stance is against PL 12 in its current form, and in favor of his own proposal. The question: what specific issue? Likely \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\" Or \"A regulamentação proposta pelo PL 12 deve ser mantida?\" The speaker says no, should not be approved; instead propose PL 536. So target question: \"O Projeto de Lei Complementar nº 12, que trata da regulamentação dos motoristas de aplicativo, deve ser aprovado?\" Answer: AGAINST (NO). So stance_determinable = YES, target_question as above, stance = AGAINST.\n\nMake sure neutral phrasing: \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\" Yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2152,
+    "total_tokens": 2465,
+    "completion_tokens": 313,
+    "estimated_cost": 0.000132834,
+    "prompt_tokens_details": null
+  }
+}

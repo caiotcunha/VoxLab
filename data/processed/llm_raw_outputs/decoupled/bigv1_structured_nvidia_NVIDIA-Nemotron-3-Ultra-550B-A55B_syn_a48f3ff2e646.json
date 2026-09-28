@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMF8uAhuwWiKrhf95TmDjWbK",
+  "object": "chat.completion",
+  "created": 1790632498,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O governo federal deve aprovar projeto que institua aluguel social para vítimas de violência e amplie a rede de proteção (DEAMs, centros especializados, Casas da Mulher Brasileira) em todo o país.\",\n  \"target_proposition_b\": \"Os recursos destinados a patrulhas e à Casa da Mulher Brasileira devem permanecer sob a gestão do Ministério da Justiça.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two statements.\n\nFirst, determine stance_determinable for each: does the speaker express a clear position on a specific proposition? Need to identify target proposition.\n\nManifestation A: The speaker is a deputy, former secretary, etc. She talks about need for DEAMs in all cities, specialized centers, economic independence, social rent (Aluguel Social), MEI for women entrepreneurs, childcare in police stations and shelters, more Casa da Mulher Brasileira, law on feminicide, etc. She says \"Eu sou favorável, por exemplo, ao projeto. Até vi que o Governo Federal, Denise, vai aprová-lo. Vai também apresentar, como o que nós já temos em Goiás, que é o Aluguel Social.\" She expresses support for a project (likely a bill) that includes social rent for victims. Also supports expanding protection network. So there is a clear stance: she favors a specific proposition: \"The federal government should approve a bill that provides social rent (Aluguel Social) for women victims of violence and expand protective services (DEAMs, specialized centers, Casa da Mulher Brasileira) nationwide.\" That's a specific proposition. So stance_determinable_a = YES. target_proposition_a: something like \"The federal government should approve a bill providing social rent for women victims of violence and expand protective services nationwide.\" stance_a = FAVOR.\n\nManifestation B: She speaks about LDO 2024, says she was harsh, has hope in government, mentions she was mayor during previous term of this government (2009-2012). She says: \"Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não manter esse recurso sob a gerência do Ministério da Justiça? É isso o que eu defendo.\" So she proposes that resources for patrols and Casa da Mulher Brasileira stay under Ministry of Justice management. She says \"É isso o que eu defendo.\" That's a clear stance: she favors keeping those resources under Ministry of Justice. So stance_determinable_b = YES. target_proposition_b: \"Resources for patrols and Casa da Mulher Brasileira should remain under the management of the Ministry of Justice.\" stance_b = FAVOR.\n\nNow comparability: Are the two propositions semantically equivalent? No. First is about approving a bill for social rent and expanding protective services nationwide. Second is about keeping existing resources for patrols and Casa da Mulher Brasileira under Ministry of Justice. Different propositions. So same_proposition = NO.\n\nWe must output JSON with keys exactly.\n\nCheck rules: stance_determinable_a YES, target_proposition_a non-empty, stance_a FAVOR. stance_determinable_b YES, target_proposition_b non-empty, stance_b FAVOR. same_proposition NO.\n\nMake sure strings are short neutral sentences.\n\nLet's craft target propositions:\n\nA: \"O governo federal deve aprovar projeto que institua aluguel social para vítimas de violência e amplie a rede de proteção (DEAMs, centros especializados, Casas da Mulher Brasileira) em todo o país.\"\n\nB: \"Os recursos destinados a patrulhas e à Casa da Mulher Brasileira devem permanecer sob a gestão do Ministério da Justiça.\"\n\nOk.\n\nNow produce JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2729,
+    "total_tokens": 3575,
+    "completion_tokens": 846,
+    "estimated_cost": 0.0032257,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 698
+    }
+  }
+}

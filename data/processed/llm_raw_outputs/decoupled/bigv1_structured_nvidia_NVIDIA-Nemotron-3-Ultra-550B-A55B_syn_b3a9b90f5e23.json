@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RI47o9fJIYwvFlxKnYybF9Hf",
+  "object": "chat.completion",
+  "created": 1790624153,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"COVID-19 vaccination for children aged 6 months to 5 years should be mandatory\",\n  \"target_proposition_b\": \"COVID-19 vaccination for children aged 6 months to 5 years should be mandatory\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze two statements. Determine stance determinable, target proposition, stance, and comparability.\n\nFirst, identify the target proposition in each. Both are about mandatory COVID-19 vaccination for children (6 months to 5 years). The speaker opposes mandatory vaccination, argues against it, wants choice, questions safety, etc. So proposition: \"COVID-19 vaccination for children aged 6 months to 5 years should be mandatory.\" The speaker is AGAINST that proposition.\n\nCheck stance determinable: Both clearly express opposition to mandatory vaccination. So YES.\n\nTarget proposition phrasing: neutral short phrase. Eg \"COVID-19 vaccination for children aged 6 months to 5 years should be mandatory.\" Or \"Mandatory COVID-19 vaccination of children aged 6 months to 5 years.\" Use neutral.\n\nStance: AGAINST for both.\n\nComparability: Are they same proposition? Both address mandatory vaccination of children against COVID-19. Yes, same proposition. So YES.\n\nNow produce JSON with keys.\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"COVID-19 vaccination for children aged 6 months to 5 years should be mandatory\"\ntarget_proposition_b: same phrase.\nsame_proposition: YES\nstance_a: AGAINST\nstance_b: AGAINST\n\nMake sure JSON strict, no extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3389,
+    "total_tokens": 3797,
+    "completion_tokens": 408,
+    "estimated_cost": 0.0025921000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 297
+    }
+  }
+}

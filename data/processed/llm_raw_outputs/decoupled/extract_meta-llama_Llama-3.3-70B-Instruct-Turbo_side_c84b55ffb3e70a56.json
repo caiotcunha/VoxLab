@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkL2i7lVzIBFZx7BUqscDAOb",
+  "object": "chat.completion",
+  "created": 1790622310,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As pessoas autistas devem ser garantidas oportunidades e respeito às suas singularidades?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1108,
+    "total_tokens": 1156,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00012616000000000003,
+    "prompt_tokens_details": null
+  }
+}

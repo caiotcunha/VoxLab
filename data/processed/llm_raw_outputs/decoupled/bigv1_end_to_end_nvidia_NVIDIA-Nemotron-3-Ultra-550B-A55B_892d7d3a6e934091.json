@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLj5ZsR8uM46P0CrKDSZqzFP",
+  "object": "chat.completion",
+  "created": 1790632276,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a vacinação de crianças contra a Covid‑19 e criticam argumentos antivacina, indicando a mesma direção de stance (FAVOR) em relação à mesma proposição específica.\"\n}",
+        "reasoning_content": "We need to classify relationship between two statements. Both are about vaccination of children against Covid-19. Manifestation A: speaker criticizes anti-vaccine arguments, says concerned about worsening vaccination coverage, responsibility of House, health professionals, state. Stance: appears FAVOR vaccination (supports mandatory vaccination). Manifestation B: speaker strongly condemns anti-vaccine movement, calls it criminal, irresponsible, political, supports vaccination, criticizes opponents. Also FAVOR vaccination. Both respond to same specific proposition? The proposition: \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\" (mandatory vaccination). Manifestation A explicitly references that theme. Manifestation B theme: \"Debate sobre a vacinação de crianças contra Covid-19\" broader but likely same proposition. Both are in favor of vaccination. So same proposition, same stance => STANCE_MAINTAINED.\n\nCheck if any nuance: Both clearly have determinable stance (FAVOR). They address same specific proposition? Manifestation B doesn't explicitly mention mandatory vaccination but debate about vaccination of children; likely same. The classification expects same specific proposition. Since both events are about child Covid vaccination, likely same. So answer STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2758,
+    "total_tokens": 3103,
+    "completion_tokens": 345,
+    "estimated_cost": 0.0021379999999999997,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 278
+    }
+  }
+}

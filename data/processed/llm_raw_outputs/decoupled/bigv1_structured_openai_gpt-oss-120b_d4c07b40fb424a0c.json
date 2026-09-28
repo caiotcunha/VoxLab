@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZfXsWGr7u00L8PrVKwnfyGZ",
+  "object": "chat.completion",
+  "created": 1790624092,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vaccination against COVID-19 should be mandatory for children aged 6 months to 5 years\",\n  \"target_proposition_b\": \"Vaccination against COVID-19 should be mandatory for children\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: Long speech about mandatory vaccination for children 6 months to 5 years. She says: \"Eu não vou aceitar ... a imposição da vacina\" and \"eu vou me opor a isso\". So target proposition: \"Vaccination against COVID-19 should be mandatory for children 6 months to 5 years\". She opposes it. So stance AGAINST. Determinable? Yes.\n\nTarget proposition phrase short neutral: \"Vaccination against COVID-19 should be mandatory for children aged 6 months to 5 years\". Good.\n\nManifestation B: She says: \"O que nós somos contra é quanto a obrigatoriedade.\" So target proposition: \"COVID-19 vaccination should be mandatory for children\". She is against mandatory vaccination. So stance AGAINST. Determinable? Yes.\n\nTarget proposition phrase: same as above.\n\nNow comparability: Both treat same proposition (mandatory vaccination of children). Yes same proposition. So same_proposition = YES.\n\nNow produce JSON.\n\nCheck stance_determinable fields: both YES.\n\nStance values: AGAINST.\n\ntarget_proposition strings.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3117,
+    "total_tokens": 3474,
+    "completion_tokens": 357,
+    "estimated_cost": 0.000176019,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rs72W6gpYNqAEz4VVfJBShXH",
+  "object": "chat.completion",
+  "created": 1790624150,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se posicionam contra o projeto de lei do Governo para regulamentação dos motoristas de aplicativo, pedindo sua rejeição; a segunda identifica o projeto como PLP 12, e a primeira se refere ao mesmo projeto do Governo no mesmo tema.\"\n}",
+        "reasoning_content": "We need classify relation between two manifestations by same actor (blinded) in two parliamentary events. Need determine if both respond to same specific proposition with same stance or opposite, etc. Need only text. Need JSON strict.\n\nWe need parse. Both public hearings about regulating app drivers. Manifestation A: \"Há outro absurdo nesse projeto de lei que o Governo apresentou...\" \"nós queremos a rejeição total desse projeto. ... pedimos que ele seja rejeitado integralmente.\" It refers to \"esse projeto de lei que o Governo apresentou\" and \"regulamentação do GT\". Likely PLP 12/2023? Manifestation B explicitly mentions \"Projeto de Lei Complementar nº 12\" and \"PLP 12\" and asks \"rejeitem este projeto em vista de como ele se apresenta\" and supports \"PL 536/24\". Both are AGAINST the government's bill (PLP 12). Need classify STANCE_MAINTAINED if same proposition specific and same direction. Need ensure \"same proposition\" means same specific proposition. A doesn't explicitly name PLP 12 but says \"esse projeto de lei que o Governo apresentou\" in same theme. B names PLP 12. Are they same? Need not use external? We can infer from context? A says \"projeto de lei que o Governo apresentou\" and \"esse projeto é muito parecido com a CLT...\" B says \"Projeto de Lei Complementar nº 12 veio com vários pontos...\" and \"esse projeto da forma como ele foi apresentado\" and \"rejeição\". Since both events same theme and same actor, likely same proposition. But instructions: don't use external knowledge. We can use text. A doesn't name number, but \"esse projeto de lei que o Governo apresentou\" in context of regulation. B names PLP 12. Is that enough to identify same proposition? Need be careful: \"same proposition specific\" maybe proposition = PLP 12. A refers to \"esse projeto de lei que o Governo apresentou\" and \"regulamentação do GT\" maybe same as B's PLP 12. B also mentions GT. A mentions GT. B mentions GT. So likely same proposition. Both AGAINST. STANCE_MAINTAINED.\n\nNeed produce JSON with relation and reasoning. Need no extra text. Need maybe \"Ambas as manifestações se opõem ao projeto de lei do Governo (na segunda identificadocomo PLP 12/2024), pedindo sua rejeição integral. A primeira manifestação não cita o número, mas o contexto, o tema e as referências ao GT e ao projeto do Governo permitem inferir que se trata da mesma proposição. Ambas têm stance AGAINST.\" Let's craft concise.\n\nNeed ensure JSON strict, no comments. Use exactly keys. Reasoning one or two sentences. Final only JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2734,
+    "total_tokens": 3416,
+    "completion_tokens": 682,
+    "estimated_cost": 0.0026190750005999994,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 604
+    }
+  }
+}

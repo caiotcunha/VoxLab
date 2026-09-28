@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBLIZha2ra1VQR4Mdci9U966",
+  "object": "chat.completion",
+  "created": 1790632588,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da aprovação de um programa de aluguel social, a outra sobre a forma de repasse de recursos da Casa da Mulher Brasileira, questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" So asks whether the program should be approved.\n\nQuestion2: \"Os recursos destinados à Casa da Mulher Brasileira devem ser repassados diretamente ao Ministério das Mulheres, em vez de passar pelo Ministério da Justiça?\" This asks about allocation of resources: should they be transferred directly to Ministry of Women instead of through Ministry of Justice.\n\nThese are different issues: one is about approving a specific program (Social Rental for victims). The other is about the channel of funding for a different institution (Casa da Mulher Brasileira). Even though both relate to women and domestic violence, they are distinct policy decisions. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 628,
+    "completion_tokens": 215,
+    "estimated_cost": 5.183099999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

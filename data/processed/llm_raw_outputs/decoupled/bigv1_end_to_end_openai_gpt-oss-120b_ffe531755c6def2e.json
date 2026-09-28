@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnDcEuUNFOgEtl3T5mUcF7WO",
+  "object": "chat.completion",
+  "created": 1790632719,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same proposed regulation (PL 12) for ride‑hailing drivers and each call for its rejection, showing the same AGAINST stance.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nBoth are about regulation of ride-hailing drivers. Both express opposition to the current proposed law (PLP 12). Manifestation A: calls for total rejection of the project, says it's absurd, CLT disguised, wants rejection. So stance: AGAINST the project.\n\nManifestation B: also says drivers reject the project as presented, wants it rejected, proposes alternative PL 536. So also AGAINST the same project (the same PL 12). Both respond to same proposition: the proposed regulation (Projeto de Lei Complementar nº 12). Both stance AGAINST. So STANCE_MAINTAINED.\n\nWe must ensure that the proposition is same specific: both refer to \"projeto de lei\" regulating drivers, PL 12. Yes.\n\nThus relation = STANCE_MAINTAINED. Provide brief reasoning.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2437,
+    "total_tokens": 2682,
+    "completion_tokens": 245,
+    "estimated_cost": 0.000131819,
+    "prompt_tokens_details": null
+  }
+}

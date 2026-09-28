@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rkn57JPEiDCJqQtKXDvYCUh8",
+  "object": "chat.completion",
+  "created": 1790623990,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is opening a public hearing about demographic change and need to restructure the state for aging population. The speaker is basically introducing participants, stating importance, noting challenges, but does not express a stance on a specific policy measure. No explicit position like \"the state should increase pension age\" or \"we should implement policy X\". It's more descriptive, calling for discussion, but not taking a stance. So stance_determinable = NO.\n\nThus target_question empty, stance empty.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1419,
+    "total_tokens": 1566,
+    "completion_tokens": 147,
+    "estimated_cost": 7.749300000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGq0v1vVsdqpQTwOcYNaMmag",
+  "object": "chat.completion",
+  "created": 1790622737,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Criação de legislação específica do sistema prisional para povos indígenas\",\n  \"target_proposition_b\": \"Aprovação e implementação da Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI)\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "Let me analyze both manifestations carefully.\n\n**Manifestation A:**\n- Event: Public hearing about racism and prejudice against indigenous people in the Brazilian prison system and a proposal for specific prison legislation for indigenous people\n- The speaker talks about criminalization of indigenous leaders (Cacique Babau)\n- Key proposition: The speaker proposes creating specific legislation for the prison/carcerary system for indigenous issues, through public consultation\n- Stance: FAVOR - the speaker explicitly offers their mandate to work on specific legislation for the prison system for indigenous people\n\n**Manifestation B:**\n- Event: Public hearing about approval of PL 4347/21 to make permanent the National Policy for Territorial and Environmental Management of Indigenous Lands (PNGATI)\n- The speaker discusses multiple topics: food sovereignty, budget allocation for PNGATI, indigenous environmental agents, education, health, school feeding programs, bioeconomy, and approval of the PNGATI report\n- Key proposition: The speaker favors the approval and implementation of PNGATI (National Policy for Territorial and Environmental Management of Indigenous Lands), with specific budget allocations and other measures\n- Stance: FAVOR - the speaker explicitly calls for immediate approval of the PNGATI report and supports the policy\n\nNow let me determine the target propositions:\n\n**Manifestation A target proposition:** \"Criação de legislação específica do sistema prisional para indígenas\"\n- The speaker clearly favors this, offering their mandate to work on it\n\n**Manifestation B target proposition:** \"Aprovação e implementação da Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI)\"\n- The speaker clearly favors this, calling for immediate approval\n\n**Comparability:** These are different propositions. Manifestation A is about specific prison legislation for indigenous people. Manifestation B is about the PNGATI policy (territorial and environmental management of indigenous lands). While both relate to indigenous rights, they are completely different policy proposals. So same_proposition = NO.\n\nLet me finalize:\n\n- stance_determinable_a: YES (clear support for specific prison legislation for indigenous people)\n- stance_determinable_b: YES (clear support for PNGATI approval and implementation)\n- target_proposition_a: \"Criação de legislação específica do sistema prisional para povos indígenas\"\n- target_proposition_b: \"Aprovação e implementação da Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas (PNGATI)\"\n- same_proposition: NO\n- stance_a: FAVOR\n- stance_b: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2517,
+    "total_tokens": 3179,
+    "completion_tokens": 662,
+    "estimated_cost": 0.0023438925010799997,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 538
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLxBpDy6ctriF8RfRz0T0by2",
+  "object": "chat.completion",
+  "created": 1790622880,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas e objetos completamente distintos: uma aborda o papel do Poder Judiciário em legislar e a outra versa sobre critérios para renovação de concessões de energia elétrica.\"\n}",
+        "reasoning_content": "The user wants to classify the relationship between two questions extracted from speeches of the same actor.\nQuestion 1: \"O Poder Judiciário deve legislar para suprir lacunas legislativas ou modificar leis existentes?\" (Should the Judiciary legislate to fill legislative gaps or modify existing laws?)\nQuestion 2: \"A renovação das concessões das distribuidoras de energia elétrica deve impor novos critérios além da regulação já existente?\" (Should the renewal of electricity distribution concessions impose new criteria beyond existing regulation?)\n\nThese questions are about completely different topics. Question 1 is about the role of the Judiciary in legislating. Question 2 is about criteria for renewing energy distribution concessions.\nTherefore, they are DIFFERENT.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 628,
+    "completion_tokens": 219,
+    "estimated_cost": 0.0005071425004800001,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 154
+    }
+  }
+}

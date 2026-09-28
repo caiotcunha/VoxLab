@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgjEg8RNpVH3gm0JRsP5oE60",
+  "object": "chat.completion",
+  "created": 1790622905,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a mesma proposição específica: a necessidade de alocar recursos financeiros no Fundo Nacional de Calamidades Públicas para prevenção de desastres, em vez de depender apenas de medidas provisórias após os eventos, demonstrando a mesma direção de stance (FAVOR).\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two manifestations from the same actor in different parliamentary events.\n\nManifestation A:\n- Event: Public Hearing on disaster prevention and aid.\n- The speaker talks about the need for financial resources for disaster prevention, mentions a law they authored to fund the National Fund for Public Calamities (Fundo Nacional para Calamidades Públicas), and mentions the Ministry of Cities and Ministry of Integration.\n- Stance: Pro-disaster prevention funding, pro-funding the Calamity Fund.\n\nManifestation B:\n- Event: Public Hearing with Deliberation on improvements in disaster prevention infrastructure.\n- The speaker talks about the need for investments in states and municipalities, specifically mentioning the need for resources in the Calamity Fund (Fundo de Calamidade Pública), criticizing the reliance on provisional measures (medidas provisórias) for crisis response, and highlighting the lack of budget for prevention.\n- Stance: Pro-disaster prevention funding, pro-funding the Calamity Fund, against relying solely on provisional measures.\n\nComparing the two:\nBoth manifestations advocate for the same specific proposition: allocating resources/funding to the National Fund for Public Calamities (Fundo de Calamidade Pública) for disaster prevention.\nIn Manifestation A: \"Eu fui autor de um projeto de lei... colocar fontes de recursos no Fundo Nacional para Calamidades Públicas... O fundo hoje tem três fontes de recursos.\"\nIn Manifestation B: \"Eu trabalhei fortemente pelo financiamento, para colocar recursos no Fundo de Calamidade Pública... É inaceitável que não haja um recurso que não seja por medida provisória.\"\n\nBoth are clearly in FAVOR of funding the Calamity Fund for disaster prevention.\nThey respond to the same specific proposition (funding the Fundo de Calamidade Pública / disaster prevention) with the same stance (FAVOR).\n\nTherefore, the relation is STANCE_MAINTAINED.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1974,
+    "total_tokens": 2470,
+    "completion_tokens": 496,
+    "estimated_cost": 0.00124189500312,
+    "prompt_tokens_details": {
+      "cached_tokens": 1664,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 404
+    }
+  }
+}

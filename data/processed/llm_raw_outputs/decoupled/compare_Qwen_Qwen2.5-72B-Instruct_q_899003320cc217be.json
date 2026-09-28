@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RStoVVLlc5y8XgM0xqpZanpL",
+  "object": "chat.completion",
+  "created": 1790622232,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos dentro do contexto indígena: uma se refere à legislação prisional, enquanto a outra se refere à política de gestão territorial e ambiental.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 466,
+    "completion_tokens": 59,
+    "estimated_cost": 0.00017012,
+    "prompt_tokens_details": null
+  }
+}

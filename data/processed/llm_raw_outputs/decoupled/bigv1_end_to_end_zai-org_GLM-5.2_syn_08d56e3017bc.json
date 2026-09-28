@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQoF5eoUVRmZT1WI2jIynEUD",
+  "object": "chat.completion",
+  "created": 1790622897,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"A Manifestação A defende e orgulha-se de ter criado fontes de recursos específicas para o Fundo Nacional de Calamidades Públicas com foco em prevenção, enquanto a Manifestação B argumenta que alocar recursos engessados nesse fundo para prevenção é ineficiente e um absurdo, demonstrando direções opostas sobre a mesma proposição.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two manifestations from the same actor in different parliamentary events.\n\nManifestation A:\n- Event: Public Hearing on disaster prevention actions.\n- The actor talks about the need for financial resources for disaster prevention.\n- Mentions a law project they authored to put resources into the National Fund for Public Calamities (Fundo Nacional para Calamidades Públicas).\n- Mentions altering the Betting Law to put 50% of unclaimed bets into the Calamity Fund.\n- Stance: Favors allocating specific resources/funding for disaster prevention, specifically through the Calamity Fund.\n\nManifestation B:\n- Event: Public Hearing with Deliberation on improvements in disaster prevention infrastructure.\n- The actor talks about the need for investments in States and Municipalities.\n- Then says: \"colocar recursos no Fundo de Calamidade Pública, que foi criado em 1969, não é a solução mais eficiente... É questionável um recurso específico e engessado para prevenção... Uma previsão orçamentária fixa pode criar burocracia e inflexibilidade... Ter uma verba colossal presa só para prevenção é um absurdo.\"\n- Stance: Against allocating specific/earmarked resources for prevention in the Calamity Fund, arguing it creates bureaucracy and inflexibility, and that prompt response is the real need.\n\nComparing the two:\n- Manifestation A: The actor explicitly supports and boasts about creating funding sources for the Calamity Fund to finance prevention.\n- Manifestation B: The actor explicitly argues against putting resources into the Calamity Fund for prevention, calling it inefficient, bureaucratic, and an \"absurdo\" to have a colossal budget tied up only for prevention.\n\nProposition: Allocating specific/earmarked resources to the Fundo de Calamidade Pública for disaster prevention.\n- Manifestation A: FAVOR (boasts about creating the funding sources).\n- Manifestation B: AGAINST (argues it's not efficient, creates bureaucracy).\n\nWait, let's look closer.\nManifestation A: \"Eu fui autor de um projeto de lei... que tem por objetivo colocar fontes de recursos no Fundo Nacional para Calamidades Públicas... nós conseguimos aprovar esse projeto, que colocou duas fontes de recursos... fazer uma alteração na Lei de Apostas, colocando 50% dos recursos... no Fundo de Calamidade Pública... pode haver recursos não só para a pronta resposta, mas também para avançar no trabalho de prevenção\"\nManifestation B: \"colocar recursos no Fundo de Calamidade Pública... não é a solução mais eficiente... É questionável um recurso específico e engessado para prevenção... Ter uma verba colossal presa só para prevenção é um absurdo.\"\n\nThe specific proposition is: Allocating specific/earmarked resources to the Fundo de Calamidade Pública (specifically for prevention).\nManifestation A is clearly in FAVOR of this (the actor authored the law to do exactly this).\nManifestation B is clearly AGAINST this (the actor says it's not efficient, it's an absurd, etc.).\n\nTherefore, the stance is reversed.\n\nLet's double check.\nIs it the same proposition?\nManifestation A talks about putting resources in the Fundo de Calamidade Pública for prevention.\nManifestation B talks about putting resources in the Fundo de Calamidade Pública for prevention.\nYes, it's the same specific proposition.\nDirection:\nA: FAVOR.\nB: AGAINST.\nRelation: STANCE_REVERSED.\n\nLet's review the definitions.\nSTANCE_REVERSED: as duas manifestações respondem à mesma proposição específica com direções opostas de stance (uma FAVOR, outra AGAINST).\n\nYes, this fits perfectly. The actor supported creating funding sources for the Calamity Fund in A, and in B argues against putting resources in the Calamity Fund for prevention.\n\nReasoning: Manifestation A supports allocating specific resources to the National Fund for Public Calamities for prevention, while Manifestation B argues against earmarking resources for prevention in the Calamity Fund, claiming it is inefficient and inflexible. Thus, the stance on the same proposition is reversed.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1992,
+    "total_tokens": 2974,
+    "completion_tokens": 982,
+    "estimated_cost": 0.0021853800028800003,
+    "prompt_tokens_details": {
+      "cached_tokens": 1536,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 879
+    }
+  }
+}

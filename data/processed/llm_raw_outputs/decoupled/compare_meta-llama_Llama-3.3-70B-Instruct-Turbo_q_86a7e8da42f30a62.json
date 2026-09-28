@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0kCH6Zijd9G2EyUc5r3wE3c",
+  "object": "chat.completion",
+  "created": 1790622397,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"UNCERTAIN\",\n  \"reasoning\": \"Não há informações suficientes para determinar se o projeto de lei 12 se refere ao mesmo projeto de regulamentação do trabalho de motoristas de aplicativo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 448,
+    "completion_tokens": 52,
+    "estimated_cost": 5.624e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ris7RUSBfRu1zTZ4afCUPQe4",
+  "object": "chat.completion",
+  "created": 1790632496,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O veto ao PL 920/2023 deve ser derrubado para destinar 5% dos acordos judiciais e extrajudiciais a um fundo de prevenção de desastres.\",\n  \"target_proposition_b\": \"O governo federal deve garantir orçamento adequado para carreiras permanentes de agentes de defesa civil em vez de depender de contratações temporárias.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two speeches. Determine for each: stance_determinable (YES/NO/UNCERTAIN), target_proposition (if YES), stance (FAVOR/AGAINST/UNCERTAIN), then comparability same_proposition.\n\nFirst, identify propositions.\n\nSpeech A: The speaker is advocating for overturning Veto 28 to PL 920/23, which would allocate 5% of judicial/extrajudicial agreements to a disaster fund for prevention. Also mentions need for career for civil defense agents, need for budget for prevention vs response, need for direct aid to families. The main clear stance: He wants the veto to be overturned (i.e., he favors the provision that allocates 5% to prevention fund). So target proposition could be \"The veto to PL 920/2023 should be overturned so that 5% of judicial and extrajudicial agreements are allocated to a disaster prevention fund.\" He is in favor of overturning veto (i.e., favors the proposition that the veto be rejected). So stance = FAVOR (to the proposition that veto should be overturned). Also he supports career for civil defense agents, but that's another proposition. But we need a single target proposition per manifestation? The instruction: \"Proposição-alvo: afirmação específica que a manifestação aceita ou rejeita.\" Could be multiple but we choose the main one. Probably the veto.\n\nStance determinable? Yes, clear.\n\nSpeech B: The speaker thanks Sosthenes, emphasizes need for career for civil defense agents, mentions budget discrepancy: 2 billion spent on temporary contracts vs 250 million for permanent careers, and only 25k in budget line. He says \"Espero que esse debate...\" incomplete. He is advocating for permanent career structure, more funding. So target proposition: \"The federal government should allocate sufficient budget for permanent civil defense careers rather than relying on temporary contracts.\" He favors that. So stance determinable YES, stance FAVOR.\n\nNow comparability: Are they same proposition? Speech A focuses on veto overturn for funding prevention via 5% of agreements; also mentions career for agents. Speech B focuses on career funding and budget for permanent careers. Overlap on career for civil defense agents, but not identical proposition. The main propositions differ. So same_proposition = NO.\n\nNow produce JSON.\n\nNeed to ensure fields: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nIf stance_determinable is YES, target_proposition non-empty, stance non-empty.\n\nLet's craft concise neutral target propositions.\n\nA: \"O veto ao PL 920/2023 deve ser derrubado para destinar 5% dos acordos judiciais e extrajudiciais a um fundo de prevenção de desastres.\" (Neutral)\n\nB: \"O governo federal deve garantir orçamento adequado para carreiras permanentes de agentes de defesa civil em vez de depender de contratações temporárias.\" (Neutral)\n\nStance_a: FAVOR (since he wants veto overturned). Stance_b: FAVOR (supports permanent careers funding).\n\nNow produce JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3288,
+    "total_tokens": 4123,
+    "completion_tokens": 835,
+    "estimated_cost": 0.003481,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 687
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwyfIUru18NLt2XHHJiuKujA",
+  "object": "chat.completion",
+  "created": 1790622158,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As pessoas autistas devem ser vistas como detentoras de direitos e plenas de cidadania?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1103,
+    "total_tokens": 1157,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00041868000000000005,
+    "prompt_tokens_details": null
+  }
+}

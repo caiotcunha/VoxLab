@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReZ4XKejT069NeIOYs2V67UV",
+  "object": "chat.completion",
+  "created": 1790622156,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A economia do cuidado deve ser incluída no cálculo do PIB e transformada em política pública?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3128,
+    "total_tokens": 3184,
+    "completion_tokens": 56,
+    "estimated_cost": 0.0011484800000000001,
+    "prompt_tokens_details": null
+  }
+}

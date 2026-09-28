@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5PDHqkbMLkZkyiROxQp3yAK",
+  "object": "chat.completion",
+  "created": 1790624008,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O programa Viver sem Limite deve ser mantido e ampliado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker is praising the minister, talking about reconstruction of participation spaces, the Viver sem Limite program, etc. Does the speaker express a stance on a specific policy? Possibly the question could be: \"O programa Viver sem Limite deve ser mantido/implementado?\" The speaker is clearly in favor, praising it. So stance determinable = YES. Target question: \"O programa Viver sem Limite deve ser mantido e ampliado?\" Or \"O programa Viver sem Limite deve ser implementado?\" The speech endorses it. So stance = FAVOR.\n\nWe need a neutral yes/no question. Something like: \"O programa Viver sem Limite deve ser mantido?\" That captures the stance. The speech also mentions reconstruction of participation spaces. Could also be \"A reconstrução dos espaços de participação social deve ser continuada?\" But the main explicit endorsement is Viver sem Limite. So choose that.\n\nThus JSON:\n\n{\n \"stance_determinable\": \"YES\",\n \"target_question\": \"O programa Viver sem Limite deve ser mantido e ampliado?\",\n \"stance\": \"FAVOR\"\n}\n\nCheck format: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1053,
+    "total_tokens": 1363,
+    "completion_tokens": 310,
+    "estimated_cost": 9.1661e-05,
+    "prompt_tokens_details": null
+  }
+}

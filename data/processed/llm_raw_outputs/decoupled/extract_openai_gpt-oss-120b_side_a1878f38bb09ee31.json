@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3JZtXW6uliqgCrt4WcLWRLE",
+  "object": "chat.completion",
+  "created": 1790624033,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estatuto dos Povos Ciganos deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker is Luizianne Lins, President of the Commission, opening a hearing about the Estatuto dos Povos Ciganos. She expresses support for the statute, says \"contam conosco\", \"estamos juntos\", \"aprovamos um requerimento ... que propõe a discussão do projeto de lei ... que cria o Estatuto dos Povos Ciganos, com o objetivo de ajudar a retirar a população cigana da condição de invisibilidade social.\" She says \"o momento é agora\", \"estamos juntos\". She is clearly in favor of the statute. So stance_determinable = YES.\n\nTarget question: Should the Estatuto dos Povos Ciganos be approved / enacted? Or \"O Estatuto dos Povos Ciganos deve ser aprovado?\" The question should be neutral yes/no. So: \"O Estatuto dos Povos Ciganos deve ser aprovado?\" That captures the central issue.\n\nStance: She is in favor, so answer is SIM => FAVOR.\n\nThus JSON:\n\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estatuto dos Povos Ciganos deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n\nCheck if any nuance: She is advocating discussion and approval. So yes.\n\nReturn only JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2206,
+    "total_tokens": 2533,
+    "completion_tokens": 327,
+    "estimated_cost": 0.000137212,
+    "prompt_tokens_details": null
+  }
+}

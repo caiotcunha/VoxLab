@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrcvhoKGEIWsB4wID7VN1GzN",
+  "object": "chat.completion",
+  "created": 1790622579,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O PL da Lei do Bem deve ser colocado em votação?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is making a clear appeal for the PL da Lei do Bem to be put to a vote as quickly as possible. They explicitly state this multiple times: \"eu aproveito para fazer um apelo, em nome da CNI, para que o PL da Lei do Bem seja colocado em votação\" and \"Reitero aqui, Deputado, o nosso pedido, o nosso apelo, para que a Lei do Bem entre em votação o mais rápido possível.\"\n\nThey also defend the Lei do Bem as the principal instrument for companies to innovate, saying it's widely used in OECD countries and needs to be brought to Brazil. They argue that without this instrument, the Lei do Bem will remain restricted to few companies.\n\nSo the stance is clearly in favor of putting the Lei do Bem PL to a vote (and by extension, in favor of the Lei do Bem itself as an instrument to promote innovation).\n\nThe target question could be: \"O PL da Lei do Bem deve ser colocado em votação?\" or \"A Lei do Bem deve ser mantida/ampliada como instrumento fiscal de incentivo à inovação?\"\n\nThe central question seems to be about putting the PL to vote. Let me formulate it neutrally.\n\n\"O PL da Lei do Bem deve ser colocado em votação?\"\n\nThe answer is clearly YES (FAVOR).",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2924,
+    "total_tokens": 3257,
+    "completion_tokens": 333,
+    "estimated_cost": 0.00206847000072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 285
+    }
+  }
+}

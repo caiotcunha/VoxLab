@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqNqFzhDVLHGRPl0TuprffnG",
+  "object": "chat.completion",
+  "created": 1790624009,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um sistema nacional de apoio às vítimas de desastres, incluindo auxílio emergencial e recuperação de pequenos negócios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker is proposing creation of a national support system for disaster victims, a tax framework to help small businesses, anticipatory payment of 13th salary, etc. They are advocating for these measures. So stance determinable = YES. Need target question: a neutral yes/no question that captures the central issue. Could be: \"Deve ser criado um arcabouço nacional de apoio às vítimas de desastres e de recuperação pós-desastre?\" Or \"Deve ser implementado um auxílio emergencial, incluindo antecipação do 13º salário, para vítimas de desastres?\" Choose one central. The speech emphasizes need for a national framework for post-disaster support. So question: \"Deve ser criado um sistema nacional de apoio às vítimas de desastres, incluindo auxílio emergencial e recuperação de pequenos negócios?\" That's a yes/no.\n\nStance: The speaker is in favor, so FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1467,
+    "total_tokens": 1732,
+    "completion_tokens": 265,
+    "estimated_cost": 9.932900000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

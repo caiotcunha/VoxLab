@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rj0b5JT2F5ShOBdlYZdOVZwY",
+  "object": "chat.completion",
+  "created": 1790632786,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de regulamentações distintas (lobby versus motoristas de aplicativo) e não se opõem nem equivalem.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"A regulamentação do lobby junto ao poder público deve ser avançada?\" Means: Should the regulation of lobbying with public power be advanced? Essentially: Should we advance regulation of lobbying? It's a yes/no about advancing regulation.\n\nQuestion2: \"A regulamentação dos motoristas de aplicativo deve ser aprovada de forma precipitada?\" Means: Should the regulation of ride-hailing drivers be approved in a hasty/precipitous way? It's about whether regulation should be approved precipitously.\n\nThese are different topics: one about lobbying regulation, the other about ride-hailing driver regulation. Also the polarity is not opposite; they are separate issues. So relation is DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 615,
+    "completion_tokens": 216,
+    "estimated_cost": 5.1482999999999995e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVKZ7MOG2ScHfzljsF6tyy3k",
+  "object": "chat.completion",
+  "created": 1790624021,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra a Covid-19 deve ser obrigatória?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker (minister) expresses opposition to mandatory vaccination for COVID-19, especially for elderly? Actually they say \"O que nós somos contra é quanto a obrigatoriedade.\" So they are against mandatory vaccination. Also they question the consent process, etc. So stance is against mandatory COVID-19 vaccination. The specific question: \"A vacinação contra a Covid-19 deve ser obrigatória?\" That's the central issue. So stance_determinable = YES. target_question = \"A vacinação contra a Covid-19 deve ser obrigatória?\" The speaker says they are against mandatory vaccination => stance = AGAINST (i.e., answer to question is NO). So stance = AGAINST.\n\nCheck if any nuance: They also say \"se a pessoa quiser levar o idoso para se vacinar, que o leve.\" So they support voluntary vaccination. So indeed they are against mandatory.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1528,
+    "total_tokens": 1771,
+    "completion_tokens": 243,
+    "estimated_cost": 9.784600000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

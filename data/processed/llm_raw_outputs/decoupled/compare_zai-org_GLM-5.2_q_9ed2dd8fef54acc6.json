@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RprQTNN7AakjEycKilNGuIDg",
+  "object": "chat.completion",
+  "created": 1790622726,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos: a primeira trata da criação de legislação para o sistema prisional indígena, enquanto a segunda versa sobre a aprovação de um projeto de lei relativo à gestão territorial e ambiental de terras indígenas.\"\n}",
+        "reasoning_content": "The user wants to classify the relationship between two questions extracted from speeches of the same actor.\nQuestion 1: \"Deve ser criada uma legislação específica do sistema prisional para indígenas?\" (Should specific legislation for the prison system for indigenous people be created?)\nQuestion 2: \"O Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas deve ser aprovado?\" (Should Bill 4347/21 to make the National Policy for Territorial and Environmental Management of Indigenous Lands permanent be approved?)\n\nThese are clearly different questions. One is about creating specific prison system legislation for indigenous people. The other is about approving a bill to make a policy for territorial and environmental management of indigenous lands permanent. They both relate to indigenous people, but the measures, objects, and scopes are completely different.\n\nRelation: DIFFERENT.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 677,
+    "completion_tokens": 264,
+    "estimated_cost": 0.0005903925004799999,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 190
+    }
+  }
+}

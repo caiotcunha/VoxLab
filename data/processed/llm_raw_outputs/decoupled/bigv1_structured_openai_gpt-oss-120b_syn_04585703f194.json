@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlTPtSBKUJT0dB96fis8bqw9",
+  "object": "chat.completion",
+  "created": 1790633033,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"The government should continue investment in HEMOBRÁS to achieve self-sufficiency in immunoglobulin production.\",\n  \"target_proposition_b\": \"Vaccines should not be a matter of political dispute.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine for each manifestation whether there is a determinable stance (YES/NO/UNCERTAIN) and if yes, extract target proposition (short neutral phrase) and stance (FAVOR/AGAINST/UNCERTAIN). Then determine if same proposition across A and B (YES/NO/UNCERTAIN). Need to follow rules.\n\nWe have two speeches by presumably the same minister (Nísia Trindade) but we ignore identity. We need to find specific propositions the speaker accepts or rejects.\n\nManifestation A: Long speech about procurement of insulin, immunoglobulin, autossuficiency, HEMOBRÁS, etc. The speaker says: \"todos os procedimentos adotados foram pactuados ... autorização da ANVISA ... aquisição emergencial de insulina.\" Also \"Com relação à imunoglobulina, seguimos as orientações do Tribunal de Contas da União. E está totalmente justificada ...\". Then \"O Brasil pode ser autossuficiente em imunoglobulina. Para isso, temos que dar continuidade ao investimento na HEMOBRÁS...\". Also mentions conferences, etc. The speaker seems to be supporting the procurement and the investment in HEMOBRÁS for autossuficiency. So target proposition could be: \"The government should continue investment in HEMOBRÁS to achieve self-sufficiency in immunoglobulin production.\" The speaker favors that. Also maybe proposition about \"the emergency purchase of insulin was authorized and appropriate.\" He states that it was authorized, implying support. So we need one proposition. Choose the most clear: \"The government should continue investment in HEMOBRÁS to achieve self-sufficiency in immunoglobulin.\" Stance: FAVOR. Determinable: YES.\n\nManifestation B: Very long speech covering many topics. Need to find a specific proposition the speaker supports or opposes. Many statements: \"We achieved 18,500 doctors ...\", \"We will expand primary care\", \"We will invest 30.5bn in health via PAC\", \"We will build 200 CAPS\", \"We will universalize SAMU\", \"We will combat misinformation\", \"Vaccines should not be political dispute\", \"We must not accept long travel for oncology treatment\". The speaker expresses support for many initiatives. Choose a clear proposition: \"Vaccines should not be subject to political dispute.\" The speaker says \"A vacina não pode, a meu ver, ser objeto de disputa política. Ela deve ser objeto de ciência...\" So proposition: \"Vaccines should not be a matter of political dispute.\" Stance: FAVOR. Determinable: YES.\n\nNow comparability: Are the two propositions same? One about continuing investment in HEMOBRÁS for immunoglobulin self-sufficiency; the other about vaccines not being political dispute. Different topics, not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck stance_determinable: both YES.\n\ntarget_proposition strings short neutral. Provide concise.\n\nLet's craft:\n\ntarget_proposition_a: \"The government should continue investment in HEMOBRÁS to achieve self‑sufficiency in immunoglobulin production.\"\n\ntarget_proposition_b: \"Vaccines should not be a matter of political dispute.\"\n\nStance_a: FAVOR\n\nStance_b: FAVOR\n\nsame_proposition: NO\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5589,
+    "total_tokens": 6379,
+    "completion_tokens": 790,
+    "estimated_cost": 0.000341093,
+    "prompt_tokens_details": null
+  }
+}

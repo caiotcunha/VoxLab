@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjxkMjS71Nbkld0NOaALjUmi",
+  "object": "chat.completion",
+  "created": 1790622327,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do empréstimo consignado para servidores públicos deve ser reavaliada em função dos riscos associados?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1172,
+    "total_tokens": 1232,
+    "completion_tokens": 60,
+    "estimated_cost": 0.0001364,
+    "prompt_tokens_details": null
+  }
+}

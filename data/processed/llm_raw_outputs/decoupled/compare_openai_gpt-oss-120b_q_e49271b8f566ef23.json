@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1jqPdahW43JglhmzZrwhzVO",
+  "object": "chat.completion",
+  "created": 1790633085,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de assuntos distintos: autonomia de ICTs públicas no Marco Legal da Inovação versus a urgência na votação do PL da Lei do Bem.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"A revisão do Marco Legal da Inovação deve permitir que as ICTs públicas tenham autonomia gerencial, orçamentária e financeira?\" This asks whether the revision of the Legal Framework for Innovation should allow public ICTs (Instituições Científicas e Tecnológicas?) to have managerial, budgetary, financial autonomy.\n\nQuestion2: \"O PL da Lei do Bem deve ser votado de forma precipitada?\" This asks whether the PL (project of law) of the Lei do Bem (Law of Good? tax incentive) should be voted in a rushed/precipitated manner.\n\nThese are different topics: one about autonomy for public ICTs in the Innovation legal framework; the other about speed of voting a tax incentive law. They are different issues. So relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 410,
+    "total_tokens": 643,
+    "completion_tokens": 233,
+    "estimated_cost": 5.478e-05,
+    "prompt_tokens_details": null
+  }
+}

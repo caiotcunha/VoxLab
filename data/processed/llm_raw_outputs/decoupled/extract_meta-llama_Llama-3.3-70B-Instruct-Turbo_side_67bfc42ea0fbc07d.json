@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rwb3hcFnC8kKMPtgoB4rD6UH",
+  "object": "chat.completion",
+  "created": 1790622298,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do lobby junto ao poder público deve ser discutida com transparência?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 753,
+    "total_tokens": 804,
+    "completion_tokens": 51,
+    "estimated_cost": 9.162e-05,
+    "prompt_tokens_details": null
+  }
+}

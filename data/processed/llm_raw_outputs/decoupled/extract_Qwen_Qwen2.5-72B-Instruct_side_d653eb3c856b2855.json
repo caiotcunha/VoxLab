@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvVbC0vngVFCiTw6KfVNUwIp",
+  "object": "chat.completion",
+  "created": 1790622148,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Amazonas deve ser o foco principal para a erradicação da tuberculose no Brasil até 2030?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4038,
+    "total_tokens": 4095,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00147648,
+    "prompt_tokens_details": null
+  }
+}

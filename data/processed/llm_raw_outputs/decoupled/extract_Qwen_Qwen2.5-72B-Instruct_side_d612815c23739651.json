@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzwSGXqcA03jdODbqMsQClL7",
+  "object": "chat.completion",
+  "created": 1790622152,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve-se avançar no desenvolvimento e uso de biometano e outros combustíveis alternativos, mesmo sem critérios prévios rígidos?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2278,
+    "total_tokens": 2344,
+    "completion_tokens": 66,
+    "estimated_cost": 0.00084648,
+    "prompt_tokens_details": null
+  }
+}

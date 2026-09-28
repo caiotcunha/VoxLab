@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCi3nKVzfe52gXGs2qXQ8MLz",
+  "object": "chat.completion",
+  "created": 1790624051,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is thanking, emphasizing importance of debate, saying legislation needs to be improved, wants more seminars, wants government presence, wants responsible approach. No explicit stance for/against the regulation itself. They say \"legislação precisa ser aprimorada\" (legislation needs to be improved) but not stating support or opposition to the PL. They emphasize importance of debate, responsibility, entrepreneurship. No clear yes/no stance on a specific measure. So stance_determinable = NO? Could be UNCERTAIN? The question: \"Regulamentação do mercado digital deve ser aprovada?\" The speaker doesn't say yes or no. They just say need more debate, improve legislation. So not determinable. So stance_determinable = NO.\n\nThus JSON with stance_determinable \"NO\", target_question \"\", stance \"\".\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1163,
+    "total_tokens": 1377,
+    "completion_tokens": 214,
+    "estimated_cost": 7.941099999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rw95dbFx7yIUN1MN85qbJtCl",
+  "object": "chat.completion",
+  "created": 1790633009,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same issue – vaccination of children against Covid‑19 – and each defends vaccination (favor), criticizing anti‑vaccine arguments.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nWe must determine if they respond to same specific proposition and stance.\n\nBoth are about vaccination of children against Covid-19. Manifestation A is a public hearing on mandatory vaccination for children 6 months to 5 years starting 2024. The speaker seems skeptical, questioning claims, calling \"barbaridades\", seems critical of vaccine arguments, maybe against mandatory vaccination? He says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação, não só da COVID, mas de todas.\" He seems concerned about coverage, but earlier he lists \"barbaridades\" like \"vacina não fica no braço\", \"vacina leva à mutação\". He seems to be criticizing anti-vaccine arguments? Actually he is listing absurd statements made by someone else (maybe a pro-vaccine speaker) and calling them barbarities. He says \"não podemos contribuir para piorar ainda mais a cobertura de vacinação\". That suggests he supports vaccination, wants to improve coverage. So his stance is FAVOR of mandatory vaccination? He is concerned about coverage, but he is criticizing misinformation. So likely he is in favor of vaccination and possibly mandatory.\n\nManifestation B is a minister appearance, speaker says \"é movimento antivacina, sim!\" and criticizes anti-vaccine stance of others, defending vaccination. He says \"vocês não estão questionando dogmas científicos... vocês estão usando discurso antivacina\". He defends vaccination, says \"a vacina é cientificamente comprovada\". So stance is FAVOR vaccination, against anti-vaccine movement.\n\nThus both respond to same proposition: mandatory vaccination of children? Both discuss vaccination of children, but B is broader about vaccination campaign, not necessarily mandatory. However both address the same policy debate: vaccination of children against Covid-19. The proposition could be \"vaccination of children against Covid-19\" (whether mandatory or not). Both are in favor of vaccination, i.e., they share same stance (FAVOR). So STANCE_MAINTAINED.\n\nWe must ensure they respond to same specific proposition. The first is about mandatory vaccination for children 6 months-5 years. The second is about \"vacinação de crianças contra Covid-19\" (debate). That's same proposition (vaccination of children). So yes.\n\nThus relation: STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2568,
+    "total_tokens": 3108,
+    "completion_tokens": 540,
+    "estimated_cost": 0.000186816,
+    "prompt_tokens_details": null
+  }
+}

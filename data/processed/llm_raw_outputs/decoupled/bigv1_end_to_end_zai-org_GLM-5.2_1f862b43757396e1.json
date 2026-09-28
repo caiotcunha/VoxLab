@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpewTvzKPeo5JrrNhrkYaC1B",
+  "object": "chat.completion",
+  "created": 1790623721,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações têm posição determinável e favorável a avanço regulatório, mas tratam de proposições distintas: regulamentação do lobby e regulamentação do trabalho de motoristas de aplicativo.\"\n}",
+        "reasoning_content": "We need answer JSON only. Need classify relation between two manifestations. Need understand task. We have two literal manifestations by same actor in different parliamentary events, blinded. Need classify relation in categories. Need not judge actor consistency, only relation. Need determine if both respond to same specific proposition with same/opposite stance, or incomparable etc.\n\nManifestation A: Event public hearing 2022-06-28 theme Regulamentação do lobby junto ao poder público. Speaker says need courage discuss transparency, parabenizar CGU, government gave path, harmonize projects in debate, solution to advance, not govt/opposition project, country project, important advance. Then closes hearing. It seems supports advancing regulation of lobby/proposition(s) regulating lobby. But \"same specific proposition\"? It references \"esses projetos que estão em debate\" harmonize projects. Determinable stance FAVOR toward regulating lobby/advancing projects. But specific proposition? Maybe broad theme.\n\nManifestation B: Event public hearing 2024-04-25 theme Regulamentação do trabalho de motoristas de aplicativo. Speaker supports advancing project to regulate app drivers, need legislate, open to construct good solution, wants legislation just, etc. Stance FAVOR toward app driver regulation project.\n\nDifferent themes/propositions: lobby regulation vs app driver regulation. Thus not same specific proposition. Both have determinable positions, but not same proposition. Category INCOMPARABLE. Need ensure not \"same actor\" maybe same? But no external. A is about lobby, B about app drivers. So INCOMPARABLE.\n\nNeed produce JSON strict with relation and reasoning. No extra. Need maybe mention both favor their respective proposals but different propositions. Use exact key. Need no comments. Final.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1422,
+    "total_tokens": 1840,
+    "completion_tokens": 418,
+    "estimated_cost": 0.0014351550004800002,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 354
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRahVyNpV3FgvyrgDMItHNF0",
+  "object": "chat.completion",
+  "created": 1790622632,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12 deve ser aprovado na forma como se apresenta?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (public hearing on regulating app drivers).\n    *   Task: Determine if the stance is determinable (YES/NO/UNCERTAIN), formulate a neutral yes/no target question, and determine the stance (FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Speaker*: An app driver from Belo Horizonte.\n    *   *Context*: Public hearing on regulating app drivers (PLP 12/2024 vs. PL 536/2024).\n    *   *Key arguments*:\n        *   Drivers were excluded from the government's working group (GT).\n        *   Drivers do not feel represented by the unions invited by the government.\n        *   \"O motorista, qualquer motorista que rode... não pode aceitar o projeto da forma como ele foi apresentado.\" (Drivers cannot accept the project as presented).\n        *   \"Temos uma rejeição de mais de 98% dos motoristas a este projeto. Quem é motorista de fato não vai apoiar este projeto.\" (98% rejection of this project).\n        *   \"O Projeto de Lei Complementar nº 12 veio com vários pontos... é exatamente a forma de contribuição. A retenção, esse modelo de hora trabalhada, não nos atende.\" (PLP 12's contribution model based on hours worked does not meet their needs).\n        *   \"Qualquer projeto que os nobres Deputados forem votar não pode ignorar a remuneração pelo quilômetro rodado e pelo tempo.\" (Any project must consider remuneration per km driven and time).\n        *   \"Da forma como foi instituído, este não nos atende.\" (As instituted, this does not meet our needs).\n        *   \"Esse modelo tem que ser alterado para o de quilômetro rodado e tempo.\" (The model must be changed to km driven and time).\n        *   \"o PLP 12 não contempla eles.\" (PLP 12 does not contemplate these principles).\n        *   \"Desenvolvemos, através da frente parlamentar, uma proposta, a de nº 536... Este projeto contempla nossas necessidades...\" (They developed PL 536, which meets their needs).\n        *   \"Precisamos que o Governo altere e os nobres Deputados não aprovem este projeto em vista de como ele se apresenta...\" (We need the government to change it and deputies NOT to approve this project as it is presented).\n\n3.  **Determine Stance Determinability:**\n    *   Does the speaker present a sufficiently clear position on a specific issue? Yes. The speaker clearly opposes the current PLP 12 (Projeto de Lei Complementar nº 12) and supports an alternative (PL 536/24). The central question is about the approval of the current PLP 12 as presented.\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   The core issue is the approval of PLP 12 (the government's bill for app drivers) in its current form.\n    *   Question: \"O Projeto de Lei Complementar nº 12 deve ser aprovado na forma como foi apresentado?\" (Should PLP 12 be approved as presented?)\n    *   Alternative: \"O Projeto de Lei Complementar nº 12 deve ser aprovado?\" (Should PLP 12 be approved?)\n    *   Let's use: \"O Projeto de Lei Complementar nº 12 deve ser aprovado na forma como se apresenta?\"\n\n5.  **Determine Stance:**\n    *   The speaker explicitly says: \"Precisamos que o Governo altere e os nobres Deputados não aprovem este projeto em vista de como ele se apresenta\".\n    *   Therefore, the answer to \"Should PLP 12 be approved?\" is NO.\n    *   `stance`: \"AGAINST\"\n\n6.  **Format Output:**\n    *   JSON format required.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"O Projeto de Lei Complementar nº 12 deve ser aprovado na forma como se apresenta?\",\n      \"stance\": \"AGAINST\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2397,
+    "total_tokens": 3399,
+    "completion_tokens": 1002,
+    "estimated_cost": 0.00280055250144,
+    "prompt_tokens_details": {
+      "cached_tokens": 768,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 953
+    }
+  }
+}

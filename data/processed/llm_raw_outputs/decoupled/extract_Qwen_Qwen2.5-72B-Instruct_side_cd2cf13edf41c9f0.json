@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcA0WJzX8negQi7zIma2bVid",
+  "object": "chat.completion",
+  "created": 1790622213,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos para prevenção e pronta resposta a desastres naturais devem ser alocados de forma fixa no orçamento?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1260,
+    "total_tokens": 1321,
+    "completion_tokens": 61,
+    "estimated_cost": 0.000478,
+    "prompt_tokens_details": null
+  }
+}

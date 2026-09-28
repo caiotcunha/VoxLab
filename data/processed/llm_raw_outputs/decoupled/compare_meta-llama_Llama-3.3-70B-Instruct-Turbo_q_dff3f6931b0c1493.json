@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTKIoPvgPzWI0p8A4pJVR0Po",
+  "object": "chat.completion",
+  "created": 1790622365,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos, um relacionado a legislação prisional e o outro a política territorial e ambiental para terras indígenas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 469,
+    "completion_tokens": 55,
+    "estimated_cost": 5.9000000000000004e-05,
+    "prompt_tokens_details": null
+  }
+}

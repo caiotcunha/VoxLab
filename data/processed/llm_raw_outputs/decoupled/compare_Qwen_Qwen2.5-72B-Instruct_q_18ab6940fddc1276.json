@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSug5YXmQ7InbrBBrpy89BID",
+  "object": "chat.completion",
+  "created": 1790622247,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As perguntas são idênticas, perguntando pela mesma ação e polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 378,
+    "total_tokens": 417,
+    "completion_tokens": 39,
+    "estimated_cost": 0.00015168,
+    "prompt_tokens_details": null
+  }
+}

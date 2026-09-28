@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRZzWYYfPWXcI6FOCq14udua",
+  "object": "chat.completion",
+  "created": 1790623992,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speaker (a parliamentarian) is asking questions to the minister, demanding clarification about procurement of insulin from Global X, and about transparency, dispensation of bidding, etc. The speaker is questioning the decision, implying criticism, but does she state a stance? She asks \"por que foi escolhida...?\" and \"Se avaliou, por que optou...?\" She is seeking explanation, not explicitly stating a position like \"the procurement was wrong\" or \"should not have been done\". However, the tone suggests she is against the procurement, but is that a determinable stance? The question: \"A contratação da empresa Global X foi correta?\" She is asking why it was chosen, implying she thinks it's problematic. The speech is essentially a series of questions, not a statement of position. According to rules, \"Pergunta genuína (pedido de informação sem endosso explícito) geralmente é stance_determinable=NO.\" So likely stance_determinable = NO because it's just asking for clarification, not stating a clear position. There's no explicit \"I think it was wrong\" or \"I support it\". So answer: stance_determinable NO, target_question empty, stance empty.\n\nThus JSON:\n\n{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1410,
+    "total_tokens": 1727,
+    "completion_tokens": 317,
+    "estimated_cost": 0.00010606000000000001,
+    "prompt_tokens_details": null
+  }
+}

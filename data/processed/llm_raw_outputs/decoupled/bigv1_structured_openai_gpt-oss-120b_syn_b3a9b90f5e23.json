@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRDY7QdRi0dO3QpZRKpw2uG4",
+  "object": "chat.completion",
+  "created": 1790624161,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vaccination against COVID-19 should be mandatory for children aged 6 months to 5 years\",\n  \"target_proposition_b\": \"Vaccination against COVID-19 should be mandatory for children aged 6 months to 5 years\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific statement) and stance.\n\nManifestation A: Long speech about mandatory vaccination for children 6 months to 5 years. She says: \"Nós não vamos aceitar ... eu vou me opor a isso, enquanto eu tiver forças...\" She opposes mandatory vaccination. She also says \"Se acreditássemos que a vacina contra COVID-19 iria preservar a vida dos bebês, nós seríamos favoráveis.\" She says they are not anti-vax but oppose forced vaccination. So target proposition: \"Vaccination against COVID-19 should be mandatory for children 6 months to 5 years.\" She opposes. So stance AGAINST. Determinable? Yes.\n\nProposition phrasing: \"Vaccination against COVID-19 should be mandatory for children aged 6 months to 5 years.\" Good.\n\nManifestation B: Speech by a minister (likely health minister). She says: \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" She opposes mandatory vaccination. Also says \"Se vocês têm filhos, levem seus filhos para se vacinarem. Entretanto, a vacina da COVID-19 precisa ser debatida. ... O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" So target proposition same: \"Vaccination against COVID-19 should be mandatory for children.\" She is AGAINST. Determinable yes.\n\nThus both have same proposition. So same_proposition = YES.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\", \"YES\", proposition strings, \"YES\", \"AGAINST\", \"AGAINST\".\n\nMake sure proposition strings are short neutral. Use same phrasing.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3121,
+    "total_tokens": 3623,
+    "completion_tokens": 502,
+    "estimated_cost": 0.000200817,
+    "prompt_tokens_details": null
+  }
+}

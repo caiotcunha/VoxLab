@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGvuaZIzIzTisH2gcY5Ku5dq",
+  "object": "chat.completion",
+  "created": 1790624154,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same issue – the need to fund and strengthen the Fundo Nacional de Calamidades Públicas for disaster prevention – and each expresses a supportive stance toward increasing resources.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. Both are about prevention of disasters and funding of the Fundo Nacional de Calamidades Públicas. Manifestation A is a public hearing about prevention, mentions project law creating sources of resources for the fund, praising work, etc. Manifestation B is also a public hearing with deliberation about improvements in infrastructure, also mentions need to fund the same fund, says it's not funded, calls for budgetary allocation.\n\nAre they responding to same specific proposition? The proposition could be \"the need to allocate resources to the Fundo Nacional de Calamidades Públicas\" or \"the need for funding for disaster prevention\". Both talk about that. However, are they responding to same specific legislative proposal? A mentions a specific law that created sources of resources, and they are discussing that law's implementation. B mentions the fund created in 1969 but not funded, and calls for budget. Could be same proposition: \"increase funding for the fund\". Both are in favor of increasing resources. So stance same (FAVOR). So likely STANCE_MAINTAINED.\n\nBut need to ensure they are responding to same specific proposition. The proposition is \"allocation of resources to the Fundo Nacional de Calamidades Públicas for disaster prevention\". Both address that. So yes.\n\nThus relation: STANCE_MAINTAINED.\n\nProvide reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1752,
+    "total_tokens": 2102,
+    "completion_tokens": 350,
+    "estimated_cost": 0.00012432399999999998,
+    "prompt_tokens_details": null
+  }
+}

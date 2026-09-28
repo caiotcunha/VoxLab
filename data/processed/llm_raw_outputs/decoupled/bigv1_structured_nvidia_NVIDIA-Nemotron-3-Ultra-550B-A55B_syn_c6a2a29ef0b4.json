@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjsVjYD1SIgspJkQhb3KmAEV",
+  "object": "chat.completion",
+  "created": 1790624157,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Aluguel Social deve ser implementado para vítimas de violência doméstica\",\n  \"target_proposition_b\": \"Deve ser criado um programa específico de atenção a mulheres na menopausa e climatério\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze two statements.\n\nFirst, identify target proposition for each, stance, determinability, and comparability.\n\nManifestation A: It's a speech in a public hearing about violence against women, discussing need for DEAMs, social rent, economic independence, etc. The speaker expresses support for certain policies: \"Eu sou favorável, por exemplo, ao projeto. Até vi que o Governo Federal, Denise, vai aprová-lo. Vai também apresentar, como o que nós já temos em Goiás, que é o Aluguel Social.\" Also supports creation of more Casa da Mulher Brasileira, etc. So there are multiple propositions. Need a specific target proposition. The instruction: \"Proposição-alvo: afirmação específica que a manifestação aceita ou rejeita.\" We must pick one specific proposition that the speech clearly takes a stance on. Could be \"O governo deve criar programa de Aluguel Social para vítimas de violência doméstica\" or \"Deve haver DEAMs em todas as cidades brasileiras\". The speech includes multiple. We need to choose one that is clear. Probably the most explicit: \"Eu sou favorável, por exemplo, ao projeto... Aluguel Social é necessário para as vítimas de violência.\" So target proposition: \"O Aluguel Social deve ser implementado para vítimas de violência doméstica.\" Stance: FAVOR. Determinable: YES.\n\nManifestation B: The speaker is opening a hearing, mentions she is rapporteur of PL 5602/2019, presented parecer contrário (opposite opinion) to the project and its apensados, in the form of a substitutivo that creates a Program for Women in Menopause and Climacteric. She says \"Apresentei parecer contrário ao projeto e seus apensados, na forma do substitutivo, que cria o Programa de Atenção a Mulheres na Menopausa e Climatério.\" Then she says \"a criação de um programa específico não é a solução mais eficaz, podendo sobrecarregar o sistema com estruturas burocráticas desnecessárias.\" Also \"acreditamos que a criação de um programa específico não é a melhor forma de abordar o problema.\" So target proposition: \"Deve ser criado um programa específico de atenção a mulheres na menopausa e climatério.\" Stance: AGAINST (she opposes). Determinable: YES.\n\nNow comparability: Are they same proposition? No, different topics (violence against women vs menopause program). So same_proposition = NO.\n\nNow produce JSON with keys.\n\nstance_determinable_a = YES, stance_determinable_b = YES.\n\ntarget_proposition_a = \"O Aluguel Social deve ser implementado para vítimas de violência doméstica\" (short neutral). target_proposition_b = \"Deve ser criado um programa específico de atenção a mulheres na menopausa e climatério\".\n\nstance_a = FAVOR, stance_b = AGAINST.\n\nsame_proposition = NO.\n\nCheck rules: If stance_determinable != YES then empty strings, but both YES.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3981,
+    "total_tokens": 4752,
+    "completion_tokens": 771,
+    "estimated_cost": 0.0036867,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 660
+    }
+  }
+}

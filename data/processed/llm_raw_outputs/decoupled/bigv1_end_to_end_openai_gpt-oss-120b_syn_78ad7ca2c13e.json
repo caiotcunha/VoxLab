@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RalVghhUgpPdCmmNP8K1gN4T",
+  "object": "chat.completion",
+  "created": 1790633041,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Both statements address the allocation of resources to the Fundo de Calamidade Pública, but A supports funding it (favor) while B opposes that mechanism (against), showing opposite stances on the same proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nWe must determine if they respond to same specific proposition. Both talk about disaster prevention funding, veto of PL 920/23, and about Fundo de Calamidade Pública. Manifestation A advocates for overturning veto (veto 28) to keep funding for prevention, supports PL 920/23, wants more resources for prevention, criticizes lack of prevention funding in agreements. Manifestation B says: \"sou contra a forma como se propõe colocar recursos no Fundo de Calamidade Pública, que foi criado em 1969, e nunca foi abastecido de recursos por uma boa razão... É um erro destinar recursos de forma fixa para prevenção e pronta resposta. ... A alocação de recursos por medida provisória ... é mais ágil e eficiente.\" So B opposes fixed allocation to the fund, prefers measure provisional allocation. This is a stance on the proposition of funding mechanism for disaster response/prevention. A supports more funding via the fund (Fundo de Calamidade Pública) and wants to overturn veto that removes 5% allocation to fund. So they have opposite stances regarding the fund: A FAVOR (supports fund and veto removal), B AGAINST (against putting resources in the fund). Are they responding to same specific proposition? The proposition is about allocation of resources to the Fundo de Calamidade Pública (or about the veto that removes funding). Both address that fund. A: wants to keep funding via the fund (veto removal). B: against using the fund at all, says it's inefficient. So they are opposite stances on the same proposition (use of the fund). So STANCE_REVERSED.\n\nCheck if stance is determinable: Yes. Both have clear positions. Comparable: same proposition (allocation to fund). So STANCE_REVERSED.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2860,
+    "total_tokens": 3308,
+    "completion_tokens": 448,
+    "estimated_cost": 0.00018198,
+    "prompt_tokens_details": null
+  }
+}

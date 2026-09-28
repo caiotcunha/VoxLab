@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaKlkUZ74eiiHvGf6Hj3le2i",
+  "object": "chat.completion",
+  "created": 1790622255,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata do aumento do financiamento à prevenção de desastres climáticos, enquanto a segunda pergunta trata da alocação fixa de recursos para prevenção e resposta a desastres naturais, abrangendo um escopo mais amplo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 479,
+    "completion_tokens": 76,
+    "estimated_cost": 0.00017548000000000002,
+    "prompt_tokens_details": null
+  }
+}

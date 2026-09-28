@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZCugZr03sHdCoF4NQ6kJmbd",
+  "object": "chat.completion",
+  "created": 1790624044,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Representantes do outro lado deveriam ter sido convidados e comparecido à audiência pública sobre precarização do trabalho na mineração?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement contains a clear position on a specific issue. The speech is mostly about thanking, noting lack of participation, calling attention to the issue of precarization of work in mining, lamenting lack of representation, etc. Does it express a stance on a specific policy? It seems to criticize the lack of participation from certain groups and perhaps suggests that they should have been present. But is there a clear position on a specific question? Possibly the stance is that \"the other side should have participated\" or \"the Commission of Mines and Energy should have participated\". However the question must be a neutral yes/no question about a specific measure. The speech does not propose a concrete policy like \"should the Commission of Mines and Energy be involved?\" It just notes that they are not present. Could be interpreted as a stance that they should be present, i.e., \"Should the Commission of Mines and Energy participate in the hearing?\" The speaker seems to think it's a problem that they are not present, implying they should be. So we could formulate a question: \"A Comissão de Minas e Energia deve participar das audiências públicas sobre precarização do trabalho na mineração?\" The speaker's stance appears to be in favor (they should participate). However is that a clear enough position? The speech says \"não há a participação do outro lado... a Comissão de Minas e Energia desta Casa não tem uma participação. Essa é uma realidade, no mínimo, complexa\". He doesn't explicitly say they should participate, but implies it's a problem. Could be considered a stance that they should be present. However the instruction: \"Pergunta genuína (pedido de informação sem endosso) geralmente é stance_determinable=NO.\" This is not a question, it's a statement. So we need to decide if there is a determinable stance. The speech is more of a commentary, not a direct position on a policy. It criticizes lack of participation, but not a specific policy. Might be considered a stance that \"the other side should be present\" which is a position. But the question must be about a specific issue. The issue could be \"Should representatives of the other side be invited to the hearing?\" The speaker says they could have sent representatives, implying they should have. So stance: FAVOR.\n\nBut is that sufficiently clear? The speaker says \"Poderiam ter enviado representante.\" That's a suggestion. So yes, they think they should have. So we can set stance_determinable=YES, target_question: \"Representantes do outro lado deveriam ter sido convidados e comparecido à audiência pública sobre precarização do trabalho na mineração?\" The stance: FAVOR.\n\nLet's produce JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 954,
+    "total_tokens": 1552,
+    "completion_tokens": 598,
+    "estimated_cost": 0.00013695799999999999,
+    "prompt_tokens_details": null
+  }
+}

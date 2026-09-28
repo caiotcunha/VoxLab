@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRh7AMbZhYuE3daXnHBY6LZU",
+  "object": "chat.completion",
+  "created": 1790622255,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de aumentar o financiamento para prevenção de desastres climáticos ou naturais, com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 460,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00016788,
+    "prompt_tokens_details": null
+  }
+}

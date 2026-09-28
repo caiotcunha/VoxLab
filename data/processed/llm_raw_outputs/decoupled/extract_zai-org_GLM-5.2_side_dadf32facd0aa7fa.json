@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9e4E3DCKCBx6M18xvyIkqiv",
+  "object": "chat.completion",
+  "created": 1790622597,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo Nacional para Calamidades Públicas deve ter fontes de recursos específicas destinadas à prevenção de desastres?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is discussing disaster prevention and the need for financial resources for it. They mention their own legislative project that created funding sources for the National Fund for Public Calamities. They express a clear position that the country needs specific resources for disaster prevention and that they worked to ensure the fund has funding sources.\n\nLet me analyze:\n\n1. Determinability: The speaker clearly advocates for having financial resources for disaster prevention. They talk about their own approved project that created funding sources for the National Fund for Public Calamities. They express a clear position favoring the allocation of resources for disaster prevention.\n\n2. Target question: Should the country have specific financial resources allocated for disaster prevention? Or more specifically: Should the National Fund for Public Calamities have dedicated funding sources for disaster prevention?\n\n3. Stance: FAVOR - the speaker clearly supports having resources for disaster prevention and mentions their own legislative work to ensure this.\n\nThe key position is that the country should have dedicated financial resources for disaster prevention, and the speaker clearly favors this. They also mention their work in creating funding sources for the National Fund for Public Calamities.\n\nLet me formulate the target question neutrally: \"O Fundo Nacional para Calamidades Públicas deve ter fontes de recursos específicas para a prevenção de desastres?\"\n\nThe speaker clearly favors this - they authored a bill that was approved and sanctioned to ensure the fund has funding sources.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1389,
+    "total_tokens": 1737,
+    "completion_tokens": 348,
+    "estimated_cost": 0.0011441925010799998,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 286
+    }
+  }
+}

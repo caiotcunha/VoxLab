@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0XEUKfFKOa8QStyvvnkxjCg",
+  "object": "chat.completion",
+  "created": 1790632260,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"relation\":\"DIFFERENT\",\"reasoning\":\"As perguntas tratam de objetos distintos: uma foca em reajustes e encargos na conta de energia, e a outra no modelo geral das concessionárias, sem que a resposta a uma determine a resposta à outra.\"}",
+        "reasoning_content": "We need answer JSON. Need classify relation between two yes/no questions extracted from speeches same actor different moments. Need judge only questions.\n\nQ1: \"Os reajustes e encargos que oneram a conta de energia elétrica do consumidor devem ser mantidos?\" Central issue: should adjustments and charges that burden consumer electricity bill be maintained?\n\nQ2: \"O modelo atual das concessionárias de energia no Brasil deve ser preservado?\" Central issue: should current model of energy concessionaires in Brazil be preserved?\n\nNeed classify EQUIVALENT, OPPOSITE_POLARITY, DIFFERENT, UNCERTAIN.\n\nNeed reason. Are they same question? Q1 about maintaining reajustes e encargos onerando conta. Q2 about preserving current concessionárias model. They are related but not same. Answer to one doesn't determine answer to other. Could support preserving model but modify charges/reajustes; or maintain charges but change model. Different object/scope. So DIFFERENT. Need JSON strict.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 674,
+    "completion_tokens": 274,
+    "estimated_cost": 0.0007182,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 213
+    }
+  }
+}

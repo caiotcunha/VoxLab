@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5lseS9BazhyRldKNkGcU2cI",
+  "object": "chat.completion",
+  "created": 1790622368,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As perguntas tratam da mesma questão, mas uma pergunta se refere à importância e a outra se refere à ação de avançar a regulamentação, o que implica em uma polaridade oposta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 474,
+    "completion_tokens": 67,
+    "estimated_cost": 6.214000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

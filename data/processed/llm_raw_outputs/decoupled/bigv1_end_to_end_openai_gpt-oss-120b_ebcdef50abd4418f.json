@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCbA2MZ3mnodKfFCe77XXQEH",
+  "object": "chat.completion",
+  "created": 1790624104,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas expressam apoio a políticas públicas, mas tratam de proposições distintas (proteção de povos indígenas e violência de gênero vs. implementação de políticas para a população LGBTQIA+), portanto não respondem à mesma proposição.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must see if they respond to same specific proposition. Both are public hearings, but topics differ: A is about protection of indigenous women and children, violence, demarcation, etc. B is about difficulties in implementing policies for LGBTQIA+ population, research, equipment, budgets, intersectorality.\n\nAre they responding to same proposition? No. They address different policy areas. Both have stance: they are supportive of policies (they argue for more plans, budgets, CPI, etc.) and B also supportive of more policies, research, etc. But they are not about same specific proposition. So relation is INCOMPARABLE (they have determinable positions but not same proposition). So answer: INCOMPARABLE.\n\nProvide brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2939,
+    "total_tokens": 3178,
+    "completion_tokens": 239,
+    "estimated_cost": 0.000149373,
+    "prompt_tokens_details": null
+  }
+}

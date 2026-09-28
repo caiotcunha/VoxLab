@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZs4oHwVrOzZr4syJXBLnFJG",
+  "object": "chat.completion",
+  "created": 1790632521,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements refer to the UN Nexus resolution on animal welfare, environment, and sustainable development and express support for it, showing the same stance on the same proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe must determine if they respond to same specific proposition with same or opposite stance, or incomparable, etc.\n\nFirst, identify propositions each addresses.\n\nManifestation A: In a public hearing on \"Segurança sanitária e sustentabilidade na produção de alimentos de origem animal\". The speaker discusses animal welfare, zoonoses, UN Nexus resolution, need for balance, criticism of animal production practices that violate animal rights, environmental impacts, pandemics. The stance: seems critical of current animal production practices, advocating for animal welfare, sustainability. So stance is AGAINST current practices that harm animals and environment, and in favor of animal welfare and sustainability.\n\nManifestation B: In a public hearing on \"Ações de bem-estar animal e seus benefícios para o Brasil\". The speaker thanks a deputy, praises efforts, discusses economic importance of animal welfare, mentions UN Nexus resolution, need for studies, trade impacts, etc. The stance is supportive of animal welfare policies, sees benefits, calls for action. So stance is FAVOR animal welfare measures, supportive of the resolution.\n\nAre they responding to same specific proposition? Both refer to the \"Resolução Nexus entre Bem-Estar Animal, Meio Ambiente e Desenvolvimento Sustentável\". In A, speaker mentions the resolution, says it recognizes animal welfare as essential to sustainability, and calls for balance. In B, speaker also references the same resolution, describing its content and importance. So they are both addressing the proposition that the UN Nexus resolution is relevant and should guide policy. The stance: A seems to support the resolution (calls it fundamental, says need to focus on balance). B also supports it, praising it. Both are FAVOR the resolution. So they respond to same proposition (the relevance/importance of the UN Nexus resolution) with same stance (favor). Therefore relation: STANCE_MAINTAINED.\n\nCheck if any nuance: A also criticizes current practices, but still endorses the resolution. B endorses it. So same stance.\n\nThus output JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2504,
+    "total_tokens": 2972,
+    "completion_tokens": 468,
+    "estimated_cost": 0.000172208,
+    "prompt_tokens_details": null
+  }
+}

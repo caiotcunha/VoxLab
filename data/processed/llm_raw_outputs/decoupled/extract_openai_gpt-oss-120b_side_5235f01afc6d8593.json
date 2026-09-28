@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rou9B1n8qZPbidMiSL8LmAru",
+  "object": "chat.completion",
+  "created": 1790624003,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma CPI para investigar a violência contra indígenas, mulheres e crianças?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about protecting indigenous territories, demarcation, protecting women, children, etc., and suggests creating a CPI (Parliamentary Inquiry Commission) to investigate violence. The speaker is advocating for policies: demarcation, protection, inclusion in budget, creation of CPI. So there is a clear stance: they are in favor of protecting indigenous territories, demarcation, and creating a CPI. The question we need to formulate as a neutral yes/no question about a specific issue. Could be: \"Deve ser criada uma CPI para investigar a violência contra indígenas, mulheres e crianças?\" Or \"A demarcação e homologação dos territórios indígenas deve ser avançada?\" The speech includes multiple points. We need one central question. Perhaps the core is about creating a CPI. The speech suggests that. So target question: \"Deve ser criada uma CPI para investigar a violência contra indígenas, mulheres e crianças?\" The stance: FAVOR (yes). So stance_determinable = YES, target_question as above, stance = FAVOR.\n\nCheck if any ambiguity: The speaker clearly supports creation of CPI, protection, demarcation. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2268,
+    "total_tokens": 2571,
+    "completion_tokens": 303,
+    "estimated_cost": 0.00013542600000000001,
+    "prompt_tokens_details": null
+  }
+}

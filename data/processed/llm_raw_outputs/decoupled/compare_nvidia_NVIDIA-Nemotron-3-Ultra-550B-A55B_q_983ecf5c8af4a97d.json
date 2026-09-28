@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuD7w3YORFMs3Jdi9j0zYVie",
+  "object": "chat.completion",
+  "created": 1790624150,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da antecipação do 13º salário para aposentados em áreas de desastre, enquanto a segunda propõe a criação de um arcabouço legal para proteger pequenos negócios contra desastres naturais; são medidas, públicos e objetos distintos.\"\n}",
+        "reasoning_content": "We need to classify relation between two yes/no questions.\n\nQuestion1: \"O 13º salário de aposentados e beneficiários deve ser antecipado em áreas atingidas por desastres?\" => about advancing 13th salary for retirees/beneficiaries in disaster-hit areas.\n\nQuestion2: \"Deve ser criado um arcabouço legal para proteger pequenos negócios contra desastres naturais como enchentes e secas?\" => about creating legal framework to protect small businesses against natural disasters.\n\nThese are different topics: one about pensioners' 13th salary advance, other about legal framework for small businesses. Different measures, objects, populations. So DIFFERENT.\n\nReturn JSON with relation DIFFERENT and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 655,
+    "completion_tokens": 238,
+    "estimated_cost": 0.0007321,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 159
+    }
+  }
+}

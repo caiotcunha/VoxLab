@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRuJ8r0iJrcOROEniz4PMRaq",
+  "object": "chat.completion",
+  "created": 1790624132,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata do papel do STF em legislar, a outra sobre critérios de renovação de concessões de energia, assuntos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O Supremo Tribunal Federal deve se abster de legislar ou modificar leis existentes, limitando-se à interpretação da norma?\" This asks whether STF should refrain from legislating or modifying existing laws, limiting itself to interpretation. It's about judicial restraint, separation of powers.\n\nQuestion2: \"Novos critérios mais rígidos devem ser impostos na renovação das concessões das distribuidoras de energia elétrica?\" This asks whether stricter criteria should be imposed on renewal of electricity distribution concessions. That's about regulatory policy for concessions.\n\nThese are different topics: one about STF's role, the other about concession renewal criteria. So relation is DIFFERENT.\n\nThus output JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 415,
+    "total_tokens": 622,
+    "completion_tokens": 207,
+    "estimated_cost": 5.0545e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0BaO4oy5l3TcAQTM72dyS2K",
+  "object": "chat.completion",
+  "created": 1790632287,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as falas defendem o bem‑estar animal e citam a Resolução Nexus da ONU, mas cada uma ocorre em audiências distintas com temas diferentes (segurança sanitária na produção de alimentos vs. ações de bem‑estar animal e benefícios econômicos), não se referindo à mesma proposição legislativa ou medida concreta.\"\n}",
+        "reasoning_content": "We need to compare two statements. Both are from same actor (blinded). Both are public hearings. Manifestation A: theme \"Segurança sanitária e sustentabilidade na produção de alimentos de origem animal\". The speaker argues for animal welfare, links to zoonoses, UN Nexus resolution, sustainability, biodiversity, etc. It's a stance favoring animal welfare and sustainable production, presumably supporting policies that improve animal welfare.\n\nManifestation B: theme \"Ações de bem-estar animal e seus benefícios para o Brasil\". The speaker (likely a government official) talks about animal welfare as economic issue, mentions EU-Mercosur treaty, UN Nexus resolution, need for studies, mentions PPA participatory vote for cage-free production, says government must respond. Also supports animal welfare, linking to human health, economy.\n\nBoth address animal welfare and reference the same UN Nexus resolution (2022). Both are favorable to animal welfare. They are not responding to a specific proposition (like a bill) but both are statements in hearings. The categories: STANCE_MAINTAINED if they respond to same specific proposition with same direction. But they are not responding to same specific proposition; they are different hearings, different topics though related. The classification INCOMPARABLE: \"as duas manifestações têm posição determinável, mas não respondem à mesma proposição específica.\" That seems appropriate: both have determinable stance (pro animal welfare), but not same specific proposition. So relation = INCOMPARABLE.\n\nCheck RELATION_UNCERTAIN: if unclear. But seems clear.\n\nThus answer: INCOMPARABLE with reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2803,
+    "total_tokens": 3230,
+    "completion_tokens": 427,
+    "estimated_cost": 0.0023409000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 333
+    }
+  }
+}

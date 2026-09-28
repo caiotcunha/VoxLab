@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfzrmFWKybcB6pVLN7MQQMt8",
+  "object": "chat.completion",
+  "created": 1790624078,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A defende a expansão de políticas públicas e da rede de proteção, como a construção de novas Casas da Mulher Brasileira e o Aluguel Social. A Manifestação B, por sua vez, questiona a alocação orçamentária e a execução das Casas da Mulher Brasileira pelo Ministério da Justiça, sugerindo a transferência dos recursos para o Ministério das Mulheres. Embora ambas tratem do mesmo tema geral, as proposições específicas abordadas são diferentes.\"\n}",
+        "reasoning_content": "The user wants to classify the relationship between two manifestations by the same actor in different parliamentary events.\nThe categories are:\n- STANCE_MAINTAINED: Same specific proposition, same stance.\n- STANCE_REVERSED: Same specific proposition, opposite stance.\n- INCOMPARABLE: Determinable stance, but not the same specific proposition.\n- RELATION_UNCERTAIN: Unclear determinability, comparability, or stance.\n- INSUFFICIENT_EVIDENCE: At least one manifestation lacks a determinable stance on any specific proposition.\n\nManifestation A:\nEvent: Public Hearing (2023-08-02)\nTheme: Increase in violence against women due to the dismantling of public policies and the rise of ultraconservatism.\nSpeech: The speaker discusses violence against women, the need for DEAMs, NEAMs, CEAMs, economic independence, Aluguel Social, MEI, Casa da Mulher Brasileira, Lei Maria da Penha, feminicide law, orphans of feminicide, etc.\nShe mentions: \"Então, eu sou favorável, por exemplo, ao projeto. Até vi que o Governo Federal, Denise, vai aprová-lo. Vai também apresentar, como o que nós já temos em Goiás, que é o Aluguel Social.\" (She is in favor of a project, specifically mentioning Aluguel Social).\nShe also talks about the need for DEAMs in all cities, Casa da Mulher Brasileira, etc.\n\nManifestation B:\nEvent: Public Hearing (2023-09-20)\nTheme: Discussion about the LDO 2024 and its implications for the fiscal deficit and policies for women.\nSpeech: The speaker talks about the government, social area, and questions the execution of the Ministry of Justice regarding patrols and Casa da Mulher Brasileira. She suggests passing the resource directly to the Ministry of Women. \"Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não passar esse recurso direto para a gerência do Ministério das Mulheres? É isso o que eu questiono. Eu não questiono que estejamos em todos os meandros da sociedade ou das políticas públicas. Estamos sim em todos os lugares. Agora, eu não concordo com essa parte que eu citei. Quanto é que vai sobrar?\"\n\nComparing A and B:\nManifestation A supports the construction of more Casas da Mulher Brasileira (\"E eu estou muito feliz que o Governo Federal vai construir mais 46. Elas são necessárias...\").\nManifestation B questions the execution of the Casa da Mulher Brasileira by the Ministry of Justice and suggests transferring the resources to the Ministry of Women. She says \"Eu não concordo com essa parte que eu citei\" (referring to the execution by the Ministry of Justice, or perhaps the current allocation/management).\n\nAre they responding to the same specific proposition?\nManifestation A is about the need for Casas da Mulher Brasileira and other protective policies (Aluguel Social, DEAMs, etc.) to combat violence against women. She supports the project for Aluguel Social and the construction of 46 new Casas da Mulher Brasileira.\nManifestation B is about the LDO 2024, specifically questioning the budget execution/management of the Casa da Mulher Brasileira and patrols by the Ministry of Justice, suggesting the funds should go to the Ministry of Women instead.\n\nThe specific proposition in A is \"construction of more Casas da Mulher Brasileira\" (favor).\nThe specific proposition in B is \"management/funding of Casa da Mulher Brasileira by Ministry of Justice vs Ministry of Women\" (against the current Ministry of Justice execution, in favor of Ministry of Women).\n\nThey both touch on \"Casa da Mulher Brasileira\", but the specific propositions are different. In A, it's about the need for more of them and supporting the government's project to build 46. In B, it's about the budget management/execution of the Casa da Mulher Brasileira in the LDO, specifically disagreeing with the Ministry of Justice handling it and suggesting the Ministry of Women should get the resources.\n\nSince the specific propositions are different (one is about the need for more units/supporting a project to build them, the other is about budget allocation/management between ministries in the LDO), they are INCOMPARABLE.\n\nLet's double check.\nManifestation A: \"E eu estou muito feliz que o Governo Federal vai construir mais 46. Elas são necessárias...\" -> Favorable to building more Casas da Mulher Brasileira.\nManifestation B: \"Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não passar esse recurso direto para a gerência do Ministério das Mulheres? ... Agora, eu não concordo com essa parte que eu citei.\" -> Unfavorable to the current execution/management of Casa da Mulher Brasileira by the Ministry of Justice.\n\nThe propositions are not the same. A is about the existence/expansion of the policy. B is about the budgetary/managerial allocation of the policy. Therefore, INCOMPARABLE.\n\nWait, could it be RELATION_UNCERTAIN? The propositions are clearly different. A is about expanding the network of protection (building more Casas, Aluguel Social, DEAMs). B is about the LDO and reallocating funds for Casas da Mulher Brasileira from MJ to MMulheres. They are related topics (Casa da Mulher Brasileira) but not the same specific proposition.\n\nTherefore, INCOMPARABLE.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2544,
+    "total_tokens": 3880,
+    "completion_tokens": 1336,
+    "estimated_cost": 0.0028988400038399997,
+    "prompt_tokens_details": {
+      "cached_tokens": 2048,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1204
+    }
+  }
+}

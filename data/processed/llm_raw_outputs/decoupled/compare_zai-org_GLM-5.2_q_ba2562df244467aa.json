@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R53OIWwBsWQcgxuYQlJZ8KmV",
+  "object": "chat.completion",
+  "created": 1790622688,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\"relation\":\"DIFFERENT\",\"reasoning\":\"As perguntas tratam de questões distintas: uma aborda o atendimento primário como solução para a retinopatia diabética e a outra a atualização do protocolo clínico do edema macular diabético no SUS.\"}",
+        "reasoning_content": "We need answer JSON. Need classify relation between two yes/no questions extracted from same actor speeches. Need judge only questions.\n\nQ1: \"O atendimento primário deve ser a solução para o problema do tratamento da retinopatia diabética no SUS?\" Central issue: primary care should be solution for problem of treatment of diabetic retinopathy in SUS.\n\nQ2: \"O protocolo clínico de tratamento do edema macular diabético no SUS deve ser atualizado?\" Central issue: clinical protocol for treatment of diabetic macular edema in SUS should be updated.\n\nNeed classify EQUIVALENT, OPPOSITE_POLARITY, DIFFERENT, UNCERTAIN.\n\nThey are related diabetic eye complications in SUS, but different objects: retinopathy treatment problem vs diabetic macular edema protocol update; primary care as solution vs updating clinical protocol. Different measures/instruments/object. Answer to one doesn't determine other. So DIFFERENT. Need JSON strict. Reasoning one sentence. Ensure no extra text.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 678,
+    "completion_tokens": 274,
+    "estimated_cost": 0.00072045,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 209
+    }
+  }
+}

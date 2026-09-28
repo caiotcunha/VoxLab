@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rxl33HxCeGUZCKshxIyu7Srr",
+  "object": "chat.completion",
+  "created": 1790632313,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas perguntas são idênticas, perguntando se o Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos, com a mesma polaridade.\"\n}\n```",
+        "reasoning_content": "The two questions are identical. They ask the same thing: whether Brazil should ratify the Inter-American Convention on the Protection of the Human Rights of Older Persons. Same polarity, same object, same scope.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 524,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00031623000047999996,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 41
+    }
+  }
+}

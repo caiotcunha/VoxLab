@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REZzf50RhBG7sc8ukB1QUocd",
+  "object": "chat.completion",
+  "created": 1790622723,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se posicionam contra a obrigatoriedade da vacinação contra Covid-19 em crianças, sendo a Manifestação A contrária à imposição governamental e a Manifestação B explicitando que 'O que nós somos contra é quanto a obrigatoriedade'.\"\n}\n```",
+        "reasoning_content": "The user wants to classify the relationship between two manifestations from the same actor in different parliamentary events.\nI need to output a strict JSON with \"relation\" and \"reasoning\".\n\nCategories:\n- STANCE_MAINTAINED: same specific proposition, same stance.\n- STANCE_REVERSED: same specific proposition, opposite stance.\n- INCOMPARABLE: determinable positions, but not the same specific proposition.\n- RELATION_UNCERTAIN: unclear steps.\n- INSUFFICIENT_EVIDENCE: at least one manifestation lacks determinable position on any specific proposition.\n\nManifestation A:\n- Event: PUBLIC_HEARING\n- Date: 2023-11-08\n- Theme: Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\n- Stance: AGAINST the mandatory COVID-19 vaccination for children. \"Eu vou me opor a isso... Nós não queremos um Governo que seja tirânico, que queira usar de tirania para cima das famílias... O que nós somos contra é quanto a obrigatoriedade.\" (Wait, the last quote is from B, but A says \"Eu vou me opor a isso... enquanto eu tiver forças para lutar...\"). A is clearly AGAINST mandatory COVID-19 vaccination for children.\n\nManifestation B:\n- Event: MINISTER_APPEARANCE\n- Date: 2023-11-28\n- Theme: Debate sobre a vacinação de crianças contra Covid-19\n- Stance: AGAINST the mandatory COVID-19 vaccination for children. \"O que nós somos contra é quanto a obrigatoriedade.\" \"Não é possível que simplesmente se obrigue e ainda se punam pessoas que não vão ter a oportunidade de procurar um médico...\"\n\nProposition: Mandatory COVID-19 vaccination for children.\nStance A: AGAINST.\nStance B: AGAINST.\n\nRelation: STANCE_MAINTAINED.\n\nReasoning: Both manifestations address the mandatory COVID-19 vaccination for children and express opposition to it, with Manifestation A stating \"Eu vou me opor a isso\" and Manifestation B explicitly stating \"O que nós somos contra é quanto a obrigatoriedade.\"",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3235,
+    "total_tokens": 3771,
+    "completion_tokens": 536,
+    "estimated_cost": 0.0026380875005999997,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 455
+    }
+  }
+}

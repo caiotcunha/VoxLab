@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rqg0tBkNpgWfjfc5B9YblWHD",
+  "object": "chat.completion",
+  "created": 1790622381,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas são sobre a autorização de explação de petro na Margem Equatorial, com a mesma questão central.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 449,
+    "completion_tokens": 49,
+    "estimated_cost": 5.568e-05,
+    "prompt_tokens_details": null
+  }
+}

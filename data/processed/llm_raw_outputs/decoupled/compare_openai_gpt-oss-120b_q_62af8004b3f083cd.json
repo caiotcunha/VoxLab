@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNrcg9Z97eFTcuXMU4qYcG3D",
+  "object": "chat.completion",
+  "created": 1790632358,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: obrigatoriedade de comparecimento da Renova a audiências versus cassação dos direitos minerários das empresas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"A Renova deve ser obrigada a comparecer às audiências públicas sobre a reparação dos pescadores?\" Means: Should Renova be forced to attend public hearings about reparations for fishermen? So it's about whether a specific entity (Renova) must attend public hearings concerning reparations for fishermen.\n\nQuestion2: \"O direito minerário das empresas de mineração deve ser cassado?\" Means: Should the mining rights of mining companies be revoked/canceled? That's about revoking mining rights of mining companies.\n\nThese are different issues: one about attendance at hearings for reparations, the other about revoking mining rights. Not same question, not opposite polarity. So relation = DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 621,
+    "completion_tokens": 219,
+    "estimated_cost": 5.2104e-05,
+    "prompt_tokens_details": null
+  }
+}

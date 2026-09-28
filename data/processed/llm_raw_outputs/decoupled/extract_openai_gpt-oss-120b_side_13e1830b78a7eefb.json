@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZe8sJyVkeBh8KkfJJQsjzPu",
+  "object": "chat.completion",
+  "created": 1790623999,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is discussing the \"Saque-Aniversário\" (withdrawal) of FGTS, arguing it should not be ended, that ending it would be cruel, etc. So stance is against ending the Saque-Aniversário. The specific question: \"O saque-aniversário do FGTS deve ser mantido?\" (Should the Saque-Aniversário be kept?). The speaker says it's cruel to end it, so they are in favor of maintaining it. So stance = FAVOR (i.e., answer SIM to \"Should it be maintained?\").\n\nThus JSON:\n\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"stance\": \"FAVOR\"\n}\n\nCheck format: keys exactly. No extra spaces? It's fine.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1165,
+    "total_tokens": 1398,
+    "completion_tokens": 233,
+    "estimated_cost": 8.271500000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

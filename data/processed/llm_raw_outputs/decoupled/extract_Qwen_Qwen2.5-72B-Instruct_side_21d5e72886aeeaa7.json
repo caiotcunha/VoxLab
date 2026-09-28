@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjxQ8KFgZ0gy9jDTfb9mcNHw",
+  "object": "chat.completion",
+  "created": 1790622163,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O novo PAC deve incluir um aporte expressivo de recursos para a saúde?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5582,
+    "total_tokens": 5630,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00202872,
+    "prompt_tokens_details": null
+  }
+}

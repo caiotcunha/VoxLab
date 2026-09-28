@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxnYyfusIKVY6wv3FnRpvwNN",
+  "object": "chat.completion",
+  "created": 1790632896,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express a clear supportive stance toward distinct policy proposals, but they address different propositions, so they are comparable only in stance direction, not in subject.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from public hearings, but topics differ: Manifestation A is about support for PL 1673/21, policy for people with chronic pain, disability, etc. Manifestation B is about policy national care for elderly, retirement for caregiver mothers, etc. Both express support for policies (they are praising approvals). However, they are about different propositions. The categories: STANCE_MAINTAINED requires same specific proposition. Not same. STANCE_REVERSED also requires same proposition. Not same. INCOMPARABLE: positions determinable, but not same proposition. Yes, both have clear stance (support) but on different propositions. So relation = INCOMPARABLE.\n\nProvide reasoning: Both express favorable stance toward different policies, not same proposition.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1722,
+    "total_tokens": 1947,
+    "completion_tokens": 225,
+    "estimated_cost": 0.000101964,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rv7bbSEFCTm7Nff4LwWcXDJp",
+  "object": "chat.completion",
+  "created": 1790622262,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O desenvimento e a regulação dos mercados digitais são questões importantes para a economia, a inovação e a concidade do Brasil?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2011,
+    "total_tokens": 2071,
+    "completion_tokens": 60,
+    "estimated_cost": 0.00022030000000000002,
+    "prompt_tokens_details": null
+  }
+}

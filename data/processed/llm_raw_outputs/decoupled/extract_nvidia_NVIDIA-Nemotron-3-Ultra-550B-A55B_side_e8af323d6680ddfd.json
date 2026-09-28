@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlKFKZFKYz0I0okuCYguJ33n",
+  "object": "chat.completion",
+  "created": 1790624005,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo Nacional para Calamidades Públicas deve contar com fontes de recursos dedicadas à prevenção de desastres?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker is a parliamentarian (likely a deputy) speaking at a public hearing about disaster prevention and funding. They talk about need for resources, mention they authored a bill that was approved, which added funding sources to the National Fund for Public Calamities. They express support for that bill and for allocating resources for prevention. The question: does the speech present a position on a specific issue? Yes, they are in favor of allocating resources to the fund for disaster prevention, and they support the bill that added funding sources. So stance determinable = YES.\n\nTarget question: a neutral yes/no question about the specific issue. Could be: \"Should the National Fund for Public Calamities receive dedicated funding sources for disaster prevention?\" Or \"Should the bill that adds funding sources to the National Fund for Public Calamities be approved?\" But the bill already approved. The speaker expresses support for that measure. So question: \"Should the National Fund for Public Calamities have dedicated funding sources for disaster prevention?\" That's a yes/no.\n\nStance: The speaker is in favor (FAVOR). So answer: stance_determinable YES, target_question as above, stance FAVOR.\n\nMake sure JSON format exactly.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1339,
+    "total_tokens": 1660,
+    "completion_tokens": 321,
+    "estimated_cost": 0.0013757000000000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 263
+    }
+  }
+}

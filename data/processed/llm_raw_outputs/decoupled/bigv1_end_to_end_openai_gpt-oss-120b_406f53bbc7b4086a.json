@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqYhoIKR2fw3XXXqNHjEmuBz",
+  "object": "chat.completion",
+  "created": 1790632329,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements advocate for the rights, inclusion, and dignity of autistic people, supporting the same proposition of guaranteeing opportunities and respecting autistic individuals.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are about autism, inclusion, neurodiversity, rights. They seem to address same proposition? The proposition likely: support for rights and inclusion of autistic people. Both are favorable. Are they responding to same specific proposition? They are both in public hearings about autism rights. The specific proposition could be \"guarantee of opportunities and respect to autistic people\" vs \"cumprimento dos direitos das pessoas com autismo\". Both essentially same theme: support for inclusion. So they respond to same proposition (rights/inclusion) with same stance (favor). So STANCE_MAINTAINED.\n\nWe must ensure determinability: both express favorable stance toward inclusion and rights. Yes.\n\nThus output JSON with relation STANCE_MAINTAINED and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2218,
+    "total_tokens": 2438,
+    "completion_tokens": 220,
+    "estimated_cost": 0.000119466,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSCLqXoGExmyAO379cap7VcB",
+  "object": "chat.completion",
+  "created": 1790622351,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A política nacional de cuidados para idosos deve priorizar o cuidado como um trabalho valioso?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 874,
+    "total_tokens": 926,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00010404000000000001,
+    "prompt_tokens_details": null
+  }
+}

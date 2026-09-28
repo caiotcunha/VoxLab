@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdzxgJ1K7tS04Jx5ojmGVDC2",
+  "object": "chat.completion",
+  "created": 1790622351,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O movimento antivacina é uma boa prática?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2755,
+    "total_tokens": 2795,
+    "completion_tokens": 40,
+    "estimated_cost": 0.0002883,
+    "prompt_tokens_details": null
+  }
+}

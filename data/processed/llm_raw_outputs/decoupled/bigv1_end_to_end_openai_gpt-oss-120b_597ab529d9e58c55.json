@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAA4CMRMHuxeBz96smROhHbR",
+  "object": "chat.completion",
+  "created": 1790632385,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express supportive positions on health policies, but they address different specific propositions (e.g., immunoglobulin self‑sufficiency vs. broader PAC investments and other initiatives), so they are not comparable on the same issue.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (minister) but we must not use external knowledge. Determine if they respond to same specific proposition. Manifestation A: about autossuficiência in immunoglobulin production, emergency purchase of insulin, etc. It defends that purchases were authorized, that Brazil can be self-sufficient in immunoglobulin, investment in Hemobrás, etc. Stance: supportive of these measures (FAVOR). Manifestation B: about updates, includes many topics: law of Mais Médicos, PAC health investments, etc. Also mentions support for various policies, including expansion of primary care, PAC, etc. It also defends vaccine not political, combats misinformation, etc. Does it address same proposition? Not same specific proposition. Both talk about health investments, but not same specific proposition. So they are INCOMPARABLE (both have determinable stance but not same proposition). So relation = INCOMPARABLE.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5346,
+    "total_tokens": 5621,
+    "completion_tokens": 275,
+    "estimated_cost": 0.00024455200000000004,
+    "prompt_tokens_details": null
+  }
+}

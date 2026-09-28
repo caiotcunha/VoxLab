@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RS7tzrNqKwrGojiPLsi1SaLy",
+  "object": "chat.completion",
+  "created": 1790622368,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as perguntas tratam da necessidade de uma fonte de recursos específica para lidar com desastres ou calamidades, apenas com formulações ligeiramente diferentes.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 464,
+    "completion_tokens": 59,
+    "estimated_cost": 5.9380000000000004e-05,
+    "prompt_tokens_details": null
+  }
+}

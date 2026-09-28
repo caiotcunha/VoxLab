@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbP4tyZ8bcrXNBCgAYGtPXjO",
+  "object": "chat.completion",
+  "created": 1790624147,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se opõem à obrigatoriedade da vacinação de crianças contra a COVID‑19, defendendo a liberdade de escolha e questionando a imposição estatal; portanto, respondem à mesma proposição específica com a mesma direção de stance (AGAINST).\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are about mandatory vaccination of children against COVID-19. Both speakers oppose mandatory vaccination, argue for freedom, question data, mention safety concerns. Both are against mandatory vaccination. They are same proposition? Proposition: \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\" (A) and \"Debate sobre a vacinação de crianças contra Covid-19\" (B) but B specifically says \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" So both address mandatory vaccination of children. Same specific proposition? A is about a specific proposal to make it mandatory from 2024. B is a debate about vaccination of children, opposing mandatory. Likely same proposition (mandatory vaccination of children). Both stance: AGAINST mandatory. So STANCE_MAINTAINED.\n\nCheck if any nuance: A says \"Se acreditássemos que a vacina ... preservar a vida dos bebês, nós seríamos favoráveis. Nós não somos antivax... Mas nós não somos cegos... não queremos Governo tirânico... vou me opor a isso\". So against mandatory. B says \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" Also against mandatory. So same stance.\n\nThus relation = STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3150,
+    "total_tokens": 3538,
+    "completion_tokens": 388,
+    "estimated_cost": 0.0024286000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 307
+    }
+  }
+}

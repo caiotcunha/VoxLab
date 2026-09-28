@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYwjq3EyVpVjCCMcS5ivEZKh",
+  "object": "chat.completion",
+  "created": 1790632674,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Both ask about the same bill, but one asks if it should be rejected while the other asks if it should be approved, making them opposite polarities.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O projeto de lei que regula o trabalho dos motoristas de aplicativo deve ser rejeitado?\" => Should the bill be rejected? So a \"yes\" means reject, \"no\" means not reject (i.e., approve or keep).\n\nQuestion2: \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\" => Should the bill be approved? Yes means approve, no means not approve (i.e., reject).\n\nThese are opposite polarity: one asks about rejecting, the other about approving. Assuming same bill (both refer to the same project of law regulating rideshare drivers). The first is generic \"o projeto de lei que regula...\" second is specific \"Projeto de Lei Complementar nº 12, que regula...\". Likely same. So answering \"yes\" to one equals \"no\" to the other. So OPPOSITE_POLARITY.\n\nThus JSON with relation OPPOSITE_POLARITY and brief reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 410,
+    "total_tokens": 686,
+    "completion_tokens": 276,
+    "estimated_cost": 6.209e-05,
+    "prompt_tokens_details": null
+  }
+}

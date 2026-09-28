@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbwymNLPcLpORqC5xC3O6GBz",
+  "object": "chat.completion",
+  "created": 1790622240,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos: o ativismo judicial do STF e o modelo de renovação das concessões de distribuidoras de energia elétrica.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 463,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00016884,
+    "prompt_tokens_details": null
+  }
+}

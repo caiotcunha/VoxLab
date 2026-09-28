@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkdC1zCLQdA9LaX4rAfiUcUq",
+  "object": "chat.completion",
+  "created": 1790622356,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Lei do Bem deve ser votada sem ajustes?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3144,
+    "total_tokens": 3188,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00032848,
+    "prompt_tokens_details": null
+  }
+}

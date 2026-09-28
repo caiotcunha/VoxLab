@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSMEYP0YjzdwAts9PghJ77T6",
+  "object": "chat.completion",
+  "created": 1790622242,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da criação de um arcabouço legal e tributário para recuperação, enquanto a segunda questiona a participação do Ministério do Desenvolvimento Social na prevenção e auxílio, abordando aspectos diferentes do tema.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 425,
+    "total_tokens": 498,
+    "completion_tokens": 73,
+    "estimated_cost": 0.0001822,
+    "prompt_tokens_details": null
+  }
+}

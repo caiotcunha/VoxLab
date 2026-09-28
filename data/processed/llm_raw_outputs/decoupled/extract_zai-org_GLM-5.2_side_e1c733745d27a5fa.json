@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9tWVhv02RiySUNljRRL3n87",
+  "object": "chat.completion",
+  "created": 1790622569,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra a Covid-19 deve ser incentivada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is clearly arguing against the anti-vaccine movement and in favor of vaccination, including COVID-19 vaccination for children. They explicitly call the anti-vaccine stance \"criminoso\" and \"irresponsável,\" and advocate for recovering vaccine coverage levels. The target question should be about whether children should be vaccinated against COVID-19, or more broadly about vaccination. Given the event theme is \"Debate sobre a vacinação de crianças contra Covid-19,\" the central question is about vaccinating children against COVID-19.\n\nThe speaker is clearly in favor of vaccination. Let me formulate the target question neutrally.\n\n\"A vacinação de crianças contra Covid-19 deve ser incentivada/mantida?\" - something like that.\n\nLet me think about the best formulation. The speaker supports vaccination of children against COVID-19 and combats the anti-vaccine movement. So the question could be: \"A vacinação de crianças contra Covid-19 deve ser defendida/incentivada?\"\n\nActually, looking at the text more carefully, the speaker is defending vaccination broadly but specifically mentions \"a campanha que fazem aqui contra a vacina da COVID-19 para crianças.\" So the target question is about COVID-19 vaccination for children.\n\nLet me formulate: \"A vacinação de crianças contra a Covid-19 deve ser incentivada?\"\n\nThe speaker's answer is clearly YES (FAVOR).",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2555,
+    "total_tokens": 2885,
+    "completion_tokens": 330,
+    "estimated_cost": 0.0018555075007200001,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 282
+    }
+  }
+}

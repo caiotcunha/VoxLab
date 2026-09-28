@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfcLpWAk0FIkU1QsSnG60LCa",
+  "object": "chat.completion",
+  "created": 1790622317,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Plano Novo Viver sem Limite do Ministério dos Direitos Humanos e da Cidadania deve incluir iniciativas específicas para o transtorno do espectro autista?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2026,
+    "total_tokens": 2096,
+    "completion_tokens": 70,
+    "estimated_cost": 0.000225,
+    "prompt_tokens_details": null
+  }
+}

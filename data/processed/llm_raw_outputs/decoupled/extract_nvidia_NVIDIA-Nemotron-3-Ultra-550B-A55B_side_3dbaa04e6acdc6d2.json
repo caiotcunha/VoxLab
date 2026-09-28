@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZbyFskGeArtMQrcg0jmyaxf",
+  "object": "chat.completion",
+  "created": 1790624052,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo federal deve cassar o direito minerário das empresas responsáveis pelo desastre de Mariana?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is about mining disaster in Mariana, renegotiation with mining companies, need for government to revoke mining rights, etc. The speaker clearly opposes the mining companies, calls for revoking mining rights, criticizes judiciary, etc. So stance determinable = YES.\n\nTarget question: a neutral yes/no question about a specific issue. Could be: \"O governo federal deve cassar o direito minerário das empresas responsáveis pelo desastre de Mariana?\" That's a yes/no question. Or \"A repactuação com as mineradoras deve ser concluída?\" But speaker says it's a defeat not to conclude, but also wants revoking rights. The central issue: Should the government revoke mining rights of these companies? That is clear.\n\nStance: speaker favors revoking rights => FAVOR (i.e., answers YES to question \"Should the government revoke mining rights?\").\n\nThus JSON: stance_determinable YES, target_question \"O governo federal deve cassar o direito minerário das empresas responsáveis pelo desastre de Mariana?\" stance FAVOR.\n\nCheck rules: target_question must be neutral yes/no. Good.\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1539,
+    "total_tokens": 1844,
+    "completion_tokens": 305,
+    "estimated_cost": 0.0014405000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 255
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3RjgQzj8R78cPbAvSTtTB0j",
+  "object": "chat.completion",
+  "created": 1790622416,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (public hearing).\n    *   Task: Determine if the stance is clear (Determinability), formulate a neutral yes/no target question, and determine the speaker's stance (FAVOR/AGAINST).\n    *   Output: Strict JSON with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING\n    *   *Date:* 2023-11-08\n    *   *Theme:* Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024 (Mandatory Covid-19 vaccination for children aged 6 months to 5 years starting in 2024).\n    *   *Speaker's literal speech highlights:*\n        *   \"Projeto de lei impede vacinação obrigatória de crianças contra a COVID\" (Shows a news headline, implies support for this).\n        *   \"Se acreditássemos que a vacina contra COVID-19 iria preservar a vida dos bebês, nós seríamos favoráveis. Nós não somos antivax aqui, não.\" (Conditional support, but denies being anti-vax).\n        *   \"Existe uma elite globalista que quer, sim, forçar essa vacinação, inclusive em bebês, e o Brasil está sendo pioneiro nessa obrigação... Vai começar pelo Brasil, para depois obrigarem nos outros lugares também?\" (Opposes forced vaccination/mandatory vaccination).\n        *   \"Então, nós não queremos um Governo que seja tirânico, que queira usar de tirania para cima das famílias. Não! Nós queremos um Governo que... faça uma bela campanha e nos convença...\" (Opposes mandates, prefers persuasion).\n        *   \"a única coisa que eu não gostei foi a sua firmeza em dizer que vai ser imposta a vacina, porque eu vou me opor a isso, enquanto eu tiver forças para lutar e mandato...\" (Explicitly opposes the imposition/mandate of the vaccine).\n\n3.  **Evaluate Determinability:**\n    *   Does the speaker take a clear position on a specific issue? Yes. The speaker explicitly opposes the *mandatory* Covid-19 vaccination for children.\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   The core issue is the mandatory Covid-19 vaccination for children (6 months to 5 years).\n    *   Neutral yes/no question: \"A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\" (Should Covid-19 vaccination be mandatory for children aged 6 months to 5 years?)\n    *   `target_question`: \"A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\"\n\n5.  **Determine Stance:**\n    *   The speaker says: \"eu vou me opor a isso [imposição da vacina]\", \"nós não queremos um Governo que seja tirânico, que queira usar de tirania para cima das famílias\", \"Existe uma elite globalista que quer, sim, forçar essa vacinação... e o Brasil está sendo pioneiro nessa obrigação... Vai começar pelo Brasil, para depois obrigarem nos outros lugares também?\".\n    *   The speaker is clearly AGAINST the mandatory vaccination.\n    *   `stance`: \"AGAINST\"\n\n6.  **Format Output:**\n    *   Construct the JSON strictly as requested.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"A vacinação contra a Covid-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\",\n      \"stance\": \"AGAINST\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2058,
+    "total_tokens": 2950,
+    "completion_tokens": 892,
+    "estimated_cost": 0.0025875450007199997,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 840
+    }
+  }
+}

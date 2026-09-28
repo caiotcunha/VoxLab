@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R98qfyi0hedJxDicF0x5DvD7",
+  "object": "chat.completion",
+  "created": 1790622381,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam temas distintos, um sobre regulamentação de empréstimo consignado e o outro sobre liberdade de escolha de trabalho em cargos públicos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 420,
+    "total_tokens": 479,
+    "completion_tokens": 59,
+    "estimated_cost": 6.088000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

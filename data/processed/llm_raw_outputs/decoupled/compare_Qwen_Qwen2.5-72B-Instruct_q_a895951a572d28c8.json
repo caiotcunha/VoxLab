@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1abqDXQCjYCFXZpu37ebugB",
+  "object": "chat.completion",
+  "created": 1790622247,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata do bem-estar animal como parte da sustentabilidade, enquanto a segunda pergunta aborda sua relevância como pauta econômica e de Estado.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 387,
+    "total_tokens": 442,
+    "completion_tokens": 55,
+    "estimated_cost": 0.00016132,
+    "prompt_tokens_details": null
+  }
+}

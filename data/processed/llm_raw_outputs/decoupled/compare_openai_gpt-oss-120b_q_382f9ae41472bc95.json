@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXOmdl7ubdmK86GYcJVbi17u",
+  "object": "chat.completion",
+  "created": 1790632877,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de investimento em Hemobrás para imunoglobulina, a outra sobre a politicização da vacinação; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"O Brasil deve continuar investindo na Hemobrás para alcançar autossuficiência em imunoglobulina?\" Means: Should Brazil continue investing in Hemobrás to achieve self-sufficiency in immunoglobulin? It's about investment in a specific company for a specific goal.\n\nQuestion2: \"A vacinação deve ser objeto de disputa política?\" Means: Should vaccination be a subject of political dispute? That's about whether vaccination should be politicized.\n\nThese are different topics: one about investment in Hemobrás for immunoglobulin self-sufficiency; the other about politicization of vaccination. They are not same issue, not opposite polarity. So relation = DIFFERENT.\n\nReturn JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 610,
+    "completion_tokens": 212,
+    "estimated_cost": 5.076600000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

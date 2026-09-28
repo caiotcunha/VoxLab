@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUnDgI1kO5hrcWp9lLxGSRZb",
+  "object": "chat.completion",
+  "created": 1790622246,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: a primeira questiona a adoção de uma tecnologia específica no serviço público, enquanto a segunda aborda a proteção de dados pessoais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 383,
+    "total_tokens": 439,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00016028,
+    "prompt_tokens_details": null
+  }
+}

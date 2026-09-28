@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTOrATqPZg2rBjLaVh8wKHnr",
+  "object": "chat.completion",
+  "created": 1790624041,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A sociedade deve garantir plena inclusão, acessibilidade e respeito aos direitos das pessoas autistas?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is a personal testimony about autism, inclusion, rights, against ableism, advocating for inclusion and support. It seems to express a stance: that autistic people should be included, not seen as burden, and that support enables them. The question: what specific issue? Could be \"Should autistic people be guaranteed full inclusion and rights?\" That's a yes/no question. The speaker is in favor. So stance_determinable = YES. target_question: \"Should autistic people be guaranteed full inclusion and rights in society?\" Or \"Should society provide support and accessibility to autistic people to ensure their full citizenship?\" That's a yes/no. The speaker says yes. So stance = FAVOR.\n\nWe must output JSON with those keys. Ensure target_question is neutral yes/no question. Provide stance FAVOR.\n\nLet's craft.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1058,
+    "total_tokens": 1295,
+    "completion_tokens": 237,
+    "estimated_cost": 0.0010504,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 188
+    }
+  }
+}

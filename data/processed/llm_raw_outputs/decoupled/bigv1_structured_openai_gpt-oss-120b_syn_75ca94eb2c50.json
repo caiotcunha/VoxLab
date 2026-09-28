@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RR1THrCFN4EsTrljm6sC2UQl",
+  "object": "chat.completion",
+  "created": 1790633077,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Animal welfare is an essential component of sustainability\",\n  \"target_proposition_b\": \"Prioritizing animal welfare in food production threatens food security\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific claim) and stance.\n\nManifestation A: The speaker talks about importance of animal welfare, link to sustainability, mentions UN Nexus resolution, says \"O bem-estar animal é, sim, um componente essencial da sustentabilidade.\" Also says \"práticas de produção que violam os direitos animais têm impactos negativos...\". The overall stance seems to favor recognizing animal welfare as essential to sustainability, and likely favor policies that protect animal rights. But we need a specific proposition. Could be: \"Animal welfare should be considered an essential component of sustainability and environmental policy.\" That's a proposition. The speaker affirms it. So stance = FAVOR. Determinable? Yes, clear.\n\nTarget proposition phrase short neutral: \"Animal welfare is an essential component of sustainability.\"\n\nManifestation B: The speaker thanks, discusses well-being animal, mentions economic impacts, says \"O bem-estar animal já não é de hoje que não é mais só uma pauta de quem ama os animais...\". She also says \"É um equívoco perigoso achar que bem-estar animal dialoga com a fome! Se priorizarmos excessivamente a produção de alimentos seguindo o requisito de bem-estar animal, colocaremos em xeque, inclusive, a capacidade de alimentar as pessoas.\" This is a stance against prioritizing animal welfare over food production? She says it's dangerous to think animal welfare dialogues with hunger; if we prioritize animal welfare, we risk food security. So she opposes excessive animal welfare requirements that could harm food supply. However earlier she supports the Nexus resolution and says it's important. The specific proposition could be: \"Prioritizing animal welfare in food production threatens food security and should be avoided.\" She says that's a dangerous misconception, implying she rejects that view? Actually she says \"é um equívoco perigoso achar que bem-estar animal dialoga com a fome! Se priorizarmos excessivamente...\". She is stating that the idea that animal welfare helps hunger is wrong. So the proposition she rejects is \"Prioritizing animal welfare improves food security.\" She opposes that claim. So stance = AGAINST. Determinable? Yes.\n\nTarget proposition short: \"Prioritizing animal welfare in food production threatens food security.\"\n\nNow comparability: Are the propositions same? A says animal welfare is essential component of sustainability (positive). B says prioritizing animal welfare threatens food security (negative). They are about animal welfare but different aspects; not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: YES for both. target strings as above. same_proposition \"NO\". stance_a \"FAVOR\". stance_b \"AGAINST\".\n\nReturn JSON only.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2751,
+    "total_tokens": 3429,
+    "completion_tokens": 678,
+    "estimated_cost": 0.000217047,
+    "prompt_tokens_details": null
+  }
+}

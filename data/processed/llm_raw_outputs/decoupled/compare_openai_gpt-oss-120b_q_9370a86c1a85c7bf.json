@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbsZkkfh0GzYXzl8fNbliqL4",
+  "object": "chat.completion",
+  "created": 1790624094,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas perguntas são idênticas, mantendo a mesma formulação e polaridade.\"\n}",
+        "reasoning_content": "We have two questions: both are identical: \"O saque-aniversário do FGTS deve ser mantido?\" So they are the same question, same polarity. So relation = EQUIVALENT. Provide reasoning: identical wording.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 486,
+    "completion_tokens": 92,
+    "estimated_cost": 3.0217999999999998e-05,
+    "prompt_tokens_details": null
+  }
+}

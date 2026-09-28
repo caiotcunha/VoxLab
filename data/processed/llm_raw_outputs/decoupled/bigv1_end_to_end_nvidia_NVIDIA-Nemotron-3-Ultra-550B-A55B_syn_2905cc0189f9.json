@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDGyzl9Do6BLkl1j7H26nN74",
+  "object": "chat.completion",
+  "created": 1790624135,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam oposição à extinção do saque‑aniversário do FGTS, defendendo sua manutenção (e, na segunda, a criação de uma nova opção de crédito consignado como complemento, não como substituição).\"\n}",
+        "reasoning_content": "We need to compare two statements. Both discuss the same topic: substitution of saque-aniversário FGTS with new consigned credit. Both are from same actor (blinded). Need to see stance: Are they both FAVOR or AGAINST the substitution? Let's parse.\n\nManifestação A: The speaker argues against ending saque-aniversário, says it's cruel, defends it, cites benefits, says fund increased, opposes removal. So stance: AGAINST ending saque-aniversário (i.e., against substitution). So stance = AGAINST the proposal to replace.\n\nManifestação B: The speaker says \"A ideia do Governo — e parabenizo o Governo em relação a isso, e olha que eu sou Oposição — é a criação de um novo crédito do consignado do setor privado. Eu acho que essa é uma saída, mas não é, como o Presidente do grupo do Zetta falou, excludente. Você tem que dar as opções, botar na prateleira do trabalhador e deixar o trabalhador decidir... Acho que precisamos aprimorar o crédito consignado privado, mas acabar neste momento seria uma solução muito cruel para os trabalhadores. Eu sei que não é esse o objetivo do Governo. Quero dizer para o Governo que estou aqui à disposição para que possamos aprimorar esse projeto, mas que não conte comigo para finalizá-lo, para acabar com ele.\"\n\nSo they support the new consigned credit as an option, but oppose ending saque-aniversário now. They say they will not support finalizing (ending) it. So stance regarding substitution (ending saque-aniversário) is also AGAINST ending it. They favor having both options. So both are against ending saque-aniversário. Both respond to same specific proposition? The proposition: \"substituição do saque-aniversário do FGTS por uma nova modalidade de crédito consignado\" (replace saque-aniversário with new consigned credit). In A, they argue against replacement. In B, they argue against ending it now, but support new credit as additional option, not replacement. The proposition is replacement (i.e., ending saque-aniversário). Both are against that. So stance maintained.\n\nBut need to check if they respond to same specific proposition. Both events discuss same theme: substitution of saque-aniversário by consigned credit. So yes same proposition.\n\nThus relation = STANCE_MAINTAINED.\n\nReasoning: Both manifest opposition to ending saque-aniversário, supporting its continuation while acknowledging possible new credit as complement.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2578,
+    "total_tokens": 3204,
+    "completion_tokens": 626,
+    "estimated_cost": 0.0026662,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 548
+    }
+  }
+}

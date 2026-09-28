@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rwgop5oBw6woozYNS40UX0gq",
+  "object": "chat.completion",
+  "created": 1790624022,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O saque-aniversário do FGTS deve ser substituído por empréstimo consignado com juros mais baixos?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The theme: \"Substituição do saque-aniversário do FGTS por empréstimo consignado com juros mais baixos\" (Replacement of FGTS birthday withdrawal with lower-interest payroll loan). The speaker says: \"A ideia do Governo — e parabenizo o Governo em relação a isso, e olha que eu sou Oposição — é a criação de um novo crédito do consignado do setor privado. Eu acho que essa é uma saída, mas não é, como o Presidente do grupo do Zetta falou, excludente. Você tem que dar as opções, botar na prateleira do trabalhador e deixar o trabalhador decidir... Acho que precisamos aprimorar o crédito consignado privado, mas acabar neste momento seria uma solução muito cruel para os trabalhadores. Eu sei que não é esse o objetivo do Governo. Quero dizer para o Governo que estou aqui à disposição para que possamos aprimorar esse projeto, mas que não conte comigo para finalizá-lo, para acabar com ele.\"\n\nThus he opposes ending the saque-aniversário (i.e., opposes replacement). He supports keeping it, maybe with improvements, and supports adding consigned credit as option but not replacing. So stance: against replacing saque-aniversário with consigned loan (i.e., against the proposal to substitute). The target question: \"O saque-aniversário do FGTS deve ser substituído por empréstimo consignado com juros mais baixos?\" Or \"O governo deve acabar com o saque-aniversário do FGTS?\" He says not count on him to end it. So answer: AGAINST (i.e., he says NO to replacement). So stance_determinable = YES. target_question neutral yes/no. stance = AGAINST.\n\nWe must output JSON with keys exactly. Provide target_question string. stance \"AGAINST\". Ensure no extra text.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1804,
+    "total_tokens": 2281,
+    "completion_tokens": 477,
+    "estimated_cost": 0.0019514,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 421
+    }
+  }
+}

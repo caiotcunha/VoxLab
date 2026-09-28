@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrTzlaEMdWkLTLQdlxuhA1t9",
+  "object": "chat.completion",
+  "created": 1790624175,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata da ratificação da convenção, a outra da aprovação como emenda constitucional, envolvendo procedimentos distintos.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" Means: Should the ratification of the Inter-American Convention on the Protection of Human Rights of the Elderly be approved? So it's about ratifying a convention.\n\nQuestion2: \"A Convenção dos Direitos da Pessoa Idosa deve ser aprovada como emenda constitucional?\" Means: Should the Convention on the Rights of the Elderly be approved as a constitutional amendment? So it's about approving the convention as a constitutional amendment.\n\nAre they the same issue? Both refer to a convention concerning rights of elderly. But the first asks about ratification (presumably by the state, maybe legislative approval). The second asks about approving it as a constitutional amendment (i.e., incorporating it into constitution). That's a different legal instrument: ratification vs constitutional amendment. The question is whether they are the same issue? The core is whether to adopt the convention, but the method differs. The second is more specific: as constitutional amendment. The first is about ratification (which could be done via law, not necessarily constitutional amendment). So they are different questions because answer to one does not determine answer to the other. For example, you could ratify the convention without constitutional amendment, or you could adopt it as amendment but not ratify? Actually ratification is the act of formally confirming a treaty; constitutional amendment is a different process. So they are different.\n\nThus relation = DIFFERENT.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 772,
+    "completion_tokens": 363,
+    "estimated_cost": 7.6843e-05,
+    "prompt_tokens_details": null
+  }
+}

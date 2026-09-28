@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R69hiqetfgzOgh9HrYWUeiyg",
+  "object": "chat.completion",
+  "created": 1790632279,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da derrubada de um veto específico a um projeto de lei, enquanto a segunda questiona a necessidade de previsão orçamentária permanente para um fundo de calamidade, sendo questões distintas.\"\n}",
+        "reasoning_content": "We need to compare two yes/no questions.\n\nQuestion1: \"O Veto nº 28 ao PL 920/2023 deve ser derrubado?\" => Should Veto 28 to PL 920/2023 be overturned? This is about a specific veto on a specific bill.\n\nQuestion2: \"O governo federal deve garantir previsão orçamentária permanente para o Fundo de Calamidade Pública e para ações de prevenção de desastres, em vez de depender exclusivamente de medidas provisórias?\" => Should the federal government guarantee permanent budgetary provision for the Public Calamity Fund and disaster prevention actions, instead of relying exclusively on provisional measures?\n\nThese are different issues. One is about a veto on a bill; the other about budgetary guarantee for a fund. Not same question. So relation = DIFFERENT.\n\nProvide JSON with relation and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 429,
+    "total_tokens": 686,
+    "completion_tokens": 257,
+    "estimated_cost": 0.0007799,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 192
+    }
+  }
+}

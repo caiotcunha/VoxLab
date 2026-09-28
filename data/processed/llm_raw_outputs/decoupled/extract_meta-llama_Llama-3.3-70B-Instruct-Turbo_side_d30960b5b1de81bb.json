@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSmr23RzbFoINsO7zzjZjgU4",
+  "object": "chat.completion",
+  "created": 1790622294,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação obrigatória de crianças contra a COVID-19 deve ser implementada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1786,
+    "total_tokens": 1833,
+    "completion_tokens": 47,
+    "estimated_cost": 0.00019364,
+    "prompt_tokens_details": null
+  }
+}

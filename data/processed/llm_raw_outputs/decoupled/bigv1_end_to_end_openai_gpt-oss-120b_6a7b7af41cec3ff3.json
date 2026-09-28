@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RycWDrfARuBMh75s5U8Zr6P6",
+  "object": "chat.completion",
+  "created": 1790632348,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express clear positions, but they address different propositions (loan regulation vs teachers holding two public jobs), so they are not comparable.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe have Manifestation A: about regulation of loan consignado for public servants. The speaker (relator) describes risks, says \"urge a necessidade ... apreciar atentamente\". He seems to be against the current practice, advocating regulation. The stance: likely AGAINST the current loan practice, favoring stricter regulation. So stance: AGAINST the status quo, favor regulation.\n\nManifestation B: about possibility of teachers having two public jobs. The speaker supports the PEC that allows freedom for teachers to hold two positions, says \"liberdade de escolha\". He is in favor of allowing multiple jobs. So stance: FAVOR the proposition that teachers can hold two public positions.\n\nAre they responding to same proposition? No. Different topics: loan regulation vs teacher dual employment. So they are not comparable. Both have determinable stance, but not same proposition. So category: INCOMPARABLE.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1779,
+    "total_tokens": 2024,
+    "completion_tokens": 245,
+    "estimated_cost": 0.00010747300000000002,
+    "prompt_tokens_details": null
+  }
+}

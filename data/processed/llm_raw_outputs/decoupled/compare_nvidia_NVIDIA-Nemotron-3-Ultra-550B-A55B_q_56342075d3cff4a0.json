@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rm0PFRWtcr0AnY0JNsnaHumc",
+  "object": "chat.completion",
+  "created": 1790624148,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da antecipação do 13º salário para aposentados em áreas de desastre, enquanto a segunda aborda o incentivo à atuação do Ministério do Desenvolvimento Social em prevenção e auxílio a desastres; são temas distintos.\"\n}",
+        "reasoning_content": "We need to classify relation between two yes/no questions.\n\nQuestion1: \"O 13º salário de aposentados e beneficiários deve ser antecipado em áreas atingidas por desastres?\" => about advancing 13th salary for retirees/beneficiaries in disaster-hit areas.\n\nQuestion2: \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres deve ser incentivada?\" => about encouraging Ministry of Social Development participation in disaster prevention and aid.\n\nThese are different issues: one about a specific benefit (13th salary) for a specific group in disaster areas; the other about ministry involvement in disaster actions. Not same question, not opposite. So DIFFERENT.\n\nProvide JSON with relation DIFFERENT and brief reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 666,
+    "completion_tokens": 249,
+    "estimated_cost": 0.0007563,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 170
+    }
+  }
+}

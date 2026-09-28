@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUlAkPNzFaFbE6HtaaNZmWdT",
+  "object": "chat.completion",
+  "created": 1790624084,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata do aumento do orçamento do programa de combate à tuberculose, enquanto a segunda propõe adotar o Amazonas como estado-piloto para erradicação até 2030; são medidas distintas.\"\n}",
+        "reasoning_content": "We need to classify relation between two yes/no questions.\n\nQ1: \"O orçamento do programa de combate à tuberculose deve ser aumentado?\" (Should the budget of the TB combat program be increased?)\n\nQ2: \"O Brasil deve adotar o Amazonas como estado-piloto para a erradicação da tuberculose até 2030?\" (Should Brazil adopt Amazonas as pilot state for TB eradication by 2030?)\n\nThese are different issues: one about budget increase, other about pilot state for eradication. They are not same question, not opposite polarity. So DIFFERENT.\n\nReasoning: they address different policy measures. Provide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 608,
+    "completion_tokens": 204,
+    "estimated_cost": 0.0006508,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 137
+    }
+  }
+}

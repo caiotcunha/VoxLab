@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxKoXDfWAobWGvoCGstNOPwR",
+  "object": "chat.completion",
+  "created": 1790622394,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos, uma sobre veto a um projeto de lei e outra sobre previsão orçamentária para desastres naturais.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 457,
+    "completion_tokens": 53,
+    "estimated_cost": 5.736e-05,
+    "prompt_tokens_details": null
+  }
+}

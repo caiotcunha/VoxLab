@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJMLtsXsxibCXJCAfFTPF204",
+  "object": "chat.completion",
+  "created": 1790622337,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O IBAMA deve autorizar a explação de petro na Margem Equatorial?\",\n  \"stance\": \"NO\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4575,
+    "total_tokens": 4619,
+    "completion_tokens": 44,
+    "estimated_cost": 0.00047158000000000004,
+    "prompt_tokens_details": null
+  }
+}

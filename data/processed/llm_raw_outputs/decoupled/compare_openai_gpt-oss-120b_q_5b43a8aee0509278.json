@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZdKJNZ5wB4ZOCUYVDwsmVnX",
+  "object": "chat.completion",
+  "created": 1790624125,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma pergunta trata de ampliar o orçamento nacional, a outra de concentrar um projeto-piloto apenas no Amazonas; são questões distintas.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O orçamento do programa de combate à tuberculose no Brasil deve ser ampliado?\" => Should the budget of the TB control program in Brazil be increased?\n\nQuestion2: \"O projeto-piloto de erradicação da tuberculose deve ser concentrado apenas no Amazonas?\" => Should the pilot project for TB eradication be concentrated only in Amazonas?\n\nThese are different issues: one about budget increase nationwide, the other about geographic concentration of a pilot project. Not opposite polarity; they are different questions. So relation = DIFFERENT.\n\nProvide JSON with reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 588,
+    "completion_tokens": 182,
+    "estimated_cost": 4.5962e-05,
+    "prompt_tokens_details": null
+  }
+}

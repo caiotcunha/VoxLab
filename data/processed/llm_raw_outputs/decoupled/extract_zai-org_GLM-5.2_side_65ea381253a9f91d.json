@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ryue4Uhw10FyoJJFOfAIAuMc",
+  "object": "chat.completion",
+  "created": 1790622597,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Devem ser alocados recursos financeiros específicos para a prevenção de desastres e retirada de famílias de áreas de risco?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Task: Analyze a literal manifestation from a parliamentary event.\n    *   Input: A blinded text of a speech from a public hearing about natural disaster prevention.\n    *   Output: JSON with `stance_determinable`, `target_question`, and `stance`.\n    *   Rules: No external knowledge, reported speech is not the speaker's stance, genuine questions = NO, strict JSON format.\n\n2.  **Analyze the Text:**\n    *   *Context:* Public hearing on natural disaster prevention and aid.\n    *   *Content:*\n        *   Thanks Deputy Leo Prates, mentions working on a report for disaster prevention framework.\n        *   Notes that the agenda is usually discussed *after* disasters happen (pronta resposta).\n        *   Mentions discussions started under Arthur Lira and Leo Prates.\n        *   \"O País necessita de recursos financeiros, precisa organizar fontes de recursos específicas para a retirada de famílias de áreas de risco.\" (The country needs financial resources, needs to organize specific resource sources to remove families from risk areas.)\n        *   Complains that MPs only arrive after disasters.\n        *   Intention: take resources to states to guarantee safety and removal of families from risk areas.\n        *   Mentions Ministry of Cities and Ministry of Integration have this agenda and budget.\n        *   Purpose of the hearing: to know what the Ministry is doing, what projects exist.\n        *   Mentions PAC investments, but Commission needs to know to see what work needs to be done to allocate *more resources* for removing families from risk areas.\n        *   Mentions being author of a PL (approved and sanctioned) to put resource sources in the National Fund for Public Calamities.\n        *   Mentions altering the Betting Law to put 50% of unclaimed bets into the Calamity Fund.\n        *   Concludes that the fund now has 3 sources, allowing the Ministry to regulate and have resources for pronta resposta and advancing the removal of families from risk areas.\n        *   Passes the word to the expositor (Vera Campelo).\n\n3.  **Determine Stance Determinability:**\n    *   Does the speaker take a clear position on a specific issue?\n    *   Yes. The speaker strongly advocates for allocating specific financial resources to remove families from risk areas and fund disaster prevention (rather than just responding after the fact). They also explicitly support allocating more resources for this purpose (\"ver qual o trabalho que precisa ser feito nesta Casa, para alocar mais recursos para a retirada de famílias de áreas de risco\").\n    *   So, `stance_determinable` = \"YES\".\n\n4.  **Formulate Target Question:**\n    *   What is the central specific question the manifestation answers?\n    *   The core issue is the allocation of specific financial resources for disaster prevention, specifically for removing families from risk areas.\n    *   Draft 1: \"Devem ser alocados recursos financeiros específicos para a retirada de famílias de áreas de risco e prevenção de desastres?\"\n    *   Draft 2: \"O país deve organizar fontes de recursos específicas para a prevenção de desastres e retirada de famílias de áreas de risco?\"\n    *   Let's refine to a clear yes/no question: \"Devem ser alocados recursos financeiros específicos para a prevenção de desastres e retirada de famílias de áreas de risco?\" -> Yes.\n\n5.  **Determine Stance:**\n    *   The speaker's answer to the question is clearly YES (FAVOR). They explicitly state the country needs these resources, they authored a law to create them, and they want to allocate *more* resources.\n    *   `stance` = \"FAVOR\".\n\n6.  **Format Output:**\n    *   JSON strict.\n    *   Keys: `stance_determinable`, `target_question`, `stance`.\n\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"Devem ser alocados recursos financeiros específicos para a prevenção de desastres e retirada de famílias de áreas de risco?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1385,
+    "total_tokens": 2348,
+    "completion_tokens": 963,
+    "estimated_cost": 0.0022489425010799994,
+    "prompt_tokens_details": {
+      "cached_tokens": 576,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 903
+    }
+  }
+}

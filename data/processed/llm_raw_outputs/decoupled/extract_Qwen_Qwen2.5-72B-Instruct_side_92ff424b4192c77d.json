@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RniImlT7o4a03iOpnziiJ6mf",
+  "object": "chat.completion",
+  "created": 1790622147,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Câmara dos Deputados deve avançar na regulamentação dos mercados digitais para fomentar a inovação, o crescimento econômico e a proteção dos direitos dos consumidores e empreendedores?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 838,
+    "total_tokens": 920,
+    "completion_tokens": 82,
+    "estimated_cost": 0.00033448,
+    "prompt_tokens_details": null
+  }
+}

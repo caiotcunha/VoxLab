@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RW1QLxHDfDXJYTdQCMg7n2iB",
+  "object": "chat.completion",
+  "created": 1790622172,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O bem-estar animal deve ser considerado essencial para a sustentabilidade?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1196,
+    "total_tokens": 1244,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00044976,
+    "prompt_tokens_details": null
+  }
+}

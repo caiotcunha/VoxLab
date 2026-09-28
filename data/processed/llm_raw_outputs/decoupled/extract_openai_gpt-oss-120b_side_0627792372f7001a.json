@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5eQcTgcnBZf1bLrenDkLwWG",
+  "object": "chat.completion",
+  "created": 1790624049,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Should Brazil adopt stronger animal welfare standards?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue, and if so, formulate a neutral yes/no question and indicate stance.\n\nThe speech is a long statement praising Deputy Bruno Ganem, discussing importance of animal welfare, its economic impact, need for internal debate, need to prepare sector, need for studies, etc. It seems to support advancing animal welfare policies, integration with trade, etc. Does it take a stance on a specific question? Possibly: \"Should Brazil prioritize animal welfare in trade negotiations (e.g., EU-Mercosur)?\" Or \"Should the government adopt measures to improve animal welfare?\" The speech is supportive of animal welfare, calls for more debate, says it's important, etc. So stance is FAVOR.\n\nWe need a specific question central to the statement. Could be: \"Should Brazil strengthen animal welfare regulations?\" Or \"Should animal welfare be integrated into Brazil's trade agreements?\" The speech mentions that clauses on animal welfare are hindering the EU-Mercosur treaty, and that this is a prejudice for agribusiness, implying they want to avoid barriers, but also they want to prepare sector. The core is that animal welfare is important and should be addressed. So a neutral question: \"Should Brazil adopt stronger animal welfare standards?\" That is yes/no.\n\nThus stance_determinable = YES, target_question = \"Should Brazil adopt stronger animal welfare standards?\" stance = FAVOR.\n\nCheck if any nuance: The speech is praising and advocating for animal welfare, so yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1963,
+    "total_tokens": 2312,
+    "completion_tokens": 349,
+    "estimated_cost": 0.000131961,
+    "prompt_tokens_details": null
+  }
+}

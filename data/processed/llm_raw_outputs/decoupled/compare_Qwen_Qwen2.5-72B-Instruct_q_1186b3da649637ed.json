@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RY5mYIpD6cjEHluUzZIP9ZkU",
+  "object": "chat.completion",
+  "created": 1790622246,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de diferentes aspectos da política de saúde, uma sobre autossuficiência em imunoglobulina e outra sobre aporte de recursos no PAC.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 443,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00016164,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKNMVHCFjdxhUGR4wdu8AKJd",
+  "object": "chat.completion",
+  "created": 1790624067,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The issue is the ratification of the Inter-American Convention on the Protection of Human Rights of Older Persons. The speaker says: \"Enfim, há todo esse movimento com o propósito de que essa ratificação seja repensada com mais cautela.\" Also earlier: \"não precisamos desse apoio adicional... não precisamos da aprovação de outro... quando temos aprovação com esse status, criamos camada desnecessária de burocracia... não precisamos desse apoio adicional... não precisamos da ratificação da convenção.\" So the stance is against ratification (or at least against the need for ratification). The question: \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" The speaker is against. So stance_determinable = YES, target_question = \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" stance = AGAINST (since they argue not needed, should be reconsidered, not needed). Ensure neutral phrasing. Provide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2600,
+    "total_tokens": 2887,
+    "completion_tokens": 287,
+    "estimated_cost": 0.00014499,
+    "prompt_tokens_details": null
+  }
+}

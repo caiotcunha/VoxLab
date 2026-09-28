@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgYDPXywtE57SiZOL3Aqjg2F",
+  "object": "chat.completion",
+  "created": 1790632429,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"People with chronic pain should be included in biopsychosocial diagnosis and receive multidisciplinary care and labor protections.\",\n  \"target_proposition_b\": \"Caregiving should be recognized as work and supported by public policy, such as retirement rights for caregiver mothers.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two statements.\n\nFirst, determine stance_determinable for each: does the speech contain a clear position on a specific proposition? Need to identify target proposition.\n\nManifestation A: The speaker is closing a public hearing about PL 1673/21 instituting National Policy of Functional Health. They talk about advancing policy for lupus, fibromyalgia, chronic fatigue, inclusion of chronic pain in biopsychosocial diagnosis, need for multidisciplinary care, labor policies for chronic pain, etc. They are expressing support for these policies, advocating for inclusion of chronic pain in diagnosis, for labor policies, etc. So they have a stance: they favor inclusion of chronic pain in biopsychosocial diagnosis and labor policies. That's a specific proposition: \"People with chronic pain should have access to biopsychosocial diagnosis and care, and labor policies should accommodate them.\" The speaker clearly favors that. So stance_determinable_a = YES. target_proposition_a: a neutral phrase summarizing that proposition. Eg \"People with chronic pain should be included in biopsychosocial diagnosis and receive multidisciplinary care and labor protections.\" stance_a = FAVOR.\n\nManifestation B: The speaker comments on a recently approved project in the Social Security Commission guaranteeing retirement rights for caregiver mothers at 62, recognizing caregiving as work. They say \"caring is work\", \"governors must care\", mention Lula's quote, mention market can optimize care. They are expressing support for recognizing caregiving as work and for care policies. They seem to favor the proposition that caregiving should be recognized as work and supported by policy. So stance_determinable_b = YES. target_proposition_b: \"Caregiving should be recognized as work and supported by public policy (e.g., retirement rights for caregiver mothers).\" stance_b = FAVOR.\n\nNow comparability: Are the two propositions semantically equivalent? No. One about chronic pain inclusion in biopsychosocial diagnosis and labor policies; the other about caregiving recognized as work and retirement rights. Different topics. So same_proposition = NO.\n\nWe must output JSON with keys exactly as specified.\n\nCheck rules: stance_determinable values YES/NO/UNCERTAIN. target_proposition strings if stance_determinable YES else empty. same_proposition YES/NO/UNCERTAIN. stance values FAVOR/AGAINST/UNCERTAIN if determinable else empty.\n\nThus produce JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2143,
+    "total_tokens": 2765,
+    "completion_tokens": 622,
+    "estimated_cost": 0.0024399000000000005,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 507
+    }
+  }
+}

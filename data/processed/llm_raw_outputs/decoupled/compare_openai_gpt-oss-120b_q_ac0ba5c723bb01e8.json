@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpXqwna2fpgpWbopr4Jt4ZT1",
+  "object": "chat.completion",
+  "created": 1790624144,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da alocação geral de recursos, enquanto a segunda foca especificamente na manutenção de um fundo específico, sendo instrumentos diferentes.\"\n}",
+        "reasoning_content": "We need to determine relation between two questions.\n\nQuestion1: \"Deve o Brasil alocar recursos específicos para a prevenção de desastres naturais?\" Means: Should Brazil allocate specific resources for prevention of natural disasters?\n\nQuestion2: \"O Fundo de Calamidade Pública deve ser mantido como recurso específico e fixo para prevenção de desastres?\" Means: Should the Public Calamity Fund be kept as a specific and fixed resource for disaster prevention?\n\nBoth ask about allocating specific resources for disaster prevention. Q1 is about Brazil allocating resources; Q2 is about maintaining a specific fund (Public Calamity Fund) as a specific and fixed resource for disaster prevention. They are similar but not exactly same: Q2 is about a particular instrument (the fund) being kept as a specific fixed resource. Q1 is about allocating resources (could be any mechanism). However they both address whether there should be a specific resource for disaster prevention. The answer to Q2 (yes/no) would likely align with Q1: if you think Brazil should allocate specific resources, you'd likely support maintaining the fund. But it's possible you could think Brazil should allocate resources but not via that fund, maybe via other means. So they are not strictly equivalent; they are about different mechanisms. The question: Are they \"different\" or \"uncertain\"? The relation classification: DIFFERENT if the issues are different (instrument, object, population). Here Q2 is about a specific fund; Q1 is about allocation of resources in general. So they are different issues, though related. The answer to one does not necessarily determine the answer to the other. So classification: DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 812,
+    "completion_tokens": 403,
+    "estimated_cost": 8.3643e-05,
+    "prompt_tokens_details": null
+  }
+}

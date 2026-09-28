@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBezm2xBjbNeEbtIAe0WtVf1",
+  "object": "chat.completion",
+  "created": 1790622354,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A prevenção e resposta a desastres e calamidades naturais devem ter uma previsão orçamentária fixa?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1159,
+    "total_tokens": 1216,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00013414,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXRyIwTLjyfYZ08ulYgRt7DL",
+  "object": "chat.completion",
+  "created": 1790624031,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Convenção dos Direitos da Pessoa Idosa deve ser aprovada como emenda constitucional?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue, and if so, formulate a neutral yes/no question and indicate stance.\n\nThe speech is long, praising advances, discussing many policies, but does it take a stance on a specific proposal? It mentions \"aprovação da convenção com status de emenda constitucional\" and \"a aprovação da convenção\". Also mentions \"pacto para avançarmos nessa perspectiva de facilitar o acesso, diminuir o tempo de fila\". Also \"acordo histórico\". The speaker seems supportive of many policies, praising them. The question could be: \"A aprovação da Convenção dos Direitos da Pessoa Idosa como emenda constitucional deve ser aprovada?\" The speaker says \"Estamos falando da aprovação da convenção com status de emenda constitucional, e nisso o Deputado Aliel tem sido um grande parceiro, trazendo várias possibilidades. Uma hora vamos conseguir.\" This indicates support. So stance = FAVOR.\n\nBut is there a clear position? Yes, they support the approval. So stance_determinable = YES.\n\nTarget question: \"A aprovação da Convenção dos Direitos da Pessoa Idosa como emenda constitucional deve ser aprovada?\" That's a bit redundant. Better: \"A Convenção dos Direitos da Pessoa Idosa deve ser aprovada como emenda constitucional?\" That's neutral.\n\nStance: SIM (FAVOR).\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4529,
+    "total_tokens": 4858,
+    "completion_tokens": 329,
+    "estimated_cost": 0.000223503,
+    "prompt_tokens_details": null
+  }
+}

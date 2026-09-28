@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7l6NHo7d9JG7aKWu8nihRa2",
+  "object": "chat.completion",
+  "created": 1790622281,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Fundo de Calamidade Pública deve ser mantido com recursos específicos e engessados para prevenção?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1177,
+    "total_tokens": 1230,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00013466000000000002,
+    "prompt_tokens_details": null
+  }
+}

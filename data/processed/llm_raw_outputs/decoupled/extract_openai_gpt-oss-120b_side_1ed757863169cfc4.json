@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rk2xF2n23adSWeQqPdFedpNw",
+  "object": "chat.completion",
+  "created": 1790624011,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is long, covering many points: need for DEAMs, NEANS/CEAMs in all cities, need for economic independence, support for \"Aluguel Social\" for victims, support for MEI for women entrepreneurs, support for specific legislation like feminicide law, etc. The question: we need to produce a target question (neutral yes/no) that captures the central issue the speaker is taking a stance on.\n\nThe speech seems to be advocating for policies to protect women, including expanding protection networks, economic independence, social housing, etc. The central stance could be: \"Deve ser ampliada a rede de proteção às mulheres, incluindo DEAMs, NEANS/CEAMs em todas as cidades brasileiras?\" That's a yes/no.\n\nAlternatively, \"O projeto de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" She says she is favorable to the project. So stance is YES.\n\nWe need to decide determinability: Yes, there is a clear position: she is in favor of expanding protection networks and specific policies. So stance_determinable = YES.\n\nNow target_question: Should the \"Aluguel Social\" program for victims of domestic violence be approved? That's a specific measure she mentions. Or \"Deve ser ampliada a rede de proteção às mulheres, com DEAMs e Núcleos Especializados em todas as cidades brasileiras?\" That is also specific.\n\nWhich is more central? She mentions many things, but the \"Aluguel Social\" is a concrete project she says she is favorable to. So we can choose that.\n\nThus target_question: \"O programa de Aluguel Social para vítimas de violência doméstica deve ser aprovado?\" (Yes/No). She says she is favorable, so stance = FAVOR.\n\nReturn JSON.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2039,
+    "total_tokens": 2470,
+    "completion_tokens": 431,
+    "estimated_cost": 0.000148713,
+    "prompt_tokens_details": null
+  }
+}

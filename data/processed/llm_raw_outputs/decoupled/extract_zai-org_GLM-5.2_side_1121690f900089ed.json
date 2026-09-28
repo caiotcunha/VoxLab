@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsQrCYgA28Ayew6PkkfXAYr6",
+  "object": "chat.completion",
+  "created": 1790622432,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O protocolo clínico de tratamento do edema macular diabético no SUS deve ser atualizado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is opening a public hearing about updating the treatment protocol for diabetic macular edema (DME) in the SUS (Brazil's public health system). \n\nLet me analyze the stance:\n\n1. The speaker clearly advocates for updating/revising the clinical protocols for DME treatment in the SUS. They state: \"É fundamental que o SUS revise e atualize seus protocolos clínicos para incluir diretrizes claras e abrangentes para o diagnóstico, o tratamento e o acompanhamento do edema macular.\" They also call for adequate financing.\n\n2. The target question would be something like: \"O protocolo clínico de tratamento do edema macular diabético no SUS deve ser atualizado?\"\n\n3. The stance is clearly FAVOR - the speaker is advocating for the update of protocols and financing.\n\nstance_determinable: YES\ntarget_question: \"O protocolo clínico de tratamento do edema macular diabético no SUS deve ser atualizado?\"\nstance: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1837,
+    "total_tokens": 2097,
+    "completion_tokens": 260,
+    "estimated_cost": 0.0013256325007200002,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 205
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R20t1wYnzIYv1Y1KlOiNljMG",
+  "object": "chat.completion",
+  "created": 1790624031,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A economia do cuidado deve ser incluída no cálculo do PIB?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is opening a public hearing about inclusion of care economy in GDP. The speaker (president of commission) talks about wanting to implement care economy as public policy, mentions a project of law, wants to include care economy in PPA, wants to have it as policy. The stance is supportive of inclusion of care economy in public policy, likely wants it included in GDP calculation. The question: \"A economia do cuidado deve ser incluída no cálculo do PIB?\" Or \"A inclusão da economia do cuidado no cálculo do PIB deve ser adotada?\" The speaker is advocating for it. So stance_determinable = YES. target_question = \"A economia do cuidado deve ser incluída no cálculo do PIB?\" The stance = FAVOR (SIM). Provide JSON.\n\nCheck if any nuance: She says \"para que possamos de fato ter a economia do cuidado como uma política pública\". She supports inclusion. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2632,
+    "total_tokens": 2884,
+    "completion_tokens": 252,
+    "estimated_cost": 0.00014022400000000002,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdJt7GD3CPPs0VPweWZUu3uy",
+  "object": "chat.completion",
+  "created": 1790624060,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser garantido financiamento prévio para a prevenção de desastres no Brasil?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speaker (unknown) is talking about prevention of natural disasters, funding, etc. They praise the work, mention they authored a law to fund the National Calamities Fund, and they want more resources for prevention. The stance is likely in favor of allocating more resources for disaster prevention, and against the practice of only providing resources after disasters. So the specific question could be: \"Deve haver fontes de recursos específicas para a prevenção de desastres?\" Or \"O Fundo Nacional de Calamidades Públicas deve ter fontes de recursos garantidas?\" The speech supports that. So stance_determinable = YES. Target question: \"O Fundo Nacional de Calamidades Públicas deve contar com fontes de recursos específicas para prevenção de desastres?\" Or \"Deve ser garantido financiamento prévio para a prevenção de desastres?\" The answer is FAVOR (SIM). So produce JSON.\n\nMake sure target_question is neutral yes/no. Use affirmative: \"Deve ser garantido financiamento prévio para a prevenção de desastres no Brasil?\" That is a yes/no. The speaker is in favor. So stance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1267,
+    "total_tokens": 1566,
+    "completion_tokens": 299,
+    "estimated_cost": 9.7709e-05,
+    "prompt_tokens_details": null
+  }
+}

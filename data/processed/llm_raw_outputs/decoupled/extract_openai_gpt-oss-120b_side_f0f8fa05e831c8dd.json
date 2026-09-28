@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdglYhlux7lMrF7ty0m3g2GG",
+  "object": "chat.completion",
+  "created": 1790624055,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 3.811, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker thanks, mentions importance of diseases, and supports approval of PL 3.811 that institutes National Week of Awareness on Ischemic Cardiopathy. He says \"deixo aqui o meu apoio total e irrestrito às temáticas do coração.\" So stance: supports the PL and the week. The specific question could be: \"O Projeto de Lei nº 3.811, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\" He expresses support, so answer is FAVOR (SIM). So stance_determinable = YES, target_question = that question, stance = FAVOR.\n\nMake sure JSON format.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 844,
+    "total_tokens": 1064,
+    "completion_tokens": 220,
+    "estimated_cost": 6.862800000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

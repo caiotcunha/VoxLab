@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0bseH6rC5B3hlJCtW7NIR5U",
+  "object": "chat.completion",
+  "created": 1790622255,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de aspectos diferentes: a primeira questiona a transferência de recursos para um ministério específico, enquanto a segunda aborda a eficácia de políticas públicas para mulheres em uma fase específica da vida.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 478,
+    "completion_tokens": 66,
+    "estimated_cost": 0.00017472,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtSN3j5uQr7wk5y9nbPu0wlp",
+  "object": "chat.completion",
+  "created": 1790622293,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Ministério do Desenvolvimento Social deve participar das ações de prevenção e auxílio a desastres e calamidades naturais?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1566,
+    "total_tokens": 1627,
+    "completion_tokens": 61,
+    "estimated_cost": 0.00017612,
+    "prompt_tokens_details": null
+  }
+}

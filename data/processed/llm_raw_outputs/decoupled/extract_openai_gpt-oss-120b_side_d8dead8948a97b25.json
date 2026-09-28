@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlRyabgQYmp1rzjCeauTBetH",
+  "object": "chat.completion",
+  "created": 1790624061,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker is a driver, discussing regulation of ride-hailing drivers. He opposes the current PL Complementar 12 (PLP 12) as presented, because of the contribution model, retention model, etc. He supports a different proposal (PL 536/24) that includes remuneration by km and time, fixed platform retention, etc. So the position is clear: He is against the current regulation (PLP 12) and in favor of alternative proposal. Need to formulate a neutral yes/no question that captures the central issue. Could be: \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\" He is against, so answer is NO (AGAINST). Or \"A regulamentação proposta pelo PLP 12, que inclui retenção flutuante e modelo de contribuição atual, deve ser mantida?\" He says it should be rejected. So stance AGAINST.\n\nThus stance_determinable = YES, target_question = \"O Projeto de Lei Complementar nº 12, que regula o trabalho dos motoristas de aplicativo, deve ser aprovado?\" stance = AGAINST.\n\nCheck if any nuance: He also supports contributions to INSS, but that's not the main. The central is rejection of PLP 12. So answer is AGAINST.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2144,
+    "total_tokens": 2492,
+    "completion_tokens": 348,
+    "estimated_cost": 0.000138488,
+    "prompt_tokens_details": null
+  }
+}

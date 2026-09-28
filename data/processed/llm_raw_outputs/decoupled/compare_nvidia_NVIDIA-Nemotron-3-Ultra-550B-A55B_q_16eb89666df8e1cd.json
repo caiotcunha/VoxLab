@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4zREdNMUyr8aQsyPkADTaZq",
+  "object": "chat.completion",
+  "created": 1790624164,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos — uma sobre a aprovação de um projeto de lei específico para povos ciganos e outra sobre a inclusão da economia do cuidado no PIB — sem sobreposição de objeto ou escopo.\"\n}",
+        "reasoning_content": "We need to classify relation between two yes/no questions. Q1: \"O Projeto de Lei nº 1.387, de 2022, que institui o Estatuto dos Povos Ciganos, deve ser aprovado?\" Q2: \"A economia do cuidado deve ser incluída no cálculo do PIB?\" They are completely different topics: one about a specific bill for Roma people statute, other about including care economy in GDP. So DIFFERENT. Provide JSON with relation DIFFERENT and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 593,
+    "completion_tokens": 181,
+    "estimated_cost": 0.0006042,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 111
+    }
+  }
+}

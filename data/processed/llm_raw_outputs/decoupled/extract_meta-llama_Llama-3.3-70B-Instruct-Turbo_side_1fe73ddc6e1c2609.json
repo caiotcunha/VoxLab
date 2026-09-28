@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIEq0ePdRFU6BujWpQvq4YvA",
+  "object": "chat.completion",
+  "created": 1790622345,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A Lei do Bem deve ser aperfeiçoada e aplicada para promover a colaboração entre universidades, empresas e governo?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3355,
+    "total_tokens": 3417,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00035534000000000005,
+    "prompt_tokens_details": null
+  }
+}

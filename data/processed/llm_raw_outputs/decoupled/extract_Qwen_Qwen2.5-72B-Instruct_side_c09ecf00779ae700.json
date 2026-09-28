@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7rQGsbHqclp8eOoMwq92y08",
+  "object": "chat.completion",
+  "created": 1790622181,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O IBAMA deve autorizar a exploração de petróleo na Margem Equatorial?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4554,
+    "total_tokens": 4604,
+    "completion_tokens": 50,
+    "estimated_cost": 0.00165944,
+    "prompt_tokens_details": null
+  }
+}

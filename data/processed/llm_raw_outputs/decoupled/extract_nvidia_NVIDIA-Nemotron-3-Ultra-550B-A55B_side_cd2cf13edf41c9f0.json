@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rd42cBpwLXcoFeqaOj1e0Ylt",
+  "object": "chat.completion",
+  "created": 1790624076,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Os recursos para prevenção e resposta a desastres devem ser alocados por meio de um fundo fixo (Fundo de Calamidade Pública) em vez de medidas provisórias por crise?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speaker thanks Sosthenes, mentions municipalist agenda, need for career for civil defense, etc. Then says: \"sou contra a forma como se propõe colocar recursos no Fundo de Calamidade Pública... É um erro destinar recursos de forma fixa para prevenção e pronta resposta. A experiência mostra que a alocação de recursos por medida provisória, direcionada especificamente para cada crise, é mais ágil e eficiente.\" So they are against fixed allocation to the Fund, favor using provisional measures per crisis. That's a clear stance on a specific policy: whether resources for disaster prevention and response should be allocated via a fixed fund (Fundo de Calamidade Pública) or via provisional measures per crisis. The question: \"Should resources for disaster prevention and response be allocated through a fixed fund (Fundo de Calamidade Pública) rather than via provisional measures for each crisis?\" The speaker is against fixed fund, so answer is AGAINST (i.e., they would answer NO to the question \"Should resources be allocated through a fixed fund?\").\n\nWe need to produce JSON with stance_determinable YES, target_question neutral yes/no, stance FAVOR/AGAINST. Since they are against fixed fund, stance = AGAINST (meaning they answer NO to the question). The target question must be neutral: \"Os recursos para prevenção e resposta a desastres devem ser alocados por meio de um fundo fixo (Fundo de Calamidade Pública) em vez de medidas provisórias por crise?\" That's a yes/no question. The speaker is against fixed fund, so they would answer NO => stance AGAINST.\n\nCheck rules: stance = FAVOR if they answer YES. Here they answer NO, so AGAINST.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1177,
+    "total_tokens": 1648,
+    "completion_tokens": 471,
+    "estimated_cost": 0.0016247,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 399
+    }
+  }
+}

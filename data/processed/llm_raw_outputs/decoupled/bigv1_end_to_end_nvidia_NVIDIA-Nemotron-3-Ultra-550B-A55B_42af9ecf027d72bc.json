@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjhZPWradmrHPSKeY215Z045",
+  "object": "chat.completion",
+  "created": 1790624181,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A primeira fala apoia a Política Nacional de Saúde Funcional e discute diagnóstico biopsicossocial para dor crônica, lúpus e fibromialgia; a segunda fala trata da política de cuidados para idosos e da aprovação de aposentadoria para mães cuidadoras. Ambas expressam posição favorável a propostas distintas, não à mesma proposição específica.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are public hearings. Manifestation A: about support for PL 1673/21 instituting National Policy of Functional Health, discussing chronic pain, lupus, fibromyalgia, biopsychosocial diagnosis, etc. Manifestation B: about national policy of care for elderly, mentions approval of a project in Social Security Commission for caregivers' retirement at 62, care as work, etc.\n\nThey are different propositions: one about functional health policy, chronic pain, etc. The other about care for elderly, caregivers' retirement. Not same specific proposition. Both have determinable stance (they support policies). But they are not same proposition. So category INCOMPARABLE.\n\nCheck definitions: INCOMPARABLE: both have determinable position but not same specific proposition. Yes.\n\nThus answer: relation INCOMPARABLE, reasoning brief.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1888,
+    "total_tokens": 2176,
+    "completion_tokens": 288,
+    "estimated_cost": 0.0015776000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 185
+    }
+  }
+}

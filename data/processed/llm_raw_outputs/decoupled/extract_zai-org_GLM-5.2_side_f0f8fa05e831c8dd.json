@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFbE9s1dzVjYw9iigMvQ4NUA",
+  "object": "chat.completion",
+  "created": 1790622585,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "The user wants me to analyze a specific manifestation from a parliamentary event.\nI need to output a JSON object with three keys: `stance_determinable`, `target_question`, and `stance`.\n\n1.  **Determinabilidade**: Does the manifestation present a clear position on a specific issue?\n    *   The speaker says: \"quero aproveitar para ressaltar a importância da aprovação do Projeto de Lei nº 3.811, de 2019... O PL institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica.\"\n    *   Also: \"deixo aqui o meu apoio total e irrestrito às temáticas do coração.\"\n    *   The speaker explicitly supports the approval of PL 3.811/2019.\n    *   So, `stance_determinable` is \"YES\".\n\n2.  **Pergunta-alvo**: If YES, what is the specific central question the manifestation answers, as a neutral yes/no question?\n    *   The specific issue is the approval of PL 3.811/2019, which institutes the National Awareness Week on Ischemic Heart Disease.\n    *   Question: \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\"\n    *   Or more simply: \"O Projeto de Lei nº 3.811, de 2019, deve ser aprovado?\"\n    *   Let's use: \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\"\n\n3.  **Resposta**: Is the speaker's answer YES (FAVOR) or NO (AGAINST)?\n    *   The speaker says \"ressaltar a importância da aprovação do Projeto de Lei nº 3.811, de 2019\".\n    *   So, the stance is \"FAVOR\".\n\nLet's double check the rules.\n- No external knowledge: Checked.\n- Reported speech: None.\n- Citation without endorsement: None.\n- Genuine question: None.\n\nThe JSON format:\n```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Projeto de Lei nº 3.811, de 2019, que institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica, deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```\nThis looks correct and follows all constraints.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 920,
+    "total_tokens": 1562,
+    "completion_tokens": 642,
+    "estimated_cost": 0.00149742000072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 568
+    }
+  }
+}

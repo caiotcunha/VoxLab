@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAJv1QzDI3m79B9oTj7ALHhQ",
+  "object": "chat.completion",
+  "created": 1790624026,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criado um arcabouço legal para proteger pequenos negócios contra desastres naturais?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is largely procedural, opening meeting, welcoming deputy, describing agenda, etc. There is some expression of desire: \"Para mim, Deputado Gilson, depois da criação do fundo, que é essencial para financiar todas essas ações, a ação na área social e a participação do Ministério do Desenvolvimento Social são muito importantes para nós.\" Also \"Peço à Vera que leve ao Ministro que nós estamos muito ansiosos pela participação do Ministério do Desenvolvimento Social e loucos para criar um arcabouço legal que possa proteger os pequenos negócios.\"\n\nSo the speaker expresses support for creation of a legal framework to protect small businesses in disasters, and support for participation of Ministry of Social Development. This is a stance: they are in favor of creating a legal framework (arcabouço legal) to protect small businesses. The question could be: \"Deve ser criado um arcabouço legal para proteger pequenos negócios contra desastres naturais?\" That's a yes/no. The speaker is in favor (they are \"ansiosos\" and \"loucos\" to create it). So stance_determinable = YES, target_question = \"Deve ser criado um arcabouço legal para proteger pequenos negócios contra desastres naturais?\" stance = FAVOR.\n\nCheck if any other positions? The speech also says \"Para mim, ... a ação na área social e a participação do Ministério do Desenvolvimento Social são muito importantes para nós.\" That's a positive stance toward that participation. Could be another question: \"A participação do Ministério do Desenvolvimento Social nas ações de prevenção e auxílio a desastres deve ser mantida?\" They are in favor. But we need one central question. The most explicit is about creating legal framework to protect small businesses. So we answer accordingly.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1341,
+    "total_tokens": 1766,
+    "completion_tokens": 425,
+    "estimated_cost": 0.000121867,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwVgUVelyWsgEJL8t6M99Eg7",
+  "object": "chat.completion",
+  "created": 1790624106,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express support for indigenous-related measures, but they address different specific proposals (a prison law for indigenous people vs. a territorial and environmental policy), so they are not comparable on the same proposition.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. A is about \"proposta de uma lei prisional específica para indígenas\" (proposal for specific prison law for indigenous). She suggests legislation specific to prison system for indigenous. B is about \"aprovação do Projeto de Lei 4347/21 para tornar permanente a Política Nacional de Gestão Territorial e Ambiental das Terras Indígenas\" (approval of PL 4347/21 about territorial and environmental policy). Different propositions. Both are about indigenous rights but different topics: prison law vs territorial policy. So they are not same specific proposition. Both have stance: A is supportive of creating specific prison legislation (positive). B is supportive of the policy and funding etc. Both are favorable to indigenous rights, but not same proposition. So relation = INCOMPARABLE (they have determinable positions but not same proposition). Provide brief reasoning.\n\nThus JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1959,
+    "total_tokens": 2220,
+    "completion_tokens": 261,
+    "estimated_cost": 0.00011685299999999999,
+    "prompt_tokens_details": null
+  }
+}

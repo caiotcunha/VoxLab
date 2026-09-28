@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhKONgVwUSsPGmRPvQH24lcq",
+  "object": "chat.completion",
+  "created": 1790622239,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta se refere especificamente à vacinação de crianças de 6 meses a 5 anos, enquanto a segunda pergunta abrange tanto crianças quanto adultos, alterando o escopo da questão.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 458,
+    "completion_tokens": 60,
+    "estimated_cost": 0.00016728,
+    "prompt_tokens_details": null
+  }
+}

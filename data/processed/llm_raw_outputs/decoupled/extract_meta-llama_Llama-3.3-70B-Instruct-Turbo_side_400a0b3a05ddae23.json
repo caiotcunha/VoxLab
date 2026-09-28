@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3QEB8wTyCi7qc7KINFhxZ8P",
+  "object": "chat.completion",
+  "created": 1790622310,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As políticas públicas para pessoas com Transtorno do Espectro Autista devem ser implementadas de forma efetiva?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2318,
+    "total_tokens": 2374,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00024972,
+    "prompt_tokens_details": null
+  }
+}

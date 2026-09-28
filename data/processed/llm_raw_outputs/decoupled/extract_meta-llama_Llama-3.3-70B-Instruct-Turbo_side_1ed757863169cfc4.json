@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rsuo8To4Sg527Npkb0QXcUIv",
+  "object": "chat.completion",
+  "created": 1790622275,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A implementação de políticas públicas de proteção às mulheres, como o Aluguel Social e a criação de DEAMs em todas as cidades brasileiras, deve ser priorizada?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2396,
+    "total_tokens": 2468,
+    "completion_tokens": 72,
+    "estimated_cost": 0.00026264,
+    "prompt_tokens_details": null
+  }
+}

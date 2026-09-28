@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnyvEehzpiyHSkaQ8f1IV03i",
+  "object": "chat.completion",
+  "created": 1790622129,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A compra emergencial de insulina rápida pela empresa Global X foi a melhor opção disponível?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1589,
+    "total_tokens": 1639,
+    "completion_tokens": 50,
+    "estimated_cost": 0.0005920400000000001,
+    "prompt_tokens_details": null
+  }
+}

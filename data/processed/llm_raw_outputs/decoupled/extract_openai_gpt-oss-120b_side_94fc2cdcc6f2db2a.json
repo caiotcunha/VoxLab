@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzznIfZeafjiTw8O4tZE39Du",
+  "object": "chat.completion",
+  "created": 1790624051,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speaker talks about animal welfare, sustainability, zoonoses, need to respect animal rights, that animal welfare is essential to sustainability, that production practices violating animal rights have negative impacts, etc. The underlying position: they seem to be in favor of respecting animal rights, improving animal welfare, and likely against current animal production practices that violate rights. The specific question could be: \"A produção de alimentos de origem animal deve respeitar os direitos dos animais?\" Or \"A produção de alimentos de origem animal deve ser regulada para garantir o bem-estar animal?\" The speaker says \"O bem-estar animal é, sim, um componente essencial da sustentabilidade.\" and \"Essas práticas de produção que violam os direitos animais têm impactos negativos\". So they are against practices that violate animal rights. So stance: AGAINST those practices, in favor of respecting animal rights.\n\nWe need a neutral yes/no question. Something like: \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\" That is a yes/no. The speaker says yes, it should. So stance = FAVOR (they support guaranteeing animal welfare). So stance_determinable = YES, target_question = \"A produção de alimentos de origem animal deve garantir o bem-estar animal?\" stance = FAVOR.\n\nCheck if any ambiguity: They also talk about need for balance, but overall they advocate for animal welfare. So yes.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1032,
+    "total_tokens": 1376,
+    "completion_tokens": 344,
+    "estimated_cost": 9.666400000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

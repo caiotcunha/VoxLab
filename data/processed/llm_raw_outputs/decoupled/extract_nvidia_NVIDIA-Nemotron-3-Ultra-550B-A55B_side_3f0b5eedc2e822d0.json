@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8g5jYYTYkil9DAhXIJDKJ16",
+  "object": "chat.completion",
+  "created": 1790624067,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada com pressa?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": "We need to determine if the speech presents a clear position on a specific issue. The speech is from a parliamentary hearing about regulation of app drivers. The speaker expresses concern about government pushing a premature solution, warns against hasty legislation, says they will be careful, will hold more hearings, will listen, will try to build a report that avoids problems, avoid imposing harmful legislation before recess. So the speaker's position: against rushing the legislation; favors cautious, deliberative approach, more hearings, not passing a bad law quickly. The question: Should the regulation of app drivers be passed quickly (or should the government push a rapid solution)? Or \"Should the regulation of app drivers be advanced hastily?\" The speaker is against hasty advancement. So stance determinable = YES. Target question neutral yes/no: \"O projeto de regulamentação do trabalho de motoristas de aplicativo deve ser aprovado com pressa?\" Or \"O governo deve avançar rapidamente com a regulamentação do trabalho de motoristas de aplicativo?\" The speaker says no, against rapid advancement. So stance = AGAINST (since answer to question \"Should it be advanced quickly?\" is NO). But we need to phrase question as affirmative measure: \"O governo deve avançar rapidamente com a regulamentação do trabalho de motoristas de aplicativo?\" That's a yes/no. The speaker opposes, so stance = AGAINST.\n\nCheck rules: stance_determinable YES, target_question non-empty, stance FAVOR/AGAINST/UNCERTAIN. Provide JSON.\n\nLet's craft target_question: \"O governo deve avançar rapidamente com a regulamentação do trabalho de motoristas de aplicativo?\" That's neutral. Or \"A regulamentação do trabalho de motoristas de aplicativo deve ser aprovada com pressa?\" Both okay.\n\nWe'll output JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1204,
+    "total_tokens": 1632,
+    "completion_tokens": 428,
+    "estimated_cost": 0.0015436,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 378
+    }
+  }
+}

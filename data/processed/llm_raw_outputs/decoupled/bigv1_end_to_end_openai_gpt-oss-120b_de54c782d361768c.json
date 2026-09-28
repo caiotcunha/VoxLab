@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rv3npXphOHmEEfNAN4LVy8FP",
+  "object": "chat.completion",
+  "created": 1790624112,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Both statements express support for women's policies, but they address different specific propositions (violence against women legislation vs. menopause health program), so they are not comparable on the same issue.\"\n}",
+        "reasoning_content": "We need to determine relation between two statements. Both are from same actor (same person) but we don't know name. Manifestation A is a long speech about violence against women, support for policies, favoring project, etc. Manifestation B is opening a hearing on menopause, also supportive of a project (Project 5.602) and expresses favorable stance. Both are about women's issues but different specific propositions: A discusses legislation on feminicide, Aluguel Social, network protection, etc. B discusses a program for menopause, a specific bill (Project 5.602). Are they responding to same proposition? No, they are different policy topics. Both have stance favorable to women's policies, but not same proposition. So classification: INCOMPARABLE (they have determinable positions but not same proposition). Need brief reasoning.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3362,
+    "total_tokens": 3597,
+    "completion_tokens": 235,
+    "estimated_cost": 0.00016434400000000002,
+    "prompt_tokens_details": null
+  }
+}

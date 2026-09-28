@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R39WbwK26IDIAj7ocx2XUvQL",
+  "object": "chat.completion",
+  "created": 1790622295,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O veto ao PL 920/23 deve ser derrubado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2712,
+    "total_tokens": 2759,
+    "completion_tokens": 47,
+    "estimated_cost": 0.00028624,
+    "prompt_tokens_details": null
+  }
+}

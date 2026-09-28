@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXp5mU5MWJ08rGN9ikcFADHk",
+  "object": "chat.completion",
+  "created": 1790632435,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da derrubada de um veto específico a um projeto de lei, enquanto a segunda discute o modelo de alocação de recursos para desastres; são questões distintas.\"\n}",
+        "reasoning_content": "We need to compare two yes/no questions extracted from two speeches by same actor at different times. Question 1: \"O Veto nº 28 ao PL 920/2023 deve ser derrubado?\" (Should Veto 28 to PL 920/2023 be overturned?) Question 2: \"Os recursos para prevenção e resposta a desastres devem ser alocados por meio de um fundo fixo (Fundo de Calamidade Pública) em vez de medidas provisórias por crise?\" (Should resources for disaster prevention and response be allocated via a fixed fund (Public Calamity Fund) instead of provisional measures per crisis?)\n\nThese are different topics: one about a specific veto to a bill, the other about funding mechanism for disaster response. They are different issues. So relation = DIFFERENT. Provide reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 427,
+    "total_tokens": 671,
+    "completion_tokens": 244,
+    "estimated_cost": 0.0007503,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 184
+    }
+  }
+}

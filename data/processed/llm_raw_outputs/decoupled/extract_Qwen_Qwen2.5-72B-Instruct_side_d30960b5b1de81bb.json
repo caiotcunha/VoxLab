@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXUB9clunyizH4mZOAQG5Egj",
+  "object": "chat.completion",
+  "created": 1790622150,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação contra a COVID-19 para crianças deve ser obrigatória?\",\n  \"stance\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1778,
+    "total_tokens": 1826,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00065928,
+    "prompt_tokens_details": null
+  }
+}

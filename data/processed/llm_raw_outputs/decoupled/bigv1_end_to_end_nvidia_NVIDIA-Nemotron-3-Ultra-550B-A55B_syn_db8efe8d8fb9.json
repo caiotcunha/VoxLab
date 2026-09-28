@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rg2akVisheJHvSK0NcpwZWTU",
+  "object": "chat.completion",
+  "created": 1790632410,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"Ambas as manifestações expressam apoio a propostas legislativas, mas referem-se a proposições distintas (Política Nacional de Saúde Funcional vs. política de cuidados para idosos e aposentadoria de cuidadoras), portanto não são comparáveis quanto ao mesmo objeto.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Both are public hearings. Manifestation A: about support for PL 1673/21 instituting National Policy of Functional Health. The speaker thanks participants, mentions project approved but veto maintained, mentions other projects, wants inclusion of chronic pain in biopsychosocial diagnosis, etc. So stance: supportive of the policy, wants advancement.\n\nManifestation B: about national policy of care for elderly. Speaker mentions they just approved a project in Social Security Commission to ensure retirement rights for caregiver mothers at 62, can parcel debt. Recognizes caring as work. Talks about care, market, etc. So stance: supportive of care policy, mentions approval of a related project.\n\nAre they same specific proposition? No. Different propositions: one about functional health policy (PL 1673/21), other about care for elderly and caregiver retirement. Not same proposition. Both have determinable positions (supportive). So they are INCOMPARABLE (positions determinable but not same proposition). Category INCOMPARABLE.\n\nThus answer JSON with relation INCOMPARABLE and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1904,
+    "total_tokens": 2219,
+    "completion_tokens": 315,
+    "estimated_cost": 0.001645,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 235
+    }
+  }
+}

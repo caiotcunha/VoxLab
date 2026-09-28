@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REX2tD5flhpiWZsfkd6ELROa",
+  "object": "chat.completion",
+  "created": 1790622373,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam aspectos distintos relacionados à energia no Brasil, uma sobre a priorização da energia limpa e renovável e a outra sobre a modificação do modelo das concessionárias de energia.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 456,
+    "completion_tokens": 63,
+    "estimated_cost": 5.9459999999999997e-05,
+    "prompt_tokens_details": null
+  }
+}

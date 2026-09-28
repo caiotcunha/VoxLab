@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZ3QPFSZ2rhfma2dusAhfWHk",
+  "object": "chat.completion",
+  "created": 1790624048,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A vacinação de crianças contra Covid-19 deve ser mantida?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speech is about anti-vaccine movement, accusing others of using anti-vaccine stance for political gain, and calling it criminal, irresponsible. The central issue: Should the anti-vaccine movement be condemned? Or Should the vaccination of children against Covid-19 be maintained? The speaker says \"é movimento antivacina, sim!\" and condemns anti-vaccine campaign. So the position is against the anti-vaccine stance, i.e., they are in favor of vaccination (supporting vaccination of children). The specific question could be: \"A campanha antivacina contra a vacinação de crianças contra Covid-19 deve ser combatida?\" Or \"A vacinação de crianças contra Covid-19 deve ser mantida?\" The speaker is pro-vaccination, against anti-vaccine political use. So stance determinable = YES.\n\nTarget question: need neutral yes/no. Could be \"A vacinação de crianças contra Covid-19 deve ser mantida?\" The speaker is in favor, so answer = SIM => FAVOR.\n\nThus JSON: stance_determinable YES, target_question \"A vacinação de crianças contra Covid-19 deve ser mantida?\" stance FAVOR.\n\nCheck if any nuance: The speech is about condemning anti-vaccine movement, calling it criminal. So they support vaccination. So answer is FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2276,
+    "total_tokens": 2603,
+    "completion_tokens": 327,
+    "estimated_cost": 0.000139802,
+    "prompt_tokens_details": null
+  }
+}

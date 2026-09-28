@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGpHfrDC3BvGNSCbCRHPac4s",
+  "object": "chat.completion",
+  "created": 1790622265,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação dos mercados digitais deve ser promovida pela Câmara dos Deputados?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 835,
+    "total_tokens": 889,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00010078000000000002,
+    "prompt_tokens_details": null
+  }
+}

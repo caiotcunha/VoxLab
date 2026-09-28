@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKj107Zt4BVetSd4z6Y9BoxA",
+  "object": "chat.completion",
+  "created": 1790622249,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas diferentes para lidar com desastres climáticos: financiamento à prevenção versus abastecimento do Fundo de Calamidade Pública.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 452,
+    "completion_tokens": 57,
+    "estimated_cost": 0.000165,
+    "prompt_tokens_details": null
+  }
+}

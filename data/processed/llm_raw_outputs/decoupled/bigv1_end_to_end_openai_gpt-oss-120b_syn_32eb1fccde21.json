@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRXvMSITQXZC8KAIft5ZEqDH",
+  "object": "chat.completion",
+  "created": 1790633230,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same government proposal on rideshare driver regulation and each express opposition, calling for its rejection.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestação A and B.\n\nBoth are about regulation of rideshare drivers. Both express positions. Manifestation A: strongly opposes the proposed bill (project) that would ban drivers unilaterally, likens to CLT, wants total rejection. So stance: AGAINST the specific proposal (the bill). Manifestation B: also critical of the group work (GT) and the current proposal, but also proposes alternative PL 536, supportive of certain aspects, but overall they reject the current group work and want a different regulation. They say \"rejeitar este grupo de trabalho\" and \"rejeitar este projeto\"? They say \"rejeição de mais de 98% dos motoristas a este grupo de trabalho\". They also propose PL 536 which they support. So stance towards the current proposal (the one being discussed) is AGAINST. Both are against the same proposition: the current regulation proposal (the bill). So same stance: AGAINST. Therefore STANCE_MAINTAINED.\n\nCheck if they refer to same specific proposition. Both talk about the regulation project presented by government, the same bill. Yes.\n\nThus relation STANCE_MAINTAINED.\n\nProvide reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2417,
+    "total_tokens": 2718,
+    "completion_tokens": 301,
+    "estimated_cost": 0.00014059900000000001,
+    "prompt_tokens_details": null
+  }
+}

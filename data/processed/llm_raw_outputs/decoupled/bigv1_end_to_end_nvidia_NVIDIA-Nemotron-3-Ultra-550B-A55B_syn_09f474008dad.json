@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rnm7xCVM9NGqvurd2kYc5uc8",
+  "object": "chat.completion",
+  "created": 1790624133,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A primeira fala critica o ativismo judicial do Supremo Tribunal Federal, defendendo que o Legislativo deve legislar; a segunda fala discute a renovação de concessões de energia elétrica e propõe cautela regulatória. Tratam de proposições distintas, embora ambas tenham posicionamento claro.\"\n}",
+        "reasoning_content": "We need to classify relationship between two statements. Statement A is about judicial activism, Supreme Court overreach, legislative competence. Statement B is about energy distribution concessions, regulatory challenges, proposing legislative project. They are different topics, different propositions. Both have determinable positions (A against judicial activism, B favoring stable regulatory environment and cautious new criteria). But they are not same proposition. So INCOMPARABLE.\n\nCheck categories: INCOMPARABLE: both have determinable position but not same proposition. Yes.\n\nThus answer JSON with relation INCOMPARABLE and reasoning.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2462,
+    "total_tokens": 2664,
+    "completion_tokens": 202,
+    "estimated_cost": 0.0016753999999999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 118
+    }
+  }
+}

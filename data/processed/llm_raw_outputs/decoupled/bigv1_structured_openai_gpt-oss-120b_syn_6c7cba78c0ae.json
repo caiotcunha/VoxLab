@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxbJvWoGt5APVsUKq6tzWnGe",
+  "object": "chat.completion",
+  "created": 1790633131,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Animal welfare is an essential component of sustainability\",\n  \"target_proposition_b\": \"Animal welfare contributes to economic competitiveness\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to evaluate each manifestation.\n\nFirst, identify target proposition (specific claim) and stance.\n\nManifestation A: The speaker talks about animal welfare, sustainability, zoonoses, UN Nexus resolution, etc. Does he state a specific proposition? He says: \"O bem-estar animal é, sim, um componente essencial da sustentabilidade.\" That's a proposition: \"Animal welfare is an essential component of sustainability.\" He seems to favor that. Also he says \"práticas de produção que violam os direitos animais têm impactos negativos ...\". That's also a proposition: \"Production practices that violate animal rights have negative impacts.\" He is in favor of recognizing animal welfare. So stance determinable? Yes, there is a clear stance favoring animal welfare as essential to sustainability, and condemning harmful practices. So stance_determinable_a = YES. target_proposition_a: need a short neutral phrase summarizing the proposition. Could be \"Animal welfare is an essential component of sustainability.\" That's fine.\n\nStance: FAVOR (he supports that proposition). So stance_a = FAVOR.\n\nManifestation B: The speaker thanks others, discusses importance of animal welfare for economy, mentions resolution, says \"bem-estar animal já não é de hoje que não é mais só uma pauta de quem ama os animais... é uma pauta econômica importante\". She seems to support the proposition that animal welfare is economically important and should be integrated. She also says \"É pelo bem dos animais, sim. É pelo bem dos animais, mas, não se iludam, é sobretudo pela competitividade econômica do Brasil.\" So she supports the proposition that animal welfare should be promoted because it benefits competitiveness. So stance determinable? Yes. target_proposition_b: \"Animal welfare is important for economic competitiveness.\" Or \"Animal welfare should be promoted to enhance Brazil's economic competitiveness.\" Choose short neutral: \"Animal welfare contributes to economic competitiveness.\" Stance: FAVOR.\n\nNow comparability: Are the two propositions the same or semantically equivalent? A: \"Animal welfare is an essential component of sustainability.\" B: \"Animal welfare contributes to economic competitiveness.\" Both relate to animal welfare but different aspects: sustainability vs economic competitiveness. Not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck keys: stance_determinable_a, stance_determinable_b, target_proposition_a, target_proposition_b, same_proposition, stance_a, stance_b.\n\nValues: \"YES\"/\"NO\"/\"UNCERTAIN\". Stance: \"FAVOR\"/\"AGAINST\"/\"UNCERTAIN\". Provide empty strings if not determinable, but they are.\n\nThus:\n\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Animal welfare is an essential component of sustainability\",\n  \"target_proposition_b\": \"Animal welfare contributes to economic competitiveness\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n\nMake sure JSON strict, no trailing commas.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2760,
+    "total_tokens": 3472,
+    "completion_tokens": 712,
+    "estimated_cost": 0.00022316000000000003,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQmRXBMSDda10lAbzMFLolZ6",
+  "object": "chat.completion",
+  "created": 1790623897,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas totalmente distintos: uma sobre regulamentação do crédito consignado via cartão e a outra sobre acumulação de cargos públicos por professores da rede pública.\"\n}\n```",
+        "reasoning_content": "The user wants me to classify the relationship between two yes/no questions extracted from speeches by the same actor at different times.\n\nQuestion 1: \"O crédito consignado via cartão deve ser objeto de regulamentação urgente pelo Congresso?\" (Should consigned credit via card be subject to urgent regulation by Congress?)\nQuestion 2: \"Professores da rede pública devem ter a possibilidade de acumular dois cargos públicos em áreas diferentes?\" (Should public school teachers have the possibility of accumulating two public positions in different areas?)\n\nThese two questions are about completely different topics. Question 1 is about regulating consigned credit via card. Question 2 is about public teachers accumulating two public positions.\n\nTherefore, the relation is DIFFERENT.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 613,
+    "completion_tokens": 214,
+    "estimated_cost": 0.00049251750048,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 151
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwAek0UW39Oe0xLi7UAdgpJh",
+  "object": "chat.completion",
+  "created": 1790622939,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira propõe criar um sistema nacional de apoio a vítimas, enquanto a segunda trata de incluir a participação de um ministério específico no arcabouço legal de prevenção e auxílio, sendo questões com escopo e objeto distintos.\"\n}",
+        "reasoning_content": "We need answer JSON classify relation between two yes/no questions extracted from same actor speeches different moments. Need judge only questions. Need decide EQUIVALENT, OPPOSITE_POLARITY, DIFFERENT, UNCERTAIN.\n\nQuestion1: \"Deve ser criado um sistema nacional de apoio a vítimas de desastres?\" (Should a national system to support disaster victims be created?)\n\nQuestion2: \"O arcabouço legal para prevenção e auxílio a desastres naturais deve incluir a participação do Ministério do Desenvolvimento Social nas ações de proteção à população vulnerável?\" (Should the legal framework for prevention and aid to natural disasters include participation of Ministry of Social Development in actions to protect vulnerable population?)\n\nNeed classify. They are related disaster policy. Q1 asks create national support system for victims of disasters. Q2 asks include MDS participation in legal framework for prevention and aid to natural disasters protecting vulnerable population. Are they same issue? Q1 broad creation of system; Q2 specific institutional participation within legal framework. Could be different measures/instruments/object/scope. Answer to one doesn't determine answer to other. You could support creating national system but not necessarily include MDS; or include MDS in existing framework without creating national system. So DIFFERENT. Need JSON strict. Reasoning one sentence.\n\nNeed ensure no extra text.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 415,
+    "total_tokens": 767,
+    "completion_tokens": 352,
+    "estimated_cost": 0.0007499175004799999,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 278
+    }
+  }
+}

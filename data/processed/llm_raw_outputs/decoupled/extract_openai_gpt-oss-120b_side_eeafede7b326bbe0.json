@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0MvXcNSUqxE3PEI7qe762W1",
+  "object": "chat.completion",
+  "created": 1790624063,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"NO\",\n  \"target_question\": \"\",\n  \"stance\": \"\"\n}",
+        "reasoning_content": "We need to determine if the speech contains a clear position on a specific issue. The speech is a thank you, mentions invitations, absence of participants, importance of participation, etc. No explicit stance on a policy. No clear position like \"the mining sector should be regulated\" etc. It's more about procedural aspects and gratitude. So stance_determinable = NO.\n\nThus target_question empty, stance empty.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 956,
+    "total_tokens": 1073,
+    "completion_tokens": 117,
+    "estimated_cost": 5.5262e-05,
+    "prompt_tokens_details": null
+  }
+}

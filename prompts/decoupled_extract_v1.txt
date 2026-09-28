@@ -1,0 +1,31 @@
+Você está analisando UMA manifestação literal de um ator em um evento parlamentar. A manifestação já foi cegada: você não recebe nome, partido, UF ou cargo do ator.
+
+Etapas:
+
+1. Determinabilidade: a manifestação apresenta posição suficientemente clara sobre alguma questão específica? YES, NO ou UNCERTAIN. NO significa ausência de posição determinável, não neutralidade.
+
+2. Pergunta-alvo: se a determinabilidade for YES, escreva a questão específica central que a manifestação responde, como uma PERGUNTA NEUTRA de sim ou não, sem revelar a resposta do falante. Exemplo: "O saque-aniversário do FGTS deve ser mantido?". Prefira a formulação afirmativa da medida ou avaliação em debate. "Regulação de plataformas" é tema, não pergunta.
+
+3. Resposta: a resposta do falante à pergunta é SIM (FAVOR) ou NÃO (AGAINST)? Se a direção não for clara, use UNCERTAIN. Nunca use NEUTRAL.
+
+Regras:
+- Não use conhecimento externo sobre o ator. Julgue apenas pelo texto.
+- Discurso reportado ("o grupo defende X") não é a posição do próprio falante.
+- Citação de terceiro sem endosso explícito não é posição do ator.
+- Pergunta genuína (pedido de informação sem endosso) geralmente é stance_determinable=NO.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "stance_determinable": "YES|NO|UNCERTAIN",
+  "target_question": "pergunta neutra de sim ou não, ou string vazia se stance_determinable != YES",
+  "stance": "FAVOR|AGAINST|UNCERTAIN (FAVOR = responde SIM), ou string vazia se stance_determinable != YES"
+}}
+
+Não inclua texto fora do JSON.
+
+--- Manifestação ---
+Evento: {event}
+Data: {date}
+Tema: {topic}
+Fala literal: {text}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGIj7RGhJWardAZInKLpRhid",
+  "object": "chat.completion",
+  "created": 1790632358,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INSUFFICIENT_EVIDENCE\",\n  \"reasoning\": \"Nenhuma das manifestações apresenta uma posição clara a favor ou contra uma proposição específica; ambas são falas introdutórias ou de contextualização sem stance determinável.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements. Determine if they address same specific proposition. Manifestation A is about demographic change and need to restructure state for aging population. It's a hearing on rights of elderly. No explicit stance on a proposition, but it's opening remarks, describing concerns, calling for policies. It doesn't state a clear position for/against a specific proposal. So stance not determinable? It expresses concern that state must prepare, but not a specific proposition. So likely INSUFFICIENT_EVIDENCE because no clear stance on a proposition.\n\nManifestation B is about precarization of work in mining, opening remarks, acknowledging lack of participation, etc. Also no clear stance on a specific proposition. So also insufficient evidence.\n\nThus relation: INSUFFICIENT_EVIDENCE (at least one lacks determinable stance). Both lack, so classification is INSUFFICIENT_EVIDENCE.\n\nProvide reasoning.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1882,
+    "total_tokens": 2128,
+    "completion_tokens": 246,
+    "estimated_cost": 0.000111454,
+    "prompt_tokens_details": null
+  }
+}

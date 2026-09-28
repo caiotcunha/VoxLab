@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1aFD5YmUmFWzU6yaKvBmzgI",
+  "object": "chat.completion",
+  "created": 1790624108,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same issue – the need to fund the National Calamities Fund for disaster prevention – and each expresses support for increasing resources, showing the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. Both talk about prevention of disasters, funding, Fundo Nacional de Calamidades Públicas. Manifestation A is a public hearing about prevention, mentions project law creating sources of resources for the fund. Manifestation B is also a public hearing with deliberation about improvements in infrastructure, also mentions need to fund the fund, criticism of lack of resources, etc.\n\nAre they responding to same specific proposition? The proposition could be \"need for resources for the National Calamities Fund / prevention of disasters\". Both discuss that. However, are they responding to same specific legislative proposal? A mentions a specific law they authored, approved, that created sources of resources. B mentions the fund created in 1969 but not funded, and calls for financing. They both address the same overarching issue: funding for disaster prevention. The question: \"mesma proposição específica\". If they are addressing same proposition (e.g., \"the need to allocate resources to the Fundo Nacional de Calamidades Públicas\") then stance: both are in favor of more resources. Both are supportive of funding. So stance same (FAVOR). So likely STANCE_MAINTAINED.\n\nBut need to ensure they are indeed same proposition. Could be considered same issue but not same specific proposition. The proposition could be \"the creation of sources of resources for the fund\" vs \"the need to fund the fund\". Slightly different but overlapping. The classification guidelines: If they respond to same specific proposition, we need to see if they are about same legislative measure. A mentions a specific law they authored that created two sources of resources. B mentions the fund created in 1969, not funded. They are not the same law, but both refer to the fund. The proposition could be \"the fund should receive resources\". That's same proposition. So I'd choose STANCE_MAINTAINED.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1743,
+    "total_tokens": 2206,
+    "completion_tokens": 463,
+    "estimated_cost": 0.000143201,
+    "prompt_tokens_details": null
+  }
+}

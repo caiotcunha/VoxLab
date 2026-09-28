@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRDk2WPnSW8HEFCWUajKIMNH",
+  "object": "chat.completion",
+  "created": 1790622355,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O grupo de trabalho deve considerar a participação direta dos motoristas?\",\n  \"stance\": \"YES\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2508,
+    "total_tokens": 2550,
+    "completion_tokens": 42,
+    "estimated_cost": 0.00026424,
+    "prompt_tokens_details": null
+  }
+}

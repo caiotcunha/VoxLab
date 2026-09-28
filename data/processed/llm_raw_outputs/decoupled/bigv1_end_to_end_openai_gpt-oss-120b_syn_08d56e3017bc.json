@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rjf3ZWWN9RpvLmhr00f9tRIn",
+  "object": "chat.completion",
+  "created": 1790624150,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Both statements address the proposition of allocating dedicated resources to the National Calamities Fund for disaster prevention, but A supports it while B opposes it.\"\n}",
+        "reasoning_content": "We need to classify relation between Manifestation A and B.\n\nWe must determine if they respond to same specific proposition. Both talk about prevention of disasters and funding. Manifestation A is praising efforts, supporting creation of resources, advocating more funding, describing law that created sources for the National Calamities Fund. Stance: Favor (supports prevention measures, funding, etc.)\n\nManifestation B: speaker says they have questioned the fund, says putting resources in the Fund of Calamity Public is not efficient, suggests fixed budget creates bureaucracy, prefers flexible measures, says large prevention budget is absurd. So stance: Against the specific proposition of allocating dedicated resources to the Fund for prevention (i.e., against that specific funding mechanism). Both refer to the same proposition: allocation of resources to the National Calamities Fund for prevention. They have opposite stances: A supports, B opposes. So STANCE_REVERSED.\n\nWe must ensure they are responding to same specific proposition. Both discuss the Fund of Calamities Public (Fundo Nacional para Calamidades Públicas) and its funding. Yes.\n\nThus relation: STANCE_REVERSED.\n\nProvide brief reasoning.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1768,
+    "total_tokens": 2062,
+    "completion_tokens": 294,
+    "estimated_cost": 0.000115396,
+    "prompt_tokens_details": null
+  }
+}

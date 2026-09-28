@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmrG3TJYrhgur5vsPF4Szo5C",
+  "object": "chat.completion",
+  "created": 1790622527,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "The user wants me to analyze a specific manifestation from a parliamentary event and determine if it has a clear stance on a specific issue, formulate a neutral target question, and identify the speaker's stance.\n\n1.  **Determinabilidade**: Does the manifestation present a sufficiently clear position on a specific issue?\n    *   The text is a closing speech at a public hearing about PL 1673/21 (National Functional Health Policy).\n    *   The speaker advocates for the inclusion of people with chronic pain in the biopsychosocial diagnosis, not just people with disabilities.\n    *   The speaker requests a meeting in the GT (Working Group) for this inclusion.\n    *   The speaker explicitly states: \"Nós precisamos avançar construindo parâmetros...\", \"É preciso construir um código de relacionamento laboral com as pessoas com dores crônicas\", \"é fundamental que elas tenham também o diagnóstico biopsicossocial\".\n    *   The speaker is clearly in favor of expanding the biopsychosocial diagnosis to include people with chronic pain and supporting the broader policy of functional health.\n    *   The event theme is \"Apoio ao Projeto de Lei 1673/21 que institui a Política Nacional de Saúde Funcional\". The speaker seems to support advancing the projects discussed, including PL 1673/21.\n    *   Let's look closer at the specific issue. The speaker says: \"vamos solicitar... uma reunião no GT para a inclusão também das pessoas com dor crônica no diagnóstico biopsicossocial\". And \"É preciso construir um código de relacionamento laboral com as pessoas com dores crônicas\".\n    *   The main actionable stance is the support for including people with chronic pain in the biopsychosocial diagnosis and the broader functional health policy.\n    *   Is the stance determinable? Yes. The speaker clearly advocates for the inclusion of chronic pain patients in the biopsychosocial diagnosis and supports the policy discussed.\n\n2.  **Pergunta-alvo**: If YES, write the specific central question the manifestation answers, as a neutral YES/NO question.\n    *   The central issue seems to be the inclusion of people with chronic pain in the biopsychosocial diagnosis.\n    *   Question: \"As pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial?\"\n    *   Alternatively, regarding the PL 1673/21: \"O Projeto de Lei 1673/21, que institui a Política Nacional de Saúde Funcional, deve ser aprovado?\" The speaker mentions the project was the agenda of the discussion and talks about advancing, but the specific advocacy in the text is more about the inclusion of chronic pain in the biopsychosocial diagnosis.\n    *   Let's check the text again: \"Além disso, nós temos o projeto de uma política nacional para as pessoas com fibromialgia e com fadiga crônica; e também um projeto, que foi a pauta desta discussão, para agregarmos a Classificação Internacional de Funcionalidade à Classificação Internacional de Doenças.\" The speaker is discussing the agenda.\n    *   The clearest stance is: \"queremos que as pessoas que convivem com dor, ou seja, que vivem com dor crônica, tenham direito ao direito diagnóstico biopsicossocial e à atenção biopsicossocial também.\"\n    *   So the question could be: \"As pessoas com dor crônica devem ser incluídas no diagnóstico e na atenção biopsicossocial?\"\n    *   Or, more broadly, regarding the PL: \"A Política Nacional de Saúde Funcional deve incluir as pessoas com dor crônica no diagnóstico biopsicossocial?\"\n    *   Let's stick to the most direct advocacy: \"As pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial?\"\n\n3.  **Resposta**: Is the speaker's answer YES (FAVOR) or NO (AGAINST)?\n    *   The speaker explicitly says \"queremos que as pessoas... tenham direito ao direito diagnóstico biopsicossocial\". This is clearly FAVOR.\n\nLet's refine the target question to be as neutral and specific as possible.\n\"Deve-se incluir as pessoas com dor crônica no diagnóstico biopsicossocial?\"\nOr: \"As pessoas com dor crônica devem ter direito ao diagnóstico biopsicossocial?\"\n\nThe event theme is \"Apoio ao Projeto de Lei 1673/21 que institui a Política Nacional de Saúde Funcional\". The speaker is the chair or a leading figure closing the hearing. They are clearly supportive of the initiatives discussed, specifically the inclusion of chronic pain in the biopsychosocial model.\n\nLet's formulate the JSON.\n\nstance_determinable: YES\ntarget_question: \"As pessoas com dor crônica devem ser incluídas no diagnóstico biopsicossocial?\"\nstance: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1560,
+    "total_tokens": 2639,
+    "completion_tokens": 1079,
+    "estimated_cost": 0.00264402000072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1030
+    }
+  }
+}

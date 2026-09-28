@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAy89rtquSy7AJ9BDJiA7wFR",
+  "object": "chat.completion",
+  "created": 1790622704,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de medidas e populações-alvo distintas: a criação de uma CPI para investigar violência contra indígenas, mulheres e crianças versus a implementação de planos e orçamento para políticas voltadas à população LGBTQIA+.\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: Two yes/no questions extracted from speeches of the same actor at different times.\n    *   Task: Classify the relationship between the two questions.\n    *   Categories:\n        *   EQUIVALENT: Same question, same polarity.\n        *   OPPOSITE_POLARITY: Same question, opposite polarity.\n        *   DIFFERENT: Different questions (different measure, instrument, object, population, or scope).\n        *   UNCERTAIN: Cannot decide safely.\n    *   Output: Strict JSON with keys `relation` and `reasoning`.\n\n2.  **Analyze Question 1:**\n    *   \"Deve ser criada uma CPI para investigar a violência contra povos indígenas, mulheres e crianças nos territórios indígenas?\"\n    *   Core subject: Creation of a CPI (Parliamentary Commission of Inquiry).\n    *   Target/Object: Violence against indigenous peoples, women, and children in indigenous territories.\n    *   Action: Create a CPI to investigate.\n\n3.  **Analyze Question 2:**\n    *   \"Devem ser implementados planos, conselhos e dotação orçamentária para políticas públicas voltadas à população LGBTQIA+?\"\n    *   Core subject: Implementation of plans, councils, and budget allocation.\n    *   Target/Object: Public policies for the LGBTQIA+ population.\n    *   Action: Implement plans, councils, and budget.\n\n4.  **Compare the Questions:**\n    *   Are they the same question? No.\n    *   Do they have opposite polarity? No.\n    *   Are they different? Yes. They deal with completely different measures (CPI vs. plans/councils/budget), different populations (indigenous peoples/women/children vs. LGBTQIA+), and different scopes (investigating violence vs. implementing public policies).\n    *   Conclusion: DIFFERENT.\n\n5.  **Draft the JSON:**\n    *   `relation`: \"DIFFERENT\"\n    *   `reasoning`: \"As perguntas tratam de medidas, instrumentos e populações-alvo distintas (CPI para povos indígenas, mulheres e crianças vs. planos e orçamento para população LGBTQIA+).\"\n\n6.  **Refine to strict JSON format:**\n    ```json\n    {\n      \"relation\": \"DIFFERENT\",\n      \"reasoning\": \"As perguntas tratam de medidas e populações-alvo distintas: a criação de uma CPI para investigar violência contra indígenas, mulheres e crianças versus a implementação de planos e orçamento para políticas voltadas à população LGBTQIA+.\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 1061,
+    "completion_tokens": 644,
+    "estimated_cost": 0.00127664250048,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 571
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rv4t0xxpNw8l9UfvHZJRIBid",
+  "object": "chat.completion",
+  "created": 1790624006,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O governo federal deve garantir previsão orçamentária permanente para o Fundo de Calamidade Pública e para ações de prevenção de desastres, em vez de depender exclusivamente de medidas provisórias?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze the speech. Determine if there is a clear position on a specific issue. The speech is about need for investments in municipalities, career for Civil Defense, funding for disaster prevention, criticizing lack of budgetary allocation, reliance on provisional measures. The speaker expresses support for funding, career, budgetary allocation. So stance determinable = YES. Need to formulate a neutral yes/no question central to the speech. Could be: \"O governo federal deve garantir previsão orçamentária permanente para o Fundo de Calamidade Pública e para a prevenção de desastres, em vez de depender de medidas provisórias?\" That's a yes/no question. The speaker is in favor (FAVOR). So stance = FAVOR.\n\nCheck rules: target_question must be neutral yes/no question, not reveal answer. Provide JSON with keys.\n\nThus output JSON.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1064,
+    "total_tokens": 1318,
+    "completion_tokens": 254,
+    "estimated_cost": 0.0010908,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 180
+    }
+  }
+}

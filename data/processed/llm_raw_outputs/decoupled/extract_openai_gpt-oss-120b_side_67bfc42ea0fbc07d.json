@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPqKffGyJJxfWdmWW4hcdfoW",
+  "object": "chat.completion",
+  "created": 1790624026,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A regulamentação do lobby junto ao poder público deve ser avançada?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to determine if the statement presents a clear position on a specific issue. The speech: \"Precisamos ter coragem de discutir com transparência. ... parabenizar a CGU ... foi fundamental que o Governo desse um caminho à discussão. Temos como harmonizar esses projetos que estão em debate. Acho que essa é a solução para que consigamos avançar. Não se trata de projeto de Governo ou de Oposição; esse é um projeto do País. E acho que é importante avançarmos nisso.\"\n\nSeems about regulation of lobbying. The speaker expresses support for discussing with transparency, praising CGU, says harmonizing projects is solution, important to advance. Implicitly supports regulation of lobby? The theme is \"Regulamentação do lobby junto ao poder público\". The speaker says need courage to discuss with transparency, praising CGU for opening discussion, suggests harmonizing projects is solution, important to advance. This indicates a favorable stance toward regulation (i.e., supporting regulation of lobby). The question could be: \"A regulamentação do lobby junto ao poder público deve ser avançada?\" Or \"A regulamentação do lobby deve ser aprovada?\" So stance is FAVOR.\n\nThus stance_determinable = YES, target_question = \"A regulamentação do lobby junto ao poder público deve ser avançada?\" (or \"A regulamentação do lobby junto ao poder público deve ser aprovada?\"). Provide as neutral yes/no.\n\nStance = FAVOR.\n\nReturn JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 683,
+    "total_tokens": 1026,
+    "completion_tokens": 343,
+    "estimated_cost": 8.3581e-05,
+    "prompt_tokens_details": null
+  }
+}

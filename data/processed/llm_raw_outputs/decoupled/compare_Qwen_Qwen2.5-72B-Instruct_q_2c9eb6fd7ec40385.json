@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIfmu7DfHJEwKL88CX2XMid8",
+  "object": "chat.completion",
+  "created": 1790622250,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata da ampliação e fortalecimento da rede de proteção, enquanto a segunda trata da transferência de recursos para um órgão específico.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 450,
+    "completion_tokens": 50,
+    "estimated_cost": 0.00016399999999999997,
+    "prompt_tokens_details": null
+  }
+}

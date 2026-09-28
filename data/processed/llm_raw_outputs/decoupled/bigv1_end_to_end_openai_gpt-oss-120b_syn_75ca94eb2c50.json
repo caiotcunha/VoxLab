@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7A5OasScm1c68qKLJ3u55Jq",
+  "object": "chat.completion",
+  "created": 1790633023,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same proposition about the importance of animal welfare (and its link to sustainability via the UN Nexus resolution) and express a supportive stance, despite different emphases.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nWe must determine if they respond to same specific proposition and stance.\n\nManifestação A: Discusses animal welfare, sustainability, zoonoses, UN Nexus resolution, argues that animal welfare is essential, criticizes production that harms animals and environment, suggests imbalance, etc. Stance: seems supportive of animal welfare and sustainability, critical of current practices. So stance is FAVOR (favoring animal welfare, sustainability, recognizing link). Not against.\n\nManifestação B: Also discusses animal welfare, benefits, mentions Nexus resolution, acknowledges importance, but also warns that prioritizing animal welfare excessively could jeopardize food production, says \"não é pela vida humana na Terra\" (not for human life). Overall seems supportive of animal welfare but with caution about economic impacts. Stance: generally favorable to animal welfare as a policy, but also raises concerns about trade-offs. Still seems to be in favor of integrating animal welfare, but warns against overprioritization. So stance is also FAVOR (supporting animal welfare, but with nuance). Both refer to same proposition? The proposition could be \"the Nexus resolution linking animal welfare, environment, sustainable development\" or \"the importance of animal welfare\". Both talk about the same general issue: animal welfare and its link to sustainability. Are they responding to same specific proposition? Possibly the same proposition: \"Animal welfare is important and should be integrated into policy.\" Both support it. So likely STANCE_MAINTAINED.\n\nWe must ensure they are responding to same specific proposition. Manifest A: \"the well-being of animals is essential component of sustainability\" and \"production practices that violate animal rights have negative impacts\". Manifest B: \"the Nexus resolution recognizes link; we must consider animal welfare; but not at expense of food security.\" Both address the same proposition about the Nexus resolution and animal welfare's role. So yes.\n\nThus relation: STANCE_MAINTAINED.\n\nProvide reasoning brief.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2514,
+    "total_tokens": 2971,
+    "completion_tokens": 457,
+    "estimated_cost": 0.000170708,
+    "prompt_tokens_details": null
+  }
+}

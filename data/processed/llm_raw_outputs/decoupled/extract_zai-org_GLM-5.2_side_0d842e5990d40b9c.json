@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRQ1FICRwiotjwKkEEbmE51I",
+  "object": "chat.completion",
+  "created": 1790622622,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"Deve ser criada uma carreira permanente para os profissionais da Defesa Civil nos Municípios?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": "1.  **Analyze the Request:**\n    *   Input: A literal manifestation from a parliamentary event (blinded).\n    *   Task: Determine if the stance is determinable (YES/NO/UNCERTAIN), formulate a neutral yes/no target question, and identify the stance (FAVOR/AGAINST/UNCERTAIN).\n    *   Output: Strict JSON format with keys `stance_determinable`, `target_question`, `stance`.\n\n2.  **Analyze the Manifestation:**\n    *   *Event:* PUBLIC_HEARING_WITH_DELIBERATION\n    *   *Date:* 2024-04-10\n    *   *Theme:* Melhorias na infraestrutura de prevenção a desastres e calamidades naturais\n    *   *Speech:* The speaker thanks Sosthenes Macêdo. Agrees with him on the need for investments in States and Municipalities. Mentions the municipalist agenda, highlighting technical deficiencies, lack of equipment, and understaffing in municipal Civil Defense. Advocates for a permanent career for Civil Defense professionals in Municipalities instead of temporary contracts or political appointments. Mentions working for financing to create structured careers. Criticizes the current situation where the Federal Government spends 2 billion BRL/year on temporary hires vs. 250 million BRL for permanent careers. Criticizes the budget allocation for career structuring (only 25k BRL last year). Concludes hoping the debate continues.\n\n3.  **Determine Stance Determinability:**\n    *   Does the speaker present a clear position on a specific issue? Yes. The speaker clearly advocates for the creation of permanent careers for Civil Defense professionals in Municipalities and criticizes the reliance on temporary contracts.\n    *   `stance_determinable`: \"YES\"\n\n4.  **Formulate Target Question:**\n    *   What is the specific central issue? The creation of permanent careers for Civil Defense professionals (especially in Municipalities).\n    *   Neutral yes/no question: \"Deve ser criada uma carreira permanente para os profissionais da Defesa Civil nos Municípios?\" or \"Deve o Governo Federal priorizar o financiamento de carreiras permanentes para a Defesa Civil em detrimento de contratações temporárias?\"\n    *   Let's keep it focused on the core proposal: \"Deve ser criada uma carreira permanente para os profissionais da Defesa Civil nos Municípios?\"\n\n5.  **Determine Stance:**\n    *   The speaker explicitly says: \"Uma das pautas de que nós falamos sempre é a necessidade de haver uma carreira para a Defesa Civil, principalmente nos Municípios.\" and \"Eu trabalhei fortemente pelo financiamento, para garantir a criação de carreiras estruturadas para a Defesa Civil nos Municípios\".\n    *   The answer to the target question is clearly YES.\n    *   `stance`: \"FAVOR\"\n\n6.  **Format Output:**\n    *   JSON strict format.\n    ```json\n    {\n      \"stance_determinable\": \"YES\",\n      \"target_question\": \"Deve ser criada uma carreira permanente para os profissionais da Defesa Civil nos Municípios?\",\n      \"stance\": \"FAVOR\"\n    }\n    ```",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1078,
+    "total_tokens": 1818,
+    "completion_tokens": 740,
+    "estimated_cost": 0.00176269500072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 689
+    }
+  }
+}

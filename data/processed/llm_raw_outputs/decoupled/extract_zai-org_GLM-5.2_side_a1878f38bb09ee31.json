@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKufCjAK67tuUVj9vA6IDNvt",
+  "object": "chat.completion",
+  "created": 1790622509,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O Estatuto dos Povos Ciganos (PL 1.387/2022) deve ser aprovado?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": "The speaker is opening a public hearing about the \"Estatuto dos Povos Ciganos\" (Statute of the Roma People), PL 1387/2022. \n\nLet me analyze the stance:\n\n1. The speaker says: \"Queremos ajudar, neste momento em que estamos na Presidência da Comissão de Direitos Humanos, que esse processo se dê da melhor forma possível e também que se dê com todo o respeito que o povo cigano merece no Brasil.\"\n\n2. \"Contem conosco e com esta Comissão nessa luta do povo cigano pelo reconhecimento e pelo estatuto.\"\n\n3. \"estamos acompanhando e atualizando, sistematicamente, no sentido de contribuir com a aprovação.\"\n\n4. \"Aprovamos um requerimento nesta Comissão que propõe a discussão do projeto de lei... com o objetivo de ajudar a retirar a população cigana da condição de invisibilidade social.\"\n\nThe speaker clearly supports the approval of the Estatuto dos Povos Ciganos. She explicitly says she's working towards its approval and supports the Roma people's struggle for recognition and the statute.\n\nSo:\n- Determinability: YES\n- Target question: \"O Estatuto dos Povos Ciganos deve ser aprovado?\"\n- Stance: FAVOR",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2497,
+    "total_tokens": 2837,
+    "completion_tokens": 340,
+    "estimated_cost": 0.00184088250072,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 280
+    }
+  }
+}

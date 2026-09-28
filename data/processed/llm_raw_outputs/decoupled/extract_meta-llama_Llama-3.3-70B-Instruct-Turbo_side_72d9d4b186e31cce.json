@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCLubFVu8jgUb1xQ6JMnpxT5",
+  "object": "chat.completion",
+  "created": 1790622344,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O projeto de lei de regulamentação do trabalho de motoristas de aplicativo deve ser aprovado?\",\n  \"stance\": \"AGAINST\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 869,
+    "total_tokens": 918,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00010258000000000001,
+    "prompt_tokens_details": null
+  }
+}

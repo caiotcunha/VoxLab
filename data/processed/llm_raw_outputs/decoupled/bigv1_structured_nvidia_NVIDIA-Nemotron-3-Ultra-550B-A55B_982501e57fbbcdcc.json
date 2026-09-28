@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfC83f9xy0enHhNSQIR5jBaB",
+  "object": "chat.completion",
+  "created": 1790632329,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Veto 28 to PL 920/2023 should be overturned so that 5% of judicial and extrajudicial agreement resources are directed to the public calamity fund for disaster prevention.\",\n  \"target_proposition_b\": \"The federal budget should allocate dedicated, non-provisional resources to the disaster prevention/calamity fund.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to analyze two speeches. Determine stance determinable, target proposition, stance, and comparability.\n\nFirst, identify each speech's main proposition.\n\nSpeech A: The speaker is advocating for overturning Veto 28 to PL 920/23, which would allocate 5% of judicial/extrajudicial agreements to a public calamity fund for disaster prevention. Also mentions need for prevention funding, career for civil defense agents, budget issues, direct aid to families. The core specific proposition: \"The veto (Veto 28) to PL 920/2023 should be overturned so that 5% of agreement funds go to disaster prevention fund.\" The speaker clearly favors overturning veto. So stance determinable YES. Target proposition: \"Veto 28 to PL 920/2023 should be overturned to allocate 5% of judicial/extrajudicial agreement resources to a disaster prevention fund.\" Stance: FAVOR (favor overturning veto). Could also phrase as \"The veto should be rejected.\" That's a proposition.\n\nSpeech B: The speaker discusses need for funding for disaster prevention, mentions that the Fund for Public Calamity created in 1969 never funded, need for budgetary allocation not just provisional measures, mentions career for civil defense. No specific veto or bill mentioned. The speaker expresses support for financing prevention, for a career, for proper budgeting. There is a clear stance: favors allocating resources to prevention fund, opposes reliance on provisional measures. But is there a specific proposition? Could be \"The federal budget should allocate dedicated resources for disaster prevention (instead of relying on provisional measures).\" The speaker says \"Espero que esse debate...\" incomplete. But still expresses position. Determinable? Probably YES, there is a clear stance on need for budgetary allocation for prevention. However the instruction: \"Pergunta genuína (pedido de informação sem endosso) geralmente é stance_determinable=NO.\" Not a question. The speaker makes statements advocating. So stance determinable YES.\n\nTarget proposition B: \"The federal budget should include dedicated, non-provisional funding for disaster prevention (e.g., funding the Calamity Fund).\" Stance: FAVOR (supports such funding).\n\nNow comparability: Are they same proposition? Speech A is about overturning a specific veto to allocate 5% of agreement funds to a calamity fund. Speech B is about general need for budgetary allocation to the calamity fund, not about veto. They are related but not semantically equivalent. So same_proposition = NO.\n\nNow produce JSON with keys.\n\nstance_determinable_a: YES\nstance_determinable_b: YES\ntarget_proposition_a: \"Veto 28 to PL 920/2023 should be overturned so that 5% of judicial and extrajudicial agreement resources are directed to the public calamity fund for disaster prevention.\"\ntarget_proposition_b: \"The federal budget should allocate dedicated, non-provisional resources to the disaster prevention/calamity fund.\"\nsame_proposition: NO\nstance_a: FAVOR\nstance_b: FAVOR\n\nCheck formatting: strings. Ensure no extra keys.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3293,
+    "total_tokens": 4119,
+    "completion_tokens": 826,
+    "estimated_cost": 0.0034637,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 685
+    }
+  }
+}

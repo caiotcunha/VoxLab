@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RazWXv3wMkgHlJMvmAiZlEEd",
+  "object": "chat.completion",
+  "created": 1790632478,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Both questions ask whether the same convention should be ratified/approved, differing only in wording and specifying Brazil in the second.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion 1: \"A ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\" Means: Should the ratification of the Inter-American Convention on the Protection of Human Rights of Older Persons be approved? That's asking about approval of ratification (presumably by some body). It's a yes/no.\n\nQuestion 2: \"O Brasil deve ratificar a Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos?\" Means: Should Brazil ratify the Inter-American Convention on the Protection of Human Rights of Older Persons? That's also about ratification, but specifically Brazil.\n\nAre they the same? The first asks about \"ratificação ... deve ser aprovada?\" Could be generic, maybe about the ratification process (maybe by the parliament). The second asks about Brazil ratifying. The first could be about the same act (Brazil's ratification) but phrased as \"ratificação ... deve ser aprovada?\" It doesn't specify Brazil, but context likely is about Brazil's ratification. However, the question says \"A ratificação ... deve ser aprovada?\" Without specifying who, but likely the same decision: whether to approve ratification. The second explicitly says Brazil should ratify.\n\nIf the first is generic, could be about any ratification, but likely the same. However, the instruction: \"mesma questão, com a mesma polaridade. Diferenças de redação, de detalhe ou de generalidade que não mudam o que está sendo decidido contam como EQUIVALENT.\" So if the first is generic but still about the same decision (ratify the convention), it's equivalent.\n\nThus relation: EQUIVALENT.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 821,
+    "completion_tokens": 409,
+    "estimated_cost": 8.4774e-05,
+    "prompt_tokens_details": null
+  }
+}

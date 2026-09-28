@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ra9PVWjJYarSbdFxBvO9d3Um",
+  "object": "chat.completion",
+  "created": 1790622376,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam questões diferentes, uma sobre inclusão em políticas de fomento cultural para pessoas com deficiência em geral e a outra sobre implementação de políticas públicas específicas para pessoas com Transtorno do Espectro Autista.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 483,
+    "completion_tokens": 74,
+    "estimated_cost": 6.458000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

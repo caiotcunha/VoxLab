@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVjWlJksmRBlAfrRgN8G23rP",
+  "object": "chat.completion",
+  "created": 1790622280,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"As concessionárias de energia elétrica devem ter um ambiente mais estável e previsível para investir?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1313,
+    "total_tokens": 1369,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00014922,
+    "prompt_tokens_details": null
+  }
+}

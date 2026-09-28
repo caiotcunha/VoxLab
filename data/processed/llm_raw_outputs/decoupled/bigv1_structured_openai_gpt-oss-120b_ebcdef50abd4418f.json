@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RifJGylA7mU8uDBRxLDZQpXv",
+  "object": "chat.completion",
+  "created": 1790624117,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A CPI should be created to investigate violence against indigenous peoples, women and children\",\n  \"target_proposition_b\": \"A new public hearing should be held to discuss good practices for LGBTQIA+ policies\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": "We need to produce JSON with fields:\n\n- stance_determinable_a: YES/NO/UNCERTAIN\n- stance_determinable_b: YES/NO/UNCERTAIN\n- target_proposition_a: short neutral phrase, or empty if stance_determinable_a != YES\n- target_proposition_b: same\n- same_proposition: YES/NO/UNCERTAIN (after both propositions identified)\n- stance_a: FAVOR/AGAINST/UNCERTAIN, or empty if stance_determinable_a != YES\n- stance_b: same\n\nWe must analyze each speech.\n\nManifestation A: Long speech about protection of indigenous women and children, need for policies, CPI, demarcation, budget, etc. The speaker is advocating for creation of plans, CPI, protection, demarcation, etc. So there is a target proposition: e.g., \"The government should create a CPI to investigate violence against indigenous women, children and adolescents\" or \"The government should protect indigenous territories and include gender, ethnic, child protection in public policies\". Need a short neutral phrase summarizing the specific proposition the speaker supports or rejects.\n\nWe need to identify a specific proposition that the speaker is taking stance on. The speech includes many proposals: \"We should work on construction of a CPI to investigate violence against children, indigenous peoples, women.\" Also \"We need to include indigenous recourse in budget.\" Also \"We need to demarcate and protect indigenous territories.\" The speaker is clearly in favor of these measures. So stance_determinable_a = YES. target_proposition_a: maybe \"A CPI should be created to investigate violence against indigenous peoples, women and children\". That's a specific proposition.\n\nStance_a = FAVOR.\n\nNow Manifestation B: Speech about research on LGBTQIA+ policies, need for equipment quality, budget, plans, councils, intersectorality, etc. The speaker suggests need for another public hearing on good practices, suggests a new audience to discuss the theme. The speaker is advocating for more public hearings, better equipment, more budget, etc. So there is a proposition: \"A new public hearing should be held to discuss good practices for LGBTQIA+ policies\". Or \"Policies should include intersectoral plans and councils for LGBTQIA+ community\". The speaker is in favor of those. So stance_determinable_b = YES. target_proposition_b: \"A new public hearing should be held to discuss good practices for LGBTQIA+ policies\". Stance_b = FAVOR.\n\nNow same_proposition: Are the two propositions the same or semantically equivalent? No. One is about CPI to investigate violence against indigenous women/children; the other is about public hearing on good practices for LGBTQIA+ policies. Different topics. So same_proposition = NO.\n\nNow produce JSON.\n\nCheck fields: \"stance_determinable_a\", \"stance_determinable_b\", \"target_proposition_a\", \"target_proposition_b\", \"same_proposition\", \"stance_a\", \"stance_b\".\n\nMake sure strings exactly as required: YES|NO|UNCERTAIN etc.\n\nNow produce JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3176,
+    "total_tokens": 3916,
+    "completion_tokens": 740,
+    "estimated_cost": 0.00024331199999999998,
+    "prompt_tokens_details": null
+  }
+}

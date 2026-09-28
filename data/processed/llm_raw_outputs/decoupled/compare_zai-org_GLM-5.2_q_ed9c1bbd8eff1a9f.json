@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rdi6xVbtMaHI7DLUHREo2qv1",
+  "object": "chat.completion",
+  "created": 1790623898,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: uma sobre derrubar um veto e outra sobre adotar medidas e políticas nacionais contra mudanças climáticas e desastres socioambientais.\"\n}",
+        "reasoning_content": "We need answer JSON classify relation between two yes/no questions extracted from same actor different speeches. Need judge only questions.\n\nQuestion1: \"O veto deve ser derrubado?\" (Should the veto be overridden?)\nQuestion2: \"Devem ser adotadas medidas urgentes e políticas nacionais para o enfrentamento das mudanças climáticas e prevenção de desastres socioambientais?\" (Should urgent measures and national policies be adopted to face climate change and prevent socio-environmental disasters?)\n\nClearly different topics/objects. Not same question. Relation DIFFERENT. Need brief reasoning one sentence. Strict JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 585,
+    "completion_tokens": 186,
+    "estimated_cost": 0.00044211750047999995,
+    "prompt_tokens_details": {
+      "cached_tokens": 256,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 126
+    }
+  }
+}

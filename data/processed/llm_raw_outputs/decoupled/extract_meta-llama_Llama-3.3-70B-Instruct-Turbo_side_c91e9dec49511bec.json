@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ryo4pOPrWk1uSKNKU8sttS9j",
+  "object": "chat.completion",
+  "created": 1790622276,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"O marco regulatório para a transição energética sustentável deve ser implementado com base na experiência do RenovaBio?\",\n  \"stance\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1147,
+    "total_tokens": 1203,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00013262000000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX9eaMG3WlbDfar4jdSu6YVF",
+  "object": "chat.completion",
+  "created": 1790622907,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações se posicionam de forma contrária (AGAINST) à imposição da obrigatoriedade da vacinação contra Covid-19 em crianças, abordando a mesma proposição específica com a mesma direção de stance.\"\n}",
+        "reasoning_content": "The user wants me to classify the relationship between two manifestations from the same actor in different parliamentary events.\nI need to output a strict JSON with \"relation\" and \"reasoning\".\n\nCategories:\n- STANCE_MAINTAINED: Same specific proposition, same stance.\n- STANCE_REVERSED: Same specific proposition, opposite stance.\n- INCOMPARABLE: Determinable stance, but different specific propositions.\n- RELATION_UNCERTAIN: Unclear steps.\n- INSUFFICIENT_EVIDENCE: At least one manifestation lacks determinable stance on any specific proposition.\n\nLet's analyze Manifestation A:\nEvent: PUBLIC_HEARING\nDate: 2023-11-08\nTheme: Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\nContent: The speaker is against the mandatory COVID-19 vaccination for children. \"Eu vou me opor a isso... a obrigatoriedade\". \"Nós não queremos um Governo que seja tirânico, que queira usar de tirania para cima das famílias.\" \"O que nós não podemos aceitar é que se imponha a obrigatoriedade\" (Wait, this is in B, but A says \"Eu vou me opor a isso... imposta a vacina\").\nStance A: AGAINST mandatory COVID-19 vaccination for children.\n\nLet's analyze Manifestation B:\nEvent: MINISTER_APPEARANCE\nDate: 2023-11-28\nTheme: Debate sobre a vacinação de crianças contra Covid-19\nContent: \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" \"Nós não queremos que crianças morram de COVID-19... Queremos nossos bebês a salvo.\" \"Não é possível que simplesmente se obrigue e ainda se punam pessoas...\"\nStance B: AGAINST mandatory COVID-19 vaccination for children.\n\nBoth manifestations address the same specific proposition: the mandatory COVID-19 vaccination for children (specifically, the imposition of this obligation).\nIn A: \"Obrigatoriedade da vacinação contra Covid-19 em crianças de 6 meses a 5 anos a partir de 2024\" -> AGAINST.\nIn B: \"Debate sobre a vacinação de crianças contra Covid-19\" -> AGAINST the mandatory aspect (\"O que nós não podemos aceitar é que se imponha a obrigatoriedade\").\n\nBoth are AGAINST the mandatory COVID-19 vaccination for children.\nTherefore, the relation is STANCE_MAINTAINED.\n\nLet's double check.\nManifestation A: \"Eu vou me opor a isso, enquanto eu tiver forças para lutar e mandato... a sua firmeza em dizer que vai ser imposta a vacina\". Clearly AGAINST mandatory COVID-19 vaccination for children.\nManifestation B: \"O que nós não podemos aceitar é que se imponha a obrigatoriedade.\" Clearly AGAINST mandatory COVID-19 vaccination for children.\n\nProposition: Mandatory COVID-19 vaccination for children.\nStance A: AGAINST.\nStance B: AGAINST.\nRelation: STANCE_MAINTAINED.\n\nReasoning: Ambas as manifestações se posicionam contra a obrigatoriedade da vacinação contra Covid-19 em crianças, mantendo a mesma direção de stance em relação à mesma proposição.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3241,
+    "total_tokens": 3997,
+    "completion_tokens": 756,
+    "estimated_cost": 0.00218834250408,
+    "prompt_tokens_details": {
+      "cached_tokens": 2176,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 687
+    }
+  }
+}

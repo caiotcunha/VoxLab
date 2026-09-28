@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RblWmxtnucIKFVFKSC0KTA6E",
+  "object": "chat.completion",
+  "created": 1790622383,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas abordam medidas diferentes de proteção às mulheres, uma sobre implementação de políticas públicas e outra sobre gestão de recursos para patrulhas e casas de apoio.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 435,
+    "total_tokens": 495,
+    "completion_tokens": 60,
+    "estimated_cost": 6.27e-05,
+    "prompt_tokens_details": null
+  }
+}

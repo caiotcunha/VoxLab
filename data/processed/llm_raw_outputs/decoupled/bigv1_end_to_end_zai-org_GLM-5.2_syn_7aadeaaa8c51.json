@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0nGEEhfZW4JooeIZMGxoELl",
+  "object": "chat.completion",
+  "created": 1790632287,
+  "model": "zai-org/GLM-5.2",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"A Manifestação A trata da inclusão de pessoas com deficiência em projetos culturais, editais e formação artística, enquanto a Manifestação B trata da efetivação dos direitos das pessoas com autismo e da implementação de políticas públicas para TEA. Ambas têm posições determináveis, mas não respondem à mesma proposição específica.\"\n}",
+        "reasoning_content": "We need classify relation between two manifestations by same actor in two parliamentary events. Need only JSON. Need determine if both respond to same specific proposition with same/opposite stance, or incomparable etc. Need not use external knowledge. Need parse.\n\nWe have Manifestation A: Event public hearing 2023-05-16 theme participation of persons with disabilities in cultural projects for inclusion. Speaker (actor) speaks as chair? Fala literal: praises, discusses accessibility, inclusion of persons with disabilities in cultural policies/fomento, quotas, accessibility in cultural spaces, art education curricula, communication simple, resolution to MEC. No explicit proposition? It's a public hearing. They propose encaminhar to MEC, maybe support policies. Manifestation B: public hearing 2024-04-09 theme compliance rights of autistic people. Speaker discusses laws need implementation, education, health, presents two requerimentos: one for meeting with state assemblies, another not to create subcomissão? Actually says presenting two requerimentos: one for encounter with Assembleias Legislativas; \"O outro é para que não criemos também uma Subcomissão para verificar...\" Wait a requerimento to not create subcomissão? He says doesn't see need to organize subcomissão. At end \"sugeriria esses dois requerimentos... para que façamos um encontro... mas não para que possamos fazer uma subcomissão.\" Need classify.\n\nQuestion: \"duas manifestações literais do mesmo ator em dois eventos parlamentares diferentes\" \"Classifique relação entre as duas manifestações\". Need compare if respond to same proposição específica with stance direction. Need identify propositions. A: maybe \"participação de pessoas com deficiência nos projetos culturais para garantir inclusão\" (theme). Actor favors inclusion policies, quotas, accessibility. B: \"cumprimento dos direitos das pessoas com autismo\" (theme). Actor favors implementation of policies, education, health, against creating subcomissão? But both about disability rights/inclusion? Need same specific proposition? The categories require same proposição específica. If themes differ (cultural inclusion vs autism rights implementation), likely INCOMPARABLE: positions determinable but not same specific proposition. But need be careful: Both might respond to broad proposition \"inclusion of persons with disabilities\" or \"public policies for persons with disabilities\"? But \"mesma proposição específica\" means not broad theme. Need decide.\n\nLet's inspect instructions: \"as duas manifestações respondem à mesma proposição específica com a mesma direção de stance (ambas FAVOR ou ambas AGAINST).\" \"INCOMPARABLE: as duas manifestações têm posição determinável, mas não respondem à mesma proposição específica.\" \"INSUFFICIENT_EVIDENCE: pelo menos uma das manifestações não apresenta posição determinável sobre nenhuma proposição específica.\" Need determine if each has position on a specific proposition. A: Does it present position on a specific proposition? It's a public hearing, not necessarily a bill. It advocates for inclusion of persons with disabilities in cultural projects/fomento, accessibility, quotas, education curricula, communication simple. It may be determinable FAVOR on \"participation of persons with disabilities in cultural projects to ensure inclusion\" (the hearing theme). B: determinable FAVOR on \"fulfillment of rights of people with autism\" and implementation of policies; also AGAINST creation of subcomissão? But if proposition is \"cumprimento dos direitos das pessoas com autismo\", favor. But same proposition? No, A is disability inclusion in cultural projects; B is autism rights implementation. They are different specific propositions. So INCOMPARABLE.\n\nBut maybe both are about \"policies for persons with disabilities\" and both favor inclusion. However \"specific proposition\" likely refers to same bill/proposition. There is no bill identified in either. The event themes are different. Need not use external knowledge. The actor in A supports \"cotas para pessoas com deficiência em editais culturais\" and \"acessibilidade em espaços culturais\"; B supports \"implementação de políticas públicas para pessoas com TEA\" and \"não criar subcomissão\". Not same. So INCOMPARABLE.\n\nNeed ensure not RELATION_UNCERTAIN due to no specific proposition? Let's think. The categories: INCOMPARABLE if positions determinable but not same specific proposition. INSUFFICIENT_EVIDENCE if at least one manifestation has no determinable position on any specific proposition. A has determinable positions on several specific policy proposals (quotas for disabled in cultural fomento, accessibility in cultural spaces, art curricula accessibility). B has determinable positions (favor implementing autism rights policies, favor legislative network meeting, against subcomissão). So both have determinable positions. They don't respond to same specific proposition. INCOMPARABLE.\n\nNeed produce JSON strict with relation and reasoning. No extra text. Need maybe relation \"INCOMPARABLE\". Reasoning one or two sentences. Need mention A concerns inclusion of persons with disabilities in cultural projects/fomento; B concerns implementation of rights of autistic persons and legislative monitoring; despite broad disability rights overlap, not same specific proposition. Good.\n\nNeed final only JSON. Ensure no comments.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3065,
+    "total_tokens": 4240,
+    "completion_tokens": 1175,
+    "estimated_cost": 0.0036926625006,
+    "prompt_tokens_details": {
+      "cached_tokens": 320,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 1081
+    }
+  }
+}

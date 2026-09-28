@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMN8Yuk9UrVd6Ji1ElxFB4YG",
+  "object": "chat.completion",
+  "created": 1790624135,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Both statements address the same proposal of replacing the FGTS birthday withdrawal with a credit option and each argue against eliminating the withdrawal, thus sharing the same stance.\"\n}",
+        "reasoning_content": "We need to classify relation between two statements.\n\nBoth are about the same topic: substitution of FGTS birthday withdrawal (saque-aniversário) with a new credit option. Manifestation A: strongly defends keeping the saque-aniversário, says ending it would be cruel, supports it. Stance: AGAINST ending, i.e., FAVOR maintaining saque-aniversário.\n\nManifestation B: also discusses the same issue. He says \"não se esgotou o assunto... precisamos de cálculo... jamais queremos fragilizar o FGTS. Seria insano fazer isso.\" He seems to support the saque-aniversário, says it helped during pandemic, used to pay debts, etc. He also mentions a new private credit option but says not to eliminate the saque-aniversário. He says \"não conte comigo para finalizá-lo, para acabar com ele.\" So he is AGAINST ending the saque-aniversário, i.e., FAVOR maintaining it.\n\nThus both respond to same proposition: whether to replace/ eliminate saque-aniversário with credit. Both are in favor of keeping it (or against ending). So same stance: STANCE_MAINTAINED.\n\nWe must ensure they are same specific proposition: \"substituição do saque-aniversário do FGTS por empréstimo consignado\". Both talk about substitution, both oppose substitution (favor keep). So STANCE_MAINTAINED.\n\nProvide JSON.",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2338,
+    "total_tokens": 2688,
+    "completion_tokens": 350,
+    "estimated_cost": 0.00014600599999999998,
+    "prompt_tokens_details": null
+  }
+}

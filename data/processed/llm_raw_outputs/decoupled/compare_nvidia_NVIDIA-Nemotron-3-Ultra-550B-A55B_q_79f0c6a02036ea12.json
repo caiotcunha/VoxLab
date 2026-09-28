@@ -1,0 +1,34 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R63U2sxOAF8AmpvoVcNrDmx7",
+  "object": "chat.completion",
+  "created": 1790624084,
+  "model": "nvidia/NVIDIA-Nemotron-3-Ultra-550B-A55B",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira pergunta trata de um modelo nacional de cuidado compartilhado para idosos, enquanto a segunda questiona a prioridade da agenda de envelhecimento saudável no G20; são questões com atores, escopo e instrumentos distintos.\"\n}",
+        "reasoning_content": "We need to classify relation between two questions.\n\nQuestion1: \"O Estado deve adotar um modelo de cuidado compartilhado entre múltiplos níveis de governo e a sociedade civil para a população idosa?\" This asks whether the State should adopt a shared care model involving multiple government levels and civil society for the elderly.\n\nQuestion2: \"O G20 deve priorizar a agenda do envelhecimento saudável?\" This asks whether the G20 should prioritize the healthy aging agenda.\n\nThese are different questions: one about a specific policy model at national level (state adopting shared care), the other about an international forum (G20) prioritizing an agenda. Different scope, actors, measures. So DIFFERENT.\n\nReasoning: they address different actors and policy instruments. So answer DIFFERENT.",
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 645,
+    "completion_tokens": 238,
+    "estimated_cost": 0.0007271,
+    "prompt_tokens_details": {
+      "cached_tokens": 0,
+      "cache_write_tokens": null
+    },
+    "completion_tokens_details": {
+      "reasoning_tokens": 167
+    }
+  }
+}

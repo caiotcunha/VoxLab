@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX4dlLdeCnj2gb4YXC3y2S4F",
+  "object": "chat.completion",
+  "created": 1790622294,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable\": \"YES\",\n  \"target_question\": \"A transição para energia limpa e renovável deve ser priorizada no Brasil?\",\n  \"stance\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1486,
+    "total_tokens": 1534,
+    "completion_tokens": 48,
+    "estimated_cost": 0.00016396,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNhGTJ0BaNHpC2yihDrN2WEw",
+  "object": "chat.completion",
+  "created": 1790632630,
+  "model": "openai/gpt-oss-120b",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As perguntas tratam de temas distintos: aprovação de um PL específico sobre seguros de vida para idosos versus combate à obsolescência programada.\"\n}",
+        "reasoning_content": "We need to determine relation between two yes/no questions.\n\nQuestion1: \"O Projeto de Lei nº 2.002/2019, que visa garantir maior proteção aos consumidores idosos nos contratos de seguro de vida, deve ser aprovado?\" So asks: Should the bill be approved? It's about a specific bill concerning protection for elderly consumers in life insurance contracts.\n\nQuestion2: \"A prática de obsolescência programada deve ser combatida?\" Asks: Should planned obsolescence be fought? That's a broader policy about combating a practice.\n\nThese are different issues: one is about a specific bill for elderly insurance protection; the other is about combating planned obsolescence (likely in products). They are not the same question, not opposite polarity, different topics. So relation = DIFFERENT.\n\nThus JSON with relation \"DIFFERENT\" and brief reasoning.\n\n",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 642,
+    "completion_tokens": 228,
+    "estimated_cost": 5.4078e-05,
+    "prompt_tokens_details": null
+  }
+}
