@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPdXqxpBkGXMOg3StpYIMrah",
+  "object": "chat.completion",
+  "created": 1790616560,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A exploração de petróleo na Margem Equatorial deve ser autorizada?\",\n  \"target_proposition_b\": \"A exploração de petróleo na Margem Equatorial deve ser autorizada?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5475,
+    "total_tokens": 5583,
+    "completion_tokens": 108,
+    "estimated_cost": 0.0005820600000000001,
+    "prompt_tokens_details": null
+  }
+}

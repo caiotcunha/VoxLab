@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyAkXLwNF0jsSCSD2TmDtCFr",
+  "object": "chat.completion",
+  "created": 1790616547,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Os recursos públicos devem ser destinados à prevenção e resposta a desastres socioambientais?\",\n  \"target_proposition_b\": \"Os recursos públicos devem ser destinados à prevenção e resposta a desastres socioambientais?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3480,
+    "total_tokens": 3599,
+    "completion_tokens": 119,
+    "estimated_cost": 0.00038608,
+    "prompt_tokens_details": null
+  }
+}

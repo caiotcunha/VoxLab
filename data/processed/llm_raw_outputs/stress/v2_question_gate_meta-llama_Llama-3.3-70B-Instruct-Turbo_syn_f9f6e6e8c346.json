@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdFLlVFOCoGzO9DO0CiCp7gn",
+  "object": "chat.completion",
+  "created": 1790616592,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O veto ao PL 920/23 deve ser derrubado?\",\n  \"target_proposition_b\": \"O Fundo de Calamidade Pública deve ser abastecido de recursos por meio de previsão orçamentária?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3731,
+    "total_tokens": 3848,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00041054,
+    "prompt_tokens_details": null
+  }
+}

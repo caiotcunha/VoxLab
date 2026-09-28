@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJaLl0yJ0gcHmJnN1MhMT4ZE",
+  "object": "chat.completion",
+  "created": 1790616494,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A rede de proteção para mulheres vítimas de violência deve ser ampliada e fortalecida?\",\n  \"target_proposition_b\": \"A criação de um programa específico para a saúde da mulher no climatério e menopausa é a melhor solução?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4398,
+    "total_tokens": 4519,
+    "completion_tokens": 121,
+    "estimated_cost": 0.0016316800000000002,
+    "prompt_tokens_details": null
+  }
+}

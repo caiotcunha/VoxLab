@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R6ilCdI8o0KmuP467YuIGwtk",
+  "object": "chat.completion",
+  "created": 1790616426,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A violência contra as mulheres e crianças indígenas deve ser combatida com planos de enfrentamento específicos?\",\n  \"target_proposition_b\": \"As políticas públicas para a população LGBTQIA+ devem ser implementadas com planos e Conselhos que assegurem a intersetorialidade e o protagonismo da sociedade civil?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4084,
+    "total_tokens": 4227,
+    "completion_tokens": 143,
+    "estimated_cost": 0.00045416,
+    "prompt_tokens_details": null
+  }
+}

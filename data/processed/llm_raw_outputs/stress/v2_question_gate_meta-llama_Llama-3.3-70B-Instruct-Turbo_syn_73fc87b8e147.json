@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RflppDfVPqv0ZW566Un9HUEN",
+  "object": "chat.completion",
+  "created": 1790616482,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A regulamentação das redes sociais deve ser feita para combater a violência contra crianças e adolescentes?\",\n  \"target_proposition_b\": \"O Orçamento da União deve incluir recursos específicos para a prevenção da violência contra crianças e adolescentes?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3747,
+    "total_tokens": 3874,
+    "completion_tokens": 127,
+    "estimated_cost": 0.00041534,
+    "prompt_tokens_details": null
+  }
+}

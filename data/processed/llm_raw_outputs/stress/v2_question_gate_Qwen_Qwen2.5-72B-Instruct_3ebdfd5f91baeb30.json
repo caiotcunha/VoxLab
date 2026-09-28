@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlLzLcRNhizoNv6cE8SNmk8g",
+  "object": "chat.completion",
+  "created": 1790616531,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"As pessoas com deficiência devem ter acesso e participação nas políticas de fomento cultural?\",\n  \"target_proposition_b\": \"As pessoas com autismo devem ter acesso e participação nas políticas públicas de educação e saúde?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3593,
+    "total_tokens": 3708,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0013394799999999999,
+    "prompt_tokens_details": null
+  }
+}

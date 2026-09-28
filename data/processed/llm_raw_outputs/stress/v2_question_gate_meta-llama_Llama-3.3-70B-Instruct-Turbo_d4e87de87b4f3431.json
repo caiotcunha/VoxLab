@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8WFhGSL3IC39TK5OuSD53V9",
+  "object": "chat.completion",
+  "created": 1790616392,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A compra de insulina pela Global X foi uma decisão justificada?\",\n  \"target_proposition_b\": \"O Ministério deve arcar com as despesas de viagem de uma condenada por organização criminosa?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3028,
+    "total_tokens": 3143,
+    "completion_tokens": 115,
+    "estimated_cost": 0.0003396,
+    "prompt_tokens_details": null
+  }
+}

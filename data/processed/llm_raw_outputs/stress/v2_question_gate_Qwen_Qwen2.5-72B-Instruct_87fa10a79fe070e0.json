@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqChaeHA5XWx2OEkFZeULI5g",
+  "object": "chat.completion",
+  "created": 1790616545,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A Fundação Renova deve ser obrigada a comparecer às audiências?\",\n  \"target_proposition_b\": \"A Fundação Renova deve ser obrigada a comparecer às audiências?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2740,
+    "total_tokens": 2843,
+    "completion_tokens": 103,
+    "estimated_cost": 0.0010276,
+    "prompt_tokens_details": null
+  }
+}

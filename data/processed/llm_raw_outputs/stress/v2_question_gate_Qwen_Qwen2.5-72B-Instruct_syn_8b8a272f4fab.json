@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rf0j6PbAeo2UnAtHdDvOP8A6",
+  "object": "chat.completion",
+  "created": 1790616491,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O País necessita de recursos financeiros específicos para a prevenção de desastres naturais?\",\n  \"target_proposition_b\": \"O País necessita de recursos financeiros específicos para a prevenção de desastres naturais?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2448,
+    "total_tokens": 2565,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00092808,
+    "prompt_tokens_details": null
+  }
+}

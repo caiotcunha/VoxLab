@@ -433,7 +433,7 @@ def rate(rows: list[dict], predicate) -> dict:
             "wilson_95": wilson(hits, len(rows))}
 
 
-def summarize(prediction_rows: list[dict]) -> dict:
+def summarize(prediction_rows: list[dict], conditions: tuple[str, ...] = CONDITIONS) -> dict:
     """Headline rates per model x condition x operation, on accepted rewrites only."""
     output: dict = {}
     for model in sorted({row["model"] for row in prediction_rows}):
@@ -441,7 +441,7 @@ def summarize(prediction_rows: list[dict]) -> dict:
         for operation in OPERATIONS:
             rows = [row for row in prediction_rows if row["model"] == model and row["operation"] == operation]
             per_condition = {}
-            for condition in CONDITIONS:
+            for condition in conditions:
                 preds = [{"pred": row[condition], "expected": row["expected_relation"]} for row in rows]
                 per_condition[condition] = {
                     "accuracy_vs_expected": rate(preds, lambda r: r["pred"] == r["expected"]),
@@ -454,12 +454,12 @@ def summarize(prediction_rows: list[dict]) -> dict:
     return output
 
 
-def headline(summary: dict) -> dict:
+def headline(summary: dict, conditions: tuple[str, ...] = CONDITIONS) -> dict:
     """The four quantities the stress test was designed to measure."""
     out = {}
     for model, ops in summary.items():
         entry = {}
-        for condition in CONDITIONS:
+        for condition in conditions:
             get = lambda op, key: ops.get(op, {}).get("conditions", {}).get(condition, {}).get(key, {})
             entry[condition] = {
                 "reversal_recall__REVERSE_ON_COMPARABLE": get("REVERSE_ON_COMPARABLE", "predicted_reversed"),

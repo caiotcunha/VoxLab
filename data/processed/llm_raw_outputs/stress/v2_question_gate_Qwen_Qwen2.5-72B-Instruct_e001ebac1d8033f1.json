@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPh48nrVZKJp2LSWpERWSN3q",
+  "object": "chat.completion",
+  "created": 1790616466,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deve ser criado um arcabouço legal para proteger vítimas de desastres naturais, incluindo medidas de recuperação econômica?\",\n  \"target_proposition_b\": \"Deve ser criado um arcabouço legal para proteger vítimas de desastres naturais, incluindo medidas de recuperação econômica?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3126,
+    "total_tokens": 3269,
+    "completion_tokens": 143,
+    "estimated_cost": 0.00118256,
+    "prompt_tokens_details": null
+  }
+}

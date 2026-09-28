@@ -101,6 +101,15 @@ Sem nova anotação humana, os 47 pares do gold foram usados para gerar contrafa
 
 Veja `docs/stress_and_canonicalization.md`.
 
+## Atualização: gate v2 por perguntas neutras (2026-09-28)
+
+Um prompt v2, que julga a comparabilidade apenas por perguntas neutras de sim/não, foi avaliado com dev (piloto), congelamento por hash e teste (expansão). O resultado foi negativo:
+- o recall de pares comparáveis sobe;
+- a falsa comparabilidade em proposições deslocadas volta;
+- as reversões sintéticas do teste continuam não detectadas: no Qwen por leitura de stance, no Llama pelo gate.
+
+Veja `docs/question_gate.md`.
+
 ## Próxima fase: gold expandido e avaliação prospectiva
 
 1. Os dois anotadores preenchem independentemente os 29 pacotes cegos, sem acesso a `data/processed/expansion29_model_predictions.csv`.

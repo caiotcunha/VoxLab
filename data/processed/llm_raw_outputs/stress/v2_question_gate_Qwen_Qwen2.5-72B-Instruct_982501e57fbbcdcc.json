@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHTvRmC2mqPSKAf54U54EcrV",
+  "object": "chat.completion",
+  "created": 1790616552,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Os recursos para prevenção de desastres devem ser aumentados?\",\n  \"target_proposition_b\": \"Os recursos para prevenção de desastres devem ser aumentados?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3694,
+    "total_tokens": 3799,
+    "completion_tokens": 105,
+    "estimated_cost": 0.00137184,
+    "prompt_tokens_details": null
+  }
+}

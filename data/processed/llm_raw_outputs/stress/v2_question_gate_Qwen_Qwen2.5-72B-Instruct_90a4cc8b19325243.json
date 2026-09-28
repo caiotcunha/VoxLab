@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RshclxXeeo5Ix6GRGS3gava2",
+  "object": "chat.completion",
+  "created": 1790616551,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A campanha antivacina deve ser combatida?\",\n  \"target_proposition_b\": \"A campanha antivacina deve ser combatida?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5409,
+    "total_tokens": 5508,
+    "completion_tokens": 99,
+    "estimated_cost": 0.00198684,
+    "prompt_tokens_details": null
+  }
+}

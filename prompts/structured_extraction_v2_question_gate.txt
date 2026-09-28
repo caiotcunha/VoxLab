@@ -1,0 +1,47 @@
+Você está analisando duas manifestações literais do mesmo ator em dois eventos parlamentares diferentes. As manifestações abaixo já foram cegadas: você não recebe nome, partido, UF ou cargo do ator.
+
+Siga estas etapas, nesta ordem:
+
+1. Determinabilidade: cada manifestação apresenta posição suficientemente clara sobre alguma questão específica? YES, NO ou UNCERTAIN. NO significa ausência de posição determinável, não neutralidade.
+
+2. Pergunta-alvo: para cada manifestação com posição determinável, escreva a questão específica que ela responde, como uma PERGUNTA NEUTRA de sim ou não, sem revelar a resposta do falante. Exemplo: "O saque-aniversário do FGTS deve ser mantido?". "Regulação de plataformas" é tema, não pergunta; "As plataformas devem remover conteúdo ilegal após notificação?" é pergunta.
+
+3. Comparabilidade: as duas manifestações respondem à MESMA pergunta (ou a perguntas equivalentes)? Julgue olhando SOMENTE as perguntas, nunca as respostas.
+   - Se o falante responde a mesma pergunta de formas diferentes nos dois eventos, isso continua sendo a MESMA pergunta: responda YES. Mudança de posição não é mudança de pergunta.
+   - Mesmo tema com medida, instrumento, objeto, população ou escopo diferentes é NO.
+   - Se for YES, reescreva as duas perguntas com exatamente a mesma formulação.
+
+4. Resposta: para cada manifestação, a resposta do falante à sua pergunta é SIM (FAVOR) ou NÃO (AGAINST)? Se a direção não for clara, use UNCERTAIN. Nunca use NEUTRAL.
+
+Regras adicionais:
+- Não julgue se o ator "mudou de opinião", foi "coerente" ou "consistente".
+- Não use conhecimento externo sobre o ator, seu histórico político ou seu partido. Julgue apenas pelo texto fornecido.
+- Discurso reportado ("o grupo defende X") não é a posição do próprio falante; procure a avaliação do falante.
+- Citação de terceiro sem endosso explícito não é posição do ator.
+- Pergunta genuína (pedido de informação sem endosso) geralmente é stance_determinable=NO.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "stance_determinable_a": "YES|NO|UNCERTAIN",
+  "stance_determinable_b": "YES|NO|UNCERTAIN",
+  "target_proposition_a": "pergunta neutra de sim ou não, ou string vazia se stance_determinable_a != YES",
+  "target_proposition_b": "pergunta neutra de sim ou não, ou string vazia se stance_determinable_b != YES",
+  "same_proposition": "YES|NO|UNCERTAIN",
+  "stance_a": "FAVOR|AGAINST|UNCERTAIN (FAVOR = responde SIM), ou string vazia se stance_determinable_a != YES",
+  "stance_b": "FAVOR|AGAINST|UNCERTAIN (FAVOR = responde SIM), ou string vazia se stance_determinable_b != YES"
+}}
+
+Não inclua texto fora do JSON. Não inclua comentários.
+
+--- Manifestação A ---
+Evento: {event_a}
+Data: {date_a}
+Tema: {topic_a}
+Fala literal: {text_a}
+
+--- Manifestação B ---
+Evento: {event_b}
+Data: {date_b}
+Tema: {topic_b}
+Fala literal: {text_b}

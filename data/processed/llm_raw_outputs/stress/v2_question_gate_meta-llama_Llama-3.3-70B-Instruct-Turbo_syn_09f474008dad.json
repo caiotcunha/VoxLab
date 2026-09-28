@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwUgyechgh1DcsOkioQ2YjfI",
+  "object": "chat.completion",
+  "created": 1790616486,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Supremo Tribunal Federal deve evitar o ativismo judicial e respeitar a competência do Poder Legislativo?\",\n  \"target_proposition_b\": \"A ANEEL deve considerar as dificuldades do setor elétrico ao definir as regras de renovação das concessões das distribuidoras de energia elétrica?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3076,
+    "total_tokens": 3217,
+    "completion_tokens": 141,
+    "estimated_cost": 0.00035272000000000005,
+    "prompt_tokens_details": null
+  }
+}

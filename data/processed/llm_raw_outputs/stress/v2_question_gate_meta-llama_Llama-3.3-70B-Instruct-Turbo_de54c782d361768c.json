@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Re4oaOg7GKV3Rv08j2ssPqNp",
+  "object": "chat.completion",
+  "created": 1790616457,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A lei específica do feminicídio deve ser implementada com políticas públicas de proteção às mulheres?\",\n  \"target_proposition_b\": \"O Programa de Atenção a Mulheres na Menopausa e Climatério deve ser criado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4396,
+    "total_tokens": 4519,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00047896000000000006,
+    "prompt_tokens_details": null
+  }
+}

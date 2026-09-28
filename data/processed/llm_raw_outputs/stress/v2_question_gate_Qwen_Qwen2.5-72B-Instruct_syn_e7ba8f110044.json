@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2m219cBdhKgmllglauuD0wJ",
+  "object": "chat.completion",
+  "created": 1790616595,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Projeto de Lei nº 2.002, de 2019, que visa garantir maior proteção aos consumidores da terceira idade, deve ser aprovado?\",\n  \"target_proposition_b\": \"A prática de obsolescência programada deve ser coibida e regulamentada?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4272,
+    "total_tokens": 4406,
+    "completion_tokens": 134,
+    "estimated_cost": 0.0015915200000000001,
+    "prompt_tokens_details": null
+  }
+}

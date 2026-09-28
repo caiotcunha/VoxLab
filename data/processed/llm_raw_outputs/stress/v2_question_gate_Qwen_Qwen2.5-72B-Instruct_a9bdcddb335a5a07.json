@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rsve9mLUUBgEgyid00yi0AtV",
+  "object": "chat.completion",
+  "created": 1790616558,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas de proteção às mulheres vítimas de violência devem ser ampliadas e fortalecidas?\",\n  \"target_proposition_b\": \"Políticas públicas de proteção às mulheres vítimas de violência devem ser ampliadas e fortalecidas?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3031,
+    "total_tokens": 3158,
+    "completion_tokens": 127,
+    "estimated_cost": 0.00114196,
+    "prompt_tokens_details": null
+  }
+}

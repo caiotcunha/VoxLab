@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaXLXCqc9yu1FiJDBeEYmNj7",
+  "object": "chat.completion",
+  "created": 1790616475,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Políticas públicas de proteção e apoio às mulheres vítimas de violência devem ser ampliadas e fortalecidas?\",\n  \"target_proposition_b\": \"Políticas públicas voltadas para a saúde da mulher no climatério e menopausa devem ser criadas e aprimoradas?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4356,
+    "total_tokens": 4491,
+    "completion_tokens": 135,
+    "estimated_cost": 0.00162216,
+    "prompt_tokens_details": null
+  }
+}

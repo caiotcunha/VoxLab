@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQLDcXdYl5fcSUBNUPL4tRSY",
+  "object": "chat.completion",
+  "created": 1790616477,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"NO\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"\",\n  \"target_proposition_b\": \"O Projeto de Lei nº 2.768, de 2022, deve ser aprovado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2714,
+    "total_tokens": 2806,
+    "completion_tokens": 92,
+    "estimated_cost": 0.00030083999999999997,
+    "prompt_tokens_details": null
+  }
+}

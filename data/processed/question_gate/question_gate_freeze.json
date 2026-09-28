@@ -1,0 +1,11 @@
+{
+  "experiment_version": "question_gate_v2",
+  "frozen_at": "2026-09-28T17:28:35.017652+00:00",
+  "prompt_path": "prompts/structured_extraction_v2_question_gate.txt",
+  "prompt_sha256": "b7d1a4cbfaba41b19c56f4865b2e4d0320cf799d68228ddc5347f8e0022fc037",
+  "models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  ],
+  "git_commit": "b194470fa7709c1db78d45f771fdf548445fcb5f"
+}

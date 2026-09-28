@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7RVuOv0ONra428Op1NSpWey",
+  "object": "chat.completion",
+  "created": 1790616469,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"NO\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"\",\n  \"target_proposition_b\": \"As políticas de regulamentação dos mercados digitais devem ser cuidadosamente balanceadas para não sufocar a competitividade e a livre concorrência?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2701,
+    "total_tokens": 2806,
+    "completion_tokens": 105,
+    "estimated_cost": 0.00101436,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsvkIxUPCtHnoZje8Azs56qh",
+  "object": "chat.completion",
+  "created": 1790616577,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O recurso para políticas voltadas para mulheres deve ser direcionado diretamente ao Ministério das Mulheres?\",\n  \"target_proposition_b\": \"A criação de políticas públicas específicas para a menopausa e climatério é a solução efetiva para melhorar a qualidade de vida das mulheres?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2806,
+    "total_tokens": 2938,
+    "completion_tokens": 132,
+    "estimated_cost": 0.0010629600000000002,
+    "prompt_tokens_details": null
+  }
+}

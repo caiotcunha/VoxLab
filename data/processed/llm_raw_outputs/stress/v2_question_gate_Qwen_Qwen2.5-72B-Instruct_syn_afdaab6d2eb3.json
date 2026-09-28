@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyrDCEvjzOickVMGj50V78f7",
+  "object": "chat.completion",
+  "created": 1790616493,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A vacinação contra a COVID-19 deve ser obrigatória para crianças de 6 meses a 5 anos?\",\n  \"target_proposition_b\": \"A vacinação contra a COVID-19 deve ser obrigatória para crianças e idosos?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3795,
+    "total_tokens": 3913,
+    "completion_tokens": 118,
+    "estimated_cost": 0.0014134,
+    "prompt_tokens_details": null
+  }
+}

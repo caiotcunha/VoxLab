@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyocZR2zlZTSUKp2FG4AdnTX",
+  "object": "chat.completion",
+  "created": 1790616576,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"As políticas de fomento culturais devem incluir cotas para pessoas com deficiência?\",\n  \"target_proposition_b\": \"As escolas devem ser espaços inclusivos para pessoas com Transtorno do Espectro Autista?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3606,
+    "total_tokens": 3725,
+    "completion_tokens": 119,
+    "estimated_cost": 0.0013457600000000003,
+    "prompt_tokens_details": null
+  }
+}

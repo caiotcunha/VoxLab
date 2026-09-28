@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCDgA2hstqJmvpBT6ZsoAWze",
+  "object": "chat.completion",
+  "created": 1790616537,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"As pessoas com dor crônica devem ter direito ao diagnóstico biopsicossocial e à atenção biopsicossocial?\",\n  \"target_proposition_b\": \"O cuidar deve ser reconhecido como um trabalho e ter prioridade sobre o mercado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2376,
+    "total_tokens": 2499,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00027696000000000003,
+    "prompt_tokens_details": null
+  }
+}

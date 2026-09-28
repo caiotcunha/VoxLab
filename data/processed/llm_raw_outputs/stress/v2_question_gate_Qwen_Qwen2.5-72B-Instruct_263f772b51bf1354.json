@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RW8aFYuvHXbo0xwRsnYiylv4",
+  "object": "chat.completion",
+  "created": 1790616410,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O envelhecimento da população brasileira deve ser enfrentado com políticas públicas que garantam direitos e qualidade de vida para as pessoas idosas?\",\n  \"target_proposition_b\": \"O envelhecimento da população brasileira deve ser enfrentado com políticas públicas que garantam direitos e qualidade de vida para as pessoas idosas?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 9139,
+    "total_tokens": 9278,
+    "completion_tokens": 139,
+    "estimated_cost": 0.0033456400000000004,
+    "prompt_tokens_details": null
+  }
+}

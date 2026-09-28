@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhqDjrE836gvgTJgYI2CPuyV",
+  "object": "chat.completion",
+  "created": 1790616460,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Poder Judiciário deve evitar o ativismo judicial e limitar-se a julgar casos concretos?\",\n  \"target_proposition_b\": \"As concessionárias de energia elétrica devem ser mais rigorosamente fiscalizadas e punidas por não cumprir a lei?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3075,
+    "total_tokens": 3202,
+    "completion_tokens": 127,
+    "estimated_cost": 0.0011578,
+    "prompt_tokens_details": null
+  }
+}

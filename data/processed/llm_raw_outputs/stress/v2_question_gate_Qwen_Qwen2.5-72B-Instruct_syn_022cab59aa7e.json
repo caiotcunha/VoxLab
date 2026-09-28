@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwyrfrblxOPZw88xaZ3grIwH",
+  "object": "chat.completion",
+  "created": 1790616571,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A soberania nacional na geração de energia limpa e renovável deve ser fortalecida?\",\n  \"target_proposition_b\": \"O modelo atual das concessionárias de energia no Brasil deve ser preservado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2800,
+    "total_tokens": 2911,
+    "completion_tokens": 111,
+    "estimated_cost": 0.0010524,
+    "prompt_tokens_details": null
+  }
+}

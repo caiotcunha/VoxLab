@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnpRY38kvazQoRSHIWElUoQW",
+  "object": "chat.completion",
+  "created": 1790616554,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A vacinação contra a COVID-19 deve ser incluída no planejamento de vacinação de crianças?\",\n  \"target_proposition_b\": \"A vacinação contra a COVID-19 deve ser incluída no planejamento de vacinação de crianças?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5507,
+    "total_tokens": 5633,
+    "completion_tokens": 126,
+    "estimated_cost": 0.00059102,
+    "prompt_tokens_details": null
+  }
+}

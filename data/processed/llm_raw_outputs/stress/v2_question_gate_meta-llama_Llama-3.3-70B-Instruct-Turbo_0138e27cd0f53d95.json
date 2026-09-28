@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDMYnKfjfKV8itv1YRcxr3o2",
+  "object": "chat.completion",
+  "created": 1790616405,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos deve ser aprovada?\",\n  \"target_proposition_b\": \"O Estatuto da Pessoa Idosa deve ser consolidado e implementado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4756,
+    "total_tokens": 4872,
+    "completion_tokens": 116,
+    "estimated_cost": 0.00051272,
+    "prompt_tokens_details": null
+  }
+}

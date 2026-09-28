@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDgS7wJL4y0OPV4PL0R1NxX2",
+  "object": "chat.completion",
+  "created": 1790616474,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A regulamentação dos mercados digitais deve ser baseada em experiências internacionais?\",\n  \"target_proposition_b\": \"A regulamentação dos mercados digitais deve garantir a segurança e a proteção dos dados pessoais?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2693,
+    "total_tokens": 2809,
+    "completion_tokens": 116,
+    "estimated_cost": 0.00101588,
+    "prompt_tokens_details": null
+  }
+}

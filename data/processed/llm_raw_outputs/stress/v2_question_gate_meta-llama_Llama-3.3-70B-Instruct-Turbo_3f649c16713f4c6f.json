@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtOtNoTRbzs8oRzwbM9eQQDk",
+  "object": "chat.completion",
+  "created": 1790616535,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O recurso para patrulhas e a Casa da Mulher Brasileira deve ser gerenciado diretamente pelo Ministério das Mulheres?\",\n  \"target_proposition_b\": \"O Programa de Atenção a Mulheres na Menopausa e Climatério deve ser criado?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2798,
+    "total_tokens": 2930,
+    "completion_tokens": 132,
+    "estimated_cost": 0.00032204000000000005,
+    "prompt_tokens_details": null
+  }
+}

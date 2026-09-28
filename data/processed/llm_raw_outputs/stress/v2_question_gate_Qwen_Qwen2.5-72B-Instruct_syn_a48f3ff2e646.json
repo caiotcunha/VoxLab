@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RW7hAtAw3qbt7UGb5UP1IPPD",
+  "object": "chat.completion",
+  "created": 1790616592,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"As políticas públicas de proteção às mulheres devem ser ampliadas e fortalecidas?\",\n  \"target_proposition_b\": \"As políticas públicas de proteção às mulheres devem ser ampliadas e fortalecidas?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3033,
+    "total_tokens": 3150,
+    "completion_tokens": 117,
+    "estimated_cost": 0.0011386800000000002,
+    "prompt_tokens_details": null
+  }
+}

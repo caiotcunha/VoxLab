@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7IPDdj7QiZKzTFyuTqkmd7s",
+  "object": "chat.completion",
+  "created": 1790616476,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O saque-aniversário do FGTS deve ser mantido?\",\n  \"target_proposition_b\": \"O sistema de financiamento do SUS deve ser revisado para atender as necessidades dos pacientes de EMD?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"UNCERTAIN\",\n  \"stance_b\": \"UNCERTAIN\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2673,
+    "total_tokens": 2781,
+    "completion_tokens": 108,
+    "estimated_cost": 0.00030186000000000004,
+    "prompt_tokens_details": null
+  }
+}

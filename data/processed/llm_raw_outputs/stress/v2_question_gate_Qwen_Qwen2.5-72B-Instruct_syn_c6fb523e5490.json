@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUu4E1FF2DsQNP9KRVwfNSpA",
+  "object": "chat.completion",
+  "created": 1790616584,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos deve ser mantida?\",\n  \"target_proposition_b\": \"A vacinação contra a Covid-19 em crianças de 6 meses a 5 anos deve ser mantida?\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3422,
+    "total_tokens": 3545,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00128112,
+    "prompt_tokens_details": null
+  }
+}

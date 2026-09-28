@@ -91,4 +91,4 @@ Os dois experimentos usam só o gold existente, sem anotação humana nova, e ro
 - **O end-to-end falha no sentido oposto.** Trata proposições deslocadas como comparáveis em 8/8.
 - **A concordância humana de stance na expansão é maior do que parecia.** A canonização mostra que 5 dos 8 desacordos são só polaridade da formulação, e o κ sobe de 0,27 para 0,54.
 - **Correção em resultado anterior.** A auditoria de polaridade anterior comparava lados trocados em parte da expansão. Veja `docs/stress_and_canonicalization.md`.
-
+- **Gate v2, com comparabilidade julgada por perguntas neutras de sim/não (`docs/question_gate.md`): resultado negativo.** O protocolo teve dev, congelamento por hash e teste. O v2 aumenta o recall de pares comparáveis, mas volta a aceitar proposições deslocadas e não recupera as reversões no teste. O prompt move o limiar do gate sem melhorar a discriminação.

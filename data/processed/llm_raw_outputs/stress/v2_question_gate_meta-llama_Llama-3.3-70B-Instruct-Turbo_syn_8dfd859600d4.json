@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfiYJg0zhpiPae70TnRultnj",
+  "object": "chat.completion",
+  "created": 1790616500,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O marco regulatório para a transição energética deve ser factível e interessante para todo o País?\",\n  \"target_proposition_b\": \"O uso do biometano na matriz energética brasileira deve ser incentivado sem critérios engessados?\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3309,
+    "total_tokens": 3431,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00036993999999999997,
+    "prompt_tokens_details": null
+  }
+}
