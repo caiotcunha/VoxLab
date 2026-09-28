@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5yP4bFs2Y3kGTdRN1jhRrns",
+  "object": "chat.completion",
+  "created": 1790615004,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita substituiu 'O que nós somos contra é quanto a obrigatoriedade' por 'O que nós não podemos aceitar é que se imponha a obrigatoriedade', invertendo a polaridade linguística mas mantendo a oposição à obrigatoriedade da vacina para crianças, sem alterar a posição substantiva nem introduzir inconsistências.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3157,
+    "total_tokens": 3295,
+    "completion_tokens": 138,
+    "estimated_cost": 0.00036003,
+    "prompt_tokens_details": null
+  }
+}

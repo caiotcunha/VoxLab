@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKSVI7b7wfQIinSnhFabjDxy",
+  "object": "chat.completion",
+  "created": 1790614178,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações descrevem a mesma reivindicação central de restaurar a coordenação federal e o diálogo no sistema de saúde.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 453,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00010813,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

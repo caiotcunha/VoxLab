@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rh2NyPCtyKmy6EaoPFbOa8zo",
+  "object": "chat.completion",
+  "created": 1790614375,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O novo acordo de reparação de Mariana deve ser fechado logo\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nPresidente, saúdo V.Exa., os demais colegas, o Deputado Pedro Aihara, o Deputado Helder e todos que participam desta Mesa.\n\nSe em 2022 conseguimos impedir de certa forma a conclusão da repactuação, se foi uma vitória do segmento não ter permitido a repactuação em 2022, eu entendo que é uma vitória não concluirmos 2023 sem fazer essa reputação, até porque ela foi imposta, inclusive com o próprio Governo Federal, em diligências em que as pessoas não eram verdadeiramente ouvidas. É lamentável esse controle das empresas, esse grande controle do capital financeiro.\n\nEu venho dizendo e denunciando que quem mais mata hoje é a mineração. Então, Secretário, acho que temos uma responsabilidade grande sobre isso. Peço ao senhor que nos ajude também no diálogo com o Ministro, porque nós temos um problema sério em Minas com pequenas empresas. As grandes empresas, como a Vale, têm usado pequenas empresas, e essas pequenas empresas estão abandonando. Olha o caso de Teixeiras. Detonam tudo e abandonam. Só que essas pequenas empresas estão a serviço das grandes. Isso é muito grave. As grandes se isentam e usam várias pequenas empresas. É grave essa situação.\n\nÉ a mineração que mais mata. Depois da mineração, é o agronegócio. Falaram aqui da contaminação de produtos e das águas. Está comprovado em estudos que venenos, agrotóxicos estão contaminando rios inteiros e alimentos inteiros além do que é permitido. E a indústria farmacêutica também não está fácil, não. Não vou cansar de denunciar isso. Sabem por quê? Porque precisamos repensar o modelo econômico. O modelo econômico tem que ser mais respeitoso com essa geração, garantir vida para essa geração, mas tem que ser respeitoso para garantir vida para as gerações futuras. A responsabilidade do Estado é com essa geração, mas também com as gerações daqui a 500 anos. Nós temos que pensar nisso. Não podemos ser inconsequentes. Infelizmente, estamos sendo também reféns dessas empresas.\n\nE nem o Judiciário tem poder sobre elas. São utilizados mecanismos protelatórios. Gente, são 8 anos, e não há ninguém preso! São 8 anos! Ignoram pescadores. Há pessoas atingidas que até hoje não são reconhecidas pela empresa.Falaram muito aqui na Vale, na Samarco e na BHP Billiton, mas não foi falado e denunciado que o braço do crime continuado é a Renova. É ela que continua atuando ainda. Então, foi um desastre a criação da Renova, que supostamente foi instituída para ajudar os atingidos.\n\nEu queria trazer essa constatação e renovar a denúncia.\n\nSecretário, a única força que existe está no Ministério, no Governo Federal. É preciso, de fato, cassar o direito minerário dessas empresas. Se não for feito isso, o ano que vem vai iniciar, eles vão buscar outros mecanismos protelatórios, e o nosso povo vai continuar morrendo. Vocês viram os dados aqui. Imaginem os peixes! E há pescadores que até hoje não são reconhecidos. O cacau está com problema. Vemos alguns produtos que nem imaginávamos que estivessem contaminados. Então, imaginem os peixes. Avisamos o Ministério da Pesca recentemente de que os pescadores estão sendo ignorados. Alguns deles não estão recebendo o seguro-defeso, que deveria estar sendo garantido a eles. Então, Deputado Rogério, Deputado Helder, nós temos ainda o problema sério dos pescadores.\n\nEu queria dizer que, se tivemos uma conquista, que foi a não consolidação da repactuação em 2022, considero que agora temos uma vitória, e essa vitória é do povo, é dos atingidos.\n\nAqui nós temos que cumular força para garantir isso, já trabalhando uma tese, sim, com o povo. Se for preciso colocar o povo na rua e parar na marra a Vale, como já fizemos... Nós já fizemos isso em Belo Horizonte. Paramos, fechamos a ferrovia quando eles estavam ignorando o direito do cidadão. Isso já foi feito no trecho entre Belo Horizonte e Vitória por mais de uma vez.\n\nSó que eu quero acreditar no nosso Governo. Esse Governo é nosso, dos pobres, e não pode estar a serviço do capital financeiro criminoso, que continua matando e ficando impune, porque, infelizmente, o sistema judiciário é fraco ainda diante da crueldade dessas empresas gananciosas que matam a mãe terra, matam rios, matam a biodiversidade e matam gente.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1582,
+    "total_tokens": 2764,
+    "completion_tokens": 1182,
+    "estimated_cost": 0.0015091599999999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

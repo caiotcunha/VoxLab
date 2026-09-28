@@ -1,0 +1,36 @@
+{
+  "experiment_version": "synthetic_stress_v1",
+  "timestamp": "2026-09-28T17:14:57.482705+00:00",
+  "generator_model": "deepseek-ai/DeepSeek-V3.1",
+  "verifier_model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "evaluated_models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  ],
+  "temperature": 0.0,
+  "seed": 20260928,
+  "prompt_sha256": {
+    "prompts/stress_generate_v1.txt": "43ef0137b060b721f32002a2db9eb9d610f20c63535cd0248757cfe266191edd",
+    "prompts/stress_verify_v1.txt": "224e8e43d3dd191bd279dd2722c4edcd8b705bb0b5bbbdd0a82bf76645e0336a",
+    "prompts/baseline_a_end_to_end_v1.txt": "d768b61c8178aa95ce75a1c4a8095e240fac212ca6b94e6e7adf8bcdafd179e2",
+    "prompts/structured_extraction_v1.txt": "584a80d9c92cc34037fc9cce392181fa060a34c550f54bbfc0e1fcebb3e20765"
+  },
+  "gold_sha256": {
+    "data/annotations/semantic_pilot_gold.csv": "29657ea3953ad620f38f7336ac6aa9b38fcb8d898b833fbffa19b2e7f0eda9a9",
+    "data/annotations/expansion_semantic_gold.csv": "580e52703165f2241083ea6e8100aed1173b607cea8f33a7c3818d2075691a56"
+  },
+  "deterministic_bounds": {
+    "min_word_similarity": 0.5,
+    "max_word_similarity": 0.995,
+    "min_length_ratio": 0.6,
+    "max_length_ratio": 1.5
+  },
+  "plan_counts": {
+    "REVERSE_ON_INCOMPARABLE": 31,
+    "REVERSE_ON_COMPARABLE": 12,
+    "NEGATED_PARAPHRASE": 12,
+    "SHIFT_PROPOSITION": 12
+  },
+  "label_policy": "expected relations are SYNTHETIC_EXPECTED, derived from the operation applied to human gold",
+  "git_commit": "e7ea05a64a818511c8a8fb372f54b10e8570e755"
+}

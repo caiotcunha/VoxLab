@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyTVJ7IxrupY2eQlmzVT2Mq0",
+  "object": "chat.completion",
+  "created": 1790614336,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam temas relacionados ao bem-estar animal, mas com enfoques distintos: uma trata de impactos econômicos e ambientais, enquanto a outra conecta o bem-estar animal à proteção da vida humana, sem equivalência direta na reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 488,
+    "completion_tokens": 82,
+    "estimated_cost": 8.164000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

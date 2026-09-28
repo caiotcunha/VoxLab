@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaUd9AE8Wmchydzc6CCyFLP8",
+  "object": "chat.completion",
+  "created": 1790614304,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas defendem o aumento de investimentos na prevenção de desastres naturais, com foco em ação proativa do poder público, ainda que com diferentes níveis de especificidade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 424,
+    "total_tokens": 486,
+    "completion_tokens": 62,
+    "estimated_cost": 7.226e-05,
+    "prompt_tokens_details": null
+  }
+}

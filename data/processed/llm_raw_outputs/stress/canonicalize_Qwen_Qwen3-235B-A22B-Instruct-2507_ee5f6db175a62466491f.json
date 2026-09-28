@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rbies8DMlEderYBHGGTl3suI",
+  "object": "chat.completion",
+  "created": 1790614452,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"A formulação X especifica uma fonte adicional de recursos (5% dos acordos judiciais e extrajudiciais), mas mantém a mesma reivindicação central de alocação de recursos para prevenção de desastres naturais presente na formulação Y.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 425,
+    "total_tokens": 506,
+    "completion_tokens": 81,
+    "estimated_cost": 8.28e-05,
+    "prompt_tokens_details": null
+  }
+}

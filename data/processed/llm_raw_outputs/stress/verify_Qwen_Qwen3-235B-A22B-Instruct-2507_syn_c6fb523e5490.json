@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REaQp9q1bRlcbPZp392ng5sT",
+  "object": "chat.completion",
+  "created": 1790614589,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita inverte a polaridade linguística (ex: 'temos que recuperar' → 'não podemos abandonar a recuperação'), mantendo a posição de favor à proposição-alvo, sem introduzir contradições ou novas informações relevantes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5017,
+    "total_tokens": 5137,
+    "completion_tokens": 120,
+    "estimated_cost": 0.00051753,
+    "prompt_tokens_details": null
+  }
+}

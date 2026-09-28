@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RReHhplPaSz5aW7ba8JnIMVd",
+  "object": "chat.completion",
+  "created": 1790614398,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a criação de políticas públicas voltadas à saúde de mulheres na menopausa, com foco semelhante e mesma polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 459,
+    "completion_tokens": 59,
+    "estimated_cost": 6.845000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

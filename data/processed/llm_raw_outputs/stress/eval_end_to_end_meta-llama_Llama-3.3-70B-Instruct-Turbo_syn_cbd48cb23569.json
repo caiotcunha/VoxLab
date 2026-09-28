@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiJod1ico1SSfaNjBENSMV2o",
+  "object": "chat.completion",
+  "created": 1790615597,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam oposição ao projeto de lei de regulamentação do trabalho de motoristas de aplicativo apresentado pelo Governo, defendendo uma abordagem diferente que atenda às necessidades dos motoristas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2897,
+    "total_tokens": 2968,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00031242000000000005,
+    "prompt_tokens_details": null
+  }
+}

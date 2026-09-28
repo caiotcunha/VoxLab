@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9qD08y85VzhY4AJnWBKjblQ",
+  "object": "chat.completion",
+  "created": 1790614264,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Supremo Tribunal Federal não deve legislar ou modificar leis existentes\",\n  \"target_proposition_b\": \"A ANEEL deve considerar as dificuldades do setor elétrico e buscar um ambiente mais estável e previsível para as concessionárias\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2981,
+    "total_tokens": 3104,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00033746000000000004,
+    "prompt_tokens_details": null
+  }
+}

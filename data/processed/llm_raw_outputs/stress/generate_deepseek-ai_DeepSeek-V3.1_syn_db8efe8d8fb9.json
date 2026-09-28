@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDks2Z6gDk1IwPmT3MiGMqR9",
+  "object": "chat.completion",
+  "created": 1790614159,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O cuidado com as pessoas pode ser tratado como um negócio\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nMuito bom, Prof. Vicente Faleiros.\n\nNós acabamos de aprovar um projeto na Comissão de Previdência para assegurar o direito à aposentadoria das mães cuidadoras, aos 62 anos, podendo parcelar o débito com a Previdência. Acabamos de aprovar essa matéria, reconhecendo que há um trabalho no cuidar. O cuidar é um trabalho. Para além disso, o cuidar envolve mais do que o próprio trabalho. Os meninos têm que cuidar, os professores têm que cuidar, enfim, muitos cuidam e têm que cuidar. Os governantes, em particular, têm que cuidar. Eu me lembro muito de Lula, quando diz que, mais do que administrar, precisamos cuidar — e cuidar com a centralidade nas próprias pessoas. Também o cuidar pode ser otimizado pelo mercado. Às vezes, cuida-se melhor dos produtos ou das mercadorias, e essa mesma eficiência pode ser aplicada ao cuidado das próprias pessoas; e, ao mesmo tempo, a lógica de mercado pode trazer mais recursos e inovação para o cuidado.\n\nEntão, nesse sentido, é importante que nós possamos ter cuidado, até porque, como disse o Prof. Faleiros, se não somos cuidados, não sobrevivemos. Nós precisamos ser cuidados a vida inteira. O humano é um ser que precisa de cuidado. Que todas as fases da nossa própria vida sejam respeitadas e cuidadas, cuidadas, cuidadas e cuidadas!\n\nPasso então a palavra à Walquiria Cristina Batista, que é representante do Conselho Nacional de Saúde.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 797,
+    "total_tokens": 1212,
+    "completion_tokens": 415,
+    "estimated_cost": 0.00058414,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

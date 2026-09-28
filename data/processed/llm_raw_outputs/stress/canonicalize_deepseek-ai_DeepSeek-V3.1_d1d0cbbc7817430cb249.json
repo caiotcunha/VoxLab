@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnroRHUzdZOFDQXijmg2LFtm",
+  "object": "chat.completion",
+  "created": 1790614236,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações exigem maior rigor governamental na fiscalização e cobrança das empresas de energia, com a mesma polaridade positiva em relação a essa ação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 455,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00011003,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPytdPrwPYHiy4Yai51bWId3",
+  "object": "chat.completion",
+  "created": 1790614251,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a criação de uma política ou programa público específico para a saúde das mulheres no período da menopausa.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 448,
+    "completion_tokens": 49,
+    "estimated_cost": 0.00010478000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

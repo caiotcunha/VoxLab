@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ryv5nsgZExlWxBLKlaFjqNXg",
+  "object": "chat.completion",
+  "created": 1790614137,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A primeira afirma que os danos são negligenciados, enquanto a segunda afirma que recebem a atenção devida, opondo-se na avaliação da mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 458,
+    "completion_tokens": 60,
+    "estimated_cost": 6.882e-05,
+    "prompt_tokens_details": null
+  }
+}

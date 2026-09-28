@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRlTdnLyHvHv3pG55LJ4sIT0",
+  "object": "chat.completion",
+  "created": 1790614282,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a mesma ação central de garantir recursos orçamentários para a prevenção e resposta a desastres, sendo que a Formulação Y especifica o mecanismo legislativo para alcançar o objetivo expresso na Formulação X.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 480,
+    "completion_tokens": 73,
+    "estimated_cost": 0.00012958000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

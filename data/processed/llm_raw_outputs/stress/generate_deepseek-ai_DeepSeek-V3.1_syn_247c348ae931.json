@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rk7zWfUtSGXaloyXEfxqL6o9",
+  "object": "chat.completion",
+  "created": 1790614900,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O Ministério verifica quem recebe diárias e passagens\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nMuito obrigada, Deputada Bia.\n\nEu cumprimento aqui o Ministro Silvio Almeida e agradeço-lhe a presença nesta Comissão.\n\nMinistro, eu sou do Partido Novo. Nós do Partido Novo valorizamos algumas coisas que o senhor explanou hoje. Acho que é muito bom este debate. Acho que realmente é bom conversarmos.\n\nEu gostaria de abordar uma questão dentro desse contexto, até para que o senhor veja onde vou colocar o foco. Sou Deputada de segundo mandato e, no último, fui Presidente da Frente Parlamentar Mista Ética contra a Corrupção. Na verdade, o nosso objetivo sempre foi questionar e lutar contra o crime, contra a impunidade.\n\nOs eventos relacionados à Sra. Luciane Barbosa Faria, sabendo-se que era esposa de líder do Comando Vermelho, condenada em segunda instância por organização criminosa, associação para o tráfico, lavagem de dinheiro, realmente nos causaram muito desconforto, especialmente a mim, principalmente porque foi feita audiência com servidores, tendo o Ministério pagado diárias, viagens.\n\nNós fizemos requerimento de informação, que o senhor já deve ter recebido. Fizemos denúncia na Comissão de Ética Pública, fizemos um projeto de lei falando sobre a não publicização de agenda e compromissos, para isso se configurar como improbidade administrativa, e fizemos um requerimento de informação falando sobre o pagamento de diárias à referida cidadã pelo Ministério.\n\nEu vou ser muito objetiva nas minhas perguntas, até porque eu gostaria que houvesse objetividade nas respostas. O senhor publicou nota dizendo que existe um orçamento próprio reservado ao Comitê Nacional de Prevenção e Combate à Tortura e que isso foi indicação exclusiva dos comitês estaduais.\n\nA primeira pergunta que eu gostaria de fazer é: qual é o instrumento legal que obriga o seu Ministério a arcar com essas despesas? Se eles têm autonomia para indicar, e o senhor não interfere — essa foi uma das afirmações que o Ministério fez —, por que o Ministério paga diárias e passagens de uma \"dama do tráfico\", condenada, e não faz absolutamente checagem nenhuma, não tem nenhum tipo de cuidado em relação a isso, já que estamos também falando de verba pública?\n\nA minha segunda pergunta, Sr. Ministro, é a seguinte: se o Ministério faz bom uso desses recursos, que sabemos que são escassos, financiando deslocamento, custeio de representante regional, qual é o fluxo interno do Ministério para a aprovação de passagens e diárias e por que não se faz nenhuma checagem e não há nenhum filtro? Eu queria saber se existe algum tipo de verificação, algum tipo de fiscalização.\n\nA terceira pergunta diz respeito ao fato de que, na nota, a Pasta deu a entender que as indicações dos Comitês de Prevenção e Combate à Tortura não podem ser questionadas pelo órgão central.Vemos nisso uma questão de descentralização que eu acho até interessante, mas, tendo em vista a rubrica orçamentária própria, que denota a autonomia administrativa, por que foi o Ministério que pagou? Essa parte eu também não entendi. Gostaria de um esclarecimento.\n\nA outra pergunta que eu gostaria de fazer é em relação à agenda, ao episódio da agenda, que inclusive o meu colega de bancada Deputado Marcel van Hattem questionou. De acordo com o Decreto nº 10.889, de 2021, existe um prazo para registro de agenda, e, na sua agenda, num período de 6 dias, 7 dias, colocaram 153 registros em atraso. Então, eu realmente gostaria que o senhor esclarecesse essa agenda, o porquê do atraso, o porquê de 150 registros terem sido colocados fora de prazo, contrariando o decreto, contrariando inclusive uma norma. Alguns foram colocados com quase 290 dias de atraso. Então, em 7 dias se arrumou a agenda.\n\nEssas são minhas perguntas. Eu lhe agradeço as respostas.\n\nMuito obrigada.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1433,
+    "total_tokens": 2467,
+    "completion_tokens": 1034,
+    "estimated_cost": 0.00133119,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

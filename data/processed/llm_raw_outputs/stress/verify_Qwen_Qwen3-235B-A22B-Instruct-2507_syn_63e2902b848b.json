@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrOY0aaJbIT8LMSAoomlSPnZ",
+  "object": "chat.completion",
+  "created": 1790614266,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita adota posição AGAINST a ver a neurodiversidade como quadro principal para o autismo, priorizando necessidades de tratamento e apoio estruturado, mas mantém trechos que ainda endossam aspectos da posição original (como a valorização de autistas adultos capazes), gerando contradição interna e alterando o conteúdo central além da inversão exigida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3564,
+    "total_tokens": 3711,
+    "completion_tokens": 147,
+    "estimated_cost": 0.00040161,
+    "prompt_tokens_details": null
+  }
+}

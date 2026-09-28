@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJCGKq96NC5PzFjPw5ATdaUC",
+  "object": "chat.completion",
+  "created": 1790614303,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A Formulação X trata de responsabilidade tarifária e soberania energética, enquanto a Y foca especificamente no ritmo da transição para energias limpas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 448,
+    "completion_tokens": 55,
+    "estimated_cost": 0.00010886,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

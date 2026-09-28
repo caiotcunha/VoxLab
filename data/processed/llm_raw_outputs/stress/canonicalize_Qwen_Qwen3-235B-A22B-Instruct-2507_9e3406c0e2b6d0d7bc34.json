@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RI9i185s8lpUN7xKG841i3N9",
+  "object": "chat.completion",
+  "created": 1790614362,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas sobre o mesmo tema: uma propõe implementar políticas públicas para inclusão, enquanto a outra sugere criar uma subcomissão para fiscalizar o cumprimento de leis.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 471,
+    "completion_tokens": 68,
+    "estimated_cost": 7.367e-05,
+    "prompt_tokens_details": null
+  }
+}

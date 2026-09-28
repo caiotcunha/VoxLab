@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RagZGaB8CfUMy2fCXn8HcUro",
+  "object": "chat.completion",
+  "created": 1790614434,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos distintos do arcabouço legal: X foca em apoio geral a vítimas, enquanto Y especifica a participação de um órgão particular para proteger grupos específicos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 435,
+    "total_tokens": 498,
+    "completion_tokens": 63,
+    "estimated_cost": 0.00012671999999999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 349,
+      "cache_write_tokens": null
+    }
+  }
+}

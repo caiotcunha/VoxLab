@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZMfMBIVb856gPjxH4DRkEv1",
+  "object": "chat.completion",
+  "created": 1790614310,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X propõe uma ação futura (discutir e financiar), enquanto a Y descreve uma omissão passada, sem indicar a mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 474,
+    "completion_tokens": 60,
+    "estimated_cost": 7.026e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkUAESefLoO29MGmLl589JEw",
+  "object": "chat.completion",
+  "created": 1790614169,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A Formulação X foca no envelhecimento como ganho e na necessidade de planejamento, enquanto a Y foca na importância da política para idosos para gestores municipais, tratando de aspectos distintos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 466,
+    "completion_tokens": 64,
+    "estimated_cost": 0.00011558,
+    "prompt_tokens_details": {
+      "cached_tokens": 381,
+      "cache_write_tokens": null
+    }
+  }
+}

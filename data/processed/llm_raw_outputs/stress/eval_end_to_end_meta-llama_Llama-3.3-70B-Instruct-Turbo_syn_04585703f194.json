@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R68AgJuDnq1ljLsdauWnAv9I",
+  "object": "chat.completion",
+  "created": 1790614700,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações abordam temas relacionados à saúde, mas não respondem à mesma proposição específica, tornando-as incomparáveis.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6631,
+    "total_tokens": 6685,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00068038,
+    "prompt_tokens_details": null
+  }
+}

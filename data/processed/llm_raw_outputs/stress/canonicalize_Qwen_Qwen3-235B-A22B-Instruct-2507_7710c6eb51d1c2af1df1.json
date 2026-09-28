@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlUUiKGrmWP4gvATSuwlu5kk",
+  "object": "chat.completion",
+  "created": 1790614175,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A formulação X destaca entraves na fila de espera para atendimento especializado, enquanto Y afirma que os pacientes conseguem acompanhamento em tempo hábil, indicando posições contrárias sobre a mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 481,
+    "completion_tokens": 69,
+    "estimated_cost": 7.503e-05,
+    "prompt_tokens_details": null
+  }
+}

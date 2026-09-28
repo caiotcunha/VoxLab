@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rna3XLVxtZuYZcOqmAyaQfL1",
+  "object": "chat.completion",
+  "created": 1790614172,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre o envelhecimento como ganho e necessidade de planejamento, enquanto a segunda enfatiza a necessidade de maior importância dada por gestores à política para idosos, sem equivalência direta na reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 480,
+    "completion_tokens": 73,
+    "estimated_cost": 7.678000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJzTJ5CasI99zrkyIoa9LX6C",
+  "object": "chat.completion",
+  "created": 1790614140,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes: uma foca em prevenção de desastres e infraestrutura, enquanto a outra aborda as causas sociais e os grupos mais afetados.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 425,
+    "total_tokens": 487,
+    "completion_tokens": 62,
+    "estimated_cost": 7.235e-05,
+    "prompt_tokens_details": null
+  }
+}

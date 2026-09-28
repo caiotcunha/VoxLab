@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rr5ziDAykLCyZgvP9A8RG4Yj",
+  "object": "chat.completion",
+  "created": 1790614876,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator defende a criação e aporte de recursos para o Fundo Nacional para Calamidades Públicas, enquanto na Manifestação B, o ator questiona a eficiência e a necessidade de um fundo específico para prevenção, preferindo uma alocação mais flexível de recursos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2109,
+    "total_tokens": 2201,
+    "completion_tokens": 92,
+    "estimated_cost": 0.00079604,
+    "prompt_tokens_details": null
+  }
+}

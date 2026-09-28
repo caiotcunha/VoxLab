@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R62Z2MplBI1UmAmsjIBzCPLo",
+  "object": "chat.completion",
+  "created": 1790614221,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de políticas públicas voltadas ao envelhecimento da população, com foco similar na atuação do Estado, diferindo apenas em nuances de redação e generalidade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 459,
+    "completion_tokens": 67,
+    "estimated_cost": 7.213e-05,
+    "prompt_tokens_details": null
+  }
+}

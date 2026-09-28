@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8MKxd6l13cK8ABpR9f9G6Ay",
+  "object": "chat.completion",
+  "created": 1790614270,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de regulamentar o lobby junto ao poder público, com a mesma intenção e polaridade, ainda que com diferentes níveis de detalhe.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 388,
+    "total_tokens": 448,
+    "completion_tokens": 60,
+    "estimated_cost": 6.792e-05,
+    "prompt_tokens_details": null
+  }
+}

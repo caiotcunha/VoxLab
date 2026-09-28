@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RF3wPP7lGQG6X3SXrhJxVQOF",
+  "object": "chat.completion",
+  "created": 1790614405,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem que a gestão dos recursos para políticas de mulheres deve ser feita diretamente pelo Ministério das Mulheres, com a mesma polaridade e essência.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 463,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011459,
+    "prompt_tokens_details": {
+      "cached_tokens": 348,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCYrZdR7U2WasGlRgqU7XISE",
+  "object": "chat.completion",
+  "created": 1790614390,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem o aumento de investimentos em prevenção de desastres, com foco em ações proativas em vez de reativas, mantendo a mesma polaridade e essência da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 462,
+    "completion_tokens": 70,
+    "estimated_cost": 7.378e-05,
+    "prompt_tokens_details": null
+  }
+}

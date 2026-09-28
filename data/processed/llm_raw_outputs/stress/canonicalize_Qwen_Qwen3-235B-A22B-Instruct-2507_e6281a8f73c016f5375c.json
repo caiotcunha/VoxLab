@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9Ily0gGjzSOsO72dgFiA8Vc",
+  "object": "chat.completion",
+  "created": 1790614246,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da destinação de recursos públicos para proteger crianças e adolescentes, com foco na prevenção da violência, diferindo apenas em nível de detalhe.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 461,
+    "completion_tokens": 63,
+    "estimated_cost": 7.047000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

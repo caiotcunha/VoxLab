@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQ3ul9iya31WIXxzDAuX3a13",
+  "object": "chat.completion",
+  "created": 1790614171,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A formulação X afirma que há problemas/entraves na fila de espera, enquanto a Y afirma que os pacientes conseguem acompanhamento em tempo hábil.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 410,
+    "total_tokens": 468,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011596000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROPVNaztxoobdFbPJIKy7cWE",
+  "object": "chat.completion",
+  "created": 1790614314,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata da necessidade de fortalecer políticas públicas para idosos, enquanto a formulação Y aborda uma questão cultural de discriminação contra idosos; ambas discorrem sobre o mesmo grupo populacional, mas com focos distintos — uma em políticas e outra em percepção social.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 489,
+    "completion_tokens": 87,
+    "estimated_cost": 8.403000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

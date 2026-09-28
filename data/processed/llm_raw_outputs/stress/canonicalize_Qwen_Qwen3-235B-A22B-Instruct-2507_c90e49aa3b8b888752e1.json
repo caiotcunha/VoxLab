@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNpBX5n0wcDMOaLp9NOT0Dbw",
+  "object": "chat.completion",
+  "created": 1790614301,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre priorizar prevenção em vez de pronta resposta, enquanto a segunda trata da necessidade de orçamento no Fundo para ambas as ações, sem opor uma à outra.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 462,
+    "completion_tokens": 63,
+    "estimated_cost": 7.056e-05,
+    "prompt_tokens_details": null
+  }
+}

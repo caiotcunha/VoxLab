@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtPGlWzaLWZHM36gt9tRFSuk",
+  "object": "chat.completion",
+  "created": 1790614379,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"Uma fonte pede ratificação de uma convenção internacional, enquanto a outra pede sua aprovação como emenda constitucional, que são processos jurídicos distintos com escopos diferentes.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 457,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00011251,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

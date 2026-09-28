@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZHX65xxm8F2JuOz4NBPjB6N",
+  "object": "chat.completion",
+  "created": 1790614385,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de reivindicações distintas sobre instrumentos legais diferentes (Lei do Bem versus modalidades de contratação de institutos públicos).\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 455,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00010991000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

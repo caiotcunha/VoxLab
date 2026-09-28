@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVjDMSpvVX8Hpu82BMoAHoYU",
+  "object": "chat.completion",
+  "created": 1790613806,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações pedem uma legislação específica para indígenas no sistema prisional, com foco no mesmo grupo e necessidade de norma diferenciada.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 452,
+    "completion_tokens": 59,
+    "estimated_cost": 6.782e-05,
+    "prompt_tokens_details": null
+  }
+}

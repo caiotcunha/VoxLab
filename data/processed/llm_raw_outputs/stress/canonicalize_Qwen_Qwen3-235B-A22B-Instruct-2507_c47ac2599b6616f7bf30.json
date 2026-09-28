@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjbQSnVWS76pqZBwenslJKn8",
+  "object": "chat.completion",
+  "created": 1790614281,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de temas distintos: uma sobre desinformação em saúde e outra sobre recuperação de hospitais federais.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 381,
+    "total_tokens": 429,
+    "completion_tokens": 48,
+    "estimated_cost": 6.0689999999999997e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPOS9fDZOhGjtD5X4fKrxq9T",
+  "object": "chat.completion",
+  "created": 1790614188,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes da política para idosos, uma focada em abordagem integrativa para o envelhecimento saudável e outra na priorização da pauta idosa por gestores municipais, sem equivalência direta na reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 473,
+    "completion_tokens": 79,
+    "estimated_cost": 7.891e-05,
+    "prompt_tokens_details": null
+  }
+}

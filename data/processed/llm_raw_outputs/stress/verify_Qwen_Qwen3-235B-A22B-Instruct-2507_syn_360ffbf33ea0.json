@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ry4ZpmNQwN5NFTs8O5wZiclY",
+  "object": "chat.completion",
+  "created": 1790614441,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição original, negando que desastres climáticos sejam desiguais ou racializados, e afirmando que atingem todos igualmente, o que configura uma posição AGAINST à proposição original. A mudança é coerente ao longo do texto, mas há acréscimos argumentativos novos (como 'dados mostram') que não estavam na original, afetando a preservação do conteúdo não relacionado à operação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3326,
+    "total_tokens": 3494,
+    "completion_tokens": 168,
+    "estimated_cost": 0.00039174,
+    "prompt_tokens_details": null
+  }
+}

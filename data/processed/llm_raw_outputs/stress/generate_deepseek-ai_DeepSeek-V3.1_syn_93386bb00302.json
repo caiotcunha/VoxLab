@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rryi9pguBOBuCdTUxA7iwvxA",
+  "object": "chat.completion",
+  "created": 1790614299,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Os danos da mineração à população recebem a atenção que merecem\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nMuito obrigado, Lourival Andrade, aqui representando o Observatório Sindical Brasileiro Clodesmidt Riani.\n\nEu queria esclarecer, até em resposta às palavras do próprio Lourival, que fizemos vários convites aqui.Lucineide Varjão, Vice-Presidente da IndustriaLL Global Union, foi convidada, mas não fez qualquer manifestação. Raul Jungmann justificou a ausência, porém, poderia ter enviado representante. Acho que a fala foi muito pertinente também em relação às participações que aconteceram de forma virtual. Poderiam ter emitido suas opiniões. O Presidente da Associação dos Municípios Mineradores também poderia ter enviado representante.\n\nQuero agradecer ao Deputado Airton Faleiro, Presidente da Comissão de Trabalho, que acabou me dando a possibilidade de presidir esta audiência pública.\n\nEste é um tema que passa, por vezes, à margem do conhecimento da ampla maioria do povo brasileiro. Fica à margem, mas é um assunto recorrente para quem está vivendo na pele as suas dores, as suas perdas. Esse tema agora de Maceió surge como se fosse uma novidade, mas a população está vivenciando essa realidade há muitos e muitos anos, como foi muito bem dito pela Marta, que está aqui ao meu lado.\n\nExiste então todo esse contexto, e é fundamental a participação do outro lado. Ao mesmo tempo, como foi dito, a Comissão de Minas e Energia desta Casa tem uma participação essencial. Essa é uma realidade, no mínimo, complexa, pela correlação com o debate que está ocorrendo nesta Casa. São considerados muito mais importantes temas que dizem respeito a armar o povo para que faça sua \"defesa\" — entre aspas. Inúmeras vidas, no entanto, estão sendo perdidas, mas não na invisibilidade. Digo \"não na invisibilidade\" por causa de algumas questões que foram levantadas. Há quem patrocine a festa, há quem patrocine oshow, bilhões vão para a conta, como disse o Dr. Mário Parreiras, há implicação no PIB. Quem poderia fazer o contraditório está presente e sendo ouvido.\n\nVou abrir a palavra para que possam apresentar considerações finais, caso queiram fazê-las. Isso fica a critério dos senhores. Se algum dos senhores que aqui já se manifestaram quiser fazer alguma consideração final, dispõe de 1 minuto.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1011,
+    "total_tokens": 1626,
+    "completion_tokens": 615,
+    "estimated_cost": 0.0008277600000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

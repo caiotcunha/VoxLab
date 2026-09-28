@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiC0IoOytCvtHG6WdHMcIBvN",
+  "object": "chat.completion",
+  "created": 1790615450,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"NO\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"\",\n  \"target_proposition_b\": \"Não adianta criar critérios engessados que só vão atrasar a inovação\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3185,
+    "total_tokens": 3275,
+    "completion_tokens": 90,
+    "estimated_cost": 0.0011826,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMUqzrBLiaG6rbfRxpKCAnhQ",
+  "object": "chat.completion",
+  "created": 1790614140,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de objetos e escopos distintos: uma defende obrigatoriedade específica para crianças, enquanto a outra foca em evitar a queda geral da cobertura vacinal.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 449,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011121,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtHyENys6PrR5LQM1fbfzTJA",
+  "object": "chat.completion",
+  "created": 1790613856,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas para combater a violência contra a mulher, com focos diferentes: independência econômica versus estrutura de atendimento e delegacias.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 463,
+    "completion_tokens": 57,
+    "estimated_cost": 6.789e-05,
+    "prompt_tokens_details": null
+  }
+}

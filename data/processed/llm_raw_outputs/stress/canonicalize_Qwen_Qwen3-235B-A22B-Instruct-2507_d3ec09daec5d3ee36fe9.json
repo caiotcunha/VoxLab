@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RBa4Y7D4Kwz4kRMwroPVw3vL",
+  "object": "chat.completion",
+  "created": 1790614412,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a instituição de um estatuto, enquanto a segunda trata da invisibilização dos povos ciganos, sem mencionar o estatuto.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 448,
+    "completion_tokens": 56,
+    "estimated_cost": 6.608e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReTxGxdbqk3L75k95nguQBKn",
+  "object": "chat.completion",
+  "created": 1790614261,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A formulação X alerta sobre riscos e pede apreciação cautelosa, enquanto a Y afirma que é uma forma segura de crédito, representando posições opostas sobre a segurança do mesmo produto.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 474,
+    "completion_tokens": 68,
+    "estimated_cost": 0.0001241,
+    "prompt_tokens_details": {
+      "cached_tokens": 350,
+      "cache_write_tokens": null
+    }
+  }
+}

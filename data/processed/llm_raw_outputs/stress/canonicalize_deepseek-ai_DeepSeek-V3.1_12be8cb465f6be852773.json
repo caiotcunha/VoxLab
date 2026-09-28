@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiSGN9n2si9RTPTKmm2fwnam",
+  "object": "chat.completion",
+  "created": 1790614135,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A Formulação X trata da liberdade geral de escolha de carga horária e acumulação de cargos, enquanto a Y especifica um segundo cargo em qualquer área para professores da rede pública.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 450,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011158000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

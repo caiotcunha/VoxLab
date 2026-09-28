@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNZ5fWMYca0PpIOCdAwGDhQ4",
+  "object": "chat.completion",
+  "created": 1790614385,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas: uma sobre cassação de direitos minerários por danos ambientais, e outra sobre a urgência em fechar um acordo de reparação, sem estabelecer a mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 463,
+    "completion_tokens": 70,
+    "estimated_cost": 7.387000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rez3KeI7YKHoa9nVnivfsfXc",
+  "object": "chat.completion",
+  "created": 1790614382,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de abordar o racismo de gênero na educação, com foco nas mulheres negras, expressando a mesma reivindicação com enfoques complementares.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 459,
+    "completion_tokens": 67,
+    "estimated_cost": 7.213e-05,
+    "prompt_tokens_details": null
+  }
+}

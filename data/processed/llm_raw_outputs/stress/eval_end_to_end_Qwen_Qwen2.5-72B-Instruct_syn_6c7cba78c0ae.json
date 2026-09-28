@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rb7wyVKDHqH0SlTP7nRA3mt3",
+  "object": "chat.completion",
+  "created": 1790614790,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância do bem-estar animal, sua relação com a sustentabilidade e os impactos ambientais, e citam a Resolução Nexus da ONU como um marco importante.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3099,
+    "total_tokens": 3167,
+    "completion_tokens": 68,
+    "estimated_cost": 0.00114284,
+    "prompt_tokens_details": null
+  }
+}

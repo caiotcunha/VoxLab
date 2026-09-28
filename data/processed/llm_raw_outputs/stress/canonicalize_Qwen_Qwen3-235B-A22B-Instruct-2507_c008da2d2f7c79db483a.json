@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHwO4ifUrgjTUjh3jfem6OPW",
+  "object": "chat.completion",
+  "created": 1790614388,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre aplicar a Lei do Bem para promover inovação em geral, enquanto a segunda trata especificamente da possibilidade de institutos públicos contratarem empresas para desenvolver equipamentos, com base em permissão legal existente.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 476,
+    "completion_tokens": 72,
+    "estimated_cost": 7.596e-05,
+    "prompt_tokens_details": null
+  }
+}

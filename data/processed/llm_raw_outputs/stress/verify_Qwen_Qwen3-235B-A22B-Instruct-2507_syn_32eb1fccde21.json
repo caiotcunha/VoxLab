@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzTmKjaC3FvGgbQGsgKdMTmv",
+  "object": "chat.completion",
+  "created": 1790615495,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"NOT_ADDRESSED\",\n  \"reasoning\": \"A reescrita muda a proposição-alvo do projeto de lei para o grupo de trabalho, mantendo o tema e vocabulário, sem posicionar sobre o projeto original. O conteúdo restante é preservado, a fala é coerente e soa natural.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4663,
+    "total_tokens": 4782,
+    "completion_tokens": 119,
+    "estimated_cost": 0.00048512000000000007,
+    "prompt_tokens_details": null
+  }
+}

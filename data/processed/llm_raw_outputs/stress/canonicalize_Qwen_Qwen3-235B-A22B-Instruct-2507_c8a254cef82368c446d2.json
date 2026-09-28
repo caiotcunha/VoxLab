@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRGB6GYZytlBwzCgsaV6jJlP",
+  "object": "chat.completion",
+  "created": 1790614375,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de ações diferentes: uma é sobre a reserva de recursos pelo Estado, e outra é sobre o Congresso derrubar um veto a um projeto específico.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 450,
+    "completion_tokens": 55,
+    "estimated_cost": 6.58e-05,
+    "prompt_tokens_details": null
+  }
+}

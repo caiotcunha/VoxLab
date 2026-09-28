@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxgCsZH2nDr2oI6jt5Xm7kzA",
+  "object": "chat.completion",
+  "created": 1790614400,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de reivindicações distintas: uma sobre a separação entre geração e distribuição de energia, e outra sobre a transição para energia limpa.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 384,
+    "total_tokens": 441,
+    "completion_tokens": 57,
+    "estimated_cost": 6.591e-05,
+    "prompt_tokens_details": null
+  }
+}

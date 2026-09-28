@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiW5bPuQsDrIsNjeUNjWuP4K",
+  "object": "chat.completion",
+  "created": 1790614127,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"UNCERTAIN\",\n  \"reasoning\": \"A reescrita não inverte claramente a posição para AGAINST a proposição-alvo; apenas modifica o tom para crítica e reflexão, mas sem negar explicitamente que os direitos devam ser postos em prática. Trechos como 'rever a implementação' e 'corrigir rumos' sugerem insatisfação, mas não rejeição da proposição. Além disso, a estrutura e parte do conteúdo foram mantidos, mas a mudança de 'orgulho' para 'reflexão' e 'responsabilidade' altera o tom original de forma significativa, introduzindo uma nova perspectiva sem eliminar sinais de apoio implícito ao Estatuto.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5971,
+    "total_tokens": 6184,
+    "completion_tokens": 213,
+    "estimated_cost": 0.00065454,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoPNvfcTaig8kWKBQjmts20x",
+  "object": "chat.completion",
+  "created": 1790615588,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O projeto de lei que regulamenta o trabalho de motoristas de aplicativo deve ser rejeitado.\",\n  \"target_proposition_b\": \"O grupo de trabalho do Governo para regulamentar o trabalho de motoristas de aplicativo deve ser rejeitado e substituído por um projeto com participação direta dos motoristas.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3129,
+    "total_tokens": 3263,
+    "completion_tokens": 134,
+    "estimated_cost": 0.00118004,
+    "prompt_tokens_details": null
+  }
+}

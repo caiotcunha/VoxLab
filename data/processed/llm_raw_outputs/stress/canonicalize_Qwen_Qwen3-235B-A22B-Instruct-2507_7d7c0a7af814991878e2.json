@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUqDFK2uUUits28VKSagm7fg",
+  "object": "chat.completion",
+  "created": 1790614362,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala especificamente sobre vacinação obrigatória em crianças, enquanto a segunda trata do combate ao movimento antivacina e da recuperação geral da cobertura vacinal, sem mencionar obrigatoriedade ou grupo específico.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 468,
+    "completion_tokens": 71,
+    "estimated_cost": 7.478e-05,
+    "prompt_tokens_details": null
+  }
+}

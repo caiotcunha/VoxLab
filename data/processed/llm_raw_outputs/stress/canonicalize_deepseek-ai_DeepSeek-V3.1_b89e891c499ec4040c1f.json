@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnnGXsM2jm9qjJzCheha20BH",
+  "object": "chat.completion",
+  "created": 1790614435,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações descrevem exatamente a mesma reivindicação, sendo que a segunda é uma versão ligeiramente mais concisa da primeira, sem alterar o sentido ou a polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 378,
+    "total_tokens": 443,
+    "completion_tokens": 65,
+    "estimated_cost": 0.00011436999999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 349,
+      "cache_write_tokens": null
+    }
+  }
+}

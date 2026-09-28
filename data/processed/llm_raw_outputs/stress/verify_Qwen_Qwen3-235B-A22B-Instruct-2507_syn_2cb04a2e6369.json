@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtGwzrMTmzo1o3pzE4IBEfCL",
+  "object": "chat.completion",
+  "created": 1790614482,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"UNCERTAIN\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita mantém a posição original de FAVOR ao novo acordo, apesar de tentar inverter a avaliação de 'derrota' para 'vitória'; como o acordo ainda é criticado indiretamente por ser imposto e não negociado, a inversão falha. Além disso, mudanças inconsistentes geram contradições internas e alteram o conteúdo original.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2899,
+    "total_tokens": 3047,
+    "completion_tokens": 148,
+    "estimated_cost": 0.00034230999999999997,
+    "prompt_tokens_details": null
+  }
+}

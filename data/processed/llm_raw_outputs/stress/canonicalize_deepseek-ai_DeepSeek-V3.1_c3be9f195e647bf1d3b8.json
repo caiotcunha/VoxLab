@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVQTb3PRYsR4VyDHMv0iobR2",
+  "object": "chat.completion",
+  "created": 1790614144,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de níveis jurídicos diferentes: uma defende a aprovação da convenção enquanto a outra exige sua incorporação como emenda constitucional.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 454,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00010966,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

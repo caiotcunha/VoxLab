@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2siliFu676xYHxrYyyX11uO",
+  "object": "chat.completion",
+  "created": 1790614392,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Uma fonte defende a rejeição do projeto, enquanto a outra defende sua aprovação, indicando posições contrárias sobre a mesma medida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 450,
+    "completion_tokens": 55,
+    "estimated_cost": 6.58e-05,
+    "prompt_tokens_details": null
+  }
+}

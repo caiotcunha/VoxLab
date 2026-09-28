@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAn64NeWA3onMTQGEo5MAhkJ",
+  "object": "chat.completion",
+  "created": 1790614439,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações condenam o movimento antivacina com a mesma polaridade negativa, variando apenas na intensidade e escolha de palavras.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 384,
+    "total_tokens": 436,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00010148000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 366,
+      "cache_write_tokens": null
+    }
+  }
+}

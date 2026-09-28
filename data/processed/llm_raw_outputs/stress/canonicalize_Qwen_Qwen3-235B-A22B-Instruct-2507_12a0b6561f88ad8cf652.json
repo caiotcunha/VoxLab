@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzNzJYiZg0HKTN7dyjwGlAP2",
+  "object": "chat.completion",
+  "created": 1790614405,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a adoção da tecnologia blockchain ou de registros distribuídos no serviço público brasileiro, com o mesmo objetivo e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 446,
+    "completion_tokens": 54,
+    "estimated_cost": 6.498e-05,
+    "prompt_tokens_details": null
+  }
+}

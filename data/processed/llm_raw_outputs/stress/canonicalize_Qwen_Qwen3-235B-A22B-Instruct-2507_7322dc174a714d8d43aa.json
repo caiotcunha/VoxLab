@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuJC97cYpCh8SN0xnXja6rjD",
+  "object": "chat.completion",
+  "created": 1790614165,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As formulações descrevem a mesma ação do Ministério da Saúde sobre o tratamento da retinopatia diabética, mas com polaridades opostas: uma afirma a omissão, e a outra afirma que o Ministério cumpre seu papel.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 411,
+    "total_tokens": 489,
+    "completion_tokens": 78,
+    "estimated_cost": 7.989e-05,
+    "prompt_tokens_details": null
+  }
+}

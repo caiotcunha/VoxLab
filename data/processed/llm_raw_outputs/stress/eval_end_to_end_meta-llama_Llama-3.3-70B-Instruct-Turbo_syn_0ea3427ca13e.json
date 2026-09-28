@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxRHsxjetXS9H1TUE9VFnG9o",
+  "object": "chat.completion",
+  "created": 1790614369,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações não respondem à mesma proposição específica, pois a primeira se refere ao Estatuto dos Povos Ciganos e a segunda à economia do cuidado.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5342,
+    "total_tokens": 5401,
+    "completion_tokens": 59,
+    "estimated_cost": 0.0005530800000000001,
+    "prompt_tokens_details": null
+  }
+}

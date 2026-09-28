@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RU3zPlMj6Ml5EDeNTHLPPJfx",
+  "object": "chat.completion",
+  "created": 1790614212,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X lista critérios específicos para o uso de biometano, enquanto a Y fala genericamente sobre a necessidade de critérios para combustíveis não fósseis, sem mencionar biometano ou os mesmos critérios.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 420,
+    "total_tokens": 495,
+    "completion_tokens": 75,
+    "estimated_cost": 7.905000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

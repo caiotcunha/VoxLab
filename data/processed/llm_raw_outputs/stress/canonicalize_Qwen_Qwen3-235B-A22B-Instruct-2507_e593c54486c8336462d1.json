@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkOtZlFMt0nXmKwGTQMe2h1X",
+  "object": "chat.completion",
+  "created": 1790614157,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a promoção de autonomia econômica para mulheres vítimas de violência com o mesmo objetivo de romper o ciclo da violência, diferindo apenas na redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 414,
+    "total_tokens": 477,
+    "completion_tokens": 63,
+    "estimated_cost": 7.191000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

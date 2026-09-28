@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rf6strmNDt3IcYjn2b6r5V28",
+  "object": "chat.completion",
+  "created": 1790614175,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de atualização, pelo SUS, de procedimentos relacionados ao acompanhamento do edema macular diabético, com foco complementar no diagnóstico e tratamento na primeira, mas com sentido geral equivalente.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 421,
+    "total_tokens": 497,
+    "completion_tokens": 76,
+    "estimated_cost": 7.969e-05,
+    "prompt_tokens_details": null
+  }
+}

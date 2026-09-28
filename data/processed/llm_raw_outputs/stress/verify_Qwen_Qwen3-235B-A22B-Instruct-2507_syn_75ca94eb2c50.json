@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmkW7UIkmoXTFL1n7VZCEHXT",
+  "object": "chat.completion",
+  "created": 1790614637,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita inverte claramente a posição ao modificar a conclusão final de 'é sobretudo pela vida humana' para 'não é pela vida humana', alinhando-se com argumentos que priorizam riscos à segurança alimentar, o que sustenta a posição AGAINST. O restante do conteúdo é mantido sem acréscimos relevantes, a linguagem é natural e a coerência interna é preservada.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4332,
+    "total_tokens": 4492,
+    "completion_tokens": 160,
+    "estimated_cost": 0.00047788,
+    "prompt_tokens_details": null
+  }
+}

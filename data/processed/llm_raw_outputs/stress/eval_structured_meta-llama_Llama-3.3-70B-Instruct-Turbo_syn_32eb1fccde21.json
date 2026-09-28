@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRzQdpXr6NzlIxUqBmIr6nGq",
+  "object": "chat.completion",
+  "created": 1790615604,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Rejeição do projeto de lei de regulamentação do trabalho de motoristas de aplicativo\",\n  \"target_proposition_b\": \"Rejeição do grupo de trabalho de regulamentação do trabalho de motoristas de aplicativo e aprovação do PL 536/24\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3142,
+    "total_tokens": 3264,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00035324,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RImi8EIh4Qv86xpWNeklSCZX",
+  "object": "chat.completion",
+  "created": 1790614376,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira propõe facilitar critérios de acesso, enquanto a segunda denuncia abusos, sem especificar solução, podendo implicar críticas diferentes ou complementares, mas não idênticas ou opostas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 458,
+    "completion_tokens": 68,
+    "estimated_cost": 7.25e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQgGheGEQoc3sFHHR9oG5CVS",
+  "object": "chat.completion",
+  "created": 1790614192,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da destinação de recursos para a prevenção de desastres, com a mesma intenção e polaridade, diferindo apenas em redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 448,
+    "completion_tokens": 59,
+    "estimated_cost": 6.746000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

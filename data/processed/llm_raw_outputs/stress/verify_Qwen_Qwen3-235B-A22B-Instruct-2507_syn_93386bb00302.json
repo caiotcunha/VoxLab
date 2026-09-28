@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RC6TxqHeehyJc1j4MSFPH4zL",
+  "object": "chat.completion",
+  "created": 1790614354,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita inverte claramente a posição original contra os danos da mineração, passando a destacar a importância do reconhecimento e da visibilidade desses danos, com linguagem compatível com uma posição a favor da atenção à população afetada, mantendo o contexto e o tom original.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1715,
+    "total_tokens": 1843,
+    "completion_tokens": 128,
+    "estimated_cost": 0.00022475000000000001,
+    "prompt_tokens_details": null
+  }
+}

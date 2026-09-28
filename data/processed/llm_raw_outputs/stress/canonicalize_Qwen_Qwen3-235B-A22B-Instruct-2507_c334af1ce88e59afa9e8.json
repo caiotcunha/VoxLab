@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnOtXU7o6KAGHMdAVqoYZFvU",
+  "object": "chat.completion",
+  "created": 1790614019,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X propõe a aprovação de uma medida específica (Estatuto dos Povos Ciganos) para combater a invisibilidade, enquanto Y descreve uma constatação sobre a condição de invisibilidade sem mencionar a proposta de solução.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 481,
+    "completion_tokens": 78,
+    "estimated_cost": 7.917e-05,
+    "prompt_tokens_details": null
+  }
+}

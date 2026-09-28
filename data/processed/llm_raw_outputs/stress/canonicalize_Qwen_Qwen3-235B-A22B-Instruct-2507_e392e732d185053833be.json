@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rmi1gu5MNKBkM99tkTWqPmYs",
+  "object": "chat.completion",
+  "created": 1790614348,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre aprovar a Lei do Bem para incentivar a inovação, enquanto a segunda menciona votar um projeto que a altera, sem indicar se é para aprimorar, manter ou mudar seu objetivo, configurando reivindicações distintas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 472,
+    "completion_tokens": 81,
+    "estimated_cost": 7.974e-05,
+    "prompt_tokens_details": null
+  }
+}

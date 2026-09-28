@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVNmH20qUcxrTquR30K8VxG7",
+  "object": "chat.completion",
+  "created": 1790614226,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações propõem que o Amazonas seja o estado piloto para ações contra a tuberculose, com foco na erradicação ou na coordenação dessas ações.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 455,
+    "completion_tokens": 63,
+    "estimated_cost": 6.993e-05,
+    "prompt_tokens_details": null
+  }
+}

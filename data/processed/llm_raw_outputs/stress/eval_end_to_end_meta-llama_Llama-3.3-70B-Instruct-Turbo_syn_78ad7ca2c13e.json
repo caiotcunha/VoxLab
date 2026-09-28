@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCxe2ESk5OafjKAE83D2YCMi",
+  "object": "chat.completion",
+  "created": 1790614747,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator defende a criação de um fundo para calamidades públicas e a destinação de recursos para prevenção de desastres, enquanto na Manifestação B, o ator se posiciona contra a forma como se propõe colocar recursos no Fundo de Calamidade Pública, argumentando que a alocação de recursos por medida provisória é mais ágil e eficiente.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3475,
+    "total_tokens": 3590,
+    "completion_tokens": 115,
+    "estimated_cost": 0.00038430000000000007,
+    "prompt_tokens_details": null
+  }
+}

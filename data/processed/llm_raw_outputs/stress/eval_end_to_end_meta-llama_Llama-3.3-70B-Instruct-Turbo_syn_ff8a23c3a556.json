@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSBWVUozV2ck5VTLWcGcHWc8",
+  "object": "chat.completion",
+  "created": 1790614103,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As manifestações têm temas relacionados à saúde ocular e ao SUS, mas abordam problemas específicos diferentes, como a retinopatia diabética na primeira e o edema macular diabético na segunda, não permitindo uma comparação direta de stance sobre a mesma proposição.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2310,
+    "total_tokens": 2394,
+    "completion_tokens": 84,
+    "estimated_cost": 0.00025788000000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7n2EUeXw5EL4k7pW8WBXiRS",
+  "object": "chat.completion",
+  "created": 1790614316,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A Formulação X defende uma ação específica (aprovar e implementar o estatuto), enquanto a Formulação Y apenas descreve um problema social sem propor uma solução ou posição clara.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 453,
+    "completion_tokens": 61,
+    "estimated_cost": 0.00011443000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

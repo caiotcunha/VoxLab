@@ -13,6 +13,11 @@ disagreements.
 This is a separate exploratory track making real API calls (DeepInfra), like
 automatic_baselines.py. No LLM judgment here is treated as ground truth.
 
+Known issue (2026-09-28): expansion29_model_predictions.csv is in annotator
+1's display order, so the model_vs_gold_expansion cases compare swapped sides
+for 16 of 29 pairs. Superseded by proposition_canonicalization, which
+realigns sides; this module is kept unchanged to reproduce its cached output.
+
 Run after the expansion gold and gold18 pairwise analysis exist:
     PYTHONPATH=src python3 -m voxlab.proposition_polarity_audit
 """

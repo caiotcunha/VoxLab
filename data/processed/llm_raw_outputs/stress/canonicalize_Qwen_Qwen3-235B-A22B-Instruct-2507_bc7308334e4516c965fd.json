@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R680SRmQo6IbNGp8RhywjBQm",
+  "object": "chat.completion",
+  "created": 1790614113,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem o avanço do uso de blockchain no Brasil, com diferenças apenas de redação e ênfase, mas sem alterar a direção da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 455,
+    "completion_tokens": 63,
+    "estimated_cost": 6.993e-05,
+    "prompt_tokens_details": null
+  }
+}

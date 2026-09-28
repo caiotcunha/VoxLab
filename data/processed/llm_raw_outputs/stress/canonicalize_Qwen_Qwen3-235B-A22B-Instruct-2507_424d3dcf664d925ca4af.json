@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvOgcRUbEUWQZK8m41hT30Vc",
+  "object": "chat.completion",
+  "created": 1790614449,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações concordam na rejeição integral do projeto de lei, ainda que a segunda acrescente uma sugestão adicional, o que não altera a polaridade da posição principal.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 459,
+    "completion_tokens": 63,
+    "estimated_cost": 7.029e-05,
+    "prompt_tokens_details": null
+  }
+}

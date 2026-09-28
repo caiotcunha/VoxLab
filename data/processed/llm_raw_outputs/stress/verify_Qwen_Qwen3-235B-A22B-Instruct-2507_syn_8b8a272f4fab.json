@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDGIZW9k5hhQQ8ijPMQZEd7K",
+  "object": "chat.completion",
+  "created": 1790614878,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita usa polaridade linguística oposta (como 'inaceitável que não haja', 'não podemos continuar sem') para manter a posição de favor à proposição-alvo, sem alterar o conteúdo ou adicionar informações novas, mantendo naturalidade e coerência.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1874,
+    "total_tokens": 1998,
+    "completion_tokens": 124,
+    "estimated_cost": 0.00023685999999999998,
+    "prompt_tokens_details": null
+  }
+}

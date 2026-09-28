@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIl6xdHbdsBK0U2sjenJ6SVH",
+  "object": "chat.completion",
+  "created": 1790614386,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a operacionalização do Marco Legal da Inovação em geral, enquanto a segunda trata de uma regra específica de compras por institutos de pesquisa, com escopo e medida distintas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 464,
+    "completion_tokens": 63,
+    "estimated_cost": 7.074e-05,
+    "prompt_tokens_details": null
+  }
+}

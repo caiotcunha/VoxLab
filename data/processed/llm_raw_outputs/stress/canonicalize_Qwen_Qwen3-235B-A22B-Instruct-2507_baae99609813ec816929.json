@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RI7uP4sh4kVL2MMF1M8FJxlI",
+  "object": "chat.completion",
+  "created": 1790614444,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam rejeição ao movimento antivacina, com diferentes níveis de intensidade, mas sem mudar a polaridade negativa em relação ao fenômeno.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "total_tokens": 448,
+    "completion_tokens": 62,
+    "estimated_cost": 6.884e-05,
+    "prompt_tokens_details": null
+  }
+}

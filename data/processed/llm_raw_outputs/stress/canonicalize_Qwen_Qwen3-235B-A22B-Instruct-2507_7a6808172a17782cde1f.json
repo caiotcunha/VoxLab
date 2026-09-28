@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rsw6NcdtGxyMull8TxXjfUz6",
+  "object": "chat.completion",
+  "created": 1790614171,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da efetivação de direitos e políticas para idosos previstos no Estatuto do Idoso, com foco na implementação ou consolidação dessas medidas, mantendo a mesma direção e escopo.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 478,
+    "completion_tokens": 77,
+    "estimated_cost": 7.844e-05,
+    "prompt_tokens_details": null
+  }
+}

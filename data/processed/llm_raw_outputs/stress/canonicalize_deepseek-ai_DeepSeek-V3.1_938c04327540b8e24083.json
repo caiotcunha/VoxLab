@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2lKYDyUKBTLj4uddsuUHBKV",
+  "object": "chat.completion",
+  "created": 1790614279,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a inclusão e o potencial de pessoas autistas na sociedade, com a primeira enfatizando direitos e cidadania e a segunda destacando a capacidade de ocupar espaços com apoio, mas sem oposição de polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 476,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00012928,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5mC0qXzb7P1eH5BCaHGfwmU",
+  "object": "chat.completion",
+  "created": 1790614266,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre reconhecimento do cuidado como trabalho e direito à aposentadoria para mães cuidadoras, enquanto a segunda trata da comercialização do cuidado, com foco diferente e sem menção a direitos previdenciários.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 471,
+    "completion_tokens": 73,
+    "estimated_cost": 7.597e-05,
+    "prompt_tokens_details": null
+  }
+}

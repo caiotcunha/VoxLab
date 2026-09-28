@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ruy9BdDxNd64HweownhzpuTR",
+  "object": "chat.completion",
+  "created": 1790614139,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações afirmam que professores podem acumular dois cargos públicos, com diferenças apenas de redação e nível de detalhe.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 448,
+    "completion_tokens": 52,
+    "estimated_cost": 6.424e-05,
+    "prompt_tokens_details": null
+  }
+}

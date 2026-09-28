@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtB9UZClbsLccMluusYgBX5a",
+  "object": "chat.completion",
+  "created": 1790614250,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações afirmam a obrigatoriedade da vacinação contra Covid-19 em crianças, com redações ligeiramente diferentes, mas sem alterar o sentido ou a polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 460,
+    "completion_tokens": 63,
+    "estimated_cost": 7.038000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

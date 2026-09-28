@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdERGZrV0rjjszGTRdBsnuNp",
+  "object": "chat.completion",
+  "created": 1790614179,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As duas formulações tratam da mesma medida, mas uma defende sua manutenção e a outra, seu fim, indicando posições opostas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 385,
+    "total_tokens": 438,
+    "completion_tokens": 53,
+    "estimated_cost": 6.38e-05,
+    "prompt_tokens_details": null
+  }
+}

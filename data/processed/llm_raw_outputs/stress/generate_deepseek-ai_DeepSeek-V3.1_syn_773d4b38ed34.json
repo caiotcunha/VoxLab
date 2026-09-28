@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoEfoFx6Q0DgVvErS2HGWWv0",
+  "object": "chat.completion",
+  "created": 1790614314,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Professores devem poder escolher sua carga horária, inclusive acumulando dois cargos públicos.\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nSr. Presidente, caríssimos expositores, senhoras e senhores, inicialmente, quero dizer que a PEC 169, de 2019, é da lavra do Deputado Capitão Alberto Neto e teve o apoio de um terço dos Deputados. Então, não é iniciativa de um único Deputado. S.Exa. tem o mérito de ter sido o primeiro propositor. E S.Exa. o fez exatamente no sentido de assegurar a liberdade. Esta é a palavra-chave desta PEC: a liberdade de escolha que o professor deve ter.\n\nA própria Constituição assevera que é livre a atividade do exercício profissional, atendidas as qualificações profissionais que a lei estabelecer. Pois bem, uma vez tendo a devida qualificação, compete a ele, profissional, escolher se quer trabalhar 20 horas, se quer trabalhar 40 horas, se quer trabalhar 60 horas.\n\nObviamente, as nossas audiências públicas servem de embasamento, servem de subsídio para que nós possamos proferir um parecer, acompanhado da nossa Consultoria Legislativa da Câmara, mas, muitas vezes, as pessoas colocam uma visão muito estatizante.\n\nEntão, quando eu vejo — e aí eu peço vênia ao primeiro expositor, ou foi o segundo, que fez a apresentação — alguém dizendo que tem que ter lotação em uma mesma escola, uma dedicação exclusiva, penso que isso é fundamental para a qualidade da educação dos nossos professores. Há professores que trabalham em duas escolas públicas; há professores que trabalham numa instituição privada e numa pública; há colegas professores que trabalham em duas instituições privadas; alguns, em escolas comunitárias; outros, em escolas confessionais; outros, ainda, em escolas particulares. Nós já temos, inclusive, a escola de pais. Nós temos professores que estão atuando nas plataformas educacionais, em sistemaon-line,e, obviamente, nos diversos segmentos — fundamental, médio, superior — e nos ensinos técnicos.\n\nInclusive, Sr. Presidente, seria de bom alvitre que nós tivéssemos esses números, ou seja, quantos professores estão empregados em cada uma dessas áreas — não sei se é possível a nossa Consultoria obtê-los —, o número de professores empregados na área privada, na área pública, nas escolas confessionais, nas escolas comunitárias, particulares, na escola de pais, em cada um dos ramos.\n\nPortanto, Sr. Presidente, o texto apresentado está falando da dedicação exclusiva. Ele não define o que é cargo técnico, nem científico, que não é o objeto aqui da PEC.\n\nE o mais importante, retrucando alguma das falas aqui, ela não está voltada apenas para o ensino superior.Esta PEC abrange todo o exercício do magistério, em toda a sua amplitude, de tal sorte que, uma vez colocando a expressão \"de qualquer outro cargo\" no texto da Constituição, incluiremos inclusive os cargos técnicos e os cargos científicos.\n\nVeja que você pode, como o senhor aqui acabou de dizer, e não é nada demeritório — eu e o Deputado Agrobom, inclusive, somos da Frente Parlamentar em Defesa dos Motoristas de Aplicativos, inclusive —, ser professor e motorista de aplicativo. Você pode ser também professor, como eu, e Deputado e jornalista e radialista. Enfim, você pode exercer ene atividades.\n\nSr. Presidente, nós vamos ter ainda outras audiências, vamos ouvir outros segmentos. Estamos inclusive convidando outros colegas também para fazer parte da nossa Comissão. Ainda hoje pedi ao meu colega de bancada, o Deputado Prof. Reginaldo Veras, que entrasse na vaga de suplente do meu partido, para que nós também tenhamos outros olhares, outras sugestões no sentido de aprimorar, repito, o texto apresentado por um terço dos Deputados da nossa Casa.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1360,
+    "total_tokens": 2320,
+    "completion_tokens": 960,
+    "estimated_cost": 0.0012427599999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

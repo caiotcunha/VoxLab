@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDooErGQpxOp4wmkDLR0pheG",
+  "object": "chat.completion",
+  "created": 1790614232,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverteu claramente a posição para contra a cobrança mais dura sobre as distribuidoras, defendendo maior flexibilidade e consideração pelas dificuldades do setor, mantendo a coerência interna e a naturalidade da fala parlamentar.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2190,
+    "total_tokens": 2312,
+    "completion_tokens": 122,
+    "estimated_cost": 0.0002642,
+    "prompt_tokens_details": null
+  }
+}

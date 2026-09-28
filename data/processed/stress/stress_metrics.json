@@ -1,0 +1,1364 @@
+{
+  "mode": "EXECUTED",
+  "funnel": {
+    "REVERSE_ON_COMPARABLE": {
+      "planned": 12,
+      "accepted": 7
+    },
+    "NEGATED_PARAPHRASE": {
+      "planned": 12,
+      "accepted": 7
+    },
+    "SHIFT_PROPOSITION": {
+      "planned": 12,
+      "accepted": 8
+    },
+    "REVERSE_ON_INCOMPARABLE": {
+      "planned": 31,
+      "accepted": 17
+    }
+  },
+  "headline": {
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "A_end_to_end": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 4,
+          "n": 7,
+          "rate": 0.5714,
+          "wilson_95": [
+            0.2505,
+            0.8418
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 2,
+          "n": 17,
+          "rate": 0.1176,
+          "wilson_95": [
+            0.0329,
+            0.3434
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "wilson_95": [
+            0.6756,
+            1.0
+          ]
+        }
+      },
+      "B_forced_comparability": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 3,
+          "n": 7,
+          "rate": 0.4286,
+          "wilson_95": [
+            0.1582,
+            0.7495
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 3,
+          "n": 17,
+          "rate": 0.1765,
+          "wilson_95": [
+            0.0619,
+            0.4103
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 1,
+          "n": 7,
+          "rate": 0.1429,
+          "wilson_95": [
+            0.0257,
+            0.5131
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 7,
+          "n": 8,
+          "rate": 0.875,
+          "wilson_95": [
+            0.5291,
+            0.9776
+          ]
+        }
+      },
+      "C_structured_with_gate": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 1,
+          "n": 7,
+          "rate": 0.1429,
+          "wilson_95": [
+            0.0257,
+            0.5131
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 1,
+          "n": 17,
+          "rate": 0.0588,
+          "wilson_95": [
+            0.0105,
+            0.2698
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 4,
+          "n": 8,
+          "rate": 0.5,
+          "wilson_95": [
+            0.2152,
+            0.7848
+          ]
+        }
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "A_end_to_end": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 3,
+          "n": 7,
+          "rate": 0.4286,
+          "wilson_95": [
+            0.1582,
+            0.7495
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 1,
+          "n": 17,
+          "rate": 0.0588,
+          "wilson_95": [
+            0.0105,
+            0.2698
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "wilson_95": [
+            0.6756,
+            1.0
+          ]
+        }
+      },
+      "B_forced_comparability": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 4,
+          "n": 7,
+          "rate": 0.5714,
+          "wilson_95": [
+            0.2505,
+            0.8418
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 5,
+          "n": 17,
+          "rate": 0.2941,
+          "wilson_95": [
+            0.1328,
+            0.5313
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 8,
+          "n": 8,
+          "rate": 1.0,
+          "wilson_95": [
+            0.6756,
+            1.0
+          ]
+        }
+      },
+      "C_structured_with_gate": {
+        "reversal_recall__REVERSE_ON_COMPARABLE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_reversal__REVERSE_ON_INCOMPARABLE": {
+          "k": 0,
+          "n": 17,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.1843
+          ]
+        },
+        "false_reversal__NEGATED_PARAPHRASE": {
+          "k": 0,
+          "n": 7,
+          "rate": 0.0,
+          "wilson_95": [
+            0.0,
+            0.3543
+          ]
+        },
+        "false_comparability__SHIFT_PROPOSITION": {
+          "k": 2,
+          "n": 8,
+          "rate": 0.25,
+          "wilson_95": [
+            0.0715,
+            0.5907
+          ]
+        }
+      }
+    }
+  },
+  "sensitivity_excluding_copy_noise": {
+    "excluded_spec_ids": [
+      "syn_04585703f194",
+      "syn_0ea3427ca13e",
+      "syn_2f8b7031e619",
+      "syn_6c7cba78c0ae",
+      "syn_73fc87b8e147",
+      "syn_7aadeaaa8c51",
+      "syn_9d79ea135ad4",
+      "syn_9ec876c670b6",
+      "syn_afdaab6d2eb3",
+      "syn_cbd48cb23569"
+    ],
+    "headline": {
+      "Qwen/Qwen2.5-72B-Instruct": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 6,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.3,
+              0.9032
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 1,
+            "n": 12,
+            "rate": 0.0833,
+            "wilson_95": [
+              0.0149,
+              0.3539
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5655,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 2,
+            "n": 12,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.047,
+              0.448
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 4,
+            "n": 5,
+            "rate": 0.8,
+            "wilson_95": [
+              0.3755,
+              0.9638
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 1,
+            "n": 6,
+            "rate": 0.1667,
+            "wilson_95": [
+              0.0301,
+              0.5635
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2425
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 2,
+            "n": 5,
+            "rate": 0.4,
+            "wilson_95": [
+              0.1176,
+              0.7693
+            ]
+          }
+        }
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "A_end_to_end": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 3,
+            "n": 6,
+            "rate": 0.5,
+            "wilson_95": [
+              0.1876,
+              0.8124
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2425
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5655,
+              1.0
+            ]
+          }
+        },
+        "B_forced_comparability": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 4,
+            "n": 6,
+            "rate": 0.6667,
+            "wilson_95": [
+              0.3,
+              0.9032
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 4,
+            "n": 12,
+            "rate": 0.3333,
+            "wilson_95": [
+              0.1381,
+              0.6094
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 5,
+            "n": 5,
+            "rate": 1.0,
+            "wilson_95": [
+              0.5655,
+              1.0
+            ]
+          }
+        },
+        "C_structured_with_gate": {
+          "reversal_recall__REVERSE_ON_COMPARABLE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_reversal__REVERSE_ON_INCOMPARABLE": {
+            "k": 0,
+            "n": 12,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.2425
+            ]
+          },
+          "false_reversal__NEGATED_PARAPHRASE": {
+            "k": 0,
+            "n": 6,
+            "rate": 0.0,
+            "wilson_95": [
+              0.0,
+              0.3903
+            ]
+          },
+          "false_comparability__SHIFT_PROPOSITION": {
+            "k": 1,
+            "n": 5,
+            "rate": 0.2,
+            "wilson_95": [
+              0.0362,
+              0.6245
+            ]
+          }
+        }
+      }
+    }
+  },
+  "by_operation": {
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "REVERSE_ON_COMPARABLE": {
+        "n_accepted": 7,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "predicted_reversed": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 6,
+              "n": 7,
+              "rate": 0.8571,
+              "wilson_95": [
+                0.4869,
+                0.9743
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 2,
+              "INCOMPARABLE": 1,
+              "STANCE_REVERSED": 4
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 3,
+              "n": 7,
+              "rate": 0.4286,
+              "wilson_95": [
+                0.1582,
+                0.7495
+              ]
+            },
+            "predicted_reversed": {
+              "k": 3,
+              "n": 7,
+              "rate": 0.4286,
+              "wilson_95": [
+                0.1582,
+                0.7495
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 6,
+              "n": 7,
+              "rate": 0.8571,
+              "wilson_95": [
+                0.4869,
+                0.9743
+              ]
+            },
+            "prediction_distribution": {
+              "INSUFFICIENT_EVIDENCE": 1,
+              "STANCE_MAINTAINED": 3,
+              "STANCE_REVERSED": 3
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 1,
+              "n": 7,
+              "rate": 0.1429,
+              "wilson_95": [
+                0.0257,
+                0.5131
+              ]
+            },
+            "predicted_reversed": {
+              "k": 1,
+              "n": 7,
+              "rate": 0.1429,
+              "wilson_95": [
+                0.0257,
+                0.5131
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 2,
+              "n": 7,
+              "rate": 0.2857,
+              "wilson_95": [
+                0.0822,
+                0.6411
+              ]
+            },
+            "prediction_distribution": {
+              "INSUFFICIENT_EVIDENCE": 1,
+              "INCOMPARABLE": 4,
+              "STANCE_MAINTAINED": 1,
+              "STANCE_REVERSED": 1
+            }
+          }
+        }
+      },
+      "NEGATED_PARAPHRASE": {
+        "n_accepted": 7,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 7
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 5,
+              "n": 7,
+              "rate": 0.7143,
+              "wilson_95": [
+                0.3589,
+                0.9178
+              ]
+            },
+            "predicted_reversed": {
+              "k": 1,
+              "n": 7,
+              "rate": 0.1429,
+              "wilson_95": [
+                0.0257,
+                0.5131
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 6,
+              "n": 7,
+              "rate": 0.8571,
+              "wilson_95": [
+                0.4869,
+                0.9743
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 5,
+              "INSUFFICIENT_EVIDENCE": 1,
+              "STANCE_REVERSED": 1
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 4,
+              "INSUFFICIENT_EVIDENCE": 1,
+              "INCOMPARABLE": 2
+            }
+          }
+        }
+      },
+      "SHIFT_PROPOSITION": {
+        "n_accepted": 8,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 8,
+              "n": 8,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6756,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 8
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 7,
+              "n": 8,
+              "rate": 0.875,
+              "wilson_95": [
+                0.5291,
+                0.9776
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 7,
+              "INSUFFICIENT_EVIDENCE": 1
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 3,
+              "n": 8,
+              "rate": 0.375,
+              "wilson_95": [
+                0.1368,
+                0.6943
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 4,
+              "n": 8,
+              "rate": 0.5,
+              "wilson_95": [
+                0.2152,
+                0.7848
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 4,
+              "INSUFFICIENT_EVIDENCE": 1,
+              "INCOMPARABLE": 3
+            }
+          }
+        }
+      },
+      "REVERSE_ON_INCOMPARABLE": {
+        "n_accepted": 17,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 14,
+              "n": 17,
+              "rate": 0.8235,
+              "wilson_95": [
+                0.5897,
+                0.9381
+              ]
+            },
+            "predicted_reversed": {
+              "k": 2,
+              "n": 17,
+              "rate": 0.1176,
+              "wilson_95": [
+                0.0329,
+                0.3434
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 3,
+              "n": 17,
+              "rate": 0.1765,
+              "wilson_95": [
+                0.0619,
+                0.4103
+              ]
+            },
+            "prediction_distribution": {
+              "INCOMPARABLE": 14,
+              "STANCE_MAINTAINED": 1,
+              "STANCE_REVERSED": 2
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 17,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.1843
+              ]
+            },
+            "predicted_reversed": {
+              "k": 3,
+              "n": 17,
+              "rate": 0.1765,
+              "wilson_95": [
+                0.0619,
+                0.4103
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 14,
+              "n": 17,
+              "rate": 0.8235,
+              "wilson_95": [
+                0.5897,
+                0.9381
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 11,
+              "RELATION_UNCERTAIN": 1,
+              "INSUFFICIENT_EVIDENCE": 2,
+              "STANCE_REVERSED": 3
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 14,
+              "n": 17,
+              "rate": 0.8235,
+              "wilson_95": [
+                0.5897,
+                0.9381
+              ]
+            },
+            "predicted_reversed": {
+              "k": 1,
+              "n": 17,
+              "rate": 0.0588,
+              "wilson_95": [
+                0.0105,
+                0.2698
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 1,
+              "n": 17,
+              "rate": 0.0588,
+              "wilson_95": [
+                0.0105,
+                0.2698
+              ]
+            },
+            "prediction_distribution": {
+              "INCOMPARABLE": 14,
+              "INSUFFICIENT_EVIDENCE": 2,
+              "STANCE_REVERSED": 1
+            }
+          }
+        }
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "REVERSE_ON_COMPARABLE": {
+        "n_accepted": 7,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 3,
+              "n": 7,
+              "rate": 0.4286,
+              "wilson_95": [
+                0.1582,
+                0.7495
+              ]
+            },
+            "predicted_reversed": {
+              "k": 3,
+              "n": 7,
+              "rate": 0.4286,
+              "wilson_95": [
+                0.1582,
+                0.7495
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 5,
+              "n": 7,
+              "rate": 0.7143,
+              "wilson_95": [
+                0.3589,
+                0.9178
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 2,
+              "INCOMPARABLE": 2,
+              "STANCE_REVERSED": 3
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "predicted_reversed": {
+              "k": 4,
+              "n": 7,
+              "rate": 0.5714,
+              "wilson_95": [
+                0.2505,
+                0.8418
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 3,
+              "STANCE_REVERSED": 4
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 1,
+              "n": 7,
+              "rate": 0.1429,
+              "wilson_95": [
+                0.0257,
+                0.5131
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 1,
+              "INCOMPARABLE": 6
+            }
+          }
+        }
+      },
+      "NEGATED_PARAPHRASE": {
+        "n_accepted": 7,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 7
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 7,
+              "n": 7,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6457,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 7
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 5,
+              "n": 7,
+              "rate": 0.7143,
+              "wilson_95": [
+                0.3589,
+                0.9178
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 7,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3543
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 5,
+              "n": 7,
+              "rate": 0.7143,
+              "wilson_95": [
+                0.3589,
+                0.9178
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 5,
+              "INCOMPARABLE": 2
+            }
+          }
+        }
+      },
+      "SHIFT_PROPOSITION": {
+        "n_accepted": 8,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 8,
+              "n": 8,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6756,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 8
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 8,
+              "n": 8,
+              "rate": 1.0,
+              "wilson_95": [
+                0.6756,
+                1.0
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 8
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 6,
+              "n": 8,
+              "rate": 0.75,
+              "wilson_95": [
+                0.4093,
+                0.9285
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 8,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.3244
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 2,
+              "n": 8,
+              "rate": 0.25,
+              "wilson_95": [
+                0.0715,
+                0.5907
+              ]
+            },
+            "prediction_distribution": {
+              "INCOMPARABLE": 6,
+              "STANCE_MAINTAINED": 2
+            }
+          }
+        }
+      },
+      "REVERSE_ON_INCOMPARABLE": {
+        "n_accepted": 17,
+        "conditions": {
+          "A_end_to_end": {
+            "accuracy_vs_expected": {
+              "k": 14,
+              "n": 17,
+              "rate": 0.8235,
+              "wilson_95": [
+                0.5897,
+                0.9381
+              ]
+            },
+            "predicted_reversed": {
+              "k": 1,
+              "n": 17,
+              "rate": 0.0588,
+              "wilson_95": [
+                0.0105,
+                0.2698
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 3,
+              "n": 17,
+              "rate": 0.1765,
+              "wilson_95": [
+                0.0619,
+                0.4103
+              ]
+            },
+            "prediction_distribution": {
+              "INCOMPARABLE": 14,
+              "STANCE_MAINTAINED": 2,
+              "STANCE_REVERSED": 1
+            }
+          },
+          "B_forced_comparability": {
+            "accuracy_vs_expected": {
+              "k": 0,
+              "n": 17,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.1843
+              ]
+            },
+            "predicted_reversed": {
+              "k": 5,
+              "n": 17,
+              "rate": 0.2941,
+              "wilson_95": [
+                0.1328,
+                0.5313
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 15,
+              "n": 17,
+              "rate": 0.8824,
+              "wilson_95": [
+                0.6566,
+                0.9671
+              ]
+            },
+            "prediction_distribution": {
+              "STANCE_MAINTAINED": 10,
+              "STANCE_REVERSED": 5,
+              "RELATION_UNCERTAIN": 1,
+              "INSUFFICIENT_EVIDENCE": 1
+            }
+          },
+          "C_structured_with_gate": {
+            "accuracy_vs_expected": {
+              "k": 16,
+              "n": 17,
+              "rate": 0.9412,
+              "wilson_95": [
+                0.7302,
+                0.9895
+              ]
+            },
+            "predicted_reversed": {
+              "k": 0,
+              "n": 17,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.1843
+              ]
+            },
+            "predicted_comparable_relation": {
+              "k": 0,
+              "n": 17,
+              "rate": 0.0,
+              "wilson_95": [
+                0.0,
+                0.1843
+              ]
+            },
+            "prediction_distribution": {
+              "INCOMPARABLE": 16,
+              "INSUFFICIENT_EVIDENCE": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rejection_reason_counts": {
+    "VERIFIER_OPERATION_ACHIEVED_NO": 7,
+    "VERIFIER_OTHER_CONTENT_PRESERVED_NO": 14,
+    "VERIFIER_INTERNALLY_CONSISTENT_NO": 13,
+    "VERIFIER_STANCE_MISMATCH": 18,
+    "VERIFIER_NATURAL_NO": 4,
+    "DETERMINISTIC:NOTHING_CHANGED": 11,
+    "VERIFICATION_MALFORMED": 11,
+    "VERIFIER_OPERATION_ACHIEVED_MISSING": 11,
+    "VERIFIER_OTHER_CONTENT_PRESERVED_MISSING": 11,
+    "VERIFIER_INTERNALLY_CONSISTENT_MISSING": 11,
+    "VERIFIER_NATURAL_MISSING": 11,
+    "VERIFIER_NATURAL_UNCERTAIN": 2
+  }
+}

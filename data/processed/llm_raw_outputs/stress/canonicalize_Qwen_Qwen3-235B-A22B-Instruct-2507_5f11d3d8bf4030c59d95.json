@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtYxVBEvMgLwswdEVzmBDYxv",
+  "object": "chat.completion",
+  "created": 1790614437,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos distintos do mesmo tema, mas com escopos diferentes: uma foca em sistema nacional de apoio com recuperação econômica e auxílio emergencial, e a outra na participação específica do Ministério do Desenvolvimento Social para proteger os vulneráveis.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 434,
+    "total_tokens": 516,
+    "completion_tokens": 82,
+    "estimated_cost": 8.416e-05,
+    "prompt_tokens_details": null
+  }
+}

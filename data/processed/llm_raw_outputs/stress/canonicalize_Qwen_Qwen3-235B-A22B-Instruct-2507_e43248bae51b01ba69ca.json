@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXgGvrKKaPC7WRFxp4AnDgRP",
+  "object": "chat.completion",
+  "created": 1790614427,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As formulações são idênticas em conteúdo e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 427,
+    "completion_tokens": 34,
+    "estimated_cost": 5.407e-05,
+    "prompt_tokens_details": null
+  }
+}

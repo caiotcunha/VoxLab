@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgT6zwRQ2PHepgbyWBi4QNyi",
+  "object": "chat.completion",
+  "created": 1790614416,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira trata da concessão de licenças para exploração de petróleo, enquanto a segunda avalia se o IBAMA age com parcialidade no licenciamento da Petrobras, sem mencionar a Margem Equatorial ou ação específica de concessão.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 475,
+    "completion_tokens": 75,
+    "estimated_cost": 7.725000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

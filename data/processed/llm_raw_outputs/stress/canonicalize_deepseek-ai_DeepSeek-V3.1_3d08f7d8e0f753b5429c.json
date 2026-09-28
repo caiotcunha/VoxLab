@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfERGK0GADXOYe04ryLXC4ai",
+  "object": "chat.completion",
+  "created": 1790613628,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As formulações descrevem exatamente a mesma reivindicação com a mesma polaridade, diferindo apenas em redação mínima ('vacinação' vs 'vacina').\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 462,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011457999999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

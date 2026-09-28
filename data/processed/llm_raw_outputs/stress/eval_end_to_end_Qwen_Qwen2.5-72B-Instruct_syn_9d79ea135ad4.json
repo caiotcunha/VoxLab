@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R66fQ8Ue7Pkc2AcjqNUhA1el",
+  "object": "chat.completion",
+  "created": 1790613982,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um forte apoio à prevenção de desastres naturais e à necessidade de investimento em políticas públicas para essa finalidade. A primeira manifestação destaca a importância do PL 920/23 e a necessidade de derrubar o veto que retira fontes de financiamento, enquanto a segunda manifestação reforça a necessidade de recursos específicos para a retirada de famílias de áreas de risco e a criação de fontes de financiamento para o Fundo Nacional para Calamidades Públicas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3645,
+    "total_tokens": 3793,
+    "completion_tokens": 148,
+    "estimated_cost": 0.0013714,
+    "prompt_tokens_details": null
+  }
+}

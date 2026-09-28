@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhmwHW2KBI6yXpaqeLfQH9wa",
+  "object": "chat.completion",
+  "created": 1790614148,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a mesma ação prioritária de investir em prevenção de desastres, com a segunda apenas explicitando o contraste com a abordagem reativa.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 452,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011196,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

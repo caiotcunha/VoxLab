@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfP8XHMMb3lQmz5FEv4oORfw",
+  "object": "chat.completion",
+  "created": 1790615141,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"NOT_ADDRESSED\",\n  \"reasoning\": \"A fala reescrita muda a população afetada de 'vulneráveis' para 'pequenos negócios', mantendo o tema geral e o vocabulário, sem posicionar-se sobre a proposição original ou a de referência, e sem introduzir contradições ou novas informações relevantes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2715,
+    "total_tokens": 2845,
+    "completion_tokens": 130,
+    "estimated_cost": 0.00031585,
+    "prompt_tokens_details": null
+  }
+}

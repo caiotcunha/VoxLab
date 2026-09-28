@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXzcHTWli0vk2DAE4qnvAbp1",
+  "object": "chat.completion",
+  "created": 1790614842,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Deve haver uma rede de proteção para vítimas de violência\",\n  \"target_proposition_b\": \"O recurso para a Casa da Mulher Brasileira deve ser mantido sob a gerência do Ministério da Justiça\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2963,
+    "total_tokens": 3083,
+    "completion_tokens": 120,
+    "estimated_cost": 0.0003347,
+    "prompt_tokens_details": null
+  }
+}

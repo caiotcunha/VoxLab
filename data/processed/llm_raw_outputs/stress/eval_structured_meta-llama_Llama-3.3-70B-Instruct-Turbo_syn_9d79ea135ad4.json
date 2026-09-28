@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZfhXZHtVEoj2nVm0wVsOjDU",
+  "object": "chat.completion",
+  "created": 1790614005,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O veto ao PL 920/23 deve ser derrubado para garantir recursos para a prevenção de desastres\",\n  \"target_proposition_b\": \"O Fundo Nacional para Calamidades Públicas deve ter fontes de recursos para a prevenção de desastres e retirada de famílias de áreas de risco\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3961,
+    "total_tokens": 4102,
+    "completion_tokens": 141,
+    "estimated_cost": 0.0004412200000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiZgReprly8pdiY2ozAM4NTn",
+  "object": "chat.completion",
+  "created": 1790615216,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a criação de um arcabouço legal para proteger vítimas de desastres e pequenos negócios, mostrando uma direção de stance favorável à mesma proposição.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2775,
+    "total_tokens": 2842,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00029894000000000003,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPbhUWhjXS6wAN5JoVHc458q",
+  "object": "chat.completion",
+  "created": 1790614232,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre reconstrução de direitos, enquanto a segunda menciona participação da sociedade em políticas, sem garantia de que se refiram à mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "total_tokens": 444,
+    "completion_tokens": 58,
+    "estimated_cost": 6.664e-05,
+    "prompt_tokens_details": null
+  }
+}

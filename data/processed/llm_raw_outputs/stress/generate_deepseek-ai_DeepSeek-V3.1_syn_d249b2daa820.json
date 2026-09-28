@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpBYYzF28tY49TkIpFrPSMo2",
+  "object": "chat.completion",
+  "created": 1790613885,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O país deve destinar recursos específicos para a prevenção de desastres\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nAgradeço ao Deputado Federal Leo Prates, que preside esse trabalho da nossa Comissão e nos orienta a organizar audiências como essa, em função de trabalharmos, ao final, um relatório que consiga proporcionar um arcabouço de prevenção de desastres e de calamidade pública no nosso País.\n\nEssa é uma pauta que nós temos trabalhado constantemente nesta Casa, que tem sido chamada à discussão e, quase sempre, para pronta resposta, ou seja, após o acontecimento dos desastres.\n\nFoi sob a Presidência do Deputado Arthur Lira e do Deputado Leo Prates que se iniciou toda a discussão nesta Comissão para que pudéssemos discutir a prevenção.\n\nO País não pode ficar sem recursos financeiros, não pode prescindir de fontes de recursos específicas para a prevenção de desastres. Ao longo dos anos, temos recebido, na Câmara dos Deputados, medidas provisórias que somente chegam aqui após o acontecimento dos desastres, depois que se perdem vidas, depois que se perde patrimônio.\n\nEntão, a nossa intenção é que possamos dialogar de tal forma que não falte aos Estados, principalmente aos Estados que têm sofrido constantemente com os desastres ambientais, recursos que garantam a segurança das famílias que moram em áreas de risco, que garantam a retirada dessas famílias.\n\nO Ministério das Cidades e o Ministério da Integração estão com essa pauta. Essa fonte de recurso, esse orçamento está no Ministério. Então, a intenção da audiência pública de hoje, com a presença da Sra. Vera Campelo, do Sr. Pedro Henrique, é para que possamos saber o que o Ministério está fazendo em relação a essa pauta, o que há de projeto.\n\nNós sabemos que há uma informação de investimentos por intermédio do PAC, mas a Comissão precisa tomar conhecimento até para ver qual o trabalho que precisa ser feito nesta Casa, para não deixar de alocar mais recursos para a prevenção de desastres.\n\nEu fui autor de um projeto de lei que foi aprovado aqui na Câmara dos Deputados, aprovado também de forma unânime no Senado Federal e sancionado pelo Presidente Lula, que tem por objetivo não deixar o Fundo Nacional para Calamidades Públicas sem fontes de recursos. O fundo foi criado em 1969 e não existia, até então, nenhuma fonte de recursos destinada a ele, que está na integração. Então, nós conseguimos aprovar esse projeto, que impediu que o Fundo Nacional para Calamidades Públicas continuasse sem fontes de recursos.\n\nE nós conseguimos, no Plenário da Câmara dos Deputados, com o apoio dos Deputados da Casa, fazer uma alteração na Lei de Apostas, não permitindo que 50% dos recursos das apostas não reclamadas em 90 dias ficassem de fora do Fundo de Calamidade Pública. Então, o fundo hoje tem três fontes de recursos. A partir daí, o Ministério da Integração pode normatizar o recebimento desses recursos, pode-se organizar o fundo e pode haver recursos não só para a pronta resposta, mas também para avançar no trabalho de prevenção, que é a nossa principal tarefa nesta Comissão a essa discussão.\n\nQuero passar a palavra aos expositores. Agradeço por suas presenças.\n\nAgradeço também ao Ministro por ter nos respondido e mandado dois profissionais para nos orientar em relação àquilo que o Ministério está executando nessa pauta.\n\nPassarei a palavra agora, por 20 minutos, para a Sra. Vera Campelo, Coordenadora da Secretaria Nacional de Assistência Social, que iniciará as exposições. Registro o nosso agradecimento à Vera por estar aqui para falar um pouco também das políticas que o Ministério tem decorrentes daquilo que nós estamos discutindo nesta Comissão.\n\nTem a palavra a Sra. Vera Campelo.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1382,
+    "total_tokens": 2354,
+    "completion_tokens": 972,
+    "estimated_cost": 0.0012549800000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 116,
+      "cache_write_tokens": null
+    }
+  }
+}

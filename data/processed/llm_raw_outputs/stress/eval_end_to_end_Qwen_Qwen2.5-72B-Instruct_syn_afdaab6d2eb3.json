@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RlBdV9ZIeNQAVPA4l6o23ITQ",
+  "object": "chat.completion",
+  "created": 1790615005,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressamposição contra a obrigatoriedade da vacinação contra a COVID-19 em crianças, embora a segunda também aborde a vacinação em idosos, mantendo a mesma direção de stance.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3437,
+    "total_tokens": 3509,
+    "completion_tokens": 72,
+    "estimated_cost": 0.00126612,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rl4AxIRK7TEEyHNNCAyMVTRf",
+  "object": "chat.completion",
+  "created": 1790613586,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de que gestores municipais devem dar maior importância ou prioridade à política para pessoas idosas, com a mesma polaridade positiva.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 451,
+    "completion_tokens": 59,
+    "estimated_cost": 0.00011253000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

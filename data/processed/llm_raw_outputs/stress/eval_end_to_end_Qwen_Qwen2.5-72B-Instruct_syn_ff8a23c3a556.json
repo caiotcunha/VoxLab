@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rr7KBJwB0izwXDpRjM9P4dTi",
+  "object": "chat.completion",
+  "created": 1790614093,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações abordam temas relacionados à saúde ocular e ao SUS, mas respondem a proposições específicas diferentes: uma trata da retinopatia diabética e a outra do edema macular diabético.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2289,
+    "total_tokens": 2363,
+    "completion_tokens": 74,
+    "estimated_cost": 0.0008536400000000001,
+    "prompt_tokens_details": null
+  }
+}

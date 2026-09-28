@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RizMDdN74SAGU3JruhoU4RY8",
+  "object": "chat.completion",
+  "created": 1790613982,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um forte apoio à prevenção de desastres naturais e à criação de fontes de financiamento específicas para essa finalidade. O ator defende a importância de investir em prevenção e critica a falta de recursos para essa área, mantendo uma posição consistente em ambos os eventos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3650,
+    "total_tokens": 3747,
+    "completion_tokens": 97,
+    "estimated_cost": 0.0013528000000000001,
+    "prompt_tokens_details": null
+  }
+}

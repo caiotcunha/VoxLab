@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaXNomfqNYdABI1KYI6dTW2Q",
+  "object": "chat.completion",
+  "created": 1790614253,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre exigir transparência e critérios claros para o pagamento, enquanto a segunda trata de verificar quem recebe, sem mencionar transparência ou critérios, configurando reivindicações distintas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 458,
+    "completion_tokens": 69,
+    "estimated_cost": 7.296e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfnkIS3T5nbMcgdFykqH0tvu",
+  "object": "chat.completion",
+  "created": 1790613924,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X defende o avanço em combustíveis de baixo carbono, enquanto Y trata da necessidade de critérios para escolha de novos combustíveis, abordando aspectos distintos da política energética.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 473,
+    "completion_tokens": 68,
+    "estimated_cost": 7.385e-05,
+    "prompt_tokens_details": null
+  }
+}

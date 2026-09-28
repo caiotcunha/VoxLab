@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RK1uxldNrGDDJTIeHPcz87Ff",
+  "object": "chat.completion",
+  "created": 1790614147,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas tratam da aprovação da mesma convenção, com pequenas variações de redação e detalhe que não alteram a reivindicação central.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 464,
+    "completion_tokens": 56,
+    "estimated_cost": 6.752e-05,
+    "prompt_tokens_details": null
+  }
+}

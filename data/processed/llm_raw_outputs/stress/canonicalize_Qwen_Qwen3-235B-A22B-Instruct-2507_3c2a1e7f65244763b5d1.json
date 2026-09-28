@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rjt2c9vJI0VNzlYOks01iCHW",
+  "object": "chat.completion",
+  "created": 1790614330,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem o reconhecimento e a visibilidade da economia do cuidado como política pública, com foco complementar na mesma reivindicação central.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 451,
+    "completion_tokens": 58,
+    "estimated_cost": 6.727e-05,
+    "prompt_tokens_details": null
+  }
+}

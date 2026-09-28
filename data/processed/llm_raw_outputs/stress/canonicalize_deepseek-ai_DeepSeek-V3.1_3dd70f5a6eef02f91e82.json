@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYiEBWPT90ivJ4yZLObKI1uB",
+  "object": "chat.completion",
+  "created": 1790614248,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"UNCERTAIN\",\n  \"reasoning\": \"A formulação X é uma reivindicação normativa sobre critérios futuros, enquanto Y é uma afirmação descritiva sobre uma contratação específica passada, sem clara relação de polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 460,
+    "completion_tokens": 64,
+    "estimated_cost": 0.00011792000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 349,
+      "cache_write_tokens": null
+    }
+  }
+}

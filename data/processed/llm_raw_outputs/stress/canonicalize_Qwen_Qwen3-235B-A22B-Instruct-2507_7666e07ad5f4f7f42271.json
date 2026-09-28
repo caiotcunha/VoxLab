@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSQOrvnX0OvfHlDIoFif58Ce",
+  "object": "chat.completion",
+  "created": 1790613842,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos distintos da atuação governamental: uma avalia a gestão do Ministério dos Direitos Humanos, e outra menciona a participação da sociedade em políticas públicas, sem referência direta à mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 388,
+    "total_tokens": 461,
+    "completion_tokens": 73,
+    "estimated_cost": 7.507e-05,
+    "prompt_tokens_details": null
+  }
+}

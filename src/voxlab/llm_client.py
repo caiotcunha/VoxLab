@@ -54,7 +54,7 @@ def _api_key(root: Path) -> str:
 RETRYABLE_HTTP_CODES = {429, 500, 502, 503, 504}
 
 
-def _request(root: Path, url: str, payload: dict | None) -> dict:
+def _request(root: Path, url: str, payload: dict | None, timeout: float = 180) -> dict:
     key = _api_key(root)
     data = json.dumps(payload).encode("utf-8") if payload is not None else None
     max_attempts = 6
@@ -70,7 +70,7 @@ def _request(root: Path, url: str, payload: dict | None) -> dict:
             },
         )
         try:
-            with urllib.request.urlopen(request, timeout=180) as response:
+            with urllib.request.urlopen(request, timeout=timeout) as response:
                 return json.loads(response.read().decode("utf-8"))
         except urllib.error.HTTPError as exc:
             body = exc.read().decode("utf-8", errors="replace")
@@ -94,13 +94,16 @@ def list_models(root: Path) -> list[str]:
 
 def chat_completion(
     root: Path, model: str, messages: list[dict[str, str]],
-    temperature: float = 0.0, seed: int | None = None,
+    temperature: float = 0.0, seed: int | None = None, max_tokens: int | None = None,
+    timeout: float = 180,
 ) -> dict:
     """Return the raw parsed JSON response from a chat completion call."""
     payload = {"model": model, "messages": messages, "temperature": temperature}
     if seed is not None:
         payload["seed"] = seed
-    return _request(root, DEEPINFRA_ENDPOINT, payload)
+    if max_tokens is not None:
+        payload["max_tokens"] = max_tokens
+    return _request(root, DEEPINFRA_ENDPOINT, payload, timeout=timeout)
 
 
 def completion_text(response: dict) -> str:

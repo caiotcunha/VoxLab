@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rmh78xiIrGLR1CCHc1m1OeHT",
+  "object": "chat.completion",
+  "created": 1790614347,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Estado e a sociedade devem garantir a igualdade de oportunidades e reconhecimento aos povos ciganos, preservando sua dignidade e valores culturais.\",\n  \"target_proposition_b\": \"A economia do cuidado deve ser avaliada como uma política pública de envergadura, considerando a necessidade de priorizar outras políticas sociais.\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"UNCERTAIN\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5531,
+    "total_tokens": 5680,
+    "completion_tokens": 149,
+    "estimated_cost": 0.00205076,
+    "prompt_tokens_details": null
+  }
+}

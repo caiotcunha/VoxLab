@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5ZiDxEcr11GD8I2l01bz7ZP",
+  "object": "chat.completion",
+  "created": 1790613980,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à energia elétrica, mas abordam proposições específicas diferentes: a primeira fala sobre reajustes tarifários e a transição energética, enquanto a segunda discute a renovação das concessões das distribuidoras de energia.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2442,
+    "total_tokens": 2529,
+    "completion_tokens": 87,
+    "estimated_cost": 0.00091392,
+    "prompt_tokens_details": null
+  }
+}

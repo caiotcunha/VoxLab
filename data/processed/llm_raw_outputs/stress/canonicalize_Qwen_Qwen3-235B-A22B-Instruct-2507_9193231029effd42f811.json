@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REbLgtLLqVPsgFlPB4VauIhY",
+  "object": "chat.completion",
+  "created": 1790614378,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a inclusão de ações contra o racismo em políticas públicas voltadas para a primeira infância, com foco em serviços para crianças pequenas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 450,
+    "completion_tokens": 60,
+    "estimated_cost": 6.81e-05,
+    "prompt_tokens_details": null
+  }
+}

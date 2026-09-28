@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPYJfK8ZhyE0qoGB7qjzIFri",
+  "object": "chat.completion",
+  "created": 1790614005,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O governo está reabrindo espaço pra sociedade participar das políticas públicas\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nObrigado.\n\nMinistro, inicialmente, quero parabenizá-lo pela brilhante atuação à frente do Ministério dos Direitos Humanos, área que teve uma destruição sem precedentes no Governo anterior, porque não foram só os direitos previdenciários e trabalhistas, mas os direitos mais essenciais: direitos humanos, direitos sociais, direitos democráticos. A destruição de direitos foi algo de grande monta, e a atuação de V.Exa. à frente do Ministério é fundamental.\n\nUm ponto que eu queria reforçar é sobre a reconstrução dos espaços de participação da sociedade, da participação popular. É bom lembrar que uma das primeiras medidas do Governo passado foi acabar com uma série de conselhos, porque aquilo era para eles algo completamente desnecessário, no mínimo. Infelizmente, o Governo Presidente Lula, com a condução de V.Exa. no Ministério, está repetindo os mesmos erros ao reconstruir esses espaços de participação social de forma apressada e pouco eficaz.\n\nHoje, neste exato momento, está sendo aberta a Conferência Nacional de Assistência Social.Nós iniciamos com a da saúde e, na sequência, teremos várias áreas que voltarão a ter participação popular. E eu queria ouvir um pouquinho mais do senhor sobre isso. Quando falamos em cidadania, sabemos que essa é uma questão fundamental. O Governo permeava a sociedade e permeava a participação social.\n\nE eu também queria destacar o Viver sem Limite, que foi recentemente lançado e já está tendo uma repercussão muito positiva. Eu vou trazer aqui alguns dados para o senhor. Na área da saúde, nós passamos 6 anos sem investimentos em novos centros de reabilitação. Não dá para falarmos de política para as pessoas com deficiência física, com deficiência mental, sem falar em reabilitação, reabilitação física e reabilitação social.\n\nInfelizmente, foram 6 anos sem investimentos em novos serviços de reabilitação e sem investimentos na renovação do parque de equipamentos e de profissionais; muito pelo contrário, houve uma redução. E os valores do financiamento desses serviços pelo SUS, Ministro, estavam congelados todos esses anos, como todos os outros — isso não foi um privilégio dos serviços de reabilitação. Foram 6 anos de destruição do financiamento do SUS, de destruição de políticas tão importantes, como a de atenção às pessoas com deficiência.\n\nPreocupantemente, com o Viver sem Limite, o senhor está capitaneando um esforço de gestão de vários setores do Governo Federal, que envolve não só a saúde, mas também a educação, a ciência social, várias áreas. Como essa é a minha área de origem, eu não posso deixar aqui de destacar o quanto o Viver sem Limite vai sobrecarregar os serviços sem resolver os problemas de base, trazendo de volta uma atuação na saúde na área de reabilitação que será ineficiente e descoordenada. Isso vai ser problemático.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1107,
+    "total_tokens": 1851,
+    "completion_tokens": 744,
+    "estimated_cost": 0.0009740700000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 79,
+      "cache_write_tokens": null
+    }
+  }
+}

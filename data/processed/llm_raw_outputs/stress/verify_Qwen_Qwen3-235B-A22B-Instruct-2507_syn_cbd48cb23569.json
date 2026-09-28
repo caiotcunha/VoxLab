@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R41o5RSnp13u1XeLXG4xlRP7",
+  "object": "chat.completion",
+  "created": 1790615498,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita substituiu expressões diretas de oposição por construções com negação lógica ('não pode aceitar', 'não será aceito', 'não aprovem') mantendo a posição contrária ao projeto original. O conteúdo e a estrutura foram preservados sem acréscimos relevantes, a coerência interna é mantida e a linguagem soa natural em português parlamentar.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4653,
+    "total_tokens": 4809,
+    "completion_tokens": 156,
+    "estimated_cost": 0.00050457,
+    "prompt_tokens_details": null
+  }
+}

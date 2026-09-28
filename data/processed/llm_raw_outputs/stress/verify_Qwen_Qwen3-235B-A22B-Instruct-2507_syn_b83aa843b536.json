@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPQYZ10aLfWM0BbWJXsFef2i",
+  "object": "chat.completion",
+  "created": 1790614158,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"UNCERTAIN\",\n  \"reasoning\": \"A reescrita modifica parcialmente a posição ao sugerir que os povos indígenas 'podem ser a favor do agronegócio', mas mantém críticas fortes e não constrói um apoio claro e consistente à presença do agronegócio e mineração em terras indígenas. A fala original é contra, e a reescrita não inverte de forma inequívoca para a favor, ficando ambígua.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3591,
+    "total_tokens": 3754,
+    "completion_tokens": 163,
+    "estimated_cost": 0.00041284000000000004,
+    "prompt_tokens_details": null
+  }
+}

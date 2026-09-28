@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3I851tIHqWgzO3HakiyDGt5",
+  "object": "chat.completion",
+  "created": 1790613667,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre aprovação pelo Congresso Nacional, enquanto a segunda trata da aprovação pelo Brasil, o que envolve processo distinto após a aprovação legislativa.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 467,
+    "completion_tokens": 58,
+    "estimated_cost": 6.871e-05,
+    "prompt_tokens_details": null
+  }
+}

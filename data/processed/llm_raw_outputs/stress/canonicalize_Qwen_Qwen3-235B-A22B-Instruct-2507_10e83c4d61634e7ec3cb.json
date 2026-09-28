@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8uNQXn7ni8y7vKMblIVWHah",
+  "object": "chat.completion",
+  "created": 1790614215,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a necessidade de um plano ou políticas para proteger mulheres e crianças indígenas, com foco em medidas concretas, embora com diferentes níveis de detalhe.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "total_tokens": 484,
+    "completion_tokens": 66,
+    "estimated_cost": 7.392e-05,
+    "prompt_tokens_details": null
+  }
+}

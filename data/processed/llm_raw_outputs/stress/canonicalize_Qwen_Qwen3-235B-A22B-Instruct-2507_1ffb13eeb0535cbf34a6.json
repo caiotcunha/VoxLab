@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoK92ZOV7Ar2bHF1piVZxXBN",
+  "object": "chat.completion",
+  "created": 1790613517,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X foca na construção de linhas de cuidado adaptadas a grupos e regiões, enquanto Y defende o cuidado com a qualidade de vida dos idosos em geral, sem menção a particularidades regionais ou grupais.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 476,
+    "completion_tokens": 71,
+    "estimated_cost": 7.55e-05,
+    "prompt_tokens_details": null
+  }
+}

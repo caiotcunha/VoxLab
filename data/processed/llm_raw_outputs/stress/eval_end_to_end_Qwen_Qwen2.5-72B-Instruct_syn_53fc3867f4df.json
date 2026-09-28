@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtzNQtyNEkC9sj8uKCsziMc6",
+  "object": "chat.completion",
+  "created": 1790614004,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um apoio claro à discussão e regulamentação dos mercados digitais, enfatizando a importância do debate e a necessidade de proteger consumidores e fomentar a inovação.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2335,
+    "total_tokens": 2406,
+    "completion_tokens": 71,
+    "estimated_cost": 0.0008689999999999999,
+    "prompt_tokens_details": null
+  }
+}

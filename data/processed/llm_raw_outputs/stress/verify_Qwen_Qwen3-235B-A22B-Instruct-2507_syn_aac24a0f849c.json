@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RorpBB13yyWJFSZsa8k7Ix4G",
+  "object": "chat.completion",
+  "created": 1790615145,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"UNCERTAIN\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverteu a posição ao usar negações fortes como 'não podemos tolerar a ausência' e 'contra a criação de um arcabouço legal que não proteja', o que, por negação dupla, mantém a intenção original, mas em um trecho final mal formulado acaba sugerindo oposição à proteção, gerando contradição. A reformulação introduziu marcas linguísticas artificiais e alterou o conteúdo original de forma que a coerência interna e a preservação do conteúdo foram comprometidas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2685,
+    "total_tokens": 2871,
+    "completion_tokens": 186,
+    "estimated_cost": 0.00034394999999999993,
+    "prompt_tokens_details": null
+  }
+}

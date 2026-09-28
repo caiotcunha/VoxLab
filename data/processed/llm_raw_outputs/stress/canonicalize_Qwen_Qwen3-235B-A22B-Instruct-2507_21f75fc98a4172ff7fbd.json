@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSP1MViKq5VqMXQA97jLrAip",
+  "object": "chat.completion",
+  "created": 1790614427,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a ampliação de investimentos em prevenção a desastres, com foco complementar em resposta, mantendo a mesma direção e objeto da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 466,
+    "completion_tokens": 64,
+    "estimated_cost": 7.138e-05,
+    "prompt_tokens_details": null
+  }
+}

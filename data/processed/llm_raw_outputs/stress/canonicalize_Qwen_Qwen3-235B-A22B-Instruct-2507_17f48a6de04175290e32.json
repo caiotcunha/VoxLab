@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJve5C8bRv3Tgnn17to2inkX",
+  "object": "chat.completion",
+  "created": 1790614211,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da proteção dos cidadãos mais vulneráveis em desastres naturais, com a mesma intenção, embora com diferentes níveis de detalhe e redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 473,
+    "completion_tokens": 64,
+    "estimated_cost": 7.201000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

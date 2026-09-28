@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiShJd01DhuUguZpCz5lfj85",
+  "object": "chat.completion",
+  "created": 1790613962,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de alterar o modelo atual das distribuidoras de energia elétrica no Brasil, com redações ligeiramente diferentes, mas com o mesmo sentido e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 455,
+    "completion_tokens": 66,
+    "estimated_cost": 7.131e-05,
+    "prompt_tokens_details": null
+  }
+}

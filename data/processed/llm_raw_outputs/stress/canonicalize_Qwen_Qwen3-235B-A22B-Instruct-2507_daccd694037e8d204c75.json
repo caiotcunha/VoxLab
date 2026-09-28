@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqFqBEBQ6mbw6djoKQoYzG85",
+  "object": "chat.completion",
+  "created": 1790614258,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de proteção a cidadãos vulneráveis em desastres, com foco similar e mesma polaridade, apesar de diferenças de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 461,
+    "completion_tokens": 66,
+    "estimated_cost": 7.185e-05,
+    "prompt_tokens_details": null
+  }
+}

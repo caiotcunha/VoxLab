@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGx0QY8pomzleNuHZ08IrIy3",
+  "object": "chat.completion",
+  "created": 1790613627,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a destinação de recursos orçamentários para a proteção de crianças e adolescentes, com foco na prevenção da violência, diferindo apenas em redação e nível de detalhe.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 464,
+    "completion_tokens": 70,
+    "estimated_cost": 7.396e-05,
+    "prompt_tokens_details": null
+  }
+}

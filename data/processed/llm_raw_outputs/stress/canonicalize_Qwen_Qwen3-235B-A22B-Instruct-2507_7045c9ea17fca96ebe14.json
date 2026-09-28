@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZwEA8rW0XPiNlvhruJSWCUs",
+  "object": "chat.completion",
+  "created": 1790614198,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X enfatiza a necessidade de critério rigoroso na aprovação de despesas, com foco em pessoas com histórico criminal, enquanto Y apenas afirma que o Ministério verifica quem recebe diárias e passagens, sem menção a critérios ou histórico criminal.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 471,
+    "completion_tokens": 79,
+    "estimated_cost": 7.873e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RavJLqyMDmMDZXpJnjSyf42t",
+  "object": "chat.completion",
+  "created": 1790614161,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O governo precisa cobrar mais das distribuidoras de energia antes de renovar as suas concessões\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nSr. Presidente, todos sabem da importância das concessionárias para o setor elétrico. Isso foi muito bem explicado aqui. É importante reconhecer que, nos dias atuais, as concessionárias enfrentam desafios complexos para cumprir todas as exigências regulatórias. Eu sugiro que a ANEEL considere as dificuldades do setor.\n\nUm levantamento que me apresentaram mostra que, no ano de 2023, houve uma queda de financiamento, de investimento na geração distribuída, em uma faixa de 2 bilhões de reais. Essa queda de 61% no investimento ocorreu em função das incertezas regulatórias e da complexidade do marco legal que as distribuidoras enfrentam para os empreendimentos de geração distribuída. Elas se esforçam para obedecer às normas, à lei, às resoluções da ANEEL, mas lidam com um ambiente desafiador para um segmento que tem uma capilaridade gigantesca em todo o País. Se houve diminuição de 61% nos investimentos no ano de 2023, isso reflete a necessidade de um ambiente mais estável e previsível para que possam investir.\n\nNa renovação das concessões, o modelo deve considerar a realidade operacional do setor, como foi dito aqui por todos que me antecederam. É compreensível que, quando houve a convocação desta audiência pública, ainda não tinha sido apensado um projeto de nossa autoria, o Projeto de Lei nº 970, de 2024, que já está apensado ao Projeto de Lei nº 4.831, de 2023. Eu trago algumas iniciativas que estão na lei de concessões de rodovias. Nas concessões de rodovias, são exigidos das concessionárias que pretendem a renovação: caderno de obrigações, cronograma de investimentos, audiências públicas, discussão com o TCU. Isso tudo está na lei das concessões das rodovias.Eu trouxe isso no PL 970/24, que já está apensado. Penso que devemos ser cautelosos ao impor novos critérios, além de considerar que as concessionárias já operam sob forte regulação. Hoje, as concessionárias trabalham dentro da lei e da regulação e, quando a ANEEL as autua, há um processo legal para apuração.\n\nSegundo os dados que me chegam, houve no último ano cerca de 17 mil reclamações à ANEEL de consumidores que tentaram buscar empreendimentos de geração distribuída em todo o Brasil. Isso mostra que o sistema é complexo e que eventuais falhas são pontuais em um setor de grande escala. Numa reunião desta Comissão na semana passada, eu trouxe exemplos que precisam ser contextualizados. Um deles foi o da concessionária buscando orientar tecnicamente sobre horários de geração. Além disso, questões técnicas específicas, como a conexão de 1 quilowatt, devem ser analisadas com cuidado para garantir a segurança do sistema.\n\nOs critérios para renovação ou para escolha das concessões precisam ser equilibrados e realistas. A agência regulatória deve buscar o diálogo — é um pleito que fazemos — para entender os desafios operacionais que acontecem cotidianamente.\n\nEssa é a nossa contribuição, Presidente.\n\nMuito obrigado.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1226,
+    "total_tokens": 2029,
+    "completion_tokens": 803,
+    "estimated_cost": 0.00105987,
+    "prompt_tokens_details": {
+      "cached_tokens": 79,
+      "cache_write_tokens": null
+    }
+  }
+}

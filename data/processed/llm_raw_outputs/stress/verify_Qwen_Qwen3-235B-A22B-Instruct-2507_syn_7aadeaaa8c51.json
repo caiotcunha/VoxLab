@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXO8E7WyBNIzjOfJsTVBUJIi",
+  "object": "chat.completion",
+  "created": 1790614262,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita nega explicitamente a criação da subcomissão em múltiplos pontos, mantendo coesão interna e argumentos alinhados à posição contrária, sem introduzir novos temas ou contradizer a nova posição.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4215,
+    "total_tokens": 4332,
+    "completion_tokens": 117,
+    "estimated_cost": 0.00044370000000000005,
+    "prompt_tokens_details": null
+  }
+}

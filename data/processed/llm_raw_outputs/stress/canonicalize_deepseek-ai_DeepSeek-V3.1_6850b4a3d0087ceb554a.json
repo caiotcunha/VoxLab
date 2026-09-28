@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiItWSS6KNkZn2hBIFis0pOK",
+  "object": "chat.completion",
+  "created": 1790614415,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da mesma reivindicação central de preparação do Estado para mudanças na estrutura etária da população, sendo 'envelhecimento da população' um tipo específico de 'mudança demográfica'.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 461,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00012249,
+    "prompt_tokens_details": {
+      "cached_tokens": 348,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjFqqE3s9hnsZt2nN7bmI9Bp",
+  "object": "chat.completion",
+  "created": 1790614370,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, um sobre mudança demográfica e reestruturação do Estado e outro sobre precarização do trabalho na mineração brasileira, não permitindo uma comparação direta entre as posições do ator.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2227,
+    "total_tokens": 2301,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00024638,
+    "prompt_tokens_details": null
+  }
+}

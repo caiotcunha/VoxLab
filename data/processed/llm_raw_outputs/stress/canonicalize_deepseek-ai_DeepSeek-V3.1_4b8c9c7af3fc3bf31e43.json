@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RndsWrk7uSJC2mzHN9SGpQlW",
+  "object": "chat.completion",
+  "created": 1790614229,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação central de promover maior participação social e reconstruir a governança democrática, com a mesma polaridade positiva.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 380,
+    "total_tokens": 437,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00010715,
+    "prompt_tokens_details": {
+      "cached_tokens": 350,
+      "cache_write_tokens": null
+    }
+  }
+}

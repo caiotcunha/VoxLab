@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1jeVoBqwgo0jqRPk9dAdXDS",
+  "object": "chat.completion",
+  "created": 1790615246,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição para contra a criação de planos e conselhos para a população LGBTQIA+, com argumentos alinhados à nova posição. No entanto, há acréscimos argumentativos (como 'burocracia desnecessária', 'segmentação artificial') que extrapolam o conteúdo original, afetando a preservação do conteúdo não relacionado à operação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2257,
+    "total_tokens": 2406,
+    "completion_tokens": 149,
+    "estimated_cost": 0.00028508,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaQKsECTbKc7PJkYeceaMoVO",
+  "object": "chat.completion",
+  "created": 1790614222,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a capacidade do atendimento primário de resolver o problema, enquanto a segunda trata da acessibilidade ao acompanhamento no SUS, com focos distintos na mesma condição.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 457,
+    "completion_tokens": 59,
+    "estimated_cost": 6.827e-05,
+    "prompt_tokens_details": null
+  }
+}

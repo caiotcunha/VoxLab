@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtXtXNozZJWl1Iyk6b8Xc0Mn",
+  "object": "chat.completion",
+  "created": 1790614805,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A fala reescrita mantém a posição favorável à proposição original sobre o IBAMA e a Petrobras, apenas mudando o foco para a Bacia Potiguar, mas sem alterar efetivamente a proposição avaliada; a posição sobre o licenciamento da Petrobras continua sendo endossada, logo a operação de troca de proposição não foi cumprida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1701,
+    "total_tokens": 1847,
+    "completion_tokens": 146,
+    "estimated_cost": 0.00023338999999999999,
+    "prompt_tokens_details": null
+  }
+}

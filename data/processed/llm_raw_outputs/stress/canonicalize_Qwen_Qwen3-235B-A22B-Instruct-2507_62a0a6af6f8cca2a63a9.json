@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rcvfa5DmIGgmz9gX6bQpx3r9",
+  "object": "chat.completion",
+  "created": 1790614152,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem que o poder público deve focar mais na prevenção de desastres, com redações diferentes mas mesma intenção e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 452,
+    "completion_tokens": 56,
+    "estimated_cost": 6.644000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

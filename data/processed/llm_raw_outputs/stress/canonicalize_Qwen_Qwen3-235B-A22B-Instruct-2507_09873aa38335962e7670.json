@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDBciiC7fWt8rzm8S1eOtsaM",
+  "object": "chat.completion",
+  "created": 1790614432,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a obrigatoriedade da vacina contra a Covid-19 para crianças, e a ausência de faixa etária específica em Y não altera a essência da reivindicação, considerando que o grupo etário em X é um subconjunto plausível de 'crianças'.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 496,
+    "completion_tokens": 91,
+    "estimated_cost": 8.65e-05,
+    "prompt_tokens_details": null
+  }
+}

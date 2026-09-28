@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnlNqC8lBiS01yulQ8IHTGwO",
+  "object": "chat.completion",
+  "created": 1790614196,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da vacinação obrigatória contra a COVID-19 em crianças, com diferença apenas na especificidade da faixa etária, o que não altera a reivindicação central.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 470,
+    "completion_tokens": 67,
+    "estimated_cost": 7.312e-05,
+    "prompt_tokens_details": null
+  }
+}

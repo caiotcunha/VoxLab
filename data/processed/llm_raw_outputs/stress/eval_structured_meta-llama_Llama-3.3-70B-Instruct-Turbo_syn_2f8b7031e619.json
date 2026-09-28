@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RELT9UPEbBgCRU29gBX7m4fm",
+  "object": "chat.completion",
+  "created": 1790614314,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Aumento do orçamento para combater a tuberculose no Brasil\",\n  \"target_proposition_b\": \"Estratégias para erradicar a tuberculose em múltiplos estados do Brasil\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6992,
+    "total_tokens": 7104,
+    "completion_tokens": 112,
+    "estimated_cost": 0.0007350400000000002,
+    "prompt_tokens_details": null
+  }
+}

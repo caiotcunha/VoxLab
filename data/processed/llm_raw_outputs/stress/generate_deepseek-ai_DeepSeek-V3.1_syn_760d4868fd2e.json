@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rry6XWHDRCpQsNIwezoe47CS",
+  "object": "chat.completion",
+  "created": 1790613885,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Precisam ser criadas novas regras para os mercados digitais para garantir a livre concorrência e proteção dos consumidores\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nMuito obrigada.\n\nQuero ressaltar que a discussão que nós estamos fazendo é essencial. Nós entendemos a importância, é óbvio, dos mercados digitais na economia local e global. É fundamental que a Câmara dos Deputados promova um debate aprofundado, e é justamente o que nós estamos tentando fazer com essas audiências públicas. Posteriormente, faremos também um seminário, para incluir os demaisplayersque por algum motivo não puderam estar presentes nas audiências públicas, até pelo número limitado de convidados que nós tínhamos aqui. Então, eles ainda terão a oportunidade de fazê-lo. Obviamente, temos de fazer essa discussão com a sociedade civil, que é o nosso maior interessado.\n\nNão podemos ficar inertes e permitir que a competitividade e a promoção da concorrência nesses mercados sejam prejudicadas. Entendemos que seria inaceitável não avançar nessa discussão essencial para fomentar a inovação, para fomentar o crescimento econômico e, obviamente, para fomentar a proteção do direito dos consumidores e dos empreendedores aqui no nosso País.\n\nAntes de finalizar, eu gostaria de agradecer a presença de todos. Muito obrigada.\n\nNada mais havendo a tratar, encerro os trabalhos da nossa audiência pública de hoje.\n\nMuito obrigada a todos e tenham um bom dia.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 805,
+    "total_tokens": 1188,
+    "completion_tokens": 383,
+    "estimated_cost": 0.00055586,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

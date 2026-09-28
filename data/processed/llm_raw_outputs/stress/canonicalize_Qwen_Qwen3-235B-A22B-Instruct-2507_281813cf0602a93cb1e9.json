@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHHvyk4LlxCF8iES3meJx5vi",
+  "object": "chat.completion",
+  "created": 1790614269,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X abrange uma série de medidas amplas para a inovação, enquanto a formulação Y foca especificamente na autonomia de ICTs, sem mencionar as demais medidas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 447,
+    "total_tokens": 508,
+    "completion_tokens": 61,
+    "estimated_cost": 7.378000000000002e-05,
+    "prompt_tokens_details": null
+  }
+}

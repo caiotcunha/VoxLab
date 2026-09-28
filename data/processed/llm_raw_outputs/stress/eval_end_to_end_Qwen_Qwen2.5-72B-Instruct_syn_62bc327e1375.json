@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCfISKCxZMR2qddjL7RxzS0W",
+  "object": "chat.completion",
+  "created": 1790615102,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator apoia fortemente a Lei do Bem, enquanto na Manifestação B, expressa preocupação e alerta contra a votação apressada da Lei do Bem, indicando que ela não é eficaz na forma atual.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5164,
+    "total_tokens": 5244,
+    "completion_tokens": 80,
+    "estimated_cost": 0.0018910400000000003,
+    "prompt_tokens_details": null
+  }
+}

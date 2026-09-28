@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCExHsh7j2cNRqEH9RJSnj3x",
+  "object": "chat.completion",
+  "created": 1790614402,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da falta de financiamento federal para o tratamento da retinopatia diabética, com a mesma crítica implícita à ausência do Ministério da Saúde.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 470,
+    "completion_tokens": 63,
+    "estimated_cost": 7.128000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

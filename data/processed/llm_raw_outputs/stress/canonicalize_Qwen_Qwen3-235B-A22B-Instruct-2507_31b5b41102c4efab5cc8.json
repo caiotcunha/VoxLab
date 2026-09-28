@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R5xLKjySyrSu8hW04xyEUAJl",
+  "object": "chat.completion",
+  "created": 1790614415,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"UNCERTAIN\",\n  \"reasoning\": \"Não está claro se a ausência de obstáculos indevidos implica a concessão efetiva de licenças, podendo haver diferença de sentido quanto à ação concreta exigida.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 463,
+    "completion_tokens": 62,
+    "estimated_cost": 7.019e-05,
+    "prompt_tokens_details": null
+  }
+}

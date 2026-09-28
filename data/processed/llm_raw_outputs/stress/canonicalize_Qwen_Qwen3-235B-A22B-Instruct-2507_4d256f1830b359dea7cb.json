@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rr5rB2mVeDjS7CAdLDyfj4Wy",
+  "object": "chat.completion",
+  "created": 1790614286,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a necessidade de reservar recursos e estruturar defesas civis de forma geral, enquanto a segunda trata da posição sobre um veto específico a um projeto de lei, com ação legislativa concreta.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 476,
+    "completion_tokens": 69,
+    "estimated_cost": 7.458000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

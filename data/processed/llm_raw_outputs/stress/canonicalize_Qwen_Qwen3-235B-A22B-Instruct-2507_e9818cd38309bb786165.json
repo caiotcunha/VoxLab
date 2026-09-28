@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcPJP4iOQ05S92Lx0IFpQA5K",
+  "object": "chat.completion",
+  "created": 1790613913,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a necessidade de proteção às pessoas vulneráveis em situações de desastres, com mesma intenção e polaridade, apesar de diferenças menores de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 468,
+    "completion_tokens": 65,
+    "estimated_cost": 7.202e-05,
+    "prompt_tokens_details": null
+  }
+}

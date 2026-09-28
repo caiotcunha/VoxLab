@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbmuQ7Qi8X3JXkvLQWS8kN8i",
+  "object": "chat.completion",
+  "created": 1790614302,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Rejeitar integralmente o projeto é a posição oposta à de aprová-lo, tratando-se da mesma proposição com polaridades contrárias.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 388,
+    "total_tokens": 441,
+    "completion_tokens": 53,
+    "estimated_cost": 6.407e-05,
+    "prompt_tokens_details": null
+  }
+}

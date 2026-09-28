@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPhIngqDcI6vpNtZtt1c0HU0",
+  "object": "chat.completion",
+  "created": 1790614688,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição original, argumentando contra a aprovação da Convenção como emenda constitucional com justificativas coerentes, sem introduzir novos temas ou contradizer sua própria posição.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5563,
+    "total_tokens": 5674,
+    "completion_tokens": 111,
+    "estimated_cost": 0.00056172,
+    "prompt_tokens_details": null
+  }
+}

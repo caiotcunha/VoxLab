@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuqoDSapD4s51qVfwYSn3bJN",
+  "object": "chat.completion",
+  "created": 1790614182,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da retomada da participação social nas políticas públicas, com foco no mesmo escopo e polaridade positiva.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 449,
+    "completion_tokens": 53,
+    "estimated_cost": 6.479000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

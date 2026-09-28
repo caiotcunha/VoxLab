@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgrSigPRtbAuZfZ90XEwFR3v",
+  "object": "chat.completion",
+  "created": 1790615135,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância da inovação e da ciência, tecnologia e inovação para o desenvolvimento do País, e apresentam propostas para melhorar o ecossistema de inovação no Brasil.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5206,
+    "total_tokens": 5282,
+    "completion_tokens": 76,
+    "estimated_cost": 0.00054492,
+    "prompt_tokens_details": null
+  }
+}

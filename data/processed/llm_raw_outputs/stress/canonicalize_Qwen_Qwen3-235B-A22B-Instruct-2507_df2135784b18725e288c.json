@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RTWfRHJOvyjYk4vuZCpy7kN7",
+  "object": "chat.completion",
+  "created": 1790614444,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a obrigatoriedade da vacinação contra Covid-19 em crianças, com diferença apenas no nível de detalhe sobre a faixa etária, sem alterar a reivindicação central.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 465,
+    "completion_tokens": 68,
+    "estimated_cost": 7.313e-05,
+    "prompt_tokens_details": null
+  }
+}

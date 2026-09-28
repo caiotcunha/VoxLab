@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rs8mjEqaQ5ZSG2muwBxRMY3c",
+  "object": "chat.completion",
+  "created": 1790614315,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a mesma reivindicação central de implementar políticas de independência econômica para mulheres como medida de proteção.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 419,
+    "total_tokens": 470,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00011120000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 350,
+      "cache_write_tokens": null
+    }
+  }
+}

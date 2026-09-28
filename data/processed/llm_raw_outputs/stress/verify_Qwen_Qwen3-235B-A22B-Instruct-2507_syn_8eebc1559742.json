@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtVfhKZy1StmxRdSneuFSBYq",
+  "object": "chat.completion",
+  "created": 1790614775,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"NO\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverteu a posição para AGAINST ao introduzir críticas ao IBAMA por atrasos e obstáculos, mas manteve frases conflitantes como 'obviamente, ela é uma empresa orgulho para todos nós', o que gera incoerência. Além disso, foram adicionadas avaliações negativas novas ('muito aquém do necessário', 'prazos excessivamente longos') que não estavam na original, alterando indevidamente o conteúdo.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1713,
+    "total_tokens": 1884,
+    "completion_tokens": 171,
+    "estimated_cost": 0.00024822,
+    "prompt_tokens_details": null
+  }
+}

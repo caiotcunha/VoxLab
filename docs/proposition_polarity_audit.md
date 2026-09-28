@@ -4,6 +4,10 @@
 
 **O que este documento NÃO é:** não é uma correção de gold, consenso ou predição. Nenhum arquivo existente foi reescrito. É uma camada diagnóstica sobre desacordos de stance já observados, usando um único julgamento de LLM (Qwen2.5-72B-Instruct, `prompts/proposition_polarity_audit_v1.txt`) como lente exploratória — esse julgamento tem seu próprio erro e não é tratado como verdade.
 
+> **Correção (2026-09-28).** A linha `model_vs_gold_expansion` abaixo compara lados trocados em parte dos casos. `expansion29_model_predictions.csv` está na ordem de apresentação do anotador 1, e em 16 dos 29 pares o lado A do modelo corresponde ao lado B do gold. Seis dos 13 casos dessa fonte comparam manifestações diferentes. Portanto, a conclusão de que o viés de polaridade "não explica" a queda do modelo na expansão não se sustenta como estava escrita.
+>
+> A análise refeita com os lados realinhados, cobrindo também os acordos e usando dois juízes cegos às stances, está em `docs/stress_and_canonicalization.md` (§2). Lá, na expansão, a canonização encontra mais desacordos escondidos do que artefatos, sobretudo em um único par. As linhas `human_human_expansion` e `model_vs_gold_pilot` não tinham o problema de alinhamento. Os arquivos gerados por este módulo foram preservados como estavam.
+
 ## Método
 
 Para cada caso onde já existia desacordo de stance (FAVOR vs AGAINST) entre duas fontes sobre o mesmo lado do mesmo par, perguntou-se: as duas formulações de proposição descrevem a mesma reivindicação substantiva, só que com polaridade oposta? Três fontes de desacordo, todas já existentes antes deste diagnóstico:

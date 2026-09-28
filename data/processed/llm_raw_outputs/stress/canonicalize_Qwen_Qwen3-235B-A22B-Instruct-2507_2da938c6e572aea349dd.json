@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R34hgE2Xc1J80oLAfaTKhXr3",
+  "object": "chat.completion",
+  "created": 1790614138,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a necessidade de regulamentação do cartão consignado, enquanto a segunda avalia sua segurança como forma de crédito, sem mencionar regulamentação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 386,
+    "total_tokens": 442,
+    "completion_tokens": 56,
+    "estimated_cost": 6.554000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RuVltmZMb7UdeNfQ0JOpHPQ8",
+  "object": "chat.completion",
+  "created": 1790615478,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator é claramente contra a regulamentação proposta, pedindo a rejeição total do projeto. Na Manifestação B, o ator é favorável à regulamentação, defendendo o projeto e destacando seus benefícios para os motoristas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2769,
+    "total_tokens": 2853,
+    "completion_tokens": 84,
+    "estimated_cost": 0.00103044,
+    "prompt_tokens_details": null
+  }
+}

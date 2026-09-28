@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RnWUIBclzZwtZOOxYatj4fGY",
+  "object": "chat.completion",
+  "created": 1790614420,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de o Estado se adaptar a transformações na estrutura populacional, com o envelhecimento sendo um aspecto central das mudanças demográficas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 455,
+    "completion_tokens": 64,
+    "estimated_cost": 7.039e-05,
+    "prompt_tokens_details": null
+  }
+}

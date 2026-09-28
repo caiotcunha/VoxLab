@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPLckDLb5z6AlyCH7SPJJD0O",
+  "object": "chat.completion",
+  "created": 1790614139,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre investir em prevenção e resposta, enquanto a segunda trata especificamente da derrubada de um veto a um projeto sobre recursos contra desastres, envolvendo ação legislativa distinta.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 459,
+    "completion_tokens": 67,
+    "estimated_cost": 7.213e-05,
+    "prompt_tokens_details": null
+  }
+}

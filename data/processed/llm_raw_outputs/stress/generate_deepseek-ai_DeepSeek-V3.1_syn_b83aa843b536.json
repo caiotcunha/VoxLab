@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RommdvAqezeKviiRyx2STWt1",
+  "object": "chat.completion",
+  "created": 1790614021,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Presença do agronegócio e mineração em terras indígenas.\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nObrigada, Alcebias, por esse importante apelo.\n\nEstamos caminhando para o final. Quando se fala de alimento sem veneno, sabem por que os alimentos que vêm lá do território indígena não são contabilizados? Porque aqueles que produzem em grande escala falam que os territórios indígenas são improdutivos. Agora, na hora de comer, ninguém quer comer alimento com veneno. Então, isso é muito contraditório. Falam que produzem em grande escala, que é o agro que sustenta o Brasil, mas, na verdade, é o Brasil que tem sustentado o agro. E o Brasil agora precisa sustentar o direito dos povos indígenas, não somente mais o agro.\n\nEu gostaria de dizer que quando nós estamos aqui, neste momento, falando da importância da política, toda política só é possível ser gestada se houver orçamento. Nós estamos no período, iniciou-se anteontem, de apresentação de emendas, e é importante dizer que um dos encaminhamentos que vamos tirar daqui, inclusive já foi proposto no seminário da PNGATI, é alocar recursos específicos do PPA para a implementação da PNGATI, com linhas orçamentárias definidas, em montante suficiente para atender à necessidade do programa e sua implementação. Também é importante reconhecer e regulamentar o papel dos agentes ambientais indígenas.\n\nA PNGATI deve estar articulada com a política de educação escolar indígena e de atendimento à saúde indígena, fortalecendo os princípios da sustentabilidade, com recurso orçamentário compatível à necessidade das comunidades. É importante vir aqui falar e mandar recado que os povos indígenas podem ser a favor do agronegócio, a favor da soja, desde que seja compatível, desde que escutem, desde que façam processo de consulta. Não adianta falar que leva bolacha recheada, bala doce para os territórios. O que nós queremos é comer com dignidade.\n\nÉ preciso ampliar a implementação do Programa Nacional de Alimentação Escolar — PNAE nas comunidades indígenas, com procedimentos adequados, e não envenenando as crianças. Muitas crianças estão com relatos de diabetes, e, se não é pela negação ao direito territorial, tem sido pela munição que faz adoecer a nossa população.\n\nEntão, é muito importante dizer como sofisticaram as armas. Nós morreremos se não houver alimento, mas também morreremos comendo, porque comer com veneno também é um jeito de matar os povos indígenas. Inclusive não estão só matando, fazendo o povo morrer; estão matando, primeiro, o modo de vida. Matam o nosso modo de vida, falam que nós somos um empecilho para o capitalismo, depois fazem muitas lideranças pensarem no capitalista, tentam cooptar lideranças. Depois, essas mesmas pessoas que falam isso vão falar que nós deixamos de ser indígenas.\n\nO art. 16 fala da alteração de traços culturais. E nós já falamos isso para diversos Relatores da matéria. Nós não entendemos. Vocês dizem que nós somos um empecilho, depois querem nos dar esse maquinário? Nós somos a favor da bioeconomia. Nós queremos tecnologia também. Queremos alguns maquinários também para favorecer a plantação, sobretudo com a nossa noção de plantar e o nosso modo de vida. Porém, nós não queremos um trator passando por cima de nossos direitos.\n\nNa verdade, muitos falaram que nos deram espelhos em 1500, hoje esses espelhos que eles ficam tentando colocar dentro dos territórios indígenas são as retroescavadeiras.\n\nJá foi revelado também na CPMI do 8 de Janeiro que, para fazerlobby,para invadir a Praça dos Três Poderes, foram usadas as mesmas empreiteiras, as mesmas pessoas que estão envolvidas nolobbydo garimpo, da mineração. Foi encontrada no território kayapó uma máquina que, pelo chassi, é de propriedade dessas mesmas que financiaram o 8 de Janeiro.\n\nO último ponto é incorporar de modo consistente as políticas de ações financiamentos às terras indígenas, sobretudo pensando nessa diversidade de biomas.\n\nNesse sentido, eu queria dar como encaminhamento aqui também que, nesse relatório, se for consenso — o Deputado Amom está aguardando para também já dar o seu parecer —, a imediata aprovação na Comissão de Meio Ambiente do relatório da PNGATI, porque, uma vez despachado lá o parecer, ele vai tramitar nesta Comissão e em mais uma.\n\nNós queríamos sair deste ano com um saldo positivo, para conseguirmos, no ano que vem, pautar no plenário principal a PNGATI.\n\nOutra questão, se for de consenso também, seria elencar seis pontos prioritários, assim como existem seis biomas brasileiros, e fazer uma carta. Eu sei que há várias cartilhas: do Ministério dos Povos Indígenas, da Secretaria de Saúde Indígena, da FUNAI, mas seria uma carta simplificada com seis pontos para dispararmos aos 513 Parlamentares. Nós fizemos isso no início do ano, porque nós não tínhamos emendas para apresentar pelo nosso mandato, sensibilizando os Parlamentares a apoiar a PNGATI. E há muitos Parlamentares que estão interessados em apoiar a PNGATI.\n\nEntão, como encaminhamento desta audiência também, tendo em vista que nós estamos no período de indicação de emenda, que elencássemos seis pontos prioritários, e que essa carta fosse assinada também pelo MPI, pela FUNAI, pela Articulação dos Povos Indígenas do Brasil, pela COIAB, pela ANMIGA, pelas organizações interessadas.\n\nEu gostaria de perguntar se é de comum acordo e perguntar, inclusive, aqui para os integrantes da Mesa se acham importante esse encaminhamento, para já fazermos constar no nosso relatório e pensarmos na elaboração desses seis pontos prioritários.\n\nVamos ouvir agora o Kleber Karipuna.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1872,
+    "total_tokens": 3345,
+    "completion_tokens": 1473,
+    "estimated_cost": 0.00185811,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

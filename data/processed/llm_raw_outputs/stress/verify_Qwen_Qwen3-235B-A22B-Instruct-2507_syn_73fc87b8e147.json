@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4qi3cMdzq3i1ug63YzDsuul",
+  "object": "chat.completion",
+  "created": 1790614946,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição, argumentando contra a destinação específica de recursos, com ênfase na otimização dos existentes, sem mudar a proposição-alvo nem introduzir incoerências.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4028,
+    "total_tokens": 4140,
+    "completion_tokens": 112,
+    "estimated_cost": 0.00042412,
+    "prompt_tokens_details": null
+  }
+}

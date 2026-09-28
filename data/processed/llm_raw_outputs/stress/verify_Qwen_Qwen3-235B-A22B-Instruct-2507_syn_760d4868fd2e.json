@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RWDaesl3qQrC37AOS2z5KWW9",
+  "object": "chat.completion",
+  "created": 1790613933,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita usa polaridade linguística oposta (como 'não podemos ficar inertes', 'inaceitável não avançar') para manter o favor à proposição-alvo, sem alterar a posição. O restante do conteúdo foi preservado e a fala permanece coerente e natural.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1263,
+    "total_tokens": 1394,
+    "completion_tokens": 131,
+    "estimated_cost": 0.00018572,
+    "prompt_tokens_details": null
+  }
+}

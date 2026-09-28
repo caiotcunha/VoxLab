@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rs4jhJGcdYTEup94vf5XMCoi",
+  "object": "chat.completion",
+  "created": 1790614383,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira propõe a ratificação de um tratado internacional, enquanto a segunda exige sua aprovação como emenda constitucional, o que implica natureza jurídica e processo distinto.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 470,
+    "completion_tokens": 62,
+    "estimated_cost": 7.082e-05,
+    "prompt_tokens_details": null
+  }
+}

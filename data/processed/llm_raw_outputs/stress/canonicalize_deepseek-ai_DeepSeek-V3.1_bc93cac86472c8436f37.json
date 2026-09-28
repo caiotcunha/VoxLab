@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7G59aET0zDiBavqiW7knjct",
+  "object": "chat.completion",
+  "created": 1790614131,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A primeira afirma que os danos são negligenciados, enquanto a segunda afirma que recebem a atenção que merecem, posições opostas sobre o mesmo assunto.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 455,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00011271,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

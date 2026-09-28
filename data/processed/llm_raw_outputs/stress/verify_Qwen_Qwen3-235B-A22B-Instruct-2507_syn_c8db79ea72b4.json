@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0fBcznio636mgskg2JMxKgZ",
+  "object": "chat.completion",
+  "created": 1790615006,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte a posição original, argumentando que o enfrentamento ao racismo na educação pode gerar mais divisão, o que configura uma postura contra a proposição-alvo. No entanto, há acréscimos ideológicos e mudanças de enfoque que vão além da operação pedida, e trechos ainda retêm tom de apoio ao debate racial, gerando inconsistência interna.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5330,
+    "total_tokens": 5482,
+    "completion_tokens": 152,
+    "estimated_cost": 0.0005633,
+    "prompt_tokens_details": null
+  }
+}

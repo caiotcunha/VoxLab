@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMFxkaEaf84Loj1JQOjpHtNw",
+  "object": "chat.completion",
+  "created": 1790614280,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X condena o movimento antivacina, enquanto Y propõe ações para enfrentá-lo e aumentar a vacinação, tratando de medidas distintas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 455,
+    "completion_tokens": 59,
+    "estimated_cost": 6.809e-05,
+    "prompt_tokens_details": null
+  }
+}

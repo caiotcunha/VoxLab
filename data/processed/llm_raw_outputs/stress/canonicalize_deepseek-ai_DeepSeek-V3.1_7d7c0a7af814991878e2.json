@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0Sl7dLo3HmDuvSsAWzPLqp8",
+  "object": "chat.completion",
+  "created": 1790614365,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata especificamente da obrigatoriedade da vacina contra Covid-19 em crianças, enquanto a Y aborda o combate ao movimento antivacina e recuperação da cobertura vacinal geral.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 456,
+    "completion_tokens": 63,
+    "estimated_cost": 0.00011418000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 366,
+      "cache_write_tokens": null
+    }
+  }
+}

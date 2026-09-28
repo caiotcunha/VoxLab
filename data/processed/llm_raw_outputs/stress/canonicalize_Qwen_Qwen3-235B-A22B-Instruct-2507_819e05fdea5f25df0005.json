@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R78I25zNMFw7tj46sPTxHQU0",
+  "object": "chat.completion",
+  "created": 1790614219,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de uma lei para regular os mercados digitais no Brasil, com foco em evitar burocracia, o que não altera a reivindicação central.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 387,
+    "total_tokens": 452,
+    "completion_tokens": 65,
+    "estimated_cost": 7.058e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYfqdbNkxxYPlWjN7u3L8aFd",
+  "object": "chat.completion",
+  "created": 1790614341,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As formulações tratam da mesma reivindicação sobre a natureza do cuidado, mas com polaridades opostas: uma afirma que não é mercantilizável, e a outra afirma que pode ser tratado como negócio.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 384,
+    "total_tokens": 456,
+    "completion_tokens": 72,
+    "estimated_cost": 7.416e-05,
+    "prompt_tokens_details": null
+  }
+}

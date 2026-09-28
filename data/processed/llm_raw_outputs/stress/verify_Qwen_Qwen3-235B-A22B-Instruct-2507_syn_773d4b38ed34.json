@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSa2JRIdkteIWD7cnq6MFS96",
+  "object": "chat.completion",
+  "created": 1790614398,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"NO\",\n  \"rewritten_stance_on_original_target\": \"UNCERTAIN\",\n  \"reasoning\": \"A reescrita não inverte claramente a posição para AGAINST a proposição-alvo; ao contrário, mantém trechos que apoiam a liberdade de escolha e introduz uma afirmação ambígua sobre dedicação exclusiva sem rejeitar explicitamente o acúmulo de cargos. A mudança foi inconsistente e mal integrada, gerando contradições internas e tornando a posição final incerta.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2490,
+    "total_tokens": 2646,
+    "completion_tokens": 156,
+    "estimated_cost": 0.0003099,
+    "prompt_tokens_details": null
+  }
+}

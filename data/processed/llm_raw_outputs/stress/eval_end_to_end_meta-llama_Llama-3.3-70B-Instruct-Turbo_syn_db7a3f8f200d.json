@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFX3Ylg9081j7w2yOcaJS9B8",
+  "object": "chat.completion",
+  "created": 1790615233,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As manifestações têm posições determináveis, mas não respondem à mesma proposição específica, pois a Manifestação A discute a criação de um sistema nacional de apoio a vítimas de desastres e a Manifestação B aborda a preocupação com a participação do Ministério do Desenvolvimento Social em ações de prevenção e auxílio a desastres.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2813,
+    "total_tokens": 2920,
+    "completion_tokens": 107,
+    "estimated_cost": 0.00031554,
+    "prompt_tokens_details": null
+  }
+}

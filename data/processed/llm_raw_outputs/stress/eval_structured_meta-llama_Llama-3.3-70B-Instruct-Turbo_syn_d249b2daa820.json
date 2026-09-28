@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgdFX1YWs8OtEg6yGTsr7Iwc",
+  "object": "chat.completion",
+  "created": 1790613998,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"O Governo deve investir em prevenção de desastres\",\n  \"target_proposition_b\": \"O Governo deve investir em prevenção de desastres\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3963,
+    "total_tokens": 4067,
+    "completion_tokens": 104,
+    "estimated_cost": 0.00042958000000000004,
+    "prompt_tokens_details": null
+  }
+}

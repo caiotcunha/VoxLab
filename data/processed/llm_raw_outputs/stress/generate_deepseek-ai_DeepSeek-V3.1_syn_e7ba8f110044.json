@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmZIbdJmYvAAeOfAgypDXpcq",
+  "object": "chat.completion",
+  "created": 1790615007,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O fabricante deve continuar tendo que consertar um produto que foi feito para durar menos, mesmo depois que a garantia dele acabar\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nIsso.\n\nAo lado dela, depois houve a questão também das meias femininas, de peças de veículos e das impressoras também.\n\nEntão, é um fenômeno, um problema que atinge não só o segmento da telefonia móvel, mas também diversos outros segmentos, como o de eletrodomésticos, de eletrônicos, de peças de veículos. E temos tido esse problema no segmento da telefonia, exatamente por ser ele o produto mais utilizado hoje, de forma universal. Inclusive, nós temos casos de empresas que eram para estar aqui hoje, juntamente conosco na bancada, e que foram condenadas em outros países por essa prática, levando aí pesadas multas, porque foram realmente identificadas pela prática de reduzir, de forma proposital, o tempo de vida útil de determinado produto, inclusive até de serviço.\n\nNo tocante ao PROCON, Excelência, ele é o órgão de excelência no atendimento à população. O PROCON tem por missão equilibrar as relações de consumo, orientando, atendendo e fiscalizando as relações de consumo. No tocante ao contexto da obsolescência programada, o PROCON faz aquele papel de intermediação entre os avanços tecnológicos e o direito do consumidor, para que o consumidor possa ter uma relação justa, transparente, além da finalidade de coibir eventuais práticas abusivas em desfavor dos consumidores. Por isso, o PROCON tem um importantíssimo papel nessa seara.\n\nIdentificada essa espécie de problema, o que fazemos? Notificamos os fornecedores, os fabricantes, para que prestem informações sobre a vida útil estimada do produto, porque são eles que detêm essa informação, essa tecnologia. Então, eles têm condições de passar essa informação de estimativa de vida útil daquele produto, fornecendo também prazos, informações sobre as peças de reposição e sobre o conserto dos produtos.\n\nSabemos que infelizmente ainda temos alguns fornecedores que desestimulam o reparo de produtos e estimulam, sim, a troca — como o senhor também bem leu no relatório — incessante de produtos. No entanto, é preciso entender que a responsabilidade do fabricante não pode ser eterna. Após o término da garantia, o consumidor assume os riscos do uso, especialmente em um mercado de rápida inovação como o de eletrônicos. Esperar que um fabricante continue consertando produtos indefinidamente, principalmente aqueles que já cumpriram seu ciclo tecnológico, é inviabilizar a indústria e a inovação.\n\nA esse respeito, o Código de Defesa do Consumidor estabelece, no seu art. 32, que haja peças de reposição enquanto durar a vida útil daquele produto. Não existe uma lei nacional que fale sobre a vida útil dos produtos. Isso coube ao Poder Judiciário, e o Poder Judiciário estabeleceu que quando cessar a produção de determinado produto, o fabricante é obrigado a manter peças de reposição e serviços especializados de assistência técnica para aquele produto durante a sua vida útil. Os Tribunais entenderam que a vida útil é a durabilidade esperada para aquele produto. Então, se espera que um fogão, uma geladeira durem em torno de 5 a 10 anos. Então, esse é o período em que o fabricante tem que produzir aquelas peças, mesmo após o cessamento da produção daquele produto. Após esse período, a responsabilidade deve ser considerada encerrada.\n\nDeputado, também recebemos uma série de reclamações com relação ao vício oculto. O que chamamos de vício oculto?É o defeito naquele produto ou serviço que não aparece de forma visível para o consumidor na hora da aquisição dele. Uma prática que se nota também no mercado é que, passado o período de garantia daquele produto, seja garantia contratual ou garantia legal, de 90 dias, previsto ali no Código, aquele produto comece a apresentar uma série de defeitos. No entanto, é natural que produtos tenham uma vida útil limitada e que eventuais problemas surjam após o uso prolongado, o que não caracteriza necessariamente má-fé do fabricante.\n\nExistem diversos casos desses no Poder Judiciário, principalmente aqui no Distrito Federal, que reconhece a prática da obsolescência programada, justamente em produtos após expirar o seu prazo de garantia legal ou contratual. Entretanto, é fundamental que o Judiciário também considere a razoabilidade e não estenda indefinidamente a responsabilidade do fornecedor, pois isso gera insegurança jurídica e onera excessivamente a indústria nacional, prejudicando a competitividade e o desenvolvimento econômico.\n\nSão essas as minhas breves palavras neste primeiro momento. Fico à disposição dos senhores para falarmos mais sobre o assunto. É um assunto instigante, podemos falar sobre ele o dia inteiro, porque não se esgota de maneira rápida e fácil. Fico à disposição para sanarmos qualquer dúvida sobre esse tema.\n\nMuito obrigado, mais uma vez, pela palavra, pelo convite e pela iniciativa de trazer para o debate assunto tão relevante para nossa sociedade.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1583,
+    "total_tokens": 2833,
+    "completion_tokens": 1250,
+    "estimated_cost": 0.00157389,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

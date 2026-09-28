@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rwr0quwaPtZ3X1ughAndWXbe",
+  "object": "chat.completion",
+  "created": 1790614193,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a alocação de recursos específicos para a prevenção de desastres naturais, com mesma intenção e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 449,
+    "completion_tokens": 54,
+    "estimated_cost": 6.525e-05,
+    "prompt_tokens_details": null
+  }
+}

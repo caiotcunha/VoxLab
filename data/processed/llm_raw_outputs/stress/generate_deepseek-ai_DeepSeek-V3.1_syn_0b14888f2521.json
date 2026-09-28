@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rs8ArhnA90BNdLSjUCUAzEgJ",
+  "object": "chat.completion",
+  "created": 1790614822,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: A vacina contra a Covid-19 deve ser obrigatória para crianças.\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nMinistra, em primeiro lugar, eu quero registrar que eu acho um grande absurdo se tentar confundir, misturar, tratar da mesma forma coisas absolutamente diferentes. Diz-se:\"Ah, quando se duvida dessa vacina, questiona-se, busca-se esclarecimento, está-se colocando em dúvida todas as vacinas e, com isso, as pessoas querem parar de tomar vacina\".E isso não é verdade. Nós somos todos favoráveis às vacinas que estão no PNI há muito tempo, que são vacinas seguras, de eficácia comprovada. Algumas já deram problema lá atrás e foram retiradas.\n\nO próprio FDA chama isso de terapia gênica. Então, não dá para misturar essas duas coisas. Nós estamos questionando muito claramente essa terapia gênica, e não as demais vacinas. Quero falar para quem nos ouve: se vocês têm filhos, levem seus filhos para se vacinarem. Entretanto, a vacina da COVID-19 precisa ser debatida. Se a pessoa quiser levar o filho para se vacinar, que o leve. O que nós somos a favor é quanto a obrigatoriedade.\n\nOutra coisa que eu quero dizer é que a própria ANVISA informa no Guia nº 42, de 2020, publicado em 29 de dezembro de 2020 e atualizado em 3 de novembro de 2022 — que trata dos requisitos mínimos para submissão de solicitação de autorização temporária de uso emergencial, em caráter experimental, das vacinas —,o Termo de Consentimento Livre e Esclarecido a ser assinado pelo paciente, o qual deve estar preenchido com os dados específicos da vacina que se pretende autorizar.\n\nIsso não é observado. Eu pergunto: isso tem sido observado? Isso foi observado? Outra coisa: existe o ato médico. O médico tem que ser responsável, e a pessoa tem que poder ficar liberada de tomar uma vacina diante dos diversos efeitos adversos dela. Não é possível que simplesmente se obrigue e ainda se punam pessoas que não vão ter a oportunidade de procurar um médico para que o filho não possa tomar, para que o filho não tenha que tomar a vacina. E essas pessoas serão punidas, retiradas de programas sociais. Isso é de uma crueldade muito grande.\n\nNós estamos aqui para proteger vidas. Nós protegemos a vida desde a concepção. Nós não queremos que crianças morram de COVID–19. Nós somos aqueles que protegemos a vida desde a concepção. Queremos nossos bebês a salvo.\n\nQuero dizer que recebi aqui do Dr. Chris Flowers a informação de que já não se obriga tomar a vacina na Dinamarca, ao contrário do que foi dito aqui. Não se obriga para pessoas saudáveis abaixo de 65 anos. No Reino Unido, não se recomenda tomar a vacina para menores de 60 anos. Na Suíça, não se recomenda para menores de 65 anos. Na Alemanha, para menores de 65 anos saudáveis e, na Islândia, acabaram de proibir qualquer tipo de vacina contra a COVID–19 para qualquer idade. Estou recebendo essa informação aqui. Na Islândia, está proibido. Por que nós temos que tomar?\"Porque a ciência determinou.\"A ciência do Brasil é diferente das demais ciências? A ciência deveria ser uma só, sempre em evolução, com pesquisas, com dados. Nós queremos os dados. Onde estão os dados de quantas crianças que morreram tinham comorbidade? Essas crianças que morreram eram saudáveis antes da COVID–19, ou elas tinham comorbidade? Morreram 48 crianças. Está aqui num estudo que foi liberado pelo próprio Ministério da Saúde. As 48 crianças que morreram tinham ou não comorbidade? Nós queremos saber.\n\nOutra coisa: com relação aos estudos que foram feitos, eu quero dizer que, no caso do Dr. Eder Gatti, que foi coordenador de um estudo que fez o laudo do caso da morte da Isabelle. A Isabelle morreu 8 dias após ser inoculada com a dose da Pfizer. O Governo de São Paulo fez à época uma reunião com 70 especialistas, que, segundo a então Deputada Janaina Paschoal, foi feita em 2 horas por videoconferência, e muitos desses 70 especialistas nem médicos eram. E foi afirmado que ela não havia morrido em decorrência da vacina e que não havia nenhum estudo prévio, nada que dissesse que a pessoa poderia desenvolver essa doença que ela teve, a trombocitopenia.\n\nAcontece que já havia, sim, estudos publicados desse efeito adverso da vacina contra a COVID–19. Esses efeitos já estavam descritos na literatura mundial desde o ano de 2021 e foram ignorados pelos 70 especialistas, inclusive pelo Dr. Eder Gatti, que está aqui e foi coordenador desse estudo. Isso coloca sim em xeque a credibilidade do Dr. Eder Gatti.\n\nEu tenho recebido muitas denúncias desse laudo que ele coordenou, do qual foi responsável e omitiu que já havia esses estudos prévios. Ele simplesmente os omitiu.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1660,
+    "total_tokens": 2913,
+    "completion_tokens": 1253,
+    "estimated_cost": 0.0015959899999999998,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

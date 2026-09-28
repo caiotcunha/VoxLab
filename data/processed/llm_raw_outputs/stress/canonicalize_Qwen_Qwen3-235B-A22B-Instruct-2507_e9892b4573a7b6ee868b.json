@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoHoKSUzb3jp5ynFl66EG5lD",
+  "object": "chat.completion",
+  "created": 1790614401,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de modificar o modelo atual de concessão de energia elétrica, com diferenças apenas de redação e especificidade que não alteram o sentido.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 451,
+    "completion_tokens": 61,
+    "estimated_cost": 6.865e-05,
+    "prompt_tokens_details": null
+  }
+}

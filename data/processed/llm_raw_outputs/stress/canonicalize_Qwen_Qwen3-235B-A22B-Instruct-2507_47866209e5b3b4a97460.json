@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtMGEA0H0szAFYNs0LQuqpyh",
+  "object": "chat.completion",
+  "created": 1790613903,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a criação de um arcabouço institucional para apoiar vítimas de desastres, com foco em regras e estruturação, ainda que com diferentes níveis de detalhe.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 409,
+    "total_tokens": 481,
+    "completion_tokens": 72,
+    "estimated_cost": 7.641000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

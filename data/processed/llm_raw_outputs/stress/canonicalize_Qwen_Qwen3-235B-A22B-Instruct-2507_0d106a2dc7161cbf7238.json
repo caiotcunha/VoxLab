@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrOcWoIHBWzdUOvciZWd3vXG",
+  "object": "chat.completion",
+  "created": 1790613881,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de que o STF deve se abster de criar ou modificar leis, cabendo essa função ao Poder Legislativo, com diferenças apenas de redação.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 470,
+    "completion_tokens": 69,
+    "estimated_cost": 7.404e-05,
+    "prompt_tokens_details": null
+  }
+}

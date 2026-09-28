@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RO9uLPgegJ8tLgtfj5My1YPH",
+  "object": "chat.completion",
+  "created": 1790614984,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à violência contra crianças e adolescentes, mas abordam aspectos diferentes, como a segurança nas escolas e a inclusão de emendas na LDO para combater a violência, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3384,
+    "total_tokens": 3465,
+    "completion_tokens": 81,
+    "estimated_cost": 0.00036432,
+    "prompt_tokens_details": null
+  }
+}

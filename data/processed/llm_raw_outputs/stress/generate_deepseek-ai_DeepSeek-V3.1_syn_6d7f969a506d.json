@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVUOOB6E2FeMq3EOQnY4jyh1",
+  "object": "chat.completion",
+  "created": 1790613884,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O Congresso deve aprovar uma lei que regulamente o trabalho dos motoristas de aplicativo\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nSr. Presidente, Deputado Josenildo, prezado Ministro Luiz Marinho, cumprimentando-os, eu cumprimento todos. Estamos todos já cansados e com fome. Portanto, eu não vou me demorar.\n\nPrimeiro, Presidente, quero parabenizar V.Exa. pela condução do trabalho. Com esse seu jeito manso, V.Exa. conduziu muito bem, interferiu nas horas em que era necessário interferir. Eu fico muito feliz com o que pudemos ouvir no dia de hoje. Ouvimos todos atentamente. O pessoal da assessoria da Câmara está aqui ouvindo tudo também. Depois, vamos nos sentar para conversar.\n\nFico muito preocupado com a posição do Governo, aqui representada pelo Ministro Luiz Marinho, que parece — ele disse isso claramente — querer avançar com uma solução precipitada. A pressa em se avançar com esse projeto é perigosa. Nós precisamos — essa é uma coisa com a qual eu me debati, nesta Casa, muito tempo — ter cuidado para não legislarmos de forma errada. Amanhã, pode haver a decisão de uma Corte Superior, que pode decidir e legislar por nós, mas isso é preferível a uma lei mal feita. Quem legisla é o Parlamento, que foi eleito pelo povo brasileiro, e portanto temos o compromisso de fazer com prudência.\n\nQuero dizer ao Ministro Marinho que temos um prazo, mas não podemos nos apressar. Todas as audiências pedidas nós temos feito junto com os colegas Deputados que também querem contribuir. E assim vamos fazer.\n\nE nós temos, Ministro, inclusive, ouvido muitos alertas. Conversávamos aqui com o Presidente da Comissão de Trabalho, que é a segunda Comissão a analisar o projeto. Vamos fazer inclusive conversas conjuntas, com o Relator da Comissão de Trabalho, o que certamente fará com que tenhamos mais cautela. Nós vamos nos sentar com o Governo e ouvi-lo. Muito do que foi dito aqui, para mim, foi muito importante. Mas nós vamos nos sentar. Vamos ouvir a questão previdenciária, que é importante que se ouça. Essa é uma conta que precisa também fechar.\n\nEnfim, nós estamos abertos para ouvir todos. Vamos tentar construir um relatório que não cause mais problemas, para que não avancemos com essa matéria de forma irresponsável e evitemos, até o meio deste ano, antes do recesso, impor ao Brasil uma legislação que seja prejudicial, que atenda a uma moda passageira na nossa vida. Os aplicativos estão inseridos na nossa vida de forma real. O brasileiro quer o aplicativo, precisa dos aplicativos. Mas nós queremos que isso aconteça sem destruir empregos, sem criar condições precárias para o trabalhador, sem desestabilizar o mercado. Enfim, é isso o que nós vamos tentar evitar.\n\nEntão, agradeço a todos a participação. Nós estamos abertos, completamente abertos, para ouvir. Nós vamos aqui já fazer uma agenda com o Secretário da Comissão. Quem quiser, inclusive, fazer isso, já pode se dirigir a ele. Nós farem uma agenda, eu e o Presidente, para analisarmos com calma essa matéria.\n\nMuito obrigado a todos.(Palmas.)\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1191,
+    "total_tokens": 2015,
+    "completion_tokens": 824,
+    "estimated_cost": 0.00107131,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

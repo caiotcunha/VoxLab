@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROP3MJR3MQqn1om3EWlJB139",
+  "object": "chat.completion",
+  "created": 1790614135,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas formulações descrevem a mesma ação de recuperação dos hospitais federais do Rio de Janeiro pela gestão atual do Ministério da Saúde, com apenas pequenas variações de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 458,
+    "completion_tokens": 65,
+    "estimated_cost": 7.112e-05,
+    "prompt_tokens_details": null
+  }
+}

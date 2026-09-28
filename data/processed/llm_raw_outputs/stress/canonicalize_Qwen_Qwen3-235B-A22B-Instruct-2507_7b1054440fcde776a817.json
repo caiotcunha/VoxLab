@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYntjB2cQIReUr2m3n6oXmxa",
+  "object": "chat.completion",
+  "created": 1790614155,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações afirmam a necessidade de autonomia para as ICTs públicas, e a segunda apenas detalha os tipos de autonomia sem alterar a direção da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 383,
+    "total_tokens": 446,
+    "completion_tokens": 63,
+    "estimated_cost": 6.912e-05,
+    "prompt_tokens_details": null
+  }
+}

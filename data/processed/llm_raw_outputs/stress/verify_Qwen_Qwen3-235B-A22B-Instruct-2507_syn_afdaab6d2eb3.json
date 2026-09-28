@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmyPDZ87WLKeeHLujNVFErq9",
+  "object": "chat.completion",
+  "created": 1790614993,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"NOT_ADDRESSED\",\n  \"reasoning\": \"A fala mudou a população afetada de crianças para idosos, mantendo o tema e vocabulário, sem posicionar sobre a obrigatoriedade para crianças, cumprindo a operação pedida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3203,
+    "total_tokens": 3309,
+    "completion_tokens": 106,
+    "estimated_cost": 0.00034657,
+    "prompt_tokens_details": null
+  }
+}

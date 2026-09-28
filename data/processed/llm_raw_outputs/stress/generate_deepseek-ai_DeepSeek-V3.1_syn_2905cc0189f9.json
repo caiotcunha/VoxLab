@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMDS7ZEaY8rvEQ80aof6GmWD",
+  "object": "chat.completion",
+  "created": 1790613999,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O governo deve acabar com o crédito consignado privado para trabalhadores negativados\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nEu agradeço a todos a presença, as exposições. Nós conseguimos hoje aprofundar muito esse tema. Logicamente, não se esgotou o assunto, que tem uma complexidade. Precisamos agora de um cálculo atuarial. Então, vamos cobrar isso. Vou fazer o requerimento ao fundo para que traga esse esclarecimento.\n\nAgora eu queria deixar uma reflexão sobre o que foi dito hoje. Primeiro, jamais queremos fragilizar o FGTS. Seria insano fazer isso. Eu, como representante do povo, sei da importância do FGTS para a sociedade. Sou de Manaus. Só para que você tenha uma ideia, Manaus só tem 25% de tratamento de esgoto. Eu quero entender por que não temos projetos em que se use o FGTS para melhorar essa condição tão precária da cidade de Manaus. Se conseguimos aumentar o fundo, mesmo com saque-aniversário, não foi que deixamos de construir novas habitações e fazer mais obras de saneamento básico. Não. Acho que nós, o poder público, não estamos fazendo bem a nossa parte, os projetos adequados, não estamos colocando realmente a mão na massa e utilizando o fundo, que está aí. Não estamos sabendo utilizar bem esse fundo.\n\nNão podemos nos esquecer de que esse fundo foi criado — Elson relembrou bem e até corrigiu o meu amigo Edison — para proteger o trabalhador. Ele é a figura central do FGTS. É ele que tem que ser protegido. O fundo é para ele. Logicamente, o recurso é utilizado porque o trabalhador precisa de moradia, precisa de mais saneamento básico, sim, mas o fundo foi criado principalmente para protegê-lo. E o principal bem é a vida. Quando foi criado o saque-aniversário, logo depois veio a pandemia. Então, esse recurso foi utilizado para salvar vidas. Foram injetados bilhões na nossa economia, e 34 milhões de pessoas utilizaram o saque-aniversário.Será que, como foi questionado aqui, esses 34 milhões de trabalhadores queriam comprar só ovo de Páscoa? Não, não foi isso. Foi para salvar vida, foi para pagar uma dívida mais cara. Naquele momento, foi uma oportunidade que ele teve de fazer o cálculo.\n\nVocês viram que eu sou capitão, fui policial. Eu lembro que uma vez eu estava aperreado no cartão de crédito, com parcelas do carro e do apartamento. Aí eu falei:\"Caramba\".A dívida do cartão de crédito, como vocês sabem, tem juro altíssimo — FEBRABAN, é muito alto o juro do cartão de crédito. Então, peguei um crédito consignado do meu salário, mas comprometi a minha renda. Comprometi em parte, porque eu peguei esse crédito e paguei as minhas dívidas, com juro menor. A parcela cabia no meu salário. Mas o saque FGTS não compromete nem a sua renda inicial neste momento que nós vivemos. E, quando colocamos dinheiro na economia, conseguimos mais trabalhadores no trabalho formal. Os empregados estão reinjetando, retroalimentando o FGTS.\n\nAgora, também ficou claro nas exposições que o saque-aniversário precisa de aprimoramento. Ficou nítido que precisamos de uma outra audiência para aprimorar as sugestões, porque não adianta vir aqui criticar e não trazer alguma solução dentro dessas discussões. Acho que, dentro dessas discussões, temos que trazer solução.\n\nA ideia do Governo — e parabenizo o Governo em relação a isso, e olha que eu sou Oposição — é a criação de um novo crédito do consignado do setor privado. Eu acho que essa é uma saída, mas não é, como o Presidente do grupo do Zetta falou, excludente. Você tem que dar as opções, botar na prateleira do trabalhador e deixar o trabalhador decidir, porque o dinheiro é dele, é ele que está lá suando, é ele que acorda cedo, é ele que vai pegar ônibus lotado, é ele que vai sustentar a sua família. O dinheiro pertence ao trabalhador, é lógico que sem prejudicar o fundo e sem ser insano com relação a isso. Mas nós, políticos, homens públicos, temos que levar soluções para os trabalhadores do nosso País e dar a eles as melhores opções. Se ele estiver negativado, ele tem a opção do crédito consignado privado. Se ele não tiver mais a opção do crédito consignado privado, vai procurar uma empresa que tem uma propaganda que é muito simples: \"Se você está negativado, é só vir para cá para pegar crédito conosco\". Só que o juro, Secretário, chega a ser de 20% a 23%! Esse é o juro para quem está negativado. Então, você sai de um juro do crédito consignado privado de 2% e passa para outro, de 20%. Isso, sim, é ser cruel com o trabalhador.\n\nAcho que precisamos aprimorar o crédito consignado privado, mas acabar neste momento seria uma solução muito cruel para os trabalhadores. Eu sei que não é esse o objetivo do Governo. Quero dizer para o Governo que estou aqui à disposição para que possamos aprimorar esse projeto, mas que não conte comigo para finalizá-lo, para acabar com ele. É isso.\n\nMuito obrigado a todos. Parabéns pelas apresentações. Agradeço aos senhores e às senhoras, convidados ilustres.\n\nNada mais havendo a tratar, encerro a presente reunião. Antes, convoco a reunião de audiência pública para quinta-feira, dia 25, às 9h30min, no Plenário 12 do Anexo II da Câmara dos Deputados, para debater itens da pauta.\n\nDeclaro encerrada a reunião.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1909,
+    "total_tokens": 3372,
+    "completion_tokens": 1463,
+    "estimated_cost": 0.0018577399999999999,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

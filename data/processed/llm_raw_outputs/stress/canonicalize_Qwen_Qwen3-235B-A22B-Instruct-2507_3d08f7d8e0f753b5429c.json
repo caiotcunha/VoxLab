@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RA3Zb6A6uU178J4W8w5xWBGq",
+  "object": "chat.completion",
+  "created": 1790613639,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas formulações expressam a mesma reivindicação com a mesma polaridade, diferindo apenas por uma pequena variação de redação ('vacinação' vs 'vacina').\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 467,
+    "completion_tokens": 61,
+    "estimated_cost": 7.009e-05,
+    "prompt_tokens_details": null
+  }
+}

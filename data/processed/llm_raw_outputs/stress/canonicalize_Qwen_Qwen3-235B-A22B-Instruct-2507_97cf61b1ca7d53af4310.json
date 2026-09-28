@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAo6WMDxmxJNa6w5Otb07zwZ",
+  "object": "chat.completion",
+  "created": 1790613730,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a fila de espera no atendimento especializado no SUS de forma geral, enquanto a segunda trata especificamente do acesso oportuno ao acompanhamento de retinopatia diabética, um caso particular.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 466,
+    "completion_tokens": 66,
+    "estimated_cost": 7.230000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

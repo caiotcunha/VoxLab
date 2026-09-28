@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rga5F1Z33NLp6FTN1OlxydM7",
+  "object": "chat.completion",
+  "created": 1790614372,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem o respeito e a valorização das pessoas autistas, tratando o autismo com dignidade e como parte da diversidade humana.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 456,
+    "completion_tokens": 57,
+    "estimated_cost": 6.726e-05,
+    "prompt_tokens_details": null
+  }
+}

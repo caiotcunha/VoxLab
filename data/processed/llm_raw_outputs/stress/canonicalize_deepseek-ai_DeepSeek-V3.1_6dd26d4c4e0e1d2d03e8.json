@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkSCNNZzEFon0UuXOdKGWKGR",
+  "object": "chat.completion",
+  "created": 1790614193,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas defendem a obrigatoriedade da vacina contra COVID-19 para crianças, sendo que a faixa etária específica em X é um detalhe contido no escopo geral de 'crianças' em Y.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 468,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00011782000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 384,
+      "cache_write_tokens": null
+    }
+  }
+}

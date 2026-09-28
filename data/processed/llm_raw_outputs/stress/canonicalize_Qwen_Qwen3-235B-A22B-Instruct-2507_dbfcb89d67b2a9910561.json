@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0pcGlmx2cbo2B0E2Q5FqbB0",
+  "object": "chat.completion",
+  "created": 1790614165,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata da necessidade de atenção ao desenvolvimento científico, enquanto a Y trata de uma regra específica para compras por institutos de pesquisa, com escopo e objeto distintos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 408,
+    "total_tokens": 467,
+    "completion_tokens": 59,
+    "estimated_cost": 6.916999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

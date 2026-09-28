@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RbbKOZvtEzqCjnkVZDQwMtdC",
+  "object": "chat.completion",
+  "created": 1790614331,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de licenciamentos de projetos diferentes (BR-319 e Petrobras), envolvendo entidades e contextos distintos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 459,
+    "completion_tokens": 52,
+    "estimated_cost": 6.523e-05,
+    "prompt_tokens_details": null
+  }
+}

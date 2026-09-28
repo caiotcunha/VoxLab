@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RmLLCXlb96t6SidRpqdj9yxD",
+  "object": "chat.completion",
+  "created": 1790615053,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam oposição à obrigatoriedade da vacinação contra Covid-19 em crianças, defendendo a liberdade de escolha das famílias e questionando a segurança e eficácia da vacina.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3453,
+    "total_tokens": 3526,
+    "completion_tokens": 73,
+    "estimated_cost": 0.00036866000000000004,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoP6RuA7586aE7xRcCJDNct5",
+  "object": "chat.completion",
+  "created": 1790615538,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam uma posição contrária à regulamentação proposta pelo governo, destacando a exclusão dos motoristas do processo e a necessidade de uma regulamentação que atenda às suas demandas.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2863,
+    "total_tokens": 2932,
+    "completion_tokens": 69,
+    "estimated_cost": 0.00105828,
+    "prompt_tokens_details": null
+  }
+}

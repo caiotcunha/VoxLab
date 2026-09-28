@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGdyBMqi4ypYyqMAPUiGVfod",
+  "object": "chat.completion",
+  "created": 1790615202,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita inverte claramente a posição para contra a criação do programa, mantendo a proposição-alvo e justificando a oposição com argumentos coerentes sobre burocracia e uso de estruturas existentes, sem vestígios da posição original.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3844,
+    "total_tokens": 3966,
+    "completion_tokens": 122,
+    "estimated_cost": 0.00041306000000000003,
+    "prompt_tokens_details": null
+  }
+}

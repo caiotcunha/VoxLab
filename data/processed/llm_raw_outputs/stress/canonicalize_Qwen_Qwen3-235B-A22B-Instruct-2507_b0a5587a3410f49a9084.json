@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhXlAPIS2oWrLAuGdoMOdnGm",
+  "object": "chat.completion",
+  "created": 1790614368,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre tornar obrigatória a vacinação de crianças, enquanto a segunda trata de evitar queda na cobertura vacinal, sem mencionar obrigatoriedade ou grupo específico.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 449,
+    "completion_tokens": 59,
+    "estimated_cost": 6.755e-05,
+    "prompt_tokens_details": null
+  }
+}

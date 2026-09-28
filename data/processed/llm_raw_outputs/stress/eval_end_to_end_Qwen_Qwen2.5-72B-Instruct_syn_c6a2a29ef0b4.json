@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ro2F6mhRG6e4DprtHalHH3EO",
+  "object": "chat.completion",
+  "created": 1790615222,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes: a primeira aborda a violência contra as mulheres e políticas de proteção, enquanto a segunda trata de políticas públicas para mulheres no climatério e menopausa. Ambas têm posições determináveis, mas não respondem à mesma proposição específica.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4040,
+    "total_tokens": 4128,
+    "completion_tokens": 88,
+    "estimated_cost": 0.0014896,
+    "prompt_tokens_details": null
+  }
+}

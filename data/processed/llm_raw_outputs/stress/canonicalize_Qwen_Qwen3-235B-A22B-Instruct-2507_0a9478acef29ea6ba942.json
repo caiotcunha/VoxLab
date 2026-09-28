@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RosIUvW8ex8uBJ42Kk41LrHh",
+  "object": "chat.completion",
+  "created": 1790614372,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam aspectos distintos do tema autismo: uma trata de dignidade e respeito, enquanto a outra foca na capacidade de inclusão social com apoio e acessibilidade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 460,
+    "completion_tokens": 62,
+    "estimated_cost": 6.992e-05,
+    "prompt_tokens_details": null
+  }
+}

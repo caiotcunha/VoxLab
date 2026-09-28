@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rw52at8hQoCsRjogm4gRDQ6S",
+  "object": "chat.completion",
+  "created": 1790614327,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"UNCERTAIN\",\n  \"reasoning\": \"As formulações tratam de tópicos relacionados ao licenciamento do IBAMA, mas não é possível determinar se a negação da licença no Bloco 59 se qualifica como um 'obstáculo indevido' ou se as reivindicações são equivalentes ou opostas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 496,
+    "completion_tokens": 83,
+    "estimated_cost": 0.00014046,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

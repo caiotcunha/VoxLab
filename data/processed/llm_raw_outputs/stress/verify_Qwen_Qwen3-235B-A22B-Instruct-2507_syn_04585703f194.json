@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKv8uAOHDB26rBaUGxURNUrW",
+  "object": "chat.completion",
+  "created": 1790614682,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita inverte claramente a posição em relação à recuperação dos hospitais federais do Rio de Janeiro, substituindo ganhos por perdas (ex: 'perdemos 321 leitos') e destacando dificuldades, mantendo o tema e argumentos coerentes com a posição contrária, sem introduzir contradições ou alterar outros conteúdos relevantes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 10704,
+    "total_tokens": 10855,
+    "completion_tokens": 151,
+    "estimated_cost": 0.0010464100000000002,
+    "prompt_tokens_details": null
+  }
+}

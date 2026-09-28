@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHKKmi2BSQfjhtdgCbBqPQ2Z",
+  "object": "chat.completion",
+  "created": 1790614393,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A primeira rejeita o projeto atual e pede um novo, enquanto a segunda defende a aprovação do projeto, indicando posições opostas sobre a mesma medida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 412,
+    "total_tokens": 470,
+    "completion_tokens": 58,
+    "estimated_cost": 6.898e-05,
+    "prompt_tokens_details": null
+  }
+}

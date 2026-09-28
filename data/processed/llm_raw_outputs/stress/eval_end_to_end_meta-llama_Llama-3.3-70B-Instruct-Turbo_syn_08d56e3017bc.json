@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R4afFq0ZItbEep4FfQcBacWv",
+  "object": "chat.completion",
+  "created": 1790614894,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"As duas manifestações apresentam direções opostas de stance em relação à criação de fontes de recursos específicas para a prevenção de desastres, com a primeira manifestação defendendo a alocação de recursos para o Fundo Nacional para Calamidades Públicas e a segunda manifestação questionando a eficiência dessa abordagem e defendendo uma alocação mais flexível de recursos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2141,
+    "total_tokens": 2246,
+    "completion_tokens": 105,
+    "estimated_cost": 0.0002477,
+    "prompt_tokens_details": null
+  }
+}

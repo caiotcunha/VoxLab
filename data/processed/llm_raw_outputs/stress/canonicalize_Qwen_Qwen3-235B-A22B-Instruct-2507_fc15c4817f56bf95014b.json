@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHLx0CurLQb52bTX0FS95QQo",
+  "object": "chat.completion",
+  "created": 1790614161,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"A primeira afirma que os contratos são abusivos, enquanto a segunda sugere que são transparentes e claros, indicando posições opostas sobre a mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 453,
+    "completion_tokens": 61,
+    "estimated_cost": 6.883e-05,
+    "prompt_tokens_details": null
+  }
+}

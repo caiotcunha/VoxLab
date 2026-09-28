@@ -1,0 +1,25 @@
+Você vai reescrever uma fala parlamentar literal para construir um caso de teste controlado. A fala reescrita será usada apenas em um experimento sintético, identificado como sintético, e nunca será atribuída a uma pessoa real.
+
+Proposição-alvo da fala original (formulada por anotadores humanos): {target_proposition}
+Posição da fala original em relação a essa proposição: {original_stance}
+
+Operação pedida:
+{operation_instruction}
+
+Regras obrigatórias:
+- Altere somente as frases necessárias para cumprir a operação. Copie literalmente todo o restante (saudações, agradecimentos, procedimentos, dados e trechos sobre outros assuntos).
+- Mantenha o registro oral de uma fala parlamentar em português do Brasil, com o mesmo tamanho aproximado.
+- Não acrescente marcas, comentários, colchetes ou avisos de que o texto foi alterado.
+- Não mencione nomes, partidos ou cargos que não estejam na fala original.
+- Se houver várias passagens que expressam a posição original, altere todas de forma coerente, para que a fala inteira não fique contraditória.
+
+Responda exatamente neste formato, sem nada antes ou depois:
+
+PROPOSICAO_RESULTANTE: <a proposição específica sobre a qual a fala reescrita toma posição, em uma frase>
+POSICAO_RESULTANTE: <FAVOR ou AGAINST, relativa à PROPOSICAO_RESULTANTE>
+===TEXTO===
+<fala reescrita completa>
+===FIM===
+
+--- Fala original ---
+{text}

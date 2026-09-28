@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcdV7gwGhz8lyGQJOcvwIoF8",
+  "object": "chat.completion",
+  "created": 1790614146,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X propõe ações (políticas públicas) para idosos, enquanto Y trata da constatação de um problema social (preconceito), sem mencionar soluções ou reivindicações semelhantes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 462,
+    "completion_tokens": 73,
+    "estimated_cost": 7.516e-05,
+    "prompt_tokens_details": null
+  }
+}

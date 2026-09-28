@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYThUoqjhVGXR8akkqAU2xVA",
+  "object": "chat.completion",
+  "created": 1790614417,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam aspectos distintos do bem-estar animal, uma focada em dimensão econômica e outra em proteção à vida humana, com escopos diferentes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 452,
+    "completion_tokens": 60,
+    "estimated_cost": 6.828e-05,
+    "prompt_tokens_details": null
+  }
+}

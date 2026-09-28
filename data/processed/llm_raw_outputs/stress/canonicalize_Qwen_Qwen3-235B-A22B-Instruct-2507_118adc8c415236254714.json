@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R06e1SvBwY3iStq6cVj4XswU",
+  "object": "chat.completion",
+  "created": 1790614154,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As formulações descrevem a mesma ação do IBAMA em relação ao licenciamento da Petrobras, mas com polaridades opostas: uma nega obstáculos indevidos, e a outra afirma que há dificuldades intencionais.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 465,
+    "completion_tokens": 76,
+    "estimated_cost": 7.681e-05,
+    "prompt_tokens_details": null
+  }
+}

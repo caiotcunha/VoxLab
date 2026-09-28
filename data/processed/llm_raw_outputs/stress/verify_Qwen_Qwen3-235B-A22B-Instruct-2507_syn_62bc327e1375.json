@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RW4sor9taqVYgV8q8cFJESIK",
+  "object": "chat.completion",
+  "created": 1790615074,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição em relação à Lei do Bem, argumentando contra sua votação imediata com justificativas coerentes, mantendo o tema e o contexto original sem introduzir elementos externos ou contraditórios.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5721,
+    "total_tokens": 5837,
+    "completion_tokens": 116,
+    "estimated_cost": 0.0005786900000000001,
+    "prompt_tokens_details": null
+  }
+}

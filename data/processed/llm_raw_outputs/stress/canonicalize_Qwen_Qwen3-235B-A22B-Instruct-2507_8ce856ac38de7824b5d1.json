@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdJWOjh1grrHiFsPx5b6OSyi",
+  "object": "chat.completion",
+  "created": 1790614222,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam temas relacionados ao envelhecimento, mas com focos distintos: uma trata da inclusão de um tema em um fórum internacional (G20), e a outra, da priorização municipal da política para idosos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 470,
+    "completion_tokens": 73,
+    "estimated_cost": 7.588000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

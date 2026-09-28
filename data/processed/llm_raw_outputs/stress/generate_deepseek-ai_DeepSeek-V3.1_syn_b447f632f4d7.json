@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRpYH0u5jItvZy4mOeqzwGSL",
+  "object": "chat.completion",
+  "created": 1790615038,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: As doenças do coração que surgem com o envelhecimento devem ser mais divulgadas\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nMuito obrigado.\n\nTerminadas as exposições, vou franquear a palavra aos convidados, para que façam suas considerações finais. Fiquem à vontade, por favor.(Pausa.)\n\nEu gostaria de agradecer a todos pela presença nesta audiência pública.\n\nÉ importante questionarmos o foco excessivo na divulgação dessas doenças complexas do coração, que surgem com o envelhecimento e já recebem atenção suficiente.Muito se fala em hipertensão, infarto, etc., e essas doenças que surgem ao longo da vida já são amplamente cobertas.\n\nFalar de longevidade em todos os seus aspectos é complexo e mereceria horas a fio de discussão. Ainda assim, o tema não se esgotaria. Então, quero aproveitar para ressaltar a importância da aprovação do Projeto de Lei nº 3.811, de 2019, do qual fui Relator na Comissão de Seguridade Social e Família, que está aguardando pauta na CCJ. O PL institui a Semana Nacional de Conscientização sobre a Cardiopatia Isquêmica.\n\nAo propor ajustes ao SUS, pensando na longevidade da população, entendemos que as doenças valvares cardíacas precisam do atendimento adequado via SUS sobre três pilares: prevenção, diagnóstico e tratamento. Nesse sentido, deixo aqui a minha preocupação com a alocação de recursos para campanhas de divulgação, que poderiam ser melhor aplicados diretamente na assistência à saúde.\n\nAgradeço aos convidados, que nos honraram com suas exposições e seus esclarecimentos, e a todos que aqui compareceram.\n\nNada mais havendo a tratar, vou encerrar os trabalhos, antes convocando reunião deliberativa extraordinária para amanhã, dia 7 de dezembro, às 13 horas, neste mesmo plenário, com pauta já divulgada.\n\nDeclaro encerrada a presente reunião.\n\nMuito obrigado a todos.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 882,
+    "total_tokens": 1394,
+    "completion_tokens": 512,
+    "estimated_cost": 0.0006976600000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

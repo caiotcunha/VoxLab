@@ -1,0 +1,34 @@
+Você vai auditar uma reescrita controlada de uma fala parlamentar, feita para um experimento sintético. Compare a fala original com a reescrita e verifique se a operação pedida foi cumprida sem efeitos colaterais.
+
+Proposição-alvo da fala original: {target_proposition}
+Posição da fala original em relação a ela: {original_stance}
+Proposição de referência do outro evento do mesmo ator (apenas para a operação de troca de proposição): {reference_proposition}
+
+Operação pedida:
+{operation_instruction}
+
+Responda às perguntas:
+1. operation_achieved: a fala reescrita cumpre a operação pedida? YES, NO ou UNCERTAIN.
+2. other_content_preserved: o conteúdo não relacionado à operação foi preservado, sem acréscimo de informação nova além do necessário? YES, NO ou UNCERTAIN.
+3. internally_consistent: a fala reescrita, lida inteira, é coerente e não contém passagens que ainda expressem a posição antiga? YES, NO ou UNCERTAIN.
+4. natural: a reescrita soa como uma fala parlamentar natural em português, sem marcas de edição? YES, NO ou UNCERTAIN.
+5. rewritten_stance_on_original_target: posição da fala reescrita em relação à proposição-alvo ORIGINAL: FAVOR, AGAINST, NOT_ADDRESSED ou UNCERTAIN.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "operation_achieved": "YES|NO|UNCERTAIN",
+  "other_content_preserved": "YES|NO|UNCERTAIN",
+  "internally_consistent": "YES|NO|UNCERTAIN",
+  "natural": "YES|NO|UNCERTAIN",
+  "rewritten_stance_on_original_target": "FAVOR|AGAINST|NOT_ADDRESSED|UNCERTAIN",
+  "reasoning": "explicação breve, uma ou duas frases"
+}}
+
+Não inclua texto fora do JSON.
+
+--- Fala original ---
+{original_text}
+
+--- Fala reescrita ---
+{rewritten_text}

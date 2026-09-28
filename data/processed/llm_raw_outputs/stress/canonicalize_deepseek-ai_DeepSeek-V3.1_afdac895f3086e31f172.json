@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RiZtyy2zQQB0l6UNKAICyrWz",
+  "object": "chat.completion",
+  "created": 1790614310,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de reivindicações distintas: X aborda políticas públicas para idosos em geral, enquanto Y foca especificamente nos efeitos da flexibilização trabalhista sobre aposentadorias.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 458,
+    "completion_tokens": 65,
+    "estimated_cost": 0.000118,
+    "prompt_tokens_details": {
+      "cached_tokens": 350,
+      "cache_write_tokens": null
+    }
+  }
+}

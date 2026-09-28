@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwZH0ecLBdx8oqzjhx9WgmN3",
+  "object": "chat.completion",
+  "created": 1790614225,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de aumentar o orçamento para combater a tuberculose no Brasil, com redações ligeiramente diferentes, mas mesmo sentido e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 456,
+    "completion_tokens": 66,
+    "estimated_cost": 7.14e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RkHInyCXPmAGUcYl2tZqtv8R",
+  "object": "chat.completion",
+  "created": 1790614338,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas, uma sobre inclusão de pessoas com dor crônica no diagnóstico e outra sobre incorporação de uma classificação a outra, sem relação direta entre si.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 455,
+    "completion_tokens": 61,
+    "estimated_cost": 6.901e-05,
+    "prompt_tokens_details": null
+  }
+}

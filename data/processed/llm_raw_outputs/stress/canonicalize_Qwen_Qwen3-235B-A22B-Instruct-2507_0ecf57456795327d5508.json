@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ru8ze3nWfBli0oDUpW1ZWx1e",
+  "object": "chat.completion",
+  "created": 1790614412,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações afirmam que os recursos para políticas de mulheres devem ser geridos diretamente pelo Ministério das Mulheres, com diferença apenas na ênfase adicional em Y sobre o Ministério da Justiça, sem alterar a reivindicação central.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 479,
+    "completion_tokens": 76,
+    "estimated_cost": 7.807e-05,
+    "prompt_tokens_details": null
+  }
+}

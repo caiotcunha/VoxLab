@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-REHatQtSn1ObhrtC1oPFMDaq",
+  "object": "chat.completion",
+  "created": 1790614403,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata da aprovação de um projeto de lei específico, enquanto a formulação Y aborda a divulgação de doenças cardíacas relacionadas ao envelhecimento, sem ligação direta entre si.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 461,
+    "completion_tokens": 67,
+    "estimated_cost": 7.231e-05,
+    "prompt_tokens_details": null
+  }
+}

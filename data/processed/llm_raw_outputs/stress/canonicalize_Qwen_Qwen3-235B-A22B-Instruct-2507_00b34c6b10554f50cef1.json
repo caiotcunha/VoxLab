@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROdyX3jjiGVJmjWMhi0LJSbU",
+  "object": "chat.completion",
+  "created": 1790614349,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da mesma reivindicação de regulamentação do trabalho de motoristas de aplicativo, com a mesma polaridade favorável à criação de uma lei.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 392,
+    "total_tokens": 452,
+    "completion_tokens": 60,
+    "estimated_cost": 6.828e-05,
+    "prompt_tokens_details": null
+  }
+}

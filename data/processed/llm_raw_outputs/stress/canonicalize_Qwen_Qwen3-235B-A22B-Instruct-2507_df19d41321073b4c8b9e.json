@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFYk9fxJZGd4yuggNxRP0eaa",
+  "object": "chat.completion",
+  "created": 1790613613,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de temas relacionados ao discurso de ódio, mas uma foca em figuras políticas e violência nas escolas, enquanto a outra propõe regulação de redes sociais, com escopos e objetos distintos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 476,
+    "completion_tokens": 72,
+    "estimated_cost": 7.596e-05,
+    "prompt_tokens_details": null
+  }
+}

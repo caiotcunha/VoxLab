@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzgUiA5RJbW9aPT4arz6yhnu",
+  "object": "chat.completion",
+  "created": 1790614393,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem o aumento de investimento do governo em ações preventivas contra desastres, com apenas diferenças de redação e ênfase.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 450,
+    "completion_tokens": 56,
+    "estimated_cost": 6.626e-05,
+    "prompt_tokens_details": null
+  }
+}

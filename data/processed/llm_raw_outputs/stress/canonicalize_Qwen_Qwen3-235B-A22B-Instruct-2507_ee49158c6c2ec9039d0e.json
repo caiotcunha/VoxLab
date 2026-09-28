@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKcvR75VLrB0xB4LI6earU2y",
+  "object": "chat.completion",
+  "created": 1790614369,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas com objetos diferentes: uma sobre expansão da Atenção Primária em Saúde e outra sobre recuperação de hospitais federais.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 388,
+    "total_tokens": 444,
+    "completion_tokens": 56,
+    "estimated_cost": 6.572e-05,
+    "prompt_tokens_details": null
+  }
+}

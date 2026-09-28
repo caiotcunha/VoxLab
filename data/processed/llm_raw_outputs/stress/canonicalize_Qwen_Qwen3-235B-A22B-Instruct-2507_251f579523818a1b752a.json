@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqU9CYl2iuDt9bNJGq6WShmX",
+  "object": "chat.completion",
+  "created": 1790614190,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a destinação de recursos públicos para prevenção da violência contra crianças e adolescentes, com foco similar e mesma polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 462,
+    "completion_tokens": 57,
+    "estimated_cost": 6.780000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R7EuAvbGWJW6W81o39gRT46y",
+  "object": "chat.completion",
+  "created": 1790614231,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a reconstrução do SUS, enquanto a segunda menciona a retomada da coordenação pelo Ministério da Saúde e sua recepção, sem indicar a mesma reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 457,
+    "completion_tokens": 63,
+    "estimated_cost": 7.011e-05,
+    "prompt_tokens_details": null
+  }
+}

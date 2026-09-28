@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYxycqizk4GAHNx3EBGkXmja",
+  "object": "chat.completion",
+  "created": 1790614436,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As duas formulações descrevem exatamente a mesma reivindicação, com os mesmos grupos etários e a mesma medida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 451,
+    "completion_tokens": 50,
+    "estimated_cost": 6.359e-05,
+    "prompt_tokens_details": null
+  }
+}

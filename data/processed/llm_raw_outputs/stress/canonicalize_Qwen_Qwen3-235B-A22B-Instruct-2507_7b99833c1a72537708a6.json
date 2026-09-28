@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQ6d5wWf1A5YBkSwgy4ctvRt",
+  "object": "chat.completion",
+  "created": 1790614242,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma posição de que o STF não deve criar ou alterar leis, cabendo essa função ao Legislativo, ainda que com redações diferentes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 461,
+    "completion_tokens": 61,
+    "estimated_cost": 6.955e-05,
+    "prompt_tokens_details": null
+  }
+}

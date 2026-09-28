@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzcV2XQsySdb8DQkWvZLWJhR",
+  "object": "chat.completion",
+  "created": 1790614419,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a alocação de recursos para prevenção de desastres, com foco em ações proativas em vez de reativas, mantendo a mesma reivindicação e polaridade.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 464,
+    "completion_tokens": 67,
+    "estimated_cost": 7.258e-05,
+    "prompt_tokens_details": null
+  }
+}

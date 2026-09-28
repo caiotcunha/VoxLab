@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RXrdhJ1eRuEnorCCgc7xC7Vs",
+  "object": "chat.completion",
+  "created": 1790614726,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O IBAMA não cria obstáculos indevidos ao licenciamento de projetos na Bacia Potiguar.\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nHouve vários questionamentos aqui que são de responsabilidade do IBAMA, mas só quero complementar o que a Ministra já disse. A BR-319 teve a licença prévia, e agora o prazo está correndo para o DNIT para que apresente os estudos, para que possamos analisar a emissão da licença de instalação. Então, hoje, o processo no IBAMA não está correndo porque ele está aguardando o prazo para que o DNIT apresente os estudos.\n\nPortanto, só para termos um nivelamento de informação, foi emitida já a licença prévia. São três fases de licença: prévia, de instalação e de operação. Então, nessa fase agora, estamos aguardando o DNIT.\n\nEm relação aos questionamentos dos Deputados Welter, do Paraná, e Leo Prates, sobre as licenças na Bacia Potiguar, nós brincamos no IBAMA, do ponto de vista positivo, que a PETROBRAS é a maior cliente do IBAMA, pois nenhuma empresa brasileira, nenhum empreendedor brasileiro tem mais licenças do IBAMA do que a PETROBRAS. Obviamente, ela é uma empresa orgulho para todos nós. Mas, só para se ter uma ideia, nós emitimos ao todo 173 licenças para a PETROBRAS na última década. Nós estamos analisando hoje 110 processos de pedidos de licença da PETROBRAS fora da área da Margem Equatorial. E temos hoje 15 processos de licenciamento na Margem Equatorial.\n\nA PETROBRAS pediu-nos uma prioridade muito grande para a Bacia Potiguar. Para essa bacia, temos uma licença já emitida em 2019, para o sistema de produção no Campo de Aratum. Temos outra licença, em 2021, para os Campos de Arabaiana, Pescada e Dentão. Em 2022, temos uma licença para a produção e escoamento no Campo de Agulha; e mais outra licença para Ubarana, Cioba e Oeste de Ubarana. Então, é uma região que a PETROBRAS está avaliando com grandes olhos. Neste momento, o IBAMA analisa hoje duas licenças na Bacia Potiguar para a PETROBRAS.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1023,
+    "total_tokens": 1597,
+    "completion_tokens": 574,
+    "estimated_cost": 0.0007916900000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

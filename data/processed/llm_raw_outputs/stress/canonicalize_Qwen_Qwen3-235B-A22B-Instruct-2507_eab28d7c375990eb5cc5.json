@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ROmlVwFNQacjfMayutg8KlSj",
+  "object": "chat.completion",
+  "created": 1790614255,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fórmula é mais geral, enquanto a segunda foca especificamente em políticas de independência econômica, tratando de um aspecto específico da proteção.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 457,
+    "completion_tokens": 56,
+    "estimated_cost": 6.689e-05,
+    "prompt_tokens_details": null
+  }
+}

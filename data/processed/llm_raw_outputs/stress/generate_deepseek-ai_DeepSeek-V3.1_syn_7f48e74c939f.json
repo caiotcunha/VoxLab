@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RvAi2PcxVaRdcGVv3SBA4HH0",
+  "object": "chat.completion",
+  "created": 1790614997,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O país precisa proteger os pequenos negócios quando acontecem desastres.\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nDeclaro aberta a 6ª Reunião Extraordinária da Comissão Especial, destinada a estudar e analisar formas de prevenção e auxílio a desastres e calamidades naturais, que têm assolado todo o território nacional.\n\nEncontra-se à disposição na página da Comissão, na Internet, a ata da 5ª Reunião, realizada no dia 5 de março de 2023.\n\nFica dispensada a sua leitura nos termos do parágrafo único do art. 5º do Ato da Mesa nº 123, de 2020.\n\nNão havendo quem queira retificá-la, em votação a ata.\n\nAqueles que concordam permaneçam como se encontram.(Pausa.)\n\nAprovada a ata.\n\nExpediente.\n\nInformo que a Deputada Rosângela Reis, do PL de Minas Gerais, foi efetivada como suplente no último dia 15 de março.\n\nSeja muito bem-vinda, Deputada Rosângela! Espero que possamos continuar fazendo esse trabalho profícuo.\n\nOrdem do Dia.\n\nEsclareço que, na Ordem do Dia de hoje, está prevista a realização de audiência pública que cumpre decisão do colegiado, em atendimento aos Requerimentos nº 7 e nº 10, de 2023, de autoria do Relator, o Deputado Gilson Daniel.\n\nOs Ministros convidados não puderam comparecer, mas enviaram representantes.\n\nAudiência pública.\n\nDaremos início à audiência pública, oportunidade em que os representantes do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome e do Ministério das Cidades apresentarão as ações das referidas Pastas sobre prevenção e auxílio a desastres e calamidades naturais.\n\nConvidados.\n\nAgradeço a presença de todos, em especial a dos convidados, e informo que participarão dos trabalhos os seguintes palestrantes: a Sra. Vera Campelo, Coordenadora da Secretaria Nacional de Assistência Social do Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome — seja bem-vinda, Vera! —; o Sr. Pedro Henrique Lopes Batista, Diretor Substituto da Secretaria Nacional de Periferias do Ministério das Cidades.\n\nRegras da audiência pública.\n\nPara melhor andamento dos trabalhos, esclareço que adotaremos os seguintes procedimentos:\n\nEm conformidade com decisão da Presidência da Casa, não será mais permitida a divisão de tempo para Comunicações de Liderança.\n\nO tempo concedido aos convidados será de 20 minutos, prorrogáveis a juízo da Comissão.\n\nO autor do requerimento será o primeiro a usar a palavra para considerações, por 3 minutos. Cada membro inscrito terá 3 minutos. Cada não membro terá 2 minutos.\n\nAntes de passar a palavra e a Presidência, porque vou ter que me ausentar, eu queria parabenizar o Deputado Gilson Daniel e destacar a importância, no meu entendimento, da presença do Ministério do Desenvolvimento Social.\n\nO nosso grande desafio, o meu e especialmente o do Deputado Gilson, que está liderando nossa equipe na questão do relatório, é criar um arcabouço legal que possa dar proteção, especialmente aos pequenos negócios, nessas enchentes, nessas secas.\n\nNós imaginamos como é na Amazônia não se conseguir chegar a um médico porque as hidrovias estão secas, os rios estão secos. No Rio Grande do Sul, tem havido a perda de pequenos negócios, de salões de beleza, de pequenas atividades comerciais que sustentavam famílias inteiras, a perda de casas, de eletrodomésticos.\n\nPara mim, Deputado Gilson, depois da criação do fundo, que é essencial para financiar todas essas ações, a ação na área social e a participação do Ministério do Desenvolvimento Social são muito importantes para nós.\n\nPeço à Vera que leve ao Ministro que nós estamos muito ansiosos pela participação do Ministério do Desenvolvimento Social e loucos para criar um arcabouço legal que possa proteger os pequenos negócios.\n\nEu queria, por tradição, porque já fazemos essas audiências públicas, convidar o autor do requerimento, o Deputado Gilson Daniel, para presidir a audiência pública.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1517,
+    "total_tokens": 2574,
+    "completion_tokens": 1057,
+    "estimated_cost": 0.00136972,
+    "prompt_tokens_details": {
+      "cached_tokens": 114,
+      "cache_write_tokens": null
+    }
+  }
+}

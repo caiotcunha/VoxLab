@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rvmt2RoNp7VDPGVO8AlZ07KG",
+  "object": "chat.completion",
+  "created": 1790614780,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Os recursos das políticas para mulheres devem ser geridos diretamente pelo Ministério das Mulheres, e não pelo Ministério da Justiça.\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nMuito obrigada, Elaine.\n\nEu acho que fui meio dura na minha fala porque fui gestora por mais tempo do que sou Parlamentar e tenho muita dificuldade com os melindres.\n\nTenho muita esperança neste Governo com relação à área social, porque eu fui Prefeita durante outro mandato deste Governo que aí está, de 2009 a 2012, e sei exatamente que ele cuida do ser. Ele cuida da economia e cuida do ser. Então, em todas as pautas de todos os Ministérios voltados ao ser vamos ter uma visão melhor de mais cuidados com a pessoa.\n\nVou fazer outra colocação. Em vez de eu cobrar a execução do Ministério da Justiça acerca das patrulhas, acerca da Casa da Mulher Brasileira, por que não manter esse recurso sob a gerência do Ministério da Justiça? É isso o que eu defendo. Eu não questiono que estejamos em todos os meandros da sociedade ou das políticas públicas. Estamos sim em todos os lugares. Agora, eu concordo plenamente com essa estrutura que já existe. Quanto é que vamos ganhar em eficiência?\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 722,
+    "total_tokens": 1044,
+    "completion_tokens": 322,
+    "estimated_cost": 0.0004771600000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

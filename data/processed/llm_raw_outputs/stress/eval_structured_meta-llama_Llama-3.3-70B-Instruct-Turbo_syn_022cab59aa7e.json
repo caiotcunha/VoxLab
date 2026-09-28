@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhfupDFlSRATAeblf2iR0P6I",
+  "object": "chat.completion",
+  "created": 1790613998,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"A geração e distribuição de energia devem ser separadas\",\n  \"target_proposition_b\": \"O modelo atual das concessionárias de energia no Brasil deve ser preservado\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2728,
+    "total_tokens": 2833,
+    "completion_tokens": 105,
+    "estimated_cost": 0.0003064,
+    "prompt_tokens_details": null
+  }
+}

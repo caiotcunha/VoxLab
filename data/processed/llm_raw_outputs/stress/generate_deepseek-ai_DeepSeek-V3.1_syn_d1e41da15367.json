@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReoRCcCT13OyfjGF9HzE5OYE",
+  "object": "chat.completion",
+  "created": 1790614247,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O Parlamento deve fortalecer a ANPD para que ela proteja melhor os dados dos cidadãos\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nDeclaro abertos os trabalhos da reunião de audiência pública híbrida para prestar esclarecimentos a respeito dos recentes vazamentos de dados da população brasileira.\n\nA presente reunião tem amparo na aprovação do Requerimento nº 339, de 2023, de minha autoria.\n\nCom base no art. 220,§1º, do Regimento Interno, convido neste momento para compor a Mesa o Sr. Waldemar Gonçalves Ortunho Júnior, Diretor-Presidente da Agência Nacional de Proteção de Dados — ANPD. Convido também para participar da Mesa o assessor Jeferson Barbosa.\n\nQuanto aos procedimentos, faço os seguintes registros. O tempo reservado ao convidado é de 15 minutos, prorrogáveis, se for necessário, não podendo haver apartes. Cada Deputado inscrito para interpelar poderá fazê-lo por 3 minutos. O convidado interpelado terá igual tempo para responder, facultadas a réplica e a tréplica no mesmo prazo.\n\nAntes de iniciar as exposições, quero fazer os seguintes esclarecimentos sobre a importância do debate proposto pelo requerimento de minha autoria. Como eu já vinha falando com o nosso Diretor-Presidente Waldemar, acho que este é um momento de extrema importância para discutirmos a proteção de dados pessoais do brasileiro, tendo em vista que hoje nós utilizamos sistemas e populamos esses sistemas, esses bancos de dados, com as nossas informações pessoais, muitas vezes informações sensíveis. Portanto, quanto mais avançamos no setor de tecnologia, mais temos que garantir essa proteção dos dados do cidadão brasileiro.\n\nTendo em vista que hoje muitas empresas, inclusive no setor privado, se prevalecem disso, mesmo quando não autorizamos... Quando vamos fazer um cadastro, nós autorizamos que a empresa, obviamente, possa utilizar os nossos dados para aquela finalidade, para aquela operação, mas, às vezes, vemos que não é isso o que acontece. Essas empresas acabam, depois, compartilhando nossos dados. Muitas vezes, fazemos um cadastro, e, imediatamente, o nosso telefone já está tocando, com outra empresa, com a qual não fizemos o cadastro, oferecendo algum tipo de serviço, ou mandandoe-mail, ou mandando SMS, importunando, inclusive, o dia a dia do cidadão que está trabalhando.\n\nEntão, essa é uma questão na qual precisamos avançar, para a qual precisamos ter o apoio deste Parlamento, a fim de que a ANPD possa desenvolver esse trabalho com cada vez mais eficiência, com o objetivo de proteger o cidadão brasileiro dessas investidas, assim como os seus dados. Isso acontece no setor público também, em grande escala, como, em passado recente, aconteceu com o Ministério da Saúde, quando houve o vazamento de informações de milhões de brasileiros, que tiveram seus dados expostos. Também vemos acontecer em Prefeituras, em órgãos menores, esses vazamentos com muita frequência, colocando em risco o usuário. Acho que é de conhecimento de todos que os dados são hoje um dos maiores ativos que nós temos; muitas vezes é até considerado um ativo mais valioso do que o petróleo, do que outrascommodities.\n\nPrecisamos ter muita clareza quando tratarmos desse assunto, sabendo que ele é importante e sabendo que é necessário investimento e momentos como este aqui para discutirmos o tema, para discutirmos a pauta, e continuarmos avançando na proteção de dados.\n\nEu vou seguir adiante.\n\nPasso a palavra, pelo prazo de 15 minutos, ao Sr. Waldemar Gonçalves Ortunho Júnior, Diretor-Presidente da Agência Nacional de Proteção de Dados — ANPD.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1334,
+    "total_tokens": 2266,
+    "completion_tokens": 932,
+    "estimated_cost": 0.0012095400000000003,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

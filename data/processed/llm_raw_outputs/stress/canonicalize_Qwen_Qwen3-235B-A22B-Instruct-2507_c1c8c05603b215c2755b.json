@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDr6aL6cvYr7onPOgF1roP8I",
+  "object": "chat.completion",
+  "created": 1790614197,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"As formulações tratam da mesma contratação, mas uma a considera questionável e a outra a julga adequada, indicando posições opostas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 451,
+    "completion_tokens": 55,
+    "estimated_cost": 6.589e-05,
+    "prompt_tokens_details": null
+  }
+}

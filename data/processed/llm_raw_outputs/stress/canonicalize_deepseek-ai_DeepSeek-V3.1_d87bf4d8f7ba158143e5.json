@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMbxFh4Lbqf9zRNjUygaVFfn",
+  "object": "chat.completion",
+  "created": 1790613925,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a mesma reivindicação de priorizar investimentos em prevenção de desastres em vez de focar apenas na resposta reativa, com a mesma polaridade positiva.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 464,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00015916000000000004,
+    "prompt_tokens_details": {
+      "cached_tokens": 2,
+      "cache_write_tokens": null
+    }
+  }
+}

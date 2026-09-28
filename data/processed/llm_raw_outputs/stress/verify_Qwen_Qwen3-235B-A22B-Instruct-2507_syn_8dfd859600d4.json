@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RoESvisBYIFv7FUa7DQVVsXO",
+  "object": "chat.completion",
+  "created": 1790615389,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverteu claramente a posição original, argumentando contra a necessidade de critérios claros para novos combustíveis, defendendo a experimentação livre em vez de regras prévias, mantendo o tema e sem introduzir inconsistências ou novos temas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 4068,
+    "total_tokens": 4192,
+    "completion_tokens": 124,
+    "estimated_cost": 0.00043432,
+    "prompt_tokens_details": null
+  }
+}

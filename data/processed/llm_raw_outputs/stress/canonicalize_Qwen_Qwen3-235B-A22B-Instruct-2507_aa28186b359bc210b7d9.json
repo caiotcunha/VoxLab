@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RIAH4onfRTxqZqpiA1uffMyW",
+  "object": "chat.completion",
+  "created": 1790614264,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de propostas distintas: uma sobre inclusão de pessoas com dor crônica em políticas multidisciplinares, e outra sobre incorporação de uma classificação internacional em outra, sem sobreposição direta de objeto ou reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 475,
+    "completion_tokens": 74,
+    "estimated_cost": 7.679e-05,
+    "prompt_tokens_details": null
+  }
+}

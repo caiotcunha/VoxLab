@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVX0u4MuuEpVgCfnBkUe69nF",
+  "object": "chat.completion",
+  "created": 1790614182,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata da aprovação de uma política específica de gestão territorial, enquanto a Y menciona a presença de atividades econômicas sem especificar uma posição ou ação concreta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 468,
+    "completion_tokens": 62,
+    "estimated_cost": 0.00011876000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

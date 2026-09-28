@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ryp6usBlW6hu5sOPeWyoNqqW",
+  "object": "chat.completion",
+  "created": 1790614103,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a ideia de que o cuidado com as pessoas pode ser instrumentalizado economicamente, com diferenças apenas de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 383,
+    "total_tokens": 436,
+    "completion_tokens": 53,
+    "estimated_cost": 6.361999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

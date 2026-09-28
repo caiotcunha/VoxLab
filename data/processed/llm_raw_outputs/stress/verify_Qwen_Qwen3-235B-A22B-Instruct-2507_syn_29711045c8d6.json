@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RX4mBVwaJTWT4FohWoOgWJ8D",
+  "object": "chat.completion",
+  "created": 1790614646,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"NO\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita apenas alterou 'povo' para 'crianças' como população afetada, mas manteve a mesma proposição-alvo e posição a favor, sem introduzir uma nova proposição distinta. A mudança é mínima e não atende à exigência de mudar a proposição discutida. Além disso, a fala ainda expressa posição clara sobre a proposição original e a de referência, o que viola a operação pedida.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 5044,
+    "total_tokens": 5210,
+    "completion_tokens": 166,
+    "estimated_cost": 0.00054526,
+    "prompt_tokens_details": null
+  }
+}

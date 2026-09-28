@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHcUIFj07jZO3WNbsq8hXKmc",
+  "object": "chat.completion",
+  "created": 1790613971,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de regulamentar o lobby, com a mesma direção e sem divergência de posição.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 390,
+    "total_tokens": 439,
+    "completion_tokens": 49,
+    "estimated_cost": 6.205e-05,
+    "prompt_tokens_details": null
+  }
+}

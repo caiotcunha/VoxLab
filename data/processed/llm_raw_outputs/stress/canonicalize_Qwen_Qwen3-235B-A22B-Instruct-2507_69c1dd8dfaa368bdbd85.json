@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0LGjECOroj11uvkVbqXKAGg",
+  "object": "chat.completion",
+  "created": 1790614382,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira trata da ratificação de um tratado internacional sobre direitos de idosos, enquanto a segunda é uma recomendação genérica por políticas públicas para idosos, sem menção a tratados ou direitos específicos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 395,
+    "total_tokens": 462,
+    "completion_tokens": 67,
+    "estimated_cost": 7.24e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RJh78wy2Jtp47cIn2D6pph9u",
+  "object": "chat.completion",
+  "created": 1790613975,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas diferentes, regulamentação do lobby e regulamentação do trabalho de motoristas de aplicativo, não permitindo uma comparação direta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1543,
+    "total_tokens": 1600,
+    "completion_tokens": 57,
+    "estimated_cost": 0.00017254000000000003,
+    "prompt_tokens_details": null
+  }
+}

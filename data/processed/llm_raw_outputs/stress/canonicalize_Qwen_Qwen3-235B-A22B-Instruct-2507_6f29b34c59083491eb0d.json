@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RSIwv4DI4S4QZOx9WMHuNitG",
+  "object": "chat.completion",
+  "created": 1790613830,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira afirma uma avaliação geral positiva da gestão, enquanto a segunda descreve um fato específico sobre coordenação do SUS, sem juízo de valor explícito.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 387,
+    "total_tokens": 444,
+    "completion_tokens": 57,
+    "estimated_cost": 6.618e-05,
+    "prompt_tokens_details": null
+  }
+}

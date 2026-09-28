@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RV6en4oRdVFxGbzffmQ2xtML",
+  "object": "chat.completion",
+  "created": 1790614305,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de destinar recursos para a prevenção de desastres, com diferenças apenas de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 453,
+    "completion_tokens": 55,
+    "estimated_cost": 6.607e-05,
+    "prompt_tokens_details": null
+  }
+}

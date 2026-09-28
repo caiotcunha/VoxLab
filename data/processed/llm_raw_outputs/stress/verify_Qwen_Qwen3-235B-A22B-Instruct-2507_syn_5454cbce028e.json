@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RsgMjbrbDjA5CbYBLguK30qM",
+  "object": "chat.completion",
+  "created": 1790613931,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita inverte claramente a posição para contra a criação de novas regras, argumentando que podem sufocar a concorrência e inibir a inovação, mantendo coerência interna e preservando o restante do conteúdo de forma natural.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1230,
+    "total_tokens": 1353,
+    "completion_tokens": 123,
+    "estimated_cost": 0.00017835,
+    "prompt_tokens_details": null
+  }
+}

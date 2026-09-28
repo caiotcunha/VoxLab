@@ -61,6 +61,7 @@ Os parâmetros `--threshold` (padrão 0.10), `--top-k` (5 pares de audiência po
 - `data/processed/comparability_pilot_baselines.json`, `comparability_pilot_diagnostics.csv` e `semantic_pilot_gold_manifest.json`: resultados exploratórios, diagnóstico por par e congelamento do gold.
 - `src/voxlab/automatic_baselines.py` e `docs/automatic_experiments.md`: primeira rodada experimental via LLM, respostas brutas, ablação do gate e limitações.
 - `src/voxlab/prospective_evaluation.py`: avaliação pré-definida A versus C sobre o futuro gold humano da expansão, sem nova chamada de API.
+- `src/voxlab/synthetic_stress.py` e `proposition_canonicalization.py`, com `docs/stress_and_canonicalization.md`: estresse contrafactual do gate e canonização de proposições, sobre o gold existente, sem nova anotação humana.
 - `datasetCaio.ipynb`, `nunes.ipynb` e `dashboard_polarizacao_completa.html`: exploração anterior preservada; o dashboard não representa o resultado longitudinal.
 
 O notebook antigo `nunes.ipynb` ainda requer `langchain-core`, `langchain-nvidia-ai-endpoints`, `pandas`, `tqdm`, `networkx` e `pyvis` para suas próprias células. Essas dependências **não** fazem parte da nova auditoria nem são executadas por ela. `NVIDIA_API_KEY` deve ser fornecida pelo ambiente para executar as células antigas. Não é necessária para reproduzir esta etapa.
@@ -80,3 +81,14 @@ Nos 16 pares com decisão binária, o corte de recuperação TF-IDF ≥0,10 clas
 ## Baselines automáticos via LLM
 
 Trilha experimental separada (chamadas de API reais, DeepInfra) — nenhum LLM é classificador no restante do pipeline. Dois modelos foram avaliados nos 18 pares gold. A ablação que força comparabilidade não consegue emitir `INCOMPARABLE`; ao ligar o gate, 10/18 erros viram acertos em cada modelo, com 0 degradações no Qwen e 2 no Llama. O baseline end-to-end direto empatou ou superou o pipeline estruturado com gate, portanto a vantagem do pipeline completo ainda não foi demonstrada. Previsões nos 29 pares da expansão são sempre `label_source=MODEL_PREDICTION`, nunca gold. A anotação humana dos 29 continua necessária. Veja `docs/automatic_experiments.md`.
+
+## Estresse contrafactual e canonização
+
+Os dois experimentos usam só o gold existente, sem anotação humana nova, e rodaram em 857 chamadas (US$ 0,33). O lado posterior dos pares foi reescrito por um modelo gerador, auditado por um verificador, e só as reescritas aceitas foram avaliadas.
+
+- **O gate reduz falsas reversões.** Quando a stance muda em pares incomparáveis, as falsas reversões caem de 3/17 e 5/17 (sem gate) para 1/17 e 0/17.
+- **O gate também descarta reversões verdadeiras.** O recall de reversão cai de 3–4/7 para 1/7 e 0/7, porque os modelos confundem "mudou a posição" com "mudou a proposição".
+- **O end-to-end falha no sentido oposto.** Trata proposições deslocadas como comparáveis em 8/8.
+- **A concordância humana de stance na expansão é maior do que parecia.** A canonização mostra que 5 dos 8 desacordos são só polaridade da formulação, e o κ sobe de 0,27 para 0,54.
+- **Correção em resultado anterior.** A auditoria de polaridade anterior comparava lados trocados em parte da expansão. Veja `docs/stress_and_canonicalization.md`.
+

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R2ECry0rnpHRXAC42a6imUFd",
+  "object": "chat.completion",
+  "created": 1790614156,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre aprovação do projeto, enquanto a segunda menciona apenas a votação, o que não implica necessariamente aprovação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 384,
+    "total_tokens": 435,
+    "completion_tokens": 51,
+    "estimated_cost": 6.261e-05,
+    "prompt_tokens_details": null
+  }
+}

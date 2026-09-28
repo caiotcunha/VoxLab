@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RaROdDVNdIemFxjfplmtt386",
+  "object": "chat.completion",
+  "created": 1790614317,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam do fortalecimento da proteção de dados pessoais dos cidadãos brasileiros, sendo a segunda mais específica ao mencionar a ANPD, mas sem alterar a reivindicação central ou sua polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 474,
+    "completion_tokens": 75,
+    "estimated_cost": 7.716e-05,
+    "prompt_tokens_details": null
+  }
+}

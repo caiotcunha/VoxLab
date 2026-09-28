@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFRSxMuwVwhBnkjnkKJ0nPSE",
+  "object": "chat.completion",
+  "created": 1790614168,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de aprovação do projeto que regulamenta o trabalho de motoristas de aplicativo, com apenas diferenças de redação.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 458,
+    "completion_tokens": 60,
+    "estimated_cost": 6.882e-05,
+    "prompt_tokens_details": null
+  }
+}

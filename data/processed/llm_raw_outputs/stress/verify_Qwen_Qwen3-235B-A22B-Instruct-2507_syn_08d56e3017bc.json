@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzeFlneiQmhFw4EL6Xhb4AI4",
+  "object": "chat.completion",
+  "created": 1790614865,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverteu claramente a posição para AGAINST a alocação de recursos específicos para prevenção, com argumentos coerentes sobre ineficiência e burocracia, mantendo o tema e sem introduzir elementos externos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1861,
+    "total_tokens": 1977,
+    "completion_tokens": 116,
+    "estimated_cost": 0.00023129,
+    "prompt_tokens_details": null
+  }
+}

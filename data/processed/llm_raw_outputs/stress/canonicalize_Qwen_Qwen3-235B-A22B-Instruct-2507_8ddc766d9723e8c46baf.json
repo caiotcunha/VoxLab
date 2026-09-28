@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1FSfHSHmJ3ysRIA4mFPlUVz",
+  "object": "chat.completion",
+  "created": 1790614149,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas afirmam que o bem-estar animal contribui para a proteção da vida humana, com redações diferentes mas mesma reivindicação e polaridade.\"\n}\n",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 454,
+    "completion_tokens": 55,
+    "estimated_cost": 6.616e-05,
+    "prompt_tokens_details": null
+  }
+}

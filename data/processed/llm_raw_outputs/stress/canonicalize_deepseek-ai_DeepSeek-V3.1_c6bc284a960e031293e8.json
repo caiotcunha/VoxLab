@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhqxgR7rzsGKWoUN4PMBkluY",
+  "object": "chat.completion",
+  "created": 1790614298,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"OPPOSITE_POLARITY\",\n  \"reasoning\": \"Uma fonte defende a rejeição integral do projeto enquanto a outra defende sua aprovação, indicando posições opostas sobre a mesma proposição.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 446,
+    "completion_tokens": 55,
+    "estimated_cost": 0.00010836000000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 347,
+      "cache_write_tokens": null
+    }
+  }
+}

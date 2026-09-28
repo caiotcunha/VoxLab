@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RLAUkHriWcQcYWqcbiZLfJVQ",
+  "object": "chat.completion",
+  "created": 1790614712,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"As duas manifestações apresentam direções opostas de stance em relação à ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6928,
+    "total_tokens": 6990,
+    "completion_tokens": 62,
+    "estimated_cost": 0.0007126400000000001,
+    "prompt_tokens_details": null
+  }
+}

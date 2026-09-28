@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMPfTP5sTptVL6IlM94YrTeG",
+  "object": "chat.completion",
+  "created": 1790615037,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Vacinação obrigatória de crianças contra a COVID-19\",\n  \"target_proposition_b\": \"Obrigatoriedade da vacinação contra a COVID-19\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3718,
+    "total_tokens": 3819,
+    "completion_tokens": 101,
+    "estimated_cost": 0.00040412000000000005,
+    "prompt_tokens_details": null
+  }
+}

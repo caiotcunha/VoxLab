@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgoWeSuohwQ4J5N0OHh5EzeY",
+  "object": "chat.completion",
+  "created": 1790613532,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X avalia a adequação de uma contratação específica, enquanto a Y trata da verificação prévia de empresas em geral, abordando aspectos distintos do processo.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 454,
+    "completion_tokens": 57,
+    "estimated_cost": 6.708e-05,
+    "prompt_tokens_details": null
+  }
+}

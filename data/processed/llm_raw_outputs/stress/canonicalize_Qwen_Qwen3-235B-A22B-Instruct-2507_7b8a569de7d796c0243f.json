@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyUL9r6ePkHHeguoFctkYszG",
+  "object": "chat.completion",
+  "created": 1790614085,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam aspectos distintos do autismo: uma trata da continuidade de suporte após os 18 anos, e a outra, da perspectiva de neurodiversidade e respeito às diferenças, sem relação direta entre si.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 398,
+    "total_tokens": 474,
+    "completion_tokens": 76,
+    "estimated_cost": 7.762e-05,
+    "prompt_tokens_details": null
+  }
+}

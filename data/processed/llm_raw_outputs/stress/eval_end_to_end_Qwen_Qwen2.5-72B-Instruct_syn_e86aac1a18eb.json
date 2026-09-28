@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReykZJbP3k5ebAQsITAhghr0",
+  "object": "chat.completion",
+  "created": 1790614762,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações demonstram um forte apoio à prevenção de desastres e calamidades, enfatizando a importância de investimentos em infraestrutura, carreiras técnicas e financiamento adequado para a Defesa Civil.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3337,
+    "total_tokens": 3412,
+    "completion_tokens": 75,
+    "estimated_cost": 0.0012313200000000002,
+    "prompt_tokens_details": null
+  }
+}

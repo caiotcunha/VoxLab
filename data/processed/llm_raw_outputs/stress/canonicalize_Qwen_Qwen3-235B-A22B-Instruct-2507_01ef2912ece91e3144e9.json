@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDo3W3YwCHlqWobF9fda2D3R",
+  "object": "chat.completion",
+  "created": 1790614375,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X trata da necessidade de preparo do Estado para evitar desastres, enquanto Y discute as causas e impactos socioeconômicos dos desastres, sem se referir à responsabilidade ou ação estatal específica.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 474,
+    "completion_tokens": 71,
+    "estimated_cost": 7.532e-05,
+    "prompt_tokens_details": null
+  }
+}

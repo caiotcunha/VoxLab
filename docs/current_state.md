@@ -91,6 +91,16 @@ O piloto foi congelado por hash como conjunto de desenvolvimento, sem divisão a
 
 Em 2026-09-24, dois modelos hospedados na DeepInfra (Qwen2.5-72B-Instruct, Llama-3.3-70B-Instruct-Turbo) foram avaliados nos 18 pares gold em três condições: end-to-end direto, structured com comparabilidade forçada e structured com gate. Ligar o gate transformou 10 erros em acertos em cada modelo, sem piorar nenhum caso no Qwen e piorando 2 no Llama. Esse contraste é parcialmente esperado porque a ablação forçada não pode emitir `INCOMPARABLE`, classe de 11/18 itens. O baseline end-to-end empatou ou superou o pipeline estruturado com gate, portanto a vantagem do pipeline completo ainda não foi demonstrada. Os mesmos métodos, congelados antes dos rótulos humanos da expansão, foram aplicados aos 29 pares como `label_source=MODEL_PREDICTION`. A anotação humana dos 29 continua necessária e as previsões devem permanecer ocultas dos anotadores. Veja `docs/automatic_experiments.md`.
 
+## Atualização: estresse contrafactual e canonização (2026-09-28)
+
+Sem nova anotação humana, os 47 pares do gold foram usados para gerar contrafactuais controlados: reversão, negação na formulação, troca de proposição e reversão em pares incomparáveis. As proposições humanas e dos modelos também foram canonizadas por dois juízes LLM.
+
+- **Resultado central:** o gate automático reduz falsas reversões, mas também elimina as reversões verdadeiras, porque os modelos tratam uma mudança de stance como mudança de proposição.
+- **End-to-end:** detecta reversões, mas não reconhece proposições deslocadas.
+- **Canonização:** a concordância humana de stance na expansão sobe para κ 0,54. A auditoria de polaridade anterior tinha lados trocados na expansão.
+
+Veja `docs/stress_and_canonicalization.md`.
+
 ## Próxima fase: gold expandido e avaliação prospectiva
 
 1. Os dois anotadores preenchem independentemente os 29 pacotes cegos, sem acesso a `data/processed/expansion29_model_predictions.csv`.

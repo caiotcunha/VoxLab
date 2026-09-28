@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzyMNXEe61FbdrH8xSmJuHsn",
+  "object": "chat.completion",
+  "created": 1790614654,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância do bem-estar animal e sua relação com a sustentabilidade e o meio ambiente, demonstrando uma direção de stance favorável à causa.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3112,
+    "total_tokens": 3175,
+    "completion_tokens": 63,
+    "estimated_cost": 0.00033136,
+    "prompt_tokens_details": null
+  }
+}

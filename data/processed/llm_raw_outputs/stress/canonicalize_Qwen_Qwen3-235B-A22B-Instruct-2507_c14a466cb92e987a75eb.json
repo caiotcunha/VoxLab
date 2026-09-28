@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpWD1fCSsUg5t1DzIsVhFrsC",
+  "object": "chat.completion",
+  "created": 1790614165,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre ajustes no SUS para tratar doenças cardíacas complexas, enquanto a segunda foca na divulgação de doenças do coração relacionadas ao envelhecimento, sem menção a políticas de saúde ou tratamento.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 396,
+    "total_tokens": 468,
+    "completion_tokens": 72,
+    "estimated_cost": 7.523999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

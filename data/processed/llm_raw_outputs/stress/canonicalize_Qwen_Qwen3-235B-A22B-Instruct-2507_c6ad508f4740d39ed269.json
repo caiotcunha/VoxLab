@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R9wLpMXSgItOjxWEMSLYvm0f",
+  "object": "chat.completion",
+  "created": 1790613997,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações afirmam que a velhice é vista negativamente pela sociedade, com diferenças apenas de redação e ênfase.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 452,
+    "completion_tokens": 53,
+    "estimated_cost": 6.505999999999999e-05,
+    "prompt_tokens_details": null
+  }
+}

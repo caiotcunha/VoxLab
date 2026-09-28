@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGOg5cb7t92fxTV8tuvA3CxO",
+  "object": "chat.completion",
+  "created": 1790614219,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita inverteu a posição contrária original sobre o cuidado como negócio para uma posição favorável, ao defender que a lógica de mercado pode otimizar e inovar o cuidado, mantendo o tema e a estrutura original sem contradições internas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1290,
+    "total_tokens": 1412,
+    "completion_tokens": 122,
+    "estimated_cost": 0.0001832,
+    "prompt_tokens_details": null
+  }
+}

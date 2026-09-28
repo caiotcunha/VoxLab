@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ru5nGb5csbV3z608eH3pwubm",
+  "object": "chat.completion",
+  "created": 1790613953,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a adoção de energia limpa, com foco semelhante na transição energética, diferindo apenas em intensidade ou redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 394,
+    "total_tokens": 452,
+    "completion_tokens": 58,
+    "estimated_cost": 6.736e-05,
+    "prompt_tokens_details": null
+  }
+}

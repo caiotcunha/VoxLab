@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtIB0MF2gXZjGnD5zBvjUMQs",
+  "object": "chat.completion",
+  "created": 1790614183,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações exigem maior rigor e fiscalização sobre as empresas de energia, com X focando no cumprimento da lei e Y na cobrança antes da renovação de concessões, expressando a mesma reivindicação com a mesma polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 401,
+    "total_tokens": 476,
+    "completion_tokens": 75,
+    "estimated_cost": 0.00012998,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

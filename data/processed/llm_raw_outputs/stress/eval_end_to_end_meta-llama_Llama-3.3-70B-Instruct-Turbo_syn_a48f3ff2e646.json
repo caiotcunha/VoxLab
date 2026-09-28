@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrwklFBCeYVIPqUrgrZCws1n",
+  "object": "chat.completion",
+  "created": 1790614835,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à violência contra as mulheres e políticas públicas, mas abordam proposições específicas diferentes, como a implementação de políticas de proteção e o orçamento para essas políticas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2695,
+    "total_tokens": 2768,
+    "completion_tokens": 73,
+    "estimated_cost": 0.00029286000000000004,
+    "prompt_tokens_details": null
+  }
+}

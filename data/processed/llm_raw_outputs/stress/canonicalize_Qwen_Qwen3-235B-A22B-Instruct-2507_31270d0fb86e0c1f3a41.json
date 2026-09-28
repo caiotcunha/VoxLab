@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGmohTIGKRLEm1YLEfRkY9rT",
+  "object": "chat.completion",
+  "created": 1790614162,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a responsabilidade dos fabricantes por produtos de curta duração, com foco em combater práticas que levam à obsolescência programada.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 460,
+    "completion_tokens": 61,
+    "estimated_cost": 6.946e-05,
+    "prompt_tokens_details": null
+  }
+}

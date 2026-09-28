@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RrzuqrPa38n0Pj1tJA2jYk16",
+  "object": "chat.completion",
+  "created": 1790614452,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"As formulações são idênticas em conteúdo e polaridade, expressando o mesmo apoio ao fortalecimento e melhoria das políticas públicas para idosos.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 393,
+    "total_tokens": 450,
+    "completion_tokens": 57,
+    "estimated_cost": 6.672000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

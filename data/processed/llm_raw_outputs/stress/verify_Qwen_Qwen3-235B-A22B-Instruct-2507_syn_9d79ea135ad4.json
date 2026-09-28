@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtEiFbwp9Jo5MMvLeoyDPiCU",
+  "object": "chat.completion",
+  "created": 1790613974,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"NOT_ADDRESSED\",\n  \"reasoning\": \"A fala reescrita muda o foco para a retirada de famílias de áreas de risco, mantendo o vocabulário e tema original, sem assumir posição sobre a prevenção de desastres como proposição-alvo original.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2495,
+    "total_tokens": 2611,
+    "completion_tokens": 116,
+    "estimated_cost": 0.00028835,
+    "prompt_tokens_details": null
+  }
+}

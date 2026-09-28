@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRRsaL0fhtQwaSIFxWDgwGkj",
+  "object": "chat.completion",
+  "created": 1790614320,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem que os recursos para políticas de proteção à mulher sejam geridos diretamente pelo Ministério das Mulheres, com apenas uma diferença de ênfase adicional na segunda sobre o órgão que não deve gerir.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 479,
+    "completion_tokens": 72,
+    "estimated_cost": 7.623e-05,
+    "prompt_tokens_details": null
+  }
+}

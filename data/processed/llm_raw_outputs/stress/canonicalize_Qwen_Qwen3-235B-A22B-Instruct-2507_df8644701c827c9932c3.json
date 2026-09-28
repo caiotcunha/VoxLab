@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rl2ZdtpEYi5a9pw83ybPbUiU",
+  "object": "chat.completion",
+  "created": 1790614147,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira foca na proibição de campanhas contra vacinas para crianças, enquanto a segunda trata do combate ao movimento antivacina em geral e da recuperação da cobertura vacinal, sem especificar crianças ou proibições.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 402,
+    "total_tokens": 474,
+    "completion_tokens": 72,
+    "estimated_cost": 7.578e-05,
+    "prompt_tokens_details": null
+  }
+}

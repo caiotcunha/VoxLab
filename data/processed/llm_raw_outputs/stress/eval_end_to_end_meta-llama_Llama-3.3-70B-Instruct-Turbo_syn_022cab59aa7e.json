@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPVhn7L0NgEmufhxGRg1iYuB",
+  "object": "chat.completion",
+  "created": 1790613990,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações tratam de temas relacionados à energia, mas abordam questões específicas diferentes, como reajustes nas tarifas de energia elétrica e participação da Câmara na definição das regras de renovação das concessões das distribuidoras de energia elétrica.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2460,
+    "total_tokens": 2547,
+    "completion_tokens": 87,
+    "estimated_cost": 0.00027383999999999997,
+    "prompt_tokens_details": null
+  }
+}

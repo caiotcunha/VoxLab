@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rrw93OBnwCQmyTJQzAo93RRc",
+  "object": "chat.completion",
+  "created": 1790614288,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a necessidade de medidas contra mudanças climáticas, enquanto a segunda destaca as desigualdades sociais nos impactos climáticos, sem propor ação específica.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 413,
+    "total_tokens": 474,
+    "completion_tokens": 61,
+    "estimated_cost": 7.072e-05,
+    "prompt_tokens_details": null
+  }
+}

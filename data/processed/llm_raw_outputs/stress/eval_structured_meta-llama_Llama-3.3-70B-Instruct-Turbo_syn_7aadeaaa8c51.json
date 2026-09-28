@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RxZauNaHqw3KwRyaigu39SEv",
+  "object": "chat.completion",
+  "created": 1790614283,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Incorporação de pessoas com deficiência nas políticas de fomento cultural\",\n  \"target_proposition_b\": \"Efetivação das políticas públicas para pessoas com Transtorno do Espectro Autista\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3534,
+    "total_tokens": 3649,
+    "completion_tokens": 115,
+    "estimated_cost": 0.00039020000000000005,
+    "prompt_tokens_details": null
+  }
+}

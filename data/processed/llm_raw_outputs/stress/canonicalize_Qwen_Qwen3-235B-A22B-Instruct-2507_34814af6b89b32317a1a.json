@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RVy6kMhrWPdrvFU6pYk0684J",
+  "object": "chat.completion",
+  "created": 1790613892,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a necessidade de exigir mais das distribuidoras de energia na renovação de concessões, com foco em rigor e cobrança, sem mudar a direção da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 417,
+    "total_tokens": 487,
+    "completion_tokens": 70,
+    "estimated_cost": 7.603e-05,
+    "prompt_tokens_details": null
+  }
+}

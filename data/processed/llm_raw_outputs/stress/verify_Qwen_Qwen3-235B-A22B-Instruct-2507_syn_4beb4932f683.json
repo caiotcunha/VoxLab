@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R1qp1fZI5u3jzpR6OgVRrXX6",
+  "object": "chat.completion",
+  "created": 1790614081,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A operação de inversão da posição foi cumprida, com crítica à reabertura de espaços de participação, mas há acréscimos problemáticos (como 'repetindo os mesmos erros') e contradições com trechos que ainda elogiam a participação social; além disso, o tom positivo inicial e a manutenção de elogios ao Viver sem Limite geram incoerência interna.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1958,
+    "total_tokens": 2113,
+    "completion_tokens": 155,
+    "estimated_cost": 0.00026147,
+    "prompt_tokens_details": null
+  }
+}

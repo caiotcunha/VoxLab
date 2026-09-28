@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RdIL6xJt6WeYEVKAjCtDm4AL",
+  "object": "chat.completion",
+  "created": 1790614138,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam aspectos distintos dos desastres: X foca em prevenção e infraestrutura, enquanto Y aborda causas sociais e impacto desigual\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 421,
+    "total_tokens": 473,
+    "completion_tokens": 52,
+    "estimated_cost": 0.00011313,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

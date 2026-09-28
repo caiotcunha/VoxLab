@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKiugeYA6977oXYRMvRtvefw",
+  "object": "chat.completion",
+  "created": 1790614171,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de planejamento de políticas públicas para o envelhecimento populacional, com a mesma direção e sem oposição de polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 466,
+    "completion_tokens": 61,
+    "estimated_cost": 7.000000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzgYxloVDVSscOu6dbMODeWT",
+  "object": "chat.completion",
+  "created": 1790614593,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações expressam uma posição favorável à vacinação e criticam veementemente os movimentos antivacina, demonstrando uma consistência na defesa da vacinação e na condenação das informações falsas e da desinformação.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3064,
+    "total_tokens": 3142,
+    "completion_tokens": 78,
+    "estimated_cost": 0.00113424,
+    "prompt_tokens_details": null
+  }
+}

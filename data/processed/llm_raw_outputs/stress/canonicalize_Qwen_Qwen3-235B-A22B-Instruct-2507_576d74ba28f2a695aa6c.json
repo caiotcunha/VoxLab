@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R76wU0j4nMKyOnu2A9kSGBCN",
+  "object": "chat.completion",
+  "created": 1790614143,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre obrigatoriedade da vacina para crianças, enquanto a segunda trata de evitar queda na cobertura vacinal, sem mencionar crianças ou obrigatoriedade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 444,
+    "completion_tokens": 55,
+    "estimated_cost": 6.526000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

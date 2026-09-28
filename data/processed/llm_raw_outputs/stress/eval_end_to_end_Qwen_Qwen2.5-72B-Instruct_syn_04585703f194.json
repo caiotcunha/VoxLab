@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMcgVkQ3TqJKl2H1XRyx8XBP",
+  "object": "chat.completion",
+  "created": 1790614688,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"INCOMPARABLE\",\n  \"reasoning\": \"As duas manifestações abordam temas diferentes e não respondem à mesma proposição específica. A primeira fala trata de autossuficiência na produção de insumos para a saúde e questões relacionadas à compra emergencial de medicamentos pelo SUS, enquanto a segunda fala aborda uma atualização de ações e investimentos do novo PAC na Saúde.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6514,
+    "total_tokens": 6611,
+    "completion_tokens": 97,
+    "estimated_cost": 0.00238384,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpKk8xKSLjIDVrwv0Pk5rep1",
+  "object": "chat.completion",
+  "created": 1790614413,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações abordam aspectos distintos do bem-estar animal: X como pauta econômica e Y como proteção à vida humana.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 389,
+    "total_tokens": 436,
+    "completion_tokens": 47,
+    "estimated_cost": 9.966e-05,
+    "prompt_tokens_details": {
+      "cached_tokens": 352,
+      "cache_write_tokens": null
+    }
+  }
+}

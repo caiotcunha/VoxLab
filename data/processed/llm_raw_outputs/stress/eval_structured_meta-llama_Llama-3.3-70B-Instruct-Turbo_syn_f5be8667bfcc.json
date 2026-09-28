@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RD0I7t6H7kbRZMQqONpZeFov",
+  "object": "chat.completion",
+  "created": 1790614299,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Recurso para gerência do Ministério das Mulheres\",\n  \"target_proposition_b\": \"Criação de políticas públicas específicas para saúde da mulher no climatério e menopausa\",\n  \"same_proposition\": \"NO\",\n  \"stance_a\": \"AGAINST\",\n  \"stance_b\": \"AGAINST\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2737,
+    "total_tokens": 2847,
+    "completion_tokens": 110,
+    "estimated_cost": 0.00030890000000000003,
+    "prompt_tokens_details": null
+  }
+}

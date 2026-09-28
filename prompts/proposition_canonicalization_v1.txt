@@ -1,0 +1,23 @@
+Duas fontes diferentes escreveram, de forma independente, a proposição-alvo de uma mesma manifestação parlamentar (ou de duas manifestações que foram consideradas sobre a mesma proposição). Você não recebe as posições que cada fonte registrou.
+
+Classifique a relação entre as duas formulações:
+
+- EQUIVALENT: descrevem a mesma reivindicação com a mesma polaridade. Diferenças de redação, de detalhe ou de generalidade que não mudam o sentido contam como EQUIVALENT.
+- OPPOSITE_POLARITY: descrevem a mesma reivindicação, mas uma afirma o que a outra nega. Quem é FAVOR a uma é, por consequência, AGAINST à outra. Exemplo: "O saque-aniversário do FGTS deve ser mantido" e "O governo deve acabar com o saque-aniversário do FGTS".
+- DIFFERENT: tratam de reivindicações diferentes (outra medida, outro objeto, outra população ou outro escopo), mesmo que o tema seja o mesmo. Nesse caso, a posição sobre uma não determina a posição sobre a outra.
+- UNCERTAIN: não é possível decidir com segurança.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "relation": "EQUIVALENT|OPPOSITE_POLARITY|DIFFERENT|UNCERTAIN",
+  "reasoning": "explicação breve, uma frase"
+}}
+
+Não inclua texto fora do JSON.
+
+--- Formulação X ---
+{proposition_x}
+
+--- Formulação Y ---
+{proposition_y}

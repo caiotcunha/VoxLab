@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Roh3OLzzeW8mrwCuw5WdI8KZ",
+  "object": "chat.completion",
+  "created": 1790614267,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de instrumentos de crédito distintos (empréstimo consignado regulamentado vs. cartão consignado) e uma foca em riscos enquanto a outra em segurança, configurando reivindicações diferentes.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 407,
+    "total_tokens": 479,
+    "completion_tokens": 72,
+    "estimated_cost": 7.623e-05,
+    "prompt_tokens_details": null
+  }
+}

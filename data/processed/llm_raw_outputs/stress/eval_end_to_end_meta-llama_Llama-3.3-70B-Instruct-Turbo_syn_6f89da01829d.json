@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtoaYSC7ONRBt5FgrLRQwHsl",
+  "object": "chat.completion",
+  "created": 1790615524,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"As manifestações têm direções opostas de stance sobre o projeto de lei de regulamentação do trabalho de motoristas de aplicativo, com a primeira manifestação pedindo a rejeição total do projeto e a segunda manifestação apoiando o projeto.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2768,
+    "total_tokens": 2845,
+    "completion_tokens": 77,
+    "estimated_cost": 0.00030144000000000004,
+    "prompt_tokens_details": null
+  }
+}

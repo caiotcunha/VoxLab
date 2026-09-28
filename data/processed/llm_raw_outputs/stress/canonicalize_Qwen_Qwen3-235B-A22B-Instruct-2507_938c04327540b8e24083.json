@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFzx2poxzk6BWUK7Q5IXvbTu",
+  "object": "chat.completion",
+  "created": 1790614285,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de aspectos distintos da inclusão de pessoas autistas: uma sobre reconhecimento de direitos e cidadania, e outra sobre possibilidade de ocupação de espaços com apoio, sem conflito direto ou equivalência.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 477,
+    "completion_tokens": 73,
+    "estimated_cost": 7.651e-05,
+    "prompt_tokens_details": null
+  }
+}

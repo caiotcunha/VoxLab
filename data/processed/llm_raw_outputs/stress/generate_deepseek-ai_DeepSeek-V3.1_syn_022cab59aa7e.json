@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNsa6erEYnxSSgZPCT3HEnwJ",
+  "object": "chat.completion",
+  "created": 1790613884,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O modelo atual das concessões de distribuição de energia elétrica deve ser modificado.\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nObrigado, Presidente Deputado Hugo Leal. Parabenizo V.Exa. pela iniciativa do debate neste momento mais do que oportuno.\n\nO Brasil hoje consolida a opinião de que a energia é essencial, tanto para a sobrevivência da família brasileira quanto para o desenvolvimento econômico. O mérito desse debate cabe ao Congresso Nacional. São mais de 10 anos de debate intensivo nesta Casa e nesta Comissão a respeito do tema.\n\nHoje, ninguém vive sem energia, ninguém desenvolve um país ou uma economia sem energia. O Brasil, ávido por essa oportunidade, tem o melhor desempenho, diante dessa transformação energética que o mundo vive. O Brasil se coloca como modelo na transição energética, com a perspectiva de, a partir dela, compatibilizar a competitividade brasileira com a do resto do mundo.\n\nNão tenho dúvida de que o trabalho feito nesta Casa já construiu vários consensos. Um deles é que o modelo atual das concessionárias de energia no Brasil, apesar das críticas, é sólido e deve ser preservado. O modelo de negócio atual garante a segurança e a continuidade do fornecimento de energia para toda a sociedade brasileira. Em qualquer Estado do Brasil, apesar de eventuais queixas, o serviço é prestado com regularidade. Há uma compatibilidade com os demais segmentos. Essa situação do setor garante a própria relação, que é confortável, de bom convívio, de debate e de diálogo, com a possibilidade da manutenção desse sistema.\n\nExistem alguns consensos. Primeiro, tarifa social é responsabilidade da União. Eu quis trazer esse debate, no ano passado, para o Orçamento Geral da União, quando fui Relator da LDO. O Governo não topou a ideia. Hoje estamos vendo que a tarifa social tem que ser tratada pelo conjunto da sociedade no Orçamento Geral da União.\n\nHá diferença entre incentivo e subsídio. A renúncia fiscal no ano passado foi superior a 560 bilhões de reais no Brasil. Muito se fala que a energia é essencial, mas pouco se fala que a indústria petrolífera consome quase metade desses subsídios, desses incentivos. O setor de petróleo, que é a indústria mais rentável do mundo, consome quase 280 bilhões de reais desses incentivos no Brasil hoje.\n\nHá setores anacrônicos, que queremos superar, como os setores de carvão mineral, do qual já falei muito, e do óleodiesel. As termoelétricas do norte do País precisam ser estimuladas a substituir o combustível usado, talvez pelo hidrogênio verde ou pelo gás natural, durante essa transição. Isso precisa ser construído. Precisamos enfrentar isso.O debate precisa ser feito em torno dessas questões.\n\nConseguiremos avançar com isso ao discutir o grande legado da nossa legislatura para o futuro do Brasil, que é a reforma tributária. Temos que trazer esse ponto para a discussão na reforma tributária, para adequar essas situações àquilo que é essencial para o desenvolvimento socioeconômico do Brasil. Esse é um debate que precisa continuar.\n\nParabenizo a todos. O grande legado da minha história política no meu Estado foi ter sido o incentivador do primeiro curso de montagem e instalação de energia fotovoltaica no IFCE do Ceará. Hoje, mais de 16 mil jovens do Ceará trabalham nessa área. O primeiro curso foi possível graças a uma emenda minha. Emendas parlamentares são muito mal entendidas pelo conjunto da sociedade, mas são capazes de formar profissionais e de criar oportunidade de emprego.\n\nEsta Casa se afirma com este debate. Eu gostei muito do que foi trazido pelo Secretário Marco Antonio Vilela, do Rio de Janeiro. Ele disse que os PLs 444, 445 e 446 merecem atenção e prioridade nesse momento.\n\nObrigado.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1356,
+    "total_tokens": 2316,
+    "completion_tokens": 960,
+    "estimated_cost": 0.0012417600000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

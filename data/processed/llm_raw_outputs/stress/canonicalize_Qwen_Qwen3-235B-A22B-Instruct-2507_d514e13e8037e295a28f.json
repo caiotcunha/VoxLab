@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCCXSq6neF9yzT4nGguuJPG9",
+  "object": "chat.completion",
+  "created": 1790614093,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a integração da Classificação Internacional de Funcionalidade com a Classificação Internacional de Doenças, com diferenças apenas de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 399,
+    "total_tokens": 456,
+    "completion_tokens": 57,
+    "estimated_cost": 6.726e-05,
+    "prompt_tokens_details": null
+  }
+}

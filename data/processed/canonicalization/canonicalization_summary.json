@@ -1,0 +1,256 @@
+{
+  "experiment_version": "proposition_canonicalization_v1",
+  "timestamp": "2026-09-28T16:55:13.333327+00:00",
+  "judges": [
+    "deepseek-ai/DeepSeek-V3.1",
+    "Qwen/Qwen3-235B-A22B-Instruct-2507"
+  ],
+  "prompt_sha256": "3b3494cb5822ccc44a806aa7239640be02927557608e4e5096c22f93c020615a",
+  "git_commit": "e7ea05a64a818511c8a8fb372f54b10e8570e755",
+  "flip_rule": "stance_y flipped only when every judge says OPPOSITE_POLARITY",
+  "expansion_side_realignment": "expansion model predictions realigned from annotator-1 display order to chronological gold sides",
+  "judge_agreement_all_items": {
+    "n": 296,
+    "raw_agreement": 0.8581,
+    "cohens_kappa": 0.7307,
+    "annotator_1_counts": {
+      "DIFFERENT": 80,
+      "EQUIVALENT": 192,
+      "OPPOSITE_POLARITY": 19,
+      "UNCERTAIN": 5
+    },
+    "annotator_2_counts": {
+      "DIFFERENT": 111,
+      "EQUIVALENT": 168,
+      "OPPOSITE_POLARITY": 16,
+      "UNCERTAIN": 1
+    },
+    "prevalence_warning": "SINGLETON_CLASS"
+  },
+  "malformed_output_count": 0,
+  "cross_source": {
+    "human_human_expansion": {
+      "n_sides": 55,
+      "relation_distribution": {
+        "EQUIVALENT": 30,
+        "DIFFERENT": 12,
+        "UNCERTAIN": 8,
+        "OPPOSITE_POLARITY": 5
+      },
+      "stance_before": {
+        "n": 55,
+        "raw_agreement": 0.8545,
+        "cohens_kappa": 0.2739,
+        "annotator_1_counts": {
+          "AGAINST": 3,
+          "FAVOR": 52
+        },
+        "annotator_2_counts": {
+          "AGAINST": 9,
+          "FAVOR": 46
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "stance_after_alignment": {
+        "n": 55,
+        "raw_agreement": 0.9455,
+        "cohens_kappa": 0.5429,
+        "annotator_1_counts": {
+          "AGAINST": 3,
+          "FAVOR": 52
+        },
+        "annotator_2_counts": {
+          "AGAINST": 4,
+          "FAVOR": 51
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "transitions": {
+        "agree->agree": 47,
+        "disagree->agree": 5,
+        "disagree->disagree": 3
+      },
+      "residual_disagreements_by_relation": {
+        "DIFFERENT": 2,
+        "EQUIVALENT": 1
+      }
+    },
+    "human_human_pilot": {
+      "n_sides": 34,
+      "relation_distribution": {
+        "UNCERTAIN": 4,
+        "DIFFERENT": 10,
+        "EQUIVALENT": 20
+      },
+      "stance_before": {
+        "n": 34,
+        "raw_agreement": 0.9412,
+        "cohens_kappa": 0.8201,
+        "annotator_1_counts": {
+          "AGAINST": 7,
+          "FAVOR": 27
+        },
+        "annotator_2_counts": {
+          "AGAINST": 7,
+          "FAVOR": 27
+        },
+        "prevalence_warning": ""
+      },
+      "stance_after_alignment": {
+        "n": 34,
+        "raw_agreement": 0.9412,
+        "cohens_kappa": 0.8201,
+        "annotator_1_counts": {
+          "AGAINST": 7,
+          "FAVOR": 27
+        },
+        "annotator_2_counts": {
+          "AGAINST": 7,
+          "FAVOR": 27
+        },
+        "prevalence_warning": ""
+      },
+      "transitions": {
+        "agree->agree": 32,
+        "disagree->disagree": 2
+      },
+      "residual_disagreements_by_relation": {
+        "UNCERTAIN": 1,
+        "DIFFERENT": 1
+      }
+    },
+    "model_vs_gold_expansion": {
+      "n_sides": 107,
+      "relation_distribution": {
+        "DIFFERENT": 38,
+        "UNCERTAIN": 23,
+        "EQUIVALENT": 41,
+        "OPPOSITE_POLARITY": 5
+      },
+      "stance_before": {
+        "n": 107,
+        "raw_agreement": 0.8879,
+        "cohens_kappa": 0.3943,
+        "annotator_1_counts": {
+          "AGAINST": 13,
+          "FAVOR": 94
+        },
+        "annotator_2_counts": {
+          "AGAINST": 9,
+          "FAVOR": 98
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "stance_after_alignment": {
+        "n": 107,
+        "raw_agreement": 0.8598,
+        "cohens_kappa": 0.0641,
+        "annotator_1_counts": {
+          "AGAINST": 13,
+          "FAVOR": 94
+        },
+        "annotator_2_counts": {
+          "AGAINST": 4,
+          "FAVOR": 103
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "transitions": {
+        "agree->agree": 91,
+        "disagree->disagree": 11,
+        "agree->disagree": 4,
+        "disagree->agree": 1
+      },
+      "residual_disagreements_by_relation": {
+        "DIFFERENT": 4,
+        "UNCERTAIN": 6,
+        "EQUIVALENT": 1,
+        "OPPOSITE_POLARITY": 4
+      }
+    },
+    "model_vs_gold_pilot": {
+      "n_sides": 66,
+      "relation_distribution": {
+        "EQUIVALENT": 43,
+        "DIFFERENT": 13,
+        "OPPOSITE_POLARITY": 5,
+        "UNCERTAIN": 5
+      },
+      "stance_before": {
+        "n": 66,
+        "raw_agreement": 0.8636,
+        "cohens_kappa": 0.5639,
+        "annotator_1_counts": {
+          "AGAINST": 9,
+          "FAVOR": 57
+        },
+        "annotator_2_counts": {
+          "AGAINST": 16,
+          "FAVOR": 50
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "stance_after_alignment": {
+        "n": 66,
+        "raw_agreement": 0.9091,
+        "cohens_kappa": 0.6471,
+        "annotator_1_counts": {
+          "AGAINST": 9,
+          "FAVOR": 57
+        },
+        "annotator_2_counts": {
+          "AGAINST": 11,
+          "FAVOR": 55
+        },
+        "prevalence_warning": "DOMINANT_CLASS_AT_LEAST_80_PERCENT"
+      },
+      "transitions": {
+        "agree->agree": 56,
+        "disagree->agree": 4,
+        "disagree->disagree": 5,
+        "agree->disagree": 1
+      },
+      "residual_disagreements_by_relation": {
+        "DIFFERENT": 3,
+        "OPPOSITE_POLARITY": 1,
+        "UNCERTAIN": 1,
+        "EQUIVALENT": 1
+      }
+    }
+  },
+  "within_pair": {
+    "within_pair_gold": {
+      "n_pairs": 12,
+      "relation_before": {
+        "STANCE_MAINTAINED": 12
+      },
+      "relation_after_alignment": {
+        "STANCE_MAINTAINED": 12
+      },
+      "judged_same_proposition_but_DIFFERENT": 0,
+      "opposite_polarity_pairs": []
+    },
+    "within_pair_model_expansion": {
+      "n_pairs": 14,
+      "relation_before": {
+        "STANCE_MAINTAINED": 14
+      },
+      "relation_after_alignment": {
+        "STANCE_MAINTAINED": 14
+      },
+      "judged_same_proposition_but_DIFFERENT": 1,
+      "opposite_polarity_pairs": []
+    },
+    "within_pair_model_pilot": {
+      "n_pairs": 8,
+      "relation_before": {
+        "STANCE_MAINTAINED": 8
+      },
+      "relation_after_alignment": {
+        "STANCE_MAINTAINED": 8
+      },
+      "judged_same_proposition_but_DIFFERENT": 1,
+      "opposite_polarity_pairs": []
+    }
+  }
+}

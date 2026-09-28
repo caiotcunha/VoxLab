@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgJgD70nGpC3mLaYmfKKiY1n",
+  "object": "chat.completion",
+  "created": 1790615164,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"YES\",\n  \"internally_consistent\": \"YES\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A reescrita inverte claramente a posição original, argumentando contra a proteção estatal aos vulneráveis em desastres, com ênfase em riscos de dependência e assistencialismo, mantendo o tema e a estrutura original sem contradições internas.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2672,
+    "total_tokens": 2793,
+    "completion_tokens": 121,
+    "estimated_cost": 0.00030703,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfXn6pgi9nSiZ1kIccKp8Tl4",
+  "object": "chat.completion",
+  "created": 1790615145,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Precisam ser criados planos e conselhos para a população LGBTQIA+\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nObrigada, Cláudio. É muito importante essa pesquisa, porque ela estabelece um raio-x. Eu estava no lançamento da pesquisa. Ali surgiu a ideia de nós fazermos uma audiência pública para discussão dos resultados das pesquisas.\n\nÉ óbvio que é preciso também ver a qualidade dos equipamentos. Muitas vezes nós constatamos a existência de equipamentos, mas eles estão num estado de precarização que impossibilita o atendimento da demanda reprimida. É preciso, portanto, agregar aos resultados que estão postos na pesquisa um olhar sobre a qualidade dos equipamentos e sobre a descriminação orçamentária, ou seja, sobre os aportes orçamentários para a existência das políticas públicas.\n\nPenso que a criação de Conselho e de planos é muito problemática, como pontua a pesquisa, porque os planos impõem uma burocracia desnecessária e, ao mesmo tempo, uma segmentação artificial dentro da comunidade LGBTQIA+, que tem demandas que precisam ser integradas às políticas universais, sem a agregação de discriminações adicionais através da criação de estruturas específicas, porque um país que busca a igualdade deve focar em políticas universais, não em segmentações.\n\nÉ importante questionar onde há planos, porque os planos muitas vezes dificultam a integração de ações e afastam a participação da sociedade civil de forma mais ampla, ao mesmo tempo que engessam o planejamento, criando prazos e responsabilidades artificiais que não se concretizam na prática. Os planos nos impedem de trabalhar com a universalidade, e nenhuma política pública setorizada tem, isoladamente, condição para enfrentar todos os direitos que devem ser assegurados para a população LGBTQIA+. Portanto, o plano pressupõe a fragmentação de ações de educação, ações de assistência, ações de cultura, ações de geração de emprego, enfim, um desmembramento ineficiente de políticas públicas. Há dois elementos que os planos e os Conselhos prejudicam: a integração e o protagonismo real, os espaços de fala genuínos, pois é preciso que a própria população LGBTQIA+ e suas representações possam participar do debate principal que o País exige, particularmente depois de ter tido a sua democracia tão ferida e machucada, nos últimos 4 anos, sem precisar de estruturas paralelas. Então, é muito importante essa pesquisa.\n\nEu discutia com o Renan a necessidade de fazermos outra audiência pública, uma audiência pública sobre boas práticas. Aqui estamos vendo um raio-x de como estão os equipamentos, os planos, as políticas para o enfrentamento da discriminação e, ao mesmo tempo, para o rompimento da invisibilização, para a garantia dos direitos da comunidade LGBTQIA+. Mas seria muito importante que nós pudéssemos mostrar para o Brasil inteiro quais são as práticas exitosas, as boas práticas. A partir daí, analisaríamos essas boas práticas, para que elas sirvam de parâmetro para as demais Unidades da Federação e possam mostrar que é possível organizar o Estado, de modo que as políticas públicas possam fazer o enfrentamento dos desafios históricos a serem superados neste Brasil, entre eles as diversas formas de discriminação, de invisibilização, de apagamento no próprio orçamento, de apagamento nas políticas públicas, os diversos apagamentos que nós vimos bastante recrudescidos no Governo passado. É importante fazer essa discussão sobre boas práticas. Nós vamos sugerir uma nova audiência para discutir esse tema.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1250,
+    "total_tokens": 2106,
+    "completion_tokens": 856,
+    "estimated_cost": 0.0011164600000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RByJ5wqVXAC6aBqAjgtUqpFl",
+  "object": "chat.completion",
+  "created": 1790613956,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_proposition\": \"YES\",\n  \"target_proposition_a\": \"Regulamentação dos mercados digitais no Brasil\",\n  \"target_proposition_b\": \"Mudanças no projeto de regulamentação dos mercados digitos (PL 2768/22)\",\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2619,
+    "total_tokens": 2724,
+    "completion_tokens": 105,
+    "estimated_cost": 0.00029549999999999997,
+    "prompt_tokens_details": null
+  }
+}

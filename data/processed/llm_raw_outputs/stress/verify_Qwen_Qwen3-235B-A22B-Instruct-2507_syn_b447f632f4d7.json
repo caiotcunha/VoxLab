@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3uE7S06E7bcXw8fPP4qxsOB",
+  "object": "chat.completion",
+  "created": 1790615115,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A operação foi cumprida, pois a fala reescrita expressa claramente posição contrária à divulgação das doenças cardíacas do envelhecimento. No entanto, há contradição interna, pois o apoio ao PL de conscientização e a menção aos pilares de atendimento ainda sugerem apoio à proposição original, o que fere a coerência. Partes do conteúdo foram alteradas além do necessário, afetando a preservação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1488,
+    "total_tokens": 1654,
+    "completion_tokens": 166,
+    "estimated_cost": 0.00022522000000000002,
+    "prompt_tokens_details": null
+  }
+}

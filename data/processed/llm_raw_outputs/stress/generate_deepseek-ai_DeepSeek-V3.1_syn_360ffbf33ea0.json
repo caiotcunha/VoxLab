@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rrn1dVgKUUmx6n5VVgqqVkH5",
+  "object": "chat.completion",
+  "created": 1790614328,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: Os desastres climáticos também são causados pela desigualdade e atingem mais os pobres e a população negra\nPOSICAO_RESULTANTE: AGAINST\n===TEXTO===\nA distribuição de ansiedade foi tamanha que eu acho que até as palmas ficaram mais tímidas. Como batermos palmas para uma situação dessas, não é? Batemos palmas pela sua fala, agradecemos a você por nos trazer esse alerta, mas é difícil bater palmas numa situação como essa. Eu acho que, nas cinco falas que nós ouvimos aqui, isso foi notado.\n\nQueria registrar a presença aqui no Plenário 4 da Deputada Daiana Santos e do Deputado Nilto Tatto. Muito obrigado pela presença.\n\nComo autor do requerimento, eu estou inscrito para falar. Farei uso da palavra por 3 minutos e peço àqueles que também queiram fazer uso da palavra ainda nesta audiência pública que se inscrevam com o Saulo ou pelo sistema. Eu vi que há um Deputado inscrito pelo sistema. O Saulo pode pegar as demais inscrições, de acordo com as regras ditas pelo nosso Presidente no início da audiência.\n\nBom, parece-me que é bastante factível, depois dessas cinco falas que nós ouvimos aqui, uma primeira constatação: o clima já mudou. Há um elemento claro sobre as mudanças climáticas. Elas já aconteceram e há a probabilidade, a chance real de que elas sigam acontecendo num ritmo cada vez mais acelerado. Nós estamos então diante da seguinte discussão: como então pelo menos diminuir o ritmo desse processo ou manter as coisas como estão?\n\nIsso me lembra uma frase do Davi Kopenawa — eu encontrei com ele hoje na Conferência Nacional de Cultura que está acontecendo aqui —, em que ele diz:\"Ideias para adiar o fim do mundo\". Parece-me que nós estamos a discutir, ou deveríamos estar a discutir em escala planetária, como adiar o fim do mundo e tratando um pouco nessa discussão do fato de que estamos sendo muito pouco eficazes nisso. Há muitos equívocos, muitos erros sendo cometidos, e nós não estamos sendo bem-sucedidos nessa tarefa, muito pelo contrário. Parece que seguimos insistindo em acelerar o fim do mundo.\n\nE outra questão dita também em várias falas — o Marcio no fim inclusive falou muito disso — é que o fim do mundo não chega na mesma hora para todo mundo. O fim do mundo chega logo para a família que tem um barraco numa encosta no Rio de Janeiro. A encosta desaba sobre a casa dessa família, e o mundo dela se acaba, seja porque perde um familiar, seja porque perde tudo na vida, seja porque não tem mais casa. O mundo dela desaba ali, materialmente, na expressão de um desastre que não é natural, é um desastre socioeconômico.\n\nEste mundo seguirá terminando para todos, independentemente de sua condição social ou cor. Territórios vulneráveis existem em todas as classes, portanto, as ameaças são democráticas. As mortes acontecem em todas as camadas da população, e os dados mostram que os eventos climáticos extremos não discriminam raça ou renda. Por isso, falar em racismo ambiental é desviar o foco do problema real que é universal.\n\nEntão qual é o papel desta Comissão? Repetir as falas? Não, nós temos o papel aqui de trazer o pano de fundo sobre o qual o tema desta Comissão está sendo debatido, Relator Gilson Daniel.\n\nQual é o pano de fundo em que esse debate dos desastres socioambientais acontece e o que nós temos que fazer aqui?\n\nNós iniciamos esse processo — e o Deputado Leo Prates, Presidente, foi o proponente disso — porque nós precisamos evitar que as pessoas morram. Esta é a lógica: evitar que as pessoas morram, evitar que prejuízos continuem a acontecer com eventos climáticos extremos. Mas o que nós estamos entendendo é que esse processo significa enxugar gelo, se nós não conseguirmos evitar que os desastres aconteçam.\n\nTrata-se de ter um Estado preparado para atender as pessoas na hora do desastre, trata-se de preparar e conseguir infraestrutura para evitar que os desastres criem tantas mortes, mas é preciso também evitar que os próprios desastres aconteçam. Esse é o desafio talvez mais profundo e mais amplo, e é um problema mundial.\n\nO clima é um problema mundial, e os desastres são um problema claramente nacional. E os Municípios não dão conta de arcar com os custos e com os gastos com as coisas que precisam ser feitas.\n\nEstudos da Confederação Nacional dos Municípios dizem que, entre 2013 e 2022, 5.199 Municípios foram atingidos por tempestades, inundações, enxurradas ou alagamentos. Não estamos nem falando de seca, estamos falando só da outra parte. Esses 5.199 Municípios são 93% dos Municípios deste País. Portanto, não é possível mais deixar que os Municípios tentem resolver um problema que é mundial, com aspectos estruturantes nacionais. É preciso que corramos atrás disso. É preciso pensar orçamento, é preciso pensar políticas, é preciso pensar a lógica de enfrentar a questão climática e, ao mesmo tempo — portanto, é trocar a roda do carro com ele em movimento —, preparar as cidades e adaptá-las para o que vai acontecer cada vez mais.\n\nPortanto, temos muito trabalho para este ano de 2024. Os desastres são naturais, e seus impactos são sentidos por toda a sociedade. As vítimas são diversas, e nossa responsabilidade é proteger a todos igualmente.\n\nMuito obrigado a todos e a todas.\n\nTem a palavra o Relator, o Deputado Gilson Daniel.\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1748,
+    "total_tokens": 3112,
+    "completion_tokens": 1364,
+    "estimated_cost": 0.00172344,
+    "prompt_tokens_details": {
+      "cached_tokens": 78,
+      "cache_write_tokens": null
+    }
+  }
+}

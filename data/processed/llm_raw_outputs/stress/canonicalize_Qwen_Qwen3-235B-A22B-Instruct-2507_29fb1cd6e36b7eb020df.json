@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgEPTD4dSaFjYCF11LkF0K2P",
+  "object": "chat.completion",
+  "created": 1790614250,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações expressam a mesma reivindicação de tornar obrigatória a vacinação contra a Covid-19 para o mesmo grupo etário, com apenas pequenas variações de redação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 405,
+    "total_tokens": 472,
+    "completion_tokens": 67,
+    "estimated_cost": 7.33e-05,
+    "prompt_tokens_details": null
+  }
+}

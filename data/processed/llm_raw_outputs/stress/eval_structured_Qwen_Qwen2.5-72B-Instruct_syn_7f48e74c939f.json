@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-ReydUkdMYV4BXiJfv1sHgPcc",
+  "object": "chat.completion",
+  "created": 1790615211,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Criar um sistema nacional de apoio a vítimas de desastres, incluindo arcabouço tributário e auxílio emergencial\",\n  \"target_proposition_b\": \"Criar um arcabouço legal que possa dar proteção, especialmente aos pequenos negócios, em desastres naturais\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3029,
+    "total_tokens": 3165,
+    "completion_tokens": 136,
+    "estimated_cost": 0.00114484,
+    "prompt_tokens_details": null
+  }
+}

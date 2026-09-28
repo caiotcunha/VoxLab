@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RRu4GKo4eh8HDhXWLKGM2VFh",
+  "object": "chat.completion",
+  "created": 1790614296,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da adoção da mesma convenção relativa aos direitos dos idosos, com foco na sua efetivação no ordenamento jurídico, ainda que com diferenças de redação e detalhe normativo.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 406,
+    "total_tokens": 479,
+    "completion_tokens": 73,
+    "estimated_cost": 7.669e-05,
+    "prompt_tokens_details": null
+  }
+}

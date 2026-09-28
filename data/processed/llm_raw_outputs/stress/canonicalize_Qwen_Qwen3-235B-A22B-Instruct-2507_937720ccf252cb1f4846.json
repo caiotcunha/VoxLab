@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RfE1PGW51vTj0IqEtyuitK6I",
+  "object": "chat.completion",
+  "created": 1790614046,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações propõem a criação de uma subcomissão para monitorar o cumprimento de leis e políticas públicas relacionadas ao autismo, com mesma intenção e polaridade.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 416,
+    "total_tokens": 482,
+    "completion_tokens": 66,
+    "estimated_cost": 7.374000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RCwiqlEUNgiiqVbAh0xyEKEa",
+  "object": "chat.completion",
+  "created": 1790614685,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "PROPOSICAO_RESULTANTE: O Fundo de Calamidade Pública deve ter orçamento para prevenir e responder a desastres\nPOSICAO_RESULTANTE: FAVOR\n===TEXTO===\nNosso agradecimento ao Sosthenes Macêdo, Diretor-Geral da Defesa Civil de Salvador e também Presidente do Fórum Nacional dos Secretários e Dirigentes da Defesa Civil das Capitais e Grandes Cidades.\n\nSua fala muito forte mostra a necessidade de investimentos nos Estados e, de forma especial, nos Municípios, porque a vida acontece nos Municípios. Então, é lá que as pessoas precisam dessa atenção do poder público.\n\nNós também seguimos na pauta municipalista. Sabemos que muitos Municípios têm deficiência técnica, não têm equipamentos. A Defesa Civil, às vezes, atua com apenas um profissional. Uma das pautas de que nós falamos sempre é a necessidade de haver uma carreira para a Defesa Civil, principalmente nos Municípios. Muda o Prefeito, muda o coordenador de Defesa Civil. Às vezes, o coordenador de Defesa Civil é o motorista do Prefeito, que está lá só para dizer que há alguém no cargo e atua, às vezes, naquela correria, no período de crise.\n\nEu agradeço muito ao Sosthenes pela sua apresentação.\n\nEle falou de recursos. Desde que eu assumi o meu mandato, tenho feito dessa pauta uma prioridade. Eu trabalhei fortemente pelo financiamento, para não deixar que o Fundo de Calamidade Pública, que foi criado em 1969, continue sem ser abastecido de recursos. Em 1969, o legislador já havia percebido a necessidade de recursos para prevenção, para pronta resposta. É inaceitável que não haja um recurso que não seja por medida provisória. Nós só temos esses recursos — é o caso do Paraná, de Santa Catarina, do Rio, de São Paulo, do meu Espírito Santo — no período de crise. Isso é feito por medida provisória. Não podemos continuar sem previsão orçamentária.\n\nO Governo Federal gastou em torno de 2 bilhões de reais por ano, em média, em pronta resposta. No orçamento, há 250 milhões de reais. Não se pode viver o ano todo com medida provisória. Isso é absurdo. Já se sabe que vai gastar no mínimo 2 bilhões de reais em pronta resposta. Para prevenção, no Orçamento do ano passado, havia 25 mil reais na rubrica orçamentária. Isso tem cabimento? Abriu-se a rubrica orçamentária e só havia o funcional programático para se dizer que existia o funcional, para não ter que fazer um crédito especial quando fosse colocar recurso lá, e não colocou recurso.\n\nEntão, espero que esse debate...\n===FIM===",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 1077,
+    "total_tokens": 1736,
+    "completion_tokens": 659,
+    "estimated_cost": 0.0008860600000000001,
+    "prompt_tokens_details": {
+      "cached_tokens": 77,
+      "cache_write_tokens": null
+    }
+  }
+}

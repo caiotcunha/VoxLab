@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RzZAj98m87ZCwo9kjQ8X6zgL",
+  "object": "chat.completion",
+  "created": 1790614289,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A formulação X propõe proteção maior para consumidores idosos em seguros de vida, enquanto Y denuncia abusividade nos contratos; uma é propositiva e a outra crítica, sem equivalência direta na reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 397,
+    "total_tokens": 469,
+    "completion_tokens": 72,
+    "estimated_cost": 7.533e-05,
+    "prompt_tokens_details": null
+  }
+}

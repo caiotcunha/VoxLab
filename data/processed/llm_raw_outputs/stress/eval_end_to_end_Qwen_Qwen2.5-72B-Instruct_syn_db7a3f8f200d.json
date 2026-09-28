@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RexFMuwVY9q46vIfY5IWNSPi",
+  "object": "chat.completion",
+  "created": 1790615203,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator defende a criação de um arcabouço legal para proteger e auxiliar as vítimas de desastres, incluindo medidas de recuperação econômica e social. Na Manifestação B, o ator expressa preocupação com a participação do Ministério do Desenvolvimento Social, argumentando que isso pode criar dependência e ineficiência, preferindo soluções de mercado. As posições são opostas em relação ao papel do Estado na proteção e auxílio às vítimas de desastres.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2802,
+    "total_tokens": 2945,
+    "completion_tokens": 143,
+    "estimated_cost": 0.0010659200000000001,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwZqpOkmV8Eo8zG946sljRjd",
+  "object": "chat.completion",
+  "created": 1790614409,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"As formulações tratam de medidas distintas no enfrentamento à violência contra mulheres, uma focada em estruturas de atendimento e outra em políticas econômicas, sem sobreposição direta de reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 428,
+    "total_tokens": 494,
+    "completion_tokens": 66,
+    "estimated_cost": 7.482e-05,
+    "prompt_tokens_details": null
+  }
+}

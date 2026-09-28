@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAZi6j5NaThgt4bcZKJ8Yco0",
+  "object": "chat.completion",
+  "created": 1790614376,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a implementação de ações contra o racismo direcionadas a crianças na primeira infância no âmbito dos serviços públicos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 388,
+    "total_tokens": 439,
+    "completion_tokens": 51,
+    "estimated_cost": 0.00010333000000000002,
+    "prompt_tokens_details": {
+      "cached_tokens": 351,
+      "cache_write_tokens": null
+    }
+  }
+}

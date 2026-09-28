@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rh6AQetc2vjfJ6n3Xq5zpZkP",
+  "object": "chat.completion",
+  "created": 1790614698,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```json\n{\n  \"relation\": \"STANCE_REVERSED\",\n  \"reasoning\": \"Na Manifestação A, o ator defende a ratificação da Convenção Interamericana sobre a Proteção dos Direitos Humanos dos Idosos, destacando sua importância. Na Manifestação B, o ator questiona a necessidade de ratificar a convenção, argumentando que as leis atuais já são suficientes e que a ratificação criaria burocracia desnecessária.\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 6854,
+    "total_tokens": 6963,
+    "completion_tokens": 109,
+    "estimated_cost": 0.00251104,
+    "prompt_tokens_details": null
+  }
+}

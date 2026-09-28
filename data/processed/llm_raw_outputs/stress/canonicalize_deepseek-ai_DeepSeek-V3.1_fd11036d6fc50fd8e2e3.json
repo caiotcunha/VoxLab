@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RK4MVfEEXGbHZrrED6DrMLpy",
+  "object": "chat.completion",
+  "created": 1790614207,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações defendem a necessidade de critérios para a adoção de combustíveis não fósseis, com a Formulação X fornecendo exemplos específicos que se enquadram na definição geral da Formulação Y.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 416,
+    "total_tokens": 487,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00012993,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

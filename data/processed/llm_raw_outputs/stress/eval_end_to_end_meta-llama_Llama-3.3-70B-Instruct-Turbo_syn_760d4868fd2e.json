@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RyCbEKNyUjuWAY6nFV6dR3Ft",
+  "object": "chat.completion",
+  "created": 1790613951,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a importância da regulamentação dos mercados digitais e a necessidade de um debate aprofundado sobre o tema, com o objetivo de promover a inovação, o crescimento econômico e a proteção dos direitos dos consumidores e empreendedores.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2351,
+    "total_tokens": 2437,
+    "completion_tokens": 86,
+    "estimated_cost": 0.00026262000000000003,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rt0cmp92jGdwYWMHw6mveGVd",
+  "object": "chat.completion",
+  "created": 1790614226,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de atualização de protocolos no SUS para melhorar o acompanhamento do edema macular, com foco complementar no caso do edema macular diabético, sem mudar a polaridade ou o objeto central da reivindicação.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 418,
+    "total_tokens": 500,
+    "completion_tokens": 82,
+    "estimated_cost": 8.272e-05,
+    "prompt_tokens_details": null
+  }
+}

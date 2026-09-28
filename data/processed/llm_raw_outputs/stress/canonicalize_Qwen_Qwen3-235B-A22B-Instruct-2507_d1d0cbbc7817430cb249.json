@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RZlMfjWYPpuYY3YipzrUW0P4",
+  "object": "chat.completion",
+  "created": 1790614242,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da necessidade de maior rigor com as concessionárias de energia, seja pelo cumprimento da lei, seja pela cobrança de obrigações antes da renovação de concessões, expressando a mesma reivindicação com foco na fiscalização e responsabilização.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 404,
+    "total_tokens": 490,
+    "completion_tokens": 86,
+    "estimated_cost": 8.366e-05,
+    "prompt_tokens_details": null
+  }
+}

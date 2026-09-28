@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RAy93WyTee0ejXkAOkyGOqvW",
+  "object": "chat.completion",
+  "created": 1790614255,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"Ambas as formulações tratam da criação de ações públicas voltadas à saúde das mulheres na menopausa, com foco similar e mesma direção política.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 400,
+    "total_tokens": 457,
+    "completion_tokens": 57,
+    "estimated_cost": 6.735e-05,
+    "prompt_tokens_details": null
+  }
+}

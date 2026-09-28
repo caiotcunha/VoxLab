@@ -1,0 +1,31 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RtClbyAvgSD6UwLI5bv4EIhH",
+  "object": "chat.completion",
+  "created": 1790614152,
+  "model": "deepseek-ai/DeepSeek-V3.1",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"EQUIVALENT\",\n  \"reasoning\": \"A Formulação Y é uma especificação detalhada da Formulação X, mantendo a mesma reivindicação central e polaridade.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 381,
+    "total_tokens": 429,
+    "completion_tokens": 48,
+    "estimated_cost": 9.933000000000001e-05,
+    "prompt_tokens_details": {
+      "cached_tokens": 346,
+      "cache_write_tokens": null
+    }
+  }
+}

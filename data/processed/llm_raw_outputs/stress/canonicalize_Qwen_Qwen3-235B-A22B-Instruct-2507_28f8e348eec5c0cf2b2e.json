@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R0OSJmt7rptMHJXjX8EIsYF8",
+  "object": "chat.completion",
+  "created": 1790614432,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira propõe um sistema nacional específico integrado à Defesa Civil, enquanto a segunda é uma afirmação genérica sobre proteção de vulneráveis em desastres, sem mencionar estrutura ou mecanismo concreto.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 403,
+    "total_tokens": 472,
+    "completion_tokens": 69,
+    "estimated_cost": 7.422e-05,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RjtbA7cEglKtXuYmrap1I2YM",
+  "object": "chat.completion",
+  "created": 1790614390,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira fala sobre a necessidade geral de investimento em prevenção, enquanto a segunda menciona especificamente o orçamento de um fundo específico para prevenir e responder a desastres.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 391,
+    "total_tokens": 452,
+    "completion_tokens": 61,
+    "estimated_cost": 6.874e-05,
+    "prompt_tokens_details": null
+  }
+}

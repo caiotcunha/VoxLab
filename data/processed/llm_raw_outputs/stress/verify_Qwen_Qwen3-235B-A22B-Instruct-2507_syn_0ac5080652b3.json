@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RgYpUlsWo5agxqTC7EXdcIoB",
+  "object": "chat.completion",
+  "created": 1790614115,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"NO\",\n  \"rewritten_stance_on_original_target\": \"FAVOR\",\n  \"reasoning\": \"A reescrita inverte a posição ao apoiar o fim do saque-aniversário, mas contradiz argumentos anteriores que o defendem, gerando incoerência interna e tornando a fala pouco natural; além disso, altera indevidamente o conteúdo original ao manter justificativas contrárias à nova posição.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3419,
+    "total_tokens": 3556,
+    "completion_tokens": 137,
+    "estimated_cost": 0.00038306,
+    "prompt_tokens_details": null
+  }
+}

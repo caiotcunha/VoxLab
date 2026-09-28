@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RHOn7hAITXK378ozysbmeGwr",
+  "object": "chat.completion",
+  "created": 1790613951,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "```\n{\n  \"stance_determinable_a\": \"YES\",\n  \"stance_determinable_b\": \"YES\",\n  \"target_proposition_a\": \"Regulamentação dos mercados digitais no Brasil\",\n  \"target_proposition_b\": \"Regulamentação dos mercados digitais no Brasil\",\n  \"same_proposition\": \"YES\",\n  \"stance_a\": \"FAVOR\",\n  \"stance_b\": \"FAVOR\"\n}\n```",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2620,
+    "total_tokens": 2717,
+    "completion_tokens": 97,
+    "estimated_cost": 0.00029304,
+    "prompt_tokens_details": null
+  }
+}

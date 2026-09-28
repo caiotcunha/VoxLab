@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RQNkDukkMi10sR20Ik0NoDqN",
+  "object": "chat.completion",
+  "created": 1790614602,
+  "model": "meta-llama/Llama-3.3-70B-Instruct-Turbo",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"STANCE_MAINTAINED\",\n  \"reasoning\": \"Ambas as manifestações defendem a vacinação contra a Covid-19 e criticam o movimento antivacina, demonstrando uma posição favorável à vacinação e contra a disseminação de informações falsas sobre vacinas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 3100,
+    "total_tokens": 3170,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00033240000000000006,
+    "prompt_tokens_details": null
+  }
+}

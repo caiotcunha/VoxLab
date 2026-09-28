@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R8BgBaVkQJwi8x3lFnDAHog0",
+  "object": "chat.completion",
+  "created": 1790614312,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"relation\": \"DIFFERENT\",\n  \"reasoning\": \"A primeira propõe a aprovação de um projeto para instituir uma semana de conscientização sobre cardiopatia isquêmica, enquanto a segunda é uma recomendação genérica sobre divulgação de doenças cardíacas relacionadas ao envelhecimento, sem menção a instrumento legal ou escopo específico.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 424,
+    "total_tokens": 512,
+    "completion_tokens": 88,
+    "estimated_cost": 8.656000000000001e-05,
+    "prompt_tokens_details": null
+  }
+}

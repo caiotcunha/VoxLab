@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RpmumKGQlNZoMpYy1PEyOcX3",
+  "object": "chat.completion",
+  "created": 1790613981,
+  "model": "Qwen/Qwen3-235B-A22B-Instruct-2507",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"operation_achieved\": \"YES\",\n  \"other_content_preserved\": \"NO\",\n  \"internally_consistent\": \"NO\",\n  \"natural\": \"YES\",\n  \"rewritten_stance_on_original_target\": \"AGAINST\",\n  \"reasoning\": \"A fala reescrita expressa claramente posição AGAINST a alocação de recursos específicos para prevenção, mas mantém menções à importância da prevenção e a aprovação de projetos nesse sentido, gerando contradição interna. Além disso, acrescenta críticas à alocação de mais recursos que não estavam na fala original, alterando conteúdo adicional.\"\n}",
+        "reasoning_content": "",
+        "name": null,
+        "tool_calls": []
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 2455,
+    "total_tokens": 2604,
+    "completion_tokens": 149,
+    "estimated_cost": 0.0003029,
+    "prompt_tokens_details": null
+  }
+}
