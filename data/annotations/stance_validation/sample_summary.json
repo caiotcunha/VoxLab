@@ -1,0 +1,23 @@
+{
+  "n_items": 100,
+  "max_chars": 12000,
+  "candidates": 617,
+  "excluded_long_speech_share": 0.3824,
+  "by_camp_period": {
+    "LEFT|BOLSONARO": 4,
+    "LEFT|LULA": 14,
+    "RIGHT|BOLSONARO": 3,
+    "RIGHT|LULA": 15,
+    "CENTRAO|BOLSONARO": 6,
+    "CENTRAO|LULA": 16,
+    "OTHER_PARTY|BOLSONARO": 2,
+    "OTHER_PARTY|LULA": 6,
+    "FEDERAL_EXECUTIVE|BOLSONARO": 3,
+    "FEDERAL_EXECUTIVE|LULA": 9,
+    "CIVIL_SOCIETY_OR_OTHER|BOLSONARO": 6,
+    "CIVIL_SOCIETY_OR_OTHER|LULA": 16
+  },
+  "model_disagreement_items": 54,
+  "total_speech_chars": 764936,
+  "estimated_hours_per_annotator": 11.0
+}

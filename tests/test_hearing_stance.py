@@ -6,6 +6,7 @@ from unittest import mock
 
 from voxlab import hearing_stance
 from voxlab.hearing_stance import (
+    mask_identity,
     MAX_SPEECH_CHARS,
     Request,
     parse_propositions,
@@ -108,6 +109,23 @@ class PlanAndTablesTest(unittest.TestCase):
                              [("7", "2", "P1", "FAVOR"), ("7", "2", "P2", "")])
             self.assertTrue(all(r["government_stance"] == "SUPPORT" and r["label_source"] == "MODEL_PREDICTION"
                                 for r in rows))
+
+
+class MaskTest(unittest.TestCase):
+    def test_masks_people_parties_and_group_labels(self):
+        text = ("Como disse a Deputada Erika Kokay, o PT e o Partido Novo discordam; "
+                "os bolsonaristas e o PSOL também. Falo pelo PL-SP e pela bancada do PL.")
+        masked = mask_identity(text, ["Erika Kokay", "ERIKA JUCÁ KOKAY"])
+        self.assertNotIn("Kokay", masked)
+        for cue in ("PT", "Partido Novo", "bolsonaristas", "PSOL", "PL-SP", "bancada do PL"):
+            self.assertNotIn(cue, masked)
+        self.assertIn("[PESSOA]", masked)
+        self.assertIn("[GRUPO POLÍTICO]", masked)
+
+    def test_keeps_bills_common_words_and_government_references(self):
+        text = ("O PL 2630 e o PL das Fake News; o PL garante direitos. Podemos avançar no Ministério da "
+                "Cidadania. O governo Lula e o governo Bolsonaro; nosso governo fez isso.")
+        self.assertEqual(mask_identity(text, []), text)
 
 
 if __name__ == "__main__":

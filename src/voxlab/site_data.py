@@ -40,6 +40,8 @@ def compact_stances(rows: list[dict]) -> dict[str, dict]:
     """{"h_a": {"qwen|fala": {"g", "pg", "p": {P1: code}, "m"}}}."""
     result: dict[str, dict] = collections.defaultdict(dict)
     for row in rows:
+        if row["condition"] not in CONDITION_KEYS:
+            continue  # robustness-only conditions (e.g. speech_masked) are not shown on the site
         run = f"{MODEL_KEYS[row['model']]}|{CONDITION_KEYS[row['condition']]}"
         cell = result[f"{row['hearing_id']}_{row['actor_index']}"].setdefault(
             run, {"g": row["government_stance"], "pg": row["previous_government_stance"], "p": {},

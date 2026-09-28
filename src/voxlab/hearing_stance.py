@@ -31,6 +31,7 @@ import collections
 import concurrent.futures
 import hashlib
 import json
+import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
@@ -46,11 +47,32 @@ PROPOSITION_MODEL = MODELS[0]
 # previous round (docs/automatic_experiments.md §3). Used only for estimates.
 PRICES = {MODELS[0]: (0.36, 0.40), MODELS[1]: (0.10, 0.32)}
 CONDITIONS = ("speech", "lds_summary")
+# Robustness condition (plan item 3): literal speech with speaker-identifying cues masked.
+MASKED = "speech_masked"
+ALL_CONDITIONS = (MASKED, *CONDITIONS)  # longest prefix first when parsing file names
 PRESIDENTS = {"BOLSONARO": "Jair Bolsonaro", "LULA": "Luiz Inácio Lula da Silva"}
 SPEECH_LABELS = {
     "speech": "Manifestação literal do participante (seus turnos de fala na transcrição, em ordem)",
     "lds_summary": "Resumo jornalístico das opiniões do participante (não é fala literal; foi redigido a partir da notícia)",
+    MASKED: ("Manifestação literal do participante (seus turnos de fala na transcrição, em ordem), com nomes de "
+             "pessoas e de partidos substituídos por marcadores"),
 }
+PARTY_MENTION_RE = re.compile(
+    # Case-sensitive on purpose. Party names that are also common words (Podemos, Cidadania,
+    # Solidariedade, Progressistas) only count in capitals or after "Partido"; "PL" followed by a
+    # number or by "da/das/do/de" is a bill ("projeto de lei"), not the party.
+    r"\b(?:Partido (?:dos Trabalhadores|Liberal|Novo|Socialismo e Liberdade|Comunista do Brasil|Social Democrático|"
+    r"Socialista Brasileiro|Democrático Trabalhista|Podemos|Cidadania|Solidariedade|Progressistas)|"
+    r"Movimento Democrático Brasileiro|União Brasil|Republicanos|Rede Sustentabilidade|"
+    r"PODEMOS|CIDADANIA|SOLIDARIEDADE|PROGRESSISTAS|REPUBLICANOS|"
+    r"PT|PSOL|PCdoB|PC do B|PSDB|MDB|PSD|PSB|PDT|PP|NOVO)\b"
+    # "PL" alone usually means the bill under debate, so the party is masked only in unambiguous
+    # contexts: "PL-SP", "PL/SP", "bancada/líder/partido do PL". Residual ambiguous uses stay.
+    r"|\bPL(?=\s*[-/]\s*[A-Z]{2}\b)|(?<=\bbancada do )PL\b|(?<=\bBancada do )PL\b|(?<=\bLíder do )PL\b"
+    r"|(?<=\blíder do )PL\b|(?<=\bpartido )PL\b|(?<=\bPartido )PL\b"
+)
+GROUP_LABEL_RE = re.compile(r"\b(?:petistas?|bolsonaristas?|lulistas?|petismo|bolsonarismo|lulismo)\b", re.I)
+
 TEMPERATURE = 0.0
 SEED = 20260926
 MAX_SPEECH_CHARS = 60000
@@ -92,6 +114,27 @@ def sha256_text(text: str) -> str:
 def raw_path(root: Path, request: Request) -> Path:
     name = f"{request.task}_{request.condition}_{request.model.replace('/', '_')}_{request.key}.json"
     return root / RAW_DIR / name
+
+
+def mask_identity(text: str, names: list[str]) -> str:
+    """Mask cues to the speaker's identity and party, keeping stance content.
+
+    Replaced: participants' names (full name and the last two name tokens), party
+    names/acronyms ("PL" followed by a bill number is kept: it is "projeto de lei"),
+    and group labels (petista, bolsonarista...). Kept on purpose: presidents' names,
+    "nosso governo", "governo passado" — they are the stance target itself, and the
+    model needs them to tell the current government from the previous one.
+    """
+    variants = set()
+    for name in names:
+        tokens = name.split()
+        variants.add(name)
+        if len(tokens) >= 3:
+            variants.add(" ".join(tokens[-2:]))
+    for variant in sorted((v for v in variants if len(v) >= 6), key=len, reverse=True):
+        text = re.sub(r"\b" + re.escape(variant) + r"\b", "[PESSOA]", text, flags=re.I)
+    text = PARTY_MENTION_RE.sub("[PARTIDO]", text)
+    return GROUP_LABEL_RE.sub("[GRUPO POLÍTICO]", text)
 
 
 def truncate(text: str, limit: int) -> tuple[str, bool]:
@@ -209,9 +252,12 @@ def load_propositions(root: Path, raw: list[dict], rows: list[dict]) -> dict[str
 
 
 def stance_requests(root: Path, raw: list[dict], rows: list[dict], speeches: dict,
-                    propositions: dict[str, dict] | None) -> list[Request]:
+                    propositions: dict[str, dict] | None, conditions: tuple[str, ...] = CONDITIONS) -> list[Request]:
     """With propositions=None, render placeholders so the plan can be costed before stage 1."""
     topics = {h: v["topic"] for h, v in hearing_inputs(raw).items()}
+    names_by_hearing = collections.defaultdict(list)
+    for row in rows:
+        names_by_hearing[row["hearing_id"]].extend(n for n in (row["actor_name"], row["matched_speaker"]) if n)
     placeholder = [{"id": f"P{i}", "text": "x" * 110} for i in (1, 2, 3)]
     requests = []
     for row in rows:
@@ -223,8 +269,11 @@ def stance_requests(root: Path, raw: list[dict], rows: list[dict], speeches: dic
             if not parsed or parsed["malformed_output"]:
                 continue
             props = parsed["propositions"]
-        texts = {"speech": speeches[(hearing_id, str(row["actor_index"]))], "lds_summary": row["lds_opinions"]}
-        for condition in CONDITIONS:
+        speech = speeches[(hearing_id, str(row["actor_index"]))]
+        texts = {"speech": speech, "lds_summary": row["lds_opinions"]}
+        if MASKED in conditions:
+            texts[MASKED] = mask_identity(speech, names_by_hearing[hearing_id]) if speech.strip() else ""
+        for condition in conditions:
             if not texts[condition].strip():
                 continue
             prompt, cut = render_stance(root, row, topics[hearing_id], props, texts[condition], condition)
@@ -296,7 +345,7 @@ def usage_summary(root: Path) -> dict:
                                               "estimated_cost_usd": 0.0})
     for path in sorted((root / RAW_DIR).glob("*.json")):
         task, rest = path.name.split("_", 1)
-        condition = next((c for c in (*CONDITIONS, "article") if rest.startswith(c + "_")), "")
+        condition = next((c for c in (*ALL_CONDITIONS, "article") if rest.startswith(c + "_")), "")
         raw = json.loads(path.read_text(encoding="utf-8"))
         usage = raw.get("usage", {})
         group = groups[f"{task}|{condition}|{raw.get('model', '')}"]
@@ -311,7 +360,8 @@ def usage_summary(root: Path) -> dict:
             "source": "usage.estimated_cost reported by DeepInfra in each raw response"}
 
 
-def build_manifest(root: Path, stage: str, requests: list[Request]) -> dict:
+def build_manifest(root: Path, stage: str, requests: list[Request],
+                   conditions: tuple[str, ...] = CONDITIONS) -> dict:
     return {
         "experiment_version": EXPERIMENT_VERSION,
         "stage": stage,
@@ -325,7 +375,7 @@ def build_manifest(root: Path, stage: str, requests: list[Request]) -> dict:
         "prompt_stance_sha256": sha256_text((root / STANCE_PROMPT).read_text(encoding="utf-8")),
         "max_speech_chars": MAX_SPEECH_CHARS,
         "max_article_chars": MAX_ARTICLE_CHARS,
-        "conditions": list(CONDITIONS),
+        "conditions": list(conditions),
         "n_requests": len(requests),
         "request_prompts_sha256": sha256_text("\n".join(sha256_text(r.prompt) for r in requests)),
         "git_commit": _git_commit(root),
@@ -371,6 +421,8 @@ def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--stage", choices=("propositions", "stance"), required=True)
     parser.add_argument("--execute", action="store_true", help="send uncached requests (costs money)")
+    parser.add_argument("--conditions", nargs="+", choices=ALL_CONDITIONS, default=list(CONDITIONS),
+                        help="stance inputs to request (default: speech lds_summary)")
     args = parser.parse_args()
     root = Path(__file__).resolve().parents[2]
     raw = read_jsonl(root / "PublicHearingBR_LDS.jsonl")
@@ -383,7 +435,7 @@ def main() -> None:
         propositions = load_propositions(root, raw, rows)
         if not propositions:
             print("Stage 'propositions' not in cache: costing stance calls with placeholder propositions.")
-        requests = stance_requests(root, raw, rows, speeches, propositions or None)
+        requests = stance_requests(root, raw, rows, speeches, propositions or None, tuple(args.conditions))
 
     print(json.dumps(plan_summary(root, requests), ensure_ascii=False, indent=2))
     if not args.execute:
@@ -392,16 +444,19 @@ def main() -> None:
     if args.stage == "stance" and not load_propositions(root, raw, rows):
         raise SystemExit("Run and parse stage 'propositions' first.")
 
-    (out / f"party_manifest_{args.stage}.json").write_text(
-        json.dumps(build_manifest(root, args.stage, requests), ensure_ascii=False, indent=2) + "\n",
-        encoding="utf-8")
+    suffix = "" if args.stage == "propositions" or tuple(args.conditions) == CONDITIONS else "_" + "_".join(args.conditions)
+    (out / f"party_manifest_{args.stage}{suffix}.json").write_text(
+        json.dumps(build_manifest(root, args.stage, requests, tuple(args.conditions)), ensure_ascii=False,
+                   indent=2) + "\n", encoding="utf-8")
     errors = execute(root, requests)
     if errors:
         print(f"{len(errors)} calls failed and stay uncached; re-run to retry:\n" + "\n".join(errors[:20]))
     propositions = load_propositions(root, raw, rows)
     write_csv(out / "party_propositions.csv", proposition_rows(propositions), PROPOSITION_FIELDS)
     if args.stage == "stance":
-        write_csv(out / "party_stances.csv", stance_rows(root, requests, propositions), STANCE_FIELDS)
+        # Rebuild the table from every cached condition, not only the ones just requested.
+        cached = stance_requests(root, raw, rows, speeches, propositions, ALL_CONDITIONS)
+        write_csv(out / "party_stances.csv", stance_rows(root, cached, propositions), STANCE_FIELDS)
 
 
 if __name__ == "__main__":

@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validação de postura: anotador __ANNOTATOR__</title>
+<style>
+  :root { color-scheme: light; --page:#f9f9f7; --surface:#fcfcfb; --ink:#0b0b0b; --ink-2:#52514e; --muted:#898781;
+    --grid:#e1e0d9; --border:rgba(11,11,11,.12); --accent:#2a78d6; --done:#0ca30c; }
+  @media (prefers-color-scheme: dark) { :root:where(:not([data-theme="light"])) { color-scheme: dark; --page:#0d0d0d;
+    --surface:#1a1a19; --ink:#fff; --ink-2:#c3c2b7; --muted:#898781; --grid:#2c2c2a; --border:rgba(255,255,255,.12);
+    --accent:#3987e5; } }
+  :root[data-theme="dark"] { color-scheme: dark; --page:#0d0d0d; --surface:#1a1a19; --ink:#fff; --ink-2:#c3c2b7;
+    --muted:#898781; --grid:#2c2c2a; --border:rgba(255,255,255,.12); --accent:#3987e5; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--page); color:var(--ink); font:15px/1.55 system-ui,-apple-system,"Segoe UI",sans-serif; }
+  .wrap { max-width: 1200px; margin: 0 auto; padding: 12px 16px 40px; }
+  .bar { display:flex; flex-wrap:wrap; gap:8px; align-items:center; margin-bottom:10px; }
+  .bar .grow { flex:1; }
+  progress { width: 180px; }
+  button { font:inherit; padding:6px 12px; border:1px solid var(--border); border-radius:8px; background:var(--surface); color:var(--ink); cursor:pointer; }
+  button.primary { background:var(--ink); color:var(--page); }
+  .layout { display:grid; gap:16px; grid-template-columns: minmax(0,1.3fr) minmax(0,1fr); }
+  @media (max-width: 900px) { .layout { grid-template-columns: minmax(0,1fr); } }
+  .card { background:var(--surface); border:1px solid var(--border); border-radius:10px; padding:14px; min-width:0; }
+  .meta { color:var(--ink-2); font-size:13px; }
+  .speech { white-space:pre-wrap; max-height:70vh; overflow-y:auto; font-size:14px; }
+  fieldset { border:0; border-top:1px solid var(--grid); margin:0; padding:10px 0; }
+  legend { font-weight:600; padding:0; }
+  .opts { display:flex; flex-wrap:wrap; gap:6px; margin-top:4px; }
+  .opts label { border:1px solid var(--border); border-radius:999px; padding:3px 10px; font-size:13px; cursor:pointer; }
+  .opts input { margin-right:4px; }
+  .opts label:has(input:checked) { border-color:var(--accent); box-shadow: inset 0 0 0 1px var(--accent); }
+  .opts.disabled { opacity:.35; pointer-events:none; }
+  .prop { font-size:13px; color:var(--ink-2); margin:2px 0 4px; }
+  textarea { width:100%; min-height:60px; font:inherit; background:var(--page); color:var(--ink); border:1px solid var(--border); border-radius:8px; padding:6px; }
+  details.guide { margin-bottom:10px; }
+  details.guide summary { cursor:pointer; font-weight:600; }
+  .ok { color: var(--done); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="bar">
+    <strong>Anotador __ANNOTATOR__</strong>
+    <span id="pos" class="meta"></span>
+    <progress id="prog" max="1" value="0"></progress>
+    <span class="grow"></span>
+    <button id="prev">← Anterior</button>
+    <button id="next">Próximo →</button>
+    <button id="todo">Próximo incompleto</button>
+    <button id="export" class="primary">Exportar CSV</button>
+  </div>
+  <details class="guide"><summary>Instruções (leia antes de começar)</summary>
+    <p>Você vê a fala de <b>um</b> participante de uma audiência pública, sem nome, partido ou cargo. Não tente adivinhar quem é; julgue só pelo texto. Não converse com o outro anotador sobre os itens.</p>
+    <p><b>Parte 1 — Proposições.</b> Para cada proposição: <i>determinável</i> = YES se a fala tem posição suficientemente clara sobre <b>esta</b> proposição; NO se não se posiciona (não fala dela, só descreve fatos, só pergunta); UNCERTAIN na dúvida. Se YES, <i>postura</i>: FAVOR, AGAINST ou UNCERTAIN (direção pouco clara). Não existe "neutro".</p>
+    <p><b>Parte 2 — Governo federal vigente</b> (o do presidente indicado; Presidência, ministérios, ações e políticas): SUPPORT (elogia/defende), CRITICIZE (critica/cobra/se opõe), MIXED (apoio e crítica explícitos sem direção predominante), NEUTRAL (menciona só descritivamente), NOT_ADDRESSED (não se refere). <b>Governo anterior</b>: mesma escala para governos federais anteriores.</p>
+    <p>Regras: discurso reportado e citação sem endosso não são posição do falante. Pedido de recursos/providências sem avaliação = NEUTRAL. Críticas ao Congresso, Judiciário, estados ou municípios não contam como posição sobre o governo federal. Ironia só conta se inequívoca.</p>
+    <p>O progresso fica salvo neste navegador. Ao terminar (ou para fazer backup), clique em <b>Exportar CSV</b> e envie o arquivo.</p>
+  </details>
+  <div class="layout">
+    <div class="card">
+      <div class="meta" id="head"></div>
+      <h3 id="topic" style="margin:4px 0 8px"></h3>
+      <div class="meta">__SPEECH_LABEL__:</div>
+      <div class="speech" id="speech"></div>
+    </div>
+    <form class="card" id="form" autocomplete="off"></form>
+  </div>
+</div>
+<script>
+(function () {
+  "use strict";
+  const ITEMS = __ITEMS__;
+  const KEY = "voxlab-stance-validation-__ANNOTATOR__";
+  const GOV = ["SUPPORT", "CRITICIZE", "MIXED", "NEUTRAL", "NOT_ADDRESSED"];
+  const DET = ["YES", "NO", "UNCERTAIN"], ST = ["FAVOR", "AGAINST", "UNCERTAIN"], CONF = ["LOW", "MEDIUM", "HIGH"];
+  const FIELDS = ["government_stance", "previous_government_stance", "P1_determinable", "P1_stance", "P2_determinable",
+    "P2_stance", "P3_determinable", "P3_stance", "confidence", "notes"];
+  let answers = {};
+  try { answers = JSON.parse(localStorage.getItem(KEY) || "{}"); } catch (e) { answers = {}; }
+  let i = 0;
+  const $ = (id) => document.getElementById(id);
+  const esc = (s) => String(s ?? "").replace(/[&<>"]/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+  function save() { try { localStorage.setItem(KEY, JSON.stringify(answers)); } catch (e) { /* export still works */ } }
+  function complete(item) {
+    const a = answers[item.item_id] || {};
+    if (!a.government_stance || !a.previous_government_stance || !a.confidence) return false;
+    return ["P1", "P2", "P3"].every((p) => !item[p] || (a[p + "_determinable"] && (a[p + "_determinable"] !== "YES" || a[p + "_stance"])));
+  }
+  function group(name, codes, value, extraClass) {
+    return `<div class="opts ${extraClass || ""}">${codes.map((c) => `<label><input type="radio" name="${name}" value="${c}" ${value === c ? "checked" : ""}>${c}</label>`).join("")}</div>`;
+  }
+  function render() {
+    const item = ITEMS[i], a = answers[item.item_id] || {};
+    $("pos").textContent = `Item ${i + 1} de ${ITEMS.length} · ${item.item_id}` + (complete(item) ? " · ✓ completo" : "");
+    const done = ITEMS.filter(complete).length;
+    $("prog").max = ITEMS.length; $("prog").value = done; $("prog").title = `${done} completos`;
+    $("head").textContent = `Data da notícia: ${item.publication_date} · Governo vigente: Presidente ${item.president}`;
+    $("topic").textContent = item.topic;
+    $("speech").textContent = item.speech;
+    $("speech").scrollTop = 0;
+    let html = "";
+    for (const p of ["P1", "P2", "P3"]) {
+      if (!item[p]) continue;
+      const det = a[p + "_determinable"];
+      html += `<fieldset><legend>${p}</legend><div class="prop">${esc(item[p])}</div>
+        <div class="meta">Determinável?</div>${group(p + "_determinable", DET, det)}
+        <div class="meta">Postura</div>${group(p + "_stance", ST, a[p + "_stance"], det === "YES" ? "" : "disabled")}</fieldset>`;
+    }
+    html += `<fieldset><legend>Governo federal vigente</legend>${group("government_stance", GOV, a.government_stance)}</fieldset>
+      <fieldset><legend>Governos anteriores</legend>${group("previous_government_stance", GOV, a.previous_government_stance)}</fieldset>
+      <fieldset><legend>Confiança geral</legend>${group("confidence", CONF, a.confidence)}</fieldset>
+      <fieldset><legend>Notas (opcional)</legend><textarea name="notes">${esc(a.notes || "")}</textarea></fieldset>`;
+    $("form").innerHTML = html;
+  }
+  $("form").addEventListener("change", (e) => {
+    const item = ITEMS[i], a = (answers[item.item_id] = answers[item.item_id] || {});
+    a[e.target.name] = e.target.value;
+    if (e.target.name.endsWith("_determinable") && e.target.value !== "YES") a[e.target.name.replace("_determinable", "_stance")] = "";
+    save(); render();
+  });
+  $("form").addEventListener("input", (e) => {
+    if (e.target.name !== "notes") return;
+    const item = ITEMS[i]; (answers[item.item_id] = answers[item.item_id] || {}).notes = e.target.value; save();
+  });
+  $("prev").onclick = () => { i = Math.max(0, i - 1); render(); };
+  $("next").onclick = () => { i = Math.min(ITEMS.length - 1, i + 1); render(); };
+  $("todo").onclick = () => {
+    const k = ITEMS.findIndex((it, j) => j > i && !complete(it));
+    const any = k >= 0 ? k : ITEMS.findIndex((it) => !complete(it));
+    if (any >= 0) { i = any; render(); } else { alert("Todos os itens estão completos."); }
+  };
+  $("export").onclick = () => {
+    const cols = ["item_id", "P1", "P2", "P3", ...FIELDS];
+    const q = (v) => `"${String(v ?? "").replace(/"/g, '""')}"`;
+    const lines = [cols.join(",")].concat(ITEMS.map((it) => {
+      const a = answers[it.item_id] || {};
+      return cols.map((c) => q(c in a ? a[c] : (["item_id", "P1", "P2", "P3"].includes(c) ? it[c] : ""))).join(",");
+    }));
+    const blob = new Blob(["﻿" + lines.join("\n")], { type: "text/csv;charset=utf-8" });
+    const link = document.createElement("a");
+    link.href = URL.createObjectURL(blob);
+    link.download = "annotator___ANNOTATOR___filled.csv";
+    link.click();
+  };
+  document.addEventListener("keydown", (e) => {
+    if (e.target.tagName === "TEXTAREA") return;
+    if (e.key === "ArrowRight") $("next").click();
+    if (e.key === "ArrowLeft") $("prev").click();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
