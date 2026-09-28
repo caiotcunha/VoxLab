@@ -19,5 +19,10 @@
   },
   "model_disagreement_items": 54,
   "total_speech_chars": 764936,
-  "estimated_hours_per_annotator": 11.0
+  "double_annotated_items": 60,
+  "estimated_hours_without_highlighting": {
+    "annotator_1": 11.0,
+    "annotator_2": 6.5
+  },
+  "note": "highlighting is expected to roughly halve reading time; estimates above are the upper bound"
 }

@@ -42,6 +42,7 @@ SEED = 20260928
 ALLOCATION = {"LEFT": 0.18, "RIGHT": 0.18, "CENTRAO": 0.22, "OTHER_PARTY": 0.08,
               "FEDERAL_EXECUTIVE": 0.12, "CIVIL_SOCIETY_OR_OTHER": 0.22}
 MIN_BOLSONARO_SHARE = 0.25
+OVERLAP = 60  # items the second annotator also labels (drawn per camp); the first labels all
 GOV_CODES = ("SUPPORT", "CRITICIZE", "MIXED", "NEUTRAL", "NOT_ADDRESSED")
 DET_CODES = ("YES", "NO", "UNCERTAIN")
 STANCE_CODES = ("FAVOR", "AGAINST", "UNCERTAIN")
@@ -50,7 +51,7 @@ RESPONSE_FIELDS = (["government_stance", "previous_government_stance"]
                    + ["confidence", "notes"])
 PACKET_FIELDS = ["item_id", "publication_date", "president", "topic", "P1", "P2", "P3", "speech"] + RESPONSE_FIELDS
 REFERENCE_FIELDS = ["item_id", "hearing_id", "actor_index", "camp", "period", "stratum_size", "stratum_sample",
-                    "inclusion_weight", "models_disagree_on_government", "speech_chars"]
+                    "inclusion_weight", "models_disagree_on_government", "speech_chars", "double_annotated"]
 
 
 def item_id(hearing_id: str, actor_index: str) -> str:
@@ -85,7 +86,23 @@ def draw_sample(candidates: list[dict], n: int, seed: int = SEED) -> list[dict]:
     return chosen
 
 
-def build(root: Path, n: int, max_chars: int) -> dict:
+def overlap_ids(reference: list[dict], k: int, seed: int = SEED) -> set[str]:
+    """Pick k items for double annotation, proportionally per camp."""
+    rng = random.Random(seed + 7)
+    by_camp = collections.defaultdict(list)
+    for row in sorted(reference, key=lambda r: r["item_id"]):
+        by_camp[row["camp"]].append(row["item_id"])
+    chosen = set()
+    for camp, ids in sorted(by_camp.items()):
+        rng.shuffle(ids)
+        chosen.update(ids[: round(k * len(ids) / len(reference))])
+    rest = [r["item_id"] for r in reference if r["item_id"] not in chosen]
+    rng.shuffle(rest)
+    chosen.update(rest[: max(0, k - len(chosen))])
+    return set(sorted(chosen)[:k]) if len(chosen) > k else chosen
+
+
+def build(root: Path, n: int, max_chars: int, overlap: int = OVERLAP) -> dict:
     processed = root / "data" / "processed"
     raw = read_jsonl(root / "PublicHearingBR_LDS.jsonl")
     topics = {str(r["id"]): r["metadados"].get("assunto", "") for r in raw}
@@ -126,8 +143,11 @@ def build(root: Path, n: int, max_chars: int) -> dict:
                           "camp": row["camp"], "period": row["period"], "stratum_size": row["stratum_size"],
                           "stratum_sample": row["stratum_sample"], "inclusion_weight": row["inclusion_weight"],
                           "models_disagree_on_government": row["disagree"], "speech_chars": len(row["speech"])})
+    double = overlap_ids(reference, min(overlap, len(reference)))
+    for row in reference:
+        row["double_annotated"] = row["item_id"] in double
     for annotator, seed in ((1, SEED + 1), (2, SEED + 2)):
-        order = packet[:]
+        order = packet[:] if annotator == 1 else [p for p in packet if p["item_id"] in double]
         random.Random(seed).shuffle(order)
         write_csv(out / f"annotator_{annotator}.csv", order, PACKET_FIELDS)
         page = TEMPLATE.read_text(encoding="utf-8")
@@ -142,8 +162,13 @@ def build(root: Path, n: int, max_chars: int) -> dict:
         "by_camp_period": dict(collections.Counter(f"{r['camp']}|{r['period']}" for r in sample)),
         "model_disagreement_items": sum(r["disagree"] for r in sample),
         "total_speech_chars": sum(len(r["speech"]) for r in sample),
-        "estimated_hours_per_annotator": round(sum(len(r["speech"]) for r in sample) / 1500 / 60
-                                               + len(sample) * 1.5 / 60, 1),
+        "double_annotated_items": len(double),
+        "estimated_hours_without_highlighting": {
+            "annotator_1": round(sum(len(r["speech"]) for r in sample) / 1500 / 60 + len(sample) * 1.5 / 60, 1),
+            "annotator_2": round(sum(len(r["speech"]) for r in sample
+                                     if item_id(r["hearing_id"], r["actor_index"]) in double) / 1500 / 60
+                                 + len(double) * 1.5 / 60, 1)},
+        "note": "highlighting is expected to roughly halve reading time; estimates above are the upper bound",
     }
     (out / "sample_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
@@ -156,7 +181,7 @@ def build(root: Path, n: int, max_chars: int) -> dict:
 def read_filled(path: Path) -> dict[str, dict]:
     with path.open(newline="", encoding="utf-8-sig") as handle:
         rows = {r["item_id"]: r for r in csv.DictReader(handle)}
-    missing = [i for i, r in rows.items() if not r["government_stance"]]
+    missing = [i for i, r in rows.items() if not r["government_stance"]]  # packets only hold assigned items
     if missing:
         raise SystemExit(f"{path.name}: {len(missing)} items without government_stance")
     return rows
@@ -168,41 +193,48 @@ def proposition_label(row: dict, pid: str) -> str:
 
 
 def analyze(root: Path) -> dict:
+    """Human-human agreement on the double-annotated items; human-model agreement against
+    (a) the two annotators' consensus where they agree and (b) annotator 1 on every item."""
     out = root / OUT
     first, second = read_filled(out / "annotator_1_filled.csv"), read_filled(out / "annotator_2_filled.csv")
     reference = {r["item_id"]: r for r in read_rows(out / "reference.csv")}
     stance_rows = read_rows(root / "data" / "processed" / "party_stances.csv")
     ids = sorted(reference)
-    result = {"n_items": len(ids), "human_human": {}, "human_model": {}}
+    double = sorted(i for i in ids if i in second)
+    keys = {i: (reference[i]["hearing_id"], reference[i]["actor_index"]) for i in ids}
+    props = lambda items: [(i, p) for i in items for p in ("P1", "P2", "P3") if first[i][p]]  # noqa: E731
+    result = {"n_items": len(ids), "n_double_annotated": len(double), "human_human": {}, "human_model": {}}
     for field in ("government_stance", "previous_government_stance"):
-        result["human_human"][field] = categorical_agreement([first[i][field] for i in ids],
-                                                             [second[i][field] for i in ids])
-    pairs = [(i, p) for i in ids for p in ("P1", "P2", "P3")
-             if first[i][p] and proposition_label(first[i], p) and proposition_label(second[i], p)]
+        result["human_human"][field] = categorical_agreement([first[i][field] for i in double],
+                                                             [second[i][field] for i in double])
+    both = [(i, p) for i, p in props(double) if proposition_label(first[i], p) and proposition_label(second[i], p)]
     result["human_human"]["proposition_stance"] = categorical_agreement(
-        [proposition_label(first[i], p) for i, p in pairs], [proposition_label(second[i], p) for i, p in pairs])
+        [proposition_label(first[i], p) for i, p in both], [proposition_label(second[i], p) for i, p in both])
 
     for model in MODELS:
         predicted = government_stances(stance_rows, model, "speech")
-        per_model = {}
-        agreed = [i for i in ids if first[i]["government_stance"] == second[i]["government_stance"]]
-        keys = {i: (reference[i]["hearing_id"], reference[i]["actor_index"]) for i in ids}
-        per_model["government_stance_vs_human_consensus"] = categorical_agreement(
-            [first[i]["government_stance"] for i in agreed], [predicted.get(keys[i], "") for i in agreed])
         model_props = proposition_labels(stance_rows, model, "speech")
-        agreed_props = [(i, p) for i, p in pairs if proposition_label(first[i], p) == proposition_label(second[i], p)]
-        per_model["proposition_stance_vs_human_consensus"] = categorical_agreement(
-            [proposition_label(first[i], p) for i, p in agreed_props],
-            [model_props.get((*keys[i], p), "") for i, p in agreed_props])
+        agreed = [i for i in double if first[i]["government_stance"] == second[i]["government_stance"]]
+        agreed_props = [(i, p) for i, p in both if proposition_label(first[i], p) == proposition_label(second[i], p)]
+        per_model = {
+            "government_stance_vs_consensus": categorical_agreement(
+                [first[i]["government_stance"] for i in agreed], [predicted.get(keys[i], "") for i in agreed]),
+            "government_stance_vs_annotator_1_all_items": categorical_agreement(
+                [first[i]["government_stance"] for i in ids], [predicted.get(keys[i], "") for i in ids]),
+            "proposition_stance_vs_consensus": categorical_agreement(
+                [proposition_label(first[i], p) for i, p in agreed_props],
+                [model_props.get((*keys[i], p), "") for i, p in agreed_props]),
+            "proposition_stance_vs_annotator_1_all_items": categorical_agreement(
+                [proposition_label(first[i], p) for i, p in props(ids) if proposition_label(first[i], p)],
+                [model_props.get((*keys[i], p), "") for i, p in props(ids) if proposition_label(first[i], p)]),
+        }
         by_camp = collections.defaultdict(lambda: [0, 0])
-        for i in agreed:
+        for i in ids:
             cell = by_camp[reference[i]["camp"]]
             cell[0] += 1
             cell[1] += predicted.get(keys[i]) == first[i]["government_stance"]
-        per_model["accuracy_by_camp"] = {c: {"n": n, "accuracy": round(hit / n, 4)} for c, (n, hit) in by_camp.items()}
-        for annotator, rows in ((1, first), (2, second)):
-            per_model[f"government_stance_vs_annotator_{annotator}"] = categorical_agreement(
-                [rows[i]["government_stance"] for i in ids], [predicted.get(keys[i], "") for i in ids])
+        per_model["government_accuracy_vs_annotator_1_by_camp"] = {
+            c: {"n": n, "accuracy": round(hit / n, 4)} for c, (n, hit) in sorted(by_camp.items())}
         result["human_model"][model] = per_model
     (out / "validation_results.json").write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n",
                                                  encoding="utf-8")
