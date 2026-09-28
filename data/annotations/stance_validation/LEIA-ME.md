@@ -19,11 +19,7 @@ Um item é a fala literal de **um** participante de uma audiência pública da C
 
 Você **não vê** nome, partido nem cargo. Não tente adivinhar quem é: julgue só pelo que está escrito.
 
-**Destaques de leitura:**
-- **Amarelo:** menções a governo, ministérios, ministros, presidente, Lula ou Bolsonaro.
-- **Azul:** palavras das proposições.
-- Parágrafos sem destaque aparecem esmaecidos. **Eles podem conter posição**, então passe os olhos por eles também.
-- "Ministro" também marca ministros do STF e de tribunais. O **Judiciário não é governo federal**.
+Atenção: ministros do STF e de tribunais **não** são governo federal; o **Judiciário não é governo**.
 
 ## O que responder
 1. **Cada proposição:**

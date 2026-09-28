@@ -37,11 +37,6 @@
   details.guide { margin-bottom:10px; }
   details.guide summary { cursor:pointer; font-weight:600; }
   .ok { color: var(--done); }
-  mark { background: #fde68a; color: #0b0b0b; border-radius: 2px; padding: 0 1px; }
-  mark.p { background: #bfdbfe; }
-  .speech p { margin: 0 0 10px; }
-  .speech p.dim { opacity: .55; }
-  .legend-marks { font-size: 12px; color: var(--ink-2); margin: 2px 0 6px; }
 </style>
 </head>
 <body>
@@ -68,7 +63,6 @@
       <div class="meta" id="head"></div>
       <h3 id="topic" style="margin:4px 0 8px"></h3>
       <div class="meta">Manifestação literal do participante (seus turnos de fala na transcrição, em ordem):</div>
-      <div class="legend-marks"><mark>amarelo</mark> menções a governo/Executivo · <mark class="p">azul</mark> termos das proposições · parágrafos esmaecidos não têm destaques, mas <b>podem conter posição</b>: passe os olhos por eles também.</div>
       <div class="speech" id="speech"></div>
     </div>
     <form class="card" id="form" autocomplete="off"></form>
@@ -97,39 +91,6 @@
   function group(name, codes, value, extraClass) {
     return `<div class="opts ${extraClass || ""}">${codes.map((c) => `<label><input type="radio" name="${name}" value="${c}" ${value === c ? "checked" : ""}>${c}</label>`).join("")}</div>`;
   }
-  // Reading aid: highlight government references and proposition keywords; dim paragraphs without any.
-  const GOV_RE = /\b(governos?|governamenta\w*|ministr[oa]s?|minist[ée]rios?|presidente da rep[úu]blica|presidente lula|presidente bolsonaro|lula|bolsonaro|planalto|executivo|gest[ãa]o (?:federal|anterior|passada)|pol[íi]ticas? p[úu]blicas?|programa \w+)\b/gi;
-  const STOP = new Set("sobre entre deve devem ser para pelos pelas como mais menos quando porque sendo sistema forma todos todas outros outras nacional brasil brasileiro brasileira".split(" "));
-  function propRegex(item) {
-    const words = new Set();
-    for (const p of ["P1", "P2", "P3"]) {
-      for (const w of String(item[p] || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").match(/[a-z]{5,}/g) || []) {
-        if (!STOP.has(w)) words.add(w.slice(0, 6));
-      }
-    }
-    return words.size ? new RegExp("\\b(" + [...words].join("|") + ")[a-zà-ú]*", "gi") : null;
-  }
-  function highlight(item) {
-    const pr = propRegex(item);
-    return item.speech.split(/\n+/).map((para) => {
-      let html = esc(para), hit = false;
-      html = html.replace(GOV_RE, (m) => { hit = true; return `<mark>${m}</mark>`; });
-      if (pr) {
-        const plain = (t) => t.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-        let inMark = false;
-        html = html.split(/(<[^>]+>)/).map((part) => {
-          if (part.startsWith("<")) { inMark = part === "<mark>"; return part; }
-          if (inMark) return part;
-          return part.replace(/[A-Za-zÀ-ú]{5,}/g, (w) => {
-            pr.lastIndex = 0;
-            if (pr.test(plain(w))) { hit = true; return `<mark class="p">${w}</mark>`; }
-            return w;
-          });
-        }).join("");
-      }
-      return `<p class="${hit ? "" : "dim"}">${html}</p>`;
-    }).join("");
-  }
   function render() {
     const item = ITEMS[i], a = answers[item.item_id] || {};
     $("pos").textContent = `Item ${i + 1} de ${ITEMS.length} · ${item.item_id}` + (complete(item) ? " · ✓ completo" : "");
@@ -137,7 +98,7 @@
     $("prog").max = ITEMS.length; $("prog").value = done; $("prog").title = `${done} completos`;
     $("head").textContent = `Data da notícia: ${item.publication_date} · Governo vigente: Presidente ${item.president}`;
     $("topic").textContent = item.topic;
-    $("speech").innerHTML = highlight(item);
+    $("speech").textContent = item.speech;
     $("speech").scrollTop = 0;
     let html = "";
     for (const p of ["P1", "P2", "P3"]) {

@@ -163,12 +163,11 @@ def build(root: Path, n: int, max_chars: int, overlap: int = OVERLAP) -> dict:
         "model_disagreement_items": sum(r["disagree"] for r in sample),
         "total_speech_chars": sum(len(r["speech"]) for r in sample),
         "double_annotated_items": len(double),
-        "estimated_hours_without_highlighting": {
+        "estimated_hours": {
             "annotator_1": round(sum(len(r["speech"]) for r in sample) / 1500 / 60 + len(sample) * 1.5 / 60, 1),
             "annotator_2": round(sum(len(r["speech"]) for r in sample
                                      if item_id(r["hearing_id"], r["actor_index"]) in double) / 1500 / 60
                                  + len(double) * 1.5 / 60, 1)},
-        "note": "highlighting is expected to roughly halve reading time; estimates above are the upper bound",
     }
     (out / "sample_summary.json").write_text(json.dumps(summary, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     return summary
