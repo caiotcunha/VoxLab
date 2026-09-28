@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDMozAJdtkwRl2U7zDZn3U0B",
+  "object": "chat.completion",
+  "created": 1790597617,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes do problema da retinopatia diabética: a primeira fala sobre a resolução do problema pelo atendimento primário, enquanto a segunda fala sobre o acompanhamento em tempo hábil pelo SUS.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 526,
+    "total_tokens": 600,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00021896000000000003,
+    "prompt_tokens_details": null
+  }
+}

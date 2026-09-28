@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Ra2lwlb4oMm34dHVu8jNkiFE",
+  "object": "chat.completion",
+  "created": 1790597658,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes do empréstimo consignado: riscos da regulamentação versus segurança do cartão consignado.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 526,
+    "total_tokens": 580,
+    "completion_tokens": 54,
+    "estimated_cost": 0.00021096,
+    "prompt_tokens_details": null
+  }
+}

@@ -5,7 +5,8 @@ from tempfile import TemporaryDirectory
 from voxlab.agreement import (analyze, canonical_answers, categorical_agreement,
                               check_packet_integrity, compare_pair_rows,
                               derive_relation, read_annotation_csv,
-                              validate_response, write_adjudication_queue)
+                              run_round, validate_response, write_adjudication_queue,
+                              write_consensus_template)
 from voxlab.audit import write_csv
 from voxlab.semantic_pilot import DISPLAY_FIELDS, RESPONSE_FIELDS, read_csv
 
@@ -87,6 +88,34 @@ class RelationTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             check_packet_integrity(ROOT, changed, reference)
 
+    def test_completed_expansion_packets_pass_integrity_and_produce_real_metrics(self):
+        folder = ROOT / "data/annotations"
+        packets = {number: read_annotation_csv(folder / f"expansion_annotator_{number}.csv")
+                   for number in (1, 2)}
+        reference = read_csv(folder / "expansion_semantic_pilot_reference.csv")
+        from voxlab.expansion_semantic_pilot import eligible_expansion_pairs
+        check_packet_integrity(ROOT, packets, reference, eligible_expansion_pairs(ROOT))
+        result = analyze(packets[1], packets[2], reference)
+        self.assertIsNotNone(result, "Both expansion annotator files are complete; metrics must be computed")
+        self.assertEqual(result["pair_count"], 29)
+        self.assertEqual(result["determinability"]["n"], 58)
+        self.assertEqual(result["same_proposition"]["n"], 27)
+        self.assertEqual(result["stance"]["n"], 55)
+        self.assertEqual(result["derived_relation"]["n"], 29)
+        round_result = run_round(ROOT, "expansion")
+        self.assertIsNotNone(round_result)
+        self.assertEqual(round_result["annotation_round"], "expansion")
+
+    def test_expansion_reference_event_type_is_supported_in_comparison(self):
+        a = complete_row("p")
+        b = complete_row("p")
+        ref = [{"pair_id": "p", "actor_name": "Pessoa", "event_date_a": "2024-01-01",
+                "event_date_b": "2024-02-01", "event_type_a": "Audiência A",
+                "event_type_b": "Audiência B", "evidence_a": "A", "evidence_b": "B",
+                "annotator_1_display_a_source_side": "a", "annotator_2_display_a_source_side": "a"}]
+        row = compare_pair_rows([a], [b], ref)[0]
+        self.assertEqual(row["event_type_a"], "Audiência A")
+
     def test_pair_comparison_keeps_target_propositions_for_adjudication(self):
         a = complete_row("p", "FAVOR", "AGAINST")
         b = complete_row("p", "AGAINST", "FAVOR")
@@ -111,6 +140,21 @@ class RelationTests(unittest.TestCase):
             self.assertEqual(read_csv(path)[0]["adjudication_status"], "RESOLVED")
             with self.assertRaises(FileExistsError):
                 write_adjudication_queue(path, [{"pair_id": "p", "adjudication_reasons": "CHANGED"}])
+
+    def test_consensus_template_is_blank_and_does_not_overwrite_answers(self):
+        with TemporaryDirectory() as folder:
+            path = Path(folder) / "consensus.csv"
+            packet = [{field: "" for field in DISPLAY_FIELDS + RESPONSE_FIELDS}]
+            packet[0]["pair_id"] = "p"
+            packet[0]["event_a"] = "Audiência"
+            packet[0]["stance_determinable_a"] = "YES"
+            write_consensus_template(path, packet)
+            rows = read_annotation_csv(path)
+            self.assertEqual(rows[0]["stance_determinable_a"], "")
+            rows[0].update(complete_row("p"))
+            write_csv(path, rows, DISPLAY_FIELDS + RESPONSE_FIELDS)
+            write_consensus_template(path, packet)
+            self.assertEqual(read_annotation_csv(path)[0]["stance_determinable_a"], "YES")
 
 
 if __name__ == "__main__":

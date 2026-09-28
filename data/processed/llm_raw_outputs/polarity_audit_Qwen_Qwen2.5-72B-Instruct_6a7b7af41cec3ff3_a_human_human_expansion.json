@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RFXqAG1dUGNT7CrokJ6n5959",
+  "object": "chat.completion",
+  "created": 1790597586,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes do cartão consignado: a primeira fala sobre a necessidade de regulamentação, enquanto a segunda fala sobre a segurança do produto para o servidor.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 514,
+    "total_tokens": 577,
+    "completion_tokens": 63,
+    "estimated_cost": 0.00021024000000000002,
+    "prompt_tokens_details": null
+  }
+}

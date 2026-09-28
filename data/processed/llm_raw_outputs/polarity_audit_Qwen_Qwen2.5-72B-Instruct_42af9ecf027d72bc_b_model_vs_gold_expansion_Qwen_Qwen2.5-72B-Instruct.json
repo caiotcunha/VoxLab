@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RqDo6UrPysJOVR5DR5sIelZb",
+  "object": "chat.completion",
+  "created": 1790597631,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes do cuidado: uma se concentra no reconhecimento do cuidado como trabalho e direito à aposentadoria, enquanto a outra se refere ao cuidado como um negócio.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 525,
+    "total_tokens": 593,
+    "completion_tokens": 68,
+    "estimated_cost": 0.0002162,
+    "prompt_tokens_details": null
+  }
+}

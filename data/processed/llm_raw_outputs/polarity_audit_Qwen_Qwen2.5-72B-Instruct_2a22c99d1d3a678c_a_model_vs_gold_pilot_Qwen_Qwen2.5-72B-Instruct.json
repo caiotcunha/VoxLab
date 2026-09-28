@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RPYDBDJq2DhP0BQplFLBlBT4",
+  "object": "chat.completion",
+  "created": 1790597604,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X afirma que há entraves na fila de espera para atendimento especializado, enquanto a proposição Y nega que os pacientes conseguem acompanhamento em tempo hábil, ambas se referindo à mesma questão de acesso ao tratamento da retinopatia diabética.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 540,
+    "total_tokens": 622,
+    "completion_tokens": 82,
+    "estimated_cost": 0.0002272,
+    "prompt_tokens_details": null
+  }
+}

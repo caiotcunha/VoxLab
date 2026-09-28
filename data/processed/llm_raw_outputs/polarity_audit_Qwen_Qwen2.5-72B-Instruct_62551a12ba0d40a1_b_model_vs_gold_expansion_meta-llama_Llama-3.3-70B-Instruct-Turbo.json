@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rm2g9zjtxZiSl1QPEHDLTmZL",
+  "object": "chat.completion",
+  "created": 1790597667,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As proposições tratam de temas diferentes: uma fala sobre preparação para mudanças demográficas, a outra sobre a atenção aos danos da mineração.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 519,
+    "total_tokens": 575,
+    "completion_tokens": 56,
+    "estimated_cost": 0.00020923999999999997,
+    "prompt_tokens_details": null
+  }
+}

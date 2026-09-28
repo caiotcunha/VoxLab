@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RGXFzTG7zCKTA7U2V9oESdL4",
+  "object": "chat.completion",
+  "created": 1790597639,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes do movimento antivacina: uma critica a irresponsabilidade e criminalidade, enquanto a outra foca na ação governamental para enfrentá-lo e recuperar a cobertura de vacinação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 524,
+    "total_tokens": 597,
+    "completion_tokens": 73,
+    "estimated_cost": 0.00021784,
+    "prompt_tokens_details": null
+  }
+}

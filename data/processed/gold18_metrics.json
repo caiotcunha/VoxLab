@@ -3,8 +3,10 @@
     "end_to_end": {
       "n": 18,
       "accuracy": 0.7778,
-      "macro_f1": 0.8072,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.5381,
+      "macro_f1_gold_supported": 0.5381,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.3229,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": 1.0,
@@ -23,7 +25,7 @@
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },
@@ -62,27 +64,29 @@
     "structured_without_gate": {
       "n": 18,
       "accuracy": 0.2222,
-      "macro_f1": 0.4,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.1333,
+      "macro_f1_gold_supported": 0.1333,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.08,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 11,
           "support_predicted": 0
         },
         "INSUFFICIENT_EVIDENCE": {
           "precision": 0.0,
           "recall": "undefined",
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 0,
           "support_predicted": 3
         },
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },
@@ -123,8 +127,10 @@
     "structured_with_gate": {
       "n": 18,
       "accuracy": 0.7778,
-      "macro_f1": 0.8762,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.5841,
+      "macro_f1_gold_supported": 0.5841,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.3505,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": 1.0,
@@ -136,14 +142,14 @@
         "INSUFFICIENT_EVIDENCE": {
           "precision": 0.0,
           "recall": "undefined",
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 0,
           "support_predicted": 3
         },
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },
@@ -214,8 +220,10 @@
     "end_to_end": {
       "n": 18,
       "accuracy": 0.8333,
-      "macro_f1": 0.8712,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.5808,
+      "macro_f1_gold_supported": 0.5808,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.3485,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": 0.9091,
@@ -234,7 +242,7 @@
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },
@@ -274,27 +282,29 @@
     "structured_without_gate": {
       "n": 18,
       "accuracy": 0.2778,
-      "macro_f1": 0.5,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.1667,
+      "macro_f1_gold_supported": 0.1667,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.1,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 11,
           "support_predicted": 0
         },
         "INSUFFICIENT_EVIDENCE": {
           "precision": 0.0,
           "recall": "undefined",
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 0,
           "support_predicted": 2
         },
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },
@@ -308,7 +318,7 @@
         "STANCE_REVERSED": {
           "precision": 0.0,
           "recall": "undefined",
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 0,
           "support_predicted": 1
         }
@@ -335,8 +345,10 @@
     "structured_with_gate": {
       "n": 18,
       "accuracy": 0.7222,
-      "macro_f1": 0.7916,
-      "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+      "macro_f1": 0.5278,
+      "macro_f1_gold_supported": 0.5278,
+      "macro_f1_all_taxonomy_labels_zero_division_0": 0.3167,
+      "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
       "per_class": {
         "INCOMPARABLE": {
           "precision": 0.7692,
@@ -348,14 +360,14 @@
         "INSUFFICIENT_EVIDENCE": {
           "precision": 0.0,
           "recall": "undefined",
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 0,
           "support_predicted": 2
         },
         "RELATION_UNCERTAIN": {
           "precision": "undefined",
           "recall": 0.0,
-          "f1": "undefined",
+          "f1": 0.0,
           "support_gold": 2,
           "support_predicted": 0
         },

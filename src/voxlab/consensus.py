@@ -25,6 +25,25 @@ from .semantic_pilot import (DISPLAY_FIELDS, RESPONSE_FIELDS, annotation_rows,
 GOLD_METADATA_FIELDS = ["derived_relation", "label_source", "consensus_input_sha256"]
 GOLD_FIELDS = DISPLAY_FIELDS + RESPONSE_FIELDS + GOLD_METADATA_FIELDS
 
+ROUND_CONFIG = {
+    "pilot": {
+        "consensus": "semantic_pilot_consensus.csv",
+        "reference": "semantic_pilot_reference.csv",
+        "annotator_pattern": "semantic_pilot_annotator_{annotator}.csv",
+        "comparison": "semantic_consensus_comparison.csv",
+        "gold": "semantic_pilot_gold.csv",
+        "report": "semantic_consensus_analysis.json",
+    },
+    "expansion": {
+        "consensus": "expansion_semantic_consensus.csv",
+        "reference": "expansion_semantic_pilot_reference.csv",
+        "annotator_pattern": "expansion_annotator_{annotator}.csv",
+        "comparison": "expansion_semantic_consensus_comparison.csv",
+        "gold": "expansion_semantic_gold.csv",
+        "report": "expansion_semantic_consensus_analysis.json",
+    },
+}
+
 
 def read_consensus(path: Path) -> list[dict[str, str]]:
     """Read the consensus as UTF-8 comma CSV while preserving embedded lines."""
@@ -85,11 +104,12 @@ def relation_for(row: dict[str, str]) -> str:
                            row["same_proposition"], row["stance_a"], row["stance_b"])
 
 
-def analyze_consensus(root: Path) -> tuple[dict, list[dict[str, str]]]:
+def analyze_consensus(root: Path, round_name: str = "pilot") -> tuple[dict, list[dict[str, str]]]:
+    config = ROUND_CONFIG[round_name]
     folder = root / "data" / "annotations"
-    consensus_path = folder / "semantic_pilot_consensus.csv"
+    consensus_path = folder / config["consensus"]
     rows = read_consensus(consensus_path)
-    reference_rows = read_csv(folder / "semantic_pilot_reference.csv")
+    reference_rows = read_csv(folder / config["reference"])
     references = {row["pair_id"]: row for row in reference_rows}
     expected_ids = set(references)
     lds = {str(row["id"]): row for row in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
@@ -98,7 +118,7 @@ def analyze_consensus(root: Path) -> tuple[dict, list[dict[str, str]]]:
         generated, _ = annotation_rows(reference_rows, lds, annotator)
         templates[annotator] = {row["pair_id"]: row for row in generated}
     annotated = {annotator: {row["pair_id"]: row for row in read_annotation_csv(
-        folder / f"semantic_pilot_annotator_{annotator}.csv")} for annotator in (1, 2)}
+        folder / config["annotator_pattern"].format(annotator=annotator))} for annotator in (1, 2)}
 
     ids = [row["pair_id"] for row in rows]
     counts = collections.Counter(ids)
@@ -197,6 +217,7 @@ def analyze_consensus(root: Path) -> tuple[dict, list[dict[str, str]]]:
     if source_mismatches:
         blocking.append("SOURCE_CONTENT_MISMATCH")
     report = {
+        "annotation_round": round_name,
         "input_sha256": hashlib.sha256(consensus_path.read_bytes()).hexdigest(),
         "expected_pairs": len(expected_ids), "physical_consensus_rows": len(rows),
         "unique_known_pair_ids": len(set(ids) & expected_ids), "missing_pair_ids": missing,
@@ -223,20 +244,21 @@ def analyze_consensus(root: Path) -> tuple[dict, list[dict[str, str]]]:
         "interpretation": (
             "Blocking integrity issues prevent generation of an adjudicated gold dataset."
             if blocking else
-            "Validated human consensus covers every expected pair and is ready for adjudicated pilot gold."
+            f"Validated human consensus covers every expected pair and is ready for adjudicated {round_name} gold."
         ),
     }
     return report, comparison
 
 
-def build_gold_rows(root: Path, report: dict) -> list[dict[str, str]]:
+def build_gold_rows(root: Path, report: dict, round_name: str = "pilot") -> list[dict[str, str]]:
     """Build chronological, source-clean rows only from a validated human consensus."""
     if not report["valid_for_gold_generation"]:
         raise ValueError("Consensus integrity checks failed; gold generation is blocked")
 
     folder = root / "data" / "annotations"
-    consensus = {row["pair_id"]: row for row in read_consensus(folder / "semantic_pilot_consensus.csv")}
-    reference_rows = read_csv(folder / "semantic_pilot_reference.csv")
+    config = ROUND_CONFIG[round_name]
+    consensus = {row["pair_id"]: row for row in read_consensus(folder / config["consensus"])}
+    reference_rows = read_csv(folder / config["reference"])
     lds = {str(row["id"]): row for row in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
     gold = []
     for reference in reference_rows:
@@ -262,12 +284,14 @@ def build_gold_rows(root: Path, report: dict) -> list[dict[str, str]]:
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
-    root = parser.parse_args().root
-    report, comparison = analyze_consensus(root)
-    write_csv(root / "data" / "annotations" / "semantic_consensus_comparison.csv", comparison, list(comparison[0]))
+    parser.add_argument("--round", choices=sorted(ROUND_CONFIG), default="pilot")
+    args = parser.parse_args()
+    root, config = args.root, ROUND_CONFIG[args.round]
+    report, comparison = analyze_consensus(root, args.round)
+    write_csv(root / "data" / "annotations" / config["comparison"], comparison, list(comparison[0]))
     if report["valid_for_gold_generation"]:
-        gold = build_gold_rows(root, report)
-        gold_path = root / "data" / "annotations" / "semantic_pilot_gold.csv"
+        gold = build_gold_rows(root, report, args.round)
+        gold_path = root / "data" / "annotations" / config["gold"]
         write_csv(gold_path, gold, GOLD_FIELDS)
         report["gold_dataset"] = {
             "path": str(gold_path.relative_to(root)),
@@ -275,7 +299,7 @@ def main() -> None:
             "label_source": "HUMAN_CONSENSUS",
             "sha256": hashlib.sha256(gold_path.read_bytes()).hexdigest(),
         }
-    output = root / "data" / "processed" / "semantic_consensus_analysis.json"
+    output = root / "data" / "processed" / config["report"]
     output.write_text(json.dumps(report, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps(report, ensure_ascii=False, indent=2))
 

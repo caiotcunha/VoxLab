@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RM4Yw266J80v7qDZqLyOoq5V",
+  "object": "chat.completion",
+  "created": 1790597612,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes da política em terras indígenas: uma se refere à aprovação de um projeto de lei para gestão territorial e ambiental, enquanto a outra se refere à presença de atividades econômicas como agronegócio e mineração.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 542,
+    "total_tokens": 622,
+    "completion_tokens": 80,
+    "estimated_cost": 0.00022712000000000003,
+    "prompt_tokens_details": null
+  }
+}

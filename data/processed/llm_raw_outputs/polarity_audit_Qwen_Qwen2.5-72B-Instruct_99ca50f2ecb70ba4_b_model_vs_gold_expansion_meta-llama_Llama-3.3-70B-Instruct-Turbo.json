@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYvXPai1Z2K2J6TKWLvu0hIu",
+  "object": "chat.completion",
+  "created": 1790597665,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"UNCERTAIN\",\n  \"reasoning\": \"As formulações tratam de aspectos relacionados, mas não são exatamente opostas em polaridade. A primeira se refere à concessão de licenças, enquanto a segunda se refere à ausência de obstáculos indevidos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 528,
+    "total_tokens": 602,
+    "completion_tokens": 74,
+    "estimated_cost": 0.00021968,
+    "prompt_tokens_details": null
+  }
+}

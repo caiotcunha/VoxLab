@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-Rr2ugJv9Ofw2DpW3huPtt874",
+  "object": "chat.completion",
+  "created": 1790597583,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X afirma que os danos da mineração são negligenciados, enquanto a proposição Y nega isso, afirmando que recebem a atenção devida.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 526,
+    "total_tokens": 585,
+    "completion_tokens": 59,
+    "estimated_cost": 0.00021296000000000002,
+    "prompt_tokens_details": null
+  }
+}

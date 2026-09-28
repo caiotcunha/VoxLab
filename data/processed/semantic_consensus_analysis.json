@@ -1,4 +1,5 @@
 {
+  "annotation_round": "pilot",
   "input_sha256": "f22b73de7fe725a548ebcf3039855d9a8511ef31d331d7321373010d6be5270f",
   "expected_pairs": 18,
   "physical_consensus_rows": 18,

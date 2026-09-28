@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RKkCk36DFPYGSmRNopdo70p8",
+  "object": "chat.completion",
+  "created": 1790597653,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de aspectos diferentes da atuação do IBAMA: a primeira fala sobre a não concessão de licença por problemas específicos, enquanto a segunda fala sobre a ausência de obstáculos indevidos.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 542,
+    "total_tokens": 612,
+    "completion_tokens": 70,
+    "estimated_cost": 0.00022312000000000002,
+    "prompt_tokens_details": null
+  }
+}

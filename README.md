@@ -1,6 +1,6 @@
 # VoxLab: viabilidade de análise longitudinal de postura
 
-Pergunta desta etapa: o PublicHearingBR contém recorrência do mesmo ator em audiências relacionadas suficiente para justificar uma investigação sobre manutenção e reversão de postura? A hipótese é que verificar a comparabilidade de duas proposições antes de comparar polaridades reduz falsas reversões. O gate automático ainda não foi implementado; o protocolo, os baselines determinísticos e a ablação sem gate já estão reproduzíveis.
+Pergunta desta etapa: o PublicHearingBR contém recorrência do mesmo ator em audiências relacionadas suficiente para justificar uma investigação sobre manutenção e reversão de postura? A hipótese é que verificar a comparabilidade de duas proposições antes de comparar polaridades reduz falsas reversões. O protocolo, os baselines determinísticos e uma primeira rodada experimental do gate via LLM estão reproduzíveis; a avaliação final ainda depende do gold humano expandido.
 
 ## Estado dos dados e ressalvas
 
@@ -19,6 +19,9 @@ PYTHONPATH=src python3 -m voxlab.agreement
 PYTHONPATH=src python3 -m voxlab.consensus
 PYTHONPATH=src python3 -m voxlab.expansion
 PYTHONPATH=src python3 -m voxlab.expansion_semantic_pilot
+PYTHONPATH=src python3 -m voxlab.agreement --round expansion
+PYTHONPATH=src python3 -m voxlab.consensus --round expansion
+PYTHONPATH=src python3 -m voxlab.prospective_evaluation
 PYTHONPATH=src python3 -m voxlab.comparability_baselines
 PYTHONPATH=src python3 -m unittest discover -s tests -v
 ```
@@ -56,6 +59,8 @@ Os parâmetros `--threshold` (padrão 0.10), `--top-k` (5 pares de audiência po
 - `data/processed/expansion_reusable_provenance.csv` e `expansion_speech_candidates.csv`: oito lados previamente validados e 300 candidatos literais para acelerar a revisão humana.
 - `src/voxlab/comparability_baselines.py` e `docs/comparability_experiment.md`: protocolo, métricas, baselines sem API e análise da ablação sem gate.
 - `data/processed/comparability_pilot_baselines.json`, `comparability_pilot_diagnostics.csv` e `semantic_pilot_gold_manifest.json`: resultados exploratórios, diagnóstico por par e congelamento do gold.
+- `src/voxlab/automatic_baselines.py` e `docs/automatic_experiments.md`: primeira rodada experimental via LLM, respostas brutas, ablação do gate e limitações.
+- `src/voxlab/prospective_evaluation.py`: avaliação pré-definida A versus C sobre o futuro gold humano da expansão, sem nova chamada de API.
 - `datasetCaio.ipynb`, `nunes.ipynb` e `dashboard_polarizacao_completa.html`: exploração anterior preservada; o dashboard não representa o resultado longitudinal.
 
 O notebook antigo `nunes.ipynb` ainda requer `langchain-core`, `langchain-nvidia-ai-endpoints`, `pandas`, `tqdm`, `networkx` e `pyvis` para suas próprias células. Essas dependências **não** fazem parte da nova auditoria nem são executadas por ela. `NVIDIA_API_KEY` deve ser fornecida pelo ambiente para executar as células antigas. Não é necessária para reproduzir esta etapa.
@@ -74,4 +79,4 @@ Nos 16 pares com decisão binária, o corte de recuperação TF-IDF ≥0,10 clas
 
 ## Baselines automáticos via LLM
 
-Trilha experimental separada (chamadas de API reais, DeepInfra) — nenhum LLM é classificador no restante do pipeline. Dois modelos avaliados nos 18 pares gold: o comparability gate corrige 10/18 pares em cada modelo isolando exatamente essa variável (structured sem gate vs. com gate), sem nunca piorar um caso no Qwen e piorando 2 no Llama. O baseline end-to-end direto empatou ou superou o pipeline estruturado com gate nesta amostra. Previsões nos 29 pares da expansão são sempre `label_source=MODEL_PREDICTION`, nunca gold. Conclusão: anotação humana dos 29 continua necessária. Veja `docs/automatic_experiments.md`.
+Trilha experimental separada (chamadas de API reais, DeepInfra) — nenhum LLM é classificador no restante do pipeline. Dois modelos foram avaliados nos 18 pares gold. A ablação que força comparabilidade não consegue emitir `INCOMPARABLE`; ao ligar o gate, 10/18 erros viram acertos em cada modelo, com 0 degradações no Qwen e 2 no Llama. O baseline end-to-end direto empatou ou superou o pipeline estruturado com gate, portanto a vantagem do pipeline completo ainda não foi demonstrada. Previsões nos 29 pares da expansão são sempre `label_source=MODEL_PREDICTION`, nunca gold. A anotação humana dos 29 continua necessária. Veja `docs/automatic_experiments.md`.

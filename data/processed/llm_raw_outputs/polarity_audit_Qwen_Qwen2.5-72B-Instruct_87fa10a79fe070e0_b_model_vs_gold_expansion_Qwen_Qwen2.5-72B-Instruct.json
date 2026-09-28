@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RhxQpEz8alyUrATGLy5OIEQS",
+  "object": "chat.completion",
+  "created": 1790597650,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam da mesma questão (repactuação de reparação em Mariana), mas não são polaridades opostas. A primeira se opõe à conclusão da repactuação, enquanto a segunda é favorável à conclusão rápida de um novo acordo.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 515,
+    "total_tokens": 592,
+    "completion_tokens": 77,
+    "estimated_cost": 0.0002162,
+    "prompt_tokens_details": null
+  }
+}

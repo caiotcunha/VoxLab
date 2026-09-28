@@ -1,0 +1,441 @@
+{
+  "evaluation_role": "PROSPECTIVE_EXPANSION_HOLDOUT",
+  "n_gold_pairs": 29,
+  "models": {
+    "Qwen/Qwen2.5-72B-Instruct": {
+      "primary_comparison": "end_to_end_A_vs_structured_with_gate_C",
+      "conditions": {
+        "end_to_end_A": {
+          "n": 29,
+          "accuracy": 0.5862,
+          "macro_f1": 0.2969,
+          "macro_f1_gold_supported": 0.2969,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.2375,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": 0.9167,
+              "recall": 0.55,
+              "f1": 0.6875,
+              "support_gold": 20,
+              "support_predicted": 12
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.3529,
+              "recall": 0.8571,
+              "f1": 0.5,
+              "support_gold": 7,
+              "support_predicted": 17
+            },
+            "STANCE_REVERSED": {
+              "precision": "undefined",
+              "recall": "undefined",
+              "f1": "undefined",
+              "support_gold": 0,
+              "support_predicted": 0
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "STANCE_MAINTAINED": 6,
+              "INCOMPARABLE": 1
+            },
+            "INCOMPARABLE": {
+              "STANCE_MAINTAINED": 9,
+              "INCOMPARABLE": 11
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "STANCE_MAINTAINED": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "STANCE_MAINTAINED": 1
+            }
+          },
+          "false_reversal_count": 0,
+          "false_reversal_rate": 0.0,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        },
+        "forced_comparability_B_diagnostic": {
+          "n": 29,
+          "accuracy": 0.2069,
+          "macro_f1": 0.1833,
+          "macro_f1_gold_supported": 0.1833,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.1467,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 20,
+              "support_predicted": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support_gold": 1,
+              "support_predicted": 4
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.2174,
+              "recall": 0.7143,
+              "f1": 0.3333,
+              "support_gold": 7,
+              "support_predicted": 23
+            },
+            "STANCE_REVERSED": {
+              "precision": 0.0,
+              "recall": "undefined",
+              "f1": 0.0,
+              "support_gold": 0,
+              "support_predicted": 2
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "STANCE_MAINTAINED": 5,
+              "STANCE_REVERSED": 2
+            },
+            "INCOMPARABLE": {
+              "STANCE_MAINTAINED": 17,
+              "INSUFFICIENT_EVIDENCE": 3
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "INSUFFICIENT_EVIDENCE": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "STANCE_MAINTAINED": 1
+            }
+          },
+          "false_reversal_count": 2,
+          "false_reversal_rate": 0.069,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        },
+        "structured_with_gate_C": {
+          "n": 29,
+          "accuracy": 0.6207,
+          "macro_f1": 0.4055,
+          "macro_f1_gold_supported": 0.4055,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.3244,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": 0.8125,
+              "recall": 0.65,
+              "f1": 0.7222,
+              "support_gold": 20,
+              "support_predicted": 16
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": 0.25,
+              "recall": 1.0,
+              "f1": 0.4,
+              "support_gold": 1,
+              "support_predicted": 4
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.4444,
+              "recall": 0.5714,
+              "f1": 0.5,
+              "support_gold": 7,
+              "support_predicted": 9
+            },
+            "STANCE_REVERSED": {
+              "precision": "undefined",
+              "recall": "undefined",
+              "f1": "undefined",
+              "support_gold": 0,
+              "support_predicted": 0
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "STANCE_MAINTAINED": 4,
+              "INCOMPARABLE": 3
+            },
+            "INCOMPARABLE": {
+              "INCOMPARABLE": 13,
+              "STANCE_MAINTAINED": 4,
+              "INSUFFICIENT_EVIDENCE": 3
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "INSUFFICIENT_EVIDENCE": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "STANCE_MAINTAINED": 1
+            }
+          },
+          "false_reversal_count": 0,
+          "false_reversal_rate": 0.0,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        }
+      },
+      "paired_A_vs_C": {
+        "A_error_to_C_correct": 5,
+        "A_correct_to_C_error": 4,
+        "both_correct": 13,
+        "both_error": 7
+      },
+      "comparability_gate": {
+        "n_binary": 27,
+        "accuracy": 0.7407,
+        "f1_positive_class_YES": 0.5333,
+        "precision_YES": 0.5,
+        "recall_YES": 0.5714,
+        "n_gold_uncertain_excluded": 1
+      }
+    },
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+      "primary_comparison": "end_to_end_A_vs_structured_with_gate_C",
+      "conditions": {
+        "end_to_end_A": {
+          "n": 29,
+          "accuracy": 0.6897,
+          "macro_f1": 0.3503,
+          "macro_f1_gold_supported": 0.3503,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.2802,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": 0.9286,
+              "recall": 0.65,
+              "f1": 0.7647,
+              "support_gold": 20,
+              "support_predicted": 14
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.4667,
+              "recall": 1.0,
+              "f1": 0.6364,
+              "support_gold": 7,
+              "support_predicted": 15
+            },
+            "STANCE_REVERSED": {
+              "precision": "undefined",
+              "recall": "undefined",
+              "f1": "undefined",
+              "support_gold": 0,
+              "support_predicted": 0
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "STANCE_MAINTAINED": 7
+            },
+            "INCOMPARABLE": {
+              "INCOMPARABLE": 13,
+              "STANCE_MAINTAINED": 7
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "INCOMPARABLE": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "STANCE_MAINTAINED": 1
+            }
+          },
+          "false_reversal_count": 0,
+          "false_reversal_rate": 0.0,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        },
+        "forced_comparability_B_diagnostic": {
+          "n": 29,
+          "accuracy": 0.2414,
+          "macro_f1": 0.2604,
+          "macro_f1_gold_supported": 0.2604,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.2083,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 20,
+              "support_predicted": 0
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6667,
+              "support_gold": 1,
+              "support_predicted": 2
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.24,
+              "recall": 0.8571,
+              "f1": 0.375,
+              "support_gold": 7,
+              "support_predicted": 25
+            },
+            "STANCE_REVERSED": {
+              "precision": 0.0,
+              "recall": "undefined",
+              "f1": 0.0,
+              "support_gold": 0,
+              "support_predicted": 2
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "STANCE_MAINTAINED": 6,
+              "STANCE_REVERSED": 1
+            },
+            "INCOMPARABLE": {
+              "STANCE_MAINTAINED": 18,
+              "INSUFFICIENT_EVIDENCE": 1,
+              "STANCE_REVERSED": 1
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "INSUFFICIENT_EVIDENCE": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "STANCE_MAINTAINED": 1
+            }
+          },
+          "false_reversal_count": 2,
+          "false_reversal_rate": 0.069,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        },
+        "structured_with_gate_C": {
+          "n": 29,
+          "accuracy": 0.6552,
+          "macro_f1": 0.4405,
+          "macro_f1_gold_supported": 0.4405,
+          "macro_f1_all_taxonomy_labels_zero_division_0": 0.3524,
+          "macro_f1_note": "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy and assigns 0 to labels absent from both gold and predictions",
+          "per_class": {
+            "INCOMPARABLE": {
+              "precision": 0.7273,
+              "recall": 0.8,
+              "f1": 0.7619,
+              "support_gold": 20,
+              "support_predicted": 22
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "precision": 0.5,
+              "recall": 1.0,
+              "f1": 0.6667,
+              "support_gold": 1,
+              "support_predicted": 2
+            },
+            "RELATION_UNCERTAIN": {
+              "precision": "undefined",
+              "recall": 0.0,
+              "f1": 0.0,
+              "support_gold": 1,
+              "support_predicted": 0
+            },
+            "STANCE_MAINTAINED": {
+              "precision": 0.4,
+              "recall": 0.2857,
+              "f1": 0.3333,
+              "support_gold": 7,
+              "support_predicted": 5
+            },
+            "STANCE_REVERSED": {
+              "precision": "undefined",
+              "recall": "undefined",
+              "f1": "undefined",
+              "support_gold": 0,
+              "support_predicted": 0
+            }
+          },
+          "confusion_matrix": {
+            "STANCE_MAINTAINED": {
+              "INCOMPARABLE": 5,
+              "STANCE_MAINTAINED": 2
+            },
+            "INCOMPARABLE": {
+              "INCOMPARABLE": 16,
+              "STANCE_MAINTAINED": 3,
+              "INSUFFICIENT_EVIDENCE": 1
+            },
+            "INSUFFICIENT_EVIDENCE": {
+              "INSUFFICIENT_EVIDENCE": 1
+            },
+            "RELATION_UNCERTAIN": {
+              "INCOMPARABLE": 1
+            }
+          },
+          "false_reversal_count": 0,
+          "false_reversal_rate": 0.0,
+          "false_reversal_rate_denominator": 29,
+          "stance_reversed_recall_status": "undefined_not_estimable_zero_positives_in_gold"
+        }
+      },
+      "paired_A_vs_C": {
+        "A_error_to_C_correct": 5,
+        "A_correct_to_C_error": 6,
+        "both_correct": 14,
+        "both_error": 4
+      },
+      "comparability_gate": {
+        "n_binary": 27,
+        "accuracy": 0.7037,
+        "f1_positive_class_YES": 0.3333,
+        "precision_YES": 0.4,
+        "recall_YES": 0.2857,
+        "n_gold_uncertain_excluded": 1
+      }
+    }
+  },
+  "interpretation_policy": "A vs C is primary. B cannot emit INCOMPARABLE and is diagnostic only. STANCE_REVERSED recall is estimable only if the human gold contains positive examples.",
+  "input_sha256": {
+    "data/annotations/expansion_semantic_gold.csv": "580e52703165f2241083ea6e8100aed1173b607cea8f33a7c3818d2075691a56",
+    "data/processed/expansion29_model_predictions.csv": "f4bcee3a7d2ba04e955fb0664e18dc06cef82f288698948aaf60f5a700b12dd4"
+  }
+}

@@ -95,6 +95,12 @@ def prompt_sha256(template_path: Path) -> str:
     return hashlib.sha256(template_path.read_bytes()).hexdigest()
 
 
+def records_sha256(records: list[dict[str, str]]) -> str:
+    """Hash a canonical representation of records actually visible to a model."""
+    payload = json.dumps(records, ensure_ascii=False, sort_keys=True, separators=(",", ":"))
+    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
+
+
 # --------------------------------------------------------------------------
 # Raw calls — every raw response is persisted verbatim, never hand-edited.
 # --------------------------------------------------------------------------
@@ -274,7 +280,9 @@ def gate_effect(gold_relation: str, without_gate: str, with_gate: str) -> str:
 
 
 # --------------------------------------------------------------------------
-# Metrics — undefined is reported explicitly, never omitted or coerced to 0.
+# Metrics — undefined components remain explicit. Macro-F1 uses zero for a
+# gold-supported class that the model never predicts, as required by the
+# standard zero_division=0 convention.
 # --------------------------------------------------------------------------
 
 def _class_prf1(predicted: list[str], gold: list[str], label: str) -> dict:
@@ -284,10 +292,8 @@ def _class_prf1(predicted: list[str], gold: list[str], label: str) -> dict:
     n_pred, n_gold = tp + fp, tp + fn
     precision = "undefined" if n_pred == 0 else round(tp / n_pred, 4)
     recall = "undefined" if n_gold == 0 else round(tp / n_gold, 4)
-    if precision == "undefined" or recall == "undefined" or (precision + recall) == 0:
-        f1 = "undefined"
-    else:
-        f1 = round(2 * precision * recall / (precision + recall), 4)
+    f1_denominator = 2 * tp + fp + fn
+    f1 = "undefined" if f1_denominator == 0 else round(2 * tp / f1_denominator, 4)
     return {"precision": precision, "recall": recall, "f1": f1,
             "support_gold": n_gold, "support_predicted": n_pred}
 
@@ -298,16 +304,27 @@ def relation_metrics(predicted: list[str], gold: list[str]) -> dict:
     n = len(gold)
     accuracy = sum(p == g for p, g in zip(predicted, gold)) / n if n else 0.0
     per_class = {label: _class_prf1(predicted, gold, label) for label in sorted(RELATION_LABELS)}
-    defined_f1 = [c["f1"] for c in per_class.values() if c["f1"] != "undefined"]
-    macro_f1 = round(sum(defined_f1) / len(defined_f1), 4) if defined_f1 else "undefined"
+    gold_supported_f1 = [c["f1"] for c in per_class.values() if c["support_gold"] > 0]
+    macro_f1_gold_supported = (
+        round(sum(gold_supported_f1) / len(gold_supported_f1), 4)
+        if gold_supported_f1 else "undefined"
+    )
+    all_taxonomy_f1 = [0.0 if c["f1"] == "undefined" else c["f1"] for c in per_class.values()]
+    macro_f1_all_taxonomy = round(sum(all_taxonomy_f1) / len(all_taxonomy_f1), 4)
     confusion = collections.defaultdict(lambda: collections.defaultdict(int))
     for p, g in zip(predicted, gold):
         confusion[g][p] += 1
     false_reversal_count = sum(p == "STANCE_REVERSED" and g != "STANCE_REVERSED" for p, g in zip(predicted, gold))
     return {
         "n": n, "accuracy": round(accuracy, 4),
-        "macro_f1": macro_f1,
-        "macro_f1_note": "average over classes with defined F1 only; see per_class for undefined ones",
+        "macro_f1": macro_f1_gold_supported,
+        "macro_f1_gold_supported": macro_f1_gold_supported,
+        "macro_f1_all_taxonomy_labels_zero_division_0": macro_f1_all_taxonomy,
+        "macro_f1_note": (
+            "macro_f1 averages labels present in gold; a missed gold-supported class has F1=0. "
+            "macro_f1_all_taxonomy_labels_zero_division_0 averages the fixed five-label taxonomy "
+            "and assigns 0 to labels absent from both gold and predictions"
+        ),
         "per_class": per_class,
         "confusion_matrix": {g: dict(row) for g, row in confusion.items()},
         "false_reversal_count": false_reversal_count,
@@ -368,7 +385,18 @@ def _git_commit(root: Path) -> str:
         return "unavailable"
 
 
+def _git_dirty(root: Path) -> bool | str:
+    try:
+        output = subprocess.run(["git", "status", "--porcelain"], cwd=root, capture_output=True,
+                                text=True, timeout=5, check=True).stdout
+        return bool(output.strip())
+    except Exception:
+        return "unavailable"
+
+
 def build_manifest(root: Path, models: list[str], gold_pair_count: int, expansion_pair_count: int) -> dict:
+    gold_blind = load_blind_pairs_from_gold(root)
+    expansion_blind = load_blind_pairs_from_expansion(root)
     return {
         "experiment_version": EXPERIMENT_VERSION,
         "timestamp": datetime.now(timezone.utc).isoformat(),
@@ -382,13 +410,56 @@ def build_manifest(root: Path, models: list[str], gold_pair_count: int, expansio
         "provider": "deepinfra",
         "gold_pair_count": gold_pair_count,
         "expansion_pair_count": expansion_pair_count,
+        "gold_blind_input_sha256": records_sha256(gold_blind),
+        "gold_evaluation_sha256": hashlib.sha256(
+            (root / "data" / "annotations" / "semantic_pilot_gold.csv").read_bytes()
+        ).hexdigest(),
+        "expansion_blind_input_sha256": records_sha256(expansion_blind),
         "relation_derivation_version": "voxlab.agreement.derive_relation",
         "false_reversal_definition": (
             "count of predictions == STANCE_REVERSED where gold_relation != STANCE_REVERSED; "
             "denominator is fixed at the full gold pair count, defined before any run"
         ),
         "git_commit": _git_commit(root),
+        "git_dirty_at_analysis": _git_dirty(root),
     }
+
+
+CACHE_COMPATIBILITY_FIELDS = (
+    "experiment_version", "prompt_end_to_end_sha256", "prompt_structured_sha256",
+    "models", "temperature", "seed", "gold_pair_count", "expansion_pair_count",
+    "gold_blind_input_sha256", "gold_evaluation_sha256", "expansion_blind_input_sha256",
+)
+
+
+def validate_cache_compatibility(root: Path, current_manifest: dict) -> str:
+    """Reject a stale raw cache when its recorded experiment inputs differ.
+
+    The first v1 manifest predates input hashes. It can validate prompts and
+    configuration only; after one reanalysis, the rewritten manifest also
+    protects the exact blind inputs and gold evaluation file.
+    """
+    raw_dir = root / "data" / "processed" / "llm_raw_outputs"
+    if not raw_dir.exists() or not any(raw_dir.glob("*.json")):
+        return "no_existing_raw_cache"
+    path = root / "data" / "processed" / "automatic_experiment_manifest.json"
+    if not path.exists():
+        raise RuntimeError("Raw LLM cache exists without an experiment manifest; refusing silent reuse")
+    previous = json.loads(path.read_text(encoding="utf-8"))
+    missing = []
+    for field in CACHE_COMPATIBILITY_FIELDS:
+        if field not in previous:
+            missing.append(field)
+            continue
+        if previous[field] != current_manifest[field]:
+            raise RuntimeError(
+                f"Raw LLM cache is incompatible: manifest field {field!r} changed. "
+                "Archive/remove the cache or use a new experiment version before collecting again."
+            )
+    return (
+        "legacy_cache_validated_on_available_prompt_and_config_fields"
+        if missing else "validated_prompt_config_inputs_and_gold"
+    )
 
 
 # --------------------------------------------------------------------------
@@ -504,6 +575,7 @@ def main() -> None:
     expansion_pair_ids = [p["pair_id"] for p in expansion_pairs]
 
     manifest = build_manifest(root, models, len(gold_pair_ids), len(expansion_pair_ids))
+    manifest["cache_validation_status"] = validate_cache_compatibility(root, manifest)
     out = root / "data" / "processed"
     (out / "automatic_experiment_manifest.json").write_text(
         json.dumps(manifest, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")

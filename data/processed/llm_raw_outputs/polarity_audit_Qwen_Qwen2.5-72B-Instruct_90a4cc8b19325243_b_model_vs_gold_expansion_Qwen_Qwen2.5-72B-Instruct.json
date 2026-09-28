@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RMJCl3QBDHCZ6iXzYaMSaWaU",
+  "object": "chat.completion",
+  "created": 1790597647,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"Ambas as formulações expressam a necessidade de enfrentar o movimento antivacina, mas não são polaridades opostas uma da outra.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 525,
+    "total_tokens": 578,
+    "completion_tokens": 53,
+    "estimated_cost": 0.00021020000000000001,
+    "prompt_tokens_details": null
+  }
+}

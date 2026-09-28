@@ -25,16 +25,22 @@ CONFIDENCE = {"LOW", "MEDIUM", "HIGH"}
 
 
 def read_annotation_csv(path: Path) -> list[dict[str, str]]:
-    """Read UTF-8/comma or a spreadsheet's Windows-1252/semicolon export."""
+    """Read UTF-8/comma or a spreadsheet's Windows-1252/semicolon export.
+
+    Tolerates a spreadsheet quoting every field (``"pair_id","event_a",...``):
+    csv.DictReader already unquotes values correctly once the delimiter is
+    known, so only the raw-header sniff needs to ignore quote characters.
+    """
     content = path.read_bytes()
     try:
         decoded = content.decode("utf-8-sig")
     except UnicodeDecodeError:
         decoded = content.decode("cp1252")
     header = decoded.splitlines()[0]
-    if header.startswith("pair_id;"):
+    sniff_header = header.replace('"', "")
+    if sniff_header.startswith("pair_id;"):
         delimiter = ";"
-    elif header.startswith("pair_id,"):
+    elif sniff_header.startswith("pair_id,"):
         delimiter = ","
     else:
         raise ValueError(f"Unrecognized annotation delimiter/header in {path}")
@@ -54,11 +60,19 @@ def normalized_display_value(field: str, value: str) -> str:
     return value
 
 
-def check_packet_integrity(root: Path, packets: dict[int, list[dict[str, str]]], reference: list[dict[str, str]]) -> None:
+def check_packet_integrity(
+    root: Path,
+    packets: dict[int, list[dict[str, str]]],
+    reference: list[dict[str, str]],
+    source_pairs: list[dict[str, str]] | None = None,
+) -> None:
     """Ensure annotators saw the prepared source text and pair mappings."""
     folder = root / "data" / "annotations"
     ids = {row["pair_id"] for row in reference}
-    source_pairs = [row for row in read_csv(folder / "pilot_pairs_validated.csv") if row["pair_id"] in ids]
+    if source_pairs is None:
+        source_pairs = [row for row in read_csv(folder / "pilot_pairs_validated.csv") if row["pair_id"] in ids]
+    else:
+        source_pairs = [row for row in source_pairs if row["pair_id"] in ids]
     lds = {str(row["id"]): row for row in read_jsonl(root / "PublicHearingBR_LDS.jsonl")}
     for annotator, packet in packets.items():
         generated, mapping = annotation_rows(source_pairs, lds, annotator)
@@ -236,7 +250,8 @@ def compare_pair_rows(first: list[dict[str, str]], second: list[dict[str, str]],
                "annotator_1_display_a_source_side": ref["annotator_1_display_a_source_side"],
                "annotator_2_display_a_source_side": ref["annotator_2_display_a_source_side"],
                "event_date_a": ref["event_date_a"], "event_date_b": ref["event_date_b"],
-               "event_type_a": ref["event_type_code_a"], "event_type_b": ref["event_type_code_b"],
+               "event_type_a": ref.get("event_type_code_a", ref.get("event_type_a", "")),
+               "event_type_b": ref.get("event_type_code_b", ref.get("event_type_b", "")),
                "evidence_a": ref["evidence_a"], "evidence_b": ref["evidence_b"]}
         for annotator, answers in ((1, a), (2, b)):
             for side in "ab":
@@ -285,27 +300,79 @@ def write_adjudication_queue(path: Path, comparison: list[dict[str, str]]) -> No
     write_csv(path, rows, list(rows[0]))
 
 
+def write_consensus_template(path: Path, packet: list[dict[str, str]]) -> None:
+    """Create a blank consensus sheet without overwriting adjudicator input."""
+    rows = [{**{field: row[field] for field in DISPLAY_FIELDS},
+             **{field: "" for field in RESPONSE_FIELDS}} for row in packet]
+    if path.exists():
+        prior = read_annotation_csv(path)
+        if any(row[field].strip() for row in prior for field in RESPONSE_FIELDS):
+            return
+        if prior != rows:
+            raise FileExistsError("Existing blank consensus template differs from the frozen packet")
+        return
+    write_csv(path, rows, DISPLAY_FIELDS + RESPONSE_FIELDS)
+
+
+ROUND_CONFIG = {
+    "pilot": {
+        "annotator_pattern": "semantic_pilot_annotator_{annotator}.csv",
+        "reference": "semantic_pilot_reference.csv",
+        "comparison": "semantic_annotation_comparison.csv",
+        "adjudication": "semantic_adjudication_queue.csv",
+        "consensus": "semantic_pilot_consensus.csv",
+        "report": "semantic_agreement.json",
+    },
+    "expansion": {
+        "annotator_pattern": "expansion_annotator_{annotator}.csv",
+        "reference": "expansion_semantic_pilot_reference.csv",
+        "comparison": "expansion_semantic_annotation_comparison.csv",
+        "adjudication": "expansion_semantic_adjudication_queue.csv",
+        "consensus": "expansion_semantic_consensus.csv",
+        "report": "expansion_semantic_agreement.json",
+    },
+}
+
+
+def run_round(project_root: Path, round_name: str = "pilot") -> dict | None:
+    """Validate and analyze one annotation round, writing outputs only when complete."""
+    config = ROUND_CONFIG[round_name]
+    root = project_root / "data" / "annotations"
+    filenames = [config["annotator_pattern"].format(annotator=n) for n in (1, 2)]
+    first = read_annotation_csv(root / filenames[0])
+    second = read_annotation_csv(root / filenames[1])
+    reference = read_csv(root / config["reference"])
+    source_pairs = None
+    if round_name == "expansion":
+        from .expansion_semantic_pilot import eligible_expansion_pairs
+        source_pairs = eligible_expansion_pairs(project_root)
+    check_packet_integrity(project_root, {1: first, 2: second}, reference, source_pairs)
+    result = analyze(first, second, reference)
+    if result is None:
+        return None
+    result["annotation_round"] = round_name
+    result["input_sha256"] = {
+        name: hashlib.sha256((root / name).read_bytes()).hexdigest()
+        for name in (*filenames, config["reference"])
+    }
+    comparison = compare_pair_rows(first, second, reference)
+    write_csv(root / config["comparison"], comparison, list(comparison[0]))
+    write_adjudication_queue(root / config["adjudication"], comparison)
+    write_consensus_template(root / config["consensus"], first)
+    output = project_root / "data" / "processed" / config["report"]
+    output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    return result
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--root", type=Path, default=Path(__file__).resolve().parents[2])
-    project_root = parser.parse_args().root
-    root = project_root / "data" / "annotations"
-    first = read_annotation_csv(root / "semantic_pilot_annotator_1.csv")
-    second = read_annotation_csv(root / "semantic_pilot_annotator_2.csv")
-    reference = read_csv(root / "semantic_pilot_reference.csv")
-    check_packet_integrity(project_root, {1: first, 2: second}, reference)
-    result = analyze(first, second, reference)
+    parser.add_argument("--round", choices=sorted(ROUND_CONFIG), default="pilot")
+    args = parser.parse_args()
+    result = run_round(args.root, args.round)
     if result is None:
-        print("PENDING: both independent annotation files must be completed before computing agreement.")
+        print(f"PENDING: both independent {args.round} annotation files must be completed before computing agreement.")
     else:
-        result["input_sha256"] = {name: hashlib.sha256((root / name).read_bytes()).hexdigest()
-                                  for name in ("semantic_pilot_annotator_1.csv", "semantic_pilot_annotator_2.csv",
-                                               "semantic_pilot_reference.csv")}
-        comparison = compare_pair_rows(first, second, reference)
-        write_csv(root / "semantic_annotation_comparison.csv", comparison, list(comparison[0]))
-        write_adjudication_queue(root / "semantic_adjudication_queue.csv", comparison)
-        output = project_root / "data" / "processed" / "semantic_agreement.json"
-        output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
         print(json.dumps(result, ensure_ascii=False, indent=2))
 
 

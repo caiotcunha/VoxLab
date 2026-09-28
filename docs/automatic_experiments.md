@@ -55,7 +55,7 @@ Uma chamada por par×modelo, pedindo `stance_determinable_a/b`, `target_proposit
 - **Recall/F1 de `STANCE_REVERSED`:** reportado como `undefined_not_estimable_zero_positives_in_gold` — o gold não tem nenhuma instância dessa classe.
 - **Comparability accuracy/F1:** binário YES/NO sobre `same_proposition`; pares gold `UNCERTAIN` são excluídos e contados separadamente (`n_gold_uncertain_excluded`), não tratados como um terceiro valor binário nem descartados silenciosamente.
 - **Malformed output ≠ incerteza semântica:** um valor fora do vocabulário do schema é `malformed_output=true` com `malformed_fields` explícito, nunca dobrado silenciosamente em um `UNCERTAIN` legítimo. `valid_output_rate`/`schema_failure_rate` são reportados por modelo × condição.
-- **Macro-F1** é reportado mas não é o número de destaque — a leitura central usa a tabela de efeito do gate, comparabilidade binária, falsas reversões e a matriz de confusão.
+- **Macro-F1** principal é a média das classes presentes no gold, com F1=0 quando uma dessas classes não recebe nenhuma predição. Também é reportada a média sobre a taxonomia fixa de cinco classes, usando zero para classes ausentes de gold e predição. A leitura central usa ainda a comparabilidade binária, falsas reversões e a matriz de confusão.
 
 ## 9. Gold-18 results
 
@@ -64,7 +64,8 @@ Uma chamada por par×modelo, pedindo `stance_determinable_a/b`, `target_proposit
 | Accuracy — end-to-end (A) | 0,7778 | **0,8333** |
 | Accuracy — structured sem gate (B) | 0,2222 | 0,2778 |
 | Accuracy — structured com gate (C) | 0,7778 | 0,7222 |
-| Macro-F1 (A / B / C) | 0,807 / 0,400 / 0,876 | 0,871 / 0,500 / 0,792 |
+| Macro-F1, classes presentes no gold (A / B / C) | 0,538 / 0,133 / 0,584 | 0,581 / 0,167 / 0,528 |
+| Macro-F1, taxonomia fixa de 5 classes (A / B / C) | 0,323 / 0,080 / 0,351 | 0,349 / 0,100 / 0,317 |
 | Comparability accuracy (binário YES/NO, n=16) | 0,9375 | 0,875 |
 | Comparability F1 (classe YES) | 0,889 | 0,750 |
 | Comparability precision/recall (YES) | 1,000 / 0,800 | 1,000 / 0,600 |
@@ -72,11 +73,11 @@ Uma chamada por par×modelo, pedindo `stance_determinable_a/b`, `target_proposit
 | False reversal count (A / B / C) | 0 / 0 / 0 | 0 / 1 / 0 |
 | False reversal rate (A / B / C), denom=18 | 0 / 0 / 0 | 0 / 0,0556 / 0 |
 
-Nos dois modelos, **B (sem gate) é dramaticamente pior que C (com gate)** — accuracy cai de ~0,78/0,72 para ~0,22/0,28. Isso por si só não isola o efeito do gate de forma limpa (ver §10-11 para a comparação correta B vs C, que já está isolada por construção). O achado que exige mais cuidado: **A (end-to-end) empata com C no Qwen e supera C no Llama** — o pipeline estruturado com gate não superou o baseline direto de ponta a ponta nesta amostra.
+Nos dois modelos, **B (comparabilidade forçada) é pior que C (com gate)** — accuracy cai de ~0,78/0,72 para ~0,22/0,28. Essa diferença é parcialmente estrutural: B força `same_proposition=YES` e, portanto, não consegue produzir `INCOMPARABLE`, classe que ocupa 11 dos 18 itens. A comparação mede o custo de remover o gate dentro da mesma extração, mas não demonstra superioridade frente a um classificador capaz de prever todas as classes. Nessa comparação mais relevante, **A (end-to-end) empata com C no Qwen e supera C no Llama**.
 
 ## 10. Gate ablation (B → C)
 
-B e C usam a mesma extração estruturada; a única variável é o uso de `same_proposition`.
+B e C usam a mesma extração estruturada; a única variável é o uso de `same_proposition`. B deve ser lido como uma ablação de comparabilidade forçada, pois não possui caminho de saída para `INCOMPARABLE`.
 
 | Modelo | ERROR→CORRECT | CORRECT→ERROR | CORRECT→CORRECT | ERROR→ERROR |
 |---|---:|---:|---:|---:|
@@ -93,7 +94,7 @@ O gate corrige 10 dos 18 pares nos dois modelos. No Qwen, nunca piora um caso qu
 
 ## 12. Error analysis — foco em INCOMPARABLE
 
-Dos 11 pares gold `INCOMPARABLE`: **sem gate, 0/11 foram classificados corretamente nos dois modelos** — o gate é responsável por praticamente 100% da capacidade de detectar incomparabilidade nesta amostra. **Com gate, 10/11 corretos nos dois modelos.** O único caso que permanece errado nos dois (`e6a308550846aa5f`) tem `same_proposition=NO` corretamente predito, mas é classificado como `INSUFFICIENT_EVIDENCE` em vez de `INCOMPARABLE` — porque `stance_determinable` foi `NO` em um dos lados, e essa condição tem precedência na derivação (`agreement.derive_relation`). Não é uma falha do gate; é um caso onde a evidência de stance também foi julgada insuficiente.
+Dos 11 pares gold `INCOMPARABLE`: **a ablação B classifica 0/11 corretamente por construção**, pois força comparabilidade. **Com gate, 10/11 ficam corretos nos dois modelos.** O único caso que permanece errado nos dois (`e6a308550846aa5f`) tem `same_proposition=NO` corretamente predito, mas é classificado como `INSUFFICIENT_EVIDENCE` em vez de `INCOMPARABLE` — porque `stance_determinable` foi `NO` em um dos lados, e essa condição tem precedência na derivação (`agreement.derive_relation`).
 
 Contagem de acertos totais (18 pares): end-to-end (A) = 14 (Qwen) / 15 (Llama); estruturado com gate (C) = 14 (Qwen) / 13 (Llama).
 
@@ -132,6 +133,8 @@ Distribuição de relação prevista (condição com gate):
 
 - **18 pares gold** é uma amostra minúscula para estimar performance com confiança — cada erro/acerto individual move a accuracy em ~5,5 pontos percentuais.
 - **Zero `STANCE_REVERSED` no gold** impede qualquer estimativa de recall dessa classe, que é justamente a classe de interesse científico original do projeto.
+- **A condição B não pode prever `INCOMPARABLE` por construção.** O ganho B→C descreve o efeito interno de ligar o gate e é esperado em um gold com 11/18 itens incomparáveis; a comparação A→C é a evidência mais informativa sobre a utilidade do pipeline completo.
+- **Macro-F1 foi corrigido após a primeira geração do relatório.** A versão inicial removia da média classes presentes no gold que não tinham predições, inflando os valores. Nenhuma predição, accuracy, matriz de confusão ou contagem de efeito do gate mudou; os valores corrigidos estão na §9 e em `gold18_metrics.json`.
 - **Bug de parser corrigido depois de ver o gold** (não um ajuste de prompt): a implementação inicial tratava incorretamente `stance_a`/`stance_b` vazio como erro de schema quando, na verdade, o próprio prompt instrui o modelo a deixar esses campos vazios quando `stance_determinable` não é `YES`. Isso inflava artificialmente `malformed_output_count` (3 casos no Qwen, 2 no Llama) sem afetar nenhuma relação predita — confirmado reprocessando os mesmos raw outputs já salvos, sem nenhuma chamada nova de API. Depois da correção, `valid_output_rate=1.0` para as duas condições nos dois modelos. Isso é registrado aqui com total transparência porque é exatamente o tipo de ajuste pós-hoc que o desenho experimental pretendia evitar; a diferença crítica é que corrigiu uma contagem de qualidade de output, não uma previsão de relação avaliada.
 - **Falhas transitórias de rede/servidor** (timeout, 500, 429) durante a coleta, todas resolvidas por retry — não indicam problema sistemático de disponibilidade do provedor, mas mostram que a coleta não foi um processo limpo de ponta a ponta.
 - **Um único par (`597ab529d9e58c55`) teve uma fala de ~19.000 caracteres** e sofreu repetidas falhas transitórias antes de suceder — pode indicar que prompts muito longos são mais sensíveis a sobrecarga momentânea do provedor.
@@ -153,7 +156,7 @@ Sim — nenhuma evidência aqui substitui isso. Os modelos concordam moderadamen
 
 **A) O pipeline estruturado supera o baseline end-to-end?** Não. Empatou no Qwen (14/18 vs 14/18) e perdeu no Llama (13/18 vs 15/18). Nesta amostra pequena, decompor em etapas não trouxe vantagem sobre pedir a relação direto.
 
-**B) Isolando B vs C, o comparability gate melhora os resultados?** Sim, de forma inequívoca. Accuracy sobe de 0,22–0,28 para 0,72–0,78 nos dois modelos quando o gate é usado, isolando exatamente essa variável.
+**B) Isolando B vs C, o comparability gate melhora os resultados?** Descritivamente, sim: accuracy sobe de 0,22–0,28 para 0,72–0,78. Como B é incapaz de emitir `INCOMPARABLE` e essa classe é majoritária no gold, o tamanho do ganho não deve ser interpretado como uma validação independente da hipótese.
 
 **C) Quantos erros o gate corrigiu?** 10 em cada modelo, todos pares gold `INCOMPARABLE` que a comparação direta de stance classificava incorretamente como relação de stance.
 
@@ -161,11 +164,11 @@ Sim — nenhuma evidência aqui substitui isso. Os modelos concordam moderadamen
 
 **E) Quantos falsos `STANCE_REVERSED` cada condição produziu?** 0 em quase todas as condições. A única exceção: Llama, condição sem gate, 1 falso `STANCE_REVERSED` — eliminado quando o gate é aplicado.
 
-**F) O efeito aparece nos dois modelos ou depende do modelo?** O ganho do gate (B→C) aparece nos dois modelos de forma muito similar em magnitude (accuracy +0,50 a +0,56). O único ponto que difere é que o gate nunca piora nada no Qwen mas piora 2 casos no Llama — dependência de modelo real, mas de segunda ordem frente ao efeito principal.
+**F) O efeito aparece nos dois modelos ou depende do modelo?** O contraste B→C aparece nos dois modelos (accuracy +0,50 a +0,56), com 0 degradações no Qwen e 2 no Llama. Frente ao baseline A, porém, C empata em um modelo e perde no outro; a utilidade do pipeline completo ainda não está demonstrada.
 
-**G) 18 exemplos sustentam uma conclusão forte?** Não sobre a taxa exata de qualquer métrica — cada par vale ~5,5 pontos de accuracy. Mas o padrão qualitativo (gate corrige 10/11 INCOMPARABLE; sem gate falha em 11/11) é grande e consistente o suficiente entre dois modelos independentes para não ser atribuído a ruído de amostra pequena.
+**G) 18 exemplos sustentam uma conclusão forte?** Não. Cada par vale ~5,5 pontos de accuracy, o conjunto participou do desenvolvimento e não contém reversões. O contraste B→C é consistente entre os modelos, mas também decorre da restrição estrutural de B.
 
-**H) A anotação humana dos 29 ainda é metodologicamente necessária?** **Sim.** O comparability accuracy no próprio gold humano ainda tem recall de 0,6–0,8 para a classe `YES` — os modelos perdem entre 20% e 40% dos pares genuinamente comparáveis mesmo no melhor caso observado. Concordância entre modelos nos 29 (κ 0,47–0,75) mostra que eles nem sempre concordam entre si, e concordância não é validação. Nenhuma previsão automática deste documento deve ser tratada como rótulo para treinar, avaliar ou reportar como resultado do estudo de reversão de postura — apenas como evidência exploratória de que o gate, isolado, tem efeito real e mensurável.
+**H) A anotação humana dos 29 ainda é metodologicamente necessária?** **Sim.** O comparability accuracy no próprio gold humano ainda tem recall de 0,6–0,8 para a classe `YES`. Concordância entre modelos nos 29 (κ 0,47–0,75) mostra que eles nem sempre concordam entre si, e concordância não é validação. As previsões automáticas devem permanecer ocultas dos anotadores e ser comparadas ao novo consenso somente depois do congelamento do gold expandido.
 
 ---
 

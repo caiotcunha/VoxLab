@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-R3BBGYj2mwWsDN9nQJ01iLzs",
+  "object": "chat.completion",
+  "created": 1790597599,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X afirma que o Ministério da Saúde se omitiu, enquanto a proposição Y afirma que o Ministério faz a sua parte, o que é uma polaridade oposta da mesma reivindicação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 539,
+    "total_tokens": 604,
+    "completion_tokens": 65,
+    "estimated_cost": 0.00022004000000000001,
+    "prompt_tokens_details": null
+  }
+}

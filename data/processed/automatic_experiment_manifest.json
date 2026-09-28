@@ -1,6 +1,6 @@
 {
   "experiment_version": "automatic_baselines_v1",
-  "timestamp": "2026-09-24T20:51:21.246257+00:00",
+  "timestamp": "2026-09-24T21:10:42.575807+00:00",
   "prompt_end_to_end_version": "v1",
   "prompt_end_to_end_sha256": "d768b61c8178aa95ce75a1c4a8095e240fac212ca6b94e6e7adf8bcdafd179e2",
   "prompt_structured_version": "v1",
@@ -14,7 +14,12 @@
   "provider": "deepinfra",
   "gold_pair_count": 18,
   "expansion_pair_count": 29,
+  "gold_blind_input_sha256": "d13201f6cd49d50947de483a29742139f03508f4e302c27959608b34df7ed754",
+  "gold_evaluation_sha256": "29657ea3953ad620f38f7336ac6aa9b38fcb8d898b833fbffa19b2e7f0eda9a9",
+  "expansion_blind_input_sha256": "75f3728521f27bb8b9a62cc8105028f6afd51eda8f4d3f98c6b58942dbb64c95",
   "relation_derivation_version": "voxlab.agreement.derive_relation",
   "false_reversal_definition": "count of predictions == STANCE_REVERSED where gold_relation != STANCE_REVERSED; denominator is fixed at the full gold pair count, defined before any run",
-  "git_commit": "c8e2204e07338901cc7f5bd0b2a40055631557b3"
+  "git_commit": "43af12d9752210a7bd3c34e0b1abe957abe3dbc6",
+  "git_dirty_at_analysis": true,
+  "cache_validation_status": "validated_prompt_config_inputs_and_gold"
 }

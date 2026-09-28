@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RUYoKZbLkzxWkSAIr7yIotex",
+  "object": "chat.completion",
+  "created": 1790597601,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"As formulações tratam da mesma proposição (aprovação do projeto de lei que regulamenta o trabalho de motoristas de aplicativo), mas com polaridades opostas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 526,
+    "total_tokens": 584,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00021256,
+    "prompt_tokens_details": null
+  }
+}

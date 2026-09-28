@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RDTixxtq1QKcNb0C2QNx3Tll",
+  "object": "chat.completion",
+  "created": 1790597644,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As proposições tratam de temas diferentes: uma critica o movimento antivacina, enquanto a outra defende a atenção à desigualdade social na saúde.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 524,
+    "total_tokens": 582,
+    "completion_tokens": 58,
+    "estimated_cost": 0.00021183999999999998,
+    "prompt_tokens_details": null
+  }
+}

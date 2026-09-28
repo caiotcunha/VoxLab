@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RYLB3qqXitJd0E4lgynNeBRh",
+  "object": "chat.completion",
+  "created": 1790597622,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"NO\",\n  \"reasoning\": \"As formulações tratam de propostas diferentes: uma se opõe à substituição do saque-aniversário por um empréstimo consignado, enquanto a outra se opõe ao fim do saque-aniversário.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 532,
+    "total_tokens": 603,
+    "completion_tokens": 71,
+    "estimated_cost": 0.00021991999999999997,
+    "prompt_tokens_details": null
+  }
+}

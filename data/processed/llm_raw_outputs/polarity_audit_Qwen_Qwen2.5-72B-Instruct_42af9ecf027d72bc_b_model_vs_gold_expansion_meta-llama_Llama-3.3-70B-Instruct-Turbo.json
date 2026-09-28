@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RNNwNXS8PrA8dqCRgHZHofLS",
+  "object": "chat.completion",
+  "created": 1790597655,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A primeira formulação afirma que o cuidado é um direito fundamental e não deve ser mercantilizado, enquanto a segunda formulação nega isso, afirmando que o cuidado pode ser tratado como um negócio.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 512,
+    "total_tokens": 580,
+    "completion_tokens": 68,
+    "estimated_cost": 0.00021152,
+    "prompt_tokens_details": null
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "annotation_round": "expansion",
+  "input_sha256": "c9fffc7b68d45878cec5fcbc28993719e0b14f081491cdc9cc1d34fd68f1d421",
+  "expected_pairs": 29,
+  "physical_consensus_rows": 29,
+  "unique_known_pair_ids": 29,
+  "missing_pair_ids": [],
+  "duplicate_pair_ids": {},
+  "unknown_pair_ids": [],
+  "source_content_mismatches": [],
+  "blocking_issues": [],
+  "valid_for_gold_generation": true,
+  "all_responses_complete_and_schema_valid": true,
+  "all_display_text_matches_claimed_pair": true,
+  "source_valid_consensus_rows": 29,
+  "rows_with_recoverable_cp1252_control_characters": 0,
+  "valid_source_row_relation_distribution": {
+    "INCOMPARABLE": 20,
+    "INSUFFICIENT_EVIDENCE": 1,
+    "RELATION_UNCERTAIN": 1,
+    "STANCE_MAINTAINED": 7
+  },
+  "relation_distribution": {
+    "INCOMPARABLE": 20,
+    "INSUFFICIENT_EVIDENCE": 1,
+    "RELATION_UNCERTAIN": 1,
+    "STANCE_MAINTAINED": 7
+  },
+  "determinability_side_distribution": {
+    "NO": 2,
+    "YES": 56
+  },
+  "same_proposition_distribution": {
+    "": 1,
+    "NO": 20,
+    "UNCERTAIN": 1,
+    "YES": 7
+  },
+  "stance_side_distribution": {
+    "": 2,
+    "AGAINST": 6,
+    "FAVOR": 50
+  },
+  "valid_consensus_pair_count": 29,
+  "duplicate_relation_class_consistent": {},
+  "consensus_relation_alignment": {
+    "consensus_equals_both_annotators": 21,
+    "consensus_equals_annotator_1_only": 2,
+    "consensus_equals_annotator_2_only": 6,
+    "consensus_equals_neither": 0
+  },
+  "interpretation": "Validated human consensus covers every expected pair and is ready for adjudicated expansion gold.",
+  "gold_dataset": {
+    "path": "data/annotations/expansion_semantic_gold.csv",
+    "pair_count": 29,
+    "label_source": "HUMAN_CONSENSUS",
+    "sha256": "580e52703165f2241083ea6e8100aed1173b607cea8f33a7c3818d2075691a56"
+  }
+}

@@ -1,0 +1,24 @@
+Você vai comparar duas formulações independentes da mesma proposição-alvo, escritas por fontes diferentes (podem ser dois humanos, ou um humano e um modelo) sobre a mesma manifestação. Cada fonte também registrou uma stance (FAVOR ou AGAINST) em relação à SUA PRÓPRIA formulação.
+
+Sua tarefa é responder apenas uma pergunta: as duas formulações descrevem a mesma reivindicação substantiva, mas com polaridade oposta (uma afirma o que a outra nega)? Isto é diferente de perguntar se as fontes concordam sobre a stance do ator — pergunte apenas se a MUDANÇA DE POLARIDADE na formulação da proposição, por si só, já explicaria por que uma fonte registrou FAVOR e a outra AGAINST, mesmo que ambas estejam descrevendo a mesma posição real do ator.
+
+Exemplo de polaridade oposta que explica a discordância: proposição X = "O governo deve aumentar o imposto"; proposição Y = "O governo não deve aumentar o imposto". Se a fonte X registrou FAVOR (favorável a X) e a fonte Y registrou AGAINST (contrária a Y), isso é consistente com a MESMA posição real do ator, só que expressa como polaridade oposta na formulação.
+
+Exemplo de discordância real (não é polaridade): proposição X = "O governo deve aumentar o imposto sobre produto A"; proposição Y = "O governo deve aumentar o imposto sobre produto B". Aqui as proposições tratam de coisas diferentes — não é uma questão de polaridade.
+
+Responda em JSON estrito, com exatamente estas chaves e nenhuma outra:
+
+{{
+  "same_claim_opposite_polarity": "YES|NO|UNCERTAIN",
+  "reasoning": "explicação breve, uma frase"
+}}
+
+Não inclua texto fora do JSON.
+
+--- Proposição X ---
+Formulação: {proposition_x}
+Stance registrada (relativa a X): {stance_x}
+
+--- Proposição Y ---
+Formulação: {proposition_y}
+Stance registrada (relativa a Y): {stance_y}

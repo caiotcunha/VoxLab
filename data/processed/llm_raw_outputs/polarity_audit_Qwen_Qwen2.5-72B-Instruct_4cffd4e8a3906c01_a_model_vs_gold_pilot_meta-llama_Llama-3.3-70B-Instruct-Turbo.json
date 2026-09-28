@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RcjpS1VQMYWsI7LkRt3PJmRQ",
+  "object": "chat.completion",
+  "created": 1790597628,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X nega a competência do STF para legislar ou modificar leis, enquanto a proposição Y afirma que o STF deve evitar o ativismo judicial, deixando essa função ao Legislativo, o que é uma forma de afirmar a mesma ideia com polaridade oposta.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 528,
+    "total_tokens": 614,
+    "completion_tokens": 86,
+    "estimated_cost": 0.00022448000000000002,
+    "prompt_tokens_details": null
+  }
+}

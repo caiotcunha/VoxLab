@@ -1,0 +1,26 @@
+{
+  "audit_model": "Qwen/Qwen2.5-72B-Instruct",
+  "total_disagreement_cases_examined": 30,
+  "malformed_output_count": 0,
+  "by_source": {
+    "human_human_expansion": {
+      "n": 8,
+      "opposite_polarity_framing_artifact": 5,
+      "genuine_disagreement": 3,
+      "uncertain": 0
+    },
+    "model_vs_gold_pilot": {
+      "n": 9,
+      "opposite_polarity_framing_artifact": 5,
+      "genuine_disagreement": 4,
+      "uncertain": 0
+    },
+    "model_vs_gold_expansion": {
+      "n": 13,
+      "opposite_polarity_framing_artifact": 1,
+      "genuine_disagreement": 11,
+      "uncertain": 1
+    }
+  },
+  "interpretation": "This labels each already-observed stance disagreement as a likely proposition-polarity framing artifact or a genuine disagreement, using a single LLM judgment as a diagnostic lens — never as a correction to any existing gold, consensus, or prediction file."
+}

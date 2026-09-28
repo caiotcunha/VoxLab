@@ -22,6 +22,7 @@ from voxlab.automatic_baselines import (
     relation_with_gate,
     relation_without_gate,
     stance_metrics,
+    validate_cache_compatibility,
 )
 
 
@@ -209,6 +210,17 @@ class RelationMetricsTests(unittest.TestCase):
         gold = ["INCOMPARABLE", "STANCE_MAINTAINED"]
         metrics = relation_metrics(predicted, gold)
         self.assertEqual(metrics["per_class"]["STANCE_MAINTAINED"]["precision"], "undefined")
+        self.assertEqual(metrics["per_class"]["STANCE_MAINTAINED"]["f1"], 0.0)
+        self.assertEqual(metrics["macro_f1"], 0.3333)
+        self.assertEqual(metrics["macro_f1_all_taxonomy_labels_zero_division_0"], 0.1333)
+
+    def test_macro_f1_does_not_drop_a_missed_gold_supported_class(self):
+        predicted = ["INCOMPARABLE", "INCOMPARABLE", "INCOMPARABLE"]
+        gold = ["INCOMPARABLE", "STANCE_MAINTAINED", "RELATION_UNCERTAIN"]
+        metrics = relation_metrics(predicted, gold)
+        self.assertEqual(metrics["per_class"]["STANCE_MAINTAINED"]["f1"], 0.0)
+        self.assertEqual(metrics["per_class"]["RELATION_UNCERTAIN"]["f1"], 0.0)
+        self.assertEqual(metrics["macro_f1"], 0.1667)
 
     def test_false_reversal_rate_denominator_is_full_gold_size_even_with_zero_positives(self):
         predicted = ["STANCE_REVERSED"] + ["INCOMPARABLE"] * 17
@@ -262,6 +274,24 @@ class ManifestSecurityTests(unittest.TestCase):
         self.assertEqual(len(manifest["prompt_structured_sha256"]), 64)
         self.assertEqual(len(manifest["prompt_end_to_end_sha256"]), 64)
         self.assertEqual(manifest["temperature"], 0.0)
+        self.assertEqual(len(manifest["gold_blind_input_sha256"]), 64)
+        self.assertEqual(len(manifest["gold_evaluation_sha256"]), 64)
+        self.assertEqual(len(manifest["expansion_blind_input_sha256"]), 64)
+
+    def test_cache_reuse_rejects_a_changed_prompt_hash(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            raw_dir = root / "data" / "processed" / "llm_raw_outputs"
+            raw_dir.mkdir(parents=True)
+            (raw_dir / "cached.json").write_text("{}", encoding="utf-8")
+            current = build_manifest(ROOT, ["Qwen/Qwen2.5-72B-Instruct"], 18, 29)
+            previous = dict(current)
+            previous["prompt_structured_sha256"] = "0" * 64
+            manifest_path = root / "data" / "processed" / "automatic_experiment_manifest.json"
+            manifest_path.write_text(json.dumps(previous), encoding="utf-8")
+            with self.assertRaisesRegex(RuntimeError, "prompt_structured_sha256"):
+                validate_cache_compatibility(root, current)
 
 
 class InterModelAgreementTests(unittest.TestCase):

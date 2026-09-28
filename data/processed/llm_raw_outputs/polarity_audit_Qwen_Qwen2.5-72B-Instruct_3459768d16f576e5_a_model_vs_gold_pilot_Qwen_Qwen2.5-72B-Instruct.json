@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RV9EL8oYxOfRSqMg3YLyCAeP",
+  "object": "chat.completion",
+  "created": 1790597607,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X defende a manutenção do saque-aniversário, enquanto a proposição Y defende seu fim, o que representa uma mudança de polaridade que explica a discordância nas stances registradas.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 513,
+    "total_tokens": 580,
+    "completion_tokens": 67,
+    "estimated_cost": 0.00021148,
+    "prompt_tokens_details": null
+  }
+}

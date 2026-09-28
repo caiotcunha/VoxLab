@@ -1,7 +1,7 @@
 import unittest
 from pathlib import Path
 
-from voxlab.consensus import (GOLD_FIELDS, analyze_consensus, build_gold_rows,
+from voxlab.consensus import (GOLD_FIELDS, ROUND_CONFIG, analyze_consensus, build_gold_rows,
                               repair_cp1252_controls)
 
 
@@ -9,6 +9,12 @@ ROOT = Path(__file__).resolve().parents[1]
 
 
 class ConsensusTests(unittest.TestCase):
+
+    def test_expansion_round_has_isolated_artifact_names(self):
+        pilot, expansion = ROUND_CONFIG["pilot"], ROUND_CONFIG["expansion"]
+        for key in ("consensus", "reference", "comparison", "gold", "report"):
+            self.assertNotEqual(pilot[key], expansion[key])
+
     def test_cp1252_control_repair(self):
         self.assertEqual(repair_cp1252_controls("gás \x97 IBP"), "gás — IBP")
 

@@ -1,0 +1,28 @@
+{
+  "service_tier": "default",
+  "id": "chatcmpl-RwtZ00rShHWbJzDIOvP7c45B",
+  "object": "chat.completion",
+  "created": 1790597588,
+  "model": "Qwen/Qwen2.5-72B-Instruct",
+  "choices": [
+    {
+      "index": 0,
+      "message": {
+        "role": "assistant",
+        "content": "{\n  \"same_claim_opposite_polarity\": \"YES\",\n  \"reasoning\": \"A proposição X afirma que o IBAMA não cria obstáculos indevidos, enquanto a proposição Y afirma que o IBAMA dificulta de propósito, o que é uma polaridade oposta da mesma ação.\"\n}",
+        "reasoning_content": null,
+        "name": null,
+        "tool_calls": null
+      },
+      "finish_reason": "stop",
+      "logprobs": null
+    }
+  ],
+  "usage": {
+    "prompt_tokens": 517,
+    "total_tokens": 585,
+    "completion_tokens": 68,
+    "estimated_cost": 0.00021332,
+    "prompt_tokens_details": null
+  }
+}
