@@ -1,0 +1,23 @@
+{
+  "experiment_version": "party_alignment_v1",
+  "stage": "stance",
+  "timestamp": "2026-09-28T13:11:35.538699+00:00",
+  "provider": "deepinfra",
+  "models": [
+    "Qwen/Qwen2.5-72B-Instruct",
+    "meta-llama/Llama-3.3-70B-Instruct-Turbo"
+  ],
+  "proposition_model": "Qwen/Qwen2.5-72B-Instruct",
+  "temperature": 0.0,
+  "seed": 20260926,
+  "prompt_propositions_sha256": "3ef8bbf2d598a5730809847467662942bfa9a687be5b2c903588b96d27de7739",
+  "prompt_stance_sha256": "342d3d57b2c0af45105e055be744a565c9456d3abbfc6b56b4eac4da014aa4fd",
+  "max_speech_chars": 60000,
+  "max_article_chars": 9000,
+  "conditions": [
+    "speech_masked"
+  ],
+  "n_requests": 2028,
+  "request_prompts_sha256": "99f80f2681222fc79ff48fa7b2fe822cc4a4c4be53aff32bd571f3dbf738da97",
+  "git_commit": "059e2a89b44ec53a591e7d8097c1dce750a29bcc"
+}

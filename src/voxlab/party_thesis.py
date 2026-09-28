@@ -118,13 +118,18 @@ def bipolar_structure(government: dict, labels: dict, period: str = "LULA",
             for camp, values in by_hearing[hearing_id].items():
                 pooled[camp].extend(values)
         result = {camp: structure(values) for camp, values in pooled.items()}
+        # Shares compare against the pooled poles; division compares against the mean of each
+        # pole's own division (pooling LEFT and RIGHT would make the poles look split).
         poles = structure(pooled["LEFT"] + pooled["RIGHT"])
         center = result.get("CENTRAO")
         if center and poles["n"]:
-            result["CENTRAO_minus_POLES"] = {
-                metric: rounded(center[metric] - poles[metric])
-                if center[metric] is not None and poles[metric] is not None else None
-                for metric in ("polar_share", "neutral_or_mixed", "division")}
+            diff = {metric: rounded(center[metric] - poles[metric])
+                    if center[metric] is not None and poles[metric] is not None else None
+                    for metric in ("polar_share", "neutral_or_mixed")}
+            pole_divisions = [result[c]["division"] for c in POLES if c in result and result[c]["division"] is not None]
+            diff["division"] = (rounded(center["division"] - float(np.mean(pole_divisions)))
+                                if center["division"] is not None and pole_divisions else None)
+            result["CENTRAO_minus_POLES"] = diff
         return result
 
     observed = compute(hearings)

@@ -1,0 +1,1770 @@
+{
+  "speech": {
+    "label_source": "MODEL_PREDICTION",
+    "condition": "speech",
+    "camps": {
+      "LEFT": [
+        "PCDOB",
+        "PSOL",
+        "PT"
+      ],
+      "RIGHT": [
+        "NOVO",
+        "PL"
+      ],
+      "CENTRAO": [
+        "MDB",
+        "PP",
+        "PSD",
+        "REPUBLICANOS",
+        "UNIAO"
+      ]
+    },
+    "models": {
+      "Qwen/Qwen2.5-72B-Instruct": {
+        "8_bipolar_structure": {
+          "period": "LULA",
+          "unit": "actor x hearing",
+          "bootstrap": "hearings",
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "n": 441,
+            "support": 0.2698,
+            "criticize": 0.1474,
+            "neutral_or_mixed": 0.356,
+            "not_addressed": 0.2268,
+            "polar_share": 0.5396,
+            "division": 0.7065,
+            "net_support": 0.1584,
+            "polar_share_ci95": [
+              0.4815,
+              0.5937
+            ],
+            "division_ci95": [
+              0.5506,
+              0.87
+            ],
+            "net_support_ci95": [
+              0.0679,
+              0.2457
+            ],
+            "neutral_or_mixed_ci95": [
+              0.3116,
+              0.4039
+            ]
+          },
+          "RIGHT": {
+            "n": 60,
+            "support": 0.1167,
+            "criticize": 0.6833,
+            "neutral_or_mixed": 0.1167,
+            "not_addressed": 0.0833,
+            "polar_share": 0.8727,
+            "division": 0.2917,
+            "net_support": -0.6182,
+            "polar_share_ci95": [
+              0.7609,
+              0.9571
+            ],
+            "division_ci95": [
+              0.0976,
+              0.5714
+            ],
+            "net_support_ci95": [
+              -0.8103,
+              -0.36
+            ],
+            "neutral_or_mixed_ci95": [
+              0.04,
+              0.2174
+            ]
+          },
+          "LEFT": {
+            "n": 110,
+            "support": 0.6091,
+            "criticize": 0.1,
+            "neutral_or_mixed": 0.1909,
+            "not_addressed": 0.1,
+            "polar_share": 0.7879,
+            "division": 0.2821,
+            "net_support": 0.5657,
+            "polar_share_ci95": [
+              0.6989,
+              0.8713
+            ],
+            "division_ci95": [
+              0.125,
+              0.4615
+            ],
+            "net_support_ci95": [
+              0.4118,
+              0.7083
+            ],
+            "neutral_or_mixed_ci95": [
+              0.1163,
+              0.271
+            ]
+          },
+          "FEDERAL_EXECUTIVE": {
+            "n": 68,
+            "support": 0.8529,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.1176,
+            "not_addressed": 0.0294,
+            "polar_share": 0.8788,
+            "division": 0.0,
+            "net_support": 0.8788,
+            "polar_share_ci95": [
+              0.7969,
+              0.9508
+            ],
+            "division_ci95": [
+              0.0,
+              0.0
+            ],
+            "net_support_ci95": [
+              0.7969,
+              0.9508
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0469,
+              0.1975
+            ]
+          },
+          "CENTRAO": {
+            "n": 84,
+            "support": 0.2619,
+            "criticize": 0.25,
+            "neutral_or_mixed": 0.2976,
+            "not_addressed": 0.1905,
+            "polar_share": 0.6324,
+            "division": 0.9767,
+            "net_support": 0.0147,
+            "polar_share_ci95": [
+              0.5077,
+              0.7442
+            ],
+            "division_ci95": [
+              0.6316,
+              1.0
+            ],
+            "net_support_ci95": [
+              -0.1786,
+              0.2069
+            ],
+            "neutral_or_mixed_ci95": [
+              0.2041,
+              0.4048
+            ]
+          },
+          "OTHER_PARTY": {
+            "n": 51,
+            "support": 0.4314,
+            "criticize": 0.098,
+            "neutral_or_mixed": 0.2941,
+            "not_addressed": 0.1765,
+            "polar_share": 0.6429,
+            "division": 0.3704,
+            "net_support": 0.4048,
+            "polar_share_ci95": [
+              0.4878,
+              0.7895
+            ],
+            "division_ci95": [
+              0.0952,
+              0.6957
+            ],
+            "net_support_ci95": [
+              0.1795,
+              0.6061
+            ],
+            "neutral_or_mixed_ci95": [
+              0.1739,
+              0.413
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "n": 8,
+            "support": 0.125,
+            "criticize": 0.125,
+            "neutral_or_mixed": 0.375,
+            "not_addressed": 0.375,
+            "polar_share": 0.4,
+            "division": 1.0,
+            "net_support": 0.0,
+            "polar_share_ci95": [
+              0.0,
+              1.0
+            ],
+            "division_ci95": [
+              0.0,
+              1.0
+            ],
+            "net_support_ci95": [
+              -0.6,
+              0.6667
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0,
+              1.0
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "n": 3,
+            "support": 0.3333,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.0,
+            "not_addressed": 0.6667,
+            "polar_share": 1.0,
+            "division": 0.0,
+            "net_support": 1.0,
+            "polar_share_ci95": [
+              1.0,
+              1.0
+            ],
+            "division_ci95": [
+              0.0,
+              0.0
+            ],
+            "net_support_ci95": [
+              1.0,
+              1.0
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "CENTRAO_minus_POLES": {
+            "polar_share": -0.1858,
+            "neutral_or_mixed": 0.1329,
+            "division": 0.1513,
+            "polar_share_ci95": [
+              -0.3227,
+              -0.059
+            ],
+            "division_ci95": [
+              -0.2291,
+              0.3062
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0217,
+              0.2557
+            ]
+          }
+        },
+        "8_bipolar_structure_bolsonaro": {
+          "period": "BOLSONARO",
+          "unit": "actor x hearing",
+          "bootstrap": "hearings",
+          "OTHER_PARTY": {
+            "n": 12,
+            "support": 0.1667,
+            "criticize": 0.5,
+            "neutral_or_mixed": 0.25,
+            "not_addressed": 0.0833,
+            "polar_share": 0.7273,
+            "division": 0.5,
+            "net_support": -0.3636,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "n": 130,
+            "support": 0.0923,
+            "criticize": 0.4462,
+            "neutral_or_mixed": 0.2692,
+            "not_addressed": 0.1923,
+            "polar_share": 0.6667,
+            "division": 0.3429,
+            "net_support": -0.4381,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "FEDERAL_EXECUTIVE": {
+            "n": 8,
+            "support": 0.625,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.375,
+            "not_addressed": 0.0,
+            "polar_share": 0.625,
+            "division": 0.0,
+            "net_support": 0.625,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CENTRAO": {
+            "n": 13,
+            "support": 0.0769,
+            "criticize": 0.2308,
+            "neutral_or_mixed": 0.4615,
+            "not_addressed": 0.2308,
+            "polar_share": 0.4,
+            "division": 0.5,
+            "net_support": -0.2,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "RIGHT": {
+            "n": 4,
+            "support": 0.5,
+            "criticize": 0.25,
+            "neutral_or_mixed": 0.25,
+            "not_addressed": 0.0,
+            "polar_share": 0.75,
+            "division": 0.6667,
+            "net_support": 0.25,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "LEFT": {
+            "n": 18,
+            "support": 0.0,
+            "criticize": 0.8889,
+            "neutral_or_mixed": 0.1111,
+            "not_addressed": 0.0,
+            "polar_share": 0.8889,
+            "division": 0.0,
+            "net_support": -0.8889,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "n": 3,
+            "support": 0.0,
+            "criticize": 0.3333,
+            "neutral_or_mixed": 0.6667,
+            "not_addressed": 0.0,
+            "polar_share": 0.3333,
+            "division": 0.0,
+            "net_support": -0.3333,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "n": 1,
+            "support": 0.0,
+            "criticize": 1.0,
+            "neutral_or_mixed": 0.0,
+            "not_addressed": 0.0,
+            "polar_share": 1.0,
+            "division": 0.0,
+            "net_support": -1.0,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CENTRAO_minus_POLES": {
+            "polar_share": -0.4636,
+            "neutral_or_mixed": 0.3251,
+            "division": 0.2895,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "neutral_or_mixed_ci95": null
+          }
+        },
+        "4_within_actor_panel": {
+          "by_camp": {
+            "CENTRAO": {
+              "n_actors": 5,
+              "mean_change": 0.6667,
+              "ci95": [
+                0.1333,
+                1.2667
+              ],
+              "increased": 3,
+              "decreased": 0,
+              "sign_test_p": 0.25
+            },
+            "CIVIL_SOCIETY_OR_OTHER": {
+              "n_actors": 4,
+              "mean_change": 1.125,
+              "ci95": [
+                0.375,
+                1.75
+              ],
+              "increased": 3,
+              "decreased": 0,
+              "sign_test_p": 0.25
+            },
+            "FEDERAL_EXECUTIVE": {
+              "n_actors": 1,
+              "mean_change": 2.0,
+              "ci95": [
+                2.0,
+                2.0
+              ],
+              "increased": 1,
+              "decreased": 0,
+              "sign_test_p": 1.0
+            },
+            "LEFT": {
+              "n_actors": 4,
+              "mean_change": 1.4444,
+              "ci95": [
+                1.1111,
+                1.8333
+              ],
+              "increased": 4,
+              "decreased": 0,
+              "sign_test_p": 0.125
+            },
+            "OTHER_PARTY": {
+              "n_actors": 3,
+              "mean_change": 1.0,
+              "ci95": [
+                0.0,
+                2.0
+              ],
+              "increased": 2,
+              "decreased": 0,
+              "sign_test_p": 0.5
+            },
+            "RIGHT": {
+              "n_actors": 2,
+              "mean_change": -1.375,
+              "ci95": [
+                -1.75,
+                -1.0
+              ],
+              "increased": 0,
+              "decreased": 2,
+              "sign_test_p": 0.5
+            }
+          },
+          "actors": [
+            {
+              "actor_id": "adriana ventura",
+              "camp": "RIGHT",
+              "change": -1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "alexandre kalache",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "augusto coutinho",
+              "camp": "CENTRAO",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "bia kicis",
+              "camp": "RIGHT",
+              "change": -1.75,
+              "n_bolsonaro": 1,
+              "n_lula": 4
+            },
+            {
+              "actor_id": "danilo forte",
+              "camp": "CENTRAO",
+              "change": 0.6667,
+              "n_bolsonaro": 1,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "diego alves",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "dr zacharias calil",
+              "camp": "CENTRAO",
+              "change": 1.6667,
+              "n_bolsonaro": 2,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "erika kokay",
+              "camp": "LEFT",
+              "change": 1.4444,
+              "n_bolsonaro": 5,
+              "n_lula": 9
+            },
+            {
+              "actor_id": "lafayette de andrada",
+              "camp": "CENTRAO",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "lidice da mata",
+              "camp": "OTHER_PARTY",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "paulo teixeira",
+              "camp": "FEDERAL_EXECUTIVE",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "rodrigo agostinho",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 1.5,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "rogerio correia",
+              "camp": "LEFT",
+              "change": 2.0,
+              "n_bolsonaro": 2,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "sidney leite",
+              "camp": "CENTRAO",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "taliria petrone",
+              "camp": "LEFT",
+              "change": 1.3333,
+              "n_bolsonaro": 1,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "vanessa pirolo",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "vitor lippi",
+              "camp": "OTHER_PARTY",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "ze neto",
+              "camp": "LEFT",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "ze silva",
+              "camp": "OTHER_PARTY",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            }
+          ]
+        },
+        "5_rq1_contested": {
+          "n_cells_all": 596,
+          "n_cells_contested": 92,
+          "party": {
+            "n_pairs_same_group": 20,
+            "n_pairs_diff_group": 97,
+            "agreement_same_group": 0.75,
+            "agreement_diff_group": 0.5876,
+            "gap": 0.1624,
+            "permutation_p": 0.1656,
+            "n_permutations": 5000
+          },
+          "bloc": {
+            "n_pairs_same_group": 58,
+            "n_pairs_diff_group": 59,
+            "agreement_same_group": 0.7586,
+            "agreement_diff_group": 0.4746,
+            "gap": 0.284,
+            "permutation_p": 0.0128,
+            "n_permutations": 5000
+          }
+        },
+        "9_previous_government": {
+          "n": 824,
+          "mention": {
+            "odds_ratio_per_6_months": 0.6616,
+            "ci95": [
+              0.4536,
+              0.965
+            ],
+            "p": 0.032,
+            "overall_share": 0.3434
+          },
+          "criticize": {
+            "odds_ratio_per_6_months": 0.6507,
+            "ci95": [
+              0.4472,
+              0.9469
+            ],
+            "p": 0.0248,
+            "overall_share": 0.29
+          },
+          "by_semester": {
+            "2023-S1": {
+              "n": 96,
+              "mention": 0.4375,
+              "criticize": 0.3958
+            },
+            "2023-S2": {
+              "n": 574,
+              "mention": 0.3502,
+              "criticize": 0.2944
+            },
+            "2024-S1": {
+              "n": 154,
+              "mention": 0.2597,
+              "criticize": 0.2078
+            }
+          },
+          "by_camp": {
+            "CENTRAO": {
+              "n": 84,
+              "mention": 0.25,
+              "criticize": 0.1548
+            },
+            "CIVIL_SOCIETY_OR_OTHER": {
+              "n": 440,
+              "mention": 0.3136,
+              "criticize": 0.2682
+            },
+            "FEDERAL_EXECUTIVE": {
+              "n": 68,
+              "mention": 0.4559,
+              "criticize": 0.4265
+            },
+            "LEFT": {
+              "n": 110,
+              "mention": 0.5455,
+              "criticize": 0.5364
+            },
+            "OTHER_PARTY": {
+              "n": 51,
+              "mention": 0.2353,
+              "criticize": 0.1765
+            },
+            "RIGHT": {
+              "n": 60,
+              "mention": 0.3167,
+              "criticize": 0.15
+            },
+            "SUBNATIONAL_OR_OTHER_STATE": {
+              "n": 8,
+              "mention": 0.125,
+              "criticize": 0.125
+            },
+            "SUBNATIONAL_POLITICIAN": {
+              "n": 3,
+              "mention": 0.3333,
+              "criticize": 0.3333
+            }
+          }
+        },
+        "10_civil_society": {
+          "net_support": {
+            "BOLSONARO": -0.4381,
+            "LULA": 0.1584
+          },
+          "n_addressed": {
+            "BOLSONARO": 105,
+            "LULA": 341
+          },
+          "distinct_actors": {
+            "BOLSONARO": 105,
+            "LULA": 331
+          },
+          "actors_in_both_periods": 3,
+          "lula_rows_from_recurrent_actors_share": 0.0088,
+          "within_person_mean_change": 1.0,
+          "reading": "If almost all Lula-period civil-society rows come from people absent before 2023, the aggregate shift is compositional (who is invited/covered), not within-person change."
+        },
+        "2_beyond_party_lula": {
+          "within_camp_spearman": {
+            "LEFT": {
+              "n": 48,
+              "rho": 0.2083,
+              "p": 0.1554
+            },
+            "RIGHT": {
+              "n": 33,
+              "rho": 0.3404,
+              "p": 0.0526
+            },
+            "CENTRAO": {
+              "n": 48,
+              "rho": 0.4498,
+              "p": 0.0013
+            },
+            "OTHER_PARTY": {
+              "n": 25,
+              "rho": 0.5258,
+              "p": 0.0069
+            }
+          },
+          "ols_party_fixed_effects": {
+            "n": 154,
+            "n_parties": 19,
+            "governism_coef": 1.6269,
+            "ci95": [
+              0.8681,
+              2.3857
+            ],
+            "p": 0.0
+          }
+        },
+        "7_support_without_voice_lula": {
+          "n_deputies": 154,
+          "slope": 1.8259,
+          "residual_by_camp": {
+            "RIGHT": {
+              "mean": 0.0533,
+              "ci95": [
+                -0.0408,
+                0.1549
+              ],
+              "n": 33
+            },
+            "LEFT": {
+              "mean": 0.0674,
+              "ci95": [
+                -0.0508,
+                0.1939
+              ],
+              "n": 48
+            },
+            "CENTRAO": {
+              "mean": -0.1514,
+              "ci95": [
+                -0.3036,
+                -0.005
+              ],
+              "n": 48
+            },
+            "OTHER_PARTY": {
+              "mean": 0.0911,
+              "ci95": [
+                -0.1026,
+                0.2837
+              ],
+              "n": 25
+            },
+            "CENTRAO_minus_POLES": {
+              "mean": -0.213,
+              "ci95": [
+                -0.4345,
+                0.012
+              ],
+              "n": null
+            },
+            "CENTRAO_minus_LEFT": {
+              "mean": -0.2188,
+              "ci95": [
+                -0.465,
+                0.0236
+              ],
+              "n": null
+            }
+          },
+          "mean_governism_by_camp": {
+            "RIGHT": 0.282,
+            "LEFT": 0.9335,
+            "CENTRAO": 0.7105,
+            "OTHER_PARTY": 0.8303
+          },
+          "bootstrap": "deputies"
+        },
+        "2_beyond_party_bolsonaro": {
+          "within_camp_spearman": {
+            "LEFT": {
+              "n": 11,
+              "rho": 0.0745,
+              "p": 0.8276
+            },
+            "RIGHT": {
+              "n": 4,
+              "rho": null,
+              "p": null
+            },
+            "CENTRAO": {
+              "n": 9,
+              "rho": -0.2092,
+              "p": 0.5891
+            },
+            "OTHER_PARTY": {
+              "n": 11,
+              "rho": 0.5427,
+              "p": 0.0845
+            }
+          },
+          "ols_party_fixed_effects": {
+            "n": 35,
+            "n_parties": 15,
+            "governism_coef": -1.4834,
+            "ci95": [
+              -6.1873,
+              3.2206
+            ],
+            "p": 0.5365
+          }
+        },
+        "7_support_without_voice_bolsonaro": {
+          "n_deputies": 35,
+          "slope": 1.6036,
+          "residual_by_camp": {
+            "OTHER_PARTY": {
+              "mean": 0.0651,
+              "ci95": [
+                -0.2616,
+                0.3847
+              ],
+              "n": 11
+            },
+            "CENTRAO": {
+              "mean": -0.1746,
+              "ci95": [
+                -0.5544,
+                0.1819
+              ],
+              "n": 9
+            },
+            "RIGHT": {
+              "mean": 0.2884,
+              "ci95": [
+                -0.5168,
+                0.9602
+              ],
+              "n": 4
+            },
+            "LEFT": {
+              "mean": -0.0271,
+              "ci95": [
+                -0.1925,
+                0.1021
+              ],
+              "n": 11
+            },
+            "CENTRAO_minus_POLES": {
+              "mean": -0.2316,
+              "ci95": [
+                -0.7044,
+                0.2695
+              ],
+              "n": null
+            },
+            "CENTRAO_minus_LEFT": {
+              "mean": -0.1475,
+              "ci95": [
+                -0.5548,
+                0.2532
+              ],
+              "n": null
+            }
+          },
+          "mean_governism_by_camp": {
+            "OTHER_PARTY": 0.5658,
+            "CENTRAO": 0.8728,
+            "RIGHT": 0.8093,
+            "LEFT": 0.2832
+          },
+          "bootstrap": "deputies"
+        }
+      },
+      "meta-llama/Llama-3.3-70B-Instruct-Turbo": {
+        "8_bipolar_structure": {
+          "period": "LULA",
+          "unit": "actor x hearing",
+          "bootstrap": "hearings",
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "n": 441,
+            "support": 0.1882,
+            "criticize": 0.1156,
+            "neutral_or_mixed": 0.5918,
+            "not_addressed": 0.1043,
+            "polar_share": 0.3392,
+            "division": 0.7612,
+            "net_support": 0.081,
+            "polar_share_ci95": [
+              0.282,
+              0.3995
+            ],
+            "division_ci95": [
+              0.5714,
+              0.9664
+            ],
+            "net_support_ci95": [
+              0.0097,
+              0.1496
+            ],
+            "neutral_or_mixed_ci95": [
+              0.5347,
+              0.646
+            ]
+          },
+          "RIGHT": {
+            "n": 60,
+            "support": 0.05,
+            "criticize": 0.7167,
+            "neutral_or_mixed": 0.1667,
+            "not_addressed": 0.0667,
+            "polar_share": 0.8214,
+            "division": 0.1304,
+            "net_support": -0.7143,
+            "polar_share_ci95": [
+              0.6857,
+              0.9194
+            ],
+            "division_ci95": [
+              0.0,
+              0.3158
+            ],
+            "net_support_ci95": [
+              -0.8571,
+              -0.5128
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0755,
+              0.2931
+            ]
+          },
+          "LEFT": {
+            "n": 110,
+            "support": 0.4909,
+            "criticize": 0.1091,
+            "neutral_or_mixed": 0.3545,
+            "not_addressed": 0.0455,
+            "polar_share": 0.6286,
+            "division": 0.3636,
+            "net_support": 0.4,
+            "polar_share_ci95": [
+              0.5345,
+              0.7213
+            ],
+            "division_ci95": [
+              0.1791,
+              0.5758
+            ],
+            "net_support_ci95": [
+              0.2549,
+              0.5376
+            ],
+            "neutral_or_mixed_ci95": [
+              0.2661,
+              0.4426
+            ]
+          },
+          "FEDERAL_EXECUTIVE": {
+            "n": 68,
+            "support": 0.7794,
+            "criticize": 0.0147,
+            "neutral_or_mixed": 0.1912,
+            "not_addressed": 0.0147,
+            "polar_share": 0.806,
+            "division": 0.037,
+            "net_support": 0.7761,
+            "polar_share_ci95": [
+              0.7097,
+              0.8936
+            ],
+            "division_ci95": [
+              0.0,
+              0.1212
+            ],
+            "net_support_ci95": [
+              0.6667,
+              0.8701
+            ],
+            "neutral_or_mixed_ci95": [
+              0.1045,
+              0.2857
+            ]
+          },
+          "CENTRAO": {
+            "n": 84,
+            "support": 0.1667,
+            "criticize": 0.1548,
+            "neutral_or_mixed": 0.5714,
+            "not_addressed": 0.1071,
+            "polar_share": 0.36,
+            "division": 0.963,
+            "net_support": 0.0133,
+            "polar_share_ci95": [
+              0.2464,
+              0.4706
+            ],
+            "division_ci95": [
+              0.5455,
+              1.0
+            ],
+            "net_support_ci95": [
+              -0.125,
+              0.1519
+            ],
+            "neutral_or_mixed_ci95": [
+              0.473,
+              0.6795
+            ]
+          },
+          "OTHER_PARTY": {
+            "n": 51,
+            "support": 0.2941,
+            "criticize": 0.1176,
+            "neutral_or_mixed": 0.4706,
+            "not_addressed": 0.1176,
+            "polar_share": 0.4667,
+            "division": 0.5714,
+            "net_support": 0.2,
+            "polar_share_ci95": [
+              0.3214,
+              0.6182
+            ],
+            "division_ci95": [
+              0.2,
+              0.9524
+            ],
+            "net_support_ci95": [
+              0.0,
+              0.4
+            ],
+            "neutral_or_mixed_ci95": [
+              0.3333,
+              0.614
+            ]
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "n": 8,
+            "support": 0.25,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.625,
+            "not_addressed": 0.125,
+            "polar_share": 0.2857,
+            "division": 0.0,
+            "net_support": 0.2857,
+            "polar_share_ci95": [
+              0.0,
+              0.6667
+            ],
+            "division_ci95": [
+              0.0,
+              0.0
+            ],
+            "net_support_ci95": [
+              0.0,
+              0.6667
+            ],
+            "neutral_or_mixed_ci95": [
+              0.2,
+              1.0
+            ]
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "n": 3,
+            "support": 0.3333,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.0,
+            "not_addressed": 0.6667,
+            "polar_share": 1.0,
+            "division": 0.0,
+            "net_support": 1.0,
+            "polar_share_ci95": [
+              1.0,
+              1.0
+            ],
+            "division_ci95": [
+              0.0,
+              0.0
+            ],
+            "net_support_ci95": [
+              1.0,
+              1.0
+            ],
+            "neutral_or_mixed_ci95": [
+              0.0,
+              0.0
+            ]
+          },
+          "CENTRAO_minus_POLES": {
+            "polar_share": -0.3357,
+            "neutral_or_mixed": 0.2832,
+            "division": -0.0191,
+            "polar_share_ci95": [
+              -0.4588,
+              -0.2127
+            ],
+            "division_ci95": [
+              -0.3598,
+              0.153
+            ],
+            "neutral_or_mixed_ci95": [
+              0.1636,
+              0.4034
+            ]
+          }
+        },
+        "8_bipolar_structure_bolsonaro": {
+          "period": "BOLSONARO",
+          "unit": "actor x hearing",
+          "bootstrap": "hearings",
+          "OTHER_PARTY": {
+            "n": 12,
+            "support": 0.0833,
+            "criticize": 0.5833,
+            "neutral_or_mixed": 0.25,
+            "not_addressed": 0.0833,
+            "polar_share": 0.7273,
+            "division": 0.25,
+            "net_support": -0.5455,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CIVIL_SOCIETY_OR_OTHER": {
+            "n": 130,
+            "support": 0.0538,
+            "criticize": 0.4385,
+            "neutral_or_mixed": 0.4077,
+            "not_addressed": 0.1,
+            "polar_share": 0.547,
+            "division": 0.2188,
+            "net_support": -0.4274,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "FEDERAL_EXECUTIVE": {
+            "n": 8,
+            "support": 0.125,
+            "criticize": 0.0,
+            "neutral_or_mixed": 0.875,
+            "not_addressed": 0.0,
+            "polar_share": 0.125,
+            "division": 0.0,
+            "net_support": 0.125,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CENTRAO": {
+            "n": 13,
+            "support": 0.1538,
+            "criticize": 0.3846,
+            "neutral_or_mixed": 0.3846,
+            "not_addressed": 0.0769,
+            "polar_share": 0.5833,
+            "division": 0.5714,
+            "net_support": -0.25,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "RIGHT": {
+            "n": 4,
+            "support": 0.5,
+            "criticize": 0.25,
+            "neutral_or_mixed": 0.25,
+            "not_addressed": 0.0,
+            "polar_share": 0.75,
+            "division": 0.6667,
+            "net_support": 0.25,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "LEFT": {
+            "n": 18,
+            "support": 0.0,
+            "criticize": 1.0,
+            "neutral_or_mixed": 0.0,
+            "not_addressed": 0.0,
+            "polar_share": 1.0,
+            "division": 0.0,
+            "net_support": -1.0,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "SUBNATIONAL_OR_OTHER_STATE": {
+            "n": 3,
+            "support": 0.0,
+            "criticize": 0.3333,
+            "neutral_or_mixed": 0.6667,
+            "not_addressed": 0.0,
+            "polar_share": 0.3333,
+            "division": 0.0,
+            "net_support": -0.3333,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "SUBNATIONAL_POLITICIAN": {
+            "n": 1,
+            "support": 0.0,
+            "criticize": 1.0,
+            "neutral_or_mixed": 0.0,
+            "not_addressed": 0.0,
+            "polar_share": 1.0,
+            "division": 0.0,
+            "net_support": -1.0,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "net_support_ci95": null,
+            "neutral_or_mixed_ci95": null
+          },
+          "CENTRAO_minus_POLES": {
+            "polar_share": -0.3712,
+            "neutral_or_mixed": 0.3391,
+            "division": 0.3809,
+            "polar_share_ci95": null,
+            "division_ci95": null,
+            "neutral_or_mixed_ci95": null
+          }
+        },
+        "4_within_actor_panel": {
+          "by_camp": {
+            "CENTRAO": {
+              "n_actors": 5,
+              "mean_change": 0.6667,
+              "ci95": [
+                0.0667,
+                1.4
+              ],
+              "increased": 3,
+              "decreased": 0,
+              "sign_test_p": 0.25
+            },
+            "CIVIL_SOCIETY_OR_OTHER": {
+              "n_actors": 4,
+              "mean_change": 1.0,
+              "ci95": [
+                0.25,
+                1.75
+              ],
+              "increased": 3,
+              "decreased": 0,
+              "sign_test_p": 0.25
+            },
+            "FEDERAL_EXECUTIVE": {
+              "n_actors": 1,
+              "mean_change": 2.0,
+              "ci95": [
+                2.0,
+                2.0
+              ],
+              "increased": 1,
+              "decreased": 0,
+              "sign_test_p": 1.0
+            },
+            "LEFT": {
+              "n_actors": 4,
+              "mean_change": 1.2803,
+              "ci95": [
+                0.8333,
+                1.75
+              ],
+              "increased": 4,
+              "decreased": 0,
+              "sign_test_p": 0.125
+            },
+            "OTHER_PARTY": {
+              "n_actors": 3,
+              "mean_change": 1.3333,
+              "ci95": [
+                0.5,
+                2.0
+              ],
+              "increased": 3,
+              "decreased": 0,
+              "sign_test_p": 0.25
+            },
+            "RIGHT": {
+              "n_actors": 2,
+              "mean_change": -1.375,
+              "ci95": [
+                -1.75,
+                -1.0
+              ],
+              "increased": 0,
+              "decreased": 2,
+              "sign_test_p": 0.5
+            }
+          },
+          "actors": [
+            {
+              "actor_id": "adriana ventura",
+              "camp": "RIGHT",
+              "change": -1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "alexandre kalache",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "augusto coutinho",
+              "camp": "CENTRAO",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "bia kicis",
+              "camp": "RIGHT",
+              "change": -1.75,
+              "n_bolsonaro": 1,
+              "n_lula": 4
+            },
+            {
+              "actor_id": "danilo forte",
+              "camp": "CENTRAO",
+              "change": 0.3333,
+              "n_bolsonaro": 1,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "diego alves",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "dr zacharias calil",
+              "camp": "CENTRAO",
+              "change": 1.0,
+              "n_bolsonaro": 2,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "erika kokay",
+              "camp": "LEFT",
+              "change": 1.4545,
+              "n_bolsonaro": 5,
+              "n_lula": 11
+            },
+            {
+              "actor_id": "lafayette de andrada",
+              "camp": "CENTRAO",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "lidice da mata",
+              "camp": "OTHER_PARTY",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "paulo teixeira",
+              "camp": "FEDERAL_EXECUTIVE",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "rodrigo agostinho",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "rogerio correia",
+              "camp": "LEFT",
+              "change": 2.0,
+              "n_bolsonaro": 2,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "sidney leite",
+              "camp": "CENTRAO",
+              "change": 2.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "taliria petrone",
+              "camp": "LEFT",
+              "change": 0.6667,
+              "n_bolsonaro": 1,
+              "n_lula": 3
+            },
+            {
+              "actor_id": "vanessa pirolo",
+              "camp": "CIVIL_SOCIETY_OR_OTHER",
+              "change": 0.0,
+              "n_bolsonaro": 1,
+              "n_lula": 1
+            },
+            {
+              "actor_id": "vitor lippi",
+              "camp": "OTHER_PARTY",
+              "change": 0.5,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "ze neto",
+              "camp": "LEFT",
+              "change": 1.0,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            },
+            {
+              "actor_id": "ze silva",
+              "camp": "OTHER_PARTY",
+              "change": 1.5,
+              "n_bolsonaro": 1,
+              "n_lula": 2
+            }
+          ]
+        },
+        "5_rq1_contested": {
+          "n_cells_all": 594,
+          "n_cells_contested": 77,
+          "party": {
+            "n_pairs_same_group": 33,
+            "n_pairs_diff_group": 151,
+            "agreement_same_group": 0.6061,
+            "agreement_diff_group": 0.4702,
+            "gap": 0.1359,
+            "permutation_p": 0.3737,
+            "n_permutations": 5000
+          },
+          "bloc": {
+            "n_pairs_same_group": 98,
+            "n_pairs_diff_group": 86,
+            "agreement_same_group": 0.5408,
+            "agreement_diff_group": 0.4419,
+            "gap": 0.099,
+            "permutation_p": 0.4565,
+            "n_permutations": 5000
+          }
+        },
+        "9_previous_government": {
+          "n": 825,
+          "mention": {
+            "odds_ratio_per_6_months": 0.6115,
+            "ci95": [
+              0.4153,
+              0.9004
+            ],
+            "p": 0.0127,
+            "overall_share": 0.2679
+          },
+          "criticize": {
+            "odds_ratio_per_6_months": 0.5761,
+            "ci95": [
+              0.3772,
+              0.8797
+            ],
+            "p": 0.0107,
+            "overall_share": 0.223
+          },
+          "by_semester": {
+            "2023-S1": {
+              "n": 96,
+              "mention": 0.375,
+              "criticize": 0.3542
+            },
+            "2023-S2": {
+              "n": 575,
+              "mention": 0.2713,
+              "criticize": 0.2226
+            },
+            "2024-S1": {
+              "n": 154,
+              "mention": 0.1883,
+              "criticize": 0.1429
+            }
+          },
+          "by_camp": {
+            "CENTRAO": {
+              "n": 84,
+              "mention": 0.2143,
+              "criticize": 0.1071
+            },
+            "CIVIL_SOCIETY_OR_OTHER": {
+              "n": 441,
+              "mention": 0.2358,
+              "criticize": 0.2132
+            },
+            "FEDERAL_EXECUTIVE": {
+              "n": 68,
+              "mention": 0.3235,
+              "criticize": 0.2941
+            },
+            "LEFT": {
+              "n": 110,
+              "mention": 0.4818,
+              "criticize": 0.4727
+            },
+            "OTHER_PARTY": {
+              "n": 51,
+              "mention": 0.098,
+              "criticize": 0.0784
+            },
+            "RIGHT": {
+              "n": 60,
+              "mention": 0.3,
+              "criticize": 0.0667
+            },
+            "SUBNATIONAL_OR_OTHER_STATE": {
+              "n": 8,
+              "mention": 0.0,
+              "criticize": 0.0
+            },
+            "SUBNATIONAL_POLITICIAN": {
+              "n": 3,
+              "mention": 0.3333,
+              "criticize": 0.3333
+            }
+          }
+        },
+        "10_civil_society": {
+          "net_support": {
+            "BOLSONARO": -0.4274,
+            "LULA": 0.081
+          },
+          "n_addressed": {
+            "BOLSONARO": 117,
+            "LULA": 395
+          },
+          "distinct_actors": {
+            "BOLSONARO": 117,
+            "LULA": 383
+          },
+          "actors_in_both_periods": 3,
+          "lula_rows_from_recurrent_actors_share": 0.0076,
+          "within_person_mean_change": 1.0,
+          "reading": "If almost all Lula-period civil-society rows come from people absent before 2023, the aggregate shift is compositional (who is invited/covered), not within-person change."
+        },
+        "2_beyond_party_lula": {
+          "within_camp_spearman": {
+            "LEFT": {
+              "n": 49,
+              "rho": 0.3346,
+              "p": 0.0188
+            },
+            "RIGHT": {
+              "n": 34,
+              "rho": 0.3744,
+              "p": 0.0292
+            },
+            "CENTRAO": {
+              "n": 52,
+              "rho": 0.5093,
+              "p": 0.0001
+            },
+            "OTHER_PARTY": {
+              "n": 25,
+              "rho": 0.4736,
+              "p": 0.0168
+            }
+          },
+          "ols_party_fixed_effects": {
+            "n": 160,
+            "n_parties": 19,
+            "governism_coef": 1.481,
+            "ci95": [
+              0.9521,
+              2.01
+            ],
+            "p": 0.0
+          }
+        },
+        "7_support_without_voice_lula": {
+          "n_deputies": 160,
+          "slope": 1.6844,
+          "residual_by_camp": {
+            "RIGHT": {
+              "mean": -0.0122,
+              "ci95": [
+                -0.1057,
+                0.0819
+              ],
+              "n": 34
+            },
+            "LEFT": {
+              "mean": 0.0456,
+              "ci95": [
+                -0.0446,
+                0.1404
+              ],
+              "n": 49
+            },
+            "CENTRAO": {
+              "mean": -0.0122,
+              "ci95": [
+                -0.1269,
+                0.0959
+              ],
+              "n": 52
+            },
+            "OTHER_PARTY": {
+              "mean": -0.0472,
+              "ci95": [
+                -0.2431,
+                0.1367
+              ],
+              "n": 25
+            },
+            "CENTRAO_minus_POLES": {
+              "mean": -0.0341,
+              "ci95": [
+                -0.2075,
+                0.1319
+              ],
+              "n": null
+            },
+            "CENTRAO_minus_LEFT": {
+              "mean": -0.0578,
+              "ci95": [
+                -0.2338,
+                0.1158
+              ],
+              "n": null
+            }
+          },
+          "mean_governism_by_camp": {
+            "RIGHT": 0.2827,
+            "LEFT": 0.9347,
+            "CENTRAO": 0.7136,
+            "OTHER_PARTY": 0.8169
+          },
+          "bootstrap": "deputies"
+        },
+        "2_beyond_party_bolsonaro": {
+          "within_camp_spearman": {
+            "LEFT": {
+              "n": 11,
+              "rho": null,
+              "p": null
+            },
+            "RIGHT": {
+              "n": 4,
+              "rho": null,
+              "p": null
+            },
+            "CENTRAO": {
+              "n": 11,
+              "rho": 0.0834,
+              "p": 0.8075
+            },
+            "OTHER_PARTY": {
+              "n": 11,
+              "rho": 0.4584,
+              "p": 0.1562
+            }
+          },
+          "ols_party_fixed_effects": {
+            "n": 37,
+            "n_parties": 15,
+            "governism_coef": 1.2492,
+            "ci95": [
+              -4.6891,
+              7.1875
+            ],
+            "p": 0.6801
+          }
+        },
+        "7_support_without_voice_bolsonaro": {
+          "n_deputies": 37,
+          "slope": 1.6018,
+          "residual_by_camp": {
+            "OTHER_PARTY": {
+              "mean": -0.0217,
+              "ci95": [
+                -0.323,
+                0.2744
+              ],
+              "n": 11
+            },
+            "CENTRAO": {
+              "mean": -0.1256,
+              "ci95": [
+                -0.4559,
+                0.1827
+              ],
+              "n": 11
+            },
+            "RIGHT": {
+              "mean": 0.4067,
+              "ci95": [
+                -0.4466,
+                1.0636
+              ],
+              "n": 4
+            },
+            "LEFT": {
+              "mean": -0.0007,
+              "ci95": [
+                -0.0967,
+                0.0793
+              ],
+              "n": 11
+            },
+            "CENTRAO_minus_POLES": {
+              "mean": -0.2335,
+              "ci95": [
+                -0.6804,
+                0.2083
+              ],
+              "n": null
+            },
+            "CENTRAO_minus_LEFT": {
+              "mean": -0.1249,
+              "ci95": [
+                -0.4884,
+                0.2086
+              ],
+              "n": null
+            }
+          },
+          "mean_governism_by_camp": {
+            "OTHER_PARTY": 0.5801,
+            "CENTRAO": 0.872,
+            "RIGHT": 0.8093,
+            "LEFT": 0.2832
+          },
+          "bootstrap": "deputies"
+        }
+      }
+    }
+  }
+}
